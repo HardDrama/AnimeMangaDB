@@ -1,20 +1,14 @@
-from datetime import datetime
+from scraper.utils.config_loader import load_provider_config
 
-from scraper.models import EpisodeData
 
 def main():
-    episode = EpisodeData(
-        anime_title="One Piece",
-        episode_number=1130,
-        episode_title="Example Episode",
-        manga_start=1108,
-        manga_end=1108,
-        arc="Egghead",
-        source_url="https://onepiece.fandom.com/wiki/Episode_1130",
-        last_updated=datetime.now(),
+
+    config = load_provider_config(
+        "configs/fandom/example.json"
     )
 
-    print(episode.model_dump_json(indent=4))
+    print(config.model_dump_json(indent=4))
+
 
 if __name__ == "__main__":
     main()

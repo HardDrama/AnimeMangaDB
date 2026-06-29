@@ -1,0 +1,8 @@
+{
+    "series": "Example Domain",
+    "base_url": "https://example.com",
+    "episode_path": "",
+    "selectors": {
+        "title": "title"
+    }
+}
