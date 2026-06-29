@@ -1,0 +1,10 @@
+{
+    "series": "One Piece",
+    "base_url": "https://onepiece.fandom.com",
+    "episode_path": "/wiki/Episode_{episode}",
+    "selectors": {
+        "title": "h1.page-header__title",
+        "chapter": "",
+        "arc": ""
+    }
+}
