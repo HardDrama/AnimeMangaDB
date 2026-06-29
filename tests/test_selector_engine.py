@@ -5,11 +5,13 @@ from scraper.core.selector_engine import SelectorEngine
 from scraper.utils.config_loader import load_provider_config
 
 
-def main():
+def test_selector_engine_title():
 
     html = Path(
         "tests/fixtures/fandom_sample.html"
-    ).read_text(encoding="utf-8")
+    ).read_text(
+        encoding="utf-8"
+    )
 
     soup = HtmlParser().parse(html)
 
@@ -19,8 +21,4 @@ def main():
 
     engine = SelectorEngine(soup, config)
 
-    print(engine.get_text("title"))
-
-
-if __name__ == "__main__":
-    main()
+    assert engine.get_text("title") == "Episode 1130"
