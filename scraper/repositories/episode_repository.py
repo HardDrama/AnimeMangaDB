@@ -1,7 +1,7 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from scraper.database.models import Anime, Episode
+from scraper.database.models import Anime, Episode, EpisodeChapter
 from scraper.models.episode import EpisodeData
 
 
@@ -55,3 +55,17 @@ class EpisodeRepository:
         self.session.refresh(episode)
 
         return episode
+    
+    def add_episode_chapters(
+        self,
+        episode: Episode,
+        chapter_numbers: list[int],
+    ):
+        for chapter in chapter_numbers:
+            link = EpisodeChapter(
+                episode_id=episode.id,
+                chapter_number=chapter,
+            )
+            self.session.add(link)
+
+        self.session.commit()

@@ -37,6 +37,13 @@ def main():
         data=episode_data,
     )
 
+    print("CHAPTER NUMBERS:", episode_data.chapter_numbers)
+
+    repo.add_episode_chapters(
+        episode=saved_episode,
+        chapter_numbers=episode_data.chapter_numbers,
+    )
+
     print("Episode ID:", saved_episode.id)
     print("Title:", saved_episode.episode_title)
 

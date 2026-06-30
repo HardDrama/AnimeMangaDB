@@ -4,7 +4,7 @@
     "episode_path": "/wiki/Episode_{episode}",
     "selectors": {
         "title": "h1.page-header__title",
-        "chapter": "[data-source='chapter'] .pi-data-value",
+        "chapter": "div[data-source='chapter'] .pi-data-value",
         "arc": ""
     }
 }

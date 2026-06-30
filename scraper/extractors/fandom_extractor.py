@@ -4,6 +4,11 @@ from scraper.core.extract import required_text
 from scraper.models import EpisodeData, ProviderConfig
 from scraper.core.text_parser import extract_chapter_numbers
 
+import scraper.core.text_parser as tp
+
+print("TEXT PARSER MODULE:", tp.__file__)
+print("FUNCTION:", tp.extract_chapter_numbers("Chapter 1096"))
+
 
 class FandomExtractor:
 
@@ -20,13 +25,20 @@ class FandomExtractor:
         # 1. Parse HTML
         soup = HtmlParser().parse(html)
 
+        chapter_node = soup.select_one("div[data-source='chapter'] a")
+
+        print("DEBUG CHAPTER NODE:", chapter_node)
+
+        if chapter_node:
+            print("DEBUG CHAPTER TEXT:", chapter_node.get_text())
+
         # 2. Create selector engine
         engine = SelectorEngine(soup, self.config)
 
         # 3. Extract fields
         title = required_text(engine, "title")
 
-        chapter_text = required_text(engine, "chapter")
+        chapter_text = chapter_node.get_text() if chapter_node else ""
 
         print(repr(chapter_text))
 
