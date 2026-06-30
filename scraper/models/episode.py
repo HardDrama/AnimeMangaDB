@@ -1,5 +1,6 @@
 from datetime import datetime
 from typing import Optional
+from typing import List
 
 from pydantic import BaseModel, Field, HttpUrl
 
@@ -9,10 +10,7 @@ class EpisodeData(BaseModel):
     episode_number: int
     episode_title: str
 
-    adapted_chapters: list[int] = Field(default_factory=list)
-
-    manga_start: Optional[int] = None
-    manga_end: Optional[int] = None
+    chapter_numbers: List[int] = []
 
     arc: Optional[str] = None
 
