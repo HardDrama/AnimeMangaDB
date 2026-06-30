@@ -69,3 +69,16 @@ class Episode(Base):
     )
 
     anime = relationship("Anime", back_populates="episodes")
+
+from sqlalchemy import Column, Integer, ForeignKey
+from sqlalchemy.orm import relationship
+
+
+class EpisodeChapter(Base):
+    __tablename__ = "episode_chapters"
+
+    id = Column(Integer, primary_key=True)
+
+    episode_id = Column(Integer, ForeignKey("episodes.id"), nullable=False)
+
+    chapter_number = Column(Integer, nullable=False)
