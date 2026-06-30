@@ -2,7 +2,7 @@ from scraper.core.parser import HtmlParser
 from scraper.core.selector_engine import SelectorEngine
 from scraper.core.extract import required_text
 from scraper.models import EpisodeData, ProviderConfig
-from scraper.core.text_parser import extract_first_number
+from scraper.core.text_parser import extract_chapter_numbers
 
 
 class FandomExtractor:
@@ -28,16 +28,30 @@ class FandomExtractor:
 
         chapter_text = required_text(engine, "chapter")
 
+        print(repr(chapter_text))
+
         # 4. Transform data
-        chapter_number = extract_first_number(chapter_text)
+        chapter_numbers = extract_chapter_numbers(chapter_text)
+
+        if len(chapter_numbers) == 0:
+            manga_start = None
+            manga_end = None
+
+        elif len(chapter_numbers) == 1:
+            manga_start = chapter_numbers[0]
+            manga_end = chapter_numbers [0]
+
+        else:
+            manga_start = chapter_numbers[0]
+            manga_end = chapter_numbers[-1]
 
         # 5. Build EpisodeData
         return EpisodeData(
             anime_title=self.config.series,
             episode_number=episode_number,
             episode_title=title,
-            manga_start=chapter_number,
-            manga_end=chapter_number,
+            manga_start=manga_start,
+            manga_end=manga_end,
             arc=None,
             source_url=source_url,
         )
