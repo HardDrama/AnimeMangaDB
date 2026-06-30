@@ -17,3 +17,16 @@ def extract_first_number(text: str) -> int | None:
         return None
 
     return int(match.group())
+
+
+def extract_all_numbers(text: str) -> list[int]:
+    """
+    Extract every integer from a string.
+
+    Examples:
+        "Chapter 1096" -> [1096]
+        "Chapters 1096-1098" -> [1096, 1098]
+        "No chapter" -> []
+    """
+
+    return [int(x) for x in re.findall(r"\d+", text)]

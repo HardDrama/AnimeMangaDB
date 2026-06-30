@@ -32,3 +32,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+from scraper.core.text_parser import extract_all_numbers
+
+print(extract_all_numbers("Chapter 1096"))
+print(extract_all_numbers("Chapters 1096-1098"))
+print(extract_all_numbers("Nothing here"))
