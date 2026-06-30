@@ -1,4 +1,3 @@
-print("LOADED TEXT PARSER FILE")
 import re
 
 

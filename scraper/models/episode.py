@@ -10,10 +10,10 @@ class EpisodeData(BaseModel):
     episode_number: int
     episode_title: str
 
-    chapter_numbers: List[int] = []
+    manga_start: Optional[int] = None
+    manga_end: Optional[int] = None
 
     arc: Optional[str] = None
-
     source_url: HttpUrl
 
     last_updated: datetime = Field(default_factory=datetime.now)
