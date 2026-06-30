@@ -45,6 +45,14 @@ class EpisodeRepository:
         anime: Anime,
         data: EpisodeData,
     ):
+        existing = self.get_episode_by_number(
+            anime,
+            data.episode_number,
+        )
+
+        if existing:
+            return existing
+        
         episode = Episode(
             anime_id=anime.id,
             episode_number=data.episode_number,
