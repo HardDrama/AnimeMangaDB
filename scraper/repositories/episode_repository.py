@@ -74,6 +74,12 @@ class EpisodeRepository:
         chapter_numbers: list[int],
     ):
         for chapter in chapter_numbers:
+            if self.episode_has_chapter(
+                episode,
+                chapter,
+            ):
+                continue
+            
             link = EpisodeChapter(
                 episode_id=episode.id,
                 chapter_number=chapter,
@@ -107,3 +113,17 @@ class EpisodeRepository:
         )
 
         return self.session.execute(stmt).scalar_one_or_none()
+    
+    def episode_has_chapter(
+        self,
+        episode: Episode,
+        chapter_number: int,
+    ) -> bool:
+
+        stmt = (
+            select(EpisodeChapter)
+            .where(EpisodeChapter.episode_id == episode.id)
+            .where(EpisodeChapter.chapter_number == chapter_number)
+        )
+
+        return self.session.execute(stmt).scalar_one_or_none() is not None
