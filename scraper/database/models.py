@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import DateTime, ForeignKey, String
+from sqlalchemy import DateTime, ForeignKey, String, UniqueConstraint
 from sqlalchemy.orm import (
     Mapped,
     mapped_column,
@@ -12,6 +12,13 @@ from scraper.database.base import Base
 
 class Anime(Base):
     __tablename__ = "anime"
+
+    __table_args__ = (
+        UniqueConstraint(
+            "title",
+            name="uq_anime_title",
+        ),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True)
 
@@ -38,6 +45,14 @@ class Anime(Base):
 
 class Episode(Base):
     __tablename__ = "episodes"
+
+    __table_args__ = (
+        UniqueConstraint(
+            "anime_id",
+            "episode_number",
+            name="uq_episode_number",
+        ),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True)
 
@@ -77,8 +92,21 @@ from sqlalchemy.orm import relationship
 class EpisodeChapter(Base):
     __tablename__ = "episode_chapters"
 
-    id = Column(Integer, primary_key=True)
+    __table_args__ = (
+        UniqueConstraint(
+            "episode_id",
+            "chapter_number",
+            name="uq_episode_chapter",
+        ),
+    )
 
-    episode_id = Column(Integer, ForeignKey("episodes.id"), nullable=False)
+    id: Mapped[int] = mapped_column(primary_key=True)
 
-    chapter_number = Column(Integer, nullable=False)
+    episode_id: Mapped[int] = mapped_column(
+        ForeignKey("episodes.id"),
+        nullable=False,
+    )
+
+    chapter_number: Mapped[int] = mapped_column(
+        nullable=False,
+    )
