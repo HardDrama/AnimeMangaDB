@@ -1,7 +1,11 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from scraper.database.models import Anime, Episode, EpisodeChapter
+from scraper.database.models import (
+    Anime,
+    Episode,
+    EpisodeChapter,
+)
 from scraper.models.episode import EpisodeData
 
 
@@ -69,3 +73,29 @@ class EpisodeRepository:
             self.session.add(link)
 
         self.session.commit()
+
+    def get_episode_by_number(
+        self,
+        anime: Anime,
+        episode_number: int,
+    ) -> Episode | None:
+
+        stmt = (
+            select(Episode)
+            .where(Episode.anime_id == anime.id)
+            .where(Episode.episode_number == episode_number)
+        )
+
+        return self.session.execute(stmt).scalar_one_or_none()
+    
+    def get_episode_by_source_url(
+        self,
+        source_url: str,
+    ) -> Episode | None:
+
+        stmt = (
+            select(Episode)
+            .where(Episode.source_url == source_url)
+        )
+
+        return self.session.execute(stmt).scalar_one_or_none()
