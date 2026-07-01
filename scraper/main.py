@@ -6,6 +6,8 @@ from scraper.utils.config_loader import load_provider_config
 from scraper.database.session import SessionLocal
 from scraper.repositories.episode_repository import EpisodeRepository
 
+from scraper.crawlers.fandom_episode_index import FandomEpisodeIndexCrawler
+
 
 def scrape_episode(
     config,
@@ -21,7 +23,7 @@ def scrape_episode(
     # 2. Fetch HTML
     html = client.fetch(url)
 
-    # 3. Parse episode
+    # 3. Extract structured episode data
     episode_data = extractor.parse(
         html=html,
         episode_number=episode_number,
@@ -35,13 +37,13 @@ def scrape_episode(
         base_url=config.base_url,
     )
 
-    # 5. Save episode
+    # 5. Save episode (idempotent via repository)
     saved_episode = repo.create_episode(
         anime=anime,
         data=episode_data,
     )
 
-    # 6. Save chapter mappings
+    # 6. Normalize chapter range
     chapter_numbers = []
 
     if episode_data.manga_start is not None:
@@ -55,39 +57,41 @@ def scrape_episode(
                 )
             )
 
+    # 7. Save chapter links (dedup handled in repo)
     repo.add_episode_chapters(
         episode=saved_episode,
         chapter_numbers=chapter_numbers,
     )
 
-    # 7. Output
+    # 8. Output
     print(f"Episode ID: {saved_episode.id}")
     print(f"Title: {saved_episode.episode_title}")
-    print(
-        f"Chapters: "
-        f"{episode_data.manga_start} → {episode_data.manga_end}"
-    )
+    print(f"Chapters: {episode_data.manga_start} → {episode_data.manga_end}")
 
 
 def main():
-    # Load configuration
+    # 1. Load config
     config = load_provider_config(
         "configs/fandom/one_piece.json"
     )
 
-    # Initialize components
+    # 2. Core components
     provider = FandomProvider(config)
     client = HttpClient()
     extractor = FandomExtractor(config)
 
+    # 3. Database
     session = SessionLocal()
     repo = EpisodeRepository(session)
 
-    # Get episode list
-    episodes = provider.get_episode_list()
+    # 4. NEW: Episode discovery via crawler
+    crawler = FandomEpisodeIndexCrawler(config.base_url)
+    episode_numbers = crawler.get_episode_list()
 
-    # Scrape all episodes
-    for episode_number, _ in episodes:
+    print(f"Discovered {len(episode_numbers)} episodes")
+
+    # 5. Main pipeline
+    for episode_number in episode_numbers:
         scrape_episode(
             config=config,
             provider=provider,
