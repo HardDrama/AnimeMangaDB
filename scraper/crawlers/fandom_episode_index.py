@@ -33,7 +33,6 @@ class FandomEpisodeIndexCrawler:
             full_url = self.base_url + href
             saga_links.add(full_url)
 
-        print("SAGA PAGES FOUND:")
         for link in sorted(saga_links):
             print(link)
 
@@ -50,7 +49,5 @@ class FandomEpisodeIndexCrawler:
 
                 if match:
                     episode_numbers.add(int(match.group(1)))
-
-        print("EPISODES FOUND:", sorted(episode_numbers))
 
         return sorted(episode_numbers)
