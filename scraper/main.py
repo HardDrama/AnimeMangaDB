@@ -84,8 +84,8 @@ def main():
     episode_numbers = crawler.get_episode_list()
 
     # Limit crawl size during development.
-    # Remove or configure this before full production runs.
-    episode_numbers = episode_numbers[:5]
+    # Configure this in configs/fandom/one_piece.json.
+    episode_numbers = episode_numbers[:config.scraper.max_episodes]
 
     print(f"Discovered {len(episode_numbers)} episodes")
 
