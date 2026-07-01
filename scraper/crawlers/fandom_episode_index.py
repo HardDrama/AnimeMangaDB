@@ -6,7 +6,7 @@ from scraper.core.http_client import HttpClient
 
 class FandomEpisodeIndexCrawler:
     """
-    Robust crawler for Fandom Episode Guide.
+    Discovers episode numbers from One Piece Fandom Episode Guide pages.
     """
 
     def __init__(self, base_url: str):
@@ -19,30 +19,38 @@ class FandomEpisodeIndexCrawler:
         html = self.client.fetch(guide_url)
         soup = BeautifulSoup(html, "html.parser")
 
-        saga_links = set()
+        saga_links: set[str] = set()
 
-        # STEP 1: collect saga links
         for a in soup.find_all("a", href=True):
             href = a["href"]
 
-            if "Episode_Guide/" in href and href != "/wiki/Episode_Guide":
-                saga_links.add(self.base_url + href)
+            if "/wiki/Episode_Guide/" not in href:
+                continue
 
-        episode_numbers = set()
+            # Remove arc fragments like #Arabasta_Arc
+            href = href.split("#")[0]
 
-        # STEP 2: scrape saga pages
-        for url in saga_links:
+            full_url = self.base_url + href
+            saga_links.add(full_url)
+
+        print("SAGA PAGES FOUND:")
+        for link in sorted(saga_links):
+            print(link)
+
+        episode_numbers: set[int] = set()
+
+        for url in sorted(saga_links):
             html = self.client.fetch(url)
             soup = BeautifulSoup(html, "html.parser")
 
-            # Extract ANY text containing "Episode XXX"
-            text = soup.get_text(" ", strip=True)
+            for a in soup.find_all("a", href=True):
+                href = a["href"]
 
-            matches = re.findall(r"Episode\s+(\d+)", text)
+                match = re.search(r"/wiki/Episode_(\d+)$", href)
 
-            for m in matches:
-                num = int(m)
-                if num > 0:
-                    episode_numbers.add(num)
+                if match:
+                    episode_numbers.add(int(match.group(1)))
+
+        print("EPISODES FOUND:", sorted(episode_numbers))
 
         return sorted(episode_numbers)
