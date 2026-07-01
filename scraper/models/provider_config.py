@@ -11,6 +11,7 @@ class ScraperConfig(BaseModel):
     max_episodes: int
     start_episode: int | None = None
     end_episode: int | None = None
+    full_crawl: bool = False
 
 
 class ProviderConfig(BaseModel):

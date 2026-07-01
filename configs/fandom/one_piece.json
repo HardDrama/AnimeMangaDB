@@ -10,6 +10,7 @@
     "scraper": {
         "max_episodes": 5,
         "start_episode": null,
-        "end_episode": null
+        "end_episode": null,
+        "full_crawl": true
     }
 }
