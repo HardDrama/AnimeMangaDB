@@ -24,8 +24,6 @@ class FandomExtractor:
 
         chapter_numbers = extract_chapter_numbers(chapter_text)
 
-        print("DEBUG RETURN NUMBERS:", chapter_numbers)
-
         manga_start = chapter_numbers[0] if len(chapter_numbers) >= 1 else None
         manga_end = chapter_numbers[-1] if len(chapter_numbers) >= 1 else None
 
