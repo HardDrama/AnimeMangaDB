@@ -83,6 +83,9 @@ def main():
     crawler = FandomEpisodeIndexCrawler(config.base_url)
     episode_numbers = crawler.get_episode_list()
 
+    # Development limit
+    episode_numbers = episode_numbers[:5]
+
     print(f"Discovered {len(episode_numbers)} episodes")
 
     for episode_number in episode_numbers:
