@@ -83,15 +83,19 @@ def main():
     session = SessionLocal()
     repo = EpisodeRepository(session)
 
-    # Scrape one episode
-    scrape_episode(
-        config=config,
-        provider=provider,
-        client=client,
-        extractor=extractor,
-        repo=repo,
-        episode_number=1130,
-    )
+    # Get episode list
+    episodes = provider.get_episode_list()
+
+    # Scrape all episodes
+    for episode_number, _ in episodes:
+        scrape_episode(
+            config=config,
+            provider=provider,
+            client=client,
+            extractor=extractor,
+            repo=repo,
+            episode_number=episode_number,
+        )
 
 
 if __name__ == "__main__":
