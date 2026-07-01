@@ -85,6 +85,20 @@ def main():
 
     # Limit crawl size during development.
     # Configure this in configs/fandom/one_piece.json.
+    if config.scraper.start_episode is not None:
+        episode_numbers = [
+            episode
+            for episode in episode_numbers
+            if episode >= config.scraper.start_episode
+        ]
+
+    if config.scraper.end_episode is not None:
+        episode_numbers = [
+            episode
+            for episode in episode_numbers
+            if episode <= config.scraper.end_episode
+        ]
+
     episode_numbers = episode_numbers[:config.scraper.max_episodes]
 
     print(f"Discovered {len(episode_numbers)} episodes")

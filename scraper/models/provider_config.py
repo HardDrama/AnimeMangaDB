@@ -9,6 +9,8 @@ class SelectorConfig(BaseModel):
 
 class ScraperConfig(BaseModel):
     max_episodes: int
+    start_episode: int | None = None
+    end_episode: int | None = None
 
 
 class ProviderConfig(BaseModel):
