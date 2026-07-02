@@ -83,9 +83,6 @@ def main():
     crawler = FandomEpisodeIndexCrawler(config.base_url)
     episode_numbers = crawler.get_episode_list()
 
-    # Limit crawl size during development.
-    # Configure this in configs/fandom/one_piece.json.
-    # Filter by episode range (optional)
     if config.scraper.start_episode is not None:
         episode_numbers = [
             episode
@@ -100,21 +97,23 @@ def main():
             if episode <= config.scraper.end_episode
         ]
 
-    # Apply development limit unless performing a full crawl
     if not config.scraper.full_crawl:
         episode_numbers = episode_numbers[
             :config.scraper.max_episodes
         ]
 
-    print(f"Discovered {len(episode_numbers)} episodes")
-
     total = len(episode_numbers)
+
+    print(f"Discovered {total} episodes")
 
     for index, episode_number in enumerate(
         episode_numbers,
         start=1,
     ):
-        print(f"[{index}/{total}] Scraping Episode {episode_number}")
+        print(
+            f"[{index}/{total}] "
+            f"Scraping Episode {episode_number}"
+        )
 
         scrape_episode(
             config=config,
