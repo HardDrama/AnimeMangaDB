@@ -8,6 +8,8 @@ from scraper.repositories.episode_repository import EpisodeRepository
 
 from scraper.crawlers.fandom_episode_index import FandomEpisodeIndexCrawler
 
+from time import perf_counter
+
 
 def scrape_episode(
     config,
@@ -73,6 +75,8 @@ def main():
         "configs/fandom/one_piece.json"
     )
 
+    start_time = perf_counter()
+
     provider = FandomProvider(config)
     client = HttpClient()
     extractor = FandomExtractor(config)
@@ -123,6 +127,10 @@ def main():
             repo=repo,
             episode_number=episode_number,
         )
+
+    elapsed = perf_counter() - start_time
+
+    print(f"Crawl finished in {elapsed:.2f} seconds")
 
 
 if __name__ == "__main__":
