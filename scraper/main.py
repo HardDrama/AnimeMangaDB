@@ -95,6 +95,7 @@ def main():
     processed_count = 0
     with_chapters_count = 0
     without_chapters_count = 0
+    failed_episodes = []
 
     if config.scraper.start_episode is not None:
         episode_numbers = [
@@ -128,21 +129,32 @@ def main():
             f"Scraping Episode {episode_number}"
         )
 
-        result = scrape_episode(
-            config=config,
-            provider=provider,
-            client=client,
-            extractor=extractor,
-            repo=repo,
-            episode_number=episode_number,
-        )
+        try:
+            result = scrape_episode(
+                config=config,
+                provider=provider,
+                client=client,
+                extractor=extractor,
+                repo=repo,
+                episode_number=episode_number,
+            )
 
-        processed_count += 1
+            processed_count += 1
 
-        if result["has_chapters"]:
-            with_chapters_count += 1
-        else:
-            without_chapters_count += 1
+            if result["has_chapters"]:
+                with_chapters_count += 1
+            else:
+                without_chapters_count += 1
+
+        except Exception as error:
+            failed_episodes.append(
+                {
+                    "episode_number": episode_number,
+                    "error": str(error),
+                }
+            )
+
+            print(f"FAILED Episode {episode_number}: {error}")
 
     elapsed = perf_counter() - start_time
 
@@ -151,6 +163,15 @@ def main():
     print(f"Episodes processed: {processed_count}")
     print(f"Episodes with chapters: {with_chapters_count}")
     print(f"Episodes without chapters: {without_chapters_count}")
+    print(f"Episodes failed: {len(failed_episodes)}")
+
+    if failed_episodes:
+        print("Failed episodes:")
+        for failed in failed_episodes:
+            print(
+                f"- Episode {failed['episode_number']}: "
+                f"{failed['error']}"
+            )
 
 
 if __name__ == "__main__":
