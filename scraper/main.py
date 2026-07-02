@@ -108,7 +108,14 @@ def main():
 
     print(f"Discovered {len(episode_numbers)} episodes")
 
-    for episode_number in episode_numbers:
+    total = len(episode_numbers)
+
+    for index, episode_number in enumerate(
+        episode_numbers,
+        start=1,
+    ):
+        print(f"[{index}/{total}] Scraping Episode {episode_number}")
+
         scrape_episode(
             config=config,
             provider=provider,
