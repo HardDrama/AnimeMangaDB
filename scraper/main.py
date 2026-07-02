@@ -69,6 +69,11 @@ def scrape_episode(
     print(f"Title: {saved_episode.episode_title}")
     print(f"Chapters: {chapter_display}")
 
+    return {
+        "episode_number": episode_number,
+        "has_chapters": episode_data.manga_start is not None,
+    }
+
 
 def main():
     config = load_provider_config(
@@ -86,6 +91,10 @@ def main():
 
     crawler = FandomEpisodeIndexCrawler(config.base_url)
     episode_numbers = crawler.get_episode_list()
+
+    processed_count = 0
+    with_chapters_count = 0
+    without_chapters_count = 0
 
     if config.scraper.start_episode is not None:
         episode_numbers = [
@@ -119,7 +128,7 @@ def main():
             f"Scraping Episode {episode_number}"
         )
 
-        scrape_episode(
+        result = scrape_episode(
             config=config,
             provider=provider,
             client=client,
@@ -128,9 +137,20 @@ def main():
             episode_number=episode_number,
         )
 
+        processed_count += 1
+
+        if result["has_chapters"]:
+            with_chapters_count += 1
+        else:
+            without_chapters_count += 1
+
     elapsed = perf_counter() - start_time
 
     print(f"Crawl finished in {elapsed:.2f} seconds")
+    print("Crawl summary:")
+    print(f"Episodes processed: {processed_count}")
+    print(f"Episodes with chapters: {with_chapters_count}")
+    print(f"Episodes without chapters: {without_chapters_count}")
 
 
 if __name__ == "__main__":
