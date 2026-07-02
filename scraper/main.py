@@ -158,8 +158,9 @@ def main():
 
     elapsed = perf_counter() - start_time
 
-    print(f"Crawl finished in {elapsed:.2f} seconds")
-    print("Crawl summary:")
+    print("\nCrawl summary")
+    print("-------------")
+    print(f"Elapsed time: {elapsed:.2f} seconds")
     print(f"Episodes processed: {processed_count}")
     print(f"Episodes with chapters: {with_chapters_count}")
     print(f"Episodes without chapters: {without_chapters_count}")
