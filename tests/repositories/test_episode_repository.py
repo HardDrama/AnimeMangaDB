@@ -211,3 +211,29 @@ def test_episode_needs_update_returns_true_when_title_changes():
         episode=episode,
         data=changed_data,
     ) is True
+
+def test_create_episode_updates_existing_episode_when_data_changes():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="One Piece",
+        provider="fandom",
+        base_url="https://onepiece.fandom.com",
+    )
+
+    original = repo.create_episode(
+        anime=anime,
+        data=make_episode_data(),
+    )
+
+    changed_data = make_episode_data()
+    changed_data.episode_title = "Updated Episode 1130"
+
+    updated = repo.create_episode(
+        anime=anime,
+        data=changed_data,
+    )
+
+    assert original.id == updated.id
+    assert updated.episode_title == "Updated Episode 1130"
