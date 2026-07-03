@@ -11,6 +11,7 @@
         "max_episodes": 5,
         "start_episode": null,
         "end_episode": null,
-        "full_crawl": false
+        "full_crawl": false,
+        "config_path": "configs/fandom/naruto.json"
     }
 }

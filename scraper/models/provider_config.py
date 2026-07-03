@@ -12,6 +12,7 @@ class ScraperConfig(BaseModel):
     start_episode: int | None = None
     end_episode: int | None = None
     full_crawl: bool = False
+    config_path: str | None = None
 
 
 class ProviderConfig(BaseModel):

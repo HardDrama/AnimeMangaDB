@@ -11,6 +11,7 @@
         "max_episodes": 5,
         "start_episode": 11,
         "end_episode": 15,
-        "full_crawl": false
+        "full_crawl": false,
+        "config_path": "configs/fandom/one_piece.json"
     }
 }
