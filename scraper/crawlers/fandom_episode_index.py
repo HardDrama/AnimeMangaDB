@@ -33,9 +33,6 @@ class FandomEpisodeIndexCrawler:
             full_url = self.base_url + href
             saga_links.add(full_url)
 
-        for link in sorted(saga_links):
-            print(link)
-
         episode_numbers: set[int] = set()
 
         for url in sorted(saga_links):

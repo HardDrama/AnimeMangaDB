@@ -53,10 +53,14 @@ def scrape_episode(
                 )
             )
 
-    repo.add_episode_chapters(
+    if repo.chapter_mappings_need_update(
         episode=saved_episode,
         chapter_numbers=chapter_numbers,
-    )
+    ):
+        repo.replace_episode_chapters(
+            episode=saved_episode,
+            chapter_numbers=chapter_numbers,
+        )
 
     if episode_data.manga_start is None:
         chapter_display = "No chapter mapping found"
