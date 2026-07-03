@@ -237,3 +237,54 @@ def test_create_episode_updates_existing_episode_when_data_changes():
 
     assert original.id == updated.id
     assert updated.episode_title == "Updated Episode 1130"
+
+def test_chapter_mappings_need_update_returns_false_when_chapters_match():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="One Piece",
+        provider="fandom",
+        base_url="https://onepiece.fandom.com",
+    )
+
+    episode = repo.create_episode(
+        anime=anime,
+        data=make_episode_data(),
+    )
+
+    repo.add_episode_chapters(
+        episode=episode,
+        chapter_numbers=[1096],
+    )
+
+    assert repo.chapter_mappings_need_update(
+        episode=episode,
+        chapter_numbers=[1096],
+    ) is False
+
+
+def test_chapter_mappings_need_update_returns_true_when_chapters_change():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="One Piece",
+        provider="fandom",
+        base_url="https://onepiece.fandom.com",
+    )
+
+    episode = repo.create_episode(
+        anime=anime,
+        data=make_episode_data(),
+    )
+
+    repo.add_episode_chapters(
+        episode=episode,
+        chapter_numbers=[1096],
+    )
+
+    assert repo.chapter_mappings_need_update(
+        episode=episode,
+        chapter_numbers=[1097],
+    ) is True
