@@ -51,7 +51,16 @@ class EpisodeRepository:
         )
 
         if existing:
-            return existing
+            if self.episode_needs_update(
+                episode=existing,
+                data=data,
+            ):
+                return self.update_episode(
+                    episode=existing,
+                    data=data,
+                )
+
+            return existing 
         
         episode = Episode(
             anime_id=anime.id,
@@ -124,6 +133,21 @@ class EpisodeRepository:
             or episode.arc != data.arc
             or episode.source_url != str(data.source_url)
         )
+    
+    def update_episode(
+        self,
+        episode: Episode,
+        data: EpisodeData,
+    ) -> Episode:
+        episode.episode_title = data.episode_title
+        episode.arc = data.arc
+        episode.source_url = str(data.source_url)
+        episode.last_updated = data.last_updated
+
+        self.session.commit()
+        self.session.refresh(episode)
+
+        return episode
     
     def episode_has_chapter(
         self,
