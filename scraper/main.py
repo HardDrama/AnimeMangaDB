@@ -1,4 +1,4 @@
-import sys
+import argparse
 
 from scraper.core.http_client import HttpClient
 from scraper.extractors.fandom_extractor import FandomExtractor
@@ -82,11 +82,19 @@ def scrape_episode(
 
 
 def main():
-    config_path = (
-        sys.argv[1]
-        if len(sys.argv) > 1
-        else "configs/fandom/one_piece.json"
+    parser = argparse.ArgumentParser(
+        description="AnimeMangaDB Scraper"
     )
+
+    parser.add_argument(
+        "--config",
+        default="configs/fandom/one_piece.json",
+        help="Path to provider configuration file",
+    )
+
+    args = parser.parse_args()
+
+    config_path = args.config
 
     config = load_provider_config(config_path)
 
