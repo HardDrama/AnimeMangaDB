@@ -38,6 +38,31 @@ def inspect(url: str):
             )
         )
 
+    print()
+    print("Infobox data-source fields:")
+    print("---------------------------")
+
+    for element in soup.select("[data-source]"):
+        print(element["data-source"])
+
+    print()
+    print("Tables found:")
+    print("-------------")
+
+    tables = soup.find_all("table")
+
+    print(f"{len(tables)} table(s)")
+
+    print()
+    print("Links containing 'Episode_Guide':")
+    print("---------------------------------")
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+
+        if "Episode_Guide" in href:
+            print(href)
+
 
 if __name__ == "__main__":
     inspect(
