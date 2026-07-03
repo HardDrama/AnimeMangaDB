@@ -33,6 +33,12 @@ def inspect(url: str):
 
     print(f"Saved HTML to: {output_file}")
 
+    print()
+    print("Inspection summary:")
+    print("-------------------")
+    print(f"URL: {url}")
+    print(f"Saved HTML: {output_file}")
+
     soup = BeautifulSoup(html, "html.parser")
 
     print()
