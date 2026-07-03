@@ -76,6 +76,21 @@ def inspect(url: str):
     print(f"{len(tables)} table(s)")
 
     print()
+    print("Table previews:")
+    print("---------------")
+
+    for index, table in enumerate(tables, start=1):
+        print(f"Table {index}:")
+
+        rows = table.find_all("tr")[:3]
+
+        for row in rows:
+            text = row.get_text(" ", strip=True)
+            print(f"- {text}")
+
+        print()
+
+    print()
     print("Links containing 'Episode_Guide':")
     print("---------------------------------")
 
