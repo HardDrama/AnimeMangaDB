@@ -110,6 +110,12 @@ def main():
         help="Override the ending episode number",
     )
 
+    parser.add_argument(
+        "--max-episodes",
+        type=int,
+        help="Override the maximum number of episodes to process",
+    )
+
     args = parser.parse_args()
 
     config_path = args.config
@@ -124,6 +130,9 @@ def main():
 
     if args.end_episode is not None:
         config.scraper.end_episode = args.end_episode
+
+    if args.max_episodes is not None:
+        config.scraper.max_episodes = args.max_episodes
 
     print(f"Series: {config.series}")
     print(f"Config: {config_path}")
