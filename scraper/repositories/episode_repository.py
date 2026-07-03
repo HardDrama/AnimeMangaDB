@@ -1,4 +1,4 @@
-from sqlalchemy import select
+from sqlalchemy import select, delete
 from sqlalchemy.orm import Session
 
 from scraper.database.models import (
@@ -101,6 +101,23 @@ class EpisodeRepository:
         )
 
         return existing_chapters != sorted(chapter_numbers)
+    
+    def replace_episode_chapters(
+        self,
+        episode: Episode,
+        chapter_numbers: list[int],
+    ) -> None:
+        stmt = delete(EpisodeChapter).where(
+            EpisodeChapter.episode_id == episode.id
+        )
+
+        self.session.execute(stmt)
+        self.session.commit()
+
+        self.add_episode_chapters(
+            episode=episode,
+            chapter_numbers=chapter_numbers,
+        )
     
     def add_episode_chapters(
         self,
