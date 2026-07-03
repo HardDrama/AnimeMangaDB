@@ -1,0 +1,16 @@
+{
+    "series": "Naruto",
+    "base_url": "https://naruto.fandom.com",
+    "episode_path": "/wiki/Episode_{episode}",
+    "selectors": {
+        "title": "h1.page-header__title",
+        "chapter": "div[data-source='chapter'] .pi-data-value",
+        "arc": ""
+    },
+    "scraper": {
+        "max_episodes": 5,
+        "start_episode": null,
+        "end_episode": null,
+        "full_crawl": false
+    }
+}
