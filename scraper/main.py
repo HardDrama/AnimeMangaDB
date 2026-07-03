@@ -92,11 +92,20 @@ def main():
         help="Path to provider configuration file",
     )
 
+    parser.add_argument(
+        "--full-crawl",
+        action="store_true",
+        help="Ignore max_episodes and crawl every discovered episode",
+    )
+
     args = parser.parse_args()
 
     config_path = args.config
 
     config = load_provider_config(config_path)
+    
+    if args.full_crawl:
+        config.scraper.full_crawl = True
 
     print(f"Series: {config.series}")
     print(f"Config: {config_path}")

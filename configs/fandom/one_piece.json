@@ -9,8 +9,8 @@
     },
     "scraper": {
         "max_episodes": 5,
-        "start_episode": 11,
-        "end_episode": 15,
+        "start_episode": null,
+        "end_episode": null,
         "full_crawl": false,
         "config_path": "configs/fandom/one_piece.json"
     }
