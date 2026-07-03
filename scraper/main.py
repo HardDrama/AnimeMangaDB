@@ -1,3 +1,5 @@
+import sys
+
 from scraper.core.http_client import HttpClient
 from scraper.extractors.fandom_extractor import FandomExtractor
 from scraper.providers.fandom_provider import FandomProvider
@@ -80,7 +82,11 @@ def scrape_episode(
 
 
 def main():
-    config_path = "configs/fandom/one_piece.json"
+    config_path = (
+        sys.argv[1]
+        if len(sys.argv) > 1
+        else "configs/fandom/one_piece.json"
+    )
 
     config = load_provider_config(config_path)
 
