@@ -114,6 +114,17 @@ class EpisodeRepository:
 
         return self.session.execute(stmt).scalar_one_or_none()
     
+    def episode_needs_update(
+        self,
+        episode: Episode,
+        data: EpisodeData,
+    ) -> bool:
+        return (
+            episode.episode_title != data.episode_title
+            or episode.arc != data.arc
+            or episode.source_url != str(data.source_url)
+        )
+    
     def episode_has_chapter(
         self,
         episode: Episode,
