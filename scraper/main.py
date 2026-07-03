@@ -80,9 +80,9 @@ def scrape_episode(
 
 
 def main():
-    config = load_provider_config(
-        "configs/fandom/one_piece.json"
-    )
+    config_path = "configs/fandom/one_piece.json"
+
+    config = load_provider_config(config_path)
 
     start_time = perf_counter()
 
