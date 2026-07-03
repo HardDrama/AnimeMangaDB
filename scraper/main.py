@@ -116,6 +116,12 @@ def main():
         help="Override the maximum number of episodes to process",
     )
 
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Preview episodes without scraping or saving",
+    )
+
     args = parser.parse_args()
 
     config_path = args.config
@@ -172,6 +178,14 @@ def main():
         episode_numbers = episode_numbers[
             :config.scraper.max_episodes
         ]
+
+    if args.dry_run:
+        print("Dry run mode enabled.")
+
+        for episode_number in episode_numbers:
+            print(f"Would scrape Episode {episode_number}")
+
+        return
 
     total = len(episode_numbers)
 
