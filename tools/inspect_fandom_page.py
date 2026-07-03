@@ -12,10 +12,17 @@ def inspect(url: str):
 
     html = client.fetch(url)
 
-    Path("inspect.html").write_text(
+    output_dir = Path("inspect_output")
+    output_dir.mkdir(exist_ok=True)
+
+    output_file = output_dir / "naruto_episode_1.html"
+
+    output_file.write_text(
         html,
         encoding="utf-8",
     )
+
+    print(f"Saved HTML to: {output_file}")
 
     soup = BeautifulSoup(html, "html.parser")
 
