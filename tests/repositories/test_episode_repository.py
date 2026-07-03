@@ -167,3 +167,47 @@ def test_add_episode_chapters_does_not_duplicate_links():
     chapters = session.execute(stmt).scalars().all()
 
     assert len(chapters) == 1
+
+def test_episode_needs_update_returns_false_when_data_matches():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="One Piece",
+        provider="fandom",
+        base_url="https://onepiece.fandom.com",
+    )
+
+    episode = repo.create_episode(
+        anime=anime,
+        data=make_episode_data(),
+    )
+
+    assert repo.episode_needs_update(
+        episode=episode,
+        data=make_episode_data(),
+    ) is False
+
+
+def test_episode_needs_update_returns_true_when_title_changes():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="One Piece",
+        provider="fandom",
+        base_url="https://onepiece.fandom.com",
+    )
+
+    episode = repo.create_episode(
+        anime=anime,
+        data=make_episode_data(),
+    )
+
+    changed_data = make_episode_data()
+    changed_data.episode_title = "Updated Episode 1130"
+
+    assert repo.episode_needs_update(
+        episode=episode,
+        data=changed_data,
+    ) is True
