@@ -288,3 +288,32 @@ def test_chapter_mappings_need_update_returns_true_when_chapters_change():
         episode=episode,
         chapter_numbers=[1097],
     ) is True
+
+def test_replace_episode_chapters_replaces_old_mappings():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="One Piece",
+        provider="fandom",
+        base_url="https://onepiece.fandom.com",
+    )
+
+    episode = repo.create_episode(
+        anime=anime,
+        data=make_episode_data(),
+    )
+
+    repo.add_episode_chapters(
+        episode=episode,
+        chapter_numbers=[1096],
+    )
+
+    repo.replace_episode_chapters(
+        episode=episode,
+        chapter_numbers=[1097],
+    )
+
+    chapters = repo.get_chapter_numbers_for_episode(episode)
+
+    assert chapters == [1097]
