@@ -98,6 +98,18 @@ def main():
         help="Ignore max_episodes and crawl every discovered episode",
     )
 
+    parser.add_argument(
+        "--start-episode",
+        type=int,
+        help="Override the starting episode number",
+    )
+
+    parser.add_argument(
+        "--end-episode",
+        type=int,
+        help="Override the ending episode number",
+    )
+
     args = parser.parse_args()
 
     config_path = args.config
@@ -106,6 +118,12 @@ def main():
     
     if args.full_crawl:
         config.scraper.full_crawl = True
+
+    if args.start_episode is not None:
+        config.scraper.start_episode = args.start_episode
+
+    if args.end_episode is not None:
+        config.scraper.end_episode = args.end_episode
 
     print(f"Series: {config.series}")
     print(f"Config: {config_path}")
