@@ -85,6 +85,17 @@ def inspect(url: str):
         if "Episode_Guide" in href:
             print(href)
 
+    print()
+    print("First 20 links:")
+    print("---------------")
+
+    for a in soup.find_all("a", href=True)[:20]:
+        print(
+            a.get_text(" ", strip=True),
+            "=>",
+            a["href"],
+        )
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
