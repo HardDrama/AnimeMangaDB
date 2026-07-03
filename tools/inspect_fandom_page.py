@@ -1,3 +1,5 @@
+import argparse
+
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -15,7 +17,14 @@ def inspect(url: str):
     output_dir = Path("inspect_output")
     output_dir.mkdir(exist_ok=True)
 
-    output_file = output_dir / "naruto_episode_1.html"
+    safe_name = (
+        url.replace("https://", "")
+        .replace("http://", "")
+        .replace("/", "_")
+        .replace(":", "_")
+    )
+
+    output_file = output_dir / f"{safe_name}.html"
 
     output_file.write_text(
         html,
@@ -72,6 +81,17 @@ def inspect(url: str):
 
 
 if __name__ == "__main__":
-    inspect(
-        "https://naruto.fandom.com/wiki/Episode_1"
+    parser = argparse.ArgumentParser(
+        description="Inspect a Fandom page structure"
     )
+
+    parser.add_argument(
+        "url",
+        nargs="?",
+        default="https://naruto.fandom.com/wiki/Episode_1",
+        help="Fandom page URL to inspect",
+    )
+
+    args = parser.parse_args()
+
+    inspect(args.url)
