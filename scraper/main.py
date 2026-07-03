@@ -84,6 +84,9 @@ def main():
 
     config = load_provider_config(config_path)
 
+    print(f"Series: {config.series}")
+    print(f"Config: {config_path}")
+
     start_time = perf_counter()
 
     provider = FandomProvider(config)
