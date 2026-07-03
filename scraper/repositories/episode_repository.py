@@ -77,6 +77,31 @@ class EpisodeRepository:
 
         return episode
     
+    def get_chapter_numbers_for_episode(
+        self,
+        episode: Episode,
+    ) -> list[int]:
+        stmt = (
+            select(EpisodeChapter.chapter_number)
+            .where(EpisodeChapter.episode_id == episode.id)
+        )
+
+        result = self.session.execute(stmt).scalars().all()
+
+        return sorted(result)
+
+
+    def chapter_mappings_need_update(
+        self,
+        episode: Episode,
+        chapter_numbers: list[int],
+    ) -> bool:
+        existing_chapters = self.get_chapter_numbers_for_episode(
+            episode
+        )
+
+        return existing_chapters != sorted(chapter_numbers)
+    
     def add_episode_chapters(
         self,
         episode: Episode,
