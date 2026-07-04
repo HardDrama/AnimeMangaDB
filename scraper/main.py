@@ -1,14 +1,11 @@
 import argparse
 
 from scraper.core.http_client import HttpClient
-from scraper.extractors.factory import create_extractor
-from scraper.providers.factory import create_provider
+from scraper.services.scraper_services import ScraperServices
 from scraper.utils.config_loader import load_provider_config
 
 from scraper.database.session import SessionLocal
-from scraper.repositories.factory import create_episode_repository
 
-from scraper.crawlers.factory import create_episode_index_crawler
 from scraper.crawlers.fandom_episode_index import FandomEpisodeIndexCrawler
 from scraper.crawlers.naruto_episode_index import NarutoEpisodeIndexCrawler
 
@@ -148,14 +145,19 @@ def main():
 
     start_time = perf_counter()
 
-    provider = create_provider(config)
     client = HttpClient()
-    extractor = create_extractor(config)
 
     session = SessionLocal()
-    repo = create_episode_repository(session)
+    services = ScraperServices(
+        config=config,
+        session=session,
+    )
 
-    crawler = create_episode_index_crawler(config)
+    provider = services.provider
+    extractor = services.extractor
+    repo = services.repository
+    crawler = services.crawler
+
     episode_refs = crawler.get_episode_list()
 
     processed_count = 0
