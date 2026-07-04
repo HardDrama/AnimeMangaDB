@@ -1,7 +1,7 @@
 import argparse
 
 from scraper.core.http_client import HttpClient
-from scraper.extractors.fandom_extractor import FandomExtractor
+from scraper.extractors.factory import create_extractor
 from scraper.providers.factory import create_provider
 from scraper.utils.config_loader import load_provider_config
 
@@ -150,7 +150,7 @@ def main():
 
     provider = create_provider(config)
     client = HttpClient()
-    extractor = FandomExtractor(config)
+    extractor = create_extractor(config)
 
     session = SessionLocal()
     repo = EpisodeRepository(session)
