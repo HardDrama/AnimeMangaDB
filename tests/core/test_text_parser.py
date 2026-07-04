@@ -27,3 +27,6 @@ def test_extract_chapter_numbers_ignores_page_numbers():
 
 def test_extract_chapter_numbers_no_match():
     assert extract_chapter_numbers("No manga equivalent") == []
+
+def test_extract_chapter_numbers_with_hash_symbol():
+    assert extract_chapter_numbers("Naruto Chapter #1") == [1]
