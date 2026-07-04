@@ -156,10 +156,10 @@ def main():
 
     if config.series == "Naruto":
         crawler = NarutoEpisodeIndexCrawler(config.base_url)
-        episode_refs = crawler.get_episode_list()
     else:
         crawler = FandomEpisodeIndexCrawler(config.base_url)
-        episode_refs = crawler.get_episode_list()
+
+    episode_refs = crawler.get_episode_list()
 
     processed_count = 0
     with_chapters_count = 0
@@ -188,8 +188,11 @@ def main():
     if args.dry_run:
         print("Dry run mode enabled.")
 
-        for episode_number, episode_url in episode_refs:
-            print(f"Would scrape Episode {episode_number}: {episode_url}")
+        for episode_ref in episode_refs:
+            print(
+                f"Would scrape Episode "
+                f"{episode_ref.episode_number}: {episode_ref.url}"
+            )
 
         return
 
