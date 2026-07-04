@@ -65,7 +65,16 @@ def inspect(url: str):
     print("---------------------------")
 
     for element in soup.select("[data-source]"):
-        print(element["data-source"])
+        source = element.get("data-source", "")
+
+        value = element.select_one(".pi-data-value")
+
+        if value:
+            text = value.get_text(" ", strip=True)
+        else:
+            text = "<no .pi-data-value>"
+
+        print(f"{source}: {text}")
 
     print()
     print("Tables found:")

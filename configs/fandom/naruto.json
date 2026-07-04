@@ -4,8 +4,8 @@
     "episode_path": "/wiki/Episode_{episode}",
     "selectors": {
         "title": "h1.page-header__title",
-        "chapter": "div[data-source='chapter'] .pi-data-value",
-        "arc": ""
+        "chapter": "div[data-source='chapters'] .pi-data-value",
+        "arc": "div[data-source='arc'] .pi-data-value"
     },
     "scraper": {
         "max_episodes": 5,

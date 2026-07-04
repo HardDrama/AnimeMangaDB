@@ -14,5 +14,11 @@ def extract_chapter_numbers(text: str) -> list[int]:
     """
     Extract chapter numbers while ignoring page numbers.
     """
-    matches = re.findall(r"Chapter\s*(\d+)", text, flags=re.IGNORECASE)
-    return [int(m) for m in matches]
+
+    matches = re.findall(
+        r"Chapter[s]?\s*#?\s*(\d+)",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    return [int(match) for match in matches]

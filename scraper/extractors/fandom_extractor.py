@@ -18,9 +18,7 @@ class FandomExtractor:
 
         title = required_text(engine, "title")
 
-        chapter_node = soup.select_one("div[data-source='chapter'] a")
-
-        chapter_text = chapter_node.get_text() if chapter_node else ""
+        chapter_text = engine.get_text("chapter")
 
         chapter_numbers = extract_chapter_numbers(chapter_text)
 
