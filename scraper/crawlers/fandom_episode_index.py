@@ -2,10 +2,11 @@ from bs4 import BeautifulSoup
 import re
 
 from scraper.core.http_client import HttpClient
+from scraper.crawlers.base_episode_index import BaseEpisodeIndexCrawler
 from scraper.models import EpisodeReference
 
 
-class FandomEpisodeIndexCrawler:
+class FandomEpisodeIndexCrawler(BaseEpisodeIndexCrawler):
     """
     Discovers episode numbers from One Piece Fandom Episode Guide pages.
     """

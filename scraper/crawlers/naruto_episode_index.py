@@ -1,10 +1,11 @@
 from bs4 import BeautifulSoup
 
 from scraper.core.http_client import HttpClient
+from scraper.crawlers.base_episode_index import BaseEpisodeIndexCrawler
 from scraper.models import EpisodeReference
 
 
-class NarutoEpisodeIndexCrawler:
+class NarutoEpisodeIndexCrawler(BaseEpisodeIndexCrawler):
     """
     Discovers original Naruto episode URLs from Narutopedia.
     """
