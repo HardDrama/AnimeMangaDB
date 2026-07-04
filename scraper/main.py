@@ -8,6 +8,7 @@ from scraper.utils.config_loader import load_provider_config
 from scraper.database.session import SessionLocal
 from scraper.repositories.episode_repository import EpisodeRepository
 
+from scraper.crawlers.factory import create_episode_index_crawler
 from scraper.crawlers.fandom_episode_index import FandomEpisodeIndexCrawler
 from scraper.crawlers.naruto_episode_index import NarutoEpisodeIndexCrawler
 
@@ -154,11 +155,7 @@ def main():
     session = SessionLocal()
     repo = EpisodeRepository(session)
 
-    if config.series == "Naruto":
-        crawler = NarutoEpisodeIndexCrawler(config.base_url)
-    else:
-        crawler = FandomEpisodeIndexCrawler(config.base_url)
-
+    crawler = create_episode_index_crawler(config)
     episode_refs = crawler.get_episode_list()
 
     processed_count = 0
