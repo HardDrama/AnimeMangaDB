@@ -21,8 +21,9 @@ def scrape_episode(
     extractor,
     repo,
     episode_number: int,
+    episode_url: str | None = None,
 ):
-    url = provider.build_episode_url(episode_number)
+    url = episode_url or provider.build_episode_url(episode_number)
 
     html = client.fetch(url)
 
@@ -155,14 +156,16 @@ def main():
 
     if config.series == "Naruto":
         crawler = NarutoEpisodeIndexCrawler(config.base_url)
-        episodes = crawler.get_episode_list()
-        episode_numbers = [
-            episode_number
-            for episode_number, _ in episodes
-        ]
+        episode_refs = crawler.get_episode_list()
     else:
         crawler = FandomEpisodeIndexCrawler(config.base_url)
-        episode_numbers = crawler.get_episode_list()
+        episode_refs = [
+            (
+                episode_number,
+                provider.build_episode_url(episode_number),
+            )
+            for episode_number in crawler.get_episode_list()
+        ]
 
     processed_count = 0
     with_chapters_count = 0
@@ -170,38 +173,38 @@ def main():
     failed_episodes = []
 
     if config.scraper.start_episode is not None:
-        episode_numbers = [
-            episode
-            for episode in episode_numbers
-            if episode >= config.scraper.start_episode
+        episode_refs = [
+            ref
+            for ref in episode_refs
+            if ref[0] >= config.scraper.start_episode
         ]
 
     if config.scraper.end_episode is not None:
-        episode_numbers = [
-            episode
-            for episode in episode_numbers
-            if episode <= config.scraper.end_episode
+        episode_refs = [
+            ref
+            for ref in episode_refs
+            if ref[0] <= config.scraper.end_episode
         ]
 
     if not config.scraper.full_crawl:
-        episode_numbers = episode_numbers[
+        episode_refs = episode_refs[
             :config.scraper.max_episodes
         ]
 
     if args.dry_run:
         print("Dry run mode enabled.")
 
-        for episode_number in episode_numbers:
-            print(f"Would scrape Episode {episode_number}")
+        for episode_number, episode_url in episode_refs:
+            print(f"Would scrape Episode {episode_number}: {episode_url}")
 
         return
 
-    total = len(episode_numbers)
+    total = len(episode_refs)
 
     print(f"Discovered {total} episodes")
 
-    for index, episode_number in enumerate(
-        episode_numbers,
+    for index, (episode_number, episode_url) in enumerate(
+        episode_refs,
         start=1,
     ):
         print(
@@ -217,6 +220,7 @@ def main():
                 extractor=extractor,
                 repo=repo,
                 episode_number=episode_number,
+                episode_url=episode_url,
             )
 
             processed_count += 1

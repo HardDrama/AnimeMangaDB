@@ -18,7 +18,7 @@ class FandomExtractor:
 
         title = required_text(engine, "title")
 
-        chapter_text = engine.get_text("chapter")
+        chapter_text = engine.get_text("chapter") or ""
 
         chapter_numbers = extract_chapter_numbers(chapter_text)
 
