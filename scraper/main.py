@@ -2,7 +2,7 @@ import argparse
 
 from scraper.core.http_client import HttpClient
 from scraper.extractors.fandom_extractor import FandomExtractor
-from scraper.providers.fandom_provider import FandomProvider
+from scraper.providers.factory import create_provider
 from scraper.utils.config_loader import load_provider_config
 
 from scraper.database.session import SessionLocal
@@ -148,7 +148,7 @@ def main():
 
     start_time = perf_counter()
 
-    provider = FandomProvider(config)
+    provider = create_provider(config)
     client = HttpClient()
     extractor = FandomExtractor(config)
 
