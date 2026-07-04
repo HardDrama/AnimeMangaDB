@@ -159,13 +159,7 @@ def main():
         episode_refs = crawler.get_episode_list()
     else:
         crawler = FandomEpisodeIndexCrawler(config.base_url)
-        episode_refs = [
-            (
-                episode_number,
-                provider.build_episode_url(episode_number),
-            )
-            for episode_number in crawler.get_episode_list()
-        ]
+        episode_refs = crawler.get_episode_list()
 
     processed_count = 0
     with_chapters_count = 0
@@ -176,14 +170,14 @@ def main():
         episode_refs = [
             ref
             for ref in episode_refs
-            if ref[0] >= config.scraper.start_episode
+            if ref.episode_number >= config.scraper.start_episode
         ]
 
     if config.scraper.end_episode is not None:
         episode_refs = [
             ref
             for ref in episode_refs
-            if ref[0] <= config.scraper.end_episode
+            if ref.episode_number <= config.scraper.end_episode
         ]
 
     if not config.scraper.full_crawl:
@@ -203,10 +197,12 @@ def main():
 
     print(f"Discovered {total} episodes")
 
-    for index, (episode_number, episode_url) in enumerate(
+    for index, episode_ref in enumerate(
         episode_refs,
         start=1,
     ):
+        episode_number = episode_ref.episode_number
+        episode_url = episode_ref.url
         print(
             f"[{index}/{total}] "
             f"Scraping Episode {episode_number}"

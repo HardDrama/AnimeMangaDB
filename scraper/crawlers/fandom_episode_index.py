@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import re
 
 from scraper.core.http_client import HttpClient
+from scraper.models import EpisodeReference
 
 
 class FandomEpisodeIndexCrawler:
@@ -13,7 +14,7 @@ class FandomEpisodeIndexCrawler:
         self.base_url = base_url
         self.client = HttpClient()
 
-    def get_episode_list(self) -> list[int]:
+    def get_episode_list(self) -> list[EpisodeReference]:
         guide_url = f"{self.base_url}/wiki/Episode_Guide"
 
         html = self.client.fetch(guide_url)
@@ -47,4 +48,10 @@ class FandomEpisodeIndexCrawler:
                 if match:
                     episode_numbers.add(int(match.group(1)))
 
-        return sorted(episode_numbers)
+        return [
+            EpisodeReference(
+                episode_number=episode_number,
+                url=f"{self.base_url}/wiki/Episode_{episode_number}",
+            )
+            for episode_number in sorted(episode_numbers)
+        ]
