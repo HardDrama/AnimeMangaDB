@@ -9,6 +9,7 @@ from scraper.database.session import SessionLocal
 from scraper.repositories.episode_repository import EpisodeRepository
 
 from scraper.crawlers.fandom_episode_index import FandomEpisodeIndexCrawler
+from scraper.crawlers.naruto_episode_index import NarutoEpisodeIndexCrawler
 
 from time import perf_counter
 
@@ -152,8 +153,16 @@ def main():
     session = SessionLocal()
     repo = EpisodeRepository(session)
 
-    crawler = FandomEpisodeIndexCrawler(config.base_url)
-    episode_numbers = crawler.get_episode_list()
+    if config.series == "Naruto":
+        crawler = NarutoEpisodeIndexCrawler(config.base_url)
+        episodes = crawler.get_episode_list()
+        episode_numbers = [
+            episode_number
+            for episode_number, _ in episodes
+        ]
+    else:
+        crawler = FandomEpisodeIndexCrawler(config.base_url)
+        episode_numbers = crawler.get_episode_list()
 
     processed_count = 0
     with_chapters_count = 0
