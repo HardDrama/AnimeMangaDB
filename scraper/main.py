@@ -6,7 +6,7 @@ from scraper.providers.factory import create_provider
 from scraper.utils.config_loader import load_provider_config
 
 from scraper.database.session import SessionLocal
-from scraper.repositories.episode_repository import EpisodeRepository
+from scraper.repositories.factory import create_episode_repository
 
 from scraper.crawlers.factory import create_episode_index_crawler
 from scraper.crawlers.fandom_episode_index import FandomEpisodeIndexCrawler
@@ -153,7 +153,7 @@ def main():
     extractor = create_extractor(config)
 
     session = SessionLocal()
-    repo = EpisodeRepository(session)
+    repo = create_episode_repository(session)
 
     crawler = create_episode_index_crawler(config)
     episode_refs = crawler.get_episode_list()
