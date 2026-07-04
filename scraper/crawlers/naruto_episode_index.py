@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 
 from scraper.core.http_client import HttpClient
+from scraper.models import EpisodeReference
 
 
 class NarutoEpisodeIndexCrawler:
@@ -12,7 +13,7 @@ class NarutoEpisodeIndexCrawler:
         self.base_url = base_url
         self.client = HttpClient()
 
-    def get_episode_list(self) -> list[tuple[int, str]]:
+    def get_episode_list(self) -> list[EpisodeReference]:
         index_url = f"{self.base_url}/wiki/List_of_Animated_Media"
 
         html = self.client.fetch(index_url)
@@ -54,9 +55,9 @@ class NarutoEpisodeIndexCrawler:
                 episode_url = self.base_url + href
 
             episodes.append(
-                (
-                    episode_number,
-                    episode_url,
+                EpisodeReference(
+                    episode_number=episode_number,
+                    url=episode_url,
                 )
             )
 

@@ -8,7 +8,8 @@ def test_naruto_episode_index_uses_title_based_urls():
 
     episodes = crawler.get_episode_list()
 
-    assert episodes[0] == (
-        1,
-        "https://naruto.fandom.com/wiki/Enter:_Naruto_Uzumaki!",
+    assert episodes[0].episode_number == 1
+    assert (
+        episodes[0].url
+        == "https://naruto.fandom.com/wiki/Enter:_Naruto_Uzumaki!"
     )
