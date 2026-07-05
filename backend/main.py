@@ -20,3 +20,9 @@ def health():
         "application": "AnimeMangaDB",
         "version": "0.29.0",
     }
+
+@app.get("/version")
+def version():
+    return {
+        "version": "0.29.0"
+    }
