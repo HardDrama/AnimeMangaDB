@@ -43,3 +43,15 @@ export async function getEpisodeChapters(episodeId) {
 
     return response.json();
 }
+
+export async function getEpisodesByChapter(chapterNumber) {
+    const response = await fetch(
+        `${API_BASE_URL}/chapters/${chapterNumber}/episodes`
+    );
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch episodes for chapter.");
+    }
+
+    return response.json();
+}
