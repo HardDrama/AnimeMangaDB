@@ -41,7 +41,11 @@ function App() {
                 <ul>
                     {anime.map((item) => (
                         <li key={item.id}>
-                            {item.title} ({item.provider})
+                            <strong>{item.title}</strong>
+                            <br />
+                            <span>{item.provider}</span>
+                            <br />
+                            <span>{item.episode_count ?? 0} episodes</span>
                         </li>
                     ))}
                 </ul>

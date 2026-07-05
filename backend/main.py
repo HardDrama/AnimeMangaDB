@@ -39,6 +39,7 @@ def list_anime():
                 id=item.id,
                 title=item.title,
                 provider=item.provider,
+                episode_count=repo.count_episodes_for_anime(item.id),
             )
             for item in anime
         ]
@@ -65,6 +66,7 @@ def get_anime(anime_id: int):
             id=anime.id,
             title=anime.title,
             provider=anime.provider,
+            episode_count=repo.count_episodes_for_anime(anime.id),
         )
 
     finally:

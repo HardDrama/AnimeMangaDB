@@ -255,3 +255,13 @@ class EpisodeRepository:
         )
 
         return self.session.execute(stmt).scalars().all()
+    
+    def count_episodes_for_anime(
+        self,
+        anime_id: int,
+    ) -> int:
+        return (
+            self.session.query(Episode)
+            .where(Episode.anime_id == anime_id)
+            .count()
+        )
