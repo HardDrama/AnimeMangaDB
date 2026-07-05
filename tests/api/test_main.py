@@ -58,3 +58,11 @@ def test_episodes_endpoint():
     body = response.json()
 
     assert isinstance(body, list)
+
+def test_anime_detail_not_found():
+    response = client.get("/anime/999999")
+
+    assert response.status_code == 404
+    assert response.json() == {
+        "detail": "Anime not found"
+    }

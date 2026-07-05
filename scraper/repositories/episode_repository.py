@@ -218,3 +218,9 @@ class EpisodeRepository:
             .order_by(Episode.episode_number)
             .all()
         )
+    
+    def get_anime_by_id(
+        self,
+        anime_id: int,
+    ) -> Anime | None:
+        return self.session.get(Anime, anime_id)

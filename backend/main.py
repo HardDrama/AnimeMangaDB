@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 
 from scraper.database.session import SessionLocal
 from scraper.repositories.factory import create_episode_repository
@@ -29,6 +29,30 @@ def list_anime():
             )
             for item in anime
         ]
+
+    finally:
+        session.close()
+
+@app.get("/anime/{anime_id}", response_model=AnimeResponse)
+def get_anime(anime_id: int):
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        anime = repo.get_anime_by_id(anime_id)
+
+        if anime is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Anime not found",
+            )
+
+        return AnimeResponse(
+            id=anime.id,
+            title=anime.title,
+            provider=anime.provider,
+        )
 
     finally:
         session.close()
