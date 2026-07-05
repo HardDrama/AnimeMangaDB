@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from scraper.database.session import SessionLocal
 from scraper.repositories.factory import create_episode_repository
 
+from backend.models import AnimeResponse, EpisodeResponse
+
 
 app = FastAPI(
     title="AnimeMangaDB API",
@@ -10,7 +12,7 @@ app = FastAPI(
 )
 
 
-@app.get("/anime")
+@app.get("/anime", response_model=list[AnimeResponse])
 def list_anime():
     session = SessionLocal()
 
@@ -19,21 +21,19 @@ def list_anime():
 
         anime = repo.list_anime()
 
-        return {
-            "anime": [
-                {
-                    "id": item.id,
-                    "title": item.title,
-                    "provider": item.provider,
-                }
-                for item in anime
-            ]
-        }
+        return [
+            AnimeResponse(
+                id=item.id,
+                title=item.title,
+                provider=item.provider,
+            )
+            for item in anime
+        ]
 
     finally:
         session.close()
 
-@app.get("/episodes")
+@app.get("/episodes", response_model=list[EpisodeResponse])
 def list_episodes():
     session = SessionLocal()
 
@@ -42,18 +42,16 @@ def list_episodes():
 
         episodes = repo.list_episodes()
 
-        return {
-            "episodes": [
-                {
-                    "id": episode.id,
-                    "anime_id": episode.anime_id,
-                    "episode_number": episode.episode_number,
-                    "title": episode.episode_title,
-                    "arc": episode.arc,
-                }
-                for episode in episodes
-            ]
-        }
+        return [
+            EpisodeResponse(
+                id=episode.id,
+                anime_id=episode.anime_id,
+                episode_number=episode.episode_number,
+                title=episode.episode_title,
+                arc=episode.arc,
+            )
+            for episode in episodes
+        ]
 
     finally:
         session.close()

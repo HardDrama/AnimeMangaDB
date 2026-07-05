@@ -48,8 +48,7 @@ def test_anime_endpoint():
 
     body = response.json()
 
-    assert "anime" in body
-    assert isinstance(body["anime"], list)
+    assert isinstance(body, list)
 
 def test_episodes_endpoint():
     response = client.get("/episodes")
@@ -58,5 +57,4 @@ def test_episodes_endpoint():
 
     body = response.json()
 
-    assert "episodes" in body
-    assert isinstance(body["episodes"], list)
+    assert isinstance(body, list)
