@@ -10,14 +10,19 @@ function App() {
     const [anime, setAnime] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
+
     const [selectedAnime, setSelectedAnime] = useState(null);
+
     const [episodes, setEpisodes] = useState([]);
     const [episodesLoading, setEpisodesLoading] = useState(false);
     const [episodesError, setEpisodesError] = useState("");
     const [selectedEpisode, setSelectedEpisode] = useState(null);
+
     const [chapters, setChapters] = useState([]);
     const [chaptersLoading, setChaptersLoading] = useState(false);
     const [chaptersError, setChaptersError] = useState("");
+
+    const [episodeSearch, setEpisodeSearch] = useState("");
 
     useEffect(() => {
         async function loadAnime() {
@@ -39,6 +44,9 @@ function App() {
         setEpisodes([]);
         setEpisodesError("");
         setEpisodesLoading(true);
+        setEpisodeSearch("");
+        setSelectedEpisode(null);
+        setChapters([]);
 
         try {
             const data = await getEpisodesForAnime(item.id);
@@ -65,6 +73,15 @@ function App() {
             setChaptersLoading(false);
         }
     }
+
+    const filteredEpisodes = episodes.filter((episode) => {
+        const search = episodeSearch.toLowerCase();
+
+        return (
+            episode.title.toLowerCase().includes(search) ||
+            episode.episode_number.toString().includes(search)
+        );
+    });
 
     return (
         <main>
@@ -133,13 +150,20 @@ function App() {
                         <p className="status error">Error: {episodesError}</p>
                     )}
 
-                    {!episodesLoading && !episodesError && episodes.length === 0 && (
+                    {!episodesLoading && !episodesError && filteredEpisodes.length === 0 && (
                         <p>No episodes found.</p>
                     )}
 
+                    <input
+                        type="text"
+                        placeholder="Search episodes..."
+                        value={episodeSearch}
+                        onChange={(event) => setEpisodeSearch(event.target.value)}
+                    />
+
                     {!episodesLoading && !episodesError && episodes.length > 0 && (
                         <ul className="episode-list">
-                            {episodes.map((episode) => (
+                            {filteredEpisodes.map((episode) => (
                                 <li
                                     key={episode.id}
                                     onClick={() => handleSelectEpisode(episode)}
