@@ -7,6 +7,12 @@ app = FastAPI(
 )
 
 
+@app.get("/anime")
+def list_anime():
+    return {
+        "anime": []
+    }
+
 @app.get("/")
 def read_root():
     return {

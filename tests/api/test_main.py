@@ -40,3 +40,11 @@ def test_version_endpoint():
     assert response.json() == {
         "version": "0.29.0"
     }
+
+def test_anime_endpoint():
+    response = client.get("/anime")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "anime": []
+    }
