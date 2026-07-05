@@ -8,7 +8,7 @@ import {
 import "./App.css";
 
 function App() {
-    const [anime, setAnime] = useState([]);
+    const [animeList, setAnimeList] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
@@ -34,7 +34,7 @@ function App() {
         async function loadAnime() {
             try {
                 const data = await getAnime();
-                setAnime(data);
+                setAnimeList(data);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -108,6 +108,21 @@ function App() {
         }
     }
 
+    function handleLookupEpisodeClick(episode) {
+        const anime = animeList.find(
+            (item) => item.id === episode.anime_id
+        );
+
+        if (!anime) {
+            return;
+        }
+
+        handleSelectAnime(anime).then(() => {
+            setSelectedEpisode(episode);
+            handleSelectEpisode(episode);
+        });
+    }
+
     return (
         <main>
             <h1>AnimeMangaDB</h1>
@@ -146,7 +161,10 @@ function App() {
                     chapterResults.length > 0 && (
                         <ul>
                             {chapterResults.map((episode) => (
-                                <li key={episode.id}>
+                                <li
+                                    key={episode.id}
+                                    onClick={() => handleLookupEpisodeClick(episode)}
+                                >
                                     <strong>Anime ID {episode.anime_id}</strong>
                                     <br />
                                     Episode {episode.episode_number}
@@ -175,13 +193,13 @@ function App() {
                 <p className="status error">Error: {error}</p>
             )}
 
-            {!loading && !error && anime.length === 0 && (
+            {!loading && !error && animeList.length === 0 && (
                 <p>No anime found.</p>
             )}
 
-            {!loading && !error && anime.length > 0 && (
+            {!loading && !error && animeList.length > 0 && (
                 <ul>
-                    {anime.map((item) => (
+                    {animeList.map((item) => (
                         <li
                             key={item.id}
                             onClick={() => handleSelectAnime(item)}
