@@ -55,6 +55,8 @@ def test_episodes_endpoint():
     response = client.get("/episodes")
 
     assert response.status_code == 200
-    assert response.json() == {
-        "episodes": []
-    }
+
+    body = response.json()
+
+    assert "episodes" in body
+    assert isinstance(body["episodes"], list)

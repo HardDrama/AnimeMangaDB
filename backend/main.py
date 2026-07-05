@@ -35,9 +35,28 @@ def list_anime():
 
 @app.get("/episodes")
 def list_episodes():
-    return {
-        "episodes": []
-    }
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        episodes = repo.list_episodes()
+
+        return {
+            "episodes": [
+                {
+                    "id": episode.id,
+                    "anime_id": episode.anime_id,
+                    "episode_number": episode.episode_number,
+                    "title": episode.episode_title,
+                    "arc": episode.arc,
+                }
+                for episode in episodes
+            ]
+        }
+
+    finally:
+        session.close()
 
 @app.get("/")
 def read_root():

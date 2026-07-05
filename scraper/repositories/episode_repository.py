@@ -211,3 +211,10 @@ class EpisodeRepository:
             .order_by(Anime.title)
             .all()
         )
+    
+    def list_episodes(self):
+        return (
+            self.session.query(Episode)
+            .order_by(Episode.episode_number)
+            .all()
+        )
