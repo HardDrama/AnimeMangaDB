@@ -74,3 +74,11 @@ def test_episode_detail_not_found():
     assert response.json() == {
         "detail": "Episode not found"
     }
+
+def test_episode_lookup_by_anime_and_number_not_found():
+    response = client.get("/anime/999999/episodes/1")
+
+    assert response.status_code == 404
+    assert response.json() == {
+        "detail": "Episode not found"
+    }

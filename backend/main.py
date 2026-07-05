@@ -106,6 +106,41 @@ def get_episode(episode_id: int):
     finally:
         session.close()
 
+@app.get(
+    "/anime/{anime_id}/episodes/{episode_number}",
+    response_model=EpisodeResponse,
+)
+def get_episode_by_number(
+    anime_id: int,
+    episode_number: int,
+):
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        episode = repo.get_episode_by_anime_and_number(
+            anime_id=anime_id,
+            episode_number=episode_number,
+        )
+
+        if episode is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Episode not found",
+            )
+
+        return EpisodeResponse(
+            id=episode.id,
+            anime_id=episode.anime_id,
+            episode_number=episode.episode_number,
+            title=episode.episode_title,
+            arc=episode.arc,
+        )
+
+    finally:
+        session.close()
+
 @app.get("/")
 def read_root():
     return {
