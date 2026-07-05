@@ -12,6 +12,8 @@ import EpisodeCard from "./components/EpisodeCard";
 
 import ChapterLookup from "./components/ChapterLookup";
 
+import AnimeBrowser from "./components/AnimeBrowser";
+
 function App() {
     const [animeList, setAnimeList] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -183,14 +185,13 @@ function App() {
                 )}
 
                 {selectedAnime && (
-                    <section id="anime-browser">
-                        <h2>Selected Anime</h2>
-                        <p>
-                            {selectedAnime.title} has{" "}
-                            {selectedAnime.episode_count ?? 0}{" "}
-                            {selectedAnime.episode_count === 1 ? "episode" : "episodes"}.
-                        </p>
-                    </section>
+                    <AnimeBrowser
+                        animeList={animeList}
+                        loading={loading}
+                        error={error}
+                        selectedAnime={selectedAnime}
+                        onSelectAnime={handleSelectAnime}
+                    />
                 )}
 
                 {selectedAnime && (
