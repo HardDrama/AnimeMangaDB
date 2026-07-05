@@ -243,3 +243,15 @@ class EpisodeRepository:
         )
 
         return self.session.execute(stmt).scalar_one_or_none()
+    
+    def get_chapters_for_episode_id(
+        self,
+        episode_id: int,
+    ) -> list[EpisodeChapter]:
+        stmt = (
+            select(EpisodeChapter)
+            .where(EpisodeChapter.episode_id == episode_id)
+            .order_by(EpisodeChapter.chapter_number)
+        )
+
+        return self.session.execute(stmt).scalars().all()

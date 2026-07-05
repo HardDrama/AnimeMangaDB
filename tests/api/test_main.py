@@ -82,3 +82,9 @@ def test_episode_lookup_by_anime_and_number_not_found():
     assert response.json() == {
         "detail": "Episode not found"
     }
+
+def test_episode_chapters_endpoint():
+    response = client.get("/episodes/999999/chapters")
+
+    assert response.status_code == 200
+    assert response.json() == []

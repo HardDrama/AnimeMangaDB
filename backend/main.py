@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from scraper.database.session import SessionLocal
 from scraper.repositories.factory import create_episode_repository
 
-from backend.models import AnimeResponse, EpisodeResponse
+from backend.models import AnimeResponse, EpisodeResponse, EpisodeChapterResponse
 
 
 app = FastAPI(
@@ -137,6 +137,29 @@ def get_episode_by_number(
             title=episode.episode_title,
             arc=episode.arc,
         )
+
+    finally:
+        session.close()
+
+@app.get(
+    "/episodes/{episode_id}/chapters",
+    response_model=list[EpisodeChapterResponse],
+)
+def get_episode_chapters(episode_id: int):
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        chapters = repo.get_chapters_for_episode_id(episode_id)
+
+        return [
+            EpisodeChapterResponse(
+                episode_id=chapter.episode_id,
+                chapter_number=chapter.chapter_number,
+            )
+            for chapter in chapters
+        ]
 
     finally:
         session.close()
