@@ -33,6 +33,12 @@ def list_anime():
     finally:
         session.close()
 
+@app.get("/episodes")
+def list_episodes():
+    return {
+        "episodes": []
+    }
+
 @app.get("/")
 def read_root():
     return {
