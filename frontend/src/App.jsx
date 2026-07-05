@@ -163,6 +163,22 @@ function App() {
 
             {selectedEpisode && (
                 <section>
+                    <h2>Selected Episode</h2>
+
+                    <p>
+                        <strong>Episode {selectedEpisode.episode_number}</strong>
+                    </p>
+
+                    <p>{selectedEpisode.title}</p>
+
+                    {selectedEpisode.arc && (
+                        <p>Arc: {selectedEpisode.arc}</p>
+                    )}
+                </section>
+            )}
+
+            {selectedEpisode && (
+                <section>
                     <h2>Chapter Mapping</h2>
 
                     {chaptersLoading && (
