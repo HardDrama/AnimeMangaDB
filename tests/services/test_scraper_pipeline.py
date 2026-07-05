@@ -81,3 +81,35 @@ def test_pipeline_scrapes_episode_with_fake_dependencies():
     assert result["episode_number"] == 1
     assert result["has_chapters"] is True
     assert repo.chapter_numbers == [1]
+
+class FakeEpisodeDataNoChapters:
+    episode_number = 2
+    episode_title = "Episode 2"
+    manga_start = None
+    manga_end = None
+    arc = None
+    source_url = "https://example.com/episode/2"
+    last_updated = None
+
+
+class FakeExtractorNoChapters:
+    def parse(self, html: str, episode_number: int, source_url: str):
+        return FakeEpisodeDataNoChapters()
+
+
+def test_pipeline_scrapes_episode_without_chapters():
+    repo = FakeRepo()
+
+    pipeline = ScraperPipeline(
+        config=FakeConfig(),
+        provider=FakeProvider(),
+        client=FakeClient(),
+        extractor=FakeExtractorNoChapters(),
+        repo=repo,
+    )
+
+    result = pipeline.scrape_episode(2)
+
+    assert result["episode_number"] == 2
+    assert result["has_chapters"] is False
+    assert repo.chapter_numbers == []
