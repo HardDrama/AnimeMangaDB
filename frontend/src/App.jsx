@@ -7,6 +7,9 @@ import {
 } from "./api/client";
 import "./App.css";
 
+import AnimeCard from "./components/AnimeCard";
+import EpisodeCard from "./components/EpisodeCard";
+
 function App() {
     const [animeList, setAnimeList] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -217,24 +220,12 @@ function App() {
                 {!loading && !error && animeList.length > 0 && (
                     <ul>
                         {animeList.map((item) => (
-                            <li
+                            <AnimeCard
                                 key={item.id}
-                                onClick={() => handleSelectAnime(item)}
-                                className={
-                                    selectedAnime?.id === item.id
-                                        ? "selected"
-                                        : ""
-                                }
-                            >
-                                <strong>{item.title}</strong>
-                                <br />
-                                <span>{item.provider}</span>
-                                <br />
-                                <span>
-                                    {item.episode_count ?? 0}{" "}
-                                    {item.episode_count === 1 ? "episode" : "episodes"}
-                                </span>
-                            </li>
+                                anime={item}
+                                selected={selectedAnime?.id === item.id}
+                                onSelect={handleSelectAnime}
+                            />
                         ))}
                     </ul>
                 )}
@@ -276,21 +267,12 @@ function App() {
                         {!episodesLoading && !episodesError && episodes.length > 0 && (
                             <ul className="episode-list">
                                 {filteredEpisodes.map((episode) => (
-                                    <li
+                                    <EpisodeCard
                                         key={episode.id}
-                                        onClick={() => handleSelectEpisode(episode)}
-                                        className={
-                                            selectedEpisode?.id === episode.id
-                                                ? "selected"
-                                                : ""
-                                        }
-                                    >
-                                        <strong>
-                                            Episode {episode.episode_number}
-                                        </strong>
-                                        <br />
-                                        <span>{episode.title}</span>
-                                    </li>
+                                        episode={episode}
+                                        selected={selectedEpisode?.id === episode.id}
+                                        onSelect={handleSelectEpisode}
+                                    />
                                 ))}
                             </ul>
                         )}
