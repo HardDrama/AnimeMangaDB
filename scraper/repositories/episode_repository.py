@@ -265,3 +265,14 @@ class EpisodeRepository:
             .where(Episode.anime_id == anime_id)
             .count()
         )
+    
+    def list_episodes_for_anime(
+        self,
+        anime_id: int,
+    ):
+        return (
+            self.session.query(Episode)
+            .where(Episode.anime_id == anime_id)
+            .order_by(Episode.episode_number)
+            .all()
+        )

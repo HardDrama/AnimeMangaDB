@@ -179,6 +179,32 @@ def get_episode_chapters(episode_id: int):
     finally:
         session.close()
 
+@app.get(
+    "/anime/{anime_id}/episodes",
+    response_model=list[EpisodeResponse],
+)
+def list_episodes_for_anime(anime_id: int):
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        episodes = repo.list_episodes_for_anime(anime_id)
+
+        return [
+            EpisodeResponse(
+                id=episode.id,
+                anime_id=episode.anime_id,
+                episode_number=episode.episode_number,
+                title=episode.episode_title,
+                arc=episode.arc,
+            )
+            for episode in episodes
+        ]
+
+    finally:
+        session.close()
+
 @app.get("/")
 def read_root():
     return {

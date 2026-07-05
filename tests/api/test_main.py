@@ -88,3 +88,9 @@ def test_episode_chapters_endpoint():
 
     assert response.status_code == 200
     assert response.json() == []
+
+def test_anime_episodes_endpoint():
+    response = client.get("/anime/999999/episodes")
+
+    assert response.status_code == 200
+    assert response.json() == []
