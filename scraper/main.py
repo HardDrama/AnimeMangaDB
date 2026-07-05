@@ -1,6 +1,7 @@
 import argparse
 
 from scraper.core.http_client import HttpClient
+from scraper.services.scraper_pipeline import ScraperPipeline
 from scraper.services.scraper_services import ScraperServices
 from scraper.utils.config_loader import load_provider_config
 
@@ -158,6 +159,14 @@ def main():
     repo = services.repository
     crawler = services.crawler
 
+    pipeline = ScraperPipeline(
+        config=config,
+        provider=provider,
+        client=client,
+        extractor=extractor,
+        repo=repo,
+    )
+
     episode_refs = crawler.get_episode_list()
 
     processed_count = 0
@@ -211,12 +220,7 @@ def main():
         )
 
         try:
-            result = scrape_episode(
-                config=config,
-                provider=provider,
-                client=client,
-                extractor=extractor,
-                repo=repo,
+            result = pipeline.scrape_episode(
                 episode_number=episode_number,
                 episode_url=episode_url,
             )
