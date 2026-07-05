@@ -3,6 +3,7 @@ import {
     getAnime,
     getEpisodesForAnime,
     getEpisodeChapters,
+    getEpisodesByChapter,
 } from "./api/client";
 import "./App.css";
 
@@ -23,6 +24,11 @@ function App() {
     const [chaptersError, setChaptersError] = useState("");
 
     const [episodeSearch, setEpisodeSearch] = useState("");
+
+    const [chapterSearch, setChapterSearch] = useState("");
+    const [chapterResults, setChapterResults] = useState([]);
+    const [chapterLoading, setChapterLoading] = useState(false);
+    const [chapterError, setChapterError] = useState("");
 
     useEffect(() => {
         async function loadAnime() {
@@ -83,11 +89,80 @@ function App() {
         );
     });
 
+    async function handleChapterLookup() {
+        if (!chapterSearch.trim()) {
+            return;
+        }
+
+        setChapterLoading(true);
+        setChapterError("");
+        setChapterResults([]);
+
+        try {
+            const data = await getEpisodesByChapter(chapterSearch);
+            setChapterResults(data);
+        } catch (err) {
+            setChapterError(err.message);
+        } finally {
+            setChapterLoading(false);
+        }
+    }
+
     return (
         <main>
             <h1>AnimeMangaDB</h1>
             <p>Anime to manga chapter lookup database.</p>
 
+            <section>
+                <h2>Chapter Lookup</h2>
+
+                <input
+                    type="number"
+                    placeholder="Enter manga chapter..."
+                    value={chapterSearch}
+                    onChange={(event) =>
+                        setChapterSearch(event.target.value)
+                    }
+                />
+
+                <button onClick={handleChapterLookup}>
+                    Search
+                </button>
+
+                {chapterLoading && (
+                    <p className="status">
+                        Searching...
+                    </p>
+                )}
+
+                {chapterError && (
+                    <p className="status error">
+                        Error: {chapterError}
+                    </p>
+                )}
+
+                {!chapterLoading &&
+                    !chapterError &&
+                    chapterResults.length > 0 && (
+                        <ul>
+                            {chapterResults.map((episode) => (
+                                <li key={episode.id}>
+                                    Episode {episode.episode_number}
+                                    <br />
+                                    {episode.title}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+
+                {!chapterLoading &&
+                    !chapterError &&
+                    chapterSearch &&
+                    chapterResults.length === 0 && (
+                        <p>No matching episodes found.</p>
+                    )}
+            </section>
+            
             <h2>Available Anime</h2>
 
             {loading && (
