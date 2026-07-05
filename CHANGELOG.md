@@ -703,3 +703,30 @@ Final Result:
 • Episode counts display correctly
 • Frontend gracefully handles loading and backend connection errors
 • Complete end-to-end data flow successfully demonstrated
+
+# 📋 AnimeMangaDB v0.32.0 Changelog
+
+## 🔎 Search & Episode Browser
+
+### ✨ Added
+• Anime selection in the frontend
+• Episode list loading for selected anime
+• Scrollable episode list
+• Selected episode details section
+• Episode chapter mapping display
+• Episode search/filtering by number or title
+
+### 🔄 Improved
+• Anime cards are now interactive
+• Frontend now supports the full Anime → Episode → Chapter Mapping flow
+• Episode lists are easier to browse
+• Search makes large anime lists like One Piece more usable
+• Improved spacing and pluralization in the UI
+
+### ✅ Validation
+• Anime selection works
+• Episode lists load from the API
+• Episode search/filtering works
+• Chapter mappings display correctly
+• Selected episode details display correctly
+• Full frontend/backend flow verified

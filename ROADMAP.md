@@ -2,150 +2,54 @@
 
 ## ✅ Completed
 
-### v0.15.0 – Database Foundation
-• Database integration
-• Repository layer
-• Initial scraper pipeline
-
-### v0.16.0 – Chapter Mapping
-• Chapter normalization
-• Episode ↔ Chapter relationships
-
-### v0.17.0 – Data Integrity
-• Duplicate prevention
-• Repository improvements
-• Database constraints
-
-### v0.18.0 – Multi-Episode Scraping
-• Episode Guide crawler
-• Automatic episode discovery
-• Multi-episode scraping
-
-### v0.19.0 – Configurable Scraper
-• Configurable scraper settings
-• Episode range filtering
-• Full crawl mode
-
-### v0.20.0 – Performance & Developer Experience
-• Crawl progress reporting
-• Elapsed time reporting
-• Crawl summary statistics
-• Error recovery during crawls
-
-### v0.21.0 – Automated Testing Foundation
-• Organized test suite
-• Repository tests
-• Provider tests
-• Extractor fixture tests
-• Automated testing foundation established
-
-### v0.22.0 – Update & Synchronization
-• Refresh existing episode data
-• Detect changed episode records
-• Compare chapter mappings
-• Replace changed chapter mappings
-
-### v0.23.0 – Multi-Series Configuration Support
-• Multi-series configuration system
-• Runtime configuration selection
-• Naruto configuration support
-• Configuration metadata improvements
-
-### v0.24.0 – Command Line Interface
-• Argparse-based CLI
-• Runtime configuration selection
-• Runtime crawl overrides
-• Runtime episode filtering
-• Dry run mode
-• Built-in help menu
-
-### v0.25.0 – Naruto Support Foundation
-• Fandom inspection tool
-• Naruto episode discovery
-• Title-based URL support
-• Naruto chapter parsing
-• Multi-series scraping validation
-
-### v0.26.0 – Generic Provider Framework
-• EpisodeReference model
-• Shared crawler interface
-• Episode crawler factory
-• Unified crawler architecture
-• Provider-independent episode discovery
-
-### v0.27.0 – Provider Plugin Architecture
-• Provider factory
-• Extractor factory
-• Repository factory
-• ScraperServices container
-• Dependency injection foundation
-
-### v0.28.0 – Scraper Pipeline Refactor
-• ScraperPipeline service
-• Episode workflow abstraction
-• Simplified application orchestration
-• Pipeline unit testing
-
 ### v0.29.0 – Website Backend Foundation
 • FastAPI backend
 • Repository-integrated API
-• Interactive API documentation
 • Live database endpoints
 
 ### v0.30.0 – API Expansion
 • Typed API response models
 • Anime detail endpoint
-• Episode detail endpoint
 • Episode lookup endpoint
 • Episode chapter endpoint
-• Repository-backed REST API
 
 ### v0.31.0 – Frontend Foundation
 • React + Vite frontend
 • API client module
 • Live anime list
-• Episode count display
 • Dark-themed interface
-• End-to-end frontend/backend integration
+
+### v0.32.0 – Search & Episode Browser
+• Anime selection
+• Episode browser
+• Episode search
+• Selected episode details
+• Chapter mapping display
 
 ## 🚧 Next Up
 
-### v0.32.0 – Search & Episode Browser
-• Anime selection page
-• Episode list for selected anime
-• Episode detail view
-• Display manga chapter mappings
-• Client-side routing
-• Reusable React components
+### v0.33.0 – Lookup Experience
+• Episode → Manga lookup polish
+• Manga → Episode lookup
+• Better search states
+• Improved result display
 
-### v0.33.0 – Search & Lookup Experience
-• Episode → Manga lookup UI
-• Manga → Episode lookup UI
-• Search validation
-• Loading indicators
-• Improved error handling
-• API query enhancements
-
-### v0.34.0 – UI Polish & User Experience
-• Responsive mobile layout
+### v0.34.0 – UI Polish
 • Navigation bar
+• Responsive layout
 • Footer
-• Theme refinements
-• Improved typography
-• Better card layouts
+• Better typography/cards
 
-### v0.35.0 – Data Quality & Validation
-• Scraper validation tools
+### v0.35.0 – Data Quality
 • Missing episode detection
 • Missing chapter detection
-• Provider health reporting
+• One Piece title improvements
 • Database consistency checks
 
 ## 🎯 Long-Term Goal
 
 ### v1.0.0 – Production Release
-• Stable production-ready scraper
+• Stable scraper
 • Multi-series support
-• Plugin-based provider architecture
 • Public REST API
 • Complete AnimeMangaDB website
