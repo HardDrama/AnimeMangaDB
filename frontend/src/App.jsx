@@ -10,6 +10,8 @@ import "./App.css";
 import AnimeCard from "./components/AnimeCard";
 import EpisodeCard from "./components/EpisodeCard";
 
+import ChapterLookup from "./components/ChapterLookup";
+
 function App() {
     const [animeList, setAnimeList] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -142,66 +144,16 @@ function App() {
                 <h1>AnimeMangaDB</h1>
                 <p>Anime to manga chapter lookup database.</p>
 
-                <section id="chapter-lookup">
-                    <h2>Chapter Lookup</h2>
-
-                    <input
-                        type="number"
-                        placeholder="Enter manga chapter..."
-                        value={chapterSearch}
-                        onChange={(event) =>
-                            setChapterSearch(event.target.value)
-                        }
-                    />
-
-                    <button onClick={handleChapterLookup}>
-                        Search
-                    </button>
-
-                    {chapterLoading && (
-                        <p className="status">
-                            Searching...
-                        </p>
-                    )}
-
-                    {chapterError && (
-                        <p className="status error">
-                            Error: {chapterError}
-                        </p>
-                    )}
-
-                    {!chapterLoading &&
-                        !chapterError &&
-                        chapterResults.length > 0 && (
-                            <ul>
-                                {chapterResults.map((episode) => (
-                                    <li
-                                        key={episode.id}
-                                        onClick={() => handleLookupEpisodeClick(episode)}
-                                    >
-                                        <strong>
-                                            {
-                                                animeList.find(
-                                                    (anime) => anime.id === episode.anime_id
-                                                )?.title ?? `Anime ID ${episode.anime_id}`
-                                            }
-                                        </strong>
-                                        <br />
-                                        Episode {episode.episode_number}
-                                        <br />
-                                        {episode.title}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-
-                    {!chapterLoading &&
-                        !chapterError &&
-                        chapterSearch &&
-                        chapterResults.length === 0 && (
-                            <p>No matching episodes found.</p>
-                        )}
-                </section>
+                <ChapterLookup
+                    chapterSearch={chapterSearch}
+                    setChapterSearch={setChapterSearch}
+                    chapterLoading={chapterLoading}
+                    chapterError={chapterError}
+                    chapterResults={chapterResults}
+                    onSearch={handleChapterLookup}
+                    onResultClick={handleLookupEpisodeClick}
+                    animeList={animeList}
+                />
                 
                 <h2>Available Anime</h2>
 
