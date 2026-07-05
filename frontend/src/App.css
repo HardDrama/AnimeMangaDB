@@ -52,3 +52,16 @@ li {
     border-color: #ef4444;
     color: #fecaca;
 }
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    border-color: #60a5fa;
+}
+
+li.selected {
+    border-color: #3b82f6;
+    background: #1e3a8a;
+}

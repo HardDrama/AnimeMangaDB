@@ -6,6 +6,7 @@ function App() {
     const [anime, setAnime] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
+    const [selectedAnime, setSelectedAnime] = useState(null);
 
     useEffect(() => {
         async function loadAnime() {
@@ -44,7 +45,15 @@ function App() {
             {!loading && !error && anime.length > 0 && (
                 <ul>
                     {anime.map((item) => (
-                        <li key={item.id}>
+                        <li
+                            key={item.id}
+                            onClick={() => setSelectedAnime(item)}
+                            className={
+                                selectedAnime?.id === item.id
+                                    ? "selected"
+                                    : ""
+                            }
+                        >
                             <strong>{item.title}</strong>
                             <br />
                             <span>{item.provider}</span>
@@ -53,6 +62,16 @@ function App() {
                         </li>
                     ))}
                 </ul>
+            )}
+
+            {selectedAnime && (
+                <section>
+                    <h2>Selected Anime</h2>
+                    <p>
+                        {selectedAnime.title} has{" "}
+                        {selectedAnime.episode_count ?? 0} episodes.
+                    </p>
+                </section>
             )}
         </main>
     );
