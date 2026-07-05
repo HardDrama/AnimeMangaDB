@@ -40,3 +40,15 @@ li {
     padding: 16px;
     margin-bottom: 12px;
 }
+
+.status {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.error {
+    border-color: #ef4444;
+    color: #fecaca;
+}

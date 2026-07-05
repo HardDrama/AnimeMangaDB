@@ -29,9 +29,13 @@ function App() {
 
             <h2>Available Anime</h2>
 
-            {loading && <p>Loading anime...</p>}
+            {loading && (
+                <p className="status">Loading anime...</p>
+            )}
 
-            {error && <p>Error: {error}</p>}
+            {error && (
+                <p className="status error">Error: {error}</p>
+            )}
 
             {!loading && !error && anime.length === 0 && (
                 <p>No anime found.</p>
