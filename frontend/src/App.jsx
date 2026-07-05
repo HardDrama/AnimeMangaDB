@@ -77,7 +77,10 @@ function App() {
                             <br />
                             <span>{item.provider}</span>
                             <br />
-                            <span>{item.episode_count ?? 0} episodes</span>
+                            <span>
+                                {item.episode_count ?? 0}{" "}
+                                {item.episode_count === 1 ? "episode" : "episodes"}
+                            </span>
                         </li>
                     ))}
                 </ul>
@@ -88,7 +91,8 @@ function App() {
                     <h2>Selected Anime</h2>
                     <p>
                         {selectedAnime.title} has{" "}
-                        {selectedAnime.episode_count ?? 0} episodes.
+                        {selectedAnime.episode_count ?? 0}{" "}
+                        {selectedAnime.episode_count === 1 ? "episode" : "episodes"}.
                     </p>
                 </section>
             )}
