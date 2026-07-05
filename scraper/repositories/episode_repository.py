@@ -224,3 +224,9 @@ class EpisodeRepository:
         anime_id: int,
     ) -> Anime | None:
         return self.session.get(Anime, anime_id)
+    
+    def get_episode_by_id(
+        self,
+        episode_id: int,
+    ) -> Episode | None:
+        return self.session.get(Episode, episode_id)
