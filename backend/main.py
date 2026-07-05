@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 
+from scraper.database.session import SessionLocal
+from scraper.repositories.factory import create_episode_repository
+
 
 app = FastAPI(
     title="AnimeMangaDB API",
@@ -9,9 +12,26 @@ app = FastAPI(
 
 @app.get("/anime")
 def list_anime():
-    return {
-        "anime": []
-    }
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        anime = repo.list_anime()
+
+        return {
+            "anime": [
+                {
+                    "id": item.id,
+                    "title": item.title,
+                    "provider": item.provider,
+                }
+                for item in anime
+            ]
+        }
+
+    finally:
+        session.close()
 
 @app.get("/")
 def read_root():

@@ -204,3 +204,10 @@ class EpisodeRepository:
         )
 
         return self.session.execute(stmt).scalar_one_or_none() is not None
+    
+    def list_anime(self):
+        return (
+            self.session.query(Anime)
+            .order_by(Anime.title)
+            .all()
+        )

@@ -45,6 +45,8 @@ def test_anime_endpoint():
     response = client.get("/anime")
 
     assert response.status_code == 200
-    assert response.json() == {
-        "anime": []
-    }
+
+    body = response.json()
+
+    assert "anime" in body
+    assert isinstance(body["anime"], list)
