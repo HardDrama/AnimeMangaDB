@@ -94,25 +94,33 @@
 • Backend endpoint testing
 • Interactive API documentation
 
-## 🚧 Next Up
-
 ### v0.30.0 – API Expansion
+• Typed API response models
 • Anime detail endpoint
 • Episode detail endpoint
-• Episode lookup by number
-• Manga chapter lookup endpoint
-• Chapter-to-episode lookup endpoint
-• API response models (Pydantic)
+• Episode lookup endpoint
+• Episode chapter endpoint
+• Repository-backed REST API
+
+## 🚧 Next Up
 
 ### v0.31.0 – Frontend Foundation
 • Frontend project setup
-• Search page
-• Anime selection UI
-• API integration
-• Basic responsive layout
+• Basic application layout
+• API client module
+• Anime selection page
+• Episode search page
+• Responsive design foundation
 
-### v0.32.0 – Data Quality & Validation
-• Scraper validation utilities
+### v0.32.0 – Search & Lookup Experience
+• Episode → Manga search UI
+• Manga → Episode search UI
+• Search validation
+• Loading and error states
+• Improved API query support
+
+### v0.33.0 – Data Quality & Validation
+• Scraper validation tools
 • Missing episode detection
 • Missing chapter detection
 • Provider health reporting
