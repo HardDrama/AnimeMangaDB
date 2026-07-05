@@ -1,6 +1,49 @@
-# :map: AnimeMangaDB Roadmap
+# 🗺️ AnimeMangaDB Roadmap
 
-## :white_check_mark: Completed
+## ✅ Completed
+
+### v0.15.0 – Database Foundation
+• Database integration
+• Repository layer
+• Initial scraper pipeline
+
+### v0.16.0 – Chapter Mapping
+• Chapter normalization
+• Episode ↔ Chapter relationships
+
+### v0.17.0 – Data Integrity
+• Duplicate prevention
+• Repository improvements
+• Database constraints
+
+### v0.18.0 – Multi-Episode Scraping
+• Episode Guide crawler
+• Automatic episode discovery
+• Multi-episode scraping
+
+### v0.19.0 – Configurable Scraper
+• Configurable scraper settings
+• Episode range filtering
+• Full crawl mode
+
+### v0.20.0 – Performance & Developer Experience
+• Crawl progress reporting
+• Elapsed time reporting
+• Crawl summary statistics
+• Error recovery during crawls
+
+### v0.21.0 – Automated Testing Foundation
+• Organized test suite
+• Repository tests
+• Provider tests
+• Extractor fixture tests
+• Automated testing foundation established
+
+### v0.22.0 – Update & Synchronization
+• Refresh existing episode data
+• Detect changed episode records
+• Compare chapter mappings
+• Replace changed chapter mappings
 
 ### v0.23.0 – Multi-Series Configuration Support
 • Multi-series configuration system
@@ -44,31 +87,38 @@
 • Pipeline unit testing
 • Service-oriented scraper workflow
 
-## :construction: Next Up
-
 ### v0.29.0 – Website Backend Foundation
-• FastAPI project setup
-• Initial REST API structure
-• Episode lookup endpoints
-• Manga chapter lookup endpoints
-• Database integration with API
+• FastAPI backend
+• Live database-backed API
+• Repository-integrated endpoints
+• Backend endpoint testing
 • Interactive API documentation
 
-### v0.30.0 – Website Frontend Foundation
+## 🚧 Next Up
+
+### v0.30.0 – API Expansion
+• Anime detail endpoint
+• Episode detail endpoint
+• Episode lookup by number
+• Manga chapter lookup endpoint
+• Chapter-to-episode lookup endpoint
+• API response models (Pydantic)
+
+### v0.31.0 – Frontend Foundation
 • Frontend project setup
-• Basic search interface
-• Episode → Manga lookup page
-• Manga → Episode lookup page
+• Search page
+• Anime selection UI
 • API integration
+• Basic responsive layout
 
-### v0.31.0 – Data Quality & Validation
-• Scraper validation tools
-• Database consistency checks
+### v0.32.0 – Data Quality & Validation
+• Scraper validation utilities
 • Missing episode detection
+• Missing chapter detection
 • Provider health reporting
-• Validation command-line utilities
+• Data consistency checks
 
-## :dart: Long-Term Goal
+## 🎯 Long-Term Goal
 
 ### v1.0.0 – Production Release
 • Stable production-ready scraper
