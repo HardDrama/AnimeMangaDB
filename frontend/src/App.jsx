@@ -124,218 +124,230 @@ function App() {
     }
 
     return (
-        <main>
-            <h1>AnimeMangaDB</h1>
-            <p>Anime to manga chapter lookup database.</p>
+        <>
+            <header className="site-header">
+                <div>
+                    <strong>AnimeMangaDB</strong>
+                </div>
 
-            <section>
-                <h2>Chapter Lookup</h2>
+                <nav>
+                    <a href="#chapter-lookup">Chapter Lookup</a>
+                    <a href="#anime-browser">Anime Browser</a>
+                </nav>
+            </header>
+            <main>
+                <h1>AnimeMangaDB</h1>
+                <p>Anime to manga chapter lookup database.</p>
 
-                <input
-                    type="number"
-                    placeholder="Enter manga chapter..."
-                    value={chapterSearch}
-                    onChange={(event) =>
-                        setChapterSearch(event.target.value)
-                    }
-                />
-
-                <button onClick={handleChapterLookup}>
-                    Search
-                </button>
-
-                {chapterLoading && (
-                    <p className="status">
-                        Searching...
-                    </p>
-                )}
-
-                {chapterError && (
-                    <p className="status error">
-                        Error: {chapterError}
-                    </p>
-                )}
-
-                {!chapterLoading &&
-                    !chapterError &&
-                    chapterResults.length > 0 && (
-                        <ul>
-                            {chapterResults.map((episode) => (
-                                <li
-                                    key={episode.id}
-                                    onClick={() => handleLookupEpisodeClick(episode)}
-                                >
-                                    <strong>
-                                        {
-                                            animeList.find(
-                                                (anime) => anime.id === episode.anime_id
-                                            )?.title ?? `Anime ID ${episode.anime_id}`
-                                        }
-                                    </strong>
-                                    <br />
-                                    Episode {episode.episode_number}
-                                    <br />
-                                    {episode.title}
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-
-                {!chapterLoading &&
-                    !chapterError &&
-                    chapterSearch &&
-                    chapterResults.length === 0 && (
-                        <p>No matching episodes found.</p>
-                    )}
-            </section>
-            
-            <h2>Available Anime</h2>
-
-            {loading && (
-                <p className="status">Loading anime...</p>
-            )}
-
-            {error && (
-                <p className="status error">Error: {error}</p>
-            )}
-
-            {!loading && !error && animeList.length === 0 && (
-                <p>No anime found.</p>
-            )}
-
-            {!loading && !error && animeList.length > 0 && (
-                <ul>
-                    {animeList.map((item) => (
-                        <li
-                            key={item.id}
-                            onClick={() => handleSelectAnime(item)}
-                            className={
-                                selectedAnime?.id === item.id
-                                    ? "selected"
-                                    : ""
-                            }
-                        >
-                            <strong>{item.title}</strong>
-                            <br />
-                            <span>{item.provider}</span>
-                            <br />
-                            <span>
-                                {item.episode_count ?? 0}{" "}
-                                {item.episode_count === 1 ? "episode" : "episodes"}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
-            )}
-
-            {selectedAnime && (
-                <section>
-                    <h2>Selected Anime</h2>
-                    <p>
-                        {selectedAnime.title} has{" "}
-                        {selectedAnime.episode_count ?? 0}{" "}
-                        {selectedAnime.episode_count === 1 ? "episode" : "episodes"}.
-                    </p>
-                </section>
-            )}
-
-            {selectedAnime && (
-                <section>
-                    <h2>Episodes</h2>
-
-                    {episodesLoading && (
-                        <p className="status">Loading episodes...</p>
-                    )}
-
-                    {episodesError && (
-                        <p className="status error">Error: {episodesError}</p>
-                    )}
-
-                    {!episodesLoading && !episodesError && filteredEpisodes.length === 0 && (
-                        <p>No episodes found.</p>
-                    )}
+                <section id="chapter-lookup">
+                    <h2>Chapter Lookup</h2>
 
                     <input
-                        type="text"
-                        placeholder="Search episodes..."
-                        value={episodeSearch}
-                        onChange={(event) => setEpisodeSearch(event.target.value)}
+                        type="number"
+                        placeholder="Enter manga chapter..."
+                        value={chapterSearch}
+                        onChange={(event) =>
+                            setChapterSearch(event.target.value)
+                        }
                     />
 
-                    {!episodesLoading && !episodesError && episodes.length > 0 && (
-                        <ul className="episode-list">
-                            {filteredEpisodes.map((episode) => (
-                                <li
-                                    key={episode.id}
-                                    onClick={() => handleSelectEpisode(episode)}
-                                    className={
-                                        selectedEpisode?.id === episode.id
-                                            ? "selected"
-                                            : ""
-                                    }
-                                >
-                                    <strong>
-                                        Episode {episode.episode_number}
-                                    </strong>
-                                    <br />
-                                    <span>{episode.title}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                </section>
-            )}
+                    <button onClick={handleChapterLookup}>
+                        Search
+                    </button>
 
-            {selectedEpisode && (
-                <section>
-                    <h2>Selected Episode</h2>
-
-                    <p>
-                        <strong>Episode {selectedEpisode.episode_number}</strong>
-                    </p>
-
-                    <p>{selectedEpisode.title}</p>
-
-                    {selectedEpisode.arc && (
-                        <p>Arc: {selectedEpisode.arc}</p>
-                    )}
-                </section>
-            )}
-
-            {selectedEpisode && (
-                <section>
-                    <h2>Chapter Mapping</h2>
-
-                    {chaptersLoading && (
-                        <p className="status">Loading chapters...</p>
-                    )}
-
-                    {chaptersError && (
-                        <p className="status error">
-                            Error: {chaptersError}
+                    {chapterLoading && (
+                        <p className="status">
+                            Searching...
                         </p>
                     )}
 
-                    {!chaptersLoading &&
-                        !chaptersError &&
-                        chapters.length === 0 && (
-                            <p>No chapter mapping available.</p>
-                        )}
+                    {chapterError && (
+                        <p className="status error">
+                            Error: {chapterError}
+                        </p>
+                    )}
 
-                    {!chaptersLoading &&
-                        !chaptersError &&
-                        chapters.length > 0 && (
+                    {!chapterLoading &&
+                        !chapterError &&
+                        chapterResults.length > 0 && (
                             <ul>
-                                {chapters.map((chapter) => (
-                                    <li key={chapter.chapter_number}>
-                                        Chapter {chapter.chapter_number}
+                                {chapterResults.map((episode) => (
+                                    <li
+                                        key={episode.id}
+                                        onClick={() => handleLookupEpisodeClick(episode)}
+                                    >
+                                        <strong>
+                                            {
+                                                animeList.find(
+                                                    (anime) => anime.id === episode.anime_id
+                                                )?.title ?? `Anime ID ${episode.anime_id}`
+                                            }
+                                        </strong>
+                                        <br />
+                                        Episode {episode.episode_number}
+                                        <br />
+                                        {episode.title}
                                     </li>
                                 ))}
                             </ul>
                         )}
+
+                    {!chapterLoading &&
+                        !chapterError &&
+                        chapterSearch &&
+                        chapterResults.length === 0 && (
+                            <p>No matching episodes found.</p>
+                        )}
                 </section>
-            )}
-        </main>
+                
+                <h2>Available Anime</h2>
+
+                {loading && (
+                    <p className="status">Loading anime...</p>
+                )}
+
+                {error && (
+                    <p className="status error">Error: {error}</p>
+                )}
+
+                {!loading && !error && animeList.length === 0 && (
+                    <p>No anime found.</p>
+                )}
+
+                {!loading && !error && animeList.length > 0 && (
+                    <ul>
+                        {animeList.map((item) => (
+                            <li
+                                key={item.id}
+                                onClick={() => handleSelectAnime(item)}
+                                className={
+                                    selectedAnime?.id === item.id
+                                        ? "selected"
+                                        : ""
+                                }
+                            >
+                                <strong>{item.title}</strong>
+                                <br />
+                                <span>{item.provider}</span>
+                                <br />
+                                <span>
+                                    {item.episode_count ?? 0}{" "}
+                                    {item.episode_count === 1 ? "episode" : "episodes"}
+                                </span>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+
+                {selectedAnime && (
+                    <section id="anime-browser">
+                        <h2>Selected Anime</h2>
+                        <p>
+                            {selectedAnime.title} has{" "}
+                            {selectedAnime.episode_count ?? 0}{" "}
+                            {selectedAnime.episode_count === 1 ? "episode" : "episodes"}.
+                        </p>
+                    </section>
+                )}
+
+                {selectedAnime && (
+                    <section>
+                        <h2>Episodes</h2>
+
+                        {episodesLoading && (
+                            <p className="status">Loading episodes...</p>
+                        )}
+
+                        {episodesError && (
+                            <p className="status error">Error: {episodesError}</p>
+                        )}
+
+                        {!episodesLoading && !episodesError && filteredEpisodes.length === 0 && (
+                            <p>No episodes found.</p>
+                        )}
+
+                        <input
+                            type="text"
+                            placeholder="Search episodes..."
+                            value={episodeSearch}
+                            onChange={(event) => setEpisodeSearch(event.target.value)}
+                        />
+
+                        {!episodesLoading && !episodesError && episodes.length > 0 && (
+                            <ul className="episode-list">
+                                {filteredEpisodes.map((episode) => (
+                                    <li
+                                        key={episode.id}
+                                        onClick={() => handleSelectEpisode(episode)}
+                                        className={
+                                            selectedEpisode?.id === episode.id
+                                                ? "selected"
+                                                : ""
+                                        }
+                                    >
+                                        <strong>
+                                            Episode {episode.episode_number}
+                                        </strong>
+                                        <br />
+                                        <span>{episode.title}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </section>
+                )}
+
+                {selectedEpisode && (
+                    <section>
+                        <h2>Selected Episode</h2>
+
+                        <p>
+                            <strong>Episode {selectedEpisode.episode_number}</strong>
+                        </p>
+
+                        <p>{selectedEpisode.title}</p>
+
+                        {selectedEpisode.arc && (
+                            <p>Arc: {selectedEpisode.arc}</p>
+                        )}
+                    </section>
+                )}
+
+                {selectedEpisode && (
+                    <section>
+                        <h2>Chapter Mapping</h2>
+
+                        {chaptersLoading && (
+                            <p className="status">Loading chapters...</p>
+                        )}
+
+                        {chaptersError && (
+                            <p className="status error">
+                                Error: {chaptersError}
+                            </p>
+                        )}
+
+                        {!chaptersLoading &&
+                            !chaptersError &&
+                            chapters.length === 0 && (
+                                <p>No chapter mapping available.</p>
+                            )}
+
+                        {!chaptersLoading &&
+                            !chaptersError &&
+                            chapters.length > 0 && (
+                                <ul>
+                                    {chapters.map((chapter) => (
+                                        <li key={chapter.chapter_number}>
+                                            Chapter {chapter.chapter_number}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                    </section>
+                )}
+            </main>
+        </>
     );
 }
 

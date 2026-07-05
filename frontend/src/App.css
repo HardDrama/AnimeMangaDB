@@ -109,3 +109,29 @@ button {
 button:hover {
     background: #1d4ed8;
 }
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #111827;
+    border-bottom: 1px solid #374151;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 16px;
+}
+
+.site-header a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.site-header a:hover {
+    color: #60a5fa;
+}
