@@ -2,17 +2,6 @@
 
 ## ✅ Completed
 
-### v0.29.0 – Website Backend Foundation
-• FastAPI backend
-• Repository-integrated API
-• Live database endpoints
-
-### v0.30.0 – API Expansion
-• Typed API response models
-• Anime detail endpoint
-• Episode lookup endpoint
-• Episode chapter endpoint
-
 ### v0.31.0 – Frontend Foundation
 • React + Vite frontend
 • API client module
@@ -26,24 +15,27 @@
 • Selected episode details
 • Chapter mapping display
 
-## 🚧 Next Up
-
 ### v0.33.0 – Lookup Experience
-• Episode → Manga lookup polish
-• Manga → Episode lookup
-• Better search states
-• Improved result display
+• Manga chapter lookup
+• Chapter → Episode search
+• Clickable lookup results
+• Connected lookup navigation
+• Anime titles in lookup results
+
+## 🚧 Next Up
 
 ### v0.34.0 – UI Polish
 • Navigation bar
 • Responsive layout
 • Footer
-• Better typography/cards
+• Better spacing
+• Improved cards and typography
 
 ### v0.35.0 – Data Quality
 • Missing episode detection
 • Missing chapter detection
 • One Piece title improvements
+• Arc extraction improvements
 • Database consistency checks
 
 ## 🎯 Long-Term Goal

@@ -730,3 +730,28 @@ Final Result:
 • Chapter mappings display correctly
 • Selected episode details display correctly
 • Full frontend/backend flow verified
+
+# 📋 AnimeMangaDB v0.33.0 Changelog
+
+## 🔎 Lookup Experience
+
+### ✨ Added
+• Manga chapter lookup API
+• Frontend chapter lookup client
+• Chapter lookup interface
+• Clickable chapter lookup results
+• Automatic navigation from lookup results to selected anime/episode
+• Anime titles displayed in chapter lookup results
+
+### 🔄 Improved
+• Connected the two main lookup workflows
+• Users can now search by manga chapter and jump directly to matching episodes
+• Chapter lookup results are easier to understand
+• Frontend now supports both Anime → Episode → Chapter and Chapter → Episode flows
+
+### ✅ Validation
+• Chapter lookup API returns matching episodes
+• Frontend chapter search works
+• Missing chapters show no-result state
+• Lookup result clicks select the correct anime and episode
+• Chapter mapping display updates correctly
