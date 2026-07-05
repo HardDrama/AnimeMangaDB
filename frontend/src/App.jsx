@@ -165,7 +165,13 @@ function App() {
                                     key={episode.id}
                                     onClick={() => handleLookupEpisodeClick(episode)}
                                 >
-                                    <strong>Anime ID {episode.anime_id}</strong>
+                                    <strong>
+                                        {
+                                            animeList.find(
+                                                (anime) => anime.id === episode.anime_id
+                                            )?.title ?? `Anime ID ${episode.anime_id}`
+                                        }
+                                    </strong>
                                     <br />
                                     Episode {episode.episode_number}
                                     <br />
