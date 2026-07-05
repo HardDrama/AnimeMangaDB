@@ -147,6 +147,8 @@ function App() {
                         <ul>
                             {chapterResults.map((episode) => (
                                 <li key={episode.id}>
+                                    <strong>Anime ID {episode.anime_id}</strong>
+                                    <br />
                                     Episode {episode.episode_number}
                                     <br />
                                     {episode.title}
