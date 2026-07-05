@@ -276,3 +276,16 @@ class EpisodeRepository:
             .order_by(Episode.episode_number)
             .all()
         )
+
+    def get_episodes_by_chapter(
+        self,
+        chapter_number: int,
+    ):
+        stmt = (
+            select(Episode)
+            .join(EpisodeChapter)
+            .where(EpisodeChapter.chapter_number == chapter_number)
+            .order_by(Episode.episode_number)
+        )
+
+        return self.session.execute(stmt).scalars().all()
