@@ -31,3 +31,15 @@ export async function getEpisodesForAnime(animeId) {
 
     return response.json();
 }
+
+export async function getEpisodeChapters(episodeId) {
+    const response = await fetch(
+        `${API_BASE_URL}/episodes/${episodeId}/chapters`
+    );
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch chapter mappings.");
+    }
+
+    return response.json();
+}
