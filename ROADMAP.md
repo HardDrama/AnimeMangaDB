@@ -85,14 +85,12 @@
 • Episode workflow abstraction
 • Simplified application orchestration
 • Pipeline unit testing
-• Service-oriented scraper workflow
 
 ### v0.29.0 – Website Backend Foundation
 • FastAPI backend
-• Live database-backed API
-• Repository-integrated endpoints
-• Backend endpoint testing
+• Repository-integrated API
 • Interactive API documentation
+• Live database endpoints
 
 ### v0.30.0 – API Expansion
 • Typed API response models
@@ -102,29 +100,46 @@
 • Episode chapter endpoint
 • Repository-backed REST API
 
+### v0.31.0 – Frontend Foundation
+• React + Vite frontend
+• API client module
+• Live anime list
+• Episode count display
+• Dark-themed interface
+• End-to-end frontend/backend integration
+
 ## 🚧 Next Up
 
-### v0.31.0 – Frontend Foundation
-• Frontend project setup
-• Basic application layout
-• API client module
+### v0.32.0 – Search & Episode Browser
 • Anime selection page
-• Episode search page
-• Responsive design foundation
+• Episode list for selected anime
+• Episode detail view
+• Display manga chapter mappings
+• Client-side routing
+• Reusable React components
 
-### v0.32.0 – Search & Lookup Experience
-• Episode → Manga search UI
-• Manga → Episode search UI
+### v0.33.0 – Search & Lookup Experience
+• Episode → Manga lookup UI
+• Manga → Episode lookup UI
 • Search validation
-• Loading and error states
-• Improved API query support
+• Loading indicators
+• Improved error handling
+• API query enhancements
 
-### v0.33.0 – Data Quality & Validation
+### v0.34.0 – UI Polish & User Experience
+• Responsive mobile layout
+• Navigation bar
+• Footer
+• Theme refinements
+• Improved typography
+• Better card layouts
+
+### v0.35.0 – Data Quality & Validation
 • Scraper validation tools
 • Missing episode detection
 • Missing chapter detection
 • Provider health reporting
-• Data consistency checks
+• Database consistency checks
 
 ## 🎯 Long-Term Goal
 
