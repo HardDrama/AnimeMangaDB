@@ -138,7 +138,7 @@ function App() {
                     )}
 
                     {!episodesLoading && !episodesError && episodes.length > 0 && (
-                        <ul>
+                        <ul className="episode-list">
                             {episodes.map((episode) => (
                                 <li
                                     key={episode.id}

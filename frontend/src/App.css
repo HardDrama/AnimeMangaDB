@@ -70,3 +70,9 @@ li.selected {
     border-color: #3b82f6;
     background: #1e3a8a;
 }
+
+.episode-list {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
