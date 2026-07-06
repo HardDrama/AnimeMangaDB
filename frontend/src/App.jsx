@@ -220,6 +220,15 @@ function App() {
                             />
                         }
                     />
+                    <Route
+                        path="/anime/:animeId"
+                        element={
+                            <section>
+                                <h2>Anime Detail</h2>
+                                <p>Anime detail routing is ready.</p>
+                            </section>
+                        }
+                    />
                 </Routes>
             </main>
         </>
