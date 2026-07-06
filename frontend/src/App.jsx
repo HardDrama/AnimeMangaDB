@@ -10,6 +10,7 @@ import {
     getEpisodeChapters,
     getEpisodesByChapter,
 } from "./api/client";
+import GlobalSearch from "./components/GlobalSearch";
 import AnimeBrowser from "./components/AnimeBrowser";
 import ChapterLookup from "./components/ChapterLookup";
 import EpisodeBrowser from "./components/EpisodeBrowser";
@@ -162,18 +163,10 @@ function App() {
                                     Anime to manga chapter lookup database.
                                 </p>
 
-                                <section>
-                                    <h2>Global Search</h2>
-
-                                    <input
-                                        type="text"
-                                        placeholder="Search anime, episodes, or chapters..."
-                                        value={globalSearch}
-                                        onChange={(event) =>
-                                            setGlobalSearch(event.target.value)
-                                        }
-                                    />
-                                </section>
+                                <GlobalSearch
+                                    value={globalSearch}
+                                    onChange={setGlobalSearch}
+                                />
                                 
                                 <ChapterLookup
                                     chapterSearch={chapterSearch}
