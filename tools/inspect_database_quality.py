@@ -35,6 +35,24 @@ def main():
             print(f"Missing chapter mappings: {len(missing_chapters)}")
             print(f"Generic episode titles: {len(generic_titles)}")
 
+            if missing_chapters:
+                print("Sample missing chapter mappings:")
+
+                for episode in missing_chapters[:5]:
+                    print(
+                        f"- Episode {episode.episode_number}: "
+                        f"{episode.episode_title}"
+                    )
+
+            if generic_titles:
+                print("Sample generic episode titles:")
+
+                for episode in generic_titles[:5]:
+                    print(
+                        f"- Episode {episode.episode_number}: "
+                        f"{episode.episode_title}"
+                    )
+
     finally:
         session.close()
 
