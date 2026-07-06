@@ -289,3 +289,14 @@ class EpisodeRepository:
         )
 
         return self.session.execute(stmt).scalars().all()
+    
+    def search_anime(
+        self,
+        query: str,
+    ):
+        return (
+            self.session.query(Anime)
+            .where(Anime.title.ilike(f"%{query}%"))
+            .order_by(Anime.title)
+            .all()
+        )

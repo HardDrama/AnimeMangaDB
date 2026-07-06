@@ -27,12 +27,33 @@ app.add_middleware(
 
 @app.get("/search")
 def search(query: str = ""):
-    return {
-        "query": query,
-        "anime": [],
-        "episodes": [],
-        "chapters": [],
-    }
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        anime_results = (
+            repo.search_anime(query)
+            if query.strip()
+            else []
+        )
+
+        return {
+            "query": query,
+            "anime": [
+                {
+                    "id": anime.id,
+                    "title": anime.title,
+                    "provider": anime.provider,
+                }
+                for anime in anime_results
+            ],
+            "episodes": [],
+            "chapters": [],
+        }
+
+    finally:
+        session.close()
 
 @app.get("/anime", response_model=list[AnimeResponse])
 def list_anime():

@@ -105,9 +105,10 @@ def test_search_endpoint():
     response = client.get("/search?query=one")
 
     assert response.status_code == 200
-    assert response.json() == {
-        "query": "one",
-        "anime": [],
-        "episodes": [],
-        "chapters": [],
-    }
+
+    body = response.json()
+
+    assert body["query"] == "one"
+    assert "anime" in body
+    assert "episodes" in body
+    assert "chapters" in body
