@@ -9,6 +9,7 @@ import {
     getEpisodesForAnime,
     getEpisodeChapters,
     getEpisodesByChapter,
+    searchDatabase,
 } from "./api/client";
 import GlobalSearch from "./components/GlobalSearch";
 import AnimeBrowser from "./components/AnimeBrowser";
@@ -22,6 +23,10 @@ import "./App.css";
 
 function App() {
     const [globalSearch, setGlobalSearch] = useState("");
+
+    const [globalSearchResults, setGlobalSearchResults] = useState(null);
+    const [globalSearchLoading, setGlobalSearchLoading] = useState(false);
+    const [globalSearchError, setGlobalSearchError] = useState("");
     
     const [animeList, setAnimeList] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -75,6 +80,28 @@ function App() {
         );
     });
 
+    async function handleGlobalSearch(query) {
+        setGlobalSearch(query);
+
+        if (!query.trim()) {
+            setGlobalSearchResults(null);
+            setGlobalSearchError("");
+            return;
+        }
+
+        setGlobalSearchLoading(true);
+        setGlobalSearchError("");
+
+        try {
+            const data = await searchDatabase(query);
+            setGlobalSearchResults(data);
+        } catch (err) {
+            setGlobalSearchError(err.message);
+        } finally {
+            setGlobalSearchLoading(false);
+        }
+    }
+    
     async function handleSelectAnime(item) {
         setSelectedAnime(item);
         setSelectedEpisode(null);
@@ -171,7 +198,7 @@ function App() {
 
                                 <GlobalSearch
                                     value={globalSearch}
-                                    onChange={setGlobalSearch}
+                                    onChange={handleGlobalSearch}
                                 />
                                 
                                 <ChapterLookup
