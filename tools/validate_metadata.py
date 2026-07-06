@@ -18,6 +18,12 @@ def main():
         for anime in anime_list:
             episodes = repo.list_episodes_for_anime(anime.id)
 
+            if not anime.provider:
+                issue_count += 1
+                print(
+                    f"[Missing Provider] {anime.title}"
+                )
+            
             for episode in episodes:
                 if not episode.episode_title:
                     issue_count += 1
