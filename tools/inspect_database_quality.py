@@ -71,6 +71,15 @@ def main():
                 f"{len(missing_arcs)} ({missing_arc_percent:.1f}%)"
             )
 
+            if missing_chapter_percent > 25:
+                print("WARNING: High missing chapter mapping rate")
+
+            if generic_title_percent > 25:
+                print("WARNING: High generic title rate")
+
+            if missing_arc_percent > 25:
+                print("WARNING: High missing arc rate")
+
             if missing_chapters:
                 print("Sample missing chapter mappings:")
 
