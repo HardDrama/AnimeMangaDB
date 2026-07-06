@@ -191,6 +191,7 @@ function App() {
                                     error={error}
                                     selectedAnime={selectedAnime}
                                     onSelectAnime={handleSelectAnime}
+                                    searchText={globalSearch}
                                 />
 
                                 <EpisodeBrowser

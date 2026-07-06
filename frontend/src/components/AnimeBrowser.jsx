@@ -6,10 +6,17 @@ function AnimeBrowser({
     error,
     selectedAnime,
     onSelectAnime,
+    searchText,
 }) {
     return (
         <section id="anime-browser">
             <h2>Available Anime</h2>
+
+            {searchText && (
+                <p>
+                    Showing results for: <strong>{searchText}</strong>
+                </p>
+            )}
 
             {loading && (
                 <p className="status">Loading anime...</p>
