@@ -840,3 +840,47 @@ Final Result:
 • Percentage metrics display correctly
 • Warning thresholds trigger appropriately
 • Existing scraper and API functionality remain unaffected
+
+# 📋 AnimeMangaDB v0.36.0 Changelog
+
+## 🧭 Navigation & Routing
+
+### ✨ Added
+• React Router integration
+• BrowserRouter application wrapper
+• Route definitions for the frontend
+• Dedicated Not Found (404) route
+• Router-based home navigation
+• Dedicated Chapter Lookup route (/lookup)
+• Anime detail route placeholder (/anime/:animeId)
+• Episode detail route placeholder (/episodes/:episodeId)
+
+### 🔄 Improved
+• Transitioned from a single-page layout toward a route-based application
+• Header navigation now leverages React Router
+• Unknown URLs now display a friendly 404 page instead of a blank screen
+• Established the foundation for bookmarkable and shareable URLs
+
+### 🏛️ Architecture
+• Introduced route-based application structure
+• Prepared the frontend for dedicated Anime and Episode pages
+• Improved navigation scalability for future features
+• Established a clean routing foundation for continued frontend growth
+
+### 🧪 Testing
+• Backend test suite remains fully passing
+• Verified BrowserRouter integration
+• Verified application routing
+• Verified lookup route
+• Verified anime placeholder route
+• Verified episode placeholder route
+• Verified Not Found route
+• Final test result: 39 automated tests passing
+
+### ✅ Validation
+• Home page loads correctly
+• Chapter Lookup route functions correctly
+• Unknown routes display the 404 page
+• Anime detail placeholder route loads
+• Episode detail placeholder route loads
+• Existing frontend functionality remains unaffected by routing changes

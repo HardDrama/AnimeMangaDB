@@ -114,36 +114,44 @@
 • Cleaner App.jsx
 
 ### v0.35.0 – Data Quality & Metadata
-• Database quality inspection tool
+• Database quality inspection
 • Missing chapter reporting
 • Generic title detection
 • Missing arc reporting
-• Percentage quality metrics
+• Percentage metrics
 • Automatic quality warnings
-
-## 🚧 Next Up
 
 ### v0.36.0 – Navigation & Routing
 • React Router integration
-• Dedicated Home page
-• Anime detail page
-• Episode detail page
-• Breadcrumb navigation
-• URL-based navigation
+• Route definitions
+• 404 page
+• Dedicated lookup route
+• Anime route placeholder
+• Episode route placeholder
 
-### v0.37.0 – Search & Discovery
+## 🚧 Next Up
+
+### v0.37.0 – Dedicated Detail Pages
+• Functional Anime detail page
+• Functional Episode detail page
+• Route parameter handling
+• Direct URL navigation
+• Breadcrumb navigation
+• Improved page layout
+
+### v0.38.0 – Search & Discovery
 • Global search
 • Search suggestions
 • Advanced filtering
 • Multi-series browsing
 • Recently viewed anime
 
-### v0.38.0 – Scraper Intelligence
+### v0.39.0 – Scraper Intelligence
 • Canonical One Piece episode titles
 • Improved arc extraction
-• Provider-specific metadata enhancements
+• Provider metadata enhancements
 • Missing episode detection
-• Automated data repair utilities
+• Automated data repair tools
 
 ## 🎯 Long-Term Goal
 
