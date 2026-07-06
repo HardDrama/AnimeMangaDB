@@ -14,6 +14,12 @@ function GlobalSearch({
                     onChange(event.target.value)
                 }
             />
+
+            {value && (
+                <button onClick={() => onChange("")}>
+                    Clear Search
+                </button>
+            )}
         </section>
     );
 }
