@@ -1,3 +1,7 @@
+import {
+    Routes,
+    Route,
+} from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
     getAnime,
@@ -140,52 +144,56 @@ function App() {
             </header>
 
             <main>
-                <h1>AnimeMangaDB</h1>
-                <p>Anime to manga chapter lookup database.</p>
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <>
+                                <ChapterLookup
+                                    chapterSearch={chapterSearch}
+                                    setChapterSearch={setChapterSearch}
+                                    chapterLoading={chapterLoading}
+                                    chapterError={chapterError}
+                                    chapterResults={chapterResults}
+                                    onSearch={handleChapterLookup}
+                                    onResultClick={handleLookupEpisodeClick}
+                                    animeList={animeList}
+                                />
 
-                <ChapterLookup
-                    chapterSearch={chapterSearch}
-                    setChapterSearch={setChapterSearch}
-                    chapterLoading={chapterLoading}
-                    chapterError={chapterError}
-                    chapterResults={chapterResults}
-                    onSearch={handleChapterLookup}
-                    onResultClick={handleLookupEpisodeClick}
-                    animeList={animeList}
-                />
+                                <AnimeBrowser
+                                    animeList={animeList}
+                                    loading={loading}
+                                    error={error}
+                                    selectedAnime={selectedAnime}
+                                    onSelectAnime={handleSelectAnime}
+                                />
 
-                <AnimeBrowser
-                    animeList={animeList}
-                    loading={loading}
-                    error={error}
-                    selectedAnime={selectedAnime}
-                    onSelectAnime={handleSelectAnime}
-                />
+                                <EpisodeBrowser
+                                    selectedAnime={selectedAnime}
+                                    episodes={episodes}
+                                    filteredEpisodes={filteredEpisodes}
+                                    episodeSearch={episodeSearch}
+                                    setEpisodeSearch={setEpisodeSearch}
+                                    episodesLoading={episodesLoading}
+                                    episodesError={episodesError}
+                                    selectedEpisode={selectedEpisode}
+                                    onSelectEpisode={handleSelectEpisode}
+                                />
 
-                <EpisodeBrowser
-                    selectedAnime={selectedAnime}
-                    episodes={episodes}
-                    filteredEpisodes={filteredEpisodes}
-                    episodeSearch={episodeSearch}
-                    setEpisodeSearch={setEpisodeSearch}
-                    episodesLoading={episodesLoading}
-                    episodesError={episodesError}
-                    selectedEpisode={selectedEpisode}
-                    onSelectEpisode={handleSelectEpisode}
-                />
+                                <SelectedEpisode
+                                    episode={selectedEpisode}
+                                />
 
-                {selectedEpisode && (
-                    <SelectedEpisode episode={selectedEpisode} />
-                )}
-
-                {selectedEpisode && (
-                    <ChapterMapping
-                        selectedEpisode={selectedEpisode}
-                        chapters={chapters}
-                        chaptersLoading={chaptersLoading}
-                        chaptersError={chaptersError}
+                                <ChapterMapping
+                                    selectedEpisode={selectedEpisode}
+                                    chapters={chapters}
+                                    chaptersLoading={chaptersLoading}
+                                    chaptersError={chaptersError}
+                                />
+                            </>
+                        }
                     />
-                )}
+                </Routes>
             </main>
         </>
     );
