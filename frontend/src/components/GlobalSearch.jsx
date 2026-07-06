@@ -52,6 +52,23 @@ function GlobalSearch({
                             ))}
                         </ul>
                     )}
+
+                    <h3>Episodes</h3>
+
+                    {results.episodes.length === 0 ? (
+                        <p>No episode results.</p>
+                    ) : (
+                        <ul>
+                            {results.episodes.map((episode) => (
+                                <li key={episode.id}>
+                                    <Link to={`/episodes/${episode.id}`}>
+                                        {episode.anime_title} — Episode{" "}
+                                        {episode.episode_number}: {episode.title}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             )}
         </section>
