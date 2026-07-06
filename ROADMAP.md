@@ -142,15 +142,14 @@
 • Clear Search
 • Discovery foundation
 
-## 🚧 Next Up
-
 ### v0.39.0 – API & Metadata Enrichment
-• Include anime title in episode API responses
-• Improve breadcrumb titles (Home → One Piece → Episode 1130)
-• Canonical One Piece episode titles
-• Enhanced arc extraction
-• Richer provider metadata
-• Episode metadata improvements
+• Rich Episode API responses
+• Anime title metadata
+• Improved breadcrumb titles
+• Richer Episode Detail pages
+• Simplified chapter lookup rendering
+
+## 🚧 Next Up
 
 ### v0.40.0 – Advanced Search
 • Search by episode title
@@ -158,11 +157,19 @@
 • Unified multi-category search results
 • Search suggestions/autocomplete
 • Multi-series filtering
-• Recently viewed anime
+• Highlight matching search terms
 
-### v0.41.0 – User Experience Enhancements
+### v0.41.0 – Data Quality Improvements
+• Canonical One Piece episode titles
+• Improved arc extraction
+• Missing episode detection
+• Metadata consistency validation
+• Automated repair utilities
+
+### v0.42.0 – User Experience Enhancements
 • Favorites
-• Recently viewed history
+• Recently viewed anime
+• Recently viewed episodes
 • Skeleton loading states
 • Accessibility improvements
 • Keyboard navigation
@@ -173,8 +180,8 @@
 ### v1.0.0 – Production Release
 • Stable production-ready scraper
 • Multi-provider architecture
-• High-quality validated database
-• Rich metadata
+• Rich, validated metadata
+• High-quality searchable database
 • Public REST API
 • Complete AnimeMangaDB website
 • Comprehensive automated testing

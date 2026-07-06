@@ -967,3 +967,44 @@ Final Result:
 • Clearing search restores the full anime list
 • Empty searches display an appropriate message
 • Existing browsing and routing functionality remain unaffected
+
+# 📋 AnimeMangaDB v0.39.0 Changelog
+
+## 📚 API & Metadata Enrichment
+
+### ✨ Added
+• `anime_title` added to Episode API responses
+• Richer episode metadata returned by backend endpoints
+• Anime title displayed on Episode Detail pages
+• Improved breadcrumb titles using API metadata
+• Chapter lookup results now use API-provided anime titles
+
+### 🔄 Improved
+• Episode breadcrumbs now display the actual anime title
+• Episode Detail pages provide clearer context for users
+• Chapter lookup no longer relies on frontend ID-to-title lookups
+• Reduced frontend dependency on cached anime metadata
+• Simplified frontend rendering logic
+
+### 🏛️ Architecture
+• Expanded Episode API response model
+• Improved consistency across backend endpoints
+• Continued movement toward self-contained API responses
+• Reduced duplication of metadata resolution in the frontend
+
+### 🧪 Testing
+• Backend test suite remains fully passing
+• Verified updated Episode API responses
+• Verified Anime Detail page
+• Verified Episode Detail page
+• Verified breadcrumb navigation
+• Verified chapter lookup results
+• Verified frontend compatibility with enriched metadata
+• Final test result: 39 automated tests passing
+
+### ✅ Validation
+• Episode API returns anime titles correctly
+• Episode Detail page displays anime title
+• Breadcrumbs display anime title correctly
+• Chapter lookup displays anime titles correctly
+• Existing frontend functionality remains fully operational
