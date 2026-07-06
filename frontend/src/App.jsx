@@ -20,6 +20,8 @@ import EpisodeDetailPage from "./pages/EpisodeDetailPage";
 import "./App.css";
 
 function App() {
+    const [globalSearch, setGlobalSearch] = useState("");
+    
     const [animeList, setAnimeList] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -154,6 +156,25 @@ function App() {
                         path="/"
                         element={
                             <>
+                                <h1>AnimeMangaDB</h1>
+
+                                <p>
+                                    Anime to manga chapter lookup database.
+                                </p>
+
+                                <section>
+                                    <h2>Global Search</h2>
+
+                                    <input
+                                        type="text"
+                                        placeholder="Search anime, episodes, or chapters..."
+                                        value={globalSearch}
+                                        onChange={(event) =>
+                                            setGlobalSearch(event.target.value)
+                                        }
+                                    />
+                                </section>
+                                
                                 <ChapterLookup
                                     chapterSearch={chapterSearch}
                                     setChapterSearch={setChapterSearch}
