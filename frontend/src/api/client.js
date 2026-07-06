@@ -79,3 +79,19 @@ export async function getEpisodeById(episodeId) {
 
     return response.json();
 }
+
+export async function searchDatabase(query) {
+    const params = new URLSearchParams({
+        query,
+    });
+
+    const response = await fetch(
+        `${API_BASE_URL}/search?${params.toString()}`
+    );
+
+    if (!response.ok) {
+        throw new Error("Failed to search database.");
+    }
+
+    return response.json();
+}
