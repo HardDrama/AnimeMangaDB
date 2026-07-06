@@ -22,7 +22,7 @@ function AnimeBrowser({
             )}
 
             {!loading && !error && animeList.length === 0 && (
-                <p>No anime found.</p>
+                <p>No anime match your search.</p>
             )}
 
             {!loading && !error && animeList.length > 0 && (
