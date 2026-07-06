@@ -29,11 +29,18 @@ def main():
                 == f"Episode {episode.episode_number}"
             ]
 
+            missing_arcs = [
+                episode
+                for episode in episodes
+                if episode.arc is None
+            ]
+
             print()
             print(f"Anime: {anime.title}")
             print(f"Episodes: {len(episodes)}")
             print(f"Missing chapter mappings: {len(missing_chapters)}")
             print(f"Generic episode titles: {len(generic_titles)}")
+            print(f"Missing arcs: {len(missing_arcs)}")
 
             if missing_chapters:
                 print("Sample missing chapter mappings:")
@@ -48,6 +55,15 @@ def main():
                 print("Sample generic episode titles:")
 
                 for episode in generic_titles[:5]:
+                    print(
+                        f"- Episode {episode.episode_number}: "
+                        f"{episode.episode_title}"
+                    )
+
+            if missing_arcs:
+                print("Sample missing arcs:")
+
+                for episode in missing_arcs[:5]:
                     print(
                         f"- Episode {episode.episode_number}: "
                         f"{episode.episode_title}"
