@@ -45,6 +45,13 @@ def main():
                         f"Episode ID {episode.id}"
                     )
 
+                if not episode.source_url:
+                    issue_count += 1
+                    print(
+                        f"[Missing Source URL] {anime.title} "
+                        f"Episode {episode.episode_number}"
+                    )
+
                 chapters = repo.get_chapters_for_episode_id(
                     episode.id
                 )
