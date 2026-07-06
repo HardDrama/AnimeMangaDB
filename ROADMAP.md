@@ -91,7 +91,6 @@
 • React + Vite frontend
 • API client
 • Live anime browser
-• End-to-end frontend/backend communication
 
 ### v0.32.0 – Search & Episode Browser
 • Anime selection
@@ -109,70 +108,74 @@
 • Sticky navigation header
 • Component-based frontend architecture
 • Reusable UI components
-• Cleaner App.jsx
 
 ### v0.35.0 – Data Quality & Metadata
 • Database quality inspection
-• Missing chapter reporting
-• Generic title detection
-• Missing arc reporting
+• Missing metadata reporting
 • Percentage metrics
 • Automatic quality warnings
 
 ### v0.36.0 – Navigation & Routing
 • React Router integration
-• BrowserRouter
 • Route definitions
-• Lookup route
 • 404 page
-• Route placeholders
+• Lookup route
+• BrowserRouter architecture
 
 ### v0.37.0 – Dedicated Detail Pages
 • Anime Detail page
 • Episode Detail page
 • Breadcrumb navigation
 • URL-based navigation
-• Dedicated API clients
+• Page architecture
 
 ### v0.38.0 – Search & Discovery
-• Global Search
-• Anime title filtering
-• Search status indicator
-• Empty search state
+• Global Search UI
+• Reusable GlobalSearch component
+• Frontend filtering
+• Search status
 • Clear Search
-• Discovery foundation
 
 ### v0.39.0 – API & Metadata Enrichment
 • Rich Episode API responses
 • Anime title metadata
-• Improved breadcrumb titles
+• Improved breadcrumbs
 • Richer Episode Detail pages
-• Simplified chapter lookup rendering
+
+### v0.40.0 – Advanced Search
+• Unified Search API
+• Anime search
+• Episode search
+• Chapter search
+• Grouped search results
+• Search result navigation
 
 ## 🚧 Next Up
 
-### v0.40.0 – Advanced Search
-• Search by episode title
-• Search by manga chapter
-• Unified multi-category search results
-• Search suggestions/autocomplete
-• Multi-series filtering
-• Highlight matching search terms
-
-### v0.41.0 – Data Quality Improvements
+### v0.41.0 – Data Quality & Content Enrichment
 • Canonical One Piece episode titles
-• Improved arc extraction
+• Improved episode title extraction
+• Better arc extraction
 • Missing episode detection
+• Missing chapter detection
 • Metadata consistency validation
-• Automated repair utilities
+• Automated data repair utilities
 
-### v0.42.0 – User Experience Enhancements
+### v0.42.0 – Search Intelligence
+• Search suggestions/autocomplete
+• Relevance ranking
+• Partial and fuzzy matching
+• Highlight matching terms
+• Search history
+• Recently viewed content
+
+### v0.43.0 – User Experience Enhancements
 • Favorites
+• Saved searches
 • Recently viewed anime
-• Recently viewed episodes
 • Skeleton loading states
 • Accessibility improvements
-• Keyboard navigation
+• Keyboard shortcuts
 • Mobile UI refinements
 
 ## 🎯 Long-Term Goal

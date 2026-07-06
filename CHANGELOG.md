@@ -1008,3 +1008,46 @@ Final Result:
 • Breadcrumbs display anime title correctly
 • Chapter lookup displays anime titles correctly
 • Existing frontend functionality remains fully operational
+
+# 📋 AnimeMangaDB v0.40.0 Changelog
+
+## 🔎 Advanced Search
+
+### ✨ Added
+• Unified Global Search API endpoint
+• Anime search backend
+• Episode search backend
+• Chapter search backend
+• Frontend Global Search API client
+• Grouped search results (Anime, Episodes, Chapters)
+• Clickable search results for all categories
+
+### 🔄 Improved
+• Global Search now queries the backend instead of relying solely on frontend filtering
+• Search results are organized by content type for easier navigation
+• Episode search results include anime titles
+• Chapter search results display linked episode mappings
+• Search results provide direct navigation to detail pages
+
+### 🏛️ Architecture
+• Introduced centralized `/search` API endpoint
+• Expanded repository search capabilities
+• Continued API-first frontend architecture
+• Established a scalable foundation for future search enhancements
+
+### 🧪 Testing
+• Backend test suite expanded to 40 automated tests
+• Verified Global Search endpoint
+• Verified anime search results
+• Verified episode search results
+• Verified chapter search results
+• Verified frontend integration with backend search
+• Verified search result navigation
+• Final test result: 40 automated tests passing
+
+### ✅ Validation
+• Unified search returns anime results correctly
+• Episode results display correctly
+• Chapter results display correctly
+• Search result links navigate correctly
+• Existing browsing and lookup functionality remain fully operational
