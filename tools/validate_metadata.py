@@ -42,6 +42,13 @@ def main():
                     for chapter in chapters
                 ]
 
+                if len(chapter_numbers) != len(set(chapter_numbers)):
+                    issue_count += 1
+                    print(
+                        f"[Duplicate Chapters] {anime.title} "
+                        f"Episode {episode.episode_number}"
+                    )
+
                 if chapter_numbers != sorted(chapter_numbers):
                     issue_count += 1
                     print(
