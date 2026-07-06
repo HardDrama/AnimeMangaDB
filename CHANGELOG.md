@@ -1090,3 +1090,28 @@ Final Result:
 • Missing chapter report generates correctly
 • Developer tool documentation is available
 • Existing application functionality remains unaffected
+
+# 📋 AnimeMangaDB v0.42.0 Changelog
+
+## ✅ Metadata Validation Framework
+
+### ✨ Added
+• Metadata validation tool
+• Missing episode title validation
+• Invalid episode number validation
+• Unsorted chapter mapping validation
+• Duplicate chapter mapping validation
+• Missing anime provider validation
+• Missing anime base URL validation
+• Missing episode source URL validation
+
+### 🔄 Improved
+• Data quality checks are now centralized in a reusable validator
+• Validation can be run before future database updates or repairs
+• Project now has a stronger foundation for safe metadata repair work
+
+### ✅ Validation
+• Metadata validator reports current database issues
+• Current database passes all implemented validation checks
+• Backend test suite remains fully passing
+• Final test result: 40 automated tests passing
