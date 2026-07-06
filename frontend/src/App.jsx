@@ -16,6 +16,7 @@ import EpisodeBrowser from "./components/EpisodeBrowser";
 import SelectedEpisode from "./components/SelectedEpisode";
 import ChapterMapping from "./components/ChapterMapping";
 import AnimeDetailPage from "./pages/AnimeDetailPage";
+import EpisodeDetailPage from "./pages/EpisodeDetailPage";
 import "./App.css";
 
 function App() {
@@ -227,12 +228,7 @@ function App() {
                     />
                     <Route
                         path="/episodes/:episodeId"
-                        element={
-                            <section>
-                                <h2>Episode Detail</h2>
-                                <p>Episode detail routing is ready.</p>
-                            </section>
-                        }
+                        element={<EpisodeDetailPage />}
                     />
                 </Routes>
             </main>
