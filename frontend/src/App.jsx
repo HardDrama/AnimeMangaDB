@@ -8,6 +8,7 @@ import {
 import AnimeBrowser from "./components/AnimeBrowser";
 import ChapterLookup from "./components/ChapterLookup";
 import EpisodeBrowser from "./components/EpisodeBrowser";
+import SelectedEpisode from "./components/SelectedEpisode";
 import "./App.css";
 
 function App() {
@@ -173,21 +174,7 @@ function App() {
                 />
 
                 {selectedEpisode && (
-                    <section>
-                        <h2>Selected Episode</h2>
-
-                        <p>
-                            <strong>
-                                Episode {selectedEpisode.episode_number}
-                            </strong>
-                        </p>
-
-                        <p>{selectedEpisode.title}</p>
-
-                        {selectedEpisode.arc && (
-                            <p>Arc: {selectedEpisode.arc}</p>
-                        )}
-                    </section>
+                    <SelectedEpisode episode={selectedEpisode} />
                 )}
 
                 {selectedEpisode && (
