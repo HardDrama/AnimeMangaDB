@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function EpisodeCard({
     episode,
     selected,
@@ -9,7 +11,9 @@ function EpisodeCard({
             className={selected ? "selected" : ""}
         >
             <strong>
-                Episode {episode.episode_number}
+                <Link to={`/episodes/${episode.id}`}>
+                    Episode {episode.episode_number}
+                </Link>
             </strong>
             <br />
             <span>{episode.title}</span>
