@@ -9,6 +9,7 @@ import AnimeBrowser from "./components/AnimeBrowser";
 import ChapterLookup from "./components/ChapterLookup";
 import EpisodeBrowser from "./components/EpisodeBrowser";
 import SelectedEpisode from "./components/SelectedEpisode";
+import ChapterMapping from "./components/ChapterMapping";
 import "./App.css";
 
 function App() {
@@ -178,39 +179,12 @@ function App() {
                 )}
 
                 {selectedEpisode && (
-                    <section>
-                        <h2>Chapter Mapping</h2>
-
-                        {chaptersLoading && (
-                            <p className="status">
-                                Loading chapters...
-                            </p>
-                        )}
-
-                        {chaptersError && (
-                            <p className="status error">
-                                Error: {chaptersError}
-                            </p>
-                        )}
-
-                        {!chaptersLoading &&
-                            !chaptersError &&
-                            chapters.length === 0 && (
-                                <p>No chapter mapping available.</p>
-                            )}
-
-                        {!chaptersLoading &&
-                            !chaptersError &&
-                            chapters.length > 0 && (
-                                <ul>
-                                    {chapters.map((chapter) => (
-                                        <li key={chapter.chapter_number}>
-                                            Chapter {chapter.chapter_number}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                    </section>
+                    <ChapterMapping
+                        selectedEpisode={selectedEpisode}
+                        chapters={chapters}
+                        chaptersLoading={chaptersLoading}
+                        chaptersError={chaptersError}
+                    />
                 )}
             </main>
         </>
