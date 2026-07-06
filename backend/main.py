@@ -85,6 +85,7 @@ def list_episodes():
             EpisodeResponse(
                 id=episode.id,
                 anime_id=episode.anime_id,
+                anime_title=repo.get_anime_by_id(episode.anime_id).title,
                 episode_number=episode.episode_number,
                 title=episode.episode_title,
                 arc=episode.arc,
@@ -113,6 +114,7 @@ def get_episode(episode_id: int):
         return EpisodeResponse(
             id=episode.id,
             anime_id=episode.anime_id,
+            anime_title=repo.get_anime_by_id(episode.anime_id).title,
             episode_number=episode.episode_number,
             title=episode.episode_title,
             arc=episode.arc,
@@ -148,6 +150,7 @@ def get_episode_by_number(
         return EpisodeResponse(
             id=episode.id,
             anime_id=episode.anime_id,
+            anime_title=repo.get_anime_by_id(episode.anime_id).title,
             episode_number=episode.episode_number,
             title=episode.episode_title,
             arc=episode.arc,
@@ -195,6 +198,7 @@ def list_episodes_for_anime(anime_id: int):
             EpisodeResponse(
                 id=episode.id,
                 anime_id=episode.anime_id,
+                anime_title=repo.get_anime_by_id(episode.anime_id).title,
                 episode_number=episode.episode_number,
                 title=episode.episode_title,
                 arc=episode.arc,
@@ -221,6 +225,7 @@ def get_episodes_by_chapter(chapter_number: int):
             EpisodeResponse(
                 id=episode.id,
                 anime_id=episode.anime_id,
+                anime_title=repo.get_anime_by_id(episode.anime_id).title,
                 episode_number=episode.episode_number,
                 title=episode.episode_title,
                 arc=episode.arc,
