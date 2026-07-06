@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getAnimeById, getEpisodesForAnime } from "../api/client";
 import EpisodeCard from "../components/EpisodeCard";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function AnimeDetailPage() {
     const { animeId } = useParams();
@@ -43,6 +44,17 @@ function AnimeDetailPage() {
 
     return (
         <section>
+            <Breadcrumbs
+                items={[
+                    {
+                        label: "Home",
+                        to: "/",
+                    },
+                    {
+                        label: anime.title,
+                    },
+                ]}
+            />
             <h2>{anime.title}</h2>
             <p>{anime.provider}</p>
             <p>{anime.episode_count ?? 0} episodes</p>

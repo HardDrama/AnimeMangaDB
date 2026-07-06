@@ -154,3 +154,17 @@ li a {
 li a:hover {
     color: #60a5fa;
 }
+
+.breadcrumbs {
+    margin-bottom: 24px;
+    color: #9ca3af;
+}
+
+.breadcrumbs a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}

@@ -4,6 +4,7 @@ import {
     getEpisodeById,
     getEpisodeChapters,
 } from "../api/client";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function EpisodeDetailPage() {
     const { episodeId } = useParams();
@@ -57,6 +58,21 @@ function EpisodeDetailPage() {
 
     return (
         <section>
+            <Breadcrumbs
+                items={[
+                    {
+                        label: "Home",
+                        to: "/",
+                    },
+                    {
+                        label: "Anime",
+                        to: `/anime/${episode.anime_id}`,
+                    },
+                    {
+                        label: `Episode ${episode.episode_number}`,
+                    },
+                ]}
+            />
             <h2>
                 Episode {episode.episode_number}
             </h2>
