@@ -65,7 +65,7 @@ function EpisodeDetailPage() {
                         to: "/",
                     },
                     {
-                        label: "Anime",
+                        label: episode.anime_title,
                         to: `/anime/${episode.anime_id}`,
                     },
                     {
