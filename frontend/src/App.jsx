@@ -1,6 +1,7 @@
 import {
     Routes,
     Route,
+    Link,
 } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
@@ -134,7 +135,9 @@ function App() {
         <>
             <header className="site-header">
                 <div>
-                    <strong>AnimeMangaDB</strong>
+                    <Link to="/" className="site-title">
+                        AnimeMangaDB
+                    </Link>
                 </div>
 
                 <nav>
