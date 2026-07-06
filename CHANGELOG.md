@@ -927,3 +927,43 @@ Final Result:
 • Anime cards navigate to detail pages
 • Episode cards navigate to detail pages
 • Existing application functionality remains intact
+
+# 📋 AnimeMangaDB v0.38.0 Changelog
+
+## 🔍 Search & Discovery
+
+### ✨ Added
+• Global Search interface
+• Reusable GlobalSearch component
+• Anime title filtering
+• Search status indicator
+• Search empty-state messaging
+• Clear Search button
+
+### 🔄 Improved
+• Introduced a unified search entry point on the Home page
+• Anime browser now updates dynamically while typing
+• Clear visual feedback when filters are active
+• Improved user experience for discovering anime
+
+### 🏛️ Architecture
+• Introduced dedicated GlobalSearch component
+• Continued separation of presentation and application logic
+• Extended component-based frontend architecture
+• Prepared the application for future multi-category search
+
+### 🧪 Testing
+• Backend test suite remains fully passing
+• Verified Global Search input
+• Verified anime filtering
+• Verified empty search state
+• Verified search status display
+• Verified Clear Search functionality
+• Final test result: 39 automated tests passing
+
+### ✅ Validation
+• Global Search loads correctly
+• Anime list filters in real time
+• Clearing search restores the full anime list
+• Empty searches display an appropriate message
+• Existing browsing and routing functionality remain unaffected
