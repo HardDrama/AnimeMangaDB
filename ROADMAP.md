@@ -82,7 +82,7 @@
 • Interactive API documentation
 
 ### v0.30.0 – API Expansion
-• Typed API models
+• Typed API response models
 • Anime detail endpoint
 • Episode detail endpoint
 • Chapter endpoints
@@ -112,24 +112,24 @@
 • Component-based frontend architecture
 • Reusable UI components
 • Cleaner App.jsx
-• Improved maintainability
+
+### v0.35.0 – Data Quality & Metadata
+• Database quality inspection tool
+• Missing chapter reporting
+• Generic title detection
+• Missing arc reporting
+• Percentage quality metrics
+• Automatic quality warnings
 
 ## 🚧 Next Up
 
-### v0.35.0 – Data Quality & Metadata
-• Canonical One Piece episode titles
-• Arc extraction improvements
-• Better provider metadata
-• Missing episode detection
-• Missing chapter detection
-• Database consistency validation
-
-### v0.36.0 – Frontend Experience
-• Routing with React Router
-• Dedicated Anime page
-• Dedicated Episode page
+### v0.36.0 – Navigation & Routing
+• React Router integration
+• Dedicated Home page
+• Anime detail page
+• Episode detail page
 • Breadcrumb navigation
-• Improved responsive layout
+• URL-based navigation
 
 ### v0.37.0 – Search & Discovery
 • Global search
@@ -138,11 +138,19 @@
 • Multi-series browsing
 • Recently viewed anime
 
+### v0.38.0 – Scraper Intelligence
+• Canonical One Piece episode titles
+• Improved arc extraction
+• Provider-specific metadata enhancements
+• Missing episode detection
+• Automated data repair utilities
+
 ## 🎯 Long-Term Goal
 
 ### v1.0.0 – Production Release
 • Stable production-ready scraper
 • Multi-provider architecture
+• High-quality validated database
 • Public REST API
 • Complete AnimeMangaDB website
 • Comprehensive automated testing

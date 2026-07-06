@@ -799,3 +799,44 @@ Final Result:
 • Selected episode display works correctly
 • Chapter mapping display works correctly
 • All frontend functionality preserved after component refactoring
+
+# 📋 AnimeMangaDB v0.35.0 Changelog
+
+## 📊 Data Quality & Metadata
+
+### ✨ Added
+• Database quality inspection tool
+• Missing chapter mapping detection
+• Generic episode title detection
+• Missing arc detection
+• Sample issue reporting
+• Percentage-based quality metrics
+• Automatic quality threshold warnings
+
+### 🔄 Improved
+• Database inspection now provides actionable quality metrics
+• Reports include sample records for faster debugging
+• Percentage reporting makes quality trends easier to understand
+• Automatic warnings highlight significant data quality issues
+
+### 🏛️ Architecture
+• Introduced dedicated data quality tooling
+• Established a repeatable database inspection workflow
+• Laid the foundation for future metadata validation and cleanup tools
+
+### 🧪 Testing
+• Backend test suite remains fully passing
+• Database quality inspection validated against current dataset
+• Verified missing chapter reporting
+• Verified generic title reporting
+• Verified missing arc reporting
+• Verified percentage calculations
+• Verified warning thresholds
+• Final test result: 39 automated tests passing
+
+### ✅ Validation
+• Quality report generates successfully
+• Sample issue reporting works correctly
+• Percentage metrics display correctly
+• Warning thresholds trigger appropriately
+• Existing scraper and API functionality remain unaffected
