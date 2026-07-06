@@ -199,6 +199,9 @@ function App() {
                                 <GlobalSearch
                                     value={globalSearch}
                                     onChange={handleGlobalSearch}
+                                    results={globalSearchResults}
+                                    loading={globalSearchLoading}
+                                    error={globalSearchError}
                                 />
                                 
                                 <ChapterLookup
