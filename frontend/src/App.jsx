@@ -5,14 +5,10 @@ import {
     getEpisodeChapters,
     getEpisodesByChapter,
 } from "./api/client";
-import "./App.css";
-
-import AnimeCard from "./components/AnimeCard";
-import EpisodeCard from "./components/EpisodeCard";
-
-import ChapterLookup from "./components/ChapterLookup";
-
 import AnimeBrowser from "./components/AnimeBrowser";
+import ChapterLookup from "./components/ChapterLookup";
+import EpisodeBrowser from "./components/EpisodeBrowser";
+import "./App.css";
 
 function App() {
     const [animeList, setAnimeList] = useState([]);
@@ -24,13 +20,13 @@ function App() {
     const [episodes, setEpisodes] = useState([]);
     const [episodesLoading, setEpisodesLoading] = useState(false);
     const [episodesError, setEpisodesError] = useState("");
+    const [episodeSearch, setEpisodeSearch] = useState("");
+
     const [selectedEpisode, setSelectedEpisode] = useState(null);
 
     const [chapters, setChapters] = useState([]);
     const [chaptersLoading, setChaptersLoading] = useState(false);
     const [chaptersError, setChaptersError] = useState("");
-
-    const [episodeSearch, setEpisodeSearch] = useState("");
 
     const [chapterSearch, setChapterSearch] = useState("");
     const [chapterResults, setChapterResults] = useState([]);
@@ -52,14 +48,23 @@ function App() {
         loadAnime();
     }, []);
 
+    const filteredEpisodes = episodes.filter((episode) => {
+        const search = episodeSearch.toLowerCase();
+
+        return (
+            episode.title.toLowerCase().includes(search) ||
+            episode.episode_number.toString().includes(search)
+        );
+    });
+
     async function handleSelectAnime(item) {
         setSelectedAnime(item);
+        setSelectedEpisode(null);
         setEpisodes([]);
+        setChapters([]);
+        setEpisodeSearch("");
         setEpisodesError("");
         setEpisodesLoading(true);
-        setEpisodeSearch("");
-        setSelectedEpisode(null);
-        setChapters([]);
 
         try {
             const data = await getEpisodesForAnime(item.id);
@@ -87,15 +92,6 @@ function App() {
         }
     }
 
-    const filteredEpisodes = episodes.filter((episode) => {
-        const search = episodeSearch.toLowerCase();
-
-        return (
-            episode.title.toLowerCase().includes(search) ||
-            episode.episode_number.toString().includes(search)
-        );
-    });
-
     async function handleChapterLookup() {
         if (!chapterSearch.trim()) {
             return;
@@ -115,7 +111,7 @@ function App() {
         }
     }
 
-    function handleLookupEpisodeClick(episode) {
+    async function handleLookupEpisodeClick(episode) {
         const anime = animeList.find(
             (item) => item.id === episode.anime_id
         );
@@ -124,10 +120,8 @@ function App() {
             return;
         }
 
-        handleSelectAnime(anime).then(() => {
-            setSelectedEpisode(episode);
-            handleSelectEpisode(episode);
-        });
+        await handleSelectAnime(anime);
+        await handleSelectEpisode(episode);
     }
 
     return (
@@ -142,6 +136,7 @@ function App() {
                     <a href="#anime-browser">Anime Browser</a>
                 </nav>
             </header>
+
             <main>
                 <h1>AnimeMangaDB</h1>
                 <p>Anime to manga chapter lookup database.</p>
@@ -156,88 +151,35 @@ function App() {
                     onResultClick={handleLookupEpisodeClick}
                     animeList={animeList}
                 />
-                
-                <h2>Available Anime</h2>
 
-                {loading && (
-                    <p className="status">Loading anime...</p>
-                )}
+                <AnimeBrowser
+                    animeList={animeList}
+                    loading={loading}
+                    error={error}
+                    selectedAnime={selectedAnime}
+                    onSelectAnime={handleSelectAnime}
+                />
 
-                {error && (
-                    <p className="status error">Error: {error}</p>
-                )}
-
-                {!loading && !error && animeList.length === 0 && (
-                    <p>No anime found.</p>
-                )}
-
-                {!loading && !error && animeList.length > 0 && (
-                    <ul>
-                        {animeList.map((item) => (
-                            <AnimeCard
-                                key={item.id}
-                                anime={item}
-                                selected={selectedAnime?.id === item.id}
-                                onSelect={handleSelectAnime}
-                            />
-                        ))}
-                    </ul>
-                )}
-
-                {selectedAnime && (
-                    <AnimeBrowser
-                        animeList={animeList}
-                        loading={loading}
-                        error={error}
-                        selectedAnime={selectedAnime}
-                        onSelectAnime={handleSelectAnime}
-                    />
-                )}
-
-                {selectedAnime && (
-                    <section>
-                        <h2>Episodes</h2>
-
-                        {episodesLoading && (
-                            <p className="status">Loading episodes...</p>
-                        )}
-
-                        {episodesError && (
-                            <p className="status error">Error: {episodesError}</p>
-                        )}
-
-                        {!episodesLoading && !episodesError && filteredEpisodes.length === 0 && (
-                            <p>No episodes found.</p>
-                        )}
-
-                        <input
-                            type="text"
-                            placeholder="Search episodes..."
-                            value={episodeSearch}
-                            onChange={(event) => setEpisodeSearch(event.target.value)}
-                        />
-
-                        {!episodesLoading && !episodesError && episodes.length > 0 && (
-                            <ul className="episode-list">
-                                {filteredEpisodes.map((episode) => (
-                                    <EpisodeCard
-                                        key={episode.id}
-                                        episode={episode}
-                                        selected={selectedEpisode?.id === episode.id}
-                                        onSelect={handleSelectEpisode}
-                                    />
-                                ))}
-                            </ul>
-                        )}
-                    </section>
-                )}
+                <EpisodeBrowser
+                    selectedAnime={selectedAnime}
+                    episodes={episodes}
+                    filteredEpisodes={filteredEpisodes}
+                    episodeSearch={episodeSearch}
+                    setEpisodeSearch={setEpisodeSearch}
+                    episodesLoading={episodesLoading}
+                    episodesError={episodesError}
+                    selectedEpisode={selectedEpisode}
+                    onSelectEpisode={handleSelectEpisode}
+                />
 
                 {selectedEpisode && (
                     <section>
                         <h2>Selected Episode</h2>
 
                         <p>
-                            <strong>Episode {selectedEpisode.episode_number}</strong>
+                            <strong>
+                                Episode {selectedEpisode.episode_number}
+                            </strong>
                         </p>
 
                         <p>{selectedEpisode.title}</p>
@@ -253,7 +195,9 @@ function App() {
                         <h2>Chapter Mapping</h2>
 
                         {chaptersLoading && (
-                            <p className="status">Loading chapters...</p>
+                            <p className="status">
+                                Loading chapters...
+                            </p>
                         )}
 
                         {chaptersError && (
