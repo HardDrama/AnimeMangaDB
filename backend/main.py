@@ -38,6 +38,12 @@ def search(query: str = ""):
             else []
         )
 
+        episode_results = (
+            repo.search_episodes(query)
+            if query.strip()
+            else []
+        )
+
         return {
             "query": query,
             "anime": [
@@ -48,7 +54,19 @@ def search(query: str = ""):
                 }
                 for anime in anime_results
             ],
-            "episodes": [],
+            "episodes": [
+                {
+                    "id": episode.id,
+                    "anime_id": episode.anime_id,
+                    "anime_title": repo.get_anime_by_id(
+                        episode.anime_id
+                    ).title,
+                    "episode_number": episode.episode_number,
+                    "title": episode.episode_title,
+                    "arc": episode.arc,
+                }
+                for episode in episode_results
+            ],
             "chapters": [],
         }
 

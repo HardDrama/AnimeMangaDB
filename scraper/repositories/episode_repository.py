@@ -300,3 +300,14 @@ class EpisodeRepository:
             .order_by(Anime.title)
             .all()
         )
+    
+    def search_episodes(
+        self,
+        query: str,
+    ):
+        return (
+            self.session.query(Episode)
+            .where(Episode.episode_title.ilike(f"%{query}%"))
+            .order_by(Episode.episode_number)
+            .all()
+        )
