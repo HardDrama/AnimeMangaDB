@@ -100,3 +100,14 @@ def test_chapter_lookup_endpoint():
 
     assert response.status_code == 200
     assert response.json() == []
+
+def test_search_endpoint():
+    response = client.get("/search?query=one")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "query": "one",
+        "anime": [],
+        "episodes": [],
+        "chapters": [],
+    }

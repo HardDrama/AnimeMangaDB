@@ -25,6 +25,15 @@ app.add_middleware(
 )
 
 
+@app.get("/search")
+def search(query: str = ""):
+    return {
+        "query": query,
+        "anime": [],
+        "episodes": [],
+        "chapters": [],
+    }
+
 @app.get("/anime", response_model=list[AnimeResponse])
 def list_anime():
     session = SessionLocal()
