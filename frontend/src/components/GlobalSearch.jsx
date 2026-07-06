@@ -69,6 +69,33 @@ function GlobalSearch({
                             ))}
                         </ul>
                     )}
+
+                    <h3>Chapters</h3>
+
+                    {results.chapters.length === 0 ? (
+                        <p>No chapter results.</p>
+                    ) : (
+                        <ul>
+                            {results.chapters.map((chapter) => (
+                                <li key={chapter.chapter_number}>
+                                    <strong>
+                                        Chapter {chapter.chapter_number}
+                                    </strong>
+
+                                    <ul>
+                                        {chapter.episodes.map((episode) => (
+                                            <li key={episode.id}>
+                                                <Link to={`/episodes/${episode.id}`}>
+                                                    {episode.anime_title} — Episode{" "}
+                                                    {episode.episode_number}: {episode.title}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             )}
         </section>
