@@ -229,6 +229,15 @@ function App() {
                             </section>
                         }
                     />
+                    <Route
+                        path="/episodes/:episodeId"
+                        element={
+                            <section>
+                                <h2>Episode Detail</h2>
+                                <p>Episode detail routing is ready.</p>
+                            </section>
+                        }
+                    />
                 </Routes>
             </main>
         </>
