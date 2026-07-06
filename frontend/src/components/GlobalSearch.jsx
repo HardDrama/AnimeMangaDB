@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function GlobalSearch({
     value,
     onChange,
@@ -42,7 +45,9 @@ function GlobalSearch({
                         <ul>
                             {results.anime.map((anime) => (
                                 <li key={anime.id}>
-                                    {anime.title}
+                                    <Link to={`/anime/${anime.id}`}>
+                                        {anime.title}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
