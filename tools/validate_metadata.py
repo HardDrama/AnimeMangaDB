@@ -23,6 +23,12 @@ def main():
                 print(
                     f"[Missing Provider] {anime.title}"
                 )
+
+            if not anime.base_url:
+                issue_count += 1
+                print(
+                    f"[Missing Base URL] {anime.title}"
+                )
             
             for episode in episodes:
                 if not episode.episode_title:
