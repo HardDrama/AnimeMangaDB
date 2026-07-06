@@ -67,3 +67,15 @@ export async function getAnimeById(animeId) {
 
     return response.json();
 }
+
+export async function getEpisodeById(episodeId) {
+    const response = await fetch(
+        `${API_BASE_URL}/episodes/${episodeId}`
+    );
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch episode.");
+    }
+
+    return response.json();
+}
