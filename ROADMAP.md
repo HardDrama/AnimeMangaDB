@@ -91,7 +91,6 @@
 • React + Vite frontend
 • API client
 • Live anime browser
-• Episode counts
 • End-to-end frontend/backend communication
 
 ### v0.32.0 – Search & Episode Browser
@@ -105,7 +104,6 @@
 • Manga chapter lookup
 • Chapter → Episode lookup
 • Connected lookup navigation
-• Improved search workflow
 
 ### v0.34.0 – UI Polish
 • Sticky navigation header
@@ -123,35 +121,46 @@
 
 ### v0.36.0 – Navigation & Routing
 • React Router integration
+• BrowserRouter
 • Route definitions
+• Lookup route
 • 404 page
-• Dedicated lookup route
-• Anime route placeholder
-• Episode route placeholder
-
-## 🚧 Next Up
+• Route placeholders
 
 ### v0.37.0 – Dedicated Detail Pages
-• Functional Anime detail page
-• Functional Episode detail page
-• Route parameter handling
-• Direct URL navigation
+• Anime Detail page
+• Episode Detail page
 • Breadcrumb navigation
-• Improved page layout
+• URL-based navigation
+• Dedicated API clients
+• Detail page architecture
+
+## 🚧 Next Up
 
 ### v0.38.0 – Search & Discovery
 • Global search
 • Search suggestions
-• Advanced filtering
-• Multi-series browsing
+• Search by anime title
+• Search by episode title
+• Search by manga chapter
+• Multi-series filtering
 • Recently viewed anime
 
-### v0.39.0 – Scraper Intelligence
+### v0.39.0 – API & Metadata Enrichment
+• Return anime title with episode responses
+• Richer breadcrumb data
 • Canonical One Piece episode titles
 • Improved arc extraction
 • Provider metadata enhancements
-• Missing episode detection
-• Automated data repair tools
+• Episode metadata improvements
+
+### v0.40.0 – User Experience
+• Favorites
+• Recently viewed history
+• Better loading states
+• Skeleton loading components
+• Accessibility improvements
+• Keyboard navigation
 
 ## 🎯 Long-Term Goal
 

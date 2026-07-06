@@ -884,3 +884,46 @@ Final Result:
 • Anime detail placeholder route loads
 • Episode detail placeholder route loads
 • Existing frontend functionality remains unaffected by routing changes
+
+# 📋 AnimeMangaDB v0.37.0 Changelog
+
+## 📄 Dedicated Detail Pages
+
+### ✨ Added
+• Anime Detail page
+• Episode Detail page
+• Frontend Anime Detail API client
+• Frontend Episode Detail API client
+• Breadcrumb navigation
+• Full page-based navigation between anime and episodes
+
+### 🔄 Improved
+• Anime cards now navigate directly to dedicated detail pages
+• Episode cards now navigate directly to dedicated detail pages
+• Breadcrumbs provide clear navigation context
+• Navigation now follows URL-based routing instead of relying solely on application state
+• Users can directly access anime and episode pages through bookmarkable URLs
+
+### 🏛️ Architecture
+• Introduced dedicated page components
+• Separated page-level concerns from reusable UI components
+• Expanded React Router usage throughout the application
+• Established a scalable page architecture for future growth
+
+### 🧪 Testing
+• Backend test suite remains fully passing
+• Verified Anime Detail page
+• Verified Episode Detail page
+• Verified Anime card navigation
+• Verified Episode card navigation
+• Verified breadcrumb navigation
+• Verified route handling
+• Final test result: 39 automated tests passing
+
+### ✅ Validation
+• Anime detail pages load correctly
+• Episode detail pages load correctly
+• Breadcrumb navigation functions correctly
+• Anime cards navigate to detail pages
+• Episode cards navigate to detail pages
+• Existing application functionality remains intact
