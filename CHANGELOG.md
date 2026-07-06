@@ -755,3 +755,47 @@ Final Result:
 • Missing chapters show no-result state
 • Lookup result clicks select the correct anime and episode
 • Chapter mapping display updates correctly
+
+# 📋 AnimeMangaDB v0.34.0 Changelog
+
+## 🎨 UI Polish
+
+### ✨ Added
+• Sticky site header with navigation links
+• Reusable AnimeCard component
+• Reusable EpisodeCard component
+• ChapterLookup component
+• AnimeBrowser component
+• EpisodeBrowser component
+• SelectedEpisode component
+• ChapterMapping component
+
+### 🔄 Improved
+• Refactored App.jsx into reusable React components
+• Simplified component hierarchy
+• Improved frontend maintainability
+• Navigation links now jump directly to major sections
+• Continued improvement of the browsing experience
+
+### 🏛️ Architecture
+• Introduced a dedicated frontend component architecture
+• Reduced responsibility of App.jsx to application orchestration
+• Established reusable UI building blocks
+• Improved separation of presentation and application logic
+
+### 🧪 Testing
+• Verified all extracted components function identically to their original implementations
+• Validated anime browsing
+• Validated episode browsing
+• Validated chapter lookup
+• Validated chapter mapping display
+• Backend test suite remains fully passing (39 tests)
+
+### ✅ Validation
+• Header navigation functions correctly
+• Anime browser remains fully operational
+• Episode browser remains fully operational
+• Chapter lookup remains fully operational
+• Selected episode display works correctly
+• Chapter mapping display works correctly
+• All frontend functionality preserved after component refactoring
