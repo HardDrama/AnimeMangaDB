@@ -44,6 +44,13 @@ def search(query: str = ""):
             else []
         )
 
+        chapter_results = []
+
+        if query.strip().isdigit():
+            chapter_results = repo.get_episodes_by_chapter(
+                int(query.strip())
+            )
+
         return {
             "query": query,
             "anime": [
@@ -67,7 +74,25 @@ def search(query: str = ""):
                 }
                 for episode in episode_results
             ],
-            "chapters": [],
+            "chapters": [
+                {
+                    "chapter_number": int(query.strip()),
+                    "episodes": [
+                        {
+                            "id": episode.id,
+                            "anime_id": episode.anime_id,
+                            "anime_title": repo.get_anime_by_id(
+                                episode.anime_id
+                            ).title,
+                            "episode_number": episode.episode_number,
+                            "title": episode.episode_title,
+                            "arc": episode.arc,
+                        }
+                        for episode in chapter_results
+                    ],
+                }
+                if chapter_results
+                else [],]
         }
 
     finally:
