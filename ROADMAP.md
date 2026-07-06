@@ -117,24 +117,23 @@
 
 ### v0.36.0 – Navigation & Routing
 • React Router integration
+• BrowserRouter
 • Route definitions
-• 404 page
 • Lookup route
-• BrowserRouter architecture
+• 404 page
 
 ### v0.37.0 – Dedicated Detail Pages
 • Anime Detail page
 • Episode Detail page
 • Breadcrumb navigation
 • URL-based navigation
-• Page architecture
 
 ### v0.38.0 – Search & Discovery
-• Global Search UI
-• Reusable GlobalSearch component
-• Frontend filtering
+• Global Search
+• Frontend search filtering
 • Search status
 • Clear Search
+• Discovery foundation
 
 ### v0.39.0 – API & Metadata Enrichment
 • Rich Episode API responses
@@ -150,33 +149,37 @@
 • Grouped search results
 • Search result navigation
 
+### v0.41.0 – Data Quality & Content Enrichment
+• Generic title inspection tool
+• Missing arc inspection tool
+• Missing chapter inspection tool
+• Developer tools documentation
+
 ## 🚧 Next Up
 
-### v0.41.0 – Data Quality & Content Enrichment
+### v0.42.0 – Metadata Repair & Validation
 • Canonical One Piece episode titles
 • Improved episode title extraction
-• Better arc extraction
-• Missing episode detection
-• Missing chapter detection
-• Metadata consistency validation
-• Automated data repair utilities
+• Arc metadata improvements
+• Metadata validation tool
+• Metadata repair utilities
+• Data consistency reporting
 
-### v0.42.0 – Search Intelligence
+### v0.43.0 – Intelligent Search
 • Search suggestions/autocomplete
+• Fuzzy matching
 • Relevance ranking
-• Partial and fuzzy matching
 • Highlight matching terms
 • Search history
-• Recently viewed content
+• Popular searches
 
-### v0.43.0 – User Experience Enhancements
+### v0.44.0 – User Experience Enhancements
 • Favorites
-• Saved searches
-• Recently viewed anime
+• Recently viewed content
 • Skeleton loading states
 • Accessibility improvements
-• Keyboard shortcuts
-• Mobile UI refinements
+• Keyboard navigation
+• Mobile UI optimization
 
 ## 🎯 Long-Term Goal
 

@@ -1051,3 +1051,42 @@ Final Result:
 • Chapter results display correctly
 • Search result links navigate correctly
 • Existing browsing and lookup functionality remain fully operational
+
+# 📋 AnimeMangaDB v0.41.0 Changelog
+
+## 🛠️ Data Quality & Content Enrichment
+
+### ✨ Added
+• Generic episode title inspection tool
+• Missing arc inspection tool
+• Missing chapter mapping inspection tool
+• Developer tools documentation
+• Expanded data quality toolkit
+
+### 🔄 Improved
+• Simplified identification of placeholder episode titles
+• Simplified identification of missing arc metadata
+• Simplified identification of missing chapter mappings
+• Improved developer workflow for validating database quality
+• Better organization of maintenance utilities
+
+### 🏛️ Architecture
+• Established a dedicated developer tooling collection
+• Continued the single-responsibility design philosophy for maintenance scripts
+• Added centralized documentation for inspection utilities
+• Prepared the toolkit for future validation and repair tools
+
+### 🧪 Testing
+• Backend test suite remains fully passing
+• Verified Generic Title inspection tool
+• Verified Missing Arc inspection tool
+• Verified Missing Chapter inspection tool
+• Verified developer documentation
+• Final test result: 40 automated tests passing
+
+### ✅ Validation
+• Generic title report generates correctly
+• Missing arc report generates correctly
+• Missing chapter report generates correctly
+• Developer tool documentation is available
+• Existing application functionality remains unaffected
