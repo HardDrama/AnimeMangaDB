@@ -239,7 +239,6 @@ function App() {
                                 chapterResults={chapterResults}
                                 onSearch={handleChapterLookup}
                                 onResultClick={handleLookupEpisodeClick}
-                                animeList={animeList}
                             />
                         }
                     />

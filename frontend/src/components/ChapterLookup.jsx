@@ -46,16 +46,7 @@ function ChapterLookup({
                                     onResultClick(episode)
                                 }
                             >
-                                <strong>
-                                    {
-                                        animeList.find(
-                                            (anime) =>
-                                                anime.id ===
-                                                episode.anime_id
-                                        )?.title ??
-                                            `Anime ID ${episode.anime_id}`
-                                    }
-                                </strong>
+                                <strong>{episode.anime_title}</strong>
                                 <br />
                                 Episode {episode.episode_number}
                                 <br />
