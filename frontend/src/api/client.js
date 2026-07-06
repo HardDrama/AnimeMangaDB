@@ -55,3 +55,15 @@ export async function getEpisodesByChapter(chapterNumber) {
 
     return response.json();
 }
+
+export async function getAnimeById(animeId) {
+    const response = await fetch(
+        `${API_BASE_URL}/anime/${animeId}`
+    );
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch anime.");
+    }
+
+    return response.json();
+}
