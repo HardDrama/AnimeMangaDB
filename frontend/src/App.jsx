@@ -141,7 +141,7 @@ function App() {
                 </div>
 
                 <nav>
-                    <a href="#chapter-lookup">Chapter Lookup</a>
+                    <Link to="/lookup">Chapter Lookup</Link>
                     <a href="#anime-browser">Anime Browser</a>
                 </nav>
             </header>
@@ -203,6 +203,21 @@ function App() {
                                 <h2>Page Not Found</h2>
                                 <p>The page you are looking for does not exist.</p>
                             </section>
+                        }
+                    />
+                    <Route
+                        path="/lookup"
+                        element={
+                            <ChapterLookup
+                                chapterSearch={chapterSearch}
+                                setChapterSearch={setChapterSearch}
+                                chapterLoading={chapterLoading}
+                                chapterError={chapterError}
+                                chapterResults={chapterResults}
+                                onSearch={handleChapterLookup}
+                                onResultClick={handleLookupEpisodeClick}
+                                animeList={animeList}
+                            />
                         }
                     />
                 </Routes>
