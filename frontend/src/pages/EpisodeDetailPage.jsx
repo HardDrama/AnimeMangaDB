@@ -77,6 +77,10 @@ function EpisodeDetailPage() {
                 Episode {episode.episode_number}
             </h2>
 
+            <p>
+                <strong>Anime:</strong> {episode.anime_title}
+            </p>
+
             <p>{episode.title}</p>
 
             {episode.arc && (
