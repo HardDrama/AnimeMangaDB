@@ -145,3 +145,12 @@ button:hover {
 .site-title:hover {
     color: #60a5fa;
 }
+
+li a {
+    color: #f9fafb;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #60a5fa;
+}

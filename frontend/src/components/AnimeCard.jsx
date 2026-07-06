@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function AnimeCard({
     anime,
     selected,
@@ -8,7 +10,11 @@ function AnimeCard({
             onClick={() => onSelect(anime)}
             className={selected ? "selected" : ""}
         >
-            <strong>{anime.title}</strong>
+            <strong>
+                <Link to={`/anime/${anime.id}`}>
+                    {anime.title}
+                </Link>
+            </strong>
             <br />
             <span>{anime.provider}</span>
             <br />
