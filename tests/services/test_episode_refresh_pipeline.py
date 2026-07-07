@@ -30,4 +30,5 @@ def test_refresh_pipeline_uses_metadata_service():
         "https://example.com/episode/1"
     )
     assert result.success is True
+    assert result.warnings == []
     assert result.elapsed_seconds >= 0

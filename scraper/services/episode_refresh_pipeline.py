@@ -44,9 +44,10 @@ class EpisodeRefreshPipeline:
         ):
             result.success = True
 
-        result.warnings.append(
-            "Episode refresh pipeline is not implemented yet."
-        )
+        if not result.success:
+            result.warnings.append(
+                "No metadata was returned for this episode."
+            )
 
         result.elapsed_seconds = (
             perf_counter() - started_at
