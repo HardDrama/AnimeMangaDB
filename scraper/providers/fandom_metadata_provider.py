@@ -7,6 +7,16 @@ class FandomMetadataProvider(MetadataProvider):
     Retrieves fresh metadata from a Fandom episode page.
     """
 
+    def __init__(
+        self,
+        provider=None,
+        browser_client=None,
+        extractor=None,
+    ):
+        self.provider = provider
+        self.browser_client = browser_client
+        self.extractor = extractor
+
     def get_episode_metadata(
         self,
         episode,
