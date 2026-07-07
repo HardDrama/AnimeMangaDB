@@ -1,5 +1,5 @@
-from scraper.providers.factory import (
-    create_provider,
+from scraper.providers.metadata_factory import (
+    create_metadata_provider,
 )
 from scraper.models.episode_metadata import EpisodeMetadata
 from scraper.providers.fandom_metadata_provider import (
@@ -26,7 +26,7 @@ class EpisodeMetadataService:
         provider = self.metadata_provider
 
         if provider is None:
-            provider = create_provider(
+            provider = create_metadata_provider(
                 episode.anime.provider
             )
 
