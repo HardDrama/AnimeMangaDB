@@ -49,9 +49,10 @@ def main():
                         RepairAction(
                             description=(
                                 f"{anime.title} "
-                                f"Episode {episode.episode_number} "
-                                "(generic title)"
-                            )
+                                f"Episode {episode.episode_number}"
+                            ),
+                            current_value=episode.episode_title,
+                            proposed_value="(to be determined)",
                         )
                     )
 
@@ -73,9 +74,18 @@ def main():
 @dataclass
 class RepairAction:
     description: str
+    current_value: str | None = None
+    proposed_value: str | None = None
 
     def preview(self):
         print(f"Would repair: {self.description}")
+
+        if (
+            self.current_value is not None
+            and self.proposed_value is not None
+        ):
+            print(f"  Current : {self.current_value}")
+            print(f"  Proposed: {self.proposed_value}")
 
     def apply(self):
         print(f"Applied repair: {self.description}")
