@@ -22,3 +22,7 @@ class RefreshResult:
     )
 
     elapsed_seconds: float = 0.0
+
+    changed_fields: list[str] = field(
+        default_factory=list
+    )

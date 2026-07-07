@@ -19,6 +19,9 @@ class DummyAnime:
 
 class DummyEpisode:
     episode_number = 1
+    episode_title = "Episode 1"
+    arc = None
+    source_url = None
     anime = DummyAnime()
 
 
@@ -36,6 +39,9 @@ def test_refresh_pipeline_uses_metadata_service():
     )
     assert result.success is True
     assert result.provider == "fandom"
+    assert "title" in result.changed_fields
+    assert "arc" in result.changed_fields
+    assert "source_url" in result.changed_fields
     assert result.warnings == []
     assert result.elapsed_seconds >= 0
 

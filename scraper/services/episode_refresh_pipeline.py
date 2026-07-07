@@ -49,6 +49,21 @@ class EpisodeRefreshPipeline:
 
             result.metadata = metadata
 
+            if metadata.title and metadata.title != episode.episode_title:
+                result.changed_fields.append("title")
+
+            if (
+                metadata.arc
+                and metadata.arc != episode.arc
+            ):
+                result.changed_fields.append("arc")
+
+            if (
+                metadata.source_url
+                and metadata.source_url != episode.source_url
+            ):
+                result.changed_fields.append("source_url")
+
             if (
                 metadata.title
                 or metadata.arc
