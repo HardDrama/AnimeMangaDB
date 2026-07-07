@@ -13,7 +13,7 @@ class FakeBrowserClient:
     def __init__(self):
         self.called = False
 
-    def fetch_html(self, url):
+    def fetch(self, url):
         self.called = True
         return "<html></html>"
 

@@ -17,7 +17,7 @@ class RecordingBrowser:
     def __init__(self):
         self.calls = []
 
-    def fetch_html(self, url):
+    def fetch(self, url):
         self.calls.append(("fetch", url))
         return "<html>fake page</html>"
 

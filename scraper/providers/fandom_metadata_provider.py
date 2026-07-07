@@ -34,7 +34,7 @@ class FandomMetadataProvider(MetadataProvider):
             episode_url is not None
             and self.browser_client is not None
         ):
-            html = self.browser_client.fetch_html(
+            html = self.browser_client.fetch(
                 episode_url
             )
 
