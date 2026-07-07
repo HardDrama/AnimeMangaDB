@@ -1204,3 +1204,44 @@ Final Result:
 • No-change refreshes are detected correctly
 • Metadata retrieval failures are handled gracefully
 • Existing application functionality remains unaffected
+
+# 📋 AnimeMangaDB v0.45.0 Changelog
+
+## 🌐 Live Metadata Retrieval Architecture
+
+### ✨ Added
+• MetadataProvider interface
+• FandomMetadataProvider
+• EpisodeMetadataService provider injection
+• BrowserClient integration
+• FandomExtractor integration
+• Metadata provider integration tests
+• Provider orchestration validation
+
+### 🔄 Improved
+• EpisodeMetadataService now delegates metadata retrieval through providers
+• FandomMetadataProvider now generates episode URLs
+• BrowserClient is integrated into the metadata retrieval workflow
+• Extractor pipeline is reused for metadata generation
+• Metadata source URLs are now preserved during retrieval
+
+### 🏛️ Architecture
+• Established Metadata Provider architecture
+• Introduced provider dependency injection
+• Reused existing scraper components for metadata retrieval
+• Separated metadata orchestration from scraping implementation
+• Prepared the project for live provider integration
+
+### 🧪 Testing
+• Added FandomMetadataProvider unit tests
+• Added provider orchestration integration tests
+• Expanded automated test suite to 46 passing tests
+• Final test result: 46 automated tests passing
+
+### ✅ Validation
+• Provider URL generation verified
+• BrowserClient integration verified
+• Extractor integration verified
+• Dependency injection verified
+• Provider orchestration verified
+• Existing application functionality remains unaffected
