@@ -28,6 +28,12 @@ def main():
         help="Apply repairs instead of previewing them.",
     )
 
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="Confirm that repairs should be applied.",
+    )
+
     args = parser.parse_args()
 
     session = SessionLocal()
@@ -51,6 +57,12 @@ def main():
             print("Metadata Repair Tool")
             print("--------------------")
             print("Running in APPLY mode.")
+
+            if not args.yes:
+                print("Missing confirmation flag: --yes")
+                print("No database changes will be made.")
+                return
+
             print("Apply mode is not implemented yet.")
             print("No database changes will be made.")
             return
