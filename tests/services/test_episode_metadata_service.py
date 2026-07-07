@@ -4,12 +4,23 @@ from scraper.services.episode_metadata_service import (
 )
 
 
+class FakeMetadataProvider:
+    def get_episode_metadata(self, episode):
+        return EpisodeMetadata(
+            title="Fresh Title",
+            arc="Fresh Arc",
+            source_url="https://example.com/episode/1",
+        )
+
+
 class DummyEpisode:
     episode_number = 1
 
 
 def test_returns_episode_metadata():
-    service = EpisodeMetadataService()
+    service = EpisodeMetadataService(
+        metadata_provider=FakeMetadataProvider()
+    )
 
     metadata = service.get_metadata(
         DummyEpisode()
@@ -20,6 +31,6 @@ def test_returns_episode_metadata():
         EpisodeMetadata,
     )
 
-    assert metadata.title is None
-    assert metadata.arc is None
-    assert metadata.source_url is None
+    assert metadata.title == "Fresh Title"
+    assert metadata.arc == "Fresh Arc"
+    assert metadata.source_url == "https://example.com/episode/1"
