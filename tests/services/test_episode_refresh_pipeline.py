@@ -64,3 +64,22 @@ def test_refresh_pipeline_handles_metadata_errors():
         result.warnings[1]
         == "No metadata was returned for this episode."
     )
+
+
+class MatchingMetadataService:
+    def get_metadata(self, episode):
+        return EpisodeMetadata(
+            title="Episode 1",
+            arc=None,
+            source_url=None,
+        )
+    
+def test_refresh_pipeline_detects_no_changes():
+    pipeline = EpisodeRefreshPipeline(
+        metadata_service=MatchingMetadataService()
+    )
+
+    result = pipeline.refresh_episode(DummyEpisode())
+
+    assert result.success is True
+    assert result.changed_fields == []
