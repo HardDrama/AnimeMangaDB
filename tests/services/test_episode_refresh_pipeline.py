@@ -29,5 +29,5 @@ def test_refresh_pipeline_uses_metadata_service():
     assert result.metadata.source_url == (
         "https://example.com/episode/1"
     )
-    assert result.success is False
+    assert result.success is True
     assert result.elapsed_seconds >= 0

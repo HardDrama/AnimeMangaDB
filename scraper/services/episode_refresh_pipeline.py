@@ -31,11 +31,18 @@ class EpisodeRefreshPipeline:
             provider=None,
         )
 
-        result.metadata = (
-            self.metadata_service.get_metadata(
-                episode
-            )
+        metadata = self.metadata_service.get_metadata(
+            episode
         )
+
+        result.metadata = metadata
+
+        if (
+            metadata.title
+            or metadata.arc
+            or metadata.source_url
+        ):
+            result.success = True
 
         result.warnings.append(
             "Episode refresh pipeline is not implemented yet."
