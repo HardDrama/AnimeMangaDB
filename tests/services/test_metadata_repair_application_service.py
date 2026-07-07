@@ -12,6 +12,13 @@ class DummyEpisode:
     arc = None
     source_url = "https://example.com/episode/1"
 
+class FakeSession:
+    def __init__(self):
+        self.rollback_called = False
+
+    def rollback(self):
+        self.rollback_called = True
+
 
 def test_applies_title_and_arc_repairs():
     episode = DummyEpisode()
@@ -84,3 +91,35 @@ def test_commit_requires_session():
             plan,
             commit=True,
         )
+
+def test_exception_rolls_back_session():
+    class BadEpisode:
+        def __setattr__(self, name, value):
+            if name == "episode_title":
+                raise RuntimeError("Boom")
+
+            super().__setattr__(name, value)
+
+    plan = MetadataRepairPlan(
+        repairs=[
+            MetadataRepair(
+                field="title",
+                current_value="Old",
+                new_value="New",
+            )
+        ]
+    )
+
+    session = FakeSession()
+
+    service = MetadataRepairApplicationService()
+
+    with pytest.raises(RuntimeError):
+        service.apply(
+            BadEpisode(),
+            plan,
+            session=session,
+            commit=False,
+        )
+
+    assert session.rollback_called is True
