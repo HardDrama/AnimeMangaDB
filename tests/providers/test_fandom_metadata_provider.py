@@ -28,6 +28,8 @@ def test_fandom_metadata_provider_uses_provider():
         DummyEpisode()
     )
 
+    assert metadata.source_url == "https://example.com/1"
+
     assert fake_provider.called is True
 
     assert isinstance(
