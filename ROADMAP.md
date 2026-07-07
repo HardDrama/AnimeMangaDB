@@ -1,130 +1,110 @@
-# 🗺 PROJECT ROADMAP
+# 🗺 AnimeMangaDB Roadmap
 
-## ✅ Phase 1 — Foundation
-- Repository Setup
-- Configuration System
-- HTML Parser
-- Playwright BrowserClient
-- Database Layer
-- Repository Layer
+## ✅ Completed
 
-**Status:** ✅ Complete
+### Core Scraper
+✔ Playwright browser client
+✔ Provider architecture
+✔ HTML parsing
+✔ Selector engine
+✔ Episode extraction
+✔ Chapter parsing
 
----
+### Database
+✔ SQLite integration
+✔ SQLAlchemy models
+✔ Repository layer
+✔ Metadata storage
 
-## ✅ Phase 2 — Metadata Framework
-- Episode Metadata Models
-- Metadata Validation
-- Metadata Repair Framework
-- Metadata Services
+### Metadata
+✔ Live metadata retrieval
+✔ Metadata comparison
+✔ Arc extraction
+✔ Canonical title extraction
 
-**Status:** ✅ Complete
+### Developer Tools
+✔ HTML download tool
+✔ Metadata comparison tools
+✔ Selector discovery tool
+✔ Series comparison tool
 
----
-
-## ✅ Phase 3 — Episode Refresh Pipeline
-- Refresh Pipeline
-- Refresh Result Tracking
-- Metadata Refresh Service
-- Pipeline Testing
-
-**Status:** ✅ Complete
-
----
-
-## ✅ Phase 4 — Live Provider Integration & Metadata Enrichment
-- Metadata Provider Interface
-- Metadata Provider Factory
-- Live Fandom Metadata Provider
-- Browser Integration
-- Live Metadata Retrieval
-- Canonical Episode Titles
-- Arc Extraction
-- Episode Metadata Comparison
-- Series Metadata Comparison
-- Episode HTML Download Tool
-- Selector Discovery Tool
-
-**Status:** ✅ Complete
+### Automated Metadata Repair
+✔ Comparison service
+✔ Repair planning
+✔ Repair preview
+✔ Safe apply mode
+✔ Rollback support
+✔ Database commits
+✔ Targeted episode repair
+✔ Repair verification workflow
 
 ---
 
-# 🚧 Phase 5 — Automated Metadata Repair (v0.47.0)
+# 🔄 Next Major Milestone (v0.48.0)
 
-## Metadata Comparison Service
-- Shared comparison service
-- Centralized comparison logic
-- Metadata normalization
-- Future metadata field support
+## Batch Metadata Repair
 
-## Repair Planning
-- Repair proposal generation
-- Metadata change detection
-- Conflict detection
-- Repair summaries
+### Planned
+⬜ Repair entire database automatically
+⬜ Batch progress reporting
+⬜ Success/failure statistics
+⬜ Repair summaries
+⬜ Improved logging
+⬜ Recovery from interrupted runs
 
-## Safe Repair Workflow
-- Dry-run mode
-- Apply approved repairs
-- Change logging
-- Database update pipeline
+Example:
 
-## Reporting
-- Metadata health reports
-- Repair statistics
-- Series audit reports
-- Repair history
+python -m tools.preview_metadata_repairs --apply --yes
 
-## Testing
-- Repair service unit tests
-- Integration tests
-- End-to-end repair workflow
+or
+
+python -m tools.preview_metadata_repairs --all --apply --yes
 
 ---
 
-# 🔮 Future Roadmap
+## Future Improvements
 
-## v0.48.x — Metadata Expansion
-- Air Date extraction
-- Previous Episode
-- Next Episode
-- Additional metadata fields
-- Improved metadata enrichment
+### Metadata
+⬜ Air date extraction
+⬜ Season/Voyage extraction
+⬜ Episode thumbnail support
+⬜ Japanese titles
+⬜ Crunchyroll titles
+⬜ Staff information
 
-## v0.49.x — Multi-Series Support
-- Additional Fandom providers
-- Provider validation
-- Configuration improvements
-- Cross-series testing
+### Providers
+⬜ Additional Fandom support
+⬜ Multiple provider support
+⬜ Provider fallback system
 
-## v0.50.x — API & Website Integration
-- Metadata Refresh API
-- Admin Dashboard
-- Metadata Quality Dashboard
-- Refresh Status Reporting
-- Background Metadata Refresh
+### Database
+⬜ Metadata history
+⬜ Audit log
+⬜ Repair timestamps
+⬜ Change history
 
----
+### Developer Experience
+⬜ Rich CLI output
+⬜ JSON repair reports
+⬜ CSV export
+⬜ HTML reports
 
-# 📈 Overall Project Progress
-
-Foundation                 ██████████ 100%
-Metadata Framework         ██████████ 100%
-Refresh Pipeline           ██████████ 100%
-Live Provider Integration  ██████████ 100%
-Automated Metadata Repair  ░░░░░░░░░░   0%
-Metadata Expansion         ░░░░░░░░░░   0%
-API & Website              ░░░░░░░░░░   0%
-
-Overall Progress: ████████████████████░░░░░░░░░░ 57%
+### Website/API
+⬜ REST API
+⬜ Episode lookup
+⬜ Manga chapter lookup
+⬜ Search functionality
+⬜ Public website
 
 ---
 
-## 🌿 Next Branch
+# 🌟 Long-Term Vision
 
-feature/automated-metadata-repair
+AnimeMangaDB is evolving from a web scraper into a complete metadata management platform capable of:
 
-## 🎯 Next Milestone
-
-Version 0.47.0
-Automated Metadata Repair
+• Collecting metadata
+• Validating metadata
+• Detecting outdated information
+• Repairing databases automatically
+• Supporting multiple anime providers
+• Powering a public lookup website and API

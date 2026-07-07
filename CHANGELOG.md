@@ -1299,3 +1299,102 @@ Final Result:
 ✔ Arc extraction is fully functional
 ✔ Metadata comparison tools can audit individual episodes or entire series
 ✔ Developer tooling significantly improves future metadata expansion
+
+# 📦 AnimeMangaDB v0.47.0 — Automated Metadata Repair
+
+## 🎉 Highlights
+Version 0.47.0 introduces the first complete automated metadata repair pipeline for AnimeMangaDB.
+
+The project can now:
+
+• Compare stored metadata against live Fandom data
+• Generate structured repair plans
+• Preview proposed repairs
+• Apply supported repairs safely
+• Commit repairs directly to the database
+• Verify repaired episodes
+• Repair individual episodes using command-line options
+
+This represents the largest architectural milestone since database support was introduced.
+
+---
+
+## ✨ New Features
+
+### 🔍 Metadata Comparison
+• Added MetadataComparisonService
+• Added MetadataComparisonResult model
+• Centralized metadata comparison logic
+• Refactored comparison tools to use the shared service
+
+### 🛠 Metadata Repair Pipeline
+• Added MetadataRepair model
+• Added MetadataRepairPlan model
+• Added MetadataRepairService
+• Added MetadataRepairApplicationService
+• Added MetadataRepairApplicationResult model
+
+### 💾 Database Repair Support
+• Added in-memory repair application
+• Added rollback protection
+• Added commit support
+• Added committed state tracking
+• Added repair application tests
+
+### 🧰 Tool Improvements
+• Added Metadata Repair Preview tool
+• Added Preview vs Apply modes
+• Added --apply safety confirmation
+• Added --yes confirmation requirement
+• Added --episode option for targeted repairs
+• Added repair summaries
+• Added execution mode indicators
+• Added repair workflow documentation
+
+### 📊 Comparison Tools
+• Added --episode support to compare_episode_metadata.py
+• Continued improvements to compare_series_metadata.py
+
+### 🧪 Testing
+• Added repair service tests
+• Added repair application tests
+• Expanded comparison coverage
+• Project test suite now passes:
+
+55 passed, 1 warning
+
+---
+
+## 🏗 Internal Improvements
+
+• Cleaner service-oriented architecture
+• Centralized comparison logic
+• Centralized repair planning
+• Centralized repair application
+• Better separation of responsibilities
+• Safer database modification workflow
+• Improved CLI usability
+
+---
+
+## 🚀 Milestone Achieved
+
+AnimeMangaDB successfully completed its first automated metadata repair.
+
+The complete workflow is now:
+
+Live Metadata
+↓
+Compare
+↓
+Generate Repair Plan
+↓
+Preview
+↓
+Apply
+↓
+Commit
+↓
+Verify
+
+AnimeMangaDB is now capable of maintaining its own metadata database.
