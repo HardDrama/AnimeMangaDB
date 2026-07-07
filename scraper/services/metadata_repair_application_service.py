@@ -29,4 +29,8 @@ class MetadataRepairApplicationService:
             else:
                 result.skipped += 1
 
-        return result
+        return MetadataRepairApplicationResult(
+            applied=result.applied,
+            skipped=result.skipped,
+            committed=False,
+        )

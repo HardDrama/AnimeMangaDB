@@ -5,3 +5,4 @@ from dataclasses import dataclass
 class MetadataRepairApplicationResult:
     applied: int = 0
     skipped: int = 0
+    committed: bool = False

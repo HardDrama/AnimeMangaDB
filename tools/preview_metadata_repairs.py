@@ -99,6 +99,9 @@ def main():
                     f"{result.applied} applied, "
                     f"{result.skipped} skipped."
                 )
+                print(
+                    f"Database Updated : {result.committed}"
+                )
                 print()
 
                 continue
