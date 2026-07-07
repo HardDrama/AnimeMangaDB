@@ -28,6 +28,16 @@ class FandomMetadataProvider(MetadataProvider):
                 episode.episode_number
             )
 
+        html = None
+
+        if (
+            episode_url is not None
+            and self.browser_client is not None
+        ):
+            html = self.browser_client.fetch_html(
+                episode_url
+            )
+
         return EpisodeMetadata(
             source_url=episode_url,
         )
