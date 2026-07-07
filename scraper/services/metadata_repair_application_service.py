@@ -35,6 +35,9 @@ class MetadataRepairApplicationService:
                 else:
                     result.skipped += 1
 
+            if commit:
+                session.commit()
+            
             result.committed = commit
 
             return result

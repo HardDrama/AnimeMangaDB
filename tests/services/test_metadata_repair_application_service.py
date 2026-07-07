@@ -15,9 +15,13 @@ class DummyEpisode:
 class FakeSession:
     def __init__(self):
         self.rollback_called = False
+        self.commit_called = False
 
     def rollback(self):
         self.rollback_called = True
+
+    def commit(self):
+        self.commit_called = True
 
 
 def test_applies_title_and_arc_repairs():
@@ -123,3 +127,32 @@ def test_exception_rolls_back_session():
         )
 
     assert session.rollback_called is True
+
+def test_commit_calls_session_commit():
+    episode = DummyEpisode()
+
+    plan = MetadataRepairPlan(
+        repairs=[
+            MetadataRepair(
+                field="arc",
+                current_value=None,
+                new_value="Romance Dawn Arc",
+            )
+        ]
+    )
+
+    session = FakeSession()
+
+    service = MetadataRepairApplicationService()
+
+    result = service.apply(
+        episode,
+        plan,
+        session=session,
+        commit=True,
+    )
+
+    assert result.applied == 1
+    assert result.skipped == 0
+    assert result.committed is True
+    assert session.commit_called is True
