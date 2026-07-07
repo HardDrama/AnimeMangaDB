@@ -26,3 +26,4 @@ def test_fandom_extractor_parses_episode_fixture():
     assert episode.episode_title == "Episode 1130"
     assert episode.manga_start == 1096
     assert episode.manga_end == 1096
+    assert episode.arc == "Egghead Arc"

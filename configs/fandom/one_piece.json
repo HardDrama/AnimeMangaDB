@@ -5,7 +5,7 @@
     "selectors": {
         "title": "h1.page-header__title",
         "chapter": "div[data-source='chapter'] .pi-data-value",
-        "arc": ""
+        "arc": ".pt-page-level-tracker__accordion-title"
     },
     "scraper": {
         "max_episodes": 5,
