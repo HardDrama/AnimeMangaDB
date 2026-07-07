@@ -5,6 +5,9 @@ from scraper.database.session import SessionLocal
 from scraper.services.episode_metadata_service import (
     EpisodeMetadataService,
 )
+from scraper.services.metadata_comparison_service import (
+    MetadataComparisonService,
+)
 
 
 def main():
@@ -47,6 +50,8 @@ def main():
 
         service = EpisodeMetadataService()
 
+        comparison_service = MetadataComparisonService()
+
         checked = 0
         matching = 0
         different = 0
@@ -61,38 +66,22 @@ def main():
 
             metadata = service.get_metadata(episode)
 
-            current_title = episode.episode_title
-            current_arc = episode.arc
-
-            current_source = (
-                str(episode.source_url)
-                if episode.source_url
-                else None
+            comparison = comparison_service.compare(
+                episode,
+                metadata,
             )
 
-            live_source = (
-                str(metadata.source_url)
-                if metadata.source_url
-                else None
-            )
-
-            changes = []
-
-            if current_title != metadata.title:
-                changes.append("Title")
-
-            if current_arc != metadata.arc:
-                changes.append("Arc")
-
-            if current_source != live_source:
-                changes.append("Source URL")
-
-            if changes:
+            if comparison.has_changes:
                 different += 1
+
+                changed_fields = [
+                    difference.field.replace("_", " ").title()
+                    for difference in comparison.differences
+                ]
 
                 print(
                     f"Episode {episode.episode_number}: "
-                    + ", ".join(changes)
+                    + ", ".join(changed_fields)
                 )
             else:
                 matching += 1
