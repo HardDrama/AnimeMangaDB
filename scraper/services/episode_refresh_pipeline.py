@@ -31,18 +31,24 @@ class EpisodeRefreshPipeline:
             provider=None,
         )
 
-        metadata = self.metadata_service.get_metadata(
-            episode
-        )
+        try:
+            metadata = self.metadata_service.get_metadata(
+                episode
+            )
 
-        result.metadata = metadata
+            result.metadata = metadata
 
-        if (
-            metadata.title
-            or metadata.arc
-            or metadata.source_url
-        ):
-            result.success = True
+            if (
+                metadata.title
+                or metadata.arc
+                or metadata.source_url
+            ):
+                result.success = True
+
+        except Exception as exc:
+            result.warnings.append(
+                f"Metadata retrieval failed: {exc}"
+            )
 
         if not result.success:
             result.warnings.append(
