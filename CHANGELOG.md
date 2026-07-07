@@ -1245,3 +1245,57 @@ Final Result:
 • Dependency injection verified
 • Provider orchestration verified
 • Existing application functionality remains unaffected
+
+# 📋 CHANGELOG
+## Version 0.46.0 - Live Provider Integration & Metadata Enrichment
+
+### 🎉 New Features
+- Added Metadata Provider Factory
+- Added live BrowserClient integration
+- Added live Fandom Metadata Provider
+- Added Episode HTML Download Tool
+- Added Selector Discovery Tool
+- Added Single Episode Metadata Comparison Tool
+- Added Series Metadata Comparison Tool
+- Added configurable comparison limits (--limit)
+
+### 📚 Metadata Enrichment
+- Added live Arc extraction
+- Added canonical episode title extraction
+- Added configurable Arc selector support
+- Added Source URL normalization for metadata comparisons
+
+### 🏗 Architecture Improvements
+- Connected EpisodeMetadataService to live metadata providers
+- Improved dependency injection throughout the metadata pipeline
+- Centralized provider creation using Metadata Provider Factory
+- Improved provider abstraction
+- Improved metadata retrieval workflow
+- Improved selector discovery workflow
+
+### 🛠 Developer Tools
+- tools/test_live_metadata_refresh.py
+- tools/download_episode_html.py
+- tools/find_selector_text.py
+- tools/compare_episode_metadata.py
+- tools/compare_series_metadata.py
+
+### 🧪 Testing
+- Added Arc extraction tests
+- Added canonical title extraction tests
+- Added metadata provider integration tests
+- Verified live metadata retrieval
+- Verified metadata comparison workflow
+
+### 📈 Statistics
+- 19 Development Iterations
+- 48 Passing Tests
+- 1 Warning
+- Phase 4 Complete ✅
+
+### 🎯 Highlights
+✔ Live metadata retrieval is fully operational
+✔ Canonical episode titles now replace generic page titles
+✔ Arc extraction is fully functional
+✔ Metadata comparison tools can audit individual episodes or entire series
+✔ Developer tooling significantly improves future metadata expansion

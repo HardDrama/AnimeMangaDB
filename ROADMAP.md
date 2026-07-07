@@ -1,182 +1,130 @@
-# 🗺️ AnimeMangaDB Roadmap
+# 🗺 PROJECT ROADMAP
 
-## ✅ Completed
+## ✅ Phase 1 — Foundation
+- Repository Setup
+- Configuration System
+- HTML Parser
+- Playwright BrowserClient
+- Database Layer
+- Repository Layer
 
-### v0.15.0 – Database Foundation
-• Database integration
-• Repository layer
-• Initial scraper pipeline
+**Status:** ✅ Complete
 
-### v0.16.0 – Chapter Mapping
-• Chapter normalization
-• Episode ↔ Chapter relationships
+---
 
-### v0.17.0 – Data Integrity
-• Duplicate prevention
-• Repository improvements
-• Database constraints
+## ✅ Phase 2 — Metadata Framework
+- Episode Metadata Models
+- Metadata Validation
+- Metadata Repair Framework
+- Metadata Services
 
-### v0.18.0 – Multi-Episode Scraping
-• Episode Guide crawler
-• Automatic episode discovery
+**Status:** ✅ Complete
 
-### v0.19.0 – Configurable Scraper
-• Runtime configuration
-• Episode filtering
-• Full crawl mode
+---
 
-### v0.20.0 – Performance & Developer Experience
-• Crawl statistics
-• Progress reporting
-• Error recovery
+## ✅ Phase 3 — Episode Refresh Pipeline
+- Refresh Pipeline
+- Refresh Result Tracking
+- Metadata Refresh Service
+- Pipeline Testing
 
-### v0.21.0 – Automated Testing Foundation
-• Repository tests
-• Provider tests
-• Extractor tests
+**Status:** ✅ Complete
 
-### v0.22.0 – Update & Synchronization
-• Episode synchronization
-• Chapter mapping refresh
+---
 
-### v0.23.0 – Multi-Series Support
-• Runtime series selection
-• Naruto support
+## ✅ Phase 4 — Live Provider Integration & Metadata Enrichment
+- Metadata Provider Interface
+- Metadata Provider Factory
+- Live Fandom Metadata Provider
+- Browser Integration
+- Live Metadata Retrieval
+- Canonical Episode Titles
+- Arc Extraction
+- Episode Metadata Comparison
+- Series Metadata Comparison
+- Episode HTML Download Tool
+- Selector Discovery Tool
 
-### v0.24.0 – Command Line Interface
-• CLI
-• Dry-run mode
-• Runtime overrides
+**Status:** ✅ Complete
 
-### v0.25.0 – Naruto Foundation
-• Naruto crawler
-• Multi-series validation
+---
 
-### v0.26.0 – Generic Provider Framework
-• Shared crawler interface
-• EpisodeReference
-• Generic discovery
+# 🚧 Phase 5 — Automated Metadata Repair (v0.47.0)
 
-### v0.27.0 – Provider Plugin Architecture
-• Provider factory
-• Extractor factory
-• Repository factory
+## Metadata Comparison Service
+- Shared comparison service
+- Centralized comparison logic
+- Metadata normalization
+- Future metadata field support
 
-### v0.28.0 – Scraper Pipeline Refactor
-• ScraperPipeline
-• Service architecture
+## Repair Planning
+- Repair proposal generation
+- Metadata change detection
+- Conflict detection
+- Repair summaries
 
-### v0.29.0 – Backend Foundation
-• FastAPI
-• Repository-backed API
+## Safe Repair Workflow
+- Dry-run mode
+- Apply approved repairs
+- Change logging
+- Database update pipeline
 
-### v0.30.0 – API Expansion
-• Typed responses
-• Detail endpoints
+## Reporting
+- Metadata health reports
+- Repair statistics
+- Series audit reports
+- Repair history
 
-### v0.31.0 – Frontend Foundation
-• React
-• Vite
-• API client
+## Testing
+- Repair service unit tests
+- Integration tests
+- End-to-end repair workflow
 
-### v0.32.0 – Episode Browser
-• Episode browser
-• Search
-• Chapter mapping
+---
 
-### v0.33.0 – Lookup Experience
-• Chapter lookup
-• Navigation
+# 🔮 Future Roadmap
 
-### v0.34.0 – UI Polish
-• Reusable components
-• Layout improvements
+## v0.48.x — Metadata Expansion
+- Air Date extraction
+- Previous Episode
+- Next Episode
+- Additional metadata fields
+- Improved metadata enrichment
 
-### v0.35.0 – Data Quality
-• Inspection tools
-• Quality reporting
+## v0.49.x — Multi-Series Support
+- Additional Fandom providers
+- Provider validation
+- Configuration improvements
+- Cross-series testing
 
-### v0.36.0 – Navigation & Routing
-• React Router
-• Detail pages
+## v0.50.x — API & Website Integration
+- Metadata Refresh API
+- Admin Dashboard
+- Metadata Quality Dashboard
+- Refresh Status Reporting
+- Background Metadata Refresh
 
-### v0.37.0 – Dedicated Detail Pages
-• Anime pages
-• Episode pages
-• Breadcrumbs
+---
 
-### v0.38.0 – Search & Discovery
-• Global search
-• Discovery improvements
+# 📈 Overall Project Progress
 
-### v0.39.0 – Metadata Enrichment
-• Rich API responses
-• Better navigation
+Foundation                 ██████████ 100%
+Metadata Framework         ██████████ 100%
+Refresh Pipeline           ██████████ 100%
+Live Provider Integration  ██████████ 100%
+Automated Metadata Repair  ░░░░░░░░░░   0%
+Metadata Expansion         ░░░░░░░░░░   0%
+API & Website              ░░░░░░░░░░   0%
 
-### v0.40.0 – Advanced Search
-• Unified search
-• Grouped search results
+Overall Progress: ████████████████████░░░░░░░░░░ 57%
 
-### v0.41.0 – Data Quality & Content Enrichment
-• Inspection tools
-• Developer tooling
+---
 
-### v0.42.0 – Metadata Validation Framework
-• Validation framework
-• Metadata validation tools
+## 🌿 Next Branch
 
-### v0.43.0 – Metadata Repair Framework
-• Repair framework
-• Proposal services
-• Repair tooling
+feature/automated-metadata-repair
 
-### v0.44.0 – Episode Refresh Pipeline Framework
-• Refresh pipeline
-• RefreshResult
-• Change detection
-• Pipeline tests
+## 🎯 Next Milestone
 
-### v0.45.0 – Live Metadata Retrieval Architecture
-• MetadataProvider
-• FandomMetadataProvider
-• EpisodeMetadataService
-• BrowserClient integration
-• Extractor integration
-• Provider orchestration tests
-
-## 🚧 Next Up
-
-### v0.46.0 – Live Provider Integration
-• Connect to real FandomProvider
-• Connect to real BrowserClient
-• Connect to real FandomExtractor
-• Produce live EpisodeMetadata
-• Validate against live pages
-• Expand integration testing
-
-### v0.47.0 – Automated Metadata Repair
-• Live metadata proposals
-• Title repair
-• Arc repair
-• Safe database updates
-
-### v0.48.0 – Intelligent Search
-• Fuzzy search
-• Suggestions
-• Relevance ranking
-
-### v0.49.0 – User Experience
-• Favorites
-• Recently viewed
-• Accessibility
-• Mobile polish
-
-## 🎯 Long-Term Goal
-
-### v1.0.0 – Production Release
-• Multi-provider scraper
-• Live metadata refresh
-• Automated metadata repair
-• Production-ready REST API
-• Complete AnimeMangaDB website
-• Comprehensive automated testing
+Version 0.47.0
+Automated Metadata Repair
