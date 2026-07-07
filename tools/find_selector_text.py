@@ -45,9 +45,29 @@ def main():
             print(text)
 
             print()
-            print("Parent Element")
+            print("Element Hierarchy")
             print("-" * 80)
-            print(element.parent)
+
+            current = element.parent
+
+            for level in range(5):
+                if current is None:
+                    break
+
+                print(f"Level {level}")
+
+                tag_name = current.name
+                tag_id = current.get("id")
+                tag_class = current.get("class")
+
+                print(f"Tag   : {tag_name}")
+                print(f"ID    : {tag_id}")
+                print(f"Class : {tag_class}")
+                print(f"Text  : {current.get_text(strip=True)[:200]}")
+
+                print()
+
+                current = current.parent
 
             print()
 
