@@ -26,6 +26,13 @@ def main():
     )
 
     parser.add_argument(
+        "--episode",
+        type=int,
+        default=None,
+        help="Specific episode number to repair.",
+    )
+
+    parser.add_argument(
         "--apply",
         action="store_true",
         help="Apply repairs instead of previewing them.",
@@ -42,12 +49,19 @@ def main():
     session = SessionLocal()
 
     try:
-        episodes = (
+        query = (
             session.query(Episode)
             .order_by(Episode.id)
-            .limit(args.limit)
-            .all()
         )
+
+        if args.episode is not None:
+            query = query.filter(
+                Episode.episode_number == args.episode
+            )
+        else:
+            query = query.limit(args.limit)
+
+        episodes = query.all()
 
         if not episodes:
             print("No episodes found.")
