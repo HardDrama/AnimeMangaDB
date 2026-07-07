@@ -1115,3 +1115,47 @@ Final Result:
 • Current database passes all implemented validation checks
 • Backend test suite remains fully passing
 • Final test result: 40 automated tests passing
+
+# 📋 AnimeMangaDB v0.43.0 Changelog
+
+## 🔧 Metadata Repair Framework
+
+### ✨ Added
+• Metadata repair tool
+• Dry-run mode (default)
+• Apply mode scaffold
+• RepairAction abstraction
+• Repair proposal helper
+• MetadataProposalService
+• EpisodeMetadataService
+• EpisodeMetadata model
+• EpisodeMetadataService unit tests
+
+### 🔄 Improved
+• Repair candidates are now discovered automatically
+• Generic episode titles are identified as repair candidates
+• Repair previews now display current and proposed values
+• Proposal generation separated from repair execution
+• Introduced a service-oriented architecture for metadata proposals
+
+### 🏛️ Architecture
+• Established the Metadata Repair Framework
+• Introduced reusable proposal generation services
+• Created EpisodeMetadataService as the future entry point for metadata refresh
+• Separated repair orchestration from metadata retrieval
+• Prepared the project for a reusable Episode Refresh Pipeline
+
+### 🧪 Testing
+• Added EpisodeMetadataService unit tests
+• Expanded automated test suite to 41 passing tests
+• Verified repair tool dry-run mode
+• Verified apply mode scaffold
+• Verified proposal generation pipeline
+• Final test result: 41 automated tests passing
+
+### ✅ Validation
+• Repair framework identifies generic title candidates
+• Proposal previews display correctly
+• Repair actions remain non-destructive
+• Metadata proposal services function correctly
+• Existing application functionality remains unaffected
