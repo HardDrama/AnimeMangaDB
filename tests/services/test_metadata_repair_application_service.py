@@ -43,6 +43,7 @@ def test_applies_title_and_arc_repairs():
         == "I'm Luffy! The Man Who Will Become the Pirate King!"
     )
     assert episode.arc == "Romance Dawn Arc"
+    assert result.committed is False
 
 
 def test_skips_unsupported_repairs():

@@ -14,6 +14,7 @@ class MetadataRepairApplicationService:
         self,
         episode,
         repair_plan,
+        commit: bool = False,
     ):
         result = MetadataRepairApplicationResult()
 
@@ -28,6 +29,8 @@ class MetadataRepairApplicationService:
 
             else:
                 result.skipped += 1
+
+        result.committed = commit
 
         return MetadataRepairApplicationResult(
             applied=result.applied,

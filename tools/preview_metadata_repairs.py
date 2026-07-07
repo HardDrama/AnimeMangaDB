@@ -92,6 +92,7 @@ def main():
                 result = application_service.apply(
                     episode,
                     plan,
+                    commit=False,
                 )
 
                 print(
