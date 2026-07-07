@@ -1,3 +1,5 @@
+import argparse
+
 from scraper.database.models import Anime, Episode
 from scraper.database.session import SessionLocal
 from scraper.services.episode_metadata_service import (
@@ -5,10 +7,20 @@ from scraper.services.episode_metadata_service import (
 )
 
 
-MAX_EPISODES = 10
-
-
 def main():
+    parser = argparse.ArgumentParser(
+        description="Compare stored metadata with live metadata."
+    )
+
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=10,
+        help="Maximum episodes to compare (0 = all).",
+    )
+
+    args = parser.parse_args()
+
     session = SessionLocal()
 
     try:
@@ -22,13 +34,16 @@ def main():
             print("No anime found.")
             return
 
-        episodes = (
+        query = (
             session.query(Episode)
             .filter(Episode.anime_id == anime.id)
             .order_by(Episode.episode_number)
-            .limit(MAX_EPISODES)
-            .all()
         )
+
+        if args.limit > 0:
+            query = query.limit(args.limit)
+
+        episodes = query.all()
 
         service = EpisodeMetadataService()
 
@@ -48,6 +63,7 @@ def main():
 
             current_title = episode.episode_title
             current_arc = episode.arc
+
             current_source = (
                 str(episode.source_url)
                 if episode.source_url
