@@ -15,7 +15,18 @@ class MetadataRepairApplicationService:
         episode,
         repair_plan,
     ):
-        return MetadataRepairApplicationResult(
-            applied=0,
-            skipped=len(repair_plan.repairs),
-        )
+        result = MetadataRepairApplicationResult()
+
+        for repair in repair_plan.repairs:
+            if repair.field == "title":
+                episode.episode_title = repair.new_value
+                result.applied += 1
+
+            elif repair.field == "arc":
+                episode.arc = repair.new_value
+                result.applied += 1
+
+            else:
+                result.skipped += 1
+
+        return result
