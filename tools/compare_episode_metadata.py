@@ -1,3 +1,5 @@
+import argparse
+
 from scraper.database.models import Episode
 from scraper.database.session import SessionLocal
 
@@ -10,18 +12,30 @@ from scraper.services.metadata_comparison_service import (
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Compare stored metadata with live metadata."
+    )
+
+    parser.add_argument(
+        "--episode",
+        type=int,
+        default=None,
+        help="Specific episode number to compare.",
+    )
+
+    args = parser.parse_args()
+    
     session = SessionLocal()
 
     try:
-        episode = (
-            session.query(Episode)
-            .order_by(Episode.id)
-            .first()
-        )
+        query = session.query(Episode).order_by(Episode.id)
 
-        if episode is None:
-            print("No episodes found in database.")
-            return
+        if args.episode is not None:
+            query = query.filter(
+                Episode.episode_number == args.episode
+            )
+
+        episode = query.first()
 
         service = EpisodeMetadataService()
         metadata = service.get_metadata(episode)
