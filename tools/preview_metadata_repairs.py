@@ -96,8 +96,8 @@ def main():
 
                 print(
                     f"Application Result: "
-                    f"{result['applied']} applied, "
-                    f"{result['skipped']} skipped."
+                    f"{result.applied} applied, "
+                    f"{result.skipped} skipped."
                 )
                 print()
 
