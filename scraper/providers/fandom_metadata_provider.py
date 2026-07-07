@@ -38,6 +38,25 @@ class FandomMetadataProvider(MetadataProvider):
                 episode_url
             )
 
+        episode_data = None
+
+        if (
+            html is not None
+            and self.extractor is not None
+        ):
+            episode_data = self.extractor.parse(
+                html=html,
+                episode_number=episode.episode_number,
+                source_url=episode_url,
+            )
+
+        if episode_data is not None:
+            return EpisodeMetadata(
+                title=episode_data.episode_title,
+                arc=episode_data.arc,
+                source_url=episode_data.source_url,
+            )
+
         return EpisodeMetadata(
             source_url=episode_url,
         )
