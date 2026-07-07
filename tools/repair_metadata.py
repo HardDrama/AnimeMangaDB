@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from scraper.database.session import SessionLocal
 from scraper.repositories.factory import create_episode_repository
 
+from tools.repair_helpers import propose_episode_title
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -52,7 +54,7 @@ def main():
                                 f"Episode {episode.episode_number}"
                             ),
                             current_value=episode.episode_title,
-                            proposed_value="(to be determined)",
+                            proposed_value=propose_episode_title(episode),
                         )
                     )
 
