@@ -8,6 +8,9 @@ from scraper.services.episode_metadata_service import (
 from scraper.services.metadata_repair_service import (
     MetadataRepairService,
 )
+from scraper.services.metadata_repair_application_service import (
+    MetadataRepairApplicationService,
+)
 
 
 def main():
@@ -52,6 +55,9 @@ def main():
 
         metadata_service = EpisodeMetadataService()
         repair_service = MetadataRepairService()
+        application_service = (
+            MetadataRepairApplicationService()
+        )
 
         if args.apply:
             print("Metadata Repair Tool")
@@ -63,9 +69,9 @@ def main():
                 print("No database changes will be made.")
                 return
 
-            print("Apply mode is not implemented yet.")
-            print("No database changes will be made.")
-            return
+            print("Apply mode placeholder.")
+            print("Repair plans will be passed to the application service.")
+            print()
         else:
             print("Metadata Repair Tool")
             print("--------------------")
@@ -81,6 +87,21 @@ def main():
                 episode,
                 metadata,
             )
+
+            if args.apply:
+                result = application_service.apply(
+                    episode,
+                    plan,
+                )
+
+                print(
+                    f"Application Result: "
+                    f"{result['applied']} applied, "
+                    f"{result['skipped']} skipped."
+                )
+                print()
+
+                continue
 
             print()
             print(f"Episode {episode.episode_number}")
