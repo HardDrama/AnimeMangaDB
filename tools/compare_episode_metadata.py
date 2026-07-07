@@ -65,8 +65,23 @@ def main():
             )
             print()
 
-            for field in differences:
-                print(f"- {field}")
+            if "Title" in differences:
+                print("Title")
+                print(f"  Current : {episode.episode_title}")
+                print(f"  Live    : {metadata.title}")
+                print()
+
+            if "Arc" in differences:
+                print("Arc")
+                print(f"  Current : {episode.arc}")
+                print(f"  Live    : {metadata.arc}")
+                print()
+
+            if "Source URL" in differences:
+                print("Source URL")
+                print(f"  Current : {episode.source_url}")
+                print(f"  Live    : {metadata.source_url}")
+                print()
         else:
             print(
                 f"All {total_fields} metadata fields match."
