@@ -1,7 +1,11 @@
 from scraper.database.models import Episode
 from scraper.database.session import SessionLocal
+
 from scraper.services.episode_metadata_service import (
     EpisodeMetadataService,
+)
+from scraper.services.metadata_comparison_service import (
+    MetadataComparisonService,
 )
 
 
@@ -21,6 +25,8 @@ def main():
 
         service = EpisodeMetadataService()
         metadata = service.get_metadata(episode)
+
+        comparison_service = MetadataComparisonService()
 
         print("Episode Metadata Comparison")
         print("---------------------------")
@@ -42,62 +48,34 @@ def main():
         print(f"Source URL : {metadata.source_url}")
         print()
 
-        print("Differences")
-        print("-----------")
-
-        differences = []
-
-        total_fields = 3
-
-        if episode.episode_title != metadata.title:
-            differences.append("Title")
-
-        if episode.arc != metadata.arc:
-            differences.append("Arc")
-
-        current_source_url = (
-            str(episode.source_url)
-            if episode.source_url is not None
-            else None
+        comparison = comparison_service.compare(
+            episode,
+            metadata,
         )
 
-        live_source_url = (
-            str(metadata.source_url)
-            if metadata.source_url is not None
-            else None
-        )
-
-        if current_source_url != live_source_url:
-            differences.append("Source URL")
-
-        if differences:
+        if comparison.has_changes:
+            print("Differences")
+            print("-----------")
             print(
-                f"{len(differences)} of "
-                f"{total_fields} fields differ."
+                f"{len(comparison.differences)} of 3 fields differ."
             )
             print()
 
-            if "Title" in differences:
-                print("Title")
-                print(f"  Current : {episode.episode_title}")
-                print(f"  Live    : {metadata.title}")
-                print()
-
-            if "Arc" in differences:
-                print("Arc")
-                print(f"  Current : {episode.arc}")
-                print(f"  Live    : {metadata.arc}")
-                print()
-
-            if "Source URL" in differences:
-                print("Source URL")
-                print(f"  Current : {current_source_url}")
-                print(f"  Live    : {live_source_url}")
+            for difference in comparison.differences:
+                print(
+                    difference.field.replace("_", " ").title()
+                )
+                print(
+                    f"  Current : {difference.current_value}"
+                )
+                print(
+                    f"  Live    : {difference.live_value}"
+                )
                 print()
         else:
-            print(
-                f"All {total_fields} metadata fields match."
-            )
+            print("Differences")
+            print("-----------")
+            print("All 3 metadata fields match.")
 
     finally:
         session.close()
