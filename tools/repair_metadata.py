@@ -1,5 +1,7 @@
 import argparse
 
+from dataclasses import dataclass
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -23,8 +25,29 @@ def main():
         print("Running in DRY RUN mode.")
         print("No database changes will be made.")
 
+    actions = []
+
     print()
-    print("No repair actions are implemented yet.")
+
+    if not actions:
+        print("No repair actions found.")
+        return
+
+    for action in actions:
+        if args.apply:
+            action.apply()
+        else:
+            action.preview()
+
+@dataclass
+class RepairAction:
+    description: str
+
+    def preview(self):
+        print(f"Would repair: {self.description}")
+
+    def apply(self):
+        print(f"Applied repair: {self.description}")
 
 
 if __name__ == "__main__":
