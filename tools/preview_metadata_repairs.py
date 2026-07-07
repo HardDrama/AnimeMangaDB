@@ -52,6 +52,7 @@ def main():
             print("---------------------")
             print("Apply mode is not implemented yet.")
             print("No database changes will be made.")
+            return
         else:
             print("Metadata Repair Preview")
             print("-----------------------")
