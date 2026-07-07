@@ -63,6 +63,8 @@ def main():
             print("Metadata Repair Tool")
             print("--------------------")
             print("Running in APPLY mode.")
+            print("Database writes are ENABLED.")
+            print()
 
             if not args.yes:
                 print("Missing confirmation flag: --yes")
@@ -76,6 +78,8 @@ def main():
             print("Metadata Repair Tool")
             print("--------------------")
             print("Running in PREVIEW mode.")
+            print("Database writes are disabled.")
+            print()
 
         episodes_with_repairs = 0
         total_repairs = 0
@@ -101,9 +105,10 @@ def main():
                     f"{result.applied} applied, "
                     f"{result.skipped} skipped."
                 )
-                print(
-                    f"Database Updated : {result.committed}"
-                )
+                if result.committed:
+                    print("Database Updated : YES")
+                else:
+                    print("Database Updated : NO (Dry Run)")
                 print()
 
                 continue
