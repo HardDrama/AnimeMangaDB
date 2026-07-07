@@ -13,8 +13,13 @@ class FakeMetadataService:
         )
 
 
+class DummyAnime:
+    provider = "fandom"
+
+
 class DummyEpisode:
     episode_number = 1
+    anime = DummyAnime()
 
 
 def test_refresh_pipeline_uses_metadata_service():
@@ -30,6 +35,7 @@ def test_refresh_pipeline_uses_metadata_service():
         "https://example.com/episode/1"
     )
     assert result.success is True
+    assert result.provider == "fandom"
     assert result.warnings == []
     assert result.elapsed_seconds >= 0
 

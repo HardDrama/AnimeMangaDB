@@ -31,6 +31,17 @@ class EpisodeRefreshPipeline:
             provider=None,
         )
 
+        result.provider = getattr(
+            episode,
+            "provider",
+            None,
+        )
+
+        anime = getattr(episode, "anime", None)
+
+        if anime:
+            result.provider = anime.provider
+
         try:
             metadata = self.metadata_service.get_metadata(
                 episode
