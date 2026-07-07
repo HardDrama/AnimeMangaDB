@@ -5,7 +5,9 @@ from dataclasses import dataclass
 from scraper.database.session import SessionLocal
 from scraper.repositories.factory import create_episode_repository
 
-from tools.repair_helpers import propose_episode_title
+from tools.metadata_proposals import (
+    MetadataProposalService,
+)
 
 
 def main():
@@ -37,6 +39,8 @@ def main():
     try:
         repo = create_episode_repository(session)
 
+        proposal_service = MetadataProposalService()
+
         anime_list = repo.list_anime()
 
         for anime in anime_list:
@@ -54,7 +58,9 @@ def main():
                                 f"Episode {episode.episode_number}"
                             ),
                             current_value=episode.episode_title,
-                            proposed_value=propose_episode_title(episode),
+                            proposed_value=proposal_service.propose_episode_title(
+                                episode
+                            ),
                         )
                     )
 
