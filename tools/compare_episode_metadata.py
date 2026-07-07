@@ -47,6 +47,8 @@ def main():
 
         differences = []
 
+        total_fields = 3
+
         if episode.episode_title != metadata.title:
             differences.append("Title")
 
@@ -57,10 +59,18 @@ def main():
             differences.append("Source URL")
 
         if differences:
+            print(
+                f"{len(differences)} of "
+                f"{total_fields} fields differ."
+            )
+            print()
+
             for field in differences:
                 print(f"- {field}")
         else:
-            print("No differences detected.")
+            print(
+                f"All {total_fields} metadata fields match."
+            )
 
     finally:
         session.close()
