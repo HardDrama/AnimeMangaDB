@@ -97,7 +97,7 @@ def main():
                     episode,
                     plan,
                     session=session,
-                    commit=False,
+                    commit=args.apply and args.yes,
                 )
 
                 print(
