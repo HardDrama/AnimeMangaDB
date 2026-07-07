@@ -163,34 +163,45 @@
 • RepairAction abstraction
 • MetadataProposalService
 • EpisodeMetadataService
-• Repair proposal helpers
 • EpisodeMetadata model
 • Service layer tests
 
+### v0.44.0 – Episode Refresh Pipeline Framework
+• RefreshResult model
+• EpisodeRefreshPipeline
+• Dependency injection
+• Success detection
+• Warning handling
+• Provider tracking
+• Changed field detection
+• Elapsed time reporting
+• Refresh pipeline tests
+
 ## 🚧 Next Up
 
-### v0.44.0 – Episode Refresh Pipeline
-• RefreshResult model
-• Episode refresh service
-• Single-episode provider workflow
-• Reusable metadata retrieval
-• Shared refresh architecture
+### v0.45.0 – Live Metadata Retrieval
+• Connect EpisodeMetadataService to the provider architecture
+• Reuse BrowserClient for single-episode retrieval
+• Reuse FandomExtractor for metadata extraction
+• Produce real EpisodeMetadata objects
+• Capture provider warnings
+• Expand service integration tests
 
-### v0.45.0 – Automated Metadata Repair
-• Live metadata proposal generation
-• Provider-backed title repair
-• Arc repair
-• Selective database updates
-• Safe repair execution
+### v0.46.0 – Automated Metadata Repair
+• Provider-backed metadata proposals
+• Canonical episode title repair
+• Arc metadata repair
+• Safe database updates
+• Repair summaries and audit logging
 
-### v0.46.0 – Intelligent Search
+### v0.47.0 – Intelligent Search
 • Search suggestions
 • Fuzzy matching
 • Relevance ranking
 • Highlight matching terms
 • Search history
 
-### v0.47.0 – User Experience Enhancements
+### v0.48.0 – User Experience Enhancements
 • Favorites
 • Recently viewed content
 • Skeleton loading states

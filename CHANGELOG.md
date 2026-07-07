@@ -1159,3 +1159,48 @@ Final Result:
 • Repair actions remain non-destructive
 • Metadata proposal services function correctly
 • Existing application functionality remains unaffected
+
+# 📋 AnimeMangaDB v0.44.0 Changelog
+
+## 🔄 Episode Refresh Pipeline Framework
+
+### ✨ Added
+• RefreshResult model
+• EpisodeRefreshPipeline service
+• Dependency injection for EpisodeMetadataService
+• Provider tracking during refresh operations
+• Changed metadata field detection
+• No-change refresh detection
+• Refresh pipeline unit tests
+• Metadata retrieval failure handling
+
+### 🔄 Improved
+• Refresh operations now return structured results
+• Successful refreshes are automatically detected
+• Warnings are only generated when appropriate
+• Metadata changes are tracked by field
+• Refresh operations now report elapsed execution time
+• Refresh pipeline is resilient to metadata retrieval failures
+
+### 🏛️ Architecture
+• Established the Episode Refresh Pipeline framework
+• Separated refresh orchestration from metadata retrieval
+• Introduced reusable RefreshResult model
+• Continued dependency injection architecture
+• Prepared the project for live provider integration
+
+### 🧪 Testing
+• Added EpisodeRefreshPipeline unit tests
+• Added no-change refresh validation
+• Added metadata retrieval failure testing
+• Expanded automated test suite to 44 passing tests
+• Final test result: 44 automated tests passing
+
+### ✅ Validation
+• Refresh pipeline returns structured refresh results
+• Metadata service injection functions correctly
+• Provider information is tracked
+• Changed fields are detected correctly
+• No-change refreshes are detected correctly
+• Metadata retrieval failures are handled gracefully
+• Existing application functionality remains unaffected
