@@ -2,6 +2,9 @@ import argparse
 
 from dataclasses import dataclass
 
+from scraper.database.session import SessionLocal
+from scraper.repositories.factory import create_episode_repository
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -26,6 +29,34 @@ def main():
         print("No database changes will be made.")
 
     actions = []
+
+    session = SessionLocal()
+
+    try:
+        repo = create_episode_repository(session)
+
+        anime_list = repo.list_anime()
+
+        for anime in anime_list:
+            episodes = repo.list_episodes_for_anime(anime.id)
+
+            for episode in episodes:
+                if (
+                    episode.episode_title
+                    == f"Episode {episode.episode_number}"
+                ):
+                    actions.append(
+                        RepairAction(
+                            description=(
+                                f"{anime.title} "
+                                f"Episode {episode.episode_number} "
+                                "(generic title)"
+                            )
+                        )
+                    )
+
+    finally:
+        session.close()
 
     print()
 
