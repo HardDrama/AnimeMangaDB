@@ -42,6 +42,22 @@ def main():
         print(f"Arc: {metadata.arc}")
         print(f"Source URL: {metadata.source_url}")
 
+        from pathlib import Path
+
+        from scraper.core.browser_client import BrowserClient
+
+        html = BrowserClient().fetch(
+            str(metadata.source_url)
+        )
+
+        Path("debug_episode.html").write_text(
+            html,
+            encoding="utf-8",
+        )
+
+        print()
+        print("Saved HTML to debug_episode.html")
+
     finally:
         session.close()
 
