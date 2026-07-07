@@ -18,3 +18,12 @@ Lists episodes missing arc metadata.
 
 ### find_missing_chapters.py
 Lists episodes missing manga chapter mappings.
+
+## Metadata Repair Workflow
+
+Use this workflow when repairing metadata for a specific episode.
+
+### 1. Preview the repair
+
+```bash
+python -m tools.preview_metadata_repairs --episode 3
