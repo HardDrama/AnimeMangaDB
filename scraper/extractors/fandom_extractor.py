@@ -25,12 +25,17 @@ class FandomExtractor:
         manga_start = chapter_numbers[0] if len(chapter_numbers) >= 1 else None
         manga_end = chapter_numbers[-1] if len(chapter_numbers) >= 1 else None
 
+        try:
+            arc = engine.get_text("arc")
+        except Exception:
+            arc = None
+
         return EpisodeData(
             anime_title=self.config.series,
             episode_number=episode_number,
             episode_title=title,
             manga_start=manga_start,
             manga_end=manga_end,
-            arc=None,
+            arc=arc,
             source_url=source_url,
         )
