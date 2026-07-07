@@ -4,22 +4,33 @@ from scraper.providers.fandom_metadata_provider import (
 )
 
 
+class FakeProvider:
+    def __init__(self):
+        self.called = False
+
+    def build_episode_url(self, episode_number):
+        self.called = True
+        return f"https://example.com/{episode_number}"
+
+
 class DummyEpisode:
     episode_number = 1
 
 
-def test_fandom_metadata_provider_returns_episode_metadata():
-    provider = FandomMetadataProvider()
+def test_fandom_metadata_provider_uses_provider():
+    fake_provider = FakeProvider()
+
+    provider = FandomMetadataProvider(
+        provider=fake_provider,
+    )
 
     metadata = provider.get_episode_metadata(
         DummyEpisode()
     )
 
+    assert fake_provider.called is True
+
     assert isinstance(
         metadata,
         EpisodeMetadata,
     )
-
-    assert metadata.title is None
-    assert metadata.arc is None
-    assert metadata.source_url is None

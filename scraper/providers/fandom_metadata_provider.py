@@ -21,4 +21,9 @@ class FandomMetadataProvider(MetadataProvider):
         self,
         episode,
     ) -> EpisodeMetadata:
+        if self.provider is not None:
+            self.provider.build_episode_url(
+                episode.episode_number
+            )
+
         return EpisodeMetadata()
