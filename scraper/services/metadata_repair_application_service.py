@@ -14,6 +14,7 @@ class MetadataRepairApplicationService:
         self,
         episode,
         repair_plan,
+        session=None,
         commit: bool = False,
     ):
         result = MetadataRepairApplicationResult()
@@ -29,6 +30,11 @@ class MetadataRepairApplicationService:
 
             else:
                 result.skipped += 1
+
+        if commit and session is None:
+            raise ValueError(
+                "A database session is required when commit=True."
+            )
 
         result.committed = commit
 

@@ -1,3 +1,5 @@
+import pytest
+
 from scraper.models.metadata_repair import MetadataRepair
 from scraper.models.metadata_repair_plan import MetadataRepairPlan
 from scraper.services.metadata_repair_application_service import (
@@ -68,3 +70,17 @@ def test_skips_unsupported_repairs():
 
     assert result.applied == 0
     assert result.skipped == 1
+
+def test_commit_requires_session():
+    episode = DummyEpisode()
+
+    plan = MetadataRepairPlan()
+
+    service = MetadataRepairApplicationService()
+
+    with pytest.raises(ValueError):
+        service.apply(
+            episode,
+            plan,
+            commit=True,
+        )
