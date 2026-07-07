@@ -22,6 +22,12 @@ def main():
         help="Maximum episodes to preview.",
     )
 
+    parser.add_argument(
+        "--apply",
+        action="store_true",
+        help="Apply repairs instead of previewing them.",
+    )
+
     args = parser.parse_args()
 
     session = SessionLocal()
@@ -41,8 +47,17 @@ def main():
         metadata_service = EpisodeMetadataService()
         repair_service = MetadataRepairService()
 
-        print("Metadata Repair Preview")
-        print("-----------------------")
+        if args.apply:
+            print("Metadata Repair Apply")
+            print("---------------------")
+            print("Apply mode is not implemented yet.")
+            print("No database changes will be made.")
+        else:
+            print("Metadata Repair Preview")
+            print("-----------------------")
+
+        episodes_with_repairs = 0
+        total_repairs = 0
 
         for episode in episodes:
             metadata = metadata_service.get_metadata(episode)
@@ -61,6 +76,8 @@ def main():
                 continue
 
             print(f"{len(plan.repairs)} repair(s) proposed.")
+            episodes_with_repairs += 1
+            total_repairs += len(plan.repairs)
             print()
 
             for repair in plan.repairs:
@@ -68,6 +85,13 @@ def main():
                 print(f"  Current : {repair.current_value}")
                 print(f"  New     : {repair.new_value}")
                 print()
+
+        print()
+        print("Summary")
+        print("-------")
+        print(f"Episodes Checked      : {len(episodes)}")
+        print(f"Episodes With Repairs : {episodes_with_repairs}")
+        print(f"Total Proposed Repairs: {total_repairs}")
 
     finally:
         session.close()
