@@ -55,7 +55,19 @@ def main():
         if episode.arc != metadata.arc:
             differences.append("Arc")
 
-        if episode.source_url != metadata.source_url:
+        current_source_url = (
+            str(episode.source_url)
+            if episode.source_url is not None
+            else None
+        )
+
+        live_source_url = (
+            str(metadata.source_url)
+            if metadata.source_url is not None
+            else None
+        )
+
+        if current_source_url != live_source_url:
             differences.append("Source URL")
 
         if differences:
@@ -79,8 +91,8 @@ def main():
 
             if "Source URL" in differences:
                 print("Source URL")
-                print(f"  Current : {episode.source_url}")
-                print(f"  Live    : {metadata.source_url}")
+                print(f"  Current : {current_source_url}")
+                print(f"  Live    : {live_source_url}")
                 print()
         else:
             print(
