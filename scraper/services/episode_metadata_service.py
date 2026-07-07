@@ -1,14 +1,15 @@
+from scraper.models.episode_metadata import (
+    EpisodeMetadata,
+)
+
+
 class EpisodeMetadataService:
     """
     Retrieves fresh metadata for a single episode.
-
-    Initially this is a placeholder.
-    Future versions will integrate the existing
-    provider and extractor pipeline.
     """
 
-    def get_episode_title(
+    def get_metadata(
         self,
         episode,
     ):
-        return None
+        return EpisodeMetadata()

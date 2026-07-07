@@ -19,11 +19,11 @@ class MetadataProposalService:
         self,
         episode,
     ):
-        fresh_title = self.metadata_service.get_episode_title(
+        metadata = self.metadata_service.get_metadata(
             episode
         )
 
-        if fresh_title:
-            return fresh_title
+        if metadata.title:
+            return metadata.title
 
         return propose_episode_title(episode)
