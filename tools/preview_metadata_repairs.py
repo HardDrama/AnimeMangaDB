@@ -48,14 +48,16 @@ def main():
         repair_service = MetadataRepairService()
 
         if args.apply:
-            print("Metadata Repair Apply")
-            print("---------------------")
+            print("Metadata Repair Tool")
+            print("--------------------")
+            print("Running in APPLY mode.")
             print("Apply mode is not implemented yet.")
             print("No database changes will be made.")
             return
         else:
-            print("Metadata Repair Preview")
-            print("-----------------------")
+            print("Metadata Repair Tool")
+            print("--------------------")
+            print("Running in PREVIEW mode.")
 
         episodes_with_repairs = 0
         total_repairs = 0
