@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T23:11:17.158886",
+  "generated_at": "2026-07-07T23:14:26.382070",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 25.9,
+  "elapsed_seconds": 26.46,
   "status": "up_to_date",
   "arguments": {
     "limit": 5,
@@ -99,5 +99,6 @@
   ],
   "status_totals": {
     "up_to_date": 5
-  }
+  },
+  "field_totals": {}
 }

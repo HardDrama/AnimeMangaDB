@@ -171,6 +171,7 @@ def main():
             "report_format": "json",
             "episodes": [],
             "status_totals": {},
+            "field_totals": {},
         }
 
         for index, episode in enumerate(
@@ -405,6 +406,14 @@ def main():
             status_totals[status] = (
                 status_totals.get(status, 0) + 1
             )
+
+        field_totals = {}
+
+        for episode_result in report["episodes"]:
+            for field in episode_result["fields"]:
+                field_totals[field] = (
+                    field_totals.get(field, 0) + 1
+                )
         
         report.update(
             {
@@ -467,6 +476,7 @@ def main():
                 },
                 "report_path": args.json_report,
                 "status_totals": status_totals,
+                "field_totals": field_totals,
             }
         )
 
