@@ -127,6 +127,8 @@ def main():
         failed_episodes = 0
         failed_episode_numbers = []
         failure_reasons = []
+        total_applied_repairs = 0
+        total_skipped_repairs = 0
         total_repairs = 0
 
         for index, episode in enumerate(
@@ -155,6 +157,15 @@ def main():
                         session=session,
                         commit=args.apply and args.yes,
                     )
+
+                    total_applied_repairs += result.applied
+                    total_skipped_repairs += result.skipped
+
+                    if plan.has_repairs:
+                        episodes_with_repairs += 1
+                        total_repairs += len(plan.repairs)
+                    else:
+                        episodes_without_repairs += 1
 
                     print(
                         f"Application Result: "
@@ -244,6 +255,8 @@ def main():
             print("Failure Reasons:")
             for episode_number, reason in failure_reasons:
                 print(f"  Episode {episode_number}: {reason}")
+        print(f"Applied Repairs          : {total_applied_repairs}")
+        print(f"Skipped Repairs          : {total_skipped_repairs}")
         print(f"Total Repairs            : {total_repairs}")
         print(
             f"Elapsed Time             : "
