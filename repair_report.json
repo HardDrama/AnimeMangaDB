@@ -1,0 +1,11 @@
+{
+  "episodes_checked": 5,
+  "episodes_updated": 0,
+  "episodes_with_repairs": 0,
+  "episodes_without_repairs": 5,
+  "failed_episodes": 0,
+  "failed_episode_numbers": [],
+  "failure_reasons": [],
+  "applied_repairs": 0,
+  "skipped_repairs": 0
+}

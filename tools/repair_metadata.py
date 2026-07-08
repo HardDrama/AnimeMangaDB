@@ -1,5 +1,8 @@
 import argparse
 
+import json
+from pathlib import Path
+
 from time import perf_counter
 
 from scraper.database.models import Episode
@@ -138,6 +141,17 @@ def main():
         total_skipped_repairs = 0
         total_repairs = 0
         episodes_updated = 0
+        report = {
+            "episodes_checked": 0,
+            "episodes_updated": 0,
+            "episodes_with_repairs": 0,
+            "episodes_without_repairs": 0,
+            "failed_episodes": 0,
+            "failed_episode_numbers": [],
+            "failure_reasons": [],
+            "applied_repairs": 0,
+            "skipped_repairs": 0,
+        }
 
         for index, episode in enumerate(
             episodes,
@@ -280,6 +294,29 @@ def main():
             print("Status: Completed with failures.")
         else:
             print("Status: Completed successfully.")
+
+        report.update(
+            {
+                "episodes_checked": len(episodes),
+                "episodes_updated": episodes_updated,
+                "episodes_with_repairs": episodes_with_repairs,
+                "episodes_without_repairs": episodes_without_repairs,
+                "failed_episodes": failed_episodes,
+                "failed_episode_numbers": failed_episode_numbers,
+                "failure_reasons": failure_reasons,
+                "applied_repairs": total_applied_repairs,
+                "skipped_repairs": total_skipped_repairs,
+            }
+        )
+
+        if args.json_report:
+            Path(args.json_report).write_text(
+                json.dumps(report, indent=2),
+                encoding="utf-8",
+            )
+
+            print()
+            print(f"JSON report written to: {args.json_report}")
 
     finally:
         session.close()
