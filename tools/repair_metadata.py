@@ -109,7 +109,16 @@ def main():
         episodes_with_repairs = 0
         total_repairs = 0
 
-        for episode in episodes:
+        for index, episode in enumerate(
+            episodes,
+            start=1,
+        ):
+            
+            print(
+                f"[{index}/{len(episodes)}] "
+                f"Episode {episode.episode_number}"
+            )
+
             metadata = metadata_service.get_metadata(episode)
 
             plan = repair_service.build_repair_plan(
