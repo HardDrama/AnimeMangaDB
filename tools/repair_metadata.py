@@ -235,6 +235,14 @@ def main():
                                 repair.field
                                 for repair in plan.repairs
                             ],
+                            "repairs": [
+                                {
+                                    "field": repair.field,
+                                    "current_value": repair.current_value,
+                                    "new_value": repair.new_value,
+                                }
+                                for repair in plan.repairs
+                            ],
                             "status": (
                                 "updated"
                                 if result.applied > 0
@@ -257,6 +265,7 @@ def main():
                             "repairs_applied": 0,
                             "repairs_skipped": 0,
                             "fields": [],
+                            "repairs": [],
                             "status": "up_to_date",
                         }
                     )
@@ -286,6 +295,14 @@ def main():
                             repair.field
                             for repair in plan.repairs
                         ],
+                        "repairs": [
+                            {
+                                "field": repair.field,
+                                "current_value": repair.current_value,
+                                "new_value": repair.new_value,
+                            }
+                            for repair in plan.repairs
+                        ],
                         "status": "needs_repairs",
                     }
                 )
@@ -309,6 +326,7 @@ def main():
                         "episode_id": episode.id,
                         "episode_number": episode.episode_number,
                         "fields": [],
+                        "repairs": [],
                         "status": "failed",
                         "error": str(exc),
                     }

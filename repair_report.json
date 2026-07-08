@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:59:42.168838",
+  "generated_at": "2026-07-07T23:07:36.900011",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 25.88,
+  "elapsed_seconds": 25.74,
   "status": "completed_successfully",
   "arguments": {
     "limit": 5,
@@ -53,6 +53,7 @@
       "repairs_applied": 0,
       "repairs_skipped": 0,
       "fields": [],
+      "repairs": [],
       "status": "up_to_date"
     },
     {
@@ -62,6 +63,7 @@
       "repairs_applied": 0,
       "repairs_skipped": 0,
       "fields": [],
+      "repairs": [],
       "status": "up_to_date"
     },
     {
@@ -71,6 +73,7 @@
       "repairs_applied": 0,
       "repairs_skipped": 0,
       "fields": [],
+      "repairs": [],
       "status": "up_to_date"
     },
     {
@@ -80,6 +83,7 @@
       "repairs_applied": 0,
       "repairs_skipped": 0,
       "fields": [],
+      "repairs": [],
       "status": "up_to_date"
     },
     {
@@ -89,6 +93,7 @@
       "repairs_applied": 0,
       "repairs_skipped": 0,
       "fields": [],
+      "repairs": [],
       "status": "up_to_date"
     }
   ]
