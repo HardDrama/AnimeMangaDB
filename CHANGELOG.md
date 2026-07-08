@@ -1450,3 +1450,60 @@ AnimeMangaDB is now capable of maintaining its own metadata database.
 ## 🚀 Milestone
 
 AnimeMangaDB can now safely repair individual episodes, batches, or an entire database while providing detailed progress and execution summaries.
+
+# 📦 AnimeMangaDB v0.49.0 — Advanced Repair Reporting
+
+## 🎉 Highlights
+
+Version 0.49.0 introduces structured repair reporting, allowing every repair run to generate a detailed JSON report for analysis, auditing, and future integrations.
+
+---
+
+## ✨ New Features
+
+### JSON Reporting
+✔ Added `--json-report` option
+✔ Automatically writes repair reports to disk
+✔ Added schema version
+✔ Added report metadata
+✔ Added report format and path
+✔ Added elapsed time
+✔ Added completion status
+
+### Report Metadata
+✔ Command arguments
+✔ Run mode (preview/apply)
+✔ Selection information
+✔ Generated timestamp
+✔ Mode flags
+
+### Repair Statistics
+✔ Episode totals
+✔ Repair totals
+✔ Status totals
+✔ Field totals
+✔ Failure details
+
+### Episode Reporting
+✔ Per-episode results
+✔ Episode IDs
+✔ Repair fields
+✔ Current/new values
+✔ Episode status
+
+### Documentation
+✔ Expanded `tools/README.md`
+✔ Added JSON report documentation
+
+---
+
+## 🧪 Testing
+
+✔ 55 passed
+✔ 1 warning
+
+---
+
+## 🚀 Milestone
+
+AnimeMangaDB can now generate structured JSON reports suitable for automation, auditing, future web interfaces, and external tooling.

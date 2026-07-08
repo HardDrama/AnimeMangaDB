@@ -16,7 +16,7 @@ Database
 
 Metadata
 ✔ Live metadata retrieval
-✔ Comparison service
+✔ Comparison services
 ✔ Automated repair pipeline
 
 Developer Tools
@@ -24,34 +24,35 @@ Developer Tools
 ✔ Selector discovery
 ✔ Comparison tools
 ✔ Repair tool
-✔ Documentation
+✔ JSON reporting
+✔ Developer documentation
 
 Batch Repair
-✔ `--all`
-✔ Progress indicator
+✔ Batch processing
+✔ Progress reporting
 ✔ Execution summaries
 ✔ Failure tracking
-✔ Completion status
+✔ Structured JSON reports
 
 ---
 
-## 🔄 Next (v0.49.0)
+## 🔄 Next (v0.50.0)
 
-⬜ Resume interrupted repairs
-⬜ JSON repair reports
 ⬜ CSV repair reports
+⬜ HTML repair reports
 ⬜ Retry failed episodes
+⬜ Resume interrupted repairs
 ⬜ Improved logging
-⬜ Repair statistics
-⬜ Configurable verbosity
+⬜ Repair statistics by anime
+⬜ Configurable report output
 
 ---
 
 ## 🌟 Future
 
-⬜ Additional anime providers
+⬜ Multi-provider support
 ⬜ Metadata history
 ⬜ Audit log
 ⬜ REST API
 ⬜ Public website
-⬜ Multi-provider support
+⬜ Advanced analytics dashboard
