@@ -269,3 +269,22 @@ Validate:
 
 ```bash
 pytest
+
+# Product Scope Notes
+
+AnimeMangaDB is focused on anime episode to manga chapter mapping.
+
+Pre-v1.0 priorities:
+
+- Anime episode number
+- Anime episode title
+- Anime arc
+- Manga chapter number
+- Manga chapter title
+- Manga arc
+- One Piece support
+- Naruto support
+- Repair/report tooling
+- API and basic lookup website
+
+Additional anime metadata such as air dates, staff, thumbnails, and streaming metadata are considered post-v1.0 enhancements.
