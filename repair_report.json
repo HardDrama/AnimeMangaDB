@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:33:38.001201",
+  "generated_at": "2026-07-07T22:41:18.310167",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 25.87,
+  "elapsed_seconds": 26.43,
   "status": "completed_successfully",
   "arguments": {
     "limit": 5,
@@ -44,5 +44,42 @@
     "reasons": []
   },
   "report_path": "repair_report.json",
-  "report_format": "json"
+  "report_format": "json",
+  "episodes": [
+    {
+      "episode_number": 1,
+      "repairs_proposed": 0,
+      "repairs_applied": 0,
+      "repairs_skipped": 0,
+      "status": "up_to_date"
+    },
+    {
+      "episode_number": 349,
+      "repairs_proposed": 0,
+      "repairs_applied": 0,
+      "repairs_skipped": 0,
+      "status": "up_to_date"
+    },
+    {
+      "episode_number": 1167,
+      "repairs_proposed": 0,
+      "repairs_applied": 0,
+      "repairs_skipped": 0,
+      "status": "up_to_date"
+    },
+    {
+      "episode_number": 1168,
+      "repairs_proposed": 0,
+      "repairs_applied": 0,
+      "repairs_skipped": 0,
+      "status": "up_to_date"
+    },
+    {
+      "episode_number": 2,
+      "repairs_proposed": 0,
+      "repairs_applied": 0,
+      "repairs_skipped": 0,
+      "status": "up_to_date"
+    }
+  ]
 }

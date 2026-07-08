@@ -169,6 +169,7 @@ def main():
             "failure_details": {},
             "report_path": None,
             "report_format": "json",
+            "episodes": [],
         }
 
         for index, episode in enumerate(
@@ -223,11 +224,36 @@ def main():
 
                     print()
 
+                    report["episodes"].append(
+                        {
+                            "episode_number": episode.episode_number,
+                            "repairs_proposed": len(plan.repairs),
+                            "repairs_applied": result.applied,
+                            "repairs_skipped": result.skipped,
+                            "status": (
+                                "updated"
+                                if result.applied > 0
+                                else "up_to_date"
+                            ),
+                        }
+                    )
+
                     continue
 
                 if not plan.has_repairs:
                     episodes_without_repairs += 1
                     print("No repairs needed.")
+
+                    report["episodes"].append(
+                        {
+                            "episode_number": episode.episode_number,
+                            "repairs_proposed": 0,
+                            "repairs_applied": 0,
+                            "repairs_skipped": 0,
+                            "status": "up_to_date",
+                        }
+                    )
+
                     continue
 
                 episodes_with_repairs += 1
@@ -242,6 +268,16 @@ def main():
                     print(f"  New     : {repair.new_value}")
                     print()
 
+                report["episodes"].append(
+                    {
+                        "episode_number": episode.episode_number,
+                        "repairs_proposed": len(plan.repairs),
+                        "repairs_applied": 0,
+                        "repairs_skipped": 0,
+                        "status": "needs_repairs",
+                    }
+                )
+
             except Exception as exc:
                 failed_episodes += 1
                 failed_episode_numbers.append(
@@ -255,6 +291,15 @@ def main():
                 )
                 print(f"FAILED: {exc}")
                 print()
+
+                report["episodes"].append(
+                    {
+                        "episode_number": episode.episode_number,
+                        "status": "failed",
+                        "error": str(exc),
+                    }
+                )
+
                 continue
 
             print()
