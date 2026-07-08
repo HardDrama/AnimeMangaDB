@@ -200,6 +200,7 @@ def main():
                         "repairs_applied",
                         "repairs_skipped",
                         "fields",
+                        "repair_details",
                     ],
                 )
 
@@ -225,6 +226,14 @@ def main():
                             ),
                             "fields": ",".join(
                                 episode_result.get("fields", [])
+                            ),
+                            "repair_details": "; ".join(
+                                (
+                                    f"{repair.get('field')}: "
+                                    f"{repair.get('current_value')} -> "
+                                    f"{repair.get('new_value')}"
+                                )
+                                for repair in episode_result.get("repairs", [])
                             ),
                         }
                     )

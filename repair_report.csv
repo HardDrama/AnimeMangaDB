@@ -1,1 +1,1 @@
-episode_id,episode_number,status,repairs_proposed,repairs_applied,repairs_skipped,fields
+episode_id,episode_number,status,repairs_proposed,repairs_applied,repairs_skipped,fields,repair_details
