@@ -240,3 +240,22 @@ The JSON report includes:
 ---
 
 Last Updated: v0.48.0
+
+### CSV Report
+
+```bash
+python -m tools.repair_metadata --limit 5 --csv-report repair_report.csv
+```
+
+The CSV report includes:
+
+- Episode ID
+- Episode number
+- Status
+- Proposed repair count
+- Applied repair count
+- Skipped repair count
+- Repair fields
+- Repair value details
+- Summary rows
+```
