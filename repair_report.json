@@ -9,9 +9,17 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:12:03.044638",
+  "generated_at": "2026-07-07T22:15:10.570481",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 26.08,
-  "status": "completed_successfully"
+  "elapsed_seconds": 26.77,
+  "status": "completed_successfully",
+  "arguments": {
+    "limit": 5,
+    "episode": null,
+    "all": false,
+    "apply": false,
+    "yes": false,
+    "json_report": "repair_report.json"
+  }
 }

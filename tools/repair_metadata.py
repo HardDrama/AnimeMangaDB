@@ -159,6 +159,7 @@ def main():
             "selection": None,
             "elapsed_seconds": 0,
             "status": None,
+            "arguments": {},
         }
 
         for index, episode in enumerate(
@@ -333,6 +334,14 @@ def main():
                 ),
                 "elapsed_seconds": round(elapsed_seconds, 2),
                 "status": status,
+                "arguments": {
+                    "limit": args.limit,
+                    "episode": args.episode,
+                    "all": args.all,
+                    "apply": args.apply,
+                    "yes": args.yes,
+                    "json_report": args.json_report,
+                },
             }
         )
 
