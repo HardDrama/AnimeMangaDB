@@ -267,6 +267,12 @@ def main():
             f"Elapsed Time             : "
             f"{format_elapsed_time(elapsed_seconds)}"
         )
+        print()
+
+        if failed_episodes:
+            print("Status: Completed with failures.")
+        else:
+            print("Status: Completed successfully.")
 
     finally:
         session.close()
