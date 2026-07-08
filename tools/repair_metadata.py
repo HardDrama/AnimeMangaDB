@@ -3,6 +3,8 @@ import argparse
 import json
 from pathlib import Path
 
+import csv
+
 from time import perf_counter
 
 from datetime import datetime
@@ -180,6 +182,55 @@ def main():
             "status_totals": {},
             "field_totals": {},
         }
+
+        if args.csv_report:
+            with open(
+                args.csv_report,
+                "w",
+                newline="",
+                encoding="utf-8",
+            ) as csv_file:
+                writer = csv.DictWriter(
+                    csv_file,
+                    fieldnames=[
+                        "episode_id",
+                        "episode_number",
+                        "status",
+                        "repairs_proposed",
+                        "repairs_applied",
+                        "repairs_skipped",
+                        "fields",
+                    ],
+                )
+
+                writer.writeheader()
+
+                for episode_result in report["episodes"]:
+                    writer.writerow(
+                        {
+                            "episode_id": episode_result.get("episode_id"),
+                            "episode_number": episode_result.get("episode_number"),
+                            "status": episode_result.get("status"),
+                            "repairs_proposed": episode_result.get(
+                                "repairs_proposed",
+                                0,
+                            ),
+                            "repairs_applied": episode_result.get(
+                                "repairs_applied",
+                                0,
+                            ),
+                            "repairs_skipped": episode_result.get(
+                                "repairs_skipped",
+                                0,
+                            ),
+                            "fields": ",".join(
+                                episode_result.get("fields", [])
+                            ),
+                        }
+                    )
+
+            print()
+            print(f"CSV report written to: {args.csv_report}")
 
         for index, episode in enumerate(
             episodes,
