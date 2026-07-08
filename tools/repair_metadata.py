@@ -156,6 +156,7 @@ def main():
             "generated_at": None,
             "mode": None,
             "selection": None,
+            "elapsed_seconds": 0,
         }
 
         for index, episode in enumerate(
@@ -322,6 +323,7 @@ def main():
                         else f"limit:{args.limit}"
                     )
                 ),
+                "elapsed_seconds": round(elapsed_seconds, 2),
             }
         )
 

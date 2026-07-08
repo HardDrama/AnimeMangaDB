@@ -8,7 +8,8 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:01:38.651264",
+  "generated_at": "2026-07-07T22:05:11.470954",
   "mode": "preview",
-  "selection": "limit:5"
+  "selection": "limit:5",
+  "elapsed_seconds": 25.53
 }
