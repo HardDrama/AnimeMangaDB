@@ -259,6 +259,13 @@ def main():
                     }
                 )
 
+                writer.writerow(
+                    {
+                        "episode_number": "GENERATED_AT",
+                        "status": datetime.now().isoformat(),
+                    }
+                )
+
                 writer.writerow({})
 
                 writer.writerow(

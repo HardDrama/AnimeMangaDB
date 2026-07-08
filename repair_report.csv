@@ -2,5 +2,6 @@ episode_id,episode_number,status,repairs_proposed,repairs_applied,repairs_skippe
 ,,,,,,,
 ,SUMMARY,,0,0,0,,
 ,REPORT_FORMAT,csv,schema_version,1,,,
+,GENERATED_AT,2026-07-08T11:30:52.293275,,,,,
 ,,,,,,,
 ,EPISODES,5,0,0,0,,
