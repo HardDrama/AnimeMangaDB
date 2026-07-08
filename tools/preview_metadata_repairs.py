@@ -101,6 +101,11 @@ def main():
             print("Database writes are disabled.")
             print()
 
+        if args.all:
+            print("Batch Mode: ALL episodes selected.")
+            print("This may take a long time.")
+            print()
+
         episodes_with_repairs = 0
         total_repairs = 0
 
