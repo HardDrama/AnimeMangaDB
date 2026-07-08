@@ -270,6 +270,12 @@ Validate:
 ```bash
 pytest
 
+### Report Format Guidance
+
+Use JSON reports for automation, auditing, and future API or dashboard integrations.
+
+Use CSV reports for spreadsheet review, quick filtering, and manual data-quality inspection.
+
 # Product Scope Notes
 
 AnimeMangaDB is focused on anime episode to manga chapter mapping.
