@@ -1,102 +1,171 @@
 import argparse
 
-from dataclasses import dataclass
-
+from scraper.database.models import Episode
 from scraper.database.session import SessionLocal
-from scraper.repositories.factory import create_episode_repository
-
-from tools.metadata_proposals import (
-    MetadataProposalService,
+from scraper.services.episode_metadata_service import (
+    EpisodeMetadataService,
+)
+from scraper.services.metadata_repair_service import (
+    MetadataRepairService,
+)
+from scraper.services.metadata_repair_application_service import (
+    MetadataRepairApplicationService,
 )
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="AnimeMangaDB Metadata Repair Tool"
+        description="Preview proposed metadata repairs."
+    )
+
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=1,
+        help="Maximum episodes to preview.",
+    )
+
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Preview or repair all episodes.",
+    )
+
+    parser.add_argument(
+        "--episode",
+        type=int,
+        default=None,
+        help="Specific episode number to repair.",
     )
 
     parser.add_argument(
         "--apply",
         action="store_true",
-        help="Apply repair actions instead of performing a dry run.",
+        help="Apply repairs instead of previewing them.",
+    )
+
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="Confirm that repairs should be applied.",
     )
 
     args = parser.parse_args()
 
-    print("Metadata Repair Tool")
-    print("--------------------")
-
-    if args.apply:
-        print("Running in APPLY mode.")
-    else:
-        print("Running in DRY RUN mode.")
-        print("No database changes will be made.")
-
-    actions = []
-
     session = SessionLocal()
 
     try:
-        repo = create_episode_repository(session)
+        query = (
+            session.query(Episode)
+            .order_by(Episode.id)
+        )
 
-        proposal_service = MetadataProposalService()
+        if args.episode is not None:
+            query = query.filter(
+                Episode.episode_number == args.episode
+            )
+        elif not args.all:
+            query = query.limit(args.limit)
 
-        anime_list = repo.list_anime()
+        episodes = query.all()
 
-        for anime in anime_list:
-            episodes = repo.list_episodes_for_anime(anime.id)
+        if not episodes:
+            print("No episodes found.")
+            return
 
-            for episode in episodes:
-                if (
-                    episode.episode_title
-                    == f"Episode {episode.episode_number}"
-                ):
-                    actions.append(
-                        RepairAction(
-                            description=(
-                                f"{anime.title} "
-                                f"Episode {episode.episode_number}"
-                            ),
-                            current_value=episode.episode_title,
-                            proposed_value=proposal_service.propose_episode_title(
-                                episode
-                            ),
-                        )
-                    )
+        metadata_service = EpisodeMetadataService()
+        repair_service = MetadataRepairService()
+        application_service = (
+            MetadataRepairApplicationService()
+        )
+
+        if args.apply:
+            print("Metadata Repair Tool")
+            print("--------------------")
+            print("Running in APPLY mode.")
+            print("Database writes are ENABLED.")
+            print()
+
+            if not args.yes:
+                print("Missing confirmation flag: --yes")
+                print("No database changes will be made.")
+                return
+
+            print("Apply mode placeholder.")
+            print("Repair plans will be passed to the application service.")
+            print()
+        else:
+            print("Metadata Repair Tool")
+            print("--------------------")
+            print("Running in PREVIEW mode.")
+            print("Database writes are disabled.")
+            print()
+
+        if args.all:
+            print("Batch Mode: ALL episodes selected.")
+            print("This may take a long time.")
+            print()
+
+        episodes_with_repairs = 0
+        total_repairs = 0
+
+        for episode in episodes:
+            metadata = metadata_service.get_metadata(episode)
+
+            plan = repair_service.build_repair_plan(
+                episode,
+                metadata,
+            )
+
+            if args.apply:
+                result = application_service.apply(
+                    episode,
+                    plan,
+                    session=session,
+                    commit=args.apply and args.yes,
+                )
+
+                print(
+                    f"Application Result: "
+                    f"{result.applied} applied, "
+                    f"{result.skipped} skipped."
+                )
+                if result.committed:
+                    print("Database Updated : YES")
+                else:
+                    print("Database Updated : NO (Dry Run)")
+                print()
+
+                continue
+
+            print()
+            print(f"Episode {episode.episode_number}")
+            print("-" * 20)
+
+            if not plan.has_repairs:
+                print("No repairs needed.")
+                continue
+
+            print(f"{len(plan.repairs)} repair(s) proposed.")
+            episodes_with_repairs += 1
+            total_repairs += len(plan.repairs)
+            print()
+
+            for repair in plan.repairs:
+                print(repair.field.replace("_", " ").title())
+                print(f"  Current : {repair.current_value}")
+                print(f"  New     : {repair.new_value}")
+                print()
+
+        print()
+        print("Summary")
+        print("-------")
+        print(f"Episodes Checked      : {len(episodes)}")
+        print(f"Episodes With Repairs : {episodes_with_repairs}")
+        print(f"Total Proposed Repairs: {total_repairs}")
 
     finally:
         session.close()
-
-    print()
-
-    if not actions:
-        print("No repair actions found.")
-        return
-
-    for action in actions:
-        if args.apply:
-            action.apply()
-        else:
-            action.preview()
-
-@dataclass
-class RepairAction:
-    description: str
-    current_value: str | None = None
-    proposed_value: str | None = None
-
-    def preview(self):
-        print(f"Would repair: {self.description}")
-
-        if (
-            self.current_value is not None
-            and self.proposed_value is not None
-        ):
-            print(f"  Current : {self.current_value}")
-            print(f"  Proposed: {self.proposed_value}")
-
-    def apply(self):
-        print(f"Applied repair: {self.description}")
 
 
 if __name__ == "__main__":
