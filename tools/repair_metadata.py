@@ -195,6 +195,7 @@ def main():
                     fieldnames=[
                         "episode_id",
                         "anime_title",
+                        "provider",
                         "episode_number",
                         "status",
                         "repairs_proposed",
@@ -212,6 +213,7 @@ def main():
                         {
                             "episode_id": episode_result.get("episode_id"),
                             "anime_title": episode_result.get("anime_title"),
+                            "provider": episode_result.get("provider"),
                             "episode_number": episode_result.get("episode_number"),
                             "status": episode_result.get("status"),
                             "repairs_proposed": episode_result.get(
@@ -338,6 +340,7 @@ def main():
                     report["episodes"].append(
                         {
                             "anime_title": episode.anime.title,
+                            "provider": episode.anime.provider,
                             "episode_id": episode.id,
                             "episode_number": episode.episode_number,
                             "repairs_proposed": len(plan.repairs),
@@ -372,6 +375,7 @@ def main():
                     report["episodes"].append(
                         {
                             "anime_title": episode.anime.title,
+                            "provider": episode.anime.provider,
                             "episode_id": episode.id,
                             "episode_number": episode.episode_number,
                             "repairs_proposed": 0,
@@ -400,6 +404,7 @@ def main():
                 report["episodes"].append(
                     {
                         "anime_title": episode.anime.title,
+                        "provider": episode.anime.provider,
                         "episode_id": episode.id,
                         "episode_number": episode.episode_number,
                         "repairs_proposed": len(plan.repairs),
@@ -438,6 +443,7 @@ def main():
                 report["episodes"].append(
                     {
                         "anime_title": episode.anime.title,
+                        "provider": episode.anime.provider,
                         "episode_id": episode.id,
                         "episode_number": episode.episode_number,
                         "fields": [],
