@@ -124,6 +124,7 @@ def main():
 
         episodes_with_repairs = 0
         episodes_without_repairs = 0
+        failed_episodes = 0
         total_repairs = 0
 
         for index, episode in enumerate(
@@ -192,6 +193,7 @@ def main():
         print(f"Episodes Checked         : {len(episodes)}")
         print(f"Episodes With Repairs    : {episodes_with_repairs}")
         print(f"Episodes Without Repairs : {episodes_without_repairs}")
+        print(f"Failed Episodes          : {failed_episodes}")
         print(f"Total Repairs            : {total_repairs}")
         print(
             f"Elapsed Time             : "
