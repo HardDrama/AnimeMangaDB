@@ -166,6 +166,7 @@ def main():
             "is_single_episode": False,
             "repair_totals": {},
             "episode_totals": {},
+            "failure_details": {},
         }
 
         for index, episode in enumerate(
@@ -363,6 +364,17 @@ def main():
                     "with_repairs": episodes_with_repairs,
                     "without_repairs": episodes_without_repairs,
                     "failed": failed_episodes,
+                },
+                "failure_details": {
+                    "count": failed_episodes,
+                    "episode_numbers": failed_episode_numbers,
+                    "reasons": [
+                        {
+                            "episode_number": episode_number,
+                            "reason": reason,
+                        }
+                        for episode_number, reason in failure_reasons
+                    ],
                 },
             }
         )

@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:24:40.520182",
+  "generated_at": "2026-07-07T22:27:15.345208",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 26.23,
+  "elapsed_seconds": 27.39,
   "status": "completed_successfully",
   "arguments": {
     "limit": 5,
@@ -37,5 +37,10 @@
     "with_repairs": 0,
     "without_repairs": 5,
     "failed": 0
+  },
+  "failure_details": {
+    "count": 0,
+    "episode_numbers": [],
+    "reasons": []
   }
 }
