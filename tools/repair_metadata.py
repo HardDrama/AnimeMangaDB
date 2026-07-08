@@ -160,6 +160,10 @@ def main():
             "elapsed_seconds": 0,
             "status": None,
             "arguments": {},
+            "is_apply_mode": False,
+            "is_preview_mode": False,
+            "is_all_episodes": False,
+            "is_single_episode": False,
         }
 
         for index, episode in enumerate(
@@ -342,6 +346,10 @@ def main():
                     "yes": args.yes,
                     "json_report": args.json_report,
                 },
+                "is_apply_mode": args.apply,
+                "is_preview_mode": not args.apply,
+                "is_all_episodes": args.all,
+                "is_single_episode": args.episode is not None,
             }
         )
 
