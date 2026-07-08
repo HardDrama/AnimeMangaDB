@@ -1,4 +1,6 @@
 episode_id,episode_number,status,repairs_proposed,repairs_applied,repairs_skipped,fields,repair_details
 ,,,,,,,
 ,SUMMARY,,0,0,0,,
+,REPORT_FORMAT,csv,schema_version,1,,,
+,,,,,,,
 ,EPISODES,5,0,0,0,,

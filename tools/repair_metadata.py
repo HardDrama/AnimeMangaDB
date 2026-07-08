@@ -252,6 +252,17 @@ def main():
 
                 writer.writerow(
                     {
+                        "episode_number": "REPORT_FORMAT",
+                        "status": "csv",
+                        "repairs_proposed": "schema_version",
+                        "repairs_applied": 1,
+                    }
+                )
+
+                writer.writerow({})
+
+                writer.writerow(
+                    {
                         "episode_number": "EPISODES",
                         "status": len(episodes),
                         "repairs_proposed": episodes_updated,
