@@ -1,5 +1,7 @@
 import argparse
 
+from time import perf_counter
+
 from scraper.database.models import Episode
 from scraper.database.session import SessionLocal
 from scraper.services.episode_metadata_service import (
@@ -51,6 +53,8 @@ def main():
     )
 
     args = parser.parse_args()
+
+    started_at = perf_counter()
 
     session = SessionLocal()
 
@@ -168,13 +172,16 @@ def main():
                 print(f"  New     : {repair.new_value}")
                 print()
 
+        elapsed_seconds = perf_counter() - started_at
+
         print()
         print("Summary")
         print("-------")
-        print(f"Episodes Checked      : {len(episodes)}")
-        print(f"Episodes With Repairs : {episodes_with_repairs}")
+        print(f"Episodes Checked         : {len(episodes)}")
+        print(f"Episodes With Repairs    : {episodes_with_repairs}")
         print(f"Episodes Without Repairs : {episodes_without_repairs}")
-        print(f"Total Proposed Repairs: {total_repairs}")
+        print(f"Total Repairs            : {total_repairs}")
+        print(f"Elapsed Seconds          : {elapsed_seconds:.2f}")
 
     finally:
         session.close()
