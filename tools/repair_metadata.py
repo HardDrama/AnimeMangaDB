@@ -64,6 +64,13 @@ def main():
         help="Confirm that repairs should be applied.",
     )
 
+    parser.add_argument(
+        "--json-report",
+        type=str,
+        default=None,
+        help="Write repair summary report to a JSON file.",
+    )
+
     args = parser.parse_args()
 
     started_at = perf_counter()
