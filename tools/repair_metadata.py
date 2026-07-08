@@ -157,6 +157,7 @@ def main():
             "mode": None,
             "selection": None,
             "elapsed_seconds": 0,
+            "status": None,
         }
 
         for index, episode in enumerate(
@@ -301,6 +302,12 @@ def main():
         else:
             print("Status: Completed successfully.")
 
+        status = (
+            "completed_with_failures"
+            if failed_episodes
+            else "completed_successfully"
+        )
+        
         report.update(
             {
                 "episodes_checked": len(episodes),
@@ -324,6 +331,7 @@ def main():
                     )
                 ),
                 "elapsed_seconds": round(elapsed_seconds, 2),
+                "status": status,
             }
         )
 
