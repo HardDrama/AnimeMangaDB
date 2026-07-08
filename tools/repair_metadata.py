@@ -238,6 +238,28 @@ def main():
                         }
                     )
 
+                writer.writerow({})
+
+                writer.writerow(
+                    {
+                        "episode_number": "SUMMARY",
+                        "status": report["status"],
+                        "repairs_proposed": total_repairs,
+                        "repairs_applied": total_applied_repairs,
+                        "repairs_skipped": total_skipped_repairs,
+                    }
+                )
+
+                writer.writerow(
+                    {
+                        "episode_number": "EPISODES",
+                        "status": len(episodes),
+                        "repairs_proposed": episodes_updated,
+                        "repairs_applied": episodes_with_repairs,
+                        "repairs_skipped": episodes_without_repairs,
+                    }
+                )
+
             print()
             print(f"CSV report written to: {args.csv_report}")
 
