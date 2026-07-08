@@ -1398,3 +1398,55 @@ Commit
 Verify
 
 AnimeMangaDB is now capable of maintaining its own metadata database.
+
+# 📦 AnimeMangaDB v0.48.0 — Batch Metadata Repair
+
+## 🎉 Highlights
+• Added full batch metadata repair support
+• Improved repair progress reporting
+• Added detailed execution summaries
+• Added failure tracking and diagnostics
+• Renamed repair tool and expanded documentation
+
+---
+
+## ✨ New Features
+
+### Batch Repair
+✔ Added `--all` support
+✔ Added batch safety warning
+✔ Continued `--episode` and `--limit` support
+
+### Progress Reporting
+✔ Live progress indicator
+✔ Human-readable elapsed time
+✔ Completion status
+
+### Repair Summary
+✔ Episodes checked
+✔ Episodes updated
+✔ Episodes with/without repairs
+✔ Applied/skipped repair totals
+✔ Failed episode count
+✔ Failed episode numbers
+✔ Failure reasons
+
+### Tool Improvements
+✔ Renamed `preview_metadata_repairs.py`
+→ `repair_metadata.py`
+
+✔ Rewrote `tools/README.md`
+✔ Expanded developer documentation
+
+---
+
+## 🧪 Testing
+
+✔ 55 passed
+✔ 1 warning
+
+---
+
+## 🚀 Milestone
+
+AnimeMangaDB can now safely repair individual episodes, batches, or an entire database while providing detailed progress and execution summaries.
