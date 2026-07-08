@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:18:02.263430",
+  "generated_at": "2026-07-07T22:21:33.951011",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 26.38,
+  "elapsed_seconds": 28.49,
   "status": "completed_successfully",
   "arguments": {
     "limit": 5,
@@ -25,5 +25,10 @@
   "is_apply_mode": false,
   "is_preview_mode": true,
   "is_all_episodes": false,
-  "is_single_episode": false
+  "is_single_episode": false,
+  "repair_totals": {
+    "proposed": 0,
+    "applied": 0,
+    "skipped": 0
+  }
 }

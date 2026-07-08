@@ -164,6 +164,7 @@ def main():
             "is_preview_mode": False,
             "is_all_episodes": False,
             "is_single_episode": False,
+            "repair_totals": {},
         }
 
         for index, episode in enumerate(
@@ -350,6 +351,11 @@ def main():
                 "is_preview_mode": not args.apply,
                 "is_all_episodes": args.all,
                 "is_single_episode": args.episode is not None,
+                "repair_totals": {
+                    "proposed": total_repairs,
+                    "applied": total_applied_repairs,
+                    "skipped": total_skipped_repairs,
+                },
             }
         )
 
