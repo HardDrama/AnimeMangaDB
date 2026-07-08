@@ -165,6 +165,7 @@ def main():
             "is_all_episodes": False,
             "is_single_episode": False,
             "repair_totals": {},
+            "episode_totals": {},
         }
 
         for index, episode in enumerate(
@@ -355,6 +356,13 @@ def main():
                     "proposed": total_repairs,
                     "applied": total_applied_repairs,
                     "skipped": total_skipped_repairs,
+                },
+                "episode_totals": {
+                    "checked": len(episodes),
+                    "updated": episodes_updated,
+                    "with_repairs": episodes_with_repairs,
+                    "without_repairs": episodes_without_repairs,
+                    "failed": failed_episodes,
                 },
             }
         )
