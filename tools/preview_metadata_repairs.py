@@ -26,6 +26,12 @@ def main():
     )
 
     parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Preview or repair all episodes.",
+    )
+
+    parser.add_argument(
         "--episode",
         type=int,
         default=None,
@@ -58,7 +64,7 @@ def main():
             query = query.filter(
                 Episode.episode_number == args.episode
             )
-        else:
+        elif not args.all:
             query = query.limit(args.limit)
 
         episodes = query.all()
