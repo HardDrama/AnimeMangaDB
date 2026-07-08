@@ -5,6 +5,8 @@ from pathlib import Path
 
 from time import perf_counter
 
+from datetime import datetime
+
 from scraper.database.models import Episode
 from scraper.database.session import SessionLocal
 from scraper.services.episode_metadata_service import (
@@ -151,6 +153,9 @@ def main():
             "failure_reasons": [],
             "applied_repairs": 0,
             "skipped_repairs": 0,
+            "generated_at": None,
+            "mode": None,
+            "selection": None,
         }
 
         for index, episode in enumerate(
@@ -306,6 +311,17 @@ def main():
                 "failure_reasons": failure_reasons,
                 "applied_repairs": total_applied_repairs,
                 "skipped_repairs": total_skipped_repairs,
+                "generated_at": datetime.now().isoformat(),
+                "mode": "apply" if args.apply else "preview",
+                "selection": (
+                    "all"
+                    if args.all
+                    else (
+                        f"episode:{args.episode}"
+                        if args.episode is not None
+                        else f"limit:{args.limit}"
+                    )
+                ),
             }
         )
 
