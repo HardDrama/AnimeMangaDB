@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:30:10.471562",
+  "generated_at": "2026-07-07T22:33:38.001201",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 32.99,
+  "elapsed_seconds": 25.87,
   "status": "completed_successfully",
   "arguments": {
     "limit": 5,
@@ -43,5 +43,6 @@
     "episode_numbers": [],
     "reasons": []
   },
-  "report_path": "repair_report.json"
+  "report_path": "repair_report.json",
+  "report_format": "json"
 }

@@ -168,6 +168,7 @@ def main():
             "episode_totals": {},
             "failure_details": {},
             "report_path": None,
+            "report_format": "json",
         }
 
         for index, episode in enumerate(
