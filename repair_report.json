@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-08T09:53:23.607343",
+  "generated_at": "2026-07-08T11:18:24.302353",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 26.96,
+  "elapsed_seconds": 25.87,
   "status": "up_to_date",
   "arguments": {
     "limit": 5,

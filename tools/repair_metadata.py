@@ -578,6 +578,22 @@ def main():
             print()
             print(f"JSON report written to: {args.json_report}")
 
+        written_reports = []
+
+        if args.json_report:
+            written_reports.append(args.json_report)
+
+        if args.csv_report:
+            written_reports.append(args.csv_report)
+
+        if written_reports:
+            print()
+            print("Reports Written")
+            print("---------------")
+
+            for report_path in written_reports:
+                print(f"- {report_path}")
+
     finally:
         session.close()
 
