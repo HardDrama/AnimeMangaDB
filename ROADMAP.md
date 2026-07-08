@@ -19,40 +19,60 @@ Metadata
 ✔ Comparison services
 ✔ Automated repair pipeline
 
+Reporting
+✔ JSON reports
+✔ CSV reports
+✔ Repair summaries
+✔ Progress reporting
+✔ Failure diagnostics
+
 Developer Tools
 ✔ HTML downloader
 ✔ Selector discovery
 ✔ Comparison tools
 ✔ Repair tool
-✔ JSON reporting
-✔ Developer documentation
-
-Batch Repair
-✔ Batch processing
-✔ Progress reporting
-✔ Execution summaries
-✔ Failure tracking
-✔ Structured JSON reports
+✔ Comprehensive documentation
 
 ---
 
-## 🔄 Next (v0.50.0)
+## 🔄 Next
 
-⬜ CSV repair reports
-⬜ HTML repair reports
-⬜ Retry failed episodes
-⬜ Resume interrupted repairs
-⬜ Improved logging
-⬜ Repair statistics by anime
-⬜ Configurable report output
+### v0.51.0 — Core Manga Mapping
 
----
+⬜ Manga chapter title
+⬜ Manga arc
+⬜ Database schema updates
+⬜ Extractor updates
+⬜ Comparison updates
+⬜ Repair support
 
-## 🌟 Future
+### v0.52.0 — Naruto Support
 
+⬜ Full Naruto provider
+⬜ Live dataset
+⬜ Cross-series validation
+⬜ Repair workflow support
+
+### Future
+
+⬜ REST API
+⬜ Basic website
 ⬜ Multi-provider support
 ⬜ Metadata history
 ⬜ Audit log
-⬜ REST API
-⬜ Public website
-⬜ Advanced analytics dashboard
+
+---
+
+## 🎯 v1.0 Vision
+
+A polished anime ↔ manga mapping platform featuring:
+
+✔ One Piece support
+✔ Naruto support
+✔ Episode titles
+✔ Episode arcs
+✔ Manga chapter titles
+✔ Manga arcs
+✔ Repair & reporting tools
+✔ REST API
+✔ Basic lookup website
