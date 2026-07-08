@@ -167,6 +167,7 @@ def main():
             "repair_totals": {},
             "episode_totals": {},
             "failure_details": {},
+            "report_path": None,
         }
 
         for index, episode in enumerate(
@@ -376,6 +377,7 @@ def main():
                         for episode_number, reason in failure_reasons
                     ],
                 },
+                "report_path": args.json_report,
             }
         )
 
