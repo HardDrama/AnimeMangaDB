@@ -259,3 +259,13 @@ The CSV report includes:
 - Repair value details
 - Summary rows
 ```
+
+### Combined Reports
+
+```bash
+python -m tools.repair_metadata --limit 5 --json-report repair_report.json --csv-report repair_report.csv
+
+Validate:
+
+```bash
+pytest
