@@ -226,6 +226,7 @@ def main():
 
                     report["episodes"].append(
                         {
+                            "episode_id": episode.id,
                             "episode_number": episode.episode_number,
                             "repairs_proposed": len(plan.repairs),
                             "repairs_applied": result.applied,
@@ -246,6 +247,7 @@ def main():
 
                     report["episodes"].append(
                         {
+                            "episode_id": episode.id,
                             "episode_number": episode.episode_number,
                             "repairs_proposed": 0,
                             "repairs_applied": 0,
@@ -270,6 +272,7 @@ def main():
 
                 report["episodes"].append(
                     {
+                        "episode_id": episode.id,
                         "episode_number": episode.episode_number,
                         "repairs_proposed": len(plan.repairs),
                         "repairs_applied": 0,
@@ -294,6 +297,7 @@ def main():
 
                 report["episodes"].append(
                     {
+                        "episode_id": episode.id,
                         "episode_number": episode.episode_number,
                         "status": "failed",
                         "error": str(exc),

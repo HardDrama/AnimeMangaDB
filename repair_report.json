@@ -9,10 +9,10 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T22:41:18.310167",
+  "generated_at": "2026-07-07T22:44:53.828318",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 26.43,
+  "elapsed_seconds": 26.3,
   "status": "completed_successfully",
   "arguments": {
     "limit": 5,
@@ -47,6 +47,7 @@
   "report_format": "json",
   "episodes": [
     {
+      "episode_id": 1,
       "episode_number": 1,
       "repairs_proposed": 0,
       "repairs_applied": 0,
@@ -54,6 +55,7 @@
       "status": "up_to_date"
     },
     {
+      "episode_id": 2,
       "episode_number": 349,
       "repairs_proposed": 0,
       "repairs_applied": 0,
@@ -61,6 +63,7 @@
       "status": "up_to_date"
     },
     {
+      "episode_id": 3,
       "episode_number": 1167,
       "repairs_proposed": 0,
       "repairs_applied": 0,
@@ -68,6 +71,7 @@
       "status": "up_to_date"
     },
     {
+      "episode_id": 4,
       "episode_number": 1168,
       "repairs_proposed": 0,
       "repairs_applied": 0,
@@ -75,6 +79,7 @@
       "status": "up_to_date"
     },
     {
+      "episode_id": 5,
       "episode_number": 2,
       "repairs_proposed": 0,
       "repairs_applied": 0,
