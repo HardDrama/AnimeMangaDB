@@ -107,6 +107,7 @@ def main():
             print()
 
         episodes_with_repairs = 0
+        episodes_without_repairs = 0
         total_repairs = 0
 
         for index, episode in enumerate(
@@ -152,6 +153,7 @@ def main():
             print("-" * 20)
 
             if not plan.has_repairs:
+                episodes_without_repairs += 1
                 print("No repairs needed.")
                 continue
 
@@ -171,6 +173,7 @@ def main():
         print("-------")
         print(f"Episodes Checked      : {len(episodes)}")
         print(f"Episodes With Repairs : {episodes_with_repairs}")
+        print(f"Episodes Without Repairs : {episodes_without_repairs}")
         print(f"Total Proposed Repairs: {total_repairs}")
 
     finally:
