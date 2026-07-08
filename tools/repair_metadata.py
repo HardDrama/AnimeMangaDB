@@ -76,6 +76,13 @@ def main():
         help="Write repair summary report to a JSON file.",
     )
 
+    parser.add_argument(
+        "--csv-report",
+        type=str,
+        default=None,
+        help="Write repair episode results to a CSV file.",
+    )
+
     args = parser.parse_args()
 
     started_at = perf_counter()
