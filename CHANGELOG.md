@@ -1507,3 +1507,49 @@ Version 0.49.0 introduces structured repair reporting, allowing every repair run
 ## 🚀 Milestone
 
 AnimeMangaDB can now generate structured JSON reports suitable for automation, auditing, future web interfaces, and external tooling.
+
+# 📦 AnimeMangaDB v0.50.0 — Report Export Expansion
+
+## 🎉 Highlights
+
+Version 0.50.0 expands AnimeMangaDB's reporting capabilities with CSV export support, richer report content, and improved documentation for repair workflows.
+
+---
+
+## ✨ New Features
+
+### CSV Reporting
+✔ Added `--csv-report` option
+✔ Export repair results to CSV
+✔ Combined JSON + CSV reporting
+✔ Report output summary
+✔ CSV summary rows
+
+### CSV Data
+✔ Anime title
+✔ Provider
+✔ Source URL
+✔ Current title
+✔ Current arc
+✔ Live title
+✔ Live arc
+✔ Repair details
+
+### Documentation
+✔ CSV report documentation
+✔ Combined report examples
+✔ Report format guidance
+✔ Product scope documentation
+
+---
+
+## 🧪 Testing
+
+✔ 55 passed
+✔ 1 warning
+
+---
+
+## 🚀 Milestone
+
+AnimeMangaDB now supports both structured JSON reports and spreadsheet-friendly CSV exports, making repair results easier to automate, audit, and review.
