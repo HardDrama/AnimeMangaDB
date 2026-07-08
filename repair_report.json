@@ -9,11 +9,11 @@
   "failure_reasons": [],
   "applied_repairs": 0,
   "skipped_repairs": 0,
-  "generated_at": "2026-07-07T23:07:36.900011",
+  "generated_at": "2026-07-07T23:11:17.158886",
   "mode": "preview",
   "selection": "limit:5",
-  "elapsed_seconds": 25.74,
-  "status": "completed_successfully",
+  "elapsed_seconds": 25.9,
+  "status": "up_to_date",
   "arguments": {
     "limit": 5,
     "episode": null,
@@ -96,5 +96,8 @@
       "repairs": [],
       "status": "up_to_date"
     }
-  ]
+  ],
+  "status_totals": {
+    "up_to_date": 5
+  }
 }

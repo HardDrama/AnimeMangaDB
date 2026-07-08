@@ -170,6 +170,7 @@ def main():
             "report_path": None,
             "report_format": "json",
             "episodes": [],
+            "status_totals": {},
         }
 
         for index, episode in enumerate(
@@ -395,6 +396,15 @@ def main():
             if failed_episodes
             else "completed_successfully"
         )
+
+        status_totals = {}
+
+        for episode_result in report["episodes"]:
+            status = episode_result["status"]
+
+            status_totals[status] = (
+                status_totals.get(status, 0) + 1
+            )
         
         report.update(
             {
@@ -456,6 +466,7 @@ def main():
                     ],
                 },
                 "report_path": args.json_report,
+                "status_totals": status_totals,
             }
         )
 
