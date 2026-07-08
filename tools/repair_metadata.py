@@ -131,38 +131,65 @@ def main():
             episodes,
             start=1,
         ):
-            
             print(
                 f"[{index}/{len(episodes)}] "
                 f"Episode {episode.episode_number}"
             )
 
-            metadata = metadata_service.get_metadata(episode)
+            try:
+                metadata = metadata_service.get_metadata(
+                    episode
+                )
 
-            plan = repair_service.build_repair_plan(
-                episode,
-                metadata,
-            )
-
-            if args.apply:
-                result = application_service.apply(
+                plan = repair_service.build_repair_plan(
                     episode,
-                    plan,
-                    session=session,
-                    commit=args.apply and args.yes,
+                    metadata,
                 )
 
-                print(
-                    f"Application Result: "
-                    f"{result.applied} applied, "
-                    f"{result.skipped} skipped."
-                )
-                if result.committed:
-                    print("Database Updated : YES")
-                else:
-                    print("Database Updated : NO (Dry Run)")
+                if args.apply:
+                    result = application_service.apply(
+                        episode,
+                        plan,
+                        session=session,
+                        commit=args.apply and args.yes,
+                    )
+
+                    print(
+                        f"Application Result: "
+                        f"{result.applied} applied, "
+                        f"{result.skipped} skipped."
+                    )
+
+                    if result.committed:
+                        print("Database Updated : YES")
+                    else:
+                        print("Database Updated : NO (Dry Run)")
+
+                    print()
+
+                    continue
+
+                if not plan.has_repairs:
+                    episodes_without_repairs += 1
+                    print("No repairs needed.")
+                    continue
+
+                episodes_with_repairs += 1
+                total_repairs += len(plan.repairs)
+
+                print(f"{len(plan.repairs)} repair(s) proposed.")
                 print()
 
+                for repair in plan.repairs:
+                    print(repair.field.replace("_", " ").title())
+                    print(f"  Current : {repair.current_value}")
+                    print(f"  New     : {repair.new_value}")
+                    print()
+
+            except Exception as exc:
+                failed_episodes += 1
+                print(f"FAILED: {exc}")
+                print()
                 continue
 
             print()
