@@ -231,6 +231,10 @@ def main():
                             "repairs_proposed": len(plan.repairs),
                             "repairs_applied": result.applied,
                             "repairs_skipped": result.skipped,
+                            "fields": [
+                                repair.field
+                                for repair in plan.repairs
+                            ],
                             "status": (
                                 "updated"
                                 if result.applied > 0
@@ -252,6 +256,7 @@ def main():
                             "repairs_proposed": 0,
                             "repairs_applied": 0,
                             "repairs_skipped": 0,
+                            "fields": [],
                             "status": "up_to_date",
                         }
                     )
@@ -277,6 +282,10 @@ def main():
                         "repairs_proposed": len(plan.repairs),
                         "repairs_applied": 0,
                         "repairs_skipped": 0,
+                        "fields": [
+                            repair.field
+                            for repair in plan.repairs
+                        ],
                         "status": "needs_repairs",
                     }
                 )
@@ -299,6 +308,7 @@ def main():
                     {
                         "episode_id": episode.id,
                         "episode_number": episode.episode_number,
+                        "fields": [],
                         "status": "failed",
                         "error": str(exc),
                     }
