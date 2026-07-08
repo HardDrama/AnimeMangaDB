@@ -144,6 +144,7 @@ def main():
         total_repairs = 0
         episodes_updated = 0
         report = {
+            "schema_version": 1,
             "episodes_checked": 0,
             "episodes_updated": 0,
             "episodes_with_repairs": 0,
