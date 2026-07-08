@@ -126,6 +126,7 @@ def main():
         episodes_without_repairs = 0
         failed_episodes = 0
         failed_episode_numbers = []
+        failure_reasons = []
         total_repairs = 0
 
         for index, episode in enumerate(
@@ -192,6 +193,12 @@ def main():
                 failed_episode_numbers.append(
                     episode.episode_number
                 )
+                failure_reasons.append(
+                    (
+                        episode.episode_number,
+                        str(exc),
+                    )
+                )
                 print(f"FAILED: {exc}")
                 print()
                 continue
@@ -233,6 +240,10 @@ def main():
                     for number in failed_episode_numbers
                 )
             )
+        if failure_reasons:
+            print("Failure Reasons:")
+            for episode_number, reason in failure_reasons:
+                print(f"  Episode {episode_number}: {reason}")
         print(f"Total Repairs            : {total_repairs}")
         print(
             f"Elapsed Time             : "
