@@ -1,7 +1,7 @@
-episode_id,anime_title,provider,episode_number,source_url,status,repairs_proposed,repairs_applied,repairs_skipped,fields,repair_details
-,,,,,,,,,,
-,,,SUMMARY,,,0,0,0,,
-,,,REPORT_FORMAT,,csv,schema_version,1,,,
-,,,GENERATED_AT,,2026-07-08T12:01:00.495494,,,,,
-,,,,,,,,,,
-,,,EPISODES,,5,0,0,0,,
+episode_id,anime_title,provider,episode_number,source_url,current_title,current_arc,status,repairs_proposed,repairs_applied,repairs_skipped,fields,repair_details
+,,,,,,,,,,,,
+,,,SUMMARY,,,,,0,0,0,,
+,,,REPORT_FORMAT,,,,csv,schema_version,1,,,
+,,,GENERATED_AT,,,,2026-07-08T12:07:24.680182,,,,,
+,,,,,,,,,,,,
+,,,EPISODES,,,,5,0,0,0,,
