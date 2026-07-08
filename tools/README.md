@@ -198,6 +198,26 @@ All 3 metadata fields match.
 
 ---
 
+### JSON Report
+
+```bash
+python -m tools.repair_metadata --limit 5 --json-report repair_report.json
+```
+
+The JSON report includes:
+
+- Run metadata
+- Command arguments
+- Episode totals
+- Repair totals
+- Failure details
+- Per-episode repair results
+- Status totals
+- Field totals
+```
+
+---
+
 # Safety Recommendations
 
 - Always preview repairs before applying them.
