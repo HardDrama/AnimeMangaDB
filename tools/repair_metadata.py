@@ -15,6 +15,18 @@ from scraper.services.metadata_repair_application_service import (
 )
 
 
+def format_elapsed_time(seconds):
+    minutes = int(seconds // 60)
+    remaining_seconds = seconds % 60
+
+    if minutes:
+        return (
+            f"{minutes}m "
+            f"{remaining_seconds:.2f}s"
+        )
+
+    return f"{remaining_seconds:.2f}s"
+
 def main():
     parser = argparse.ArgumentParser(
         description="Preview proposed metadata repairs."
@@ -181,7 +193,10 @@ def main():
         print(f"Episodes With Repairs    : {episodes_with_repairs}")
         print(f"Episodes Without Repairs : {episodes_without_repairs}")
         print(f"Total Repairs            : {total_repairs}")
-        print(f"Elapsed Seconds          : {elapsed_seconds:.2f}")
+        print(
+            f"Elapsed Time             : "
+            f"{format_elapsed_time(elapsed_seconds)}"
+        )
 
     finally:
         session.close()
