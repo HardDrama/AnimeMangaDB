@@ -130,6 +130,7 @@ def main():
         total_applied_repairs = 0
         total_skipped_repairs = 0
         total_repairs = 0
+        episodes_updated = 0
 
         for index, episode in enumerate(
             episodes,
@@ -160,6 +161,9 @@ def main():
 
                     total_applied_repairs += result.applied
                     total_skipped_repairs += result.skipped
+
+                    if result.applied > 0:
+                        episodes_updated += 1
 
                     if plan.has_repairs:
                         episodes_with_repairs += 1
@@ -258,6 +262,7 @@ def main():
         print(f"Applied Repairs          : {total_applied_repairs}")
         print(f"Skipped Repairs          : {total_skipped_repairs}")
         print(f"Total Repairs            : {total_repairs}")
+        print(f"Episodes Updated         : {episodes_updated}")
         print(
             f"Elapsed Time             : "
             f"{format_elapsed_time(elapsed_seconds)}"
