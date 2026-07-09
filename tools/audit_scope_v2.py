@@ -54,6 +54,13 @@ def main():
             else 0
         )
 
+        if title_percent == 100 and arc_percent == 100:
+            audit_status = "PASS"
+        elif title_percent >= 95 and arc_percent >= 95:
+            audit_status = "NEARLY COMPLETE"
+        else:
+            audit_status = "IN PROGRESS"
+
         print("Scope v2 Database Audit")
         print("-----------------------")
         print(f"Anime: {anime.title}")
@@ -63,6 +70,8 @@ def main():
         print(f"Missing Arcs     : {len(missing_arcs)}")
         print(f"Title Completion : {title_percent:.2f}%")
         print(f"Arc Completion   : {arc_percent:.2f}%")
+        print()
+        print(f"Audit Status     : {audit_status}")
 
         if missing_titles:
             print()
