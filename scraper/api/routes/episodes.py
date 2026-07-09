@@ -17,10 +17,33 @@ router = APIRouter(
 
 
 @router.get("", response_model=EpisodeListResponse)
-def list_episodes_placeholder():
-    return {
-        "episodes": [],
-    }
+def list_episodes():
+    session = SessionLocal()
+
+    try:
+        episodes = (
+            session.query(Episode)
+            .order_by(Episode.episode_number)
+            .limit(25)
+            .all()
+        )
+
+        return EpisodeListResponse(
+            episodes=[
+                EpisodeResponse(
+                    id=episode.id,
+                    anime_title=episode.anime.title,
+                    episode_number=episode.episode_number,
+                    episode_title=episode.episode_title,
+                    arc=episode.arc,
+                    source_url=episode.source_url,
+                )
+                for episode in episodes
+            ]
+        )
+
+    finally:
+        session.close()
 
 @router.get("/{episode_number}", response_model=EpisodeResponse)
 def get_episode(
