@@ -117,6 +117,15 @@ Notes:
 
 - Episodes 1167 and 1168 currently have no arc because the Fandom pages have not yet been updated.
 
+## Missing Arc Review
+
+Current known source-data limitations:
+
+- Episode 1167: Arc missing from live Fandom source.
+- Episode 1168: Arc missing from live Fandom source.
+
+These are not currently considered scraper or repair failures. They should be rechecked after the source pages are updated.
+
 ---
 
 # Scope v2 Validation Workflow
