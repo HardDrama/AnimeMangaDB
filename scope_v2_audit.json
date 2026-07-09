@@ -1,0 +1,12 @@
+{
+  "anime": "One Piece",
+  "episodes_checked": 1168,
+  "missing_titles": 1162,
+  "empty_titles": 0,
+  "placeholder_titles": 1162,
+  "missing_arcs": 1164,
+  "episodes_with_arcs": 4,
+  "title_completion": 0.51,
+  "arc_completion": 0.34,
+  "audit_status": "IN PROGRESS"
+}

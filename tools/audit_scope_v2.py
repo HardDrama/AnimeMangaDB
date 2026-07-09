@@ -1,8 +1,25 @@
+import argparse
+import json
+from pathlib import Path
+
 from scraper.database.models import Anime, Episode
 from scraper.database.session import SessionLocal
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Audit Scope v2 database readiness."
+    )
+
+    parser.add_argument(
+        "--json-report",
+        type=str,
+        default=None,
+        help="Write Scope v2 audit results to a JSON file.",
+    )
+
+    args = parser.parse_args()
+
     session = SessionLocal()
 
     try:
@@ -115,6 +132,28 @@ def main():
             print("--------------------------------")
             for episode in placeholder_titles[:25]:
                 print(f"Episode {episode.episode_number}")
+
+        if args.json_report:
+            report = {
+                "anime": anime.title,
+                "episodes_checked": total,
+                "missing_titles": len(missing_titles),
+                "empty_titles": len(empty_titles),
+                "placeholder_titles": len(placeholder_titles),
+                "missing_arcs": len(missing_arcs),
+                "episodes_with_arcs": len(episodes_with_arcs),
+                "title_completion": round(title_percent, 2),
+                "arc_completion": round(arc_percent, 2),
+                "audit_status": audit_status,
+            }
+
+            Path(args.json_report).write_text(
+                json.dumps(report, indent=2),
+                encoding="utf-8",
+            )
+
+            print()
+            print(f"Audit report written to: {args.json_report}")
 
     finally:
         session.close()
