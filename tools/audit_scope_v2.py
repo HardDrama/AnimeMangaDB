@@ -145,6 +145,22 @@ def main():
                 "title_completion": round(title_percent, 2),
                 "arc_completion": round(arc_percent, 2),
                 "audit_status": audit_status,
+                "missing_title_episodes": [
+                    episode.episode_number
+                    for episode in missing_titles
+                ],
+                "empty_title_episodes": [
+                    episode.episode_number
+                    for episode in empty_titles
+                ],
+                "placeholder_title_episodes": [
+                    episode.episode_number
+                    for episode in placeholder_titles
+                ],
+                "missing_arc_episodes": [
+                    episode.episode_number
+                    for episode in missing_arcs
+                ],
             }
 
             Path(args.json_report).write_text(
