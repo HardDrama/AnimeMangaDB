@@ -1,20 +1,16 @@
-from fastapi import FastAPI
+from fastapi.testclient import TestClient
+
+from scraper.api.app import app
 
 
-app = FastAPI(
-    title="AnimeMangaDB API",
-)
+client = TestClient(app)
 
 
-@app.get("/health")
-def health_check():
-    return {
-        "status": "ok",
-    }
+def test_get_scope():
+    response = client.get("/scope")
 
-@app.get("/scope")
-def get_scope():
-    return {
+    assert response.status_code == 200
+    assert response.json() == {
         "scope": "v2",
         "fields": {
             "anime": [
