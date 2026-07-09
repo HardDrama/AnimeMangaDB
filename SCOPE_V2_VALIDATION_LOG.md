@@ -72,3 +72,37 @@ Outstanding Work
 - Continue validating episode titles.
 - Continue validating arc metadata.
 - Re-run audit after metadata repairs.
+
+---
+
+## Comparison Validation
+
+### Current Scope
+
+Anime
+- Episode Number
+- Episode Title
+- Arc
+
+Manga
+- Chapter Number
+
+### Validation Summary
+
+✔ MetadataComparisonService supports Scope v2 anime metadata.
+
+✔ Episode title comparison is operational.
+
+✔ Arc comparison is operational.
+
+✔ Source URL normalization remains operational.
+
+✔ `compare_episode_metadata.py` supports targeted episode comparison.
+
+✔ `compare_series_metadata.py` supports limited series comparison.
+
+Outstanding Work
+
+- Continue using comparison tools after repair cycles.
+- Re-run comparisons after source pages are updated.
+- Expand comparison support during Scope v3.
