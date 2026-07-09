@@ -1,29 +1,10 @@
 from fastapi import FastAPI
 
+from scraper.api.routes.system import router as system_router
+
 
 app = FastAPI(
     title="AnimeMangaDB API",
 )
 
-
-@app.get("/health")
-def health_check():
-    return {
-        "status": "ok",
-    }
-
-@app.get("/scope")
-def get_scope():
-    return {
-        "scope": "v2",
-        "fields": {
-            "anime": [
-                "episode_number",
-                "episode_title",
-                "arc",
-            ],
-            "manga": [
-                "chapter_number",
-            ],
-        },
-    }
+app.include_router(system_router)
