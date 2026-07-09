@@ -1553,3 +1553,58 @@ Version 0.50.0 expands AnimeMangaDB's reporting capabilities with CSV export sup
 ## 🚀 Milestone
 
 AnimeMangaDB now supports both structured JSON reports and spreadsheet-friendly CSV exports, making repair results easier to automate, audit, and review.
+
+---
+
+# 📦 AnimeMangaDB v0.51.0 — Scope v2 Stabilization Framework
+
+## 🎉 Highlights
+
+Version 0.51.0 establishes the development framework that will guide AnimeMangaDB through the remainder of development and toward Platform Checkpoint v2.
+
+This release shifts the project from feature-driven development to measurable, end-to-end platform validation.
+
+---
+
+## ✨ New Features
+
+### Development Framework
+✔ PROJECT.md development methodology
+✔ Scope definitions
+✔ Feature Checkpoints
+✔ Platform Checkpoints
+
+### Scope v2 Validation
+✔ Scope v2 checklist
+✔ Scope v2 validation log
+✔ Repeatable validation workflow
+
+### Audit Tooling
+✔ Scope v2 database audit tool
+✔ Completion percentages
+✔ Audit status classification
+✔ Placeholder title detection
+✔ Arc validation
+✔ JSON audit reports
+✔ Missing episode reporting
+
+### Documentation
+✔ Scope v2 audit documentation
+✔ Known source limitations
+✔ Database validation
+✔ Comparison validation
+✔ Repair validation
+✔ Reports validation
+
+---
+
+## 🧪 Testing
+
+✔ 55 passed
+✔ 1 warning
+
+---
+
+## 🚀 Milestone
+
+AnimeMangaDB now has a standardized methodology for measuring progress, validating every layer of the platform, and certifying future Platform Checkpoints.

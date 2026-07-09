@@ -1,78 +1,72 @@
 # 🗺 AnimeMangaDB Roadmap
 
-## ✅ Completed
+## ✅ Platform Checkpoint v1
 
-Core Scraper
-✔ Playwright browser client
-✔ Provider architecture
-✔ HTML parsing
-✔ Selector engine
-✔ Episode extraction
+Scope v1 Complete
 
-Database
-✔ SQLAlchemy integration
-✔ Repository layer
-✔ Metadata storage
-
-Metadata
-✔ Live metadata retrieval
-✔ Comparison services
-✔ Automated repair pipeline
-
-Reporting
-✔ JSON reports
-✔ CSV reports
-✔ Repair summaries
-✔ Progress reporting
-✔ Failure diagnostics
-
-Developer Tools
-✔ HTML downloader
-✔ Selector discovery
-✔ Comparison tools
-✔ Repair tool
-✔ Comprehensive documentation
+✔ Episode ↔ Chapter mapping
+✔ One Piece fully supported
+✔ Core scraper
+✔ Database
+✔ Repair tools
+✔ Reporting
+✔ Documentation
 
 ---
 
-## 🔄 Next
+## 🔄 Current: Scope v2
 
-### v0.51.0 — Core Manga Mapping
+Goal:
+Achieve Platform Checkpoint v2 by completing every Feature Checkpoint across the project.
 
-⬜ Manga chapter title
-⬜ Manga arc
-⬜ Database schema updates
-⬜ Extractor updates
-⬜ Comparison updates
-⬜ Repair support
+Backend
+✔ Database validation
+✔ Comparison validation
+✔ Repair validation
+✔ Reports validation
 
-### v0.52.0 — Naruto Support
+Remaining
+⬜ API validation
+⬜ Frontend validation
+⬜ Documentation review
+⬜ End-to-end testing
+⬜ Platform Checkpoint v2 certification
 
-⬜ Full Naruto provider
-⬜ Live dataset
-⬜ Cross-series validation
-⬜ Repair workflow support
+---
 
-### Future
+## 📖 Scope v3
 
-⬜ REST API
-⬜ Basic website
-⬜ Multi-provider support
-⬜ Metadata history
-⬜ Audit log
+Expand the platform to support:
+
+Anime
+✔ Episode Number
+✔ Episode Title
+✔ Arc
+
+Manga
+✔ Chapter Number
+⬜ Chapter Title
+⬜ Arc
+
+Development Order
+
+1. Platform infrastructure
+2. One Piece implementation
+3. One Piece validation
+4. Naruto implementation
+5. Naruto validation
+6. Platform Checkpoint v3
 
 ---
 
 ## 🎯 v1.0 Vision
 
-A polished anime ↔ manga mapping platform featuring:
-
-✔ One Piece support
-✔ Naruto support
-✔ Episode titles
-✔ Episode arcs
-✔ Manga chapter titles
-✔ Manga arcs
-✔ Repair & reporting tools
+✔ One Piece (Complete Scope v3)
+✔ Naruto (Complete Scope v3)
+✔ Automated validation
+✔ Repair pipeline
+✔ JSON & CSV reports
 ✔ REST API
 ✔ Basic lookup website
+
+Every Scope will be fully integrated and validated before the next Scope begins.
