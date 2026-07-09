@@ -52,8 +52,14 @@ def main():
             if not episode.arc
         ]
 
+        episodes_with_arcs = [
+            episode
+            for episode in episodes
+            if episode.arc
+        ]
+
         episodes_with_titles = total - len(missing_titles)
-        episodes_with_arcs = total - len(missing_arcs)
+        arc_count = total - len(missing_arcs)
 
         title_percent = (
             episodes_with_titles / total * 100
@@ -62,7 +68,7 @@ def main():
         )
 
         arc_percent = (
-            episodes_with_arcs / total * 100
+            arc_count / total * 100
             if total
             else 0
         )
@@ -82,8 +88,9 @@ def main():
         print(f"Missing Titles   : {len(missing_titles)}")
         print(f"Empty Titles     : {len(empty_titles)}")
         print(f"Placeholder Titles: {len(placeholder_titles)}")
-        print(f"Missing Arcs     : {len(missing_arcs)}")
         print(f"Title Completion : {title_percent:.2f}%")
+        print(f"Missing Arcs     : {len(missing_arcs)}")
+        print(f"Episodes With Arcs: {len(episodes_with_arcs)}")
         print(f"Arc Completion   : {arc_percent:.2f}%")
         print()
         print(f"Audit Status     : {audit_status}")
