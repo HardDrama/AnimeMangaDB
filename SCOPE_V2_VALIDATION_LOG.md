@@ -42,3 +42,33 @@ Action:
 Status:
 
 PASS
+
+---
+
+## Database Validation
+
+### Current Scope
+
+Anime
+- Episode Number
+- Episode Title
+- Arc
+
+Manga
+- Chapter Number
+
+### Validation Summary
+
+✔ Database schema supports Scope v2.
+
+✔ One Piece dataset successfully audited.
+
+✔ Audit tooling operational.
+
+✔ JSON audit reporting operational.
+
+Outstanding Work
+
+- Continue validating episode titles.
+- Continue validating arc metadata.
+- Re-run audit after metadata repairs.
