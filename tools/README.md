@@ -84,6 +84,45 @@ List episodes missing manga chapter mappings.
 
 ---
 
+## Scope v2 Audit
+
+### audit_scope_v2.py
+
+Audits whether the database is ready for Scope v2.
+
+Scope v2 includes:
+
+- Anime Episode Number
+- Anime Episode Title
+- Anime Arc
+- Manga Chapter Number
+
+Example:
+
+```bash
+python -m tools.audit_scope_v2
+```
+
+Generate a JSON audit report:
+
+```bash
+python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
+```
+
+The audit reports:
+
+- Episodes checked
+- Missing titles
+- Empty titles
+- Placeholder titles
+- Missing arcs
+- Title completion percentage
+- Arc completion percentage
+- Audit status
+- Missing episode lists
+
+---
+
 # Metadata Comparison
 
 These tools compare stored database metadata against live Fandom metadata.
