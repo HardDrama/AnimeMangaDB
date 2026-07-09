@@ -83,3 +83,36 @@ Bring the entire AnimeMangaDB platform to Platform Checkpoint v2.
 # Platform Checkpoint v2
 
 Platform Checkpoint v2 is achieved only when every checklist item is complete and One Piece has been fully validated against Scope v2.
+
+---
+
+# Latest Audit Results
+
+_Last Updated: YYYY-MM-DD_
+
+## One Piece
+
+Episodes Checked:
+- 1168
+
+Title Completion:
+- 0.51%
+
+Arc Completion:
+- 0.34%
+
+Audit Status:
+- PASS / NEARLY COMPLETE / IN PROGRESS
+
+Outstanding Work:
+
+### Titles
+- Empty titles: 0
+- Placeholder titles: 1162
+
+### Arcs
+- Missing arcs: 1164
+
+Notes:
+
+- Episodes 1167 and 1168 currently have no arc because the Fandom pages have not yet been updated.
