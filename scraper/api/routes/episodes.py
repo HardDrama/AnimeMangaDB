@@ -5,6 +5,11 @@ from scraper.api.schemas import (
 
 from fastapi import APIRouter
 
+from fastapi import HTTPException
+
+from scraper.database.models import Episode
+from scraper.database.session import SessionLocal
+
 router = APIRouter(
     prefix="/episodes",
     tags=["Episodes"],
@@ -18,14 +23,34 @@ def list_episodes_placeholder():
     }
 
 @router.get("/{episode_number}", response_model=EpisodeResponse)
-def get_episode_placeholder(
+def get_episode(
     episode_number: int,
 ):
-    return {
-        "id": 0,
-        "anime_title": "Unknown",
-        "episode_number": episode_number,
-        "episode_title": None,
-        "arc": None,
-        "source_url": None,
-    }
+    session = SessionLocal()
+
+    try:
+        episode = (
+            session.query(Episode)
+            .filter(
+                Episode.episode_number == episode_number,
+            )
+            .first()
+        )
+
+        if episode is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Episode not found.",
+            )
+
+        return EpisodeResponse(
+            id=episode.id,
+            anime_title=episode.anime.title,
+            episode_number=episode.episode_number,
+            episode_title=episode.episode_title,
+            arc=episode.arc,
+            source_url=episode.source_url,
+        )
+
+    finally:
+        session.close()
