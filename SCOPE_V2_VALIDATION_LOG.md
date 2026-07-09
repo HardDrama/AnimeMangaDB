@@ -19,6 +19,9 @@ Command:
 python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
 ```
 
+Report:
+- scope_v2_audit.json
+
 Result:
 
 - Episodes Checked: 1168
