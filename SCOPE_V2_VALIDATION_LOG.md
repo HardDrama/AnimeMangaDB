@@ -146,3 +146,36 @@ Outstanding Work
 - Continue using repair tools after audit cycles.
 - Re-run audit after repairs.
 - Expand repair support during Scope v3.
+
+---
+
+## Reports Validation
+
+### Current Scope
+
+Anime
+- Episode Number
+- Episode Title
+- Arc
+
+Manga
+- Chapter Number
+
+### Validation Summary
+
+✔ JSON repair reports support Scope v2 anime metadata.
+
+✔ CSV repair reports support Scope v2 anime metadata.
+
+✔ Repair reports include current and live title data.
+
+✔ Repair reports include current and live arc data.
+
+✔ Repair reports include repair counts and per-episode results.
+
+✔ Scope v2 audit JSON reports are operational.
+
+Outstanding Work
+
+- Expand reports during Scope v3.
+- Add manga chapter title and manga arc report support during Scope v3.
