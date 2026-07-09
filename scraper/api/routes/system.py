@@ -26,3 +26,11 @@ def get_scope():
             ],
         },
     }
+
+@router.get("/version")
+def get_version():
+    return {
+        "api_version": "0.52.0",
+        "platform_checkpoint": "v2 (in progress)",
+        "supported_scope": "v2",
+    }
