@@ -8,3 +8,6 @@ class EpisodeResponse(BaseModel):
     episode_title: str | None = None
     arc: str | None = None
     source_url: str | None = None
+
+class EpisodeListResponse(BaseModel):
+    episodes: list[EpisodeResponse]

@@ -1,3 +1,5 @@
+from scraper.api.schemas import EpisodeListResponse
+
 from fastapi import APIRouter
 
 router = APIRouter(
@@ -6,7 +8,7 @@ router = APIRouter(
 )
 
 
-@router.get("")
+@router.get("", response_model=EpisodeListResponse)
 def list_episodes_placeholder():
     return {
         "episodes": [],
