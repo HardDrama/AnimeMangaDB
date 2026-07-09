@@ -116,3 +116,26 @@ Outstanding Work:
 Notes:
 
 - Episodes 1167 and 1168 currently have no arc because the Fandom pages have not yet been updated.
+
+---
+
+# Scope v2 Validation Workflow
+
+Every validation cycle follows these steps:
+
+1. Run the Scope v2 audit.
+2. Review missing titles and arcs.
+3. Apply metadata repairs.
+4. Re-run the audit.
+5. Update this checklist.
+6. Repeat until Platform Checkpoint v2 is achieved.
+
+Commands:
+
+```bash
+python -m tools.audit_scope_v2
+
+python -m tools.repair_metadata --all --apply --yes
+
+python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
+```
