@@ -49,6 +49,11 @@ Bring the entire AnimeMangaDB platform to Platform Checkpoint v2.
 
 - [ ] Scope v2 endpoints
 - [ ] Scope v2 response model
+- [ ] Episode number returned
+- [ ] Episode title returned
+- [ ] Anime arc returned
+- [ ] Manga chapter number returned
+- [ ] API tests
 
 ---
 
