@@ -14,6 +14,11 @@ Date:
 Tool:
 - audit_scope_v2.py
 
+Command:
+```bash
+python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
+```
+
 Result:
 
 - Episodes Checked: 1168
