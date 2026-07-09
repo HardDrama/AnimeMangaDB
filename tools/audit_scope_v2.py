@@ -33,6 +33,19 @@ def main():
             == f"Episode {episode.episode_number}"
         ]
 
+        empty_titles = [
+            episode
+            for episode in episodes
+            if not episode.episode_title
+        ]
+
+        placeholder_titles = [
+            episode
+            for episode in episodes
+            if episode.episode_title
+            == f"Episode {episode.episode_number}"
+        ]
+
         missing_arcs = [
             episode
             for episode in episodes
@@ -67,6 +80,8 @@ def main():
         print()
         print(f"Episodes Checked : {total}")
         print(f"Missing Titles   : {len(missing_titles)}")
+        print(f"Empty Titles     : {len(empty_titles)}")
+        print(f"Placeholder Titles: {len(placeholder_titles)}")
         print(f"Missing Arcs     : {len(missing_arcs)}")
         print(f"Title Completion : {title_percent:.2f}%")
         print(f"Arc Completion   : {arc_percent:.2f}%")
@@ -85,6 +100,13 @@ def main():
             print("Episodes Missing Arcs")
             print("---------------------")
             for episode in missing_arcs[:25]:
+                print(f"Episode {episode.episode_number}")
+
+        if placeholder_titles:
+            print()
+            print("Episodes With Placeholder Titles")
+            print("--------------------------------")
+            for episode in placeholder_titles[:25]:
                 print(f"Episode {episode.episode_number}")
 
     finally:
