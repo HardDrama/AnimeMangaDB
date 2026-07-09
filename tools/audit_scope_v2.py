@@ -39,6 +39,21 @@ def main():
             if not episode.arc
         ]
 
+        episodes_with_titles = total - len(missing_titles)
+        episodes_with_arcs = total - len(missing_arcs)
+
+        title_percent = (
+            episodes_with_titles / total * 100
+            if total
+            else 0
+        )
+
+        arc_percent = (
+            episodes_with_arcs / total * 100
+            if total
+            else 0
+        )
+
         print("Scope v2 Database Audit")
         print("-----------------------")
         print(f"Anime: {anime.title}")
@@ -46,6 +61,8 @@ def main():
         print(f"Episodes Checked : {total}")
         print(f"Missing Titles   : {len(missing_titles)}")
         print(f"Missing Arcs     : {len(missing_arcs)}")
+        print(f"Title Completion : {title_percent:.2f}%")
+        print(f"Arc Completion   : {arc_percent:.2f}%")
 
         if missing_titles:
             print()
