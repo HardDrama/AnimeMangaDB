@@ -106,3 +106,43 @@ Outstanding Work
 - Continue using comparison tools after repair cycles.
 - Re-run comparisons after source pages are updated.
 - Expand comparison support during Scope v3.
+
+---
+
+## Repair Validation
+
+### Current Scope
+
+Anime
+- Episode Number
+- Episode Title
+- Arc
+
+Manga
+- Chapter Number
+
+### Validation Summary
+
+✔ MetadataRepairService supports Scope v2 anime metadata.
+
+✔ MetadataRepairApplicationService applies episode title repairs.
+
+✔ MetadataRepairApplicationService applies arc repairs.
+
+✔ Repair application supports rollback on failure.
+
+✔ Repair application supports committed database updates.
+
+✔ `repair_metadata.py` supports preview mode.
+
+✔ `repair_metadata.py` supports apply mode with `--apply --yes`.
+
+✔ `repair_metadata.py` supports targeted episode repair.
+
+✔ `repair_metadata.py` supports batch repair.
+
+Outstanding Work
+
+- Continue using repair tools after audit cycles.
+- Re-run audit after repairs.
+- Expand repair support during Scope v3.
