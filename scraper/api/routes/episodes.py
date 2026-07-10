@@ -17,14 +17,18 @@ router = APIRouter(
 
 
 @router.get("", response_model=EpisodeListResponse)
-def list_episodes():
+def list_episodes(
+    limit: int = 25,
+    offset: int = 0,
+):
     session = SessionLocal()
 
     try:
         episodes = (
             session.query(Episode)
             .order_by(Episode.episode_number)
-            .limit(25)
+            .offset(offset)
+            .limit(limit)
             .all()
         )
 
