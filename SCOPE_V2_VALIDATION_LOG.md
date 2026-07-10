@@ -302,3 +302,42 @@ Action:
 Status:
 
 PASS
+
+---
+
+## Validation
+
+Date:
+- 2026-07-10
+
+Tool:
+- audit_scope_v2.py
+
+Command:
+```bash
+python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
+```
+
+Report:
+- scope_v2_audit.json
+
+Result:
+
+- Episodes Checked: 1168
+- Title Completion: 99.83%
+- Arc Completion: 99.23%
+- Audit Status: NEARLY COMPLETE
+
+Known Source Limitations:
+
+- Episode 1167 missing arc on Fandom.
+- Episode 1168 missing arc on Fandom.
+
+Action:
+
+- No repair required.
+- Recheck after source pages are updated.
+
+Status:
+
+PASS
