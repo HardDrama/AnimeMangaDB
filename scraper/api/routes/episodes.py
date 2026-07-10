@@ -63,6 +63,37 @@ def get_episode_count():
     finally:
         session.close()
 
+@router.get("/id/{episode_id}", response_model=EpisodeResponse)
+def get_episode_by_id(
+    episode_id: int,
+):
+    session = SessionLocal()
+
+    try:
+        episode = (
+            session.query(Episode)
+            .filter(Episode.id == episode_id)
+            .first()
+        )
+
+        if episode is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Episode not found.",
+            )
+
+        return EpisodeResponse(
+            id=episode.id,
+            anime_title=episode.anime.title,
+            episode_number=episode.episode_number,
+            episode_title=episode.episode_title,
+            arc=episode.arc,
+            source_url=episode.source_url,
+        )
+
+    finally:
+        session.close()
+
 @router.get("/{episode_number}", response_model=EpisodeResponse)
 def get_episode(
     episode_number: int,
