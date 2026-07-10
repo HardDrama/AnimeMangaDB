@@ -1608,3 +1608,61 @@ This release shifts the project from feature-driven development to measurable, e
 ## 🚀 Milestone
 
 AnimeMangaDB now has a standardized methodology for measuring progress, validating every layer of the platform, and certifying future Platform Checkpoints.
+
+# 📦 AnimeMangaDB v0.52.0 — Scope v2 API Alignment
+
+## 🎉 Highlights
+
+Version 0.52.0 completes the Scope v2 API Feature Checkpoint.
+
+AnimeMangaDB now exposes its database through a fully functional FastAPI service, providing a stable interface for future frontend development and external integrations.
+
+---
+
+## ✨ New Features
+
+### API Foundation
+✔ FastAPI application
+✔ API package structure
+✔ Router architecture
+✔ Response schemas
+✔ Swagger UI
+
+### System Endpoints
+✔ GET /health
+✔ GET /scope
+✔ GET /version
+
+### Series API
+✔ GET /series
+
+### Episode API
+✔ GET /episodes
+✔ Pagination support
+✔ GET /episodes/count
+✔ GET /episodes/id/{episode_id}
+✔ GET /episodes/{episode_number}
+
+### Database Integration
+✔ Live database-backed endpoints
+✔ SQLAlchemy integration
+✔ Response model validation
+
+### Documentation
+✔ API documentation
+✔ Scope v2 API validation
+✔ API Feature Checkpoint certification
+
+---
+
+## 🧪 Testing
+
+✔ 64 passed
+
+---
+
+## 🚀 Milestone
+
+AnimeMangaDB now provides a production-style REST API capable of serving live anime metadata directly from the database.
+
+The Scope v2 API Feature Checkpoint has been completed and certified.

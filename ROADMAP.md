@@ -5,38 +5,52 @@
 Scope v1 Complete
 
 ✔ Episode ↔ Chapter mapping
-✔ One Piece fully supported
-✔ Core scraper
+✔ One Piece support
+✔ Scraper
 ✔ Database
 ✔ Repair tools
 ✔ Reporting
-✔ Documentation
 
 ---
 
-## 🔄 Current: Scope v2
+## 🔄 Platform Checkpoint v2 (Current)
+
+### Feature Checkpoints
+
+✔ Database
+✔ Comparison
+✔ Repair
+✔ Reports
+✔ API
+⬜ Frontend
+⬜ End-to-End Validation
+⬜ Platform Checkpoint v2 Certification
+
+---
+
+## 📦 v0.53 — Frontend Alignment
 
 Goal:
-Achieve Platform Checkpoint v2 by completing every Feature Checkpoint across the project.
+Complete the final Feature Checkpoint required for Platform Checkpoint v2.
 
-Backend
-✔ Database validation
-✔ Comparison validation
-✔ Repair validation
-✔ Reports validation
+Planned Work
 
-Remaining
-⬜ API validation
-⬜ Frontend validation
-⬜ Documentation review
-⬜ End-to-end testing
-⬜ Platform Checkpoint v2 certification
+✔ Frontend project structure
+✔ API connectivity
+✔ Episode lookup page
+✔ Episode detail page
+✔ Error handling
+✔ Frontend validation
+✔ Frontend documentation
+✔ Frontend Feature Checkpoint
+✔ End-to-end platform testing
+✔ Platform Checkpoint v2 certification
 
 ---
 
 ## 📖 Scope v3
 
-Expand the platform to support:
+Expand metadata support to:
 
 Anime
 ✔ Episode Number
@@ -67,6 +81,6 @@ Development Order
 ✔ Repair pipeline
 ✔ JSON & CSV reports
 ✔ REST API
-✔ Basic lookup website
+✔ Web frontend
 
-Every Scope will be fully integrated and validated before the next Scope begins.
+Every Scope is fully integrated, validated, and certified before expanding to the next Scope.
