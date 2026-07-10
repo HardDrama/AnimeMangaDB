@@ -45,6 +45,20 @@ def list_episodes():
     finally:
         session.close()
 
+@router.get("/count")
+def get_episode_count():
+    session = SessionLocal()
+
+    try:
+        count = session.query(Episode).count()
+
+        return {
+            "episode_count": count,
+        }
+
+    finally:
+        session.close()
+
 @router.get("/{episode_number}", response_model=EpisodeResponse)
 def get_episode(
     episode_number: int,
