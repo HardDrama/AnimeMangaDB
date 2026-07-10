@@ -11,3 +11,13 @@ class EpisodeResponse(BaseModel):
 
 class EpisodeListResponse(BaseModel):
     episodes: list[EpisodeResponse]
+
+class SeriesResponse(BaseModel):
+    id: int
+    title: str
+    provider: str
+    base_url: str | None = None
+
+
+class SeriesListResponse(BaseModel):
+    series: list[SeriesResponse]
