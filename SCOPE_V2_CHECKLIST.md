@@ -8,18 +8,18 @@ Bring the entire AnimeMangaDB platform to Platform Checkpoint v2.
 
 # Scraper
 
-- [ ] Episode Number
-- [ ] Episode Title
-- [ ] Arc
+- [ :white_check_mark: ] Episode Number
+- [ :white_check_mark: ] Episode Title
+- [ :white_check_mark: ] Arc
 
 ---
 
 # Database
 
-- [ ] One Piece Episode Numbers validated
+- [ :white_check_mark: ] One Piece Episode Numbers validated
 - [ ] One Piece Episode Titles validated
 - [ ] One Piece Arcs validated
-- [ ] Missing metadata identified
+- [ :white_check_mark: ] Missing metadata identified
 
 ---
 
@@ -47,19 +47,19 @@ Bring the entire AnimeMangaDB platform to Platform Checkpoint v2.
 
 # API
 
-- [ ] Scope v2 endpoints
-- [ ] Scope v2 response model
-- [ ] Episode number returned
-- [ ] Episode title returned
-- [ ] Anime arc returned
-- [ ] Manga chapter number returned
-- [ ] API tests
+- [ :white_check_mark: ] Scope v2 endpoints
+- [ :white_check_mark: ] Scope v2 response model
+- [ :white_check_mark: ] Episode number returned
+- [ :white_check_mark: ] Episode title returned
+- [ :white_check_mark: ] Anime arc returned
+- [ :white_check_mark: ] Manga chapter number returned
+- [ :white_check_mark: ] API tests
 
 ---
 
 # Frontend
 
-- [ ] Episode lookup
+- [ :white_check_mark: ] Episode lookup
 - [ ] Episode title
 - [ ] Arc display
 
