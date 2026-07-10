@@ -4,6 +4,43 @@ Developer utilities for inspecting, validating, repairing, and maintaining the A
 
 ---
 
+# API Tools
+
+The AnimeMangaDB API is served by FastAPI.
+
+Run the API locally:
+
+```bash
+uvicorn scraper.api.app:app --reload
+```
+
+Open Swagger UI:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+Current Scope v2 API endpoints:
+
+- `GET /health`
+- `GET /scope`
+- `GET /version`
+- `GET /series`
+- `GET /episodes`
+- `GET /episodes/count`
+- `GET /episodes/id/{episode_id}`
+- `GET /episodes/{episode_number}`
+
+Scope v2 episode responses include:
+
+- Anime title
+- Episode number
+- Episode title
+- Anime arc
+- Source URL
+
+---
+
 # Inspection Tools
 
 These tools help inspect pages, selectors, and downloaded HTML during development.

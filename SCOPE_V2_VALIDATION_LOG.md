@@ -179,3 +179,62 @@ Outstanding Work
 
 - Expand reports during Scope v3.
 - Add manga chapter title and manga arc report support during Scope v3.
+
+---
+
+## API Validation
+
+### Current Scope
+
+Anime
+- Episode Number
+- Episode Title
+- Arc
+
+Manga
+- Chapter Number
+
+### Validation Summary
+
+✔ FastAPI application operational.
+
+✔ Swagger UI operational.
+
+✔ Health endpoint operational.
+
+✔ Scope endpoint operational.
+
+✔ Version endpoint operational.
+
+✔ Series endpoint operational.
+
+✔ Episode list endpoint operational.
+
+✔ Episode count endpoint operational.
+
+✔ Episode lookup by database ID operational.
+
+✔ Episode lookup by episode number operational.
+
+✔ Pagination supported.
+
+✔ API response schemas implemented.
+
+### Manual Validation
+
+Verified using Swagger UI:
+
+- GET /health
+- GET /scope
+- GET /version
+- GET /series
+- GET /episodes
+- GET /episodes/count
+- GET /episodes/id/{episode_id}
+- GET /episodes/{episode_number}
+
+Outstanding Work
+
+- Frontend integration.
+- End-to-end platform validation.
+- Platform Checkpoint v2 certification.
