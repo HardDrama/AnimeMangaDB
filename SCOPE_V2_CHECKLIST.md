@@ -101,10 +101,10 @@ Episodes Checked:
 - 1168
 
 Title Completion:
-- 99.83%
+- 100%
 
 Arc Completion:
-- 99.23%
+- 99.40%
 
 Audit Status:
 - NEARLY COMPLETE

@@ -324,8 +324,8 @@ Report:
 Result:
 
 - Episodes Checked: 1168
-- Title Completion: 99.83%
-- Arc Completion: 99.23%
+- Title Completion: 100%
+- Arc Completion: 99.40%
 - Audit Status: NEARLY COMPLETE
 
 Known Source Limitations:

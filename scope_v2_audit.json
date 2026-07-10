@@ -1,31 +1,23 @@
 {
   "anime": "One Piece",
   "episodes_checked": 1168,
-  "missing_titles": 2,
+  "missing_titles": 0,
   "empty_titles": 0,
-  "placeholder_titles": 2,
-  "missing_arcs": 9,
-  "episodes_with_arcs": 1159,
-  "title_completion": 99.83,
-  "arc_completion": 99.23,
+  "placeholder_titles": 0,
+  "missing_arcs": 7,
+  "episodes_with_arcs": 1161,
+  "title_completion": 100.0,
+  "arc_completion": 99.4,
   "audit_status": "NEARLY COMPLETE",
-  "missing_title_episodes": [
-    1134,
-    1135
-  ],
+  "missing_title_episodes": [],
   "empty_title_episodes": [],
-  "placeholder_title_episodes": [
-    1134,
-    1135
-  ],
+  "placeholder_title_episodes": [],
   "missing_arc_episodes": [
     240,
     267,
     663,
     864,
     1065,
-    1134,
-    1135,
     1167,
     1168
   ]
