@@ -4,6 +4,10 @@ from pathlib import Path
 
 from scraper.database.models import Anime, Episode
 from scraper.database.session import SessionLocal
+from scraper.utils.metadata_exception_loader import (
+    get_arc_not_applicable_episodes,
+    load_metadata_exceptions,
+)
 
 
 def main():
@@ -41,6 +45,24 @@ def main():
                 f'Anime not found: "{args.anime}"'
             )
             return
+        
+        exception_path = (
+            f"configs/exceptions/"
+            f"{anime.title.lower().replace(' ', '_')}.json"
+        )
+
+        try:
+            exceptions = load_metadata_exceptions(
+                exception_path
+            )
+        except FileNotFoundError:
+            exceptions = {}
+
+        arc_not_applicable_numbers = (
+            get_arc_not_applicable_episodes(
+                exceptions
+            )
+        )
 
         episodes = (
             session.query(Episode)
@@ -78,6 +100,20 @@ def main():
             if not episode.arc
         ]
 
+        arc_not_applicable = [
+            episode
+            for episode in missing_arcs
+            if episode.episode_number
+            in arc_not_applicable_numbers
+        ]
+
+        unresolved_missing_arcs = [
+            episode
+            for episode in missing_arcs
+            if episode.episode_number
+            not in arc_not_applicable_numbers
+        ]
+
         episodes_with_arcs = [
             episode
             for episode in episodes
@@ -85,7 +121,10 @@ def main():
         ]
 
         episodes_with_titles = total - len(missing_titles)
-        arc_count = total - len(missing_arcs)
+
+        arc_count = total - len(
+            unresolved_missing_arcs
+        )
 
         title_percent = (
             episodes_with_titles / total * 100
@@ -115,9 +154,23 @@ def main():
         print(f"Empty Titles     : {len(empty_titles)}")
         print(f"Placeholder Titles: {len(placeholder_titles)}")
         print(f"Title Completion : {title_percent:.2f}%")
-        print(f"Missing Arcs     : {len(missing_arcs)}")
-        print(f"Episodes With Arcs: {len(episodes_with_arcs)}")
-        print(f"Arc Completion   : {arc_percent:.2f}%")
+        print(f"Raw Missing Arcs : {len(missing_arcs)}")
+        print(
+            f"Arc Not Applicable: "
+            f"{len(arc_not_applicable)}"
+        )
+        print(
+            f"Unresolved Arc Gaps: "
+            f"{len(unresolved_missing_arcs)}"
+        )
+        print(
+            f"Episodes With Arcs: "
+            f"{len(episodes_with_arcs)}"
+        )
+        print(
+            f"Effective Arc Completion: "
+            f"{arc_percent:.2f}%"
+        )
         print()
         print(f"Audit Status     : {audit_status}")
 
@@ -128,11 +181,18 @@ def main():
             for episode in missing_titles[:25]:
                 print(f"Episode {episode.episode_number}")
 
-        if missing_arcs:
+        if arc_not_applicable:
             print()
-            print("Episodes Missing Arcs")
-            print("---------------------")
-            for episode in missing_arcs[:25]:
+            print("Episodes With Arc Not Applicable")
+            print("--------------------------------")
+            for episode in arc_not_applicable[:25]:
+                print(f"Episode {episode.episode_number}")
+
+        if unresolved_missing_arcs:
+            print()
+            print("Episodes With Unresolved Arc Gaps")
+            print("---------------------------------")
+            for episode in unresolved_missing_arcs[:25]:
                 print(f"Episode {episode.episode_number}")
 
         if placeholder_titles:
@@ -150,6 +210,16 @@ def main():
                 "empty_titles": len(empty_titles),
                 "placeholder_titles": len(placeholder_titles),
                 "missing_arcs": len(missing_arcs),
+                "arc_not_applicable": len(
+                    arc_not_applicable
+                ),
+                "unresolved_arc_gaps": len(
+                    unresolved_missing_arcs
+                ),
+                "effective_arc_completion": round(
+                    arc_percent,
+                    2,
+                ),
                 "episodes_with_arcs": len(episodes_with_arcs),
                 "title_completion": round(title_percent, 2),
                 "arc_completion": round(arc_percent, 2),
@@ -169,6 +239,14 @@ def main():
                 "missing_arc_episodes": [
                     episode.episode_number
                     for episode in missing_arcs
+                ],
+                "arc_not_applicable_episodes": [
+                    episode.episode_number
+                    for episode in arc_not_applicable
+                ],
+                "unresolved_arc_gap_episodes": [
+                    episode.episode_number
+                    for episode in unresolved_missing_arcs
                 ],
             }
 

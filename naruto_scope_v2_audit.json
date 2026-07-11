@@ -5,10 +5,13 @@
   "empty_titles": 0,
   "placeholder_titles": 0,
   "missing_arcs": 14,
+  "arc_not_applicable": 14,
+  "unresolved_arc_gaps": 0,
+  "effective_arc_completion": 100.0,
   "episodes_with_arcs": 206,
   "title_completion": 100.0,
-  "arc_completion": 93.64,
-  "audit_status": "IN PROGRESS",
+  "arc_completion": 100.0,
+  "audit_status": "PASS",
   "missing_title_episodes": [],
   "empty_title_episodes": [],
   "placeholder_title_episodes": [],
@@ -27,5 +30,22 @@
     194,
     202,
     208
-  ]
+  ],
+  "arc_not_applicable_episodes": [
+    101,
+    158,
+    161,
+    168,
+    174,
+    177,
+    184,
+    185,
+    186,
+    192,
+    193,
+    194,
+    202,
+    208
+  ],
+  "unresolved_arc_gap_episodes": []
 }

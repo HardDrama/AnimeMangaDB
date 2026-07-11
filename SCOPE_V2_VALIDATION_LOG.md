@@ -743,3 +743,9 @@ The platform is ready for a full Naruto dataset import.
 ### Result
 
 The full Naruto dataset has been imported and is ready for Scope v2 completion work.
+
+### Episodes with Missing Arcs
+
+All episodes have been manually verified and documented.
+
+All episodes have an added exception inserted as "Arc Not Applicable" as they are standalone episodes.

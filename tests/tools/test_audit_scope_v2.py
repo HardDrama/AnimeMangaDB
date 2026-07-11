@@ -63,3 +63,26 @@ def test_audit_reports_missing_anime(
         'Anime not found: "Does Not Exist"'
         in output
     )
+
+def test_naruto_audit_applies_arc_exceptions(
+    monkeypatch,
+    capsys,
+):
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "audit_scope_v2",
+            "--anime",
+            "Naruto",
+        ],
+    )
+
+    audit_scope_v2.main()
+
+    output = capsys.readouterr().out
+
+    assert "Arc Not Applicable: 14" in output
+    assert "Unresolved Arc Gaps: 0" in output
+    assert "Effective Arc Completion: 100.00%" in output
+    assert "Audit Status     : PASS" in output
