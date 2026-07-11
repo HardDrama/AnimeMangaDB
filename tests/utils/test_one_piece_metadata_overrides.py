@@ -15,7 +15,7 @@ def test_load_one_piece_metadata_overrides():
         267: "Enies Lobby Arc",
         663: "Dressrosa Arc",
         864: "Whole Cake Island Arc",
-        1065: "Wano Country Arc",
+        1065: "Wano Country Arc (Cont. 2)",
         1167: "Elbaph Arc",
         1168: "Elbaph Arc",
     }
