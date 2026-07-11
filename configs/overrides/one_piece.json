@@ -1,0 +1,33 @@
+{
+  "series": "One Piece",
+  "episodes": {
+    "240": {
+      "arc": "Water 7 Arc",
+      "reason": "Arc is missing from the live source metadata and was manually verified."
+    },
+    "267": {
+      "arc": "Enies Lobby Arc",
+      "reason": "Arc is missing from the live source metadata and was manually verified."
+    },
+    "663": {
+      "arc": "Dressrosa Arc",
+      "reason": "Arc is missing from the live source metadata and was manually verified."
+    },
+    "864": {
+      "arc": "Whole Cake Island Arc",
+      "reason": "Arc is missing from the live source metadata and was manually verified."
+    },
+    "1065": {
+      "arc": "Wano Country Arc (Cont. 2)",
+      "reason": "Arc is missing from the live source metadata and was manually verified."
+    },
+    "1167": {
+      "arc": "Elbaph Arc",
+      "reason": "Arc is missing from the live source metadata and was manually verified."
+    },
+    "1168": {
+      "arc": "Elbaph Arc",
+      "reason": "Arc is missing from the live source metadata and was manually verified."
+    }
+  }
+}

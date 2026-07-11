@@ -21,6 +21,8 @@ from scraper.services.metadata_repair_application_service import (
     MetadataRepairApplicationService,
 )
 
+from sqlalchemy import String
+
 
 def format_elapsed_time(seconds):
     minutes = int(seconds // 60)
@@ -40,10 +42,16 @@ def main():
     )
 
     parser.add_argument(
-        "--limit",
+        "--episode",
         type=int,
-        default=1,
-        help="Maximum episodes to preview.",
+        default=None,
+        help="Specific episode number to repair.",
+    )
+
+    parser.add_argument(
+        "--placeholder-titles-only",
+        action="store_true",
+        help="Only process episodes with placeholder titles.",
     )
 
     parser.add_argument(
@@ -53,10 +61,10 @@ def main():
     )
 
     parser.add_argument(
-        "--episode",
+        "--limit",
         type=int,
-        default=None,
-        help="Specific episode number to repair.",
+        default=1,
+        help="Maximum episodes to preview.",
     )
 
     parser.add_argument(
@@ -101,7 +109,14 @@ def main():
             query = query.filter(
                 Episode.episode_number == args.episode
             )
-        elif not args.all:
+
+        if args.placeholder_titles_only:
+            query = query.filter(
+                Episode.episode_title
+                == ("Episode " + Episode.episode_number.cast(String))
+            )
+
+        if args.episode is None and not args.all:
             query = query.limit(args.limit)
 
         episodes = query.all()

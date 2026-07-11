@@ -265,3 +265,140 @@ Verified:
 Result:
 
 Scope v2 API Feature Checkpoint certified.
+
+## Validation
+
+Date:
+- 2026-07-10
+
+Tool:
+- audit_scope_v2.py
+
+Command:
+```bash
+python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
+```
+
+Report:
+- scope_v2_audit.json
+
+Result:
+
+- Episodes Checked: 1168
+- Title Completion: 9.5%
+- Arc Completion: 9.33%
+- Audit Status: IN PROGRESS
+
+Known Source Limitations:
+
+- Episode 1167 missing arc on Fandom.
+- Episode 1168 missing arc on Fandom.
+
+Action:
+
+- No repair required.
+- Recheck after source pages are updated.
+
+Status:
+
+PASS
+
+---
+
+## Validation
+
+Date:
+- 2026-07-10
+
+Tool:
+- audit_scope_v2.py
+
+Command:
+```bash
+python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
+```
+
+Report:
+- scope_v2_audit.json
+
+Result:
+
+- Episodes Checked: 1168
+- Title Completion: 100%
+- Arc Completion: 99.40%
+- Audit Status: NEARLY COMPLETE
+
+Known Source Limitations:
+
+- Episode 1167 missing arc on Fandom.
+- Episode 1168 missing arc on Fandom.
+
+Action:
+
+- No repair required.
+- Recheck after source pages are updated.
+
+Status:
+
+PASS
+
+## Verified Arc Source Limitations
+
+The following episodes have been manually confirmed to belong to an anime arc, but their Fandom episode pages do not expose arc metadata through the configured selector:
+
+- Episode 240
+- Episode 267
+- Episode 663
+- Episode 864
+- Episode 1065
+- Episode 1167
+- Episode 1168
+
+Repair previews returned no proposed changes because the live metadata provider also returned no arc.
+
+Classification:
+
+- Database gap: Yes
+- Scraper failure: No
+- Repair failure: No
+- Live source metadata limitation: Yes
+- Resolution: Curated metadata override required
+
+---
+
+## Validation
+
+Date:
+- 2026-07-10
+
+Tool:
+- audit_scope_v2.py
+
+Command:
+```bash
+python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
+```
+
+Report:
+- scope_v2_audit.json
+
+Result:
+
+- Episodes Checked: 1168
+- Title Completion: 100%
+- Arc Completion: 100%
+- Audit Status: COMPLETE
+
+Known Source Limitations:
+
+- Episode 1167 missing arc on Fandom.
+- Episode 1168 missing arc on Fandom.
+
+Action:
+
+- Previous known arc source limitations are resolved through the curated override system.
+- No further action is needed.
+
+Status:
+
+PASS
