@@ -793,3 +793,51 @@ Naruto satisfies Scope v2 dataset requirements.
 Status:
 
 READY FOR CERTIFICATION
+
+---
+
+## Naruto Scope v2 Dataset Certification
+
+### Certified Scope
+
+Anime:
+- Episode Number
+- Episode Title
+- Arc
+
+Manga:
+- Chapter Number
+
+### Certified Dataset
+
+Naruto
+
+- Episodes audited: 220
+- Episode-title completion: 100.00%
+- Effective anime-arc completion: 100.00%
+- Arc Not Applicable exceptions: 14
+- Unresolved arc gaps: 0
+- Episodes with chapter mappings: 130
+- Episodes without chapter mappings: 90
+- Crawl failures: 0
+- Audit status: PASS
+
+### Certification Basis
+
+✔ Full dataset import completed.
+
+✔ Scope v2 metadata validated.
+
+✔ Valid metadata exceptions documented.
+
+✔ No unsupported values were invented.
+
+✔ Automated tests passed.
+
+### Status
+
+CERTIFIED
+
+Result:
+
+Naruto is a certified Scope v2 dataset.

@@ -223,3 +223,41 @@ Manga:
 ## Status
 
 ✅ Platform Checkpoint v2 Certified
+
+---
+
+# Naruto Scope v2 Dataset Certification
+
+## Scope v2 Coverage
+
+Anime:
+- [x] Episode Number
+- [x] Episode Title
+- [x] Arc
+
+Manga:
+- [x] Chapter Number
+
+## Dataset Validation
+
+- [x] 220 episodes imported
+- [x] 220 episode numbers validated
+- [x] Episode titles: 100.00%
+- [x] Effective anime arc completion: 100.00%
+- [x] 130 episodes with chapter mappings
+- [x] 90 episodes without chapter mappings
+- [x] 14 Arc Not Applicable exceptions verified
+- [x] Unresolved arc gaps: 0
+- [x] Crawl failures: 0
+- [x] Audit status: PASS
+
+## Integrity
+
+- [x] No fabricated arc metadata
+- [x] Exceptions stored in version-controlled configuration
+- [x] One Piece dataset unchanged
+- [x] Multi-series audit tooling operational
+
+## Status
+
+✅ Naruto Scope v2 Dataset Certified

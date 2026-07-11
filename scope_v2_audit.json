@@ -5,6 +5,9 @@
   "empty_titles": 0,
   "placeholder_titles": 0,
   "missing_arcs": 0,
+  "arc_not_applicable": 0,
+  "unresolved_arc_gaps": 0,
+  "effective_arc_completion": 100.0,
   "episodes_with_arcs": 1168,
   "title_completion": 100.0,
   "arc_completion": 100.0,
@@ -12,5 +15,7 @@
   "missing_title_episodes": [],
   "empty_title_episodes": [],
   "placeholder_title_episodes": [],
-  "missing_arc_episodes": []
+  "missing_arc_episodes": [],
+  "arc_not_applicable_episodes": [],
+  "unresolved_arc_gap_episodes": []
 }
