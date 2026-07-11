@@ -64,3 +64,34 @@ def test_search_requires_query():
     response = client.get("/search")
 
     assert response.status_code == 422
+
+def test_numeric_search_matches_episode_number():
+    response = client.get(
+        "/search",
+        params={"query": "50"},
+    )
+
+    assert response.status_code == 200
+
+    episodes = response.json()["episodes"]
+
+    assert any(
+        episode["episode_number"] == 50
+        for episode in episodes
+    )
+
+
+def test_numeric_search_matches_chapter_number():
+    response = client.get(
+        "/search",
+        params={"query": "50"},
+    )
+
+    assert response.status_code == 200
+
+    chapters = response.json()["chapters"]
+
+    assert any(
+        chapter["chapter_number"] == 50
+        for chapter in chapters
+    )

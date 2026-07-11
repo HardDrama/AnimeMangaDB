@@ -69,6 +69,9 @@ def get_anime(
             title=anime.title,
             provider=anime.provider,
             base_url=anime.base_url,
+            episode_count=repository.count_episodes_for_anime(
+                anime.id
+            ),
         )
 
     finally:

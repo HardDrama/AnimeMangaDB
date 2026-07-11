@@ -1,4 +1,4 @@
-from sqlalchemy import select, delete
+from sqlalchemy import select, delete, or_
 from sqlalchemy.orm import Session
 
 from scraper.database.models import (
@@ -305,9 +305,27 @@ class EpisodeRepository:
         self,
         query: str,
     ):
+        filters = [
+            Episode.episode_title.ilike(
+                f"%{query}%"
+            ),
+        ]
+
+        try:
+            episode_number = int(query)
+
+            filters.append(
+                Episode.episode_number == episode_number
+            )
+        except ValueError:
+            pass
+
         return (
             self.session.query(Episode)
-            .where(Episode.episode_title.ilike(f"%{query}%"))
-            .order_by(Episode.episode_number)
+            .where(or_(*filters))
+            .order_by(
+                Episode.anime_id,
+                Episode.episode_number,
+            )
             .all()
         )

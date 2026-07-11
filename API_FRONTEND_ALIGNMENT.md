@@ -77,3 +77,12 @@ Restore the original frontend experience while preserving the Scope v2 backend a
 - `chapters`
 
 Numeric queries may return chapter mappings in addition to matching anime and episode results.
+
+## Numeric Search Semantics
+
+Numeric global-search queries search both:
+
+- Exact anime episode number
+- Exact manga chapter number
+
+Episode-title text matching remains active for numeric queries.
