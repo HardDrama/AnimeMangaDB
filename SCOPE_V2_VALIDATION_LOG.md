@@ -841,3 +841,36 @@ CERTIFIED
 Result:
 
 Naruto is a certified Scope v2 dataset.
+
+---
+
+## Multi-Series API Validation
+
+### Certified Datasets
+
+- One Piece
+- Naruto
+
+### Validation Summary
+
+✔ `/series` returns both certified series.
+
+✔ `/anime` compatibility endpoint returns both certified series.
+
+✔ Shared series-detail contract works for Naruto.
+
+✔ Shared episode-list contract works for Naruto.
+
+✔ Naruto episode metadata uses the same response schemas as One Piece.
+
+✔ Global search returns Naruto through the existing search contract.
+
+✔ No Naruto-specific API routes were required.
+
+### Result
+
+The REST API supports multiple certified Scope v2 datasets through the same endpoints, repositories, and response models.
+
+Status:
+
+PASS
