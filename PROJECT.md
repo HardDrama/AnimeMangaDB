@@ -77,3 +77,13 @@ Examples:
 One Piece is the benchmark dataset.
 
 Before a Platform Checkpoint is declared complete, One Piece must be fully updated, validated, and repairable for that Scope.
+
+## Current Platform Status
+
+### Platform Checkpoint v2
+
+Status: Certified
+
+Scope v2 is supported end to end across the scraper, database, comparison, repair, reports, override framework, API, frontend, documentation, and tests.
+
+One Piece is the certified Scope v2 benchmark dataset.

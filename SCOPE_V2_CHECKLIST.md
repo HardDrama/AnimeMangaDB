@@ -175,3 +175,51 @@ python -m tools.repair_metadata --all --apply --yes
 
 python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
 ```
+
+---
+
+# Platform Checkpoint v2 Certification
+
+## Scope v2
+
+Anime:
+- [x] Episode Number
+- [x] Episode Title
+- [x] Arc
+
+Manga:
+- [x] Chapter Number
+
+## Feature Checkpoints
+
+- [x] Scraper
+- [x] Database
+- [x] Comparison
+- [x] Repair
+- [x] Reports
+- [x] Metadata Override Framework
+- [x] API
+- [x] Frontend
+- [x] Documentation
+- [x] Tests
+
+## Benchmark Dataset
+
+- [x] One Piece Scope v2 complete
+- [x] Episode titles: 100%
+- [x] Anime arcs: 100%
+- [x] Curated source gaps resolved
+- [x] Dataset audit passed
+
+## End-to-End Validation
+
+- [x] Frontend
+- [x] REST API
+- [x] Database
+- [x] Certified One Piece dataset
+- [x] Browser validation
+- [x] Automated validation
+
+## Status
+
+✅ Platform Checkpoint v2 Certified

@@ -585,3 +585,75 @@ Scope v2 end-to-end platform validation completed successfully.
 Outstanding Work:
 
 - Platform Checkpoint v2 certification.
+
+---
+
+## Platform Checkpoint v2 Certification
+
+### Certified Scope
+
+Anime:
+- Episode Number
+- Episode Title
+- Arc
+
+Manga:
+- Chapter Number
+
+### Certified Platform Layers
+
+✔ Scraper
+
+✔ Database
+
+✔ Comparison
+
+✔ Repair
+
+✔ Reports
+
+✔ Metadata Override Framework
+
+✔ REST API
+
+✔ React Frontend
+
+✔ Documentation
+
+✔ Automated Tests
+
+### Certified Benchmark Dataset
+
+One Piece
+
+- Episodes audited: 1168
+- Episode-title completion: 100.00%
+- Anime-arc completion: 100.00%
+- Known source gaps resolved through curated overrides
+- Dataset status: Certified
+
+### End-to-End Result
+
+The complete application flow has been validated:
+
+Browser
+→ React Frontend
+→ FastAPI REST API
+→ SQLAlchemy Database
+→ Certified One Piece Scope v2 Dataset
+
+### Automated Validation
+
+✔ Frontend production build passed.
+
+✔ Frontend lint passed with zero errors.
+
+✔ Backend test suite passed with 84 tests.
+
+### Status
+
+CERTIFIED
+
+Result:
+
+AnimeMangaDB has achieved Platform Checkpoint v2.
