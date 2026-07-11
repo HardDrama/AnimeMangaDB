@@ -682,3 +682,31 @@ Result:
 - Title Completion: 100%
 - Arc Completion: 0%
 - Audit Status: IN PROGRESS
+
+---
+
+## Naruto Dataset Ingestion Validation
+
+### Dry Run
+
+✔ Naruto configuration loaded.
+
+✔ Naruto episode index discovery completed.
+
+✔ Full episode range identified without database writes.
+
+### Controlled Import
+
+✔ Episodes 1–5 processed.
+
+✔ Existing records were reused without duplication.
+
+✔ Episode-to-chapter mappings were stored.
+
+✔ One Piece dataset remained unchanged.
+
+### Result
+
+Naruto dataset ingestion is operational.
+
+The platform is ready for a full Naruto dataset import.
