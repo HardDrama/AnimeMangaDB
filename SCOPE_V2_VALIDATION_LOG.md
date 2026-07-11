@@ -486,3 +486,51 @@ Action:
 Status:
 
 PASS
+
+---
+
+## Frontend Feature Checkpoint Certification
+
+### Scope
+
+Anime:
+- Episode Number
+- Episode Title
+- Arc
+
+Manga:
+- Chapter Number
+
+### Certified Capabilities
+
+✔ React frontend consumes the FastAPI REST API.
+
+✔ Anime and episode browsing are operational.
+
+✔ Episode titles and anime arcs are displayed.
+
+✔ Episode-to-chapter mappings are displayed.
+
+✔ Chapter-to-episode lookup is operational.
+
+✔ Global and numeric searches are operational.
+
+✔ Series and episode detail navigation is operational.
+
+✔ API configuration is environment-aware.
+
+✔ Frontend build and lint validation pass.
+
+✔ Manual browser validation completed using One Piece.
+
+### Scope Limitation
+
+Manga chapter titles and manga arcs are outside Scope v2 and remain planned for Scope v3.
+
+### Status
+
+COMPLETE
+
+Result:
+
+Scope v2 Frontend Feature Checkpoint certified.

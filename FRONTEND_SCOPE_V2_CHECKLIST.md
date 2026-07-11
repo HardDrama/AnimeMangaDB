@@ -62,3 +62,40 @@ Realign the existing React frontend with the certified Scope v2 backend while pr
 - [ ] Manual browser validation
 - [ ] End-to-end One Piece lookup verified
 - [ ] Frontend Feature Checkpoint certified
+
+---
+
+# Frontend Feature Checkpoint
+
+## Certification Summary
+
+The Scope v2 frontend has been validated against the certified One Piece dataset.
+
+Verified:
+
+- [x] Existing React frontend preserved
+- [x] Thin frontend architecture
+- [x] REST API integration
+- [x] Configurable API base URL
+- [x] Anime browsing
+- [x] Series detail pages
+- [x] Episode counts
+- [x] Episode lists
+- [x] Episode detail pages
+- [x] Episode numbers
+- [x] Episode titles
+- [x] Anime arcs
+- [x] Episode-to-chapter mappings
+- [x] Chapter-to-episode lookup
+- [x] Global search
+- [x] Numeric episode search
+- [x] Numeric chapter search
+- [x] Loading and error states
+- [x] Frontend documentation
+- [x] Production build
+- [x] Lint validation
+- [x] Manual browser validation
+
+## Status
+
+✅ Scope v2 Frontend Feature Checkpoint Complete
