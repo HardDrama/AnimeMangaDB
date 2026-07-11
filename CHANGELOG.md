@@ -1901,3 +1901,72 @@ Benchmark Dataset:
 **v0.55 — Multi-Series Foundation**
 
 Beginning **Naruto Scope v2**
+
+# 📦 AnimeMangaDB v0.55.0 — Multi-Series Foundation
+
+## 🎉 Highlights
+
+AnimeMangaDB now supports two fully certified Scope v2 datasets through the same platform architecture.
+
+Certified datasets:
+
+✔ One Piece  
+✔ Naruto
+
+No Naruto-specific API routes or frontend components were required.
+
+---
+
+## ✨ Naruto Scope v2
+
+✔ Imported all 220 episodes  
+✔ 220 episode titles validated  
+✔ 130 episodes with manga mappings  
+✔ 90 episodes without manga mappings  
+✔ 0 crawl failures  
+✔ Title completion: 100%  
+✔ Effective arc completion: 100%  
+✔ Audit status: PASS
+
+---
+
+## 🧩 Metadata Exceptions
+
+Added a reusable metadata exception framework.
+
+✔ 14 Naruto episodes verified as Arc Not Applicable  
+✔ Raw missing metadata remains visible  
+✔ Valid exceptions no longer count as unresolved gaps  
+✔ No fabricated arc values added
+
+---
+
+## 🔍 Multi-Series Validation
+
+✔ Shared scraper pipeline  
+✔ Shared database models  
+✔ Shared repositories  
+✔ Shared comparison and repair workflows  
+✔ Shared audit and reporting tools  
+✔ Shared REST API  
+✔ Shared React frontend  
+✔ Shared global search  
+✔ Cross-series chapter lookup
+
+---
+
+## 🧪 Validation
+
+✔ One Piece audit: PASS  
+✔ Naruto audit: PASS  
+✔ Frontend build: PASS  
+✔ Frontend lint: PASS  
+✔ 96 automated tests passed
+
+---
+
+## 🏆 Milestone
+
+**Multi-Series Foundation Certified**
+
+AnimeMangaDB can now support multiple certified datasets without redesigning its core architecture.
