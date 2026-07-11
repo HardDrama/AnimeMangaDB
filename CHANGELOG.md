@@ -1666,3 +1666,88 @@ AnimeMangaDB now exposes its database through a fully functional FastAPI service
 AnimeMangaDB now provides a production-style REST API capable of serving live anime metadata directly from the database.
 
 The Scope v2 API Feature Checkpoint has been completed and certified.
+
+---
+
+# 📦 AnimeMangaDB v0.53.0 — One Piece Scope v2 Completion
+
+## 🎉 Highlights
+
+Version 0.53.0 completes the first fully certified Scope v2 dataset in AnimeMangaDB.
+
+One Piece now serves as the benchmark implementation for all future series, demonstrating a complete end-to-end workflow from metadata retrieval through validation, repair, auditing, and certification.
+
+---
+
+## ✨ New Features
+
+### Scope v2 Dataset Completion
+
+✔ Recorded Scope v2 audit baseline
+
+✔ Added targeted placeholder title repair filter
+
+✔ Validated targeted repair workflow
+
+✔ Repaired over 1,000 One Piece episode titles
+
+✔ Increased title completion from 0.51% to 100.00%
+
+✔ Increased arc completion from 0.34% to 100.00%
+
+---
+
+### Metadata Override Framework
+
+✔ Episode metadata override model
+
+✔ Override configuration loader
+
+✔ Production override configuration support
+
+✔ Metadata service override integration
+
+✔ Curated One Piece arc overrides
+
+---
+
+### Source Validation
+
+✔ Investigated remaining metadata gaps
+
+✔ Verified external source limitations
+
+✔ Implemented reusable solution for missing source metadata
+
+---
+
+### Documentation
+
+✔ Scope v2 checklist updates
+
+✔ Scope v2 validation log updates
+
+✔ Certified One Piece Scope v2 dataset
+
+---
+
+## 🧪 Testing
+
+✔ 68 passed
+
+---
+
+## 🏆 Milestone
+
+One Piece is now the first fully certified Scope v2 dataset.
+
+AnimeMangaDB now supports a complete validation workflow:
+
+Scraper
+→ Comparison
+→ Repair
+→ Audit
+→ Curated Overrides
+→ Certified Dataset
+
+The metadata override framework is now part of the platform architecture and will be reused for future series such as Naruto.
