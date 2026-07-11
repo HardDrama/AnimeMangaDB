@@ -48,15 +48,17 @@ Status
 
 - [x] Episode detail by database ID
 
-- [x] Global search
-
 ⬜ Anime endpoints
 
 ⬜ Chapter lookup
 
 ⬜ Reverse chapter lookup
 
+- [x] Episodes adapting a chapter
+
 ⬜ Search
+
+- [x] Global search
 
 Goal
 
@@ -86,3 +88,11 @@ Numeric global-search queries search both:
 - Exact manga chapter number
 
 Episode-title text matching remains active for numeric queries.
+
+## Chapter Lookup Contract
+
+`GET /chapters/{chapter_number}/episodes` returns every episode mapped to the requested manga chapter.
+
+The response is a plain episode array for compatibility with the existing React Chapter Lookup component.
+
+An unmapped chapter returns an empty array.

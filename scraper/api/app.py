@@ -6,6 +6,7 @@ from scraper.api.routes.series import router as series_router
 from scraper.api.routes.anime import router as anime_router
 from scraper.api.routes.episodes import router as episode_router
 from scraper.api.routes.search import router as search_router
+from scraper.api.routes.chapters import router as chapter_router
 
 
 app = FastAPI(
@@ -32,3 +33,4 @@ app.include_router(series_router)
 app.include_router(anime_router)
 app.include_router(episode_router)
 app.include_router(search_router)
+app.include_router(chapter_router)
