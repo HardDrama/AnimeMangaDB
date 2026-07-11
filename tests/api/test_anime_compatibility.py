@@ -22,6 +22,8 @@ def test_list_anime():
         assert "title" in anime
         assert "provider" in anime
         assert "base_url" in anime
+        assert "episode_count" in anime
+        assert isinstance(anime["episode_count"], int)
 
 
 def test_get_anime_by_id():
@@ -89,6 +91,9 @@ def test_list_episodes_for_anime():
         assert "episode_title" in episode
         assert "arc" in episode
         assert "source_url" in episode
+        assert "anime_id" in episode
+        assert "title" in episode
+        assert episode["title"] == episode["episode_title"]
 
 
 def test_list_episodes_for_missing_anime():

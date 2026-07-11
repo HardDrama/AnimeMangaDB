@@ -46,6 +46,8 @@ Status
 
 ✔ Episode endpoints
 
+- [x] Episode detail by database ID
+
 ⬜ Anime endpoints
 
 ⬜ Chapter lookup
@@ -57,3 +59,9 @@ Status
 Goal
 
 Restore the original frontend experience while preserving the Scope v2 backend architecture.
+
+## Episode Route Semantics
+
+- `GET /episodes/id/{episode_id}` retrieves an episode by database ID.
+- `GET /episodes/{episode_number}` retrieves an episode by episode number.
+- The frontend detail page uses the explicit database-ID route.

@@ -209,6 +209,7 @@ function App() {
                                 />
 
                                 <AnimeBrowser
+                                    animeList={animeList}
                                     loading={loading}
                                     error={error}
                                     selectedAnime={selectedAnime}

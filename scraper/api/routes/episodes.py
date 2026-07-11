@@ -10,6 +10,15 @@ from fastapi import HTTPException
 from scraper.database.models import Episode
 from scraper.database.session import SessionLocal
 
+from scraper.api.schemas import (
+    ChapterMappingResponse,
+    EpisodeListResponse,
+    EpisodeResponse,
+)
+from scraper.repositories.episode_repository import (
+    EpisodeRepository,
+)
+
 router = APIRouter(
     prefix="/episodes",
     tags=["Episodes"],
@@ -36,9 +45,11 @@ def list_episodes(
             episodes=[
                 EpisodeResponse(
                     id=episode.id,
+                    anime_id=episode.anime_id,
                     anime_title=episode.anime.title,
                     episode_number=episode.episode_number,
                     episode_title=episode.episode_title,
+                    title=episode.episode_title,
                     arc=episode.arc,
                     source_url=episode.source_url,
                 )
@@ -84,12 +95,50 @@ def get_episode_by_id(
 
         return EpisodeResponse(
             id=episode.id,
+            anime_id=episode.anime_id,
             anime_title=episode.anime.title,
             episode_number=episode.episode_number,
             episode_title=episode.episode_title,
+            title=episode.episode_title,
             arc=episode.arc,
             source_url=episode.source_url,
         )
+
+    finally:
+        session.close()
+
+@router.get(
+    "/{episode_id}/chapters",
+    response_model=list[ChapterMappingResponse],
+)
+def get_episode_chapters(
+    episode_id: int,
+):
+    session = SessionLocal()
+
+    try:
+        repository = EpisodeRepository(session)
+
+        episode = repository.get_episode_by_id(
+            episode_id
+        )
+
+        if episode is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Episode not found.",
+            )
+
+        chapters = repository.get_chapters_for_episode_id(
+            episode_id
+        )
+
+        return [
+            ChapterMappingResponse(
+                chapter_number=chapter.chapter_number,
+            )
+            for chapter in chapters
+        ]
 
     finally:
         session.close()
@@ -117,9 +166,11 @@ def get_episode(
 
         return EpisodeResponse(
             id=episode.id,
+            anime_id=episode.anime_id,
             anime_title=episode.anime.title,
             episode_number=episode.episode_number,
             episode_title=episode.episode_title,
+            title=episode.episode_title,
             arc=episode.arc,
             source_url=episode.source_url,
         )

@@ -31,6 +31,9 @@ def list_anime():
                 title=anime.title,
                 provider=anime.provider,
                 base_url=anime.base_url,
+                episode_count=repository.count_episodes_for_anime(
+                    anime.id
+                ),
             )
             for anime in anime_list
         ]
@@ -100,9 +103,11 @@ def list_episodes_for_anime(
         return [
             EpisodeResponse(
                 id=episode.id,
+                anime_id=episode.anime_id,
                 anime_title=anime.title,
                 episode_number=episode.episode_number,
                 episode_title=episode.episode_title,
+                title=episode.episode_title,
                 arc=episode.arc,
                 source_url=episode.source_url,
             )

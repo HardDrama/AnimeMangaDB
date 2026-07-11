@@ -70,7 +70,7 @@ export async function getAnimeById(animeId) {
 
 export async function getEpisodeById(episodeId) {
     const response = await fetch(
-        `${API_BASE_URL}/episodes/${episodeId}`
+        `${API_BASE_URL}/episodes/id/${episodeId}`
     );
 
     if (!response.ok) {

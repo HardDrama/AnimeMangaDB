@@ -3,20 +3,34 @@ from pydantic import BaseModel
 
 class EpisodeResponse(BaseModel):
     id: int
+    anime_id: int | None = None
     anime_title: str
     episode_number: int
+
+    # Canonical Scope v2 field.
     episode_title: str | None = None
+
+    # Scope v1 frontend compatibility field.
+    title: str | None = None
+
     arc: str | None = None
     source_url: str | None = None
 
+
 class EpisodeListResponse(BaseModel):
     episodes: list[EpisodeResponse]
+
+
+class ChapterMappingResponse(BaseModel):
+    chapter_number: int
+
 
 class SeriesResponse(BaseModel):
     id: int
     title: str
     provider: str
     base_url: str | None = None
+    episode_count: int | None = None
 
 
 class SeriesListResponse(BaseModel):
