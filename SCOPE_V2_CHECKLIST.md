@@ -144,6 +144,14 @@ Classification:
 - Live source metadata limitation: Yes
 - Resolution: Curated metadata override required
 
+# One Piece (cont)
+
+- One Piece is 100% Scope v2 complete.
+- All known source limitations have been resolved throught the curated override system
+- Titles: 100%
+- Arcs: 100%
+- Audit status: COMPLETE
+
 ---
 
 # Scope v2 Validation Workflow
