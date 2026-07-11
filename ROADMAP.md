@@ -1,139 +1,97 @@
-# 🗺 AnimeMangaDB Roadmap
-
-## ✅ Platform Checkpoint v1
-
-Complete
-
-✔ Episode ↔ Chapter mapping
-✔ One Piece support
-✔ Scraper
-✔ Database
-✔ Repair tools
-✔ Reporting
+# 🗺️ AnimeMangaDB Roadmap
 
 ---
 
-# 🚧 Platform Checkpoint v2 (Current)
+# ✅ Platform Checkpoint v2
 
-## Software Feature Checkpoints
+**CERTIFIED**
 
-✔ Database
-✔ Comparison
-✔ Repair
-✔ Reports
-✔ API
+## Backend
+✔ Certified
 
-## Benchmark Dataset
+## Database
+✔ Certified
 
-✔ One Piece Scope v2 Certified
+## Comparison
+✔ Certified
 
-Anime Metadata
+## Repair
+✔ Certified
 
-✔ Episode Number
-✔ Episode Title
-✔ Arc
+## Reports
+✔ Certified
 
-Manga Metadata
+## Metadata Override Framework
+✔ Certified
 
-✔ Chapter Number
+## REST API
+✔ Certified
 
----
+## Frontend
+✔ Certified
 
-## 📦 v0.54 — Frontend Foundation
+## Documentation
+✔ Certified
 
-Goal
-
-Build the first user-facing interface for AnimeMangaDB using the completed Scope v2 backend.
-
-Planned Work
-
-✔ Frontend project structure
-
-✔ API integration
-
-✔ Episode lookup page
-
-✔ Episode detail page
-
-✔ Error handling
-
-✔ Frontend validation
-
-✔ Frontend documentation
-
-✔ Frontend Feature Checkpoint
-
-✔ End-to-end platform validation
-
-✔ Platform Checkpoint v2 certification
+## Automated Tests
+✔ Certified
 
 ---
 
-## 📦 v0.55 — Naruto Scope v2
+# 📚 Benchmark Dataset
 
-Goal
+## ✔ One Piece Scope v2
 
-Bring Naruto to the same certified Scope v2 standard as One Piece.
-
-Planned Work
-
-✔ Import dataset
-
-✔ Scope v2 audit
-
-✔ Metadata repair
-
-✔ Curated overrides (if required)
-
-✔ Validation
-
-✔ Certification
+**100% Certified**
 
 ---
 
-## 📦 Scope v3
+# 🚧 Current Development
 
-Expand supported metadata
+## v0.55 — Multi-Series Foundation
 
-Anime
+### Naruto Scope v2
 
-✔ Episode Number
-✔ Episode Title
-✔ Arc
+Goals
 
-Manga
+• Audit Naruto dataset
 
-✔ Chapter Number
-⬜ Chapter Title
-⬜ Manga Arc
+• Scope v2 certification
 
-Development Order
+• Multi-series validation
 
-1. Platform infrastructure
-2. One Piece implementation
-3. One Piece certification
-4. Naruto implementation
-5. Naruto certification
-6. Platform Checkpoint v3
+• Cross-series benchmark
+
+• Platform validation using two certified datasets
 
 ---
 
-# 🎯 v1.0 Vision
+# 🔮 Future
 
-✔ One Piece (Complete Scope v3)
+## Scope v3
 
-✔ Naruto (Complete Scope v3)
+Planned additions
 
-✔ Automated validation
+• Manga chapter titles
 
-✔ Metadata repair pipeline
+• Manga arcs
 
-✔ Metadata override framework
+• Rich metadata
 
-✔ JSON & CSV reporting
+• Advanced comparison
 
-✔ REST API
+• Enhanced frontend
 
-✔ Web frontend
+• Admin UI
 
-Every feature, dataset, and platform checkpoint is validated and certified before expanding project scope.
+• Additional providers
+
+• Additional anime & manga series
+
+---
+
+# 🎯 Long-Term Vision
+
+AnimeMangaDB
+
+A platform for accurately mapping anime episodes and manga chapters across multiple series using validated, evidence-driven datasets.
