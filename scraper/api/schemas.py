@@ -24,7 +24,6 @@ class EpisodeListResponse(BaseModel):
 class ChapterMappingResponse(BaseModel):
     chapter_number: int
 
-
 class SeriesResponse(BaseModel):
     id: int
     title: str
@@ -32,6 +31,14 @@ class SeriesResponse(BaseModel):
     base_url: str | None = None
     episode_count: int | None = None
 
-
 class SeriesListResponse(BaseModel):
     series: list[SeriesResponse]
+
+class ChapterSearchResult(BaseModel):
+    chapter_number: int
+    episodes: list[EpisodeResponse]
+
+class SearchResponse(BaseModel):
+    anime: list[SeriesResponse]
+    episodes: list[EpisodeResponse]
+    chapters: list[ChapterSearchResult]

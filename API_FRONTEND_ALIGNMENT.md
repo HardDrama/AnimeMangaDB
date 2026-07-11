@@ -48,6 +48,8 @@ Status
 
 - [x] Episode detail by database ID
 
+- [x] Global search
+
 ⬜ Anime endpoints
 
 ⬜ Chapter lookup
@@ -65,3 +67,13 @@ Restore the original frontend experience while preserving the Scope v2 backend a
 - `GET /episodes/id/{episode_id}` retrieves an episode by database ID.
 - `GET /episodes/{episode_number}` retrieves an episode by episode number.
 - The frontend detail page uses the explicit database-ID route.
+
+## Search Contract
+
+`GET /search?query=...` returns:
+
+- `anime`
+- `episodes`
+- `chapters`
+
+Numeric queries may return chapter mappings in addition to matching anime and episode results.
