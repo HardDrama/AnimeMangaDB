@@ -2,17 +2,23 @@
 
 | Episode | Source Arc Present? | Verified Arc | Action |
 |----------|---------------------|--------------|--------|
-| 101 | No canonical arc listed | Arc Not Applicable | |
-| 158 | No canonical arc listed | Arc Not Applicable | |
-| 161 | No canonical arc listed | Arc Not Applicable | |
-| 168 | No canonical arc listed | Arc Not Applicable | |
-| 174 | No canonical arc listed | Arc Not Applicable | |
-| 177 | No canonical arc listed | Arc Not Applicable | |
-| 184 | No canonical arc listed | Arc Not Applicable | |
-| 185 | No canonical arc listed | Arc Not Applicable | |
-| 186 | No canonical arc listed | Arc Not Applicable | |
-| 192 | No canonical arc listed | Arc Not Applicable | |
-| 193 | No canonical arc listed | Arc Not Applicable | |
-| 194 | No canonical arc listed | Arc Not Applicable | |
-| 202 | No canonical arc listed | Arc Not Applicable | |
-| 208 | No canonical arc listed | Arc Not Applicable | |
+| 101 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 158 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 161 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 168 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 174 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 177 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 184 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 185 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 186 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 192 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 193 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 194 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 202 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+| 208 | No canonical arc listed | Arc Not Applicable | Classified as Arc Not Applicable |
+
+## Resolution
+
+All reviewed episodes were verified as having no canonical arc classification.
+
+These episodes are represented through the metadata exception framework and do not count as unresolved Scope v2 gaps.
