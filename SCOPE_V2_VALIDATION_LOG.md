@@ -874,3 +874,66 @@ The REST API supports multiple certified Scope v2 datasets through the same endp
 Status:
 
 PASS
+
+---
+
+## Multi-Series Frontend Validation
+
+### Certified Datasets
+
+- One Piece
+- Naruto
+
+### Homepage
+
+✔ Both certified series displayed.
+
+✔ One Piece displayed the correct episode count.
+
+✔ Naruto displayed the correct episode count.
+
+### Naruto Series Validation
+
+✔ Naruto series detail page loaded.
+
+✔ All 220 episodes were available through the shared frontend workflow.
+
+✔ Episode numbers and titles displayed correctly.
+
+✔ Anime arcs displayed where applicable.
+
+✔ Arc Not Applicable episodes rendered without errors or fabricated values.
+
+### Episode Detail Validation
+
+✔ Naruto episode detail pages used the same component and API contract as One Piece.
+
+✔ Chapter mappings displayed where available.
+
+✔ Episodes without chapter mappings displayed a clean empty state.
+
+### Multi-Series Search and Lookup
+
+✔ Global search returned One Piece and Naruto results.
+
+✔ Numeric episode search supported both series.
+
+✔ Chapter lookup returned cross-series mappings where applicable.
+
+✔ Episode links navigated to the correct database-ID detail routes.
+
+### Architecture
+
+✔ No Naruto-specific frontend routes were required.
+
+✔ No Naruto-specific React components were required.
+
+✔ Both datasets use the same REST API client and presentation components.
+
+### Result
+
+The React frontend supports multiple certified Scope v2 datasets through the same user interface.
+
+Status:
+
+PASS
