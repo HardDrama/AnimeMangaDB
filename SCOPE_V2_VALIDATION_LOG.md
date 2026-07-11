@@ -703,6 +703,8 @@ Result:
 
 ✔ Episode-to-chapter mappings were stored.
 
+✔ Episode Numbers, Episode Titles, and Anime Arcs were stored.
+
 ✔ One Piece dataset remained unchanged.
 
 ### Result
@@ -710,3 +712,34 @@ Result:
 Naruto dataset ingestion is operational.
 
 The platform is ready for a full Naruto dataset import.
+
+---
+
+## Naruto Full Dataset Import
+
+### Import
+
+✔ Full Naruto crawl completed.
+
+✔ Episodes 1–220 processed.
+
+✔ Existing Episode 1 reused without duplication.
+
+✔ Episode titles imported.
+
+✔ Anime arcs imported.
+
+✔ Episode-to-chapter mappings imported.
+
+✔ One Piece dataset remained unchanged.
+
+### Scope v2 Audit
+
+- Episodes Checked: 220
+- Title Completion: 100%
+- Arc Completion: 93.64%
+- Audit Status: IN PROGRESS
+
+### Result
+
+The full Naruto dataset has been imported and is ready for Scope v2 completion work.

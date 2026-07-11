@@ -1,16 +1,31 @@
 {
   "anime": "Naruto",
-  "episodes_checked": 5,
+  "episodes_checked": 220,
   "missing_titles": 0,
   "empty_titles": 0,
   "placeholder_titles": 0,
-  "missing_arcs": 0,
-  "episodes_with_arcs": 5,
+  "missing_arcs": 14,
+  "episodes_with_arcs": 206,
   "title_completion": 100.0,
-  "arc_completion": 100.0,
-  "audit_status": "PASS",
+  "arc_completion": 93.64,
+  "audit_status": "IN PROGRESS",
   "missing_title_episodes": [],
   "empty_title_episodes": [],
   "placeholder_title_episodes": [],
-  "missing_arc_episodes": []
+  "missing_arc_episodes": [
+    101,
+    158,
+    161,
+    168,
+    174,
+    177,
+    184,
+    185,
+    186,
+    192,
+    193,
+    194,
+    202,
+    208
+  ]
 }
