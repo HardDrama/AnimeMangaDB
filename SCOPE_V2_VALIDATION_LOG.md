@@ -266,6 +266,90 @@ Result:
 
 Scope v2 API Feature Checkpoint certified.
 
+---
+
+---
+
+## Frontend Validation
+
+### Architecture
+
+✔ Existing React frontend preserved.
+
+✔ Vite production build operational.
+
+✔ Frontend consumes the REST API only.
+
+✔ API base URL is configurable through `VITE_API_BASE_URL`.
+
+✔ Backend CORS configuration supports local frontend development.
+
+### Restored Workflows
+
+✔ Anime list browsing.
+
+✔ Anime detail pages.
+
+✔ Episode counts.
+
+✔ Episodes for selected anime.
+
+✔ Episode numbers and titles.
+
+✔ Episode detail pages.
+
+✔ Anime arc display.
+
+✔ Episode-to-chapter mappings.
+
+✔ Chapter-to-episode lookup.
+
+✔ Global anime search.
+
+✔ Global episode-title search.
+
+✔ Numeric episode search.
+
+✔ Numeric chapter search.
+
+### Manual Validation
+
+Verified with the certified One Piece Scope v2 dataset:
+
+- Homepage loads available anime.
+- One Piece displays the correct episode count.
+- One Piece episode list displays episode numbers and titles.
+- Multiple episode detail pages load successfully.
+- Episode details display title, arc, and chapter mappings.
+- Chapter 50 returns its mapped episode.
+- Numeric search `50` returns Episode 50 and Chapter 50 results.
+- Lookup results display anime arcs where available.
+- Missing chapter mappings return an empty result without crashing.
+
+### Automated Validation
+
+✔ Frontend production build passes.
+
+✔ Frontend lint passes with zero errors.
+
+✔ Backend test suite passes with 84 tests.
+
+### Scope Limitation
+
+Chapter-title and manga-arc text search are not included in Scope v2 because chapters currently contain chapter numbers only. These capabilities belong to Scope v3.
+
+### Status
+
+Frontend integration is operational.
+
+Outstanding Work:
+
+- Complete frontend documentation review.
+- Certify the Frontend Feature Checkpoint.
+- Perform final end-to-end Platform Checkpoint v2 validation.
+
+---
+
 ## Validation
 
 Date:
