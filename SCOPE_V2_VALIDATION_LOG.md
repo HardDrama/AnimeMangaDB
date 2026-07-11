@@ -657,3 +657,28 @@ CERTIFIED
 Result:
 
 AnimeMangaDB has achieved Platform Checkpoint v2.
+
+## Naruto Validation 001
+
+Date:
+- 2026-07-11
+
+Tool:
+- audit_scope_v2.py
+
+Command:
+```bash
+python -m tools.audit_scope_v2 `
+    --anime "Naruto" `
+    --json-report naruto_scope_v2_audit.json
+```
+
+Report:
+- naruto_scope_v2_audit.json
+
+Result:
+
+- Episodes Checked: 1
+- Title Completion: 100%
+- Arc Completion: 0%
+- Audit Status: IN PROGRESS

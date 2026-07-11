@@ -1,0 +1,18 @@
+{
+  "anime": "Naruto",
+  "episodes_checked": 1,
+  "missing_titles": 0,
+  "empty_titles": 0,
+  "placeholder_titles": 0,
+  "missing_arcs": 1,
+  "episodes_with_arcs": 0,
+  "title_completion": 100.0,
+  "arc_completion": 0.0,
+  "audit_status": "IN PROGRESS",
+  "missing_title_episodes": [],
+  "empty_title_episodes": [],
+  "placeholder_title_episodes": [],
+  "missing_arc_episodes": [
+    1
+  ]
+}

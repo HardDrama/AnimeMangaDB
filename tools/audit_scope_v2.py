@@ -18,6 +18,13 @@ def main():
         help="Write Scope v2 audit results to a JSON file.",
     )
 
+    parser.add_argument(
+        "--anime",
+        type=str,
+        default="One Piece",
+        help="Anime title to audit. Defaults to One Piece.",
+    )
+
     args = parser.parse_args()
 
     session = SessionLocal()
@@ -25,12 +32,14 @@ def main():
     try:
         anime = (
             session.query(Anime)
-            .order_by(Anime.id)
+            .filter(Anime.title == args.anime)
             .first()
         )
 
         if anime is None:
-            print("No anime found.")
+            print(
+                f'Anime not found: "{args.anime}"'
+            )
             return
 
         episodes = (

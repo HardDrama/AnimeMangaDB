@@ -146,6 +146,20 @@ Generate a JSON audit report:
 python -m tools.audit_scope_v2 --json-report scope_v2_audit.json
 ```
 
+Audit One Piece:
+
+```bash
+python -m tools.audit_scope_v2
+```
+
+Audit Naruto:
+
+```bash
+python -m tools.audit_scope_v2
+    --anime "Naruto"
+    --json-report naruto_scope_v2_audit.json
+```
+
 The audit reports:
 
 - Episodes checked
