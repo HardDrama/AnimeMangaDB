@@ -1,12 +1,11 @@
 function ChapterLookup({
     chapterSearch,
     setChapterSearch,
+    chapterResults,
     chapterLoading,
     chapterError,
-    chapterResults,
     onSearch,
     onResultClick,
-    animeList,
 }) {
     return (
         <section id="chapter-lookup">

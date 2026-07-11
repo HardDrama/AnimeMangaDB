@@ -64,12 +64,6 @@ function App() {
 
         loadAnime();
     }, []);
-
-    const filteredAnimeList = animeList.filter((anime) => {
-        const search = globalSearch.toLowerCase();
-
-        return anime.title.toLowerCase().includes(search);
-    });
     
     const filteredEpisodes = episodes.filter((episode) => {
         const search = episodeSearch.toLowerCase();
@@ -212,11 +206,9 @@ function App() {
                                     chapterResults={chapterResults}
                                     onSearch={handleChapterLookup}
                                     onResultClick={handleLookupEpisodeClick}
-                                    animeList={filteredAnimeList}
                                 />
 
                                 <AnimeBrowser
-                                    animeList={filteredAnimeList}
                                     loading={loading}
                                     error={error}
                                     selectedAnime={selectedAnime}
