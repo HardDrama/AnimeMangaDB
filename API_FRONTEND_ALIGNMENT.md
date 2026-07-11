@@ -96,3 +96,17 @@ Episode-title text matching remains active for numeric queries.
 The response is a plain episode array for compatibility with the existing React Chapter Lookup component.
 
 An unmapped chapter returns an empty array.
+
+## API Base URL
+
+The frontend reads the API base URL from:
+
+`VITE_API_BASE_URL`
+
+Local development defaults to:
+
+`http://127.0.0.1:8000`
+
+Example configuration is provided in:
+
+`frontend/.env.example`
