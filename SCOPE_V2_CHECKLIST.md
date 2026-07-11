@@ -122,14 +122,27 @@ Notes:
 
 - Episodes 1167 and 1168 currently have no arc because the Fandom pages have not yet been updated.
 
-## Missing Arc Review
+## Verified Arc Source Limitations
 
-Current known source-data limitations:
+The following episodes have been manually confirmed to belong to an anime arc, but their Fandom episode pages do not expose arc metadata through the configured selector:
 
-- Episode 1167: Arc missing from live Fandom source.
-- Episode 1168: Arc missing from live Fandom source.
+- Episode 240
+- Episode 267
+- Episode 663
+- Episode 864
+- Episode 1065
+- Episode 1167
+- Episode 1168
 
-These are not currently considered scraper or repair failures. They should be rechecked after the source pages are updated.
+Repair previews returned no proposed changes because the live metadata provider also returned no arc.
+
+Classification:
+
+- Database gap: Yes
+- Scraper failure: No
+- Repair failure: No
+- Live source metadata limitation: Yes
+- Resolution: Curated metadata override required
 
 ---
 

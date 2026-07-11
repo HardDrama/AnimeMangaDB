@@ -341,3 +341,25 @@ Action:
 Status:
 
 PASS
+
+## Verified Arc Source Limitations
+
+The following episodes have been manually confirmed to belong to an anime arc, but their Fandom episode pages do not expose arc metadata through the configured selector:
+
+- Episode 240
+- Episode 267
+- Episode 663
+- Episode 864
+- Episode 1065
+- Episode 1167
+- Episode 1168
+
+Repair previews returned no proposed changes because the live metadata provider also returned no arc.
+
+Classification:
+
+- Database gap: Yes
+- Scraper failure: No
+- Repair failure: No
+- Live source metadata limitation: Yes
+- Resolution: Curated metadata override required
