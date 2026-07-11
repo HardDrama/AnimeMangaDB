@@ -64,6 +64,7 @@ function GlobalSearch({
                                     <Link to={`/episodes/${episode.id}`}>
                                         {episode.anime_title} — Episode{" "}
                                         {episode.episode_number}: {episode.title}
+                                        {episode.arc && ` — ${episode.arc}`}
                                     </Link>
                                 </li>
                             ))}
@@ -88,6 +89,7 @@ function GlobalSearch({
                                                 <Link to={`/episodes/${episode.id}`}>
                                                     {episode.anime_title} — Episode{" "}
                                                     {episode.episode_number}: {episode.title}
+                                                    {episode.arc && ` — ${episode.arc}`}
                                                 </Link>
                                             </li>
                                         ))}

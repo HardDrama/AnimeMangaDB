@@ -23,24 +23,24 @@ Realign the existing React frontend with the certified Scope v2 backend while pr
 
 ## Current API Alignment
 
-- [ ] Series list
-- [ ] Series detail
-- [ ] Episodes for series
-- [ ] Episode detail by database ID
-- [ ] Episode chapter mappings
-- [ ] Episodes adapting a chapter
-- [ ] Global search
-- [ ] Configurable API base URL
+- [x] Series list
+- [x] Series detail
+- [x] Episodes for series
+- [x] Episode detail by database ID
+- [x] Episode chapter mappings
+- [x] Episodes adapting a chapter
+- [x] Global search
+- [x] Configurable API base URL
 
 ---
 
 ## Scope v2 Display
 
-- [ ] Anime title
-- [ ] Episode number
-- [ ] Episode title
-- [ ] Anime arc
-- [ ] Manga chapter number
+- [x] Anime title
+- [x] Episode number
+- [x] Episode title
+- [x] Anime arc
+- [x] Manga chapter number
 
 ---
 

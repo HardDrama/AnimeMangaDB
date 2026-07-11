@@ -50,6 +50,13 @@ function ChapterLookup({
                                 Episode {episode.episode_number}
                                 <br />
                                 {episode.title}
+
+                                {episode.arc && (
+                                    <>
+                                        <br />
+                                        <span>Arc: {episode.arc}</span>
+                                    </>
+                                )}
                             </li>
                         ))}
                     </ul>
