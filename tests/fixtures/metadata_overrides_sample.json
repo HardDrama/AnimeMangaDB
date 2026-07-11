@@ -1,0 +1,12 @@
+{
+  "episodes": {
+    "240": {
+      "arc": "Example Arc",
+      "reason": "Arc is missing from the live source metadata."
+    },
+    "267": {
+      "episode_title": "Example Episode Title",
+      "reason": "Title is missing from the live source metadata."
+    }
+  }
+}
