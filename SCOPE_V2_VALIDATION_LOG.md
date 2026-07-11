@@ -937,3 +937,74 @@ The React frontend supports multiple certified Scope v2 datasets through the sam
 Status:
 
 PASS
+
+---
+
+## Multi-Series Foundation Certification
+
+### Certified Datasets
+
+- One Piece — Scope v2 Certified
+- Naruto — Scope v2 Certified
+
+### Platform Validation
+
+The same platform architecture successfully supports both datasets through shared:
+
+- Scraper infrastructure
+- Database models
+- Repository methods
+- Comparison services
+- Repair services
+- Audit tooling
+- Reporting tools
+- Metadata overrides
+- Metadata exceptions
+- REST API routes
+- API response schemas
+- React frontend components
+- Search and lookup workflows
+
+### API Result
+
+✔ `/series` and `/anime` return both certified datasets.
+
+✔ Series detail and episode-list endpoints support both datasets.
+
+✔ Global search supports both datasets.
+
+✔ Chapter lookup can return cross-series mappings.
+
+✔ No Naruto-specific API route was required.
+
+### Frontend Result
+
+✔ Both datasets appear on the homepage.
+
+✔ Both series use the same series-detail page.
+
+✔ Both series use the same episode-detail page.
+
+✔ Episode titles, anime arcs, and chapter mappings render correctly.
+
+✔ Arc Not Applicable records render without errors or fabricated values.
+
+✔ No Naruto-specific React component was required.
+
+### Automated Validation
+
+✔ Frontend production build passed.
+
+✔ Frontend lint passed with zero errors.
+
+✔ Backend test suite passed with 96 tests.
+
+### Status
+
+CERTIFIED
+
+Result:
+
+AnimeMangaDB has achieved the Multi-Series Foundation milestone.
+
+The platform supports multiple certified Scope v2 datasets without redesigning its core architecture.

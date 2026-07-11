@@ -84,6 +84,15 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 Status: Certified
 
-Scope v2 is supported end to end across the scraper, database, comparison, repair, reports, override framework, API, frontend, documentation, and tests.
+Scope v2 is supported end to end across the platform.
 
-One Piece is the certified Scope v2 benchmark dataset.
+### Multi-Series Foundation
+
+Status: Certified
+
+Certified datasets:
+
+- One Piece Scope v2
+- Naruto Scope v2
+
+Both datasets use the same scraper, database, validation, repair, API, and frontend architecture.

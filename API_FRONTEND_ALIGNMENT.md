@@ -110,3 +110,16 @@ Local development defaults to:
 Example configuration is provided in:
 
 `frontend/.env.example`
+
+## Multi-Series Episode Route Guidance
+
+`GET /episodes/{episode_number}` is a legacy convenience route.
+
+Episode numbers are not globally unique across multiple series, so this route may return an arbitrary matching series and should not be used by multi-series clients.
+
+Authoritative routes:
+
+- `GET /episodes/id/{episode_id}` for a globally unique episode record
+- `GET /anime/{anime_id}/episodes` for episodes belonging to a specific series
+
+The React frontend uses database-ID routes for episode detail navigation.
