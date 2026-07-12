@@ -1,6 +1,11 @@
 from datetime import datetime
 
-from sqlalchemy import DateTime, ForeignKey, String, UniqueConstraint
+from sqlalchemy import (
+    DateTime,
+    ForeignKey,
+    String,
+    UniqueConstraint,
+)
 from sqlalchemy.orm import (
     Mapped,
     mapped_column,
@@ -39,8 +44,13 @@ class Anime(Base):
     )
 
     episodes = relationship(
-    "Episode",
-    back_populates="anime",
+        "Episode",
+        back_populates="anime",
+    )
+
+    chapters = relationship(
+        "ChapterMetadata",
+        back_populates="anime",
     )
 
 class Episode(Base):
@@ -85,10 +95,6 @@ class Episode(Base):
 
     anime = relationship("Anime", back_populates="episodes")
 
-from sqlalchemy import Column, Integer, ForeignKey
-from sqlalchemy.orm import relationship
-
-
 class EpisodeChapter(Base):
     __tablename__ = "episode_chapters"
 
@@ -109,4 +115,53 @@ class EpisodeChapter(Base):
 
     chapter_number: Mapped[int] = mapped_column(
         nullable=False,
+    )
+
+class ChapterMetadata(Base):
+    __tablename__ = "chapter_metadata"
+
+    __table_args__ = (
+        UniqueConstraint(
+            "anime_id",
+            "chapter_number",
+            name="uq_chapter_metadata_number",
+        ),
+    )
+
+    id: Mapped[int] = mapped_column(
+        primary_key=True,
+    )
+
+    anime_id: Mapped[int] = mapped_column(
+        ForeignKey("anime.id"),
+        nullable=False,
+    )
+
+    chapter_number: Mapped[int] = mapped_column(
+        nullable=False,
+    )
+
+    chapter_title: Mapped[str | None] = mapped_column(
+        String(300),
+        nullable=True,
+    )
+
+    manga_arc: Mapped[str | None] = mapped_column(
+        String(200),
+        nullable=True,
+    )
+
+    source_url: Mapped[str | None] = mapped_column(
+        String(500),
+        nullable=True,
+    )
+
+    last_updated: Mapped[datetime | None] = mapped_column(
+        DateTime,
+        nullable=True,
+    )
+
+    anime = relationship(
+        "Anime",
+        back_populates="chapters",
     )

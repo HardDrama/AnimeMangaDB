@@ -53,3 +53,17 @@ Episode
 EpisodeChapter
   ↓
 ChapterMetadata
+
+---
+
+## Scope v3 Foundation Progress
+
+- [x] Scope v3 specification
+- [x] Chapter metadata database model
+- [ ] Chapter metadata repository
+- [ ] Scraper support
+- [ ] Comparison support
+- [ ] Repair support
+- [ ] Reporting support
+- [ ] API support
+- [ ] Frontend support
