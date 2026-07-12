@@ -15,9 +15,16 @@ class ScraperConfig(BaseModel):
     config_path: str | None = None
 
 
+class ChapterMetadataConfig(BaseModel):
+    index_path: str
+    url_strategy: str
+    chapter_path: str | None = None
+
+
 class ProviderConfig(BaseModel):
     series: str
     base_url: str
     episode_path: str
     selectors: SelectorConfig
+    chapter_metadata: ChapterMetadataConfig | None = None
     scraper: ScraperConfig

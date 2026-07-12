@@ -7,6 +7,11 @@
         "chapter": "div[data-source='chapter'] .pi-data-value",
         "arc": ".pt-page-level-tracker__accordion-title"
     },
+    "chapter_metadata": {
+        "index_path": "/wiki/Chapters_and_Volumes",
+        "url_strategy": "numbered",
+        "chapter_path": "/wiki/Chapter_{chapter}"
+    },
     "scraper": {
         "max_episodes": 5,
         "start_episode": null,

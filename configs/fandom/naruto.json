@@ -7,6 +7,11 @@
         "chapter": "div[data-source='chapters'] .pi-data-value",
         "arc": "div[data-source='arc'] .pi-data-value"
     },
+    "chapter_metadata": {
+        "index_path": "/wiki/List_of_Volumes",
+        "url_strategy": "discovered_links",
+        "chapter_path": null
+    },
     "scraper": {
         "max_episodes": 5,
         "start_episode": null,
