@@ -80,3 +80,18 @@ One Piece chapter URLs are generated from the configured numbered pattern.
 Naruto chapter URLs are discovered from the configured volume index because chapter links are title-based rather than number-based.
 
 Discovery returns a canonical chapter page URL but does not extract or persist metadata.
+
+## Verified Extraction Strategies
+
+### One Piece
+
+- Title: quoted title extracted from the chapter introduction sentence
+- Manga arc: chapter category ending in `Arc Chapters`
+- Normalization: remove the trailing `Chapters`
+
+### Naruto
+
+- Title: main page title with the `(chapter N)` suffix removed
+- Manga arc: Semantic MediaWiki factbox property named `Arc`
+
+Missing values remain null and are never fabricated.

@@ -1,3 +1,7 @@
+from scraper.core.browser_client import BrowserClient
+from scraper.extractors.fandom_chapter_metadata_extractor import (
+    FandomChapterMetadataExtractor,
+)
 from scraper.providers.fandom_chapter_metadata_provider import (
     FandomChapterMetadataProvider,
 )
@@ -10,22 +14,35 @@ def create_chapter_metadata_provider(
     browser_client=None,
     extractor=None,
 ):
-    """
-    Create a chapter metadata provider for a series.
-
-    config_path is intentionally required so the factory
-    never silently defaults to One Piece.
-    """
-
     if provider_name == "fandom":
         config = load_provider_config(
             config_path
         )
 
+        configured_browser = (
+            browser_client
+            if browser_client is not None
+            else BrowserClient()
+        )
+
+        configured_extractor = extractor
+
+        if configured_extractor is None:
+            if config.chapter_selectors is None:
+                raise ValueError(
+                    "Chapter selectors are not configured."
+                )
+
+            configured_extractor = (
+                FandomChapterMetadataExtractor(
+                    selectors=config.chapter_selectors
+                )
+            )
+
         return FandomChapterMetadataProvider(
             config=config,
-            browser_client=browser_client,
-            extractor=extractor,
+            browser_client=configured_browser,
+            extractor=configured_extractor,
         )
 
     raise ValueError(

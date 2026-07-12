@@ -92,6 +92,9 @@ def test_factory_loads_one_piece_configuration():
         provider.config.chapter_metadata.chapter_path
         == "/wiki/Chapter_{chapter}"
     )
+    assert provider.config.chapter_selectors is not None
+    assert provider.browser_client is not None
+    assert provider.extractor is not None
 
 
 def test_factory_loads_naruto_configuration():
@@ -110,6 +113,9 @@ def test_factory_loads_naruto_configuration():
         provider.config.chapter_metadata.chapter_path
         is None
     )
+    assert provider.config.chapter_selectors is not None
+    assert provider.browser_client is not None
+    assert provider.extractor is not None
 
 
 def test_factory_rejects_unsupported_provider():

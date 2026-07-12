@@ -12,6 +12,12 @@
         "url_strategy": "numbered",
         "chapter_path": "/wiki/Chapter_{chapter}"
     },
+    "chapter_selectors": {
+        "title": null,
+        "manga_arc": "a[title^='Category:'][title$=' Arc Chapters']",
+        "title_strategy": "one_piece_title_sentence",
+        "arc_strategy": "one_piece_arc_category"
+    },
     "scraper": {
         "max_episodes": 5,
         "start_episode": null,

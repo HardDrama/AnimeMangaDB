@@ -20,6 +20,12 @@ class ChapterMetadataConfig(BaseModel):
     url_strategy: str
     chapter_path: str | None = None
 
+class ChapterSelectorConfig(BaseModel):
+    title: str | None = None
+    manga_arc: str | None = None
+    title_strategy: str
+    arc_strategy: str
+
 
 class ProviderConfig(BaseModel):
     series: str
@@ -27,4 +33,5 @@ class ProviderConfig(BaseModel):
     episode_path: str
     selectors: SelectorConfig
     chapter_metadata: ChapterMetadataConfig | None = None
+    chapter_selectors: ChapterSelectorConfig | None = None
     scraper: ScraperConfig
