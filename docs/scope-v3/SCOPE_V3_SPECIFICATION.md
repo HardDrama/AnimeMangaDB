@@ -1,0 +1,55 @@
+# Scope v3 Specification
+
+## Goal
+
+Expand AnimeMangaDB with manga chapter metadata while preserving all certified Scope v2 capabilities.
+
+Scope v3 adds:
+
+- Manga Chapter Title
+- Manga Arc
+
+---
+
+## Existing Scope v2
+
+### Anime
+
+- Episode Number
+- Episode Title
+- Anime Arc
+
+### Manga
+
+- Chapter Number
+
+---
+
+## Scope v3
+
+### Anime
+
+- Episode Number
+- Episode Title
+- Anime Arc
+
+### Manga
+
+- Chapter Number
+- Chapter Title
+- Manga Arc
+
+---
+
+## Data Model
+
+Scope v3 should represent chapter metadata independently from episode mappings.
+
+```text
+Anime
+  ↓
+Episode
+  ↓
+EpisodeChapter
+  ↓
+ChapterMetadata
