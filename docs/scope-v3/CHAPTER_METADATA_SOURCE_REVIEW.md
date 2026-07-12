@@ -95,3 +95,21 @@ Discovery returns a canonical chapter page URL but does not extract or persist m
 - Manga arc: Semantic MediaWiki factbox property named `Arc`
 
 Missing values remain null and are never fabricated.
+
+## Controlled Ingestion Validation
+
+The complete Scope v3 chapter metadata pipeline was validated using:
+
+- One Piece Chapter 1
+- Naruto Chapter 1
+
+Validated flow:
+
+```text
+CLI
+→ ChapterMetadataIngestionService
+→ Chapter URL Discovery
+→ Fandom Chapter Metadata Provider
+→ Strategy-Based Extractor
+→ Repository
+→ Chapter Metadata Database Table

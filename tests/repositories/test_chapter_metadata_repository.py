@@ -158,3 +158,29 @@ def test_save_chapter_metadata_domain_model(
     assert chapter.chapter_number == 30
     assert chapter.chapter_title == "Domain Model Chapter"
     assert chapter.manga_arc == "Domain Model Arc"
+
+def test_get_anime_by_title(
+    session: Session,
+):
+    anime = create_anime(session)
+    repository = EpisodeRepository(session)
+
+    result = repository.get_anime_by_title(
+        "Test Anime"
+    )
+
+    assert result is not None
+    assert result.id == anime.id
+    assert result.title == "Test Anime"
+
+
+def test_get_missing_anime_by_title(
+    session: Session,
+):
+    repository = EpisodeRepository(session)
+
+    result = repository.get_anime_by_title(
+        "Does Not Exist"
+    )
+
+    assert result is None

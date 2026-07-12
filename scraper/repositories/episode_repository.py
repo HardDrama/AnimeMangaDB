@@ -316,6 +316,19 @@ class EpisodeRepository:
     ) -> Anime | None:
         return self.session.get(Anime, anime_id)
     
+    def get_anime_by_title(
+        self,
+        title: str,
+    ) -> Anime | None:
+        stmt = select(Anime).where(
+            Anime.title == title
+        )
+
+        return (
+            self.session.execute(stmt)
+            .scalar_one_or_none()
+        )
+    
     def get_episode_by_id(
         self,
         episode_id: int,
