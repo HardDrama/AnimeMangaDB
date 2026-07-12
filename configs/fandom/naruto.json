@@ -9,8 +9,9 @@
     },
     "chapter_metadata": {
         "index_path": "/wiki/List_of_Volumes",
-        "url_strategy": "discovered_links",
-        "chapter_path": null
+        "url_strategy": "numbered_list_items",
+        "chapter_path": null,
+        "index_section_id": "Tankōbon"
     },
     "chapter_selectors": {
         "title": "span.mw-page-title-main",

@@ -1,3 +1,4 @@
+import re
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -17,6 +18,7 @@ class ChapterUrlDiscoveryService:
     ):
         self.config = config
         self.browser_client = browser_client
+        self._index_html: str | None = None
 
     def discover_url(
         self,
@@ -37,6 +39,14 @@ class ChapterUrlDiscoveryService:
             == "discovered_links"
         ):
             return self._discover_link_from_index(
+                chapter_number
+            )
+        
+        if (
+            chapter_config.url_strategy
+            == "numbered_list_items"
+        ):
+            return self._discover_numbered_list_item(
                 chapter_number
             )
 
@@ -83,16 +93,17 @@ class ChapterUrlDiscoveryService:
             chapter_config.index_path,
         )
 
-        html = self.browser_client.fetch(
-            index_url
-        )
+        if self._index_html is None:
+            self._index_html = self.browser_client.fetch(
+                index_url
+            )
+
+        html = self._index_html
 
         soup = BeautifulSoup(
             html,
             "html.parser",
         )
-
-        target_text = f"chapter {chapter_number}"
 
         for link in soup.find_all(
             "a",
@@ -102,22 +113,118 @@ class ChapterUrlDiscoveryService:
                 link.get_text(
                     " ",
                     strip=True,
-                ).lower().split()
+                ).split()
             )
 
             title_text = (
                 link.get("title", "")
                 .strip()
-                .lower()
             )
 
-            if (
-                target_text in link_text
-                or target_text in title_text
+            candidate_numbers = set()
+
+            for candidate_text in (
+                link_text,
+                title_text,
             ):
+                candidate_numbers.update(
+                    self._extract_chapter_numbers(
+                        candidate_text
+                    )
+                )
+
+            if chapter_number in candidate_numbers:
+                return urljoin(
+                    self.config.base_url,
+                    link["href"],
+                )
+            
+    def _discover_numbered_list_item(
+        self,
+        chapter_number: int,
+    ) -> str | None:
+        chapter_config = self.config.chapter_metadata
+
+        if (
+            chapter_config is None
+            or self.browser_client is None
+            or chapter_config.index_section_id is None
+        ):
+            return None
+
+        index_url = urljoin(
+            self.config.base_url,
+            chapter_config.index_path,
+        )
+
+        if self._index_html is None:
+            self._index_html = self.browser_client.fetch(
+                index_url
+            )
+
+        soup = BeautifulSoup(
+            self._index_html,
+            "html.parser",
+        )
+
+        heading_marker = soup.find(
+            id=chapter_config.index_section_id
+        )
+
+        if heading_marker is None:
+            return None
+
+        heading = heading_marker.find_parent("h2")
+
+        if heading is None:
+            return None
+
+        for sibling in heading.find_next_siblings():
+            # Tankōbon is an h2 section, so only the next h2
+            # ends the search. Nested h3 headings such as
+            # Part I and Part II remain inside the scope.
+            if sibling.name == "h2":
+                break
+
+            for list_item in sibling.select("li"):
+                candidate_number = (
+                    self._extract_numbered_list_item(
+                        list_item.get_text(
+                            " ",
+                            strip=True,
+                        )
+                    )
+                )
+
+                if candidate_number != chapter_number:
+                    continue
+
+                link = list_item.find(
+                    "a",
+                    href=True,
+                )
+
+                if link is None:
+                    continue
+
                 return urljoin(
                     self.config.base_url,
                     link["href"],
                 )
 
         return None
+            
+    @staticmethod
+    def _extract_chapter_numbers(
+        text: str,
+    ) -> set[int]:
+        matches = re.findall(
+            r"\bchapter\s+(\d+)\b",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+        return {
+            int(match)
+            for match in matches
+        }

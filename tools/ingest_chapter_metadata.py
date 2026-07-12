@@ -26,8 +26,7 @@ SERIES_CONFIGS = {
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Discover, extract, and save metadata "
-            "for one manga chapter."
+            "Discover, extract, and save manga chapter metadata."
         )
     )
 
@@ -40,11 +39,68 @@ def main():
     parser.add_argument(
         "--chapter",
         type=int,
-        required=True,
-        help="Manga chapter number to ingest.",
+        default=None,
+        help="Single manga chapter number to ingest.",
+    )
+
+    parser.add_argument(
+        "--start-chapter",
+        type=int,
+        default=None,
+        help="First chapter number in a controlled range.",
+    )
+
+    parser.add_argument(
+        "--end-chapter",
+        type=int,
+        default=None,
+        help="Last chapter number in a controlled range.",
     )
 
     args = parser.parse_args()
+
+    if (
+        args.chapter is not None
+        and (
+            args.start_chapter is not None
+            or args.end_chapter is not None
+        )
+    ):
+        print(
+            "Use --chapter or a chapter range, "
+            "not both."
+        )
+        return
+
+    if args.chapter is not None:
+        chapter_numbers = [
+            args.chapter
+        ]
+
+    elif (
+        args.start_chapter is not None
+        and args.end_chapter is not None
+    ):
+        if args.start_chapter > args.end_chapter:
+            print(
+                "--start-chapter must be less than or "
+                "equal to --end-chapter."
+            )
+            return
+
+        chapter_numbers = list(
+            range(
+                args.start_chapter,
+                args.end_chapter + 1,
+            )
+        )
+
+    else:
+        print(
+            "Provide either --chapter or both "
+            "--start-chapter and --end-chapter."
+        )
+        return
 
     config_path = SERIES_CONFIGS.get(
         args.anime
@@ -75,11 +131,6 @@ def main():
             )
             return
 
-        existing = repository.get_chapter_metadata(
-            anime_id=anime.id,
-            chapter_number=args.chapter,
-        )
-
         config = load_provider_config(
             config_path
         )
@@ -107,34 +158,92 @@ def main():
             )
         )
 
-        chapter = ingestion_service.ingest(
-            anime=anime,
-            chapter_number=args.chapter,
-        )
+        inserted_count = 0
+        updated_count = 0
+        failed_chapters = []
 
-        status = (
-            "Inserted"
-            if existing is None
-            else "Updated"
-        )
+        total = len(chapter_numbers)
 
         print("Chapter Metadata Ingestion")
         print("--------------------------")
-        print(f"Series : {anime.title}")
-        print(f"Chapter: {chapter.chapter_number}")
-        print(
-            f"Title  : "
-            f"{chapter.chapter_title or 'Not available'}"
-        )
-        print(
-            f"Arc    : "
-            f"{chapter.manga_arc or 'Not available'}"
-        )
-        print(
-            f"Source : "
-            f"{chapter.source_url or 'Not available'}"
-        )
-        print(f"Status : {status}")
+        print(f"Series            : {anime.title}")
+        print(f"Chapters Selected : {total}")
+        print()
+
+        for index, chapter_number in enumerate(
+            chapter_numbers,
+            start=1,
+        ):
+            print(
+                f"[{index}/{total}] "
+                f"Chapter {chapter_number}"
+            )
+
+            try:
+                existing = repository.get_chapter_metadata(
+                    anime_id=anime.id,
+                    chapter_number=chapter_number,
+                )
+
+                chapter = ingestion_service.ingest(
+                    anime=anime,
+                    chapter_number=chapter_number,
+                )
+
+                status = (
+                    "Inserted"
+                    if existing is None
+                    else "Updated"
+                )
+
+                if existing is None:
+                    inserted_count += 1
+                else:
+                    updated_count += 1
+
+                print(
+                    f"  Title : "
+                    f"{chapter.chapter_title or 'Not available'}"
+                )
+                print(
+                    f"  Arc   : "
+                    f"{chapter.manga_arc or 'Not available'}"
+                )
+                print(
+                    f"  Source: "
+                    f"{chapter.source_url or 'Not available'}"
+                )
+                print(f"  Status: {status}")
+                print()
+
+            except Exception as error:
+                failed_chapters.append(
+                    {
+                        "chapter_number": chapter_number,
+                        "error": str(error),
+                    }
+                )
+
+                print(f"  FAILED: {error}")
+                print()
+
+        print("Chapter Metadata Ingestion Summary")
+        print("----------------------------------")
+        print(f"Series            : {anime.title}")
+        print(f"Chapters Selected : {total}")
+        print(f"Inserted          : {inserted_count}")
+        print(f"Updated           : {updated_count}")
+        print(f"Failed            : {len(failed_chapters)}")
+
+        if failed_chapters:
+            print("Failed Chapters:")
+
+            for failure in failed_chapters:
+                print(
+                    f"  Chapter "
+                    f"{failure['chapter_number']}: "
+                    f"{failure['error']}"
+                )
 
     except Exception as error:
         print("Chapter metadata ingestion failed.")
