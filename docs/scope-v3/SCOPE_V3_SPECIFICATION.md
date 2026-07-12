@@ -63,7 +63,7 @@ ChapterMetadata
 - [x] Chapter metadata repository
 - [x] Chapter metadata domain model
 - [x] Chapter metadata provider framework
-- [ ] Chapter URL discovery
+- [x] Chapter URL discovery
 - [ ] Chapter metadata extractor
 - [ ] Chapter metadata ingestion
 - [ ] Scraper support

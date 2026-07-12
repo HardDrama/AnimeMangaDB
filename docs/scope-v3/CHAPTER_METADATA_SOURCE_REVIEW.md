@@ -72,3 +72,11 @@ The shared chapter metadata provider accepts a discovered source URL so both str
 Some chapters, including Naruto Chapter 700, may not have a canonical manga arc listed.
 
 These cases must be verified and represented through the existing metadata exception framework rather than assigned fabricated values.
+
+## URL Discovery Strategy
+
+One Piece chapter URLs are generated from the configured numbered pattern.
+
+Naruto chapter URLs are discovered from the configured volume index because chapter links are title-based rather than number-based.
+
+Discovery returns a canonical chapter page URL but does not extract or persist metadata.
