@@ -64,6 +64,12 @@ def test_discovers_naruto_chapter_link():
         "configs/fandom/naruto.json"
     )
 
+    assert config.chapter_metadata is not None
+
+    config.chapter_metadata.url_strategy = (
+        "discovered_links"
+    )
+
     browser_client = FakeBrowserClient(
         html
     )
@@ -92,6 +98,12 @@ def test_discovered_link_strategy_requires_browser():
         "configs/fandom/naruto.json"
     )
 
+    assert config.chapter_metadata is not None
+
+    config.chapter_metadata.url_strategy = (
+        "discovered_links"
+    )
+
     service = ChapterUrlDiscoveryService(
         config=config
     )
@@ -107,6 +119,12 @@ def test_discovered_link_strategy_requires_browser():
 def test_returns_none_when_chapter_link_missing():
     config = load_provider_config(
         "configs/fandom/naruto.json"
+    )
+
+    assert config.chapter_metadata is not None
+
+    config.chapter_metadata.url_strategy = (
+        "discovered_links"
     )
 
     service = ChapterUrlDiscoveryService(
@@ -171,6 +189,12 @@ def test_discovered_link_index_is_cached():
         "configs/fandom/naruto.json"
     )
 
+    assert config.chapter_metadata is not None
+
+    config.chapter_metadata.url_strategy = (
+        "discovered_links"
+    )
+
     browser_client = FakeBrowserClient(
         html
     )
@@ -212,6 +236,12 @@ def test_discovery_uses_exact_chapter_number():
         "configs/fandom/naruto.json"
     )
 
+    assert config.chapter_metadata is not None
+
+    config.chapter_metadata.url_strategy = (
+        "discovered_links"
+    )
+
     service = ChapterUrlDiscoveryService(
         config=config,
         browser_client=FakeBrowserClient(
@@ -244,6 +274,12 @@ def test_discovery_does_not_match_partial_number():
 
     config = load_provider_config(
         "configs/fandom/naruto.json"
+    )
+
+    assert config.chapter_metadata is not None
+
+    config.chapter_metadata.url_strategy = (
+        "discovered_links"
     )
 
     service = ChapterUrlDiscoveryService(

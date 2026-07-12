@@ -19,6 +19,7 @@ class ChapterMetadataConfig(BaseModel):
     index_path: str
     url_strategy: str
     chapter_path: str | None = None
+    index_section_id: str | None = None
 
 class ChapterSelectorConfig(BaseModel):
     title: str | None = None

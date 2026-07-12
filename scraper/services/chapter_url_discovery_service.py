@@ -41,7 +41,7 @@ class ChapterUrlDiscoveryService:
             return self._discover_link_from_index(
                 chapter_number
             )
-        
+
         if (
             chapter_config.url_strategy
             == "numbered_list_items"
@@ -93,12 +93,9 @@ class ChapterUrlDiscoveryService:
             chapter_config.index_path,
         )
 
-        if self._index_html is None:
-            self._index_html = self.browser_client.fetch(
-                index_url
-            )
-
-        html = self._index_html
+        html = self._get_index_html(
+            index_url
+        )
 
         soup = BeautifulSoup(
             html,
@@ -138,7 +135,9 @@ class ChapterUrlDiscoveryService:
                     self.config.base_url,
                     link["href"],
                 )
-            
+
+        return None
+
     def _discover_numbered_list_item(
         self,
         chapter_number: int,
@@ -157,13 +156,12 @@ class ChapterUrlDiscoveryService:
             chapter_config.index_path,
         )
 
-        if self._index_html is None:
-            self._index_html = self.browser_client.fetch(
-                index_url
-            )
+        html = self._get_index_html(
+            index_url
+        )
 
         soup = BeautifulSoup(
-            self._index_html,
+            html,
             "html.parser",
         )
 
@@ -174,19 +172,23 @@ class ChapterUrlDiscoveryService:
         if heading_marker is None:
             return None
 
-        heading = heading_marker.find_parent("h2")
+        heading = heading_marker.find_parent(
+            "h2"
+        )
 
         if heading is None:
             return None
 
         for sibling in heading.find_next_siblings():
-            # Tankōbon is an h2 section, so only the next h2
-            # ends the search. Nested h3 headings such as
-            # Part I and Part II remain inside the scope.
+            # The configured section is an h2.
+            # Nested h3 headings such as Part I and Part II
+            # remain inside the section. The next h2 ends it.
             if sibling.name == "h2":
                 break
 
-            for list_item in sibling.select("li"):
+            for list_item in sibling.select(
+                "li"
+            ):
                 candidate_number = (
                     self._extract_numbered_list_item(
                         list_item.get_text(
@@ -213,7 +215,20 @@ class ChapterUrlDiscoveryService:
                 )
 
         return None
-            
+
+    def _get_index_html(
+        self,
+        index_url: str,
+    ) -> str:
+        if self._index_html is None:
+            self._index_html = (
+                self.browser_client.fetch(
+                    index_url
+                )
+            )
+
+        return self._index_html
+
     @staticmethod
     def _extract_chapter_numbers(
         text: str,
@@ -228,3 +243,19 @@ class ChapterUrlDiscoveryService:
             int(match)
             for match in matches
         }
+
+    @staticmethod
+    def _extract_numbered_list_item(
+        text: str,
+    ) -> int | None:
+        match = re.match(
+            r"^\s*0*(\d+)\.",
+            text,
+        )
+
+        if match is None:
+            return None
+
+        return int(
+            match.group(1)
+        )
