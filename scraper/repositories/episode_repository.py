@@ -8,6 +8,9 @@ from scraper.database.models import (
     EpisodeChapter,
 )
 from scraper.models.episode import EpisodeData
+from scraper.models.chapter_metadata import (
+    ChapterMetadata as ChapterMetadataData,
+)
 
 
 class EpisodeRepository:
@@ -195,6 +198,20 @@ class EpisodeRepository:
         self.session.refresh(chapter)
 
         return chapter
+    
+    def save_chapter_metadata(
+        self,
+        anime: Anime,
+        metadata: ChapterMetadataData,
+    ) -> ChapterMetadata:
+        return self.create_or_update_chapter_metadata(
+            anime=anime,
+            chapter_number=metadata.chapter_number,
+            chapter_title=metadata.chapter_title,
+            manga_arc=metadata.manga_arc,
+            source_url=metadata.source_url,
+            last_updated=metadata.last_updated,
+        )
 
 
     def list_chapter_metadata(

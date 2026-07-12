@@ -9,6 +9,9 @@ from scraper.database.models import Anime
 from scraper.repositories.episode_repository import (
     EpisodeRepository,
 )
+from scraper.models.chapter_metadata import (
+    ChapterMetadata as ChapterMetadataData,
+)
 
 
 @pytest.fixture
@@ -132,3 +135,26 @@ def test_list_chapter_metadata(
         chapter.chapter_number
         for chapter in chapters
     ] == [1, 2]
+
+def test_save_chapter_metadata_domain_model(
+    session: Session,
+):
+    anime = create_anime(session)
+    repository = EpisodeRepository(session)
+
+    metadata = ChapterMetadataData(
+        chapter_number=30,
+        chapter_title="Domain Model Chapter",
+        manga_arc="Domain Model Arc",
+        source_url="https://example.com/chapter/30",
+        last_updated=datetime.now(),
+    )
+
+    chapter = repository.save_chapter_metadata(
+        anime=anime,
+        metadata=metadata,
+    )
+
+    assert chapter.chapter_number == 30
+    assert chapter.chapter_title == "Domain Model Chapter"
+    assert chapter.manga_arc == "Domain Model Arc"

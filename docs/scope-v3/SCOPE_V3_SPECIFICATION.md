@@ -61,6 +61,7 @@ ChapterMetadata
 - [x] Scope v3 specification
 - [x] Chapter metadata database model
 - [x] Chapter metadata repository
+- [x] Chapter metadata domain model
 - [ ] Scraper support
 - [ ] Comparison support
 - [ ] Repair support
