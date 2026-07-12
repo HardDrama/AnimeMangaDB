@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 
 from scraper.database.models import (
     Anime,
+    ChapterMetadata,
     Episode,
     EpisodeChapter,
 )
@@ -138,6 +139,79 @@ class EpisodeRepository:
             self.session.add(link)
 
         self.session.commit()
+
+    def get_chapter_metadata(
+        self,
+        anime_id: int,
+        chapter_number: int,
+    ) -> ChapterMetadata | None:
+        stmt = (
+            select(ChapterMetadata)
+            .where(ChapterMetadata.anime_id == anime_id)
+            .where(
+                ChapterMetadata.chapter_number
+                == chapter_number
+            )
+        )
+
+        return (
+            self.session.execute(stmt)
+            .scalar_one_or_none()
+        )
+
+
+    def create_or_update_chapter_metadata(
+        self,
+        anime: Anime,
+        chapter_number: int,
+        chapter_title: str | None = None,
+        manga_arc: str | None = None,
+        source_url: str | None = None,
+        last_updated=None,
+    ) -> ChapterMetadata:
+        chapter = self.get_chapter_metadata(
+            anime_id=anime.id,
+            chapter_number=chapter_number,
+        )
+
+        if chapter is None:
+            chapter = ChapterMetadata(
+                anime_id=anime.id,
+                chapter_number=chapter_number,
+                chapter_title=chapter_title,
+                manga_arc=manga_arc,
+                source_url=source_url,
+                last_updated=last_updated,
+            )
+
+            self.session.add(chapter)
+        else:
+            chapter.chapter_title = chapter_title
+            chapter.manga_arc = manga_arc
+            chapter.source_url = source_url
+            chapter.last_updated = last_updated
+
+        self.session.commit()
+        self.session.refresh(chapter)
+
+        return chapter
+
+
+    def list_chapter_metadata(
+        self,
+        anime_id: int,
+    ) -> list[ChapterMetadata]:
+        stmt = (
+            select(ChapterMetadata)
+            .where(ChapterMetadata.anime_id == anime_id)
+            .order_by(ChapterMetadata.chapter_number)
+        )
+
+        return (
+            self.session.execute(stmt)
+            .scalars()
+            .all()
+        )
 
     def get_episode_by_number(
         self,
