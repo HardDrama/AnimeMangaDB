@@ -112,3 +112,22 @@ The foundation does not certify complete Scope v3 datasets.
 Status:
 
 ✅ Certified
+
+## One Piece Scope v3 Benchmark
+
+Target dataset:
+
+- Complete chapter coverage
+- Official Viz English titles
+- Manga arcs
+- Canonical source URLs
+
+Validation will require:
+
+- Automated audit
+- Manual verification
+- Regression testing
+
+Status:
+
+In Progress

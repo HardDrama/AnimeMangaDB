@@ -78,48 +78,12 @@ One Piece is the benchmark dataset.
 
 Before a Platform Checkpoint is declared complete, One Piece must be fully updated, validated, and repairable for that Scope.
 
-## Current Platform Status
+## Current
 
-### Platform Checkpoint v2
+### v0.57
 
-Status: Certified
+One Piece Scope v3 Dataset
 
-Certified Scope v2 datasets:
+Current phase:
 
-- One Piece
-- Naruto
-
-### Multi-Series Foundation
-
-Status: Certified
-
-### Scope v3 Foundation
-
-Status: Certified
-
-Validated capabilities:
-
-- Chapter metadata database model
-- Chapter metadata domain model
-- Repository persistence
-- Multi-series chapter providers
-- One Piece and Naruto URL discovery
-- Chapter title and manga arc extraction
-- Single and controlled batch ingestion
-
-Controlled benchmark:
-
-- One Piece Chapters 1–5
-- Naruto Chapters 1–5
-
-Remaining Scope v3 work:
-
-- Full dataset ingestion
-- Chapter metadata auditing
-- Comparison
-- Repair
-- Reporting
-- API exposure
-- Frontend integration
-- Dataset certification
-- Platform Checkpoint v3 certification
+Benchmark Definition
