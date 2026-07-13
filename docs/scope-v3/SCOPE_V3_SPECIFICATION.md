@@ -66,9 +66,26 @@ ChapterMetadata
 - [x] Chapter URL discovery
 - [x] Chapter metadata extractor
 - [x] Chapter metadata ingestion
+- [x] Controlled batch chapter ingestion
 - [ ] Scraper support
 - [ ] Comparison support
 - [ ] Repair support
 - [ ] Reporting support
 - [ ] API support
 - [ ] Frontend support
+
+## Controlled Batch Validation
+
+Controlled ingestion was validated across:
+
+- One Piece Chapters 1–5
+- Naruto Chapters 1–5
+
+Validation uncovered and resolved:
+
+- Partial chapter-number matching
+- Cross-work Naruto chapter ambiguity
+- Naruto Tankōbon section scoping
+- Noncanonical One Piece title extraction
+
+The final workflow stores official One Piece Viz titles and main-series Naruto chapter metadata without duplicates.

@@ -122,3 +122,18 @@ CLI
 → Strategy-Based Extractor
 → Repository
 → Chapter Metadata Database Table
+
+## Naruto Discovery Resolution
+
+Naruto chapter discovery is scoped to the `Tankōbon` section of the volume index.
+
+Chapter numbers are parsed from the leading numbered list-item prefix. This includes both Part I and Part II while excluding later spin-off manga sections such as Sasuke Retsuden.
+
+## Controlled Batch Result
+
+Validated:
+
+- One Piece Chapters 1–5
+- Naruto Chapters 1–5
+
+Existing records were updated in place, incorrect discovery results were corrected, and no duplicates were created.

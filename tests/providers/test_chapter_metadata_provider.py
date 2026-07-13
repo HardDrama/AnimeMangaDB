@@ -107,7 +107,11 @@ def test_factory_loads_naruto_configuration():
     assert provider.config.chapter_metadata is not None
     assert (
         provider.config.chapter_metadata.url_strategy
-        == "discovered_links"
+        == "numbered_list_items"
+    )
+    assert (
+        provider.config.chapter_metadata.index_section_id
+        == "Tankōbon"
     )
     assert (
         provider.config.chapter_metadata.chapter_path
