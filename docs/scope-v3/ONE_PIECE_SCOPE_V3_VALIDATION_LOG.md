@@ -193,3 +193,55 @@ The dataset has sufficient automated and manual evidence to proceed toward forma
 
 ```text
 docs/scope-v3/ONE_PIECE_SCOPE_V3_DATASET.md
+
+---
+
+## v0.57.9 — Final Dataset Validation
+
+### Database
+
+- Chapter records: 1188
+- Expected chapter range: 1–1188
+- Distinct chapters: 1188
+- Duplicate records: 0
+- Missing titles: 0
+- Missing manga arcs: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+
+### Dataset Audit
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Coverage completion: 100.00%
+- Missing chapters: 0
+
+### Manual Evidence
+
+- Samples reviewed: 30
+- Records found: 30
+- Title matches: 30
+- Manga-arc matches: 30
+- Valid source URLs: 30
+- Discrepancies: 0
+- Manual validation: PASS
+
+### Certification Eligibility
+
+- Certification failures: 0
+- Certification status: ELIGIBLE
+
+### Regression Validation
+
+- Backend tests: 167 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Final One Piece Scope v3 dataset validation:
+
+PASS
+
+The dataset is ready for formal certification.

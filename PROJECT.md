@@ -80,10 +80,29 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.57
+### v0.57 — One Piece Scope v3 Dataset
 
-One Piece Scope v3 Dataset
+Status:
+
+Final Validation Passed
+
+Completed:
+
+- Benchmark definition
+- Scope v3 chapter metadata audit
+- Full-range ingestion preflight
+- Chapters 1–1188 ingestion
+- Metadata integrity validation
+- Coverage integrity validation
+- Representative manual source validation
+- Certification eligibility audit
+- Dataset documentation
+- Final dataset validation
 
 Current phase:
 
-Benchmark Definition
+Formal dataset certification
+
+Next:
+
+Certify the One Piece Scope v3 dataset
