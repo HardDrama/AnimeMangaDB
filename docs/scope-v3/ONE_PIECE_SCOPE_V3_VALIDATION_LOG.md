@@ -105,3 +105,34 @@ Dataset status:
 PASS
 
 The stored dataset contains every expected chapter from 1 through 1188 exactly once, and every record satisfies the required Scope v3 metadata fields.
+
+---
+
+## v0.57.6 — Representative Manual Source Validation
+
+### Sample
+
+- Chapters reviewed: 30
+- Dataset range represented: 1–1188
+- Manifest: `reports/one_piece_scope_v3_manual_validation.json`
+
+### Fields Reviewed
+
+- Chapter number
+- Official Viz title
+- Manga arc
+- Canonical source URL
+
+### Results
+
+- Chapter-number matches: 30 / 30
+- Viz-title matches: 30 / 30
+- Manga-arc matches: 30 / 30
+- Valid source URLs: 30 / 30
+- Discrepancies: 0
+
+### Result
+
+Manual source validation:
+
+PASS

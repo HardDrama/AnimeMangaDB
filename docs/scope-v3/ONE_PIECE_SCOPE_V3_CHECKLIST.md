@@ -32,7 +32,11 @@
 
 - [x] Full-range coverage audit passes
 - [x] Metadata audit passes
-- [ ] Manual spot validation completed
+- [x] Manual spot validation completed
+- [x] Representative records sampled across Chapters 1–1188
+- [x] Official Viz titles manually compared
+- [x] Manga arcs manually compared
+- [x] Source URLs manually validated
 - [ ] Regression tests pass
 - [ ] Dataset certification completed
 

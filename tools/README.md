@@ -373,7 +373,6 @@ The JSON report includes:
 - Per-episode repair results
 - Status totals
 - Field totals
-```
 
 ---
 
@@ -480,3 +479,27 @@ Dry-run mode does not:
 - Fetch individual chapter pages
 - Extract live chapter metadata
 - Create or update database records
+
+---
+
+## Scope v3 Manual Validation Manifest
+
+Export selected records for representative manual source review:
+
+```bash
+python -m tools.export_scope_v3_samples \
+    --anime "One Piece" \
+    --chapters "1,50,100,500,1000,1188" \
+    --json-report reports/one_piece_scope_v3_manual_validation.json
+```
+
+The manifest includes:
+
+- Stored chapter number
+- Stored chapter title
+- Stored manga arc
+- Source URL
+- Last-updated timestamp
+- Manual validation fields
+
+The exporter does not fetch remote pages or modify database records.
