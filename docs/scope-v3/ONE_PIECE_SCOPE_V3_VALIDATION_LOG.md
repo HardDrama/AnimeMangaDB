@@ -70,3 +70,38 @@ Validate the complete One Piece chapter ingestion plan before starting the long-
 The full One Piece chapter range is ready for controlled live ingestion.
 
 No database records were created or updated during this validation.
+
+---
+
+## v0.57.5 — Full-Range Integrity Validation
+
+### Expected Dataset
+
+- Start chapter: 1
+- End chapter: 1188
+- Expected chapter count: 1188
+
+### Metadata Integrity
+
+- Chapter records: 1188
+- Missing titles: 0
+- Missing manga arcs: 0
+- Missing source URLs: 0
+- Missing last-updated timestamps: 0
+- Duplicate chapter numbers: 0
+- Metadata audit status: PASS
+
+### Coverage Integrity
+
+- Expected chapters: 1188
+- Missing chapter numbers: 0
+- Coverage completion: 100.00%
+- Coverage audit status: PASS
+
+### Dataset Result
+
+Dataset status:
+
+PASS
+
+The stored dataset contains every expected chapter from 1 through 1188 exactly once, and every record satisfies the required Scope v3 metadata fields.

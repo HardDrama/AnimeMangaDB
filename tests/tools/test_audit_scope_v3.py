@@ -104,7 +104,8 @@ def test_complete_dataset_passes(
         == 100.0
     )
     assert report["duplicate_chapters"] == 0
-    assert report["audit_status"] == "PASS"
+    assert report["metadata_audit_status"] == "PASS"
+    assert report["coverage_audit_status"] == "NOT EVALUATED"
     assert report["dataset_status"] == "IN PROGRESS"
 
 
@@ -264,6 +265,10 @@ def test_cli_writes_json_report(
             "audit_scope_v3",
             "--anime",
             "One Piece",
+            "--expected-start",
+            "1",
+            "--expected-end",
+            "1",
             "--json-report",
             str(report_path),
         ],
@@ -286,3 +291,153 @@ def test_cli_writes_json_report(
     assert report["anime"] == "One Piece"
     assert report["chapter_records"] == 1
     assert report["audit_status"] == "PASS"
+
+    assert report["coverage_audit_status"] == "PASS"
+    assert report["dataset_status"] == "PASS"
+
+def test_finds_missing_chapter_numbers():
+    missing = (
+        audit_scope_v3
+        .find_missing_chapter_numbers(
+            chapter_numbers=[
+                1,
+                2,
+                4,
+                6,
+            ],
+            expected_start=1,
+            expected_end=6,
+        )
+    )
+
+    assert missing == [3, 5]
+
+def test_complete_expected_range_passes(
+    session: Session,
+):
+    anime = create_anime(session)
+
+    for chapter_number in range(
+        1,
+        6,
+    ):
+        create_chapter(
+            session=session,
+            anime=anime,
+            chapter_number=chapter_number,
+        )
+
+    report = (
+        audit_scope_v3
+        .build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=1,
+            expected_end=5,
+        )
+    )
+
+    assert (
+        report["expected_chapter_count"]
+        == 5
+    )
+    assert report["missing_chapters"] == 0
+    assert (
+        report["missing_chapter_numbers"]
+        == []
+    )
+    assert (
+        report["coverage_completion"]
+        == 100.0
+    )
+    assert (
+        report["coverage_audit_status"]
+        == "PASS"
+    )
+    assert report["dataset_status"] == "PASS"
+
+def test_missing_expected_chapters_are_reported(
+    session: Session,
+):
+    anime = create_anime(session)
+
+    for chapter_number in [
+        1,
+        2,
+        4,
+        5,
+    ]:
+        create_chapter(
+            session=session,
+            anime=anime,
+            chapter_number=chapter_number,
+        )
+
+    report = (
+        audit_scope_v3
+        .build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=1,
+            expected_end=5,
+        )
+    )
+
+    assert report["missing_chapters"] == 1
+    assert (
+        report["missing_chapter_numbers"]
+        == [3]
+    )
+    assert (
+        report["coverage_completion"]
+        == 80.0
+    )
+    assert (
+        report["coverage_audit_status"]
+        == "IN PROGRESS"
+    )
+    assert (
+        report["metadata_audit_status"]
+        == "PASS"
+    )
+    assert (
+        report["dataset_status"]
+        == "IN PROGRESS"
+    )
+
+def test_expected_range_requires_both_bounds(
+    session: Session,
+):
+    create_anime(session)
+
+    with pytest.raises(
+        ValueError,
+        match=(
+            "Expected end chapter is required"
+        ),
+    ):
+        audit_scope_v3.build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=1,
+        )
+
+
+def test_expected_range_rejects_reversed_bounds(
+    session: Session,
+):
+    create_anime(session)
+
+    with pytest.raises(
+        ValueError,
+        match=(
+            "Expected start chapter must be "
+            "less than or equal to expected end"
+        ),
+    ):
+        audit_scope_v3.build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=5,
+            expected_end=1,
+        )

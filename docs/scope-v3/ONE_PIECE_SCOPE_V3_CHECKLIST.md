@@ -11,28 +11,30 @@
 
 ## Dataset
 
-- [ ] All manga chapters imported
-- [ ] Chapter numbers complete
-- [ ] Official Viz titles complete
-- [ ] Manga arcs complete
+- [x] All manga chapters imported
+- [x] Chapter numbers complete
+- [x] Official Viz titles complete
+- [x] Manga arcs complete
 
 ---
 
 ## Integrity
 
-- [ ] No duplicate chapters
-- [ ] No missing chapter numbers
-- [ ] Chapter numbers sequential
-- [ ] Source URLs populated
-- [ ] Last updated timestamps populated
+- [x] No duplicate chapters
+- [x] No missing chapter numbers
+- [x] Chapter numbers sequential
+- [x] Source URLs populated
+- [x] Last updated timestamps populated
 
 ---
 
 ## Validation
 
-- [ ] Metadata audit passes
+- [x] Full-range coverage audit passes
+- [x] Metadata audit passes
 - [ ] Manual spot validation completed
 - [ ] Regression tests pass
+- [ ] Dataset certification completed
 
 ---
 

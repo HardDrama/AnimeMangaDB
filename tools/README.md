@@ -216,6 +216,31 @@ Dataset Status: IN PROGRESS
 
 until the complete intended chapter range has been imported, audited, validated, and certified.
 
+### Full-Range Coverage Audit
+
+Validate both metadata quality and expected chapter coverage:
+
+```bash
+python -m tools.audit_scope_v3 \
+    --anime "One Piece" \
+    --expected-start 1 \
+    --expected-end 1188 \
+    --json-report reports/one_piece_scope_v3_audit.json
+```
+
+The full-range audit evaluates:
+
+- Required metadata on stored records
+- Expected chapter count
+- Missing chapter numbers
+- Duplicate chapter numbers
+- Coverage completion
+
+A dataset receives `PASS` only when:
+
+- Metadata audit status is `PASS`
+- Coverage audit status is `PASS`
+
 ---
 
 # Metadata Comparison

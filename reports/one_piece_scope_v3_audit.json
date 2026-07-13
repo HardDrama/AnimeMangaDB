@@ -21,7 +21,15 @@
   "missing_arc_chapters": [],
   "missing_source_url_chapters": [],
   "missing_last_updated_chapters": [],
+  "metadata_audit_status": "PASS",
   "audit_status": "PASS",
-  "dataset_status": "IN PROGRESS",
-  "generated_at": "2026-07-13T15:45:20.303654"
+  "expected_start_chapter": 1,
+  "expected_end_chapter": 1188,
+  "expected_chapter_count": 1188,
+  "missing_chapters": 0,
+  "missing_chapter_numbers": [],
+  "coverage_completion": 100.0,
+  "coverage_audit_status": "PASS",
+  "dataset_status": "PASS",
+  "generated_at": "2026-07-13T16:36:05.283772"
 }

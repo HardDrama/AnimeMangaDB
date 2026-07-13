@@ -41,9 +41,30 @@ def find_duplicate_chapter_numbers(
     )
 
 
+def find_missing_chapter_numbers(
+    chapter_numbers: list[int],
+    expected_start: int,
+    expected_end: int,
+) -> list[int]:
+    existing_numbers = set(
+        chapter_numbers
+    )
+
+    return [
+        chapter_number
+        for chapter_number in range(
+            expected_start,
+            expected_end + 1,
+        )
+        if chapter_number not in existing_numbers
+    ]
+
+
 def build_scope_v3_report(
     session: Session,
     anime_title: str,
+    expected_start: int | None = None,
+    expected_end: int | None = None,
 ) -> dict:
     anime = session.execute(
         select(Anime)
@@ -53,6 +74,34 @@ def build_scope_v3_report(
     if anime is None:
         raise ValueError(
             f'Anime not found: "{anime_title}"'
+        )
+    
+    if (
+        expected_start is None
+        and expected_end is not None
+    ):
+        raise ValueError(
+            "Expected start chapter is required "
+            "when expected end chapter is provided."
+        )
+
+    if (
+        expected_start is not None
+        and expected_end is None
+    ):
+        raise ValueError(
+            "Expected end chapter is required "
+            "when expected start chapter is provided."
+        )
+
+    if (
+        expected_start is not None
+        and expected_end is not None
+        and expected_start > expected_end
+    ):
+        raise ValueError(
+            "Expected start chapter must be less than "
+            "or equal to expected end chapter."
         )
 
     chapters = session.execute(
@@ -111,6 +160,50 @@ def build_scope_v3_report(
         )
     )
 
+    expected_chapter_count = None
+    missing_chapter_numbers = []
+    coverage_completion = None
+    coverage_audit_status = "NOT EVALUATED"
+
+    if (
+        expected_start is not None
+        and expected_end is not None
+    ):
+        expected_chapter_count = (
+            expected_end
+            - expected_start
+            + 1
+        )
+
+        missing_chapter_numbers = (
+            find_missing_chapter_numbers(
+                chapter_numbers=chapter_numbers,
+                expected_start=expected_start,
+                expected_end=expected_end,
+            )
+        )
+
+        covered_chapter_count = (
+            expected_chapter_count
+            - len(missing_chapter_numbers)
+        )
+
+        coverage_completion = (
+            calculate_completion(
+                covered_chapter_count,
+                expected_chapter_count,
+            )
+        )
+
+        coverage_audit_status = (
+            "PASS"
+            if (
+                not missing_chapter_numbers
+                and not duplicate_chapter_numbers
+            )
+            else "IN PROGRESS"
+        )
+
     title_complete = (
         chapter_records
         - len(missing_title_chapters)
@@ -152,7 +245,7 @@ def build_scope_v3_report(
     )
 
     if chapter_records == 0:
-        audit_status = "IN PROGRESS"
+        metadata_audit_status = "IN PROGRESS"
 
     elif (
         title_completion == 100.0
@@ -161,10 +254,19 @@ def build_scope_v3_report(
         and last_updated_completion == 100.0
         and not duplicate_chapter_numbers
     ):
-        audit_status = "PASS"
+        metadata_audit_status = "PASS"
 
     else:
-        audit_status = "IN PROGRESS"
+        metadata_audit_status = "IN PROGRESS"
+
+    if (
+        metadata_audit_status == "PASS"
+        and coverage_audit_status == "PASS"
+    ):
+        dataset_status = "PASS"
+
+    else:
+        dataset_status = "IN PROGRESS"
 
     return {
         "schema_version": 1,
@@ -217,8 +319,28 @@ def build_scope_v3_report(
         "missing_last_updated_chapters": (
             missing_last_updated_chapters
         ),
-        "audit_status": audit_status,
-        "dataset_status": "IN PROGRESS",
+        "metadata_audit_status": (
+            metadata_audit_status
+        ),
+        "audit_status": metadata_audit_status,
+        "expected_start_chapter": expected_start,
+        "expected_end_chapter": expected_end,
+        "expected_chapter_count": (
+            expected_chapter_count
+        ),
+        "missing_chapters": len(
+            missing_chapter_numbers
+        ),
+        "missing_chapter_numbers": (
+            missing_chapter_numbers
+        ),
+        "coverage_completion": (
+            coverage_completion
+        ),
+        "coverage_audit_status": (
+            coverage_audit_status
+        ),
+        "dataset_status": dataset_status,
         "generated_at": datetime.now().isoformat(),
     }
 
@@ -302,7 +424,48 @@ def print_scope_v3_report(
     print()
     print(
         f"Metadata Audit Status : "
-        f"{report['audit_status']}"
+        f"{report['metadata_audit_status']}"
+    )
+
+    print()
+    print("Coverage")
+    print("--------")
+
+    if (
+        report["expected_chapter_count"]
+        is None
+    ):
+        print(
+            "Expected Range        : "
+            "Not supplied"
+        )
+        print(
+            "Coverage Completion   : "
+            "Not evaluated"
+        )
+
+    else:
+        print(
+            f"Expected Range        : "
+            f"{report['expected_start_chapter']}"
+            f"–{report['expected_end_chapter']}"
+        )
+        print(
+            f"Expected Chapters     : "
+            f"{report['expected_chapter_count']}"
+        )
+        print(
+            f"Missing Chapters      : "
+            f"{report['missing_chapters']}"
+        )
+        print(
+            f"Coverage Completion   : "
+            f"{report['coverage_completion']:.2f}%"
+        )
+
+    print(
+        f"Coverage Audit Status : "
+        f"{report['coverage_audit_status']}"
     )
     print(
         f"Dataset Status        : "
@@ -329,6 +492,10 @@ def print_scope_v3_report(
         (
             "Duplicate Chapter Numbers",
             report["duplicate_chapter_numbers"],
+        ),
+        (
+            "Missing Chapter Numbers",
+            report["missing_chapter_numbers"],
         ),
     ]
 
@@ -364,6 +531,26 @@ def main():
     )
 
     parser.add_argument(
+        "--expected-start",
+        type=int,
+        default=None,
+        help=(
+            "First expected chapter number for "
+            "full-range coverage validation."
+        ),
+    )
+
+    parser.add_argument(
+        "--expected-end",
+        type=int,
+        default=None,
+        help=(
+            "Last expected chapter number for "
+            "full-range coverage validation."
+        ),
+    )
+
+    parser.add_argument(
         "--json-report",
         type=str,
         default=None,
@@ -379,6 +566,8 @@ def main():
             report = build_scope_v3_report(
                 session=session,
                 anime_title=args.anime,
+                expected_start=args.expected_start,
+                expected_end=args.expected_end,
             )
 
         except ValueError as error:
