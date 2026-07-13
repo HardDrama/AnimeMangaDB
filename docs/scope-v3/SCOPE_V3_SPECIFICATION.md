@@ -89,3 +89,26 @@ Validation uncovered and resolved:
 - Noncanonical One Piece title extraction
 
 The final workflow stores official One Piece Viz titles and main-series Naruto chapter metadata without duplicates.
+
+---
+
+## Scope v3 Foundation Certification
+
+The foundational chapter metadata pipeline has been completed and validated across One Piece and Naruto.
+
+Certified foundation:
+
+- Database model
+- Domain model
+- Repository
+- Provider framework
+- URL discovery
+- Metadata extraction
+- Single ingestion
+- Controlled batch ingestion
+
+The foundation does not certify complete Scope v3 datasets.
+
+Status:
+
+✅ Certified

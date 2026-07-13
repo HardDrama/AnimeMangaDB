@@ -84,15 +84,42 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 Status: Certified
 
-Scope v2 is supported end to end across the platform.
+Certified Scope v2 datasets:
+
+- One Piece
+- Naruto
 
 ### Multi-Series Foundation
 
 Status: Certified
 
-Certified datasets:
+### Scope v3 Foundation
 
-- One Piece Scope v2
-- Naruto Scope v2
+Status: Certified
 
-Both datasets use the same scraper, database, validation, repair, API, and frontend architecture.
+Validated capabilities:
+
+- Chapter metadata database model
+- Chapter metadata domain model
+- Repository persistence
+- Multi-series chapter providers
+- One Piece and Naruto URL discovery
+- Chapter title and manga arc extraction
+- Single and controlled batch ingestion
+
+Controlled benchmark:
+
+- One Piece Chapters 1–5
+- Naruto Chapters 1–5
+
+Remaining Scope v3 work:
+
+- Full dataset ingestion
+- Chapter metadata auditing
+- Comparison
+- Repair
+- Reporting
+- API exposure
+- Frontend integration
+- Dataset certification
+- Platform Checkpoint v3 certification
