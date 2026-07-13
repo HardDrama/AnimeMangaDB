@@ -8,7 +8,7 @@ Certification eligibility:
 
 Formal dataset certification:
 
-⬜ Pending
+✅ CERTIFIED
 
 ---
 
@@ -345,6 +345,18 @@ The complete One Piece Scope v3 dataset satisfies all automated and representati
 
 Status:
 
-✅ Certification Eligible
+Status:
 
-Formal certification remains pending v0.57.10.
+✅ One Piece Scope v3 Dataset Certified
+
+---
+
+## Certification Scope
+
+This certification applies to:
+
+- One Piece
+- Chapters 1–1188
+- Chapter metadata defined by Scope v3
+
+The certification does not automatically extend to chapters published after Chapter 1188.

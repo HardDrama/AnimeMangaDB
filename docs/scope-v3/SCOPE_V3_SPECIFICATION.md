@@ -41,93 +41,31 @@ Scope v3 adds:
 
 ---
 
-## Data Model
+## One Piece Scope v3 Dataset Implementation
 
-Scope v3 should represent chapter metadata independently from episode mappings.
+Certified range:
 
-```text
-Anime
-  ↓
-Episode
-  ↓
-EpisodeChapter
-  ↓
-ChapterMetadata
+- Chapters 1–1188
+- Certified records: 1188
 
----
+Certified metadata:
 
-## Scope v3 Foundation Progress
+- Chapter number
+- Official Viz title
+- Manga arc
+- Canonical source URL
+- Last-updated timestamp
 
-- [x] Scope v3 specification
-- [x] Chapter metadata database model
-- [x] Chapter metadata repository
-- [x] Chapter metadata domain model
-- [x] Chapter metadata provider framework
-- [x] Chapter URL discovery
-- [x] Chapter metadata extractor
-- [x] Chapter metadata ingestion
-- [x] Controlled batch chapter ingestion
-- [ ] Scraper support
-- [ ] Comparison support
-- [ ] Repair support
-- [ ] Reporting support
-- [ ] API support
-- [ ] Frontend support
+Certification evidence:
 
-## Controlled Batch Validation
-
-Controlled ingestion was validated across:
-
-- One Piece Chapters 1–5
-- Naruto Chapters 1–5
-
-Validation uncovered and resolved:
-
-- Partial chapter-number matching
-- Cross-work Naruto chapter ambiguity
-- Naruto Tankōbon section scoping
-- Noncanonical One Piece title extraction
-
-The final workflow stores official One Piece Viz titles and main-series Naruto chapter metadata without duplicates.
-
----
-
-## Scope v3 Foundation Certification
-
-The foundational chapter metadata pipeline has been completed and validated across One Piece and Naruto.
-
-Certified foundation:
-
-- Database model
-- Domain model
-- Repository
-- Provider framework
-- URL discovery
-- Metadata extraction
-- Single ingestion
-- Controlled batch ingestion
-
-The foundation does not certify complete Scope v3 datasets.
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual source validation: PASS
+- Final validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
 
 Status:
 
 ✅ Certified
-
-## One Piece Scope v3 Benchmark
-
-Target dataset:
-
-- Complete chapter coverage
-- Official Viz English titles
-- Manga arcs
-- Canonical source URLs
-
-Validation will require:
-
-- Automated audit
-- Manual verification
-- Regression testing
-
-Status:
-
-In Progress

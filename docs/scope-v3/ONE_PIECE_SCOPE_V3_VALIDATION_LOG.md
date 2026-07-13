@@ -245,3 +245,46 @@ Final One Piece Scope v3 dataset validation:
 PASS
 
 The dataset is ready for formal certification.
+
+---
+
+## v0.57.10 — One Piece Scope v3 Dataset Certification
+
+### Certified Dataset
+
+- Anime: One Piece
+- Chapter range: 1–1188
+- Certified chapter records: 1188
+
+### Certification Evidence
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual source validation: PASS
+- Final dataset validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+### Integrity
+
+- Missing chapter numbers: 0
+- Duplicate chapter records: 0
+- Missing titles: 0
+- Missing manga arcs: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+
+### Regression Validation
+
+- Backend tests: 167 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Certification Result
+
+✅ One Piece Scope v3 Dataset Certified
+
+The certified target is fixed at Chapters 1–1188 for this certification cycle.
+
+Future One Piece chapters require a new ingestion and revalidation cycle.

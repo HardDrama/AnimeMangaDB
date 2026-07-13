@@ -160,3 +160,29 @@ Final validation status:
 - Skipped: [ACTUAL]
 - Failed: 0
 - Successful report statuses: 12 / 12
+
+---
+
+## Certification Result
+
+The final validation passed without unresolved metadata, coverage, integrity, source-validation, regression, or evidence failures.
+
+Certified dataset:
+
+One Piece Scope v3
+
+Certified range:
+
+Chapters 1–1188
+
+Certified records:
+
+1188
+
+Certification status:
+
+**CERTIFIED**
+
+Certification date:
+
+[CURRENT DATE]
