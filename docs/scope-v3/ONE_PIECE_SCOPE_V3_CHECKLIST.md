@@ -1,5 +1,14 @@
 # One Piece Scope v3 Checklist
 
+## Full Dataset Ingestion
+
+- [x] Full chapter range verified
+- [x] Dry-run preflight completed
+- [x] Existing controlled records detected
+- [x] Planned URLs generated
+- [x] Zero unresolved planned URLs
+- [ ] Full live ingestion completed
+
 ## Dataset
 
 - [ ] All manga chapters imported

@@ -428,3 +428,30 @@ Pre-v1.0 priorities:
 - API and basic lookup website
 
 Additional anime metadata such as air dates, staff, thumbnails, and streaming metadata are considered post-v1.0 enhancements.
+
+### Ingestion Preflight
+
+Preview a chapter range without fetching chapter pages or writing to the database:
+
+```bash
+python -m tools.ingest_chapter_metadata \
+    --anime "One Piece" \
+    --start-chapter 1 \
+    --end-chapter 100 \
+    --dry-run
+```
+
+Dry-run mode reports:
+
+- Chapters selected
+- Existing records
+- Records that would be inserted
+- Records that would be updated
+- Planned source URLs
+- Unresolved chapter URLs
+
+Dry-run mode does not:
+
+- Fetch individual chapter pages
+- Extract live chapter metadata
+- Create or update database records

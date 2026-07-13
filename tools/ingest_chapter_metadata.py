@@ -57,6 +57,15 @@ def main():
         help="Last chapter number in a controlled range.",
     )
 
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help=(
+            "Preview chapter ingestion without fetching "
+            "chapter pages or writing to the database."
+        ),
+    )
+
     args = parser.parse_args()
 
     if (
@@ -135,7 +144,11 @@ def main():
             config_path
         )
 
-        browser_client = BrowserClient()
+        browser_client = (
+            None
+            if args.dry_run
+            else BrowserClient()
+        )
 
         discovery_service = (
             ChapterUrlDiscoveryService(
@@ -143,6 +156,81 @@ def main():
                 browser_client=browser_client,
             )
         )
+
+        if args.dry_run:
+            existing_count = 0
+            insert_count = 0
+            update_count = 0
+            unresolved_urls = []
+
+            total = len(chapter_numbers)
+
+            print("Chapter Metadata Ingestion Preflight")
+            print("------------------------------------")
+            print(f"Series            : {anime.title}")
+            print(f"Chapters Selected : {total}")
+            print("Database Writes    : DISABLED")
+            print("Chapter Fetching   : DISABLED")
+            print()
+
+            for index, chapter_number in enumerate(
+                chapter_numbers,
+                start=1,
+            ):
+                existing = repository.get_chapter_metadata(
+                    anime_id=anime.id,
+                    chapter_number=chapter_number,
+                )
+
+                if existing is None:
+                    status = "Would Insert"
+                    insert_count += 1
+                else:
+                    status = "Would Update"
+                    existing_count += 1
+                    update_count += 1
+
+                source_url = discovery_service.discover_url(
+                    chapter_number
+                )
+
+                if source_url is None:
+                    unresolved_urls.append(
+                        chapter_number
+                    )
+
+                print(
+                    f"[{index}/{total}] "
+                    f"Chapter {chapter_number}"
+                )
+                print(
+                    f"  Source: "
+                    f"{source_url or 'Not discovered'}"
+                )
+                print(f"  Status: {status}")
+                print()
+
+            print("Preflight Summary")
+            print("-----------------")
+            print(f"Series            : {anime.title}")
+            print(f"Chapters Selected : {total}")
+            print(f"Existing Records  : {existing_count}")
+            print(f"Would Insert      : {insert_count}")
+            print(f"Would Update      : {update_count}")
+            print(
+                f"Unresolved URLs   : "
+                f"{len(unresolved_urls)}"
+            )
+
+            if unresolved_urls:
+                print("Unresolved Chapters:")
+
+                for chapter_number in unresolved_urls:
+                    print(
+                        f"  Chapter {chapter_number}"
+                    )
+
+            return
 
         provider = create_chapter_metadata_provider(
             provider_name=anime.provider,
