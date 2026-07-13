@@ -136,3 +136,36 @@ The stored dataset contains every expected chapter from 1 through 1188 exactly o
 Manual source validation:
 
 PASS
+
+---
+
+## v0.57.7 — Certification Eligibility Audit
+
+### Evidence Evaluated
+
+- Full metadata audit
+- Full-range coverage audit
+- Representative manual source validation
+
+### Dataset
+
+- Anime: One Piece
+- Expected range: Chapters 1–1188
+- Expected chapter records: 1188
+- Manual samples reviewed: 30
+
+### Results
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual validation: PASS
+- Certification failures: 0
+
+### Certification Eligibility
+
+Status:
+
+ELIGIBLE
+
+The dataset has sufficient automated and manual evidence to proceed toward formal Scope v3 dataset certification.

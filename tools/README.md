@@ -503,3 +503,32 @@ The manifest includes:
 - Manual validation fields
 
 The exporter does not fetch remote pages or modify database records.
+
+---
+
+## Scope v3 Dataset Certification Audit
+
+Evaluate whether a Scope v3 dataset has sufficient evidence for certification:
+
+```bash
+python -m tools.certify_scope_v3_dataset \
+    --anime "One Piece" \
+    --expected-start 1 \
+    --expected-end 1188 \
+    --audit-report reports/one_piece_scope_v3_audit.json \
+    --manual-report reports/one_piece_scope_v3_manual_validation.json \
+    --json-report reports/one_piece_scope_v3_certification.json
+```
+
+Certification eligibility requires:
+
+- Metadata audit status: `PASS`
+- Coverage audit status: `PASS`
+- Dataset audit status: `PASS`
+- Manual validation status: `PASS`
+- Every sampled title validated
+- Every sampled manga arc validated
+- Every sampled source URL validated
+- Zero unresolved certification failures
+
+`ELIGIBLE` means the evidence supports certification. It does not itself modify project documentation or certify the dataset.
