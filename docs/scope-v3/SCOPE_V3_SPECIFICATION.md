@@ -69,3 +69,21 @@ Certification evidence:
 Status:
 
 ✅ Certified
+
+---
+
+## Naruto Scope v3 Dataset
+
+Status:
+
+Benchmark Definition
+
+Implementation:
+
+Pending
+
+Target:
+
+Complete certified Naruto chapter metadata dataset.
+
+Current benchmark values remain under validation.

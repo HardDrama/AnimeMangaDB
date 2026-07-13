@@ -88,14 +88,22 @@ Future  Platform Checkpoint v3
 
 ### v0.58 — Naruto Scope v3 Dataset
 
-Status:
+Status
 
-Planned
+Benchmark Definition
 
-Next phase:
+Completed
+
+- Project planning
+
+Current
 
 - Benchmark definition
-- Full Naruto chapter metadata ingestion
-- Gap analysis
+
+Next
+
+- Canonical source verification
+- Expected chapter range
+- Dataset ingestion
 - Validation
 - Certification
