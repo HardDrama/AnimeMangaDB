@@ -53,6 +53,21 @@
 
 ---
 
+## Documentation
+
+- [x] Dataset definition documented
+- [x] Source provenance documented
+- [x] Canonical metadata rules documented
+- [x] Ingestion workflow documented
+- [x] Audit evidence documented
+- [x] Manual validation documented
+- [x] Certification eligibility documented
+- [x] Reports indexed
+- [ ] Final dataset validation completed
+- [ ] Dataset certified
+
+---
+
 ## Status
 
 Scope v3 Dataset

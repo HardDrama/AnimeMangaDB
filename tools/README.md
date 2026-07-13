@@ -532,3 +532,37 @@ Certification eligibility requires:
 - Zero unresolved certification failures
 
 `ELIGIBLE` means the evidence supports certification. It does not itself modify project documentation or certify the dataset.
+
+---
+
+## One Piece Scope v3 Evidence
+
+Dataset documentation:
+
+```text
+docs/scope-v3/ONE_PIECE_SCOPE_V3_DATASET.md
+```
+
+Validation log:
+
+```text
+docs/scope-v3/ONE_PIECE_SCOPE_V3_VALIDATION_LOG.md
+```
+
+Manual review:
+
+```text
+docs/scope-v3/ONE_PIECE_SCOPE_V3_MANUAL_REVIEW.md
+```
+
+Machine-readable reports:
+
+```text
+reports/
+```
+
+Current certification target:
+
+```text
+One Piece Chapters 1–1188
+```

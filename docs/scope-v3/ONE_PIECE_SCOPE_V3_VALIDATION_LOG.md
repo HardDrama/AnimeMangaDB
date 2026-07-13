@@ -169,3 +169,27 @@ Status:
 ELIGIBLE
 
 The dataset has sufficient automated and manual evidence to proceed toward formal Scope v3 dataset certification.
+
+---
+
+## v0.57.8 — Dataset Documentation Completion
+
+### Documentation Added
+
+- Complete dataset definition
+- Source provenance
+- Canonical metadata rules
+- Ingestion architecture
+- Full import result
+- Automated audit result
+- Representative manual validation result
+- Certification eligibility result
+- Report inventory
+- Scope boundaries
+- Known limitations
+- Revalidation commands
+
+### Dataset Document
+
+```text
+docs/scope-v3/ONE_PIECE_SCOPE_V3_DATASET.md
