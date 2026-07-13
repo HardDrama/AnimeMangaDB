@@ -174,6 +174,50 @@ The audit reports:
 
 ---
 
+## Scope v3 Chapter Metadata Audit
+
+Audit the stored chapter metadata for a series:
+
+```bash
+python -m tools.audit_scope_v3 --anime "One Piece"
+```
+
+Write a JSON report:
+
+```bash
+python -m tools.audit_scope_v3 \
+    --anime "One Piece" \
+    --json-report one_piece_scope_v3_audit.json
+```
+
+The audit evaluates:
+
+- Chapter-title completion
+- Manga-arc completion
+- Source-URL completion
+- Last-updated completion
+- Duplicate chapter numbers
+
+### Audit Status
+
+`PASS` means every currently stored chapter record contains the required Scope v3 metadata and no duplicate chapter numbers were detected.
+
+`IN PROGRESS` means one or more stored records contain unresolved metadata gaps, or the selected series has no chapter metadata records.
+
+### Dataset Status
+
+The metadata audit status does not, by itself, certify complete chapter coverage.
+
+During the One Piece Scope v3 import phase, the report continues to show:
+
+```text
+Dataset Status: IN PROGRESS
+```
+
+until the complete intended chapter range has been imported, audited, validated, and certified.
+
+---
+
 # Metadata Comparison
 
 These tools compare stored database metadata against live Fandom metadata.

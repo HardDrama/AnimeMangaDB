@@ -130,3 +130,9 @@ Full One Piece and Naruto chapter-metadata population, repair, reporting, API ex
 ## Status
 
 ✅ Scope v3 Foundation Certified
+
+## Audit Foundation
+
+- [x] Scope v3 chapter metadata audit tool
+- [x] Controlled Chapters 1–5 baseline recorded
+- [ ] Complete dataset audit passes
