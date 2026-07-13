@@ -1,111 +1,91 @@
-# 🗺 AnimeMangaDB Roadmap
+# Roadmap
 
-## ✅ Certified
+## Certified
 
 ### Platform Checkpoint v2
+✅ Certified
 
-✔ Backend
+Components
 
-✔ Database
+- Backend
+- Database
+- Comparison
+- Repair
+- Reports
+- Metadata Override Framework
+- API
 
-✔ Comparison
+Benchmark Dataset
 
-✔ Repair
-
-✔ Reports
-
-✔ Metadata Override Framework
-
-✔ API
-
-✔ Benchmark Dataset
-
-✔ Frontend
+- One Piece Scope v2 (100%)
 
 ---
-
-### Multi-Series Foundation
-
-✔ One Piece
-
-✔ Naruto
-
----
-
-### Scope v3 Foundation
-
-✔ Chapter Metadata Database
-
-✔ Domain Model
-
-✔ Repository
-
-✔ Provider Framework
-
-✔ URL Discovery
-
-✔ Metadata Extraction
-
-✔ Chapter Metadata Ingestion
-
-✔ Controlled Batch Ingestion
-
-✔ Validation
-
----
-
-# 🚧 Current
-
-## v0.57
 
 ### One Piece Scope v3 Dataset
+✅ Certified
 
-Audit
+Certified Range
 
-→ Full Chapter Metadata Ingestion
+- Chapters 1–1188
 
-→ Metadata Repair
+Certified Records
 
-→ Validation
+- 1188 chapter metadata records
 
-→ Certification
+Certified Metadata
+
+- Chapter Number
+- Official Viz English Title
+- Manga Arc
+- Canonical Source URL
+- Last Updated Timestamp
+
+Evidence
+
+- Metadata Audit: PASS
+- Coverage Audit: PASS
+- Dataset Audit: PASS
+- Manual Source Validation: PASS
+- Final Dataset Validation: PASS
+- Certification Eligibility: ELIGIBLE
+- Certification Failures: 0
+
+Regression
+
+- Backend: 167 tests passed
+- Frontend build: PASS
+- Frontend lint: PASS
 
 ---
 
-# 🔜 Next
+## Current
 
-## v0.58
+### v0.58 — Naruto Scope v3 Dataset
 
-### Naruto Scope v3 Dataset
+Status
 
-Audit
+🚧 Planned
 
-→ Full Chapter Metadata Ingestion
+Objectives
 
-→ Metadata Repair
-
-→ Validation
-
-→ Certification
+- Define Naruto Scope v3 benchmark
+- Analyze chapter metadata sources
+- Validate numbered-list discovery strategy
+- Import complete Naruto chapter metadata dataset
+- Perform automated audits
+- Perform representative manual validation
+- Certify Naruto Scope v3 dataset
 
 ---
 
-# 🔮 Future
+## Future
 
-## Platform Checkpoint v3
+### Platform Checkpoint v3
 
-Certified Scope v3 Platform
+Requirements
 
-Includes:
-
-✔ One Piece Scope v3
-
-✔ Naruto Scope v3
-
-✔ Chapter Metadata API
-
-✔ Frontend Chapter Metadata Integration
-
-✔ Dataset Certification
-
-✔ Platform Certification
+- One Piece Scope v3 Certified
+- Naruto Scope v3 Certified
+- Multi-series validation framework
+- Cross-series benchmark certification
+- Platform-wide Scope v3 certification

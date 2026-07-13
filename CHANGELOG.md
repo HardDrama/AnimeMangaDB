@@ -2136,3 +2136,105 @@ Resolved during validation:
 Next:
 
 ➡ v0.57 — One Piece Scope v3 Dataset
+
+# AnimeMangaDB v0.57
+## One Piece Scope v3 Dataset (CERTIFIED)
+
+Status:
+✅ Complete
+
+This release delivers the first fully certified Scope v3 benchmark dataset for AnimeMangaDB.
+
+## New
+
+### One Piece Scope v3 Benchmark
+- Defined certified benchmark target
+- Established validation documentation
+- Created Scope v3 dataset checklist
+- Added validation log
+
+### Chapter Metadata Audit
+- Added automated Scope v3 dataset audit tool
+- Metadata completeness validation
+- Coverage validation
+- Duplicate detection
+- Missing chapter detection
+- JSON audit reports
+
+### Full Dataset Ingestion
+- Added controlled batch ingestion
+- Dry-run planning
+- Skip-complete-existing support
+- JSON batch reports
+- Successfully imported Chapters 1–1188
+
+### Manual Source Validation
+- Representative source validation workflow
+- Manual validation manifest generation
+- Official Viz title verification
+- Manga arc verification
+- Canonical source URL verification
+- 30 representative chapters validated
+- 0 discrepancies found
+
+### Certification Framework
+- Certification eligibility audit
+- Certification evidence reports
+- Dataset documentation
+- Final validation workflow
+- Certification documentation
+
+## Validation
+
+Database
+✅ 1188 chapter metadata records
+
+Metadata Audit
+✅ PASS
+
+Coverage Audit
+✅ PASS
+
+Dataset Audit
+✅ PASS
+
+Coverage
+✅ 100%
+
+Representative Manual Validation
+✅ 30 / 30 samples passed
+
+Certification Eligibility
+✅ ELIGIBLE
+
+Final Validation
+✅ PASS
+
+Regression Suite
+✅ 167 tests passed
+
+Frontend
+✅ Production build
+✅ Lint clean
+
+## Certified Dataset
+
+Anime:
+One Piece
+
+Certified Range:
+Chapter 1 → Chapter 1188
+
+Certified Metadata
+
+• Chapter Number
+• Official Viz English Title
+• Manga Arc
+• Canonical Source URL
+• Last Updated Timestamp
+
+Certification Status
+
+🏆 CERTIFIED
+
+This is AnimeMangaDB's first certified Scope v3 dataset.
