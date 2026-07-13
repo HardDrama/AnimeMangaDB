@@ -72,3 +72,40 @@ This result does not certify complete One Piece chapter coverage. Full chapter i
 ### Report
 
 `one_piece_scope_v3_audit.json`
+
+---
+
+## v0.57.4 — Full Chapter Metadata Import
+
+### Target
+
+- Start chapter: 1
+- End chapter: 1188
+- Expected records: 1188
+
+### Import Strategy
+
+The full range was processed in controlled batches.
+
+Operational safeguards:
+
+- Complete existing records skipped
+- Partial existing records remained eligible for update
+- Per-chapter failures isolated
+- JSON reports generated for every batch
+- Database validated between batches
+
+### Import Result
+
+- Chapter records created or updated: 1188
+- Failed chapters: 0
+- Missing titles: 0
+- Missing manga arcs: 0
+- Missing source URLs: 0
+- Duplicate chapters: 0
+
+### Status
+
+Import completed.
+
+Metadata gap analysis remains pending.

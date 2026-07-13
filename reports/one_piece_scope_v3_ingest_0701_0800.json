@@ -1,0 +1,819 @@
+{
+  "schema_version": 1,
+  "anime": "One Piece",
+  "start_chapter": 701,
+  "end_chapter": 800,
+  "chapters_selected": 100,
+  "inserted": 100,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 701,
+      "status": "inserted",
+      "chapter_title": "Adventure in the Land of Love, Passion and Toys",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_701",
+      "error": null
+    },
+    {
+      "chapter_number": 702,
+      "status": "inserted",
+      "chapter_title": "Corrida Coliseum",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_702",
+      "error": null
+    },
+    {
+      "chapter_number": 703,
+      "status": "inserted",
+      "chapter_title": "Waiting Room",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_703",
+      "error": null
+    },
+    {
+      "chapter_number": 704,
+      "status": "inserted",
+      "chapter_title": "Lucy and the Statue of Kyros",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_704",
+      "error": null
+    },
+    {
+      "chapter_number": 705,
+      "status": "inserted",
+      "chapter_title": "Maynard the Pursuer",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_705",
+      "error": null
+    },
+    {
+      "chapter_number": 706,
+      "status": "inserted",
+      "chapter_title": "I Ain't Gonna Laugh at Ya",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_706",
+      "error": null
+    },
+    {
+      "chapter_number": 707,
+      "status": "inserted",
+      "chapter_title": "Block B",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_707",
+      "error": null
+    },
+    {
+      "chapter_number": 708,
+      "status": "inserted",
+      "chapter_title": "Coliseum of Scoundrels",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_708",
+      "error": null
+    },
+    {
+      "chapter_number": 709,
+      "status": "inserted",
+      "chapter_title": "King Punch!!",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_709",
+      "error": null
+    },
+    {
+      "chapter_number": 710,
+      "status": "inserted",
+      "chapter_title": "To Greenbit",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_710",
+      "error": null
+    },
+    {
+      "chapter_number": 711,
+      "status": "inserted",
+      "chapter_title": "Adventure in the Land of the Little People",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_711",
+      "error": null
+    },
+    {
+      "chapter_number": 712,
+      "status": "inserted",
+      "chapter_title": "Violet",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_712",
+      "error": null
+    },
+    {
+      "chapter_number": 713,
+      "status": "inserted",
+      "chapter_title": "Usoland",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_713",
+      "error": null
+    },
+    {
+      "chapter_number": 714,
+      "status": "inserted",
+      "chapter_title": "Lucy and Moocy",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_714",
+      "error": null
+    },
+    {
+      "chapter_number": 715,
+      "status": "inserted",
+      "chapter_title": "The Battleground of Block C",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_715",
+      "error": null
+    },
+    {
+      "chapter_number": 716,
+      "status": "inserted",
+      "chapter_title": "Don Chin Jao",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_716",
+      "error": null
+    },
+    {
+      "chapter_number": 717,
+      "status": "inserted",
+      "chapter_title": "Dressrosa's Forgotten",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_717",
+      "error": null
+    },
+    {
+      "chapter_number": 718,
+      "status": "inserted",
+      "chapter_title": "Riku Army at the Flower Field",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_718",
+      "error": null
+    },
+    {
+      "chapter_number": 719,
+      "status": "inserted",
+      "chapter_title": "Open, Chin Jao",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_719",
+      "error": null
+    },
+    {
+      "chapter_number": 720,
+      "status": "inserted",
+      "chapter_title": "Prisoner-Gladiators",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_720",
+      "error": null
+    },
+    {
+      "chapter_number": 721,
+      "status": "inserted",
+      "chapter_title": "Rebecca and the Soldier",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_721",
+      "error": null
+    },
+    {
+      "chapter_number": 722,
+      "status": "inserted",
+      "chapter_title": "Royal Bloodlines",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_722",
+      "error": null
+    },
+    {
+      "chapter_number": 723,
+      "status": "inserted",
+      "chapter_title": "Change of Plans",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_723",
+      "error": null
+    },
+    {
+      "chapter_number": 724,
+      "status": "inserted",
+      "chapter_title": "Law's Plan",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_724",
+      "error": null
+    },
+    {
+      "chapter_number": 725,
+      "status": "inserted",
+      "chapter_title": "The Undefeated Woman",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_725",
+      "error": null
+    },
+    {
+      "chapter_number": 726,
+      "status": "inserted",
+      "chapter_title": "The Riku Family",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_726",
+      "error": null
+    },
+    {
+      "chapter_number": 727,
+      "status": "inserted",
+      "chapter_title": "The Hero's Ambush",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_727",
+      "error": null
+    },
+    {
+      "chapter_number": 728,
+      "status": "inserted",
+      "chapter_title": "The Number of Tragedies",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_728",
+      "error": null
+    },
+    {
+      "chapter_number": 729,
+      "status": "inserted",
+      "chapter_title": "Warlord Doflamingo vs. Warlord Law",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_729",
+      "error": null
+    },
+    {
+      "chapter_number": 730,
+      "status": "inserted",
+      "chapter_title": "Three Cards",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_730",
+      "error": null
+    },
+    {
+      "chapter_number": 731,
+      "status": "inserted",
+      "chapter_title": "Operation Dressrosa S.O.P.",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_731",
+      "error": null
+    },
+    {
+      "chapter_number": 732,
+      "status": "inserted",
+      "chapter_title": "An Underground World",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_732",
+      "error": null
+    },
+    {
+      "chapter_number": 733,
+      "status": "inserted",
+      "chapter_title": "What the Soldier Wants",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_733",
+      "error": null
+    },
+    {
+      "chapter_number": 734,
+      "status": "inserted",
+      "chapter_title": "The Slicing Winds of Rommel",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_734",
+      "error": null
+    },
+    {
+      "chapter_number": 735,
+      "status": "inserted",
+      "chapter_title": "Fujitora's Plan",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_735",
+      "error": null
+    },
+    {
+      "chapter_number": 736,
+      "status": "inserted",
+      "chapter_title": "Supreme Officer Diamante",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_736",
+      "error": null
+    },
+    {
+      "chapter_number": 737,
+      "status": "inserted",
+      "chapter_title": "Officer's Tower",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_737",
+      "error": null
+    },
+    {
+      "chapter_number": 738,
+      "status": "inserted",
+      "chapter_title": "Trebol Army, Special Officer Sugar",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_738",
+      "error": null
+    },
+    {
+      "chapter_number": 739,
+      "status": "inserted",
+      "chapter_title": "Captain",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_739",
+      "error": null
+    },
+    {
+      "chapter_number": 740,
+      "status": "inserted",
+      "chapter_title": "It's in Your Hands!!!",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_740",
+      "error": null
+    },
+    {
+      "chapter_number": 741,
+      "status": "inserted",
+      "chapter_title": "Usoland the Liar",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_741",
+      "error": null
+    },
+    {
+      "chapter_number": 742,
+      "status": "inserted",
+      "chapter_title": "Ever at Your Side",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_742",
+      "error": null
+    },
+    {
+      "chapter_number": 743,
+      "status": "inserted",
+      "chapter_title": "Dressrosa Trembles",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_743",
+      "error": null
+    },
+    {
+      "chapter_number": 744,
+      "status": "inserted",
+      "chapter_title": "Revolutionary Army Chief of Staff",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_744",
+      "error": null
+    },
+    {
+      "chapter_number": 745,
+      "status": "inserted",
+      "chapter_title": "The Birdcage",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_745",
+      "error": null
+    },
+    {
+      "chapter_number": 746,
+      "status": "inserted",
+      "chapter_title": "Stars",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_746",
+      "error": null
+    },
+    {
+      "chapter_number": 747,
+      "status": "inserted",
+      "chapter_title": "Supreme Officer Pica",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_747",
+      "error": null
+    },
+    {
+      "chapter_number": 748,
+      "status": "inserted",
+      "chapter_title": "Repaying the Debt",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_748",
+      "error": null
+    },
+    {
+      "chapter_number": 749,
+      "status": "inserted",
+      "chapter_title": "Onward, Gallery of Rogues!!",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_749",
+      "error": null
+    },
+    {
+      "chapter_number": 750,
+      "status": "inserted",
+      "chapter_title": "Flash Points",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_750",
+      "error": null
+    },
+    {
+      "chapter_number": 751,
+      "status": "inserted",
+      "chapter_title": "Sabo vs. Admiral Fujitora",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_751",
+      "error": null
+    },
+    {
+      "chapter_number": 752,
+      "status": "inserted",
+      "chapter_title": "Palm",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_752",
+      "error": null
+    },
+    {
+      "chapter_number": 753,
+      "status": "inserted",
+      "chapter_title": "Battle",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_753",
+      "error": null
+    },
+    {
+      "chapter_number": 754,
+      "status": "inserted",
+      "chapter_title": "Making Acquaintance",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_754",
+      "error": null
+    },
+    {
+      "chapter_number": 755,
+      "status": "inserted",
+      "chapter_title": "A Man's World",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_755",
+      "error": null
+    },
+    {
+      "chapter_number": 756,
+      "status": "inserted",
+      "chapter_title": "The Fourth Step",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_756",
+      "error": null
+    },
+    {
+      "chapter_number": 757,
+      "status": "inserted",
+      "chapter_title": "Trump Card",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_757",
+      "error": null
+    },
+    {
+      "chapter_number": 758,
+      "status": "inserted",
+      "chapter_title": "Just Keep Going",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_758",
+      "error": null
+    },
+    {
+      "chapter_number": 759,
+      "status": "inserted",
+      "chapter_title": "Secret Plan",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_759",
+      "error": null
+    },
+    {
+      "chapter_number": 760,
+      "status": "inserted",
+      "chapter_title": "The Same Bet",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_760",
+      "error": null
+    },
+    {
+      "chapter_number": 761,
+      "status": "inserted",
+      "chapter_title": "The Op-Op Fruit",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_761",
+      "error": null
+    },
+    {
+      "chapter_number": 762,
+      "status": "inserted",
+      "chapter_title": "The White Town",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_762",
+      "error": null
+    },
+    {
+      "chapter_number": 763,
+      "status": "inserted",
+      "chapter_title": "Declaration of Humanity",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_763",
+      "error": null
+    },
+    {
+      "chapter_number": 764,
+      "status": "inserted",
+      "chapter_title": "White Monster",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_764",
+      "error": null
+    },
+    {
+      "chapter_number": 765,
+      "status": "inserted",
+      "chapter_title": "Minion, the Isle of Fate",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_765",
+      "error": null
+    },
+    {
+      "chapter_number": 766,
+      "status": "inserted",
+      "chapter_title": "Smile",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_766",
+      "error": null
+    },
+    {
+      "chapter_number": 767,
+      "status": "inserted",
+      "chapter_title": "Cora",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_767",
+      "error": null
+    },
+    {
+      "chapter_number": 768,
+      "status": "inserted",
+      "chapter_title": "The Trigger That Day",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_768",
+      "error": null
+    },
+    {
+      "chapter_number": 769,
+      "status": "inserted",
+      "chapter_title": "Bellamy the Pirate",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_769",
+      "error": null
+    },
+    {
+      "chapter_number": 770,
+      "status": "inserted",
+      "chapter_title": "The Spear of Elbaph",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_770",
+      "error": null
+    },
+    {
+      "chapter_number": 771,
+      "status": "inserted",
+      "chapter_title": "Sai, Don of the Happosui Army",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_771",
+      "error": null
+    },
+    {
+      "chapter_number": 772,
+      "status": "inserted",
+      "chapter_title": "Cabbage & Lomeo",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_772",
+      "error": null
+    },
+    {
+      "chapter_number": 773,
+      "status": "inserted",
+      "chapter_title": "Half 'n Half",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_773",
+      "error": null
+    },
+    {
+      "chapter_number": 774,
+      "status": "inserted",
+      "chapter_title": "Leo, Captain of the Tontatta Warriors",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_774",
+      "error": null
+    },
+    {
+      "chapter_number": 775,
+      "status": "inserted",
+      "chapter_title": "To Russian With Love",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_775",
+      "error": null
+    },
+    {
+      "chapter_number": 776,
+      "status": "inserted",
+      "chapter_title": "Hero of the Coliseum",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_776",
+      "error": null
+    },
+    {
+      "chapter_number": 777,
+      "status": "inserted",
+      "chapter_title": "Zolo vs. Pica",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_777",
+      "error": null
+    },
+    {
+      "chapter_number": 778,
+      "status": "inserted",
+      "chapter_title": "Tactics No. 5",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_778",
+      "error": null
+    },
+    {
+      "chapter_number": 779,
+      "status": "inserted",
+      "chapter_title": "His Final Battle",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_779",
+      "error": null
+    },
+    {
+      "chapter_number": 780,
+      "status": "inserted",
+      "chapter_title": "The Heart Curse",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_780",
+      "error": null
+    },
+    {
+      "chapter_number": 781,
+      "status": "inserted",
+      "chapter_title": "Desire",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_781",
+      "error": null
+    },
+    {
+      "chapter_number": 782,
+      "status": "inserted",
+      "chapter_title": "Champion of Evil",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_782",
+      "error": null
+    },
+    {
+      "chapter_number": 783,
+      "status": "inserted",
+      "chapter_title": "In My Way",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_783",
+      "error": null
+    },
+    {
+      "chapter_number": 784,
+      "status": "inserted",
+      "chapter_title": "Gear Four",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_784",
+      "error": null
+    },
+    {
+      "chapter_number": 785,
+      "status": "inserted",
+      "chapter_title": "On Broken Legs",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_785",
+      "error": null
+    },
+    {
+      "chapter_number": 786,
+      "status": "inserted",
+      "chapter_title": "Gyats",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_786",
+      "error": null
+    },
+    {
+      "chapter_number": 787,
+      "status": "inserted",
+      "chapter_title": "Four Minutes Before",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_787",
+      "error": null
+    },
+    {
+      "chapter_number": 788,
+      "status": "inserted",
+      "chapter_title": "My Battle",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_788",
+      "error": null
+    },
+    {
+      "chapter_number": 789,
+      "status": "inserted",
+      "chapter_title": "Lucy!!",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_789",
+      "error": null
+    },
+    {
+      "chapter_number": 790,
+      "status": "inserted",
+      "chapter_title": "Heaven and Earth",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_790",
+      "error": null
+    },
+    {
+      "chapter_number": 791,
+      "status": "inserted",
+      "chapter_title": "Rubble",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_791",
+      "error": null
+    },
+    {
+      "chapter_number": 792,
+      "status": "inserted",
+      "chapter_title": "On Hands and Knees",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_792",
+      "error": null
+    },
+    {
+      "chapter_number": 793,
+      "status": "inserted",
+      "chapter_title": "Tiger and Dog",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_793",
+      "error": null
+    },
+    {
+      "chapter_number": 794,
+      "status": "inserted",
+      "chapter_title": "Sabo's Adventure",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_794",
+      "error": null
+    },
+    {
+      "chapter_number": 795,
+      "status": "inserted",
+      "chapter_title": "Suicide",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_795",
+      "error": null
+    },
+    {
+      "chapter_number": 796,
+      "status": "inserted",
+      "chapter_title": "Soldier's Conviction",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_796",
+      "error": null
+    },
+    {
+      "chapter_number": 797,
+      "status": "inserted",
+      "chapter_title": "Rebecca",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_797",
+      "error": null
+    },
+    {
+      "chapter_number": 798,
+      "status": "inserted",
+      "chapter_title": "Heart",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_798",
+      "error": null
+    },
+    {
+      "chapter_number": 799,
+      "status": "inserted",
+      "chapter_title": "Father and Sons",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_799",
+      "error": null
+    },
+    {
+      "chapter_number": 800,
+      "status": "inserted",
+      "chapter_title": "Sons' Cups",
+      "manga_arc": "Dressrosa Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_800",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T14:47:51.677446",
+  "elapsed_seconds": 548.56,
+  "status": "completed_successfully"
+}

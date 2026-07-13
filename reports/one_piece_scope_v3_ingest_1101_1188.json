@@ -1,0 +1,723 @@
+{
+  "schema_version": 1,
+  "anime": "One Piece",
+  "start_chapter": 1101,
+  "end_chapter": 1188,
+  "chapters_selected": 88,
+  "inserted": 88,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 1101,
+      "status": "inserted",
+      "chapter_title": "To Bonney",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1101",
+      "error": null
+    },
+    {
+      "chapter_number": 1102,
+      "status": "inserted",
+      "chapter_title": "Kuma's Life",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1102",
+      "error": null
+    },
+    {
+      "chapter_number": 1103,
+      "status": "inserted",
+      "chapter_title": "I'm Sorry, Daddy",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1103",
+      "error": null
+    },
+    {
+      "chapter_number": 1104,
+      "status": "inserted",
+      "chapter_title": "Thank You, Daddy",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1104",
+      "error": null
+    },
+    {
+      "chapter_number": 1105,
+      "status": "inserted",
+      "chapter_title": "The Height of Folly",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1105",
+      "error": null
+    },
+    {
+      "chapter_number": 1106,
+      "status": "inserted",
+      "chapter_title": "On Your Side",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1106",
+      "error": null
+    },
+    {
+      "chapter_number": 1107,
+      "status": "inserted",
+      "chapter_title": "I've Been Looking for You!!",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1107",
+      "error": null
+    },
+    {
+      "chapter_number": 1108,
+      "status": "inserted",
+      "chapter_title": "Come In, World",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1108",
+      "error": null
+    },
+    {
+      "chapter_number": 1109,
+      "status": "inserted",
+      "chapter_title": "Interception",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1109",
+      "error": null
+    },
+    {
+      "chapter_number": 1110,
+      "status": "inserted",
+      "chapter_title": "Starfall",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1110",
+      "error": null
+    },
+    {
+      "chapter_number": 1111,
+      "status": "inserted",
+      "chapter_title": "Sun-Shield",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1111",
+      "error": null
+    },
+    {
+      "chapter_number": 1112,
+      "status": "inserted",
+      "chapter_title": "Hard Aspects",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1112",
+      "error": null
+    },
+    {
+      "chapter_number": 1113,
+      "status": "inserted",
+      "chapter_title": "Stalemate",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1113",
+      "error": null
+    },
+    {
+      "chapter_number": 1114,
+      "status": "inserted",
+      "chapter_title": "The Wings of Icarus",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1114",
+      "error": null
+    },
+    {
+      "chapter_number": 1115,
+      "status": "inserted",
+      "chapter_title": "Pieces of a Continent",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1115",
+      "error": null
+    },
+    {
+      "chapter_number": 1116,
+      "status": "inserted",
+      "chapter_title": "Inner Conflict",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1116",
+      "error": null
+    },
+    {
+      "chapter_number": 1117,
+      "status": "inserted",
+      "chapter_title": "A",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1117",
+      "error": null
+    },
+    {
+      "chapter_number": 1118,
+      "status": "inserted",
+      "chapter_title": "The Most Free",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1118",
+      "error": null
+    },
+    {
+      "chapter_number": 1119,
+      "status": "inserted",
+      "chapter_title": "Emet",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1119",
+      "error": null
+    },
+    {
+      "chapter_number": 1120,
+      "status": "inserted",
+      "chapter_title": "Atlas",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1120",
+      "error": null
+    },
+    {
+      "chapter_number": 1121,
+      "status": "inserted",
+      "chapter_title": "The Upheaval of the Era",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1121",
+      "error": null
+    },
+    {
+      "chapter_number": 1122,
+      "status": "inserted",
+      "chapter_title": "Time is Right",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1122",
+      "error": null
+    },
+    {
+      "chapter_number": 1123,
+      "status": "inserted",
+      "chapter_title": "The Void Fortnight",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1123",
+      "error": null
+    },
+    {
+      "chapter_number": 1124,
+      "status": "inserted",
+      "chapter_title": "Close Friend",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1124",
+      "error": null
+    },
+    {
+      "chapter_number": 1125,
+      "status": "inserted",
+      "chapter_title": "What Death Means",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1125",
+      "error": null
+    },
+    {
+      "chapter_number": 1126,
+      "status": "inserted",
+      "chapter_title": "Settling the Score",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1126",
+      "error": null
+    },
+    {
+      "chapter_number": 1127,
+      "status": "inserted",
+      "chapter_title": "Adventure in the Land of Mystery",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1127",
+      "error": null
+    },
+    {
+      "chapter_number": 1128,
+      "status": "inserted",
+      "chapter_title": "RPG",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1128",
+      "error": null
+    },
+    {
+      "chapter_number": 1129,
+      "status": "inserted",
+      "chapter_title": "Livedolls",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1129",
+      "error": null
+    },
+    {
+      "chapter_number": 1130,
+      "status": "inserted",
+      "chapter_title": "The Accursed Prince",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1130",
+      "error": null
+    },
+    {
+      "chapter_number": 1131,
+      "status": "inserted",
+      "chapter_title": "Loki in the Underworld",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1131",
+      "error": null
+    },
+    {
+      "chapter_number": 1132,
+      "status": "inserted",
+      "chapter_title": "Adventure in Elbaph",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1132",
+      "error": null
+    },
+    {
+      "chapter_number": 1133,
+      "status": "inserted",
+      "chapter_title": "Nice Things",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1133",
+      "error": null
+    },
+    {
+      "chapter_number": 1134,
+      "status": "inserted",
+      "chapter_title": "The Owl Library",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1134",
+      "error": null
+    },
+    {
+      "chapter_number": 1135,
+      "status": "inserted",
+      "chapter_title": "Friends' Cups",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1135",
+      "error": null
+    },
+    {
+      "chapter_number": 1136,
+      "status": "inserted",
+      "chapter_title": "The Land That Awaits the Sun",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1136",
+      "error": null
+    },
+    {
+      "chapter_number": 1137,
+      "status": "inserted",
+      "chapter_title": "Introducing Shamrock",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1137",
+      "error": null
+    },
+    {
+      "chapter_number": 1138,
+      "status": "inserted",
+      "chapter_title": "The Harley",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1138",
+      "error": null
+    },
+    {
+      "chapter_number": 1139,
+      "status": "inserted",
+      "chapter_title": "Mountain-Eater",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1139",
+      "error": null
+    },
+    {
+      "chapter_number": 1140,
+      "status": "inserted",
+      "chapter_title": "Scopper Gaban",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1140",
+      "error": null
+    },
+    {
+      "chapter_number": 1141,
+      "status": "inserted",
+      "chapter_title": "An Older Woman",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1141",
+      "error": null
+    },
+    {
+      "chapter_number": 1142,
+      "status": "inserted",
+      "chapter_title": "What I'm Afraid Of",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1142",
+      "error": null
+    },
+    {
+      "chapter_number": 1143,
+      "status": "inserted",
+      "chapter_title": "Holy Knights",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1143",
+      "error": null
+    },
+    {
+      "chapter_number": 1144,
+      "status": "inserted",
+      "chapter_title": "A Time for Warriors",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1144",
+      "error": null
+    },
+    {
+      "chapter_number": 1145,
+      "status": "inserted",
+      "chapter_title": "Wildfire in Forest Sector 2, Branch Route 8",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1145",
+      "error": null
+    },
+    {
+      "chapter_number": 1146,
+      "status": "inserted",
+      "chapter_title": "Motion in Stillness",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1146",
+      "error": null
+    },
+    {
+      "chapter_number": 1147,
+      "status": "inserted",
+      "chapter_title": "What We're Afraid Of",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1147",
+      "error": null
+    },
+    {
+      "chapter_number": 1148,
+      "status": "inserted",
+      "chapter_title": "Ronja",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1148",
+      "error": null
+    },
+    {
+      "chapter_number": 1149,
+      "status": "inserted",
+      "chapter_title": "One Second",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1149",
+      "error": null
+    },
+    {
+      "chapter_number": 1150,
+      "status": "inserted",
+      "chapter_title": "Domi Reversi",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1150",
+      "error": null
+    },
+    {
+      "chapter_number": 1151,
+      "status": "inserted",
+      "chapter_title": "I Get the Idea!!!",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1151",
+      "error": null
+    },
+    {
+      "chapter_number": 1152,
+      "status": "inserted",
+      "chapter_title": "A Horrible Day",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1152",
+      "error": null
+    },
+    {
+      "chapter_number": 1153,
+      "status": "inserted",
+      "chapter_title": "The Birth of Loki",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1153",
+      "error": null
+    },
+    {
+      "chapter_number": 1154,
+      "status": "inserted",
+      "chapter_title": "Can't Even Die",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1154",
+      "error": null
+    },
+    {
+      "chapter_number": 1155,
+      "status": "inserted",
+      "chapter_title": "The Rocks Pirates",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1155",
+      "error": null
+    },
+    {
+      "chapter_number": 1156,
+      "status": "inserted",
+      "chapter_title": "Idols",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1156",
+      "error": null
+    },
+    {
+      "chapter_number": 1157,
+      "status": "inserted",
+      "chapter_title": "Legendary Bar",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1157",
+      "error": null
+    },
+    {
+      "chapter_number": 1158,
+      "status": "inserted",
+      "chapter_title": "Rocks vs. Harald",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1158",
+      "error": null
+    },
+    {
+      "chapter_number": 1159,
+      "status": "inserted",
+      "chapter_title": "The Island of Fate",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1159",
+      "error": null
+    },
+    {
+      "chapter_number": 1160,
+      "status": "inserted",
+      "chapter_title": "The God Valley Incident",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1160",
+      "error": null
+    },
+    {
+      "chapter_number": 1161,
+      "status": "inserted",
+      "chapter_title": "A Song of Love Bound Under a Hail of Arrows",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1161",
+      "error": null
+    },
+    {
+      "chapter_number": 1162,
+      "status": "inserted",
+      "chapter_title": "God Valley Battle Royale",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1162",
+      "error": null
+    },
+    {
+      "chapter_number": 1163,
+      "status": "inserted",
+      "chapter_title": "Promise",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1163",
+      "error": null
+    },
+    {
+      "chapter_number": 1164,
+      "status": "inserted",
+      "chapter_title": "Davy Blood",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1164",
+      "error": null
+    },
+    {
+      "chapter_number": 1165,
+      "status": "inserted",
+      "chapter_title": "Reverberations",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1165",
+      "error": null
+    },
+    {
+      "chapter_number": 1166,
+      "status": "inserted",
+      "chapter_title": "New Stories",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1166",
+      "error": null
+    },
+    {
+      "chapter_number": 1167,
+      "status": "inserted",
+      "chapter_title": "Ida's Sons",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1167",
+      "error": null
+    },
+    {
+      "chapter_number": 1168,
+      "status": "inserted",
+      "chapter_title": "The Snows of Elbaph",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1168",
+      "error": null
+    },
+    {
+      "chapter_number": 1169,
+      "status": "inserted",
+      "chapter_title": "My Death Cannot Come Soon Enough",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1169",
+      "error": null
+    },
+    {
+      "chapter_number": 1170,
+      "status": "inserted",
+      "chapter_title": "Contrary",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1170",
+      "error": null
+    },
+    {
+      "chapter_number": 1171,
+      "status": "inserted",
+      "chapter_title": "Ragnir",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1171",
+      "error": null
+    },
+    {
+      "chapter_number": 1172,
+      "status": "inserted",
+      "chapter_title": "The Elbaph I Dreamed Of",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1172",
+      "error": null
+    },
+    {
+      "chapter_number": 1173,
+      "status": "inserted",
+      "chapter_title": "Warrior Generation",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1173",
+      "error": null
+    },
+    {
+      "chapter_number": 1174,
+      "status": "inserted",
+      "chapter_title": "The Strongest Thing in the World",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1174",
+      "error": null
+    },
+    {
+      "chapter_number": 1175,
+      "status": "inserted",
+      "chapter_title": "Niddhoggr",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1175",
+      "error": null
+    },
+    {
+      "chapter_number": 1176,
+      "status": "inserted",
+      "chapter_title": "With Pride",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1176",
+      "error": null
+    },
+    {
+      "chapter_number": 1177,
+      "status": "inserted",
+      "chapter_title": "Furious",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1177",
+      "error": null
+    },
+    {
+      "chapter_number": 1178,
+      "status": "inserted",
+      "chapter_title": "Waking From a Nightmare",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1178",
+      "error": null
+    },
+    {
+      "chapter_number": 1179,
+      "status": "inserted",
+      "chapter_title": "Nerona Imu Descends",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1179",
+      "error": null
+    },
+    {
+      "chapter_number": 1180,
+      "status": "inserted",
+      "chapter_title": "Omen",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1180",
+      "error": null
+    },
+    {
+      "chapter_number": 1181,
+      "status": "inserted",
+      "chapter_title": "God and Devil",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1181",
+      "error": null
+    },
+    {
+      "chapter_number": 1182,
+      "status": "inserted",
+      "chapter_title": "Zaza",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1182",
+      "error": null
+    },
+    {
+      "chapter_number": 1183,
+      "status": "inserted",
+      "chapter_title": "Good Morn-Maid",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1183",
+      "error": null
+    },
+    {
+      "chapter_number": 1184,
+      "status": "inserted",
+      "chapter_title": "We're All Bones When We Die",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1184",
+      "error": null
+    },
+    {
+      "chapter_number": 1185,
+      "status": "inserted",
+      "chapter_title": "Mindja Own Beeswax",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1185",
+      "error": null
+    },
+    {
+      "chapter_number": 1186,
+      "status": "inserted",
+      "chapter_title": "One More Time",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1186",
+      "error": null
+    },
+    {
+      "chapter_number": 1187,
+      "status": "inserted",
+      "chapter_title": "The Root of the Problem",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1187",
+      "error": null
+    },
+    {
+      "chapter_number": 1188,
+      "status": "inserted",
+      "chapter_title": "Vohu",
+      "manga_arc": "Elbaph Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1188",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T15:38:28.265700",
+  "elapsed_seconds": 472.17,
+  "status": "completed_successfully"
+}

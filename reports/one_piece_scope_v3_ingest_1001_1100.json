@@ -1,0 +1,819 @@
+{
+  "schema_version": 1,
+  "anime": "One Piece",
+  "start_chapter": 1001,
+  "end_chapter": 1100,
+  "chapters_selected": 100,
+  "inserted": 100,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 1001,
+      "status": "inserted",
+      "chapter_title": "Battle of Monsters on Onigashima",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1001",
+      "error": null
+    },
+    {
+      "chapter_number": 1002,
+      "status": "inserted",
+      "chapter_title": "Four Emperors vs. New Generation",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1002",
+      "error": null
+    },
+    {
+      "chapter_number": 1003,
+      "status": "inserted",
+      "chapter_title": "Night on the Board",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1003",
+      "error": null
+    },
+    {
+      "chapter_number": 1004,
+      "status": "inserted",
+      "chapter_title": "Millet Dumplings",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1004",
+      "error": null
+    },
+    {
+      "chapter_number": 1005,
+      "status": "inserted",
+      "chapter_title": "Demon Child",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1005",
+      "error": null
+    },
+    {
+      "chapter_number": 1006,
+      "status": "inserted",
+      "chapter_title": "The Honorable Hyogoro the Flower",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1006",
+      "error": null
+    },
+    {
+      "chapter_number": 1007,
+      "status": "inserted",
+      "chapter_title": "Mr. Raccoon Dog",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1007",
+      "error": null
+    },
+    {
+      "chapter_number": 1008,
+      "status": "inserted",
+      "chapter_title": "Leader of the Atamayama Thieves Brigade, Ashura Doji",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1008",
+      "error": null
+    },
+    {
+      "chapter_number": 1009,
+      "status": "inserted",
+      "chapter_title": "Naraku",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1009",
+      "error": null
+    },
+    {
+      "chapter_number": 1010,
+      "status": "inserted",
+      "chapter_title": "Color of the Supreme King",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1010",
+      "error": null
+    },
+    {
+      "chapter_number": 1011,
+      "status": "inserted",
+      "chapter_title": "The Code of Sweet Beans",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1011",
+      "error": null
+    },
+    {
+      "chapter_number": 1012,
+      "status": "inserted",
+      "chapter_title": "Itch",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1012",
+      "error": null
+    },
+    {
+      "chapter_number": 1013,
+      "status": "inserted",
+      "chapter_title": "Anarchy in the B.M. (Big Mom)",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1013",
+      "error": null
+    },
+    {
+      "chapter_number": 1014,
+      "status": "inserted",
+      "chapter_title": "The Ham",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1014",
+      "error": null
+    },
+    {
+      "chapter_number": 1015,
+      "status": "inserted",
+      "chapter_title": "Chains",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1015",
+      "error": null
+    },
+    {
+      "chapter_number": 1016,
+      "status": "inserted",
+      "chapter_title": "It's Me, Otama!!",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1016",
+      "error": null
+    },
+    {
+      "chapter_number": 1017,
+      "status": "inserted",
+      "chapter_title": "The Order",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1017",
+      "error": null
+    },
+    {
+      "chapter_number": 1018,
+      "status": "inserted",
+      "chapter_title": "Jimbei vs. Who's-Who",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1018",
+      "error": null
+    },
+    {
+      "chapter_number": 1019,
+      "status": "inserted",
+      "chapter_title": "Heliceratops",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1019",
+      "error": null
+    },
+    {
+      "chapter_number": 1020,
+      "status": "inserted",
+      "chapter_title": "Robin vs. Black Maria",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1020",
+      "error": null
+    },
+    {
+      "chapter_number": 1021,
+      "status": "inserted",
+      "chapter_title": "Demonio",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1021",
+      "error": null
+    },
+    {
+      "chapter_number": 1022,
+      "status": "inserted",
+      "chapter_title": "The Stars Take the Stage",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1022",
+      "error": null
+    },
+    {
+      "chapter_number": 1023,
+      "status": "inserted",
+      "chapter_title": "Spitting Image",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1023",
+      "error": null
+    },
+    {
+      "chapter_number": 1024,
+      "status": "inserted",
+      "chapter_title": "So-and-So",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1024",
+      "error": null
+    },
+    {
+      "chapter_number": 1025,
+      "status": "inserted",
+      "chapter_title": "Twin Dragons",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1025",
+      "error": null
+    },
+    {
+      "chapter_number": 1026,
+      "status": "inserted",
+      "chapter_title": "The Pivotal Clash",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1026",
+      "error": null
+    },
+    {
+      "chapter_number": 1027,
+      "status": "inserted",
+      "chapter_title": "Danger Beyond Imagining",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1027",
+      "error": null
+    },
+    {
+      "chapter_number": 1028,
+      "status": "inserted",
+      "chapter_title": "Brachiosnakeus",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1028",
+      "error": null
+    },
+    {
+      "chapter_number": 1029,
+      "status": "inserted",
+      "chapter_title": "The Tower",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1029",
+      "error": null
+    },
+    {
+      "chapter_number": 1030,
+      "status": "inserted",
+      "chapter_title": "Echoing the Impermanence of All Things",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1030",
+      "error": null
+    },
+    {
+      "chapter_number": 1031,
+      "status": "inserted",
+      "chapter_title": "Warrior of Science",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1031",
+      "error": null
+    },
+    {
+      "chapter_number": 1032,
+      "status": "inserted",
+      "chapter_title": "Oden's Beloved Blade",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1032",
+      "error": null
+    },
+    {
+      "chapter_number": 1033,
+      "status": "inserted",
+      "chapter_title": "Shimotsuki Kozaburo",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1033",
+      "error": null
+    },
+    {
+      "chapter_number": 1034,
+      "status": "inserted",
+      "chapter_title": "Sanji vs. Queen",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1034",
+      "error": null
+    },
+    {
+      "chapter_number": 1035,
+      "status": "inserted",
+      "chapter_title": "Zolo vs. King",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1035",
+      "error": null
+    },
+    {
+      "chapter_number": 1036,
+      "status": "inserted",
+      "chapter_title": "Bushido Is the Way of Death",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1036",
+      "error": null
+    },
+    {
+      "chapter_number": 1037,
+      "status": "inserted",
+      "chapter_title": "Drunken Dragon Bagua",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1037",
+      "error": null
+    },
+    {
+      "chapter_number": 1038,
+      "status": "inserted",
+      "chapter_title": "Kid & Law vs. Big Mom",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1038",
+      "error": null
+    },
+    {
+      "chapter_number": 1039,
+      "status": "inserted",
+      "chapter_title": "Top Billing",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1039",
+      "error": null
+    },
+    {
+      "chapter_number": 1040,
+      "status": "inserted",
+      "chapter_title": "Wasted Words on Young Ears",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1040",
+      "error": null
+    },
+    {
+      "chapter_number": 1041,
+      "status": "inserted",
+      "chapter_title": "Komurasaki",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1041",
+      "error": null
+    },
+    {
+      "chapter_number": 1042,
+      "status": "inserted",
+      "chapter_title": "The Victor Needs No Epithet",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1042",
+      "error": null
+    },
+    {
+      "chapter_number": 1043,
+      "status": "inserted",
+      "chapter_title": "Let's Face Death Together!!!",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1043",
+      "error": null
+    },
+    {
+      "chapter_number": 1044,
+      "status": "inserted",
+      "chapter_title": "Warrior of Liberation",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1044",
+      "error": null
+    },
+    {
+      "chapter_number": 1045,
+      "status": "inserted",
+      "chapter_title": "Next Level",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1045",
+      "error": null
+    },
+    {
+      "chapter_number": 1046,
+      "status": "inserted",
+      "chapter_title": "Raizo",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1046",
+      "error": null
+    },
+    {
+      "chapter_number": 1047,
+      "status": "inserted",
+      "chapter_title": "The Sky over the Capital",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1047",
+      "error": null
+    },
+    {
+      "chapter_number": 1048,
+      "status": "inserted",
+      "chapter_title": "Twenty Years",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1048",
+      "error": null
+    },
+    {
+      "chapter_number": 1049,
+      "status": "inserted",
+      "chapter_title": "The World That Should Be",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1049",
+      "error": null
+    },
+    {
+      "chapter_number": 1050,
+      "status": "inserted",
+      "chapter_title": "Honor",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1050",
+      "error": null
+    },
+    {
+      "chapter_number": 1051,
+      "status": "inserted",
+      "chapter_title": "Shogun of Wano, Kozuki Momonosuke",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1051",
+      "error": null
+    },
+    {
+      "chapter_number": 1052,
+      "status": "inserted",
+      "chapter_title": "A New Morning",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1052",
+      "error": null
+    },
+    {
+      "chapter_number": 1053,
+      "status": "inserted",
+      "chapter_title": "New Emperors",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1053",
+      "error": null
+    },
+    {
+      "chapter_number": 1054,
+      "status": "inserted",
+      "chapter_title": "Flame Emperor",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1054",
+      "error": null
+    },
+    {
+      "chapter_number": 1055,
+      "status": "inserted",
+      "chapter_title": "The New Era",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1055",
+      "error": null
+    },
+    {
+      "chapter_number": 1056,
+      "status": "inserted",
+      "chapter_title": "Cross Guild",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1056",
+      "error": null
+    },
+    {
+      "chapter_number": 1057,
+      "status": "inserted",
+      "chapter_title": "The End",
+      "manga_arc": "Wano Country Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1057",
+      "error": null
+    },
+    {
+      "chapter_number": 1058,
+      "status": "inserted",
+      "chapter_title": "New Emperors",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1058",
+      "error": null
+    },
+    {
+      "chapter_number": 1059,
+      "status": "inserted",
+      "chapter_title": "The Matter Involving Captain Koby",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1059",
+      "error": null
+    },
+    {
+      "chapter_number": 1060,
+      "status": "inserted",
+      "chapter_title": "Luffy's Dream",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1060",
+      "error": null
+    },
+    {
+      "chapter_number": 1061,
+      "status": "inserted",
+      "chapter_title": "Future Island Egghead",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1061",
+      "error": null
+    },
+    {
+      "chapter_number": 1062,
+      "status": "inserted",
+      "chapter_title": "Adventure in the Land of Science",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1062",
+      "error": null
+    },
+    {
+      "chapter_number": 1063,
+      "status": "inserted",
+      "chapter_title": "My Only Family",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1063",
+      "error": null
+    },
+    {
+      "chapter_number": 1064,
+      "status": "inserted",
+      "chapter_title": "Egghead Labophase",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1064",
+      "error": null
+    },
+    {
+      "chapter_number": 1065,
+      "status": "inserted",
+      "chapter_title": "Six Vegapunks",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1065",
+      "error": null
+    },
+    {
+      "chapter_number": 1066,
+      "status": "inserted",
+      "chapter_title": "The Will of Ohara",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1066",
+      "error": null
+    },
+    {
+      "chapter_number": 1067,
+      "status": "inserted",
+      "chapter_title": "Punk Records",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1067",
+      "error": null
+    },
+    {
+      "chapter_number": 1068,
+      "status": "inserted",
+      "chapter_title": "A Genius's Dream",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1068",
+      "error": null
+    },
+    {
+      "chapter_number": 1069,
+      "status": "inserted",
+      "chapter_title": "All Things Are Brought into This World with Hope",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1069",
+      "error": null
+    },
+    {
+      "chapter_number": 1070,
+      "status": "inserted",
+      "chapter_title": "The Strongest Form of Humanity",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1070",
+      "error": null
+    },
+    {
+      "chapter_number": 1071,
+      "status": "inserted",
+      "chapter_title": "The Hero Deploys",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1071",
+      "error": null
+    },
+    {
+      "chapter_number": 1072,
+      "status": "inserted",
+      "chapter_title": "The Weight of Memory",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1072",
+      "error": null
+    },
+    {
+      "chapter_number": 1073,
+      "status": "inserted",
+      "chapter_title": "Miss Buckingham Stussy",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1073",
+      "error": null
+    },
+    {
+      "chapter_number": 1074,
+      "status": "inserted",
+      "chapter_title": "Mk. III",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1074",
+      "error": null
+    },
+    {
+      "chapter_number": 1075,
+      "status": "inserted",
+      "chapter_title": "Labophase Death Game",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1075",
+      "error": null
+    },
+    {
+      "chapter_number": 1076,
+      "status": "inserted",
+      "chapter_title": "Old Friends",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1076",
+      "error": null
+    },
+    {
+      "chapter_number": 1077,
+      "status": "inserted",
+      "chapter_title": "Should Have Noticed Sooner",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1077",
+      "error": null
+    },
+    {
+      "chapter_number": 1078,
+      "status": "inserted",
+      "chapter_title": "Escape Limit",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1078",
+      "error": null
+    },
+    {
+      "chapter_number": 1079,
+      "status": "inserted",
+      "chapter_title": "The Emperor's Crew, the Red-Haired Pirates",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1079",
+      "error": null
+    },
+    {
+      "chapter_number": 1080,
+      "status": "inserted",
+      "chapter_title": "The Hero of Legend",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1080",
+      "error": null
+    },
+    {
+      "chapter_number": 1081,
+      "status": "inserted",
+      "chapter_title": "Tenth Ship Captain of the Blackbeard Pirates, Kuzan",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1081",
+      "error": null
+    },
+    {
+      "chapter_number": 1082,
+      "status": "inserted",
+      "chapter_title": "Let's Go and Take It!!",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1082",
+      "error": null
+    },
+    {
+      "chapter_number": 1083,
+      "status": "inserted",
+      "chapter_title": "The Truth of That Day",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1083",
+      "error": null
+    },
+    {
+      "chapter_number": 1084,
+      "status": "inserted",
+      "chapter_title": "The Attempted Murder of a Celestial Dragon",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1084",
+      "error": null
+    },
+    {
+      "chapter_number": 1085,
+      "status": "inserted",
+      "chapter_title": "The Death of Nefeltari Cobra",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1085",
+      "error": null
+    },
+    {
+      "chapter_number": 1086,
+      "status": "inserted",
+      "chapter_title": "The Five Elders",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1086",
+      "error": null
+    },
+    {
+      "chapter_number": 1087,
+      "status": "inserted",
+      "chapter_title": "Battleship Bags",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1087",
+      "error": null
+    },
+    {
+      "chapter_number": 1088,
+      "status": "inserted",
+      "chapter_title": "Final Lesson",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1088",
+      "error": null
+    },
+    {
+      "chapter_number": 1089,
+      "status": "inserted",
+      "chapter_title": "Hostage Situation",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1089",
+      "error": null
+    },
+    {
+      "chapter_number": 1090,
+      "status": "inserted",
+      "chapter_title": "Kizaru",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1090",
+      "error": null
+    },
+    {
+      "chapter_number": 1091,
+      "status": "inserted",
+      "chapter_title": "Sentomaru",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1091",
+      "error": null
+    },
+    {
+      "chapter_number": 1092,
+      "status": "inserted",
+      "chapter_title": "Kuma the Tyrant's Holy Land Rampage",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1092",
+      "error": null
+    },
+    {
+      "chapter_number": 1093,
+      "status": "inserted",
+      "chapter_title": "Luffy vs. Kizaru",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1093",
+      "error": null
+    },
+    {
+      "chapter_number": 1094,
+      "status": "inserted",
+      "chapter_title": "Five Elders, Godhead of Science & Defense, St. Jaygarcia Saturn",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1094",
+      "error": null
+    },
+    {
+      "chapter_number": 1095,
+      "status": "inserted",
+      "chapter_title": "Better Off Dead in This World",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1095",
+      "error": null
+    },
+    {
+      "chapter_number": 1096,
+      "status": "inserted",
+      "chapter_title": "Kumachi",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1096",
+      "error": null
+    },
+    {
+      "chapter_number": 1097,
+      "status": "inserted",
+      "chapter_title": "Ginny",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1097",
+      "error": null
+    },
+    {
+      "chapter_number": 1098,
+      "status": "inserted",
+      "chapter_title": "Bonney's Birth",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1098",
+      "error": null
+    },
+    {
+      "chapter_number": 1099,
+      "status": "inserted",
+      "chapter_title": "Pacifist",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1099",
+      "error": null
+    },
+    {
+      "chapter_number": 1100,
+      "status": "inserted",
+      "chapter_title": "Thank You, Bonney",
+      "manga_arc": "Egghead Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_1100",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T15:28:59.670371",
+  "elapsed_seconds": 535.6,
+  "status": "completed_successfully"
+}

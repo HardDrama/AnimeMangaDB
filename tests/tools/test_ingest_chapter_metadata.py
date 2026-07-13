@@ -3,6 +3,9 @@ from types import SimpleNamespace
 
 from tools import ingest_chapter_metadata
 
+import json
+from datetime import datetime
+
 
 class FakeSession:
     def close(self):
@@ -192,6 +195,218 @@ class FakeIngestionService:
             manga_arc="Test Arc",
             source_url="https://example.com/chapter/1",
         )
+    
+
+class SkipCompleteRepository:
+    anime = SimpleNamespace(
+        id=1,
+        title="One Piece",
+        provider="fandom",
+    )
+
+    def __init__(
+        self,
+        session,
+    ):
+        self.session = session
+
+    def get_anime_by_title(
+        self,
+        title,
+    ):
+        if title == "One Piece":
+            return self.anime
+
+        return None
+
+    def get_chapter_metadata(
+        self,
+        anime_id,
+        chapter_number,
+    ):
+        if chapter_number == 1:
+            return CompleteChapterRecord()
+
+        return None
+    
+
+class TrackingIngestionService:
+    calls = []
+
+    def __init__(
+        self,
+        discovery_service,
+        provider,
+        repository,
+    ):
+        self.repository = repository
+
+    def ingest(
+        self,
+        anime,
+        chapter_number,
+    ):
+        self.__class__.calls.append(
+            chapter_number
+        )
+
+        return SimpleNamespace(
+            chapter_number=chapter_number,
+            chapter_title="New Chapter",
+            manga_arc="New Arc",
+            source_url=(
+                "https://example.com/chapter/"
+                f"{chapter_number}"
+            ),
+        )
+    
+
+def test_ingestion_cli_skips_complete_existing_record(
+    monkeypatch,
+    capsys,
+):
+    TrackingIngestionService.calls = []
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "SessionLocal",
+        lambda: FakeSession(),
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "EpisodeRepository",
+        SkipCompleteRepository,
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "BrowserClient",
+        lambda: object(),
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "load_provider_config",
+        lambda path: object(),
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "ChapterUrlDiscoveryService",
+        lambda config, browser_client: object(),
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "create_chapter_metadata_provider",
+        lambda **kwargs: object(),
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "ChapterMetadataIngestionService",
+        TrackingIngestionService,
+    )
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "ingest_chapter_metadata",
+            "--anime",
+            "One Piece",
+            "--start-chapter",
+            "1",
+            "--end-chapter",
+            "2",
+            "--skip-complete-existing",
+        ],
+    )
+
+    ingest_chapter_metadata.main()
+
+    output = capsys.readouterr().out
+
+    assert (
+        "Status: Skipped (already complete)"
+        in output
+    )
+    assert "Skipped           : 1" in output
+
+    assert TrackingIngestionService.calls == [
+        2
+    ]
+
+
+def test_ingestion_cli_writes_json_report(
+    monkeypatch,
+    tmp_path,
+    capsys,
+):
+    configure_successful_ingestion(
+        monkeypatch
+    )
+
+    report_path = (
+        tmp_path
+        / "chapter_ingestion_report.json"
+    )
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "ingest_chapter_metadata",
+            "--anime",
+            "One Piece",
+            "--chapter",
+            "1",
+            "--json-report",
+            str(report_path),
+        ],
+    )
+
+    ingest_chapter_metadata.main()
+
+    output = capsys.readouterr().out
+
+    assert report_path.exists()
+    assert (
+        "JSON report written to:"
+        in output
+    )
+
+    report = json.loads(
+        report_path.read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert report["anime"] == "One Piece"
+    assert report["chapters_selected"] == 1
+    assert report["inserted"] == 1
+    assert report["updated"] == 0
+    assert report["skipped"] == 0
+    assert report["failed"] == 0
+    assert (
+        report["status"]
+        == "completed_successfully"
+    )
+
+    assert len(
+        report["results"]
+    ) == 1
+
+    assert (
+        report["results"][0]["chapter_number"]
+        == 1
+    )
+
+    assert (
+        report["results"][0]["status"]
+        == "inserted"
+    )
 
 
 def configure_successful_ingestion(
@@ -507,3 +722,32 @@ def test_ingestion_cli_dry_run_preflight(
     assert "Status: Would Update" in output
     assert "[2/3] Chapter 2" in output
     assert "Status: Would Insert" in output
+
+class CompleteChapterRecord:
+    chapter_number = 1
+    chapter_title = "Existing Chapter"
+    manga_arc = "Existing Arc"
+    source_url = "https://example.com/chapter/1"
+    last_updated = datetime.now()
+
+def test_complete_chapter_record_detection():
+    assert (
+        ingest_chapter_metadata
+        .chapter_record_is_complete(
+            CompleteChapterRecord()
+        )
+    )
+
+    incomplete = SimpleNamespace(
+        chapter_title=None,
+        manga_arc="Arc",
+        source_url="https://example.com",
+        last_updated=datetime.now(),
+    )
+
+    assert not (
+        ingest_chapter_metadata
+        .chapter_record_is_complete(
+            incomplete
+        )
+    )

@@ -1,0 +1,819 @@
+{
+  "schema_version": 1,
+  "anime": "One Piece",
+  "start_chapter": 501,
+  "end_chapter": 600,
+  "chapters_selected": 100,
+  "inserted": 100,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 501,
+      "status": "inserted",
+      "chapter_title": "The World Begins to Swell",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_501",
+      "error": null
+    },
+    {
+      "chapter_number": 502,
+      "status": "inserted",
+      "chapter_title": "The Incident of the Celestial Dragons",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_502",
+      "error": null
+    },
+    {
+      "chapter_number": 503,
+      "status": "inserted",
+      "chapter_title": "Aggravated Island",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_503",
+      "error": null
+    },
+    {
+      "chapter_number": 504,
+      "status": "inserted",
+      "chapter_title": "Pirate Front Line on the Move!!",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_504",
+      "error": null
+    },
+    {
+      "chapter_number": 505,
+      "status": "inserted",
+      "chapter_title": "Kuma",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_505",
+      "error": null
+    },
+    {
+      "chapter_number": 506,
+      "status": "inserted",
+      "chapter_title": "Roger and Rayleigh",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_506",
+      "error": null
+    },
+    {
+      "chapter_number": 507,
+      "status": "inserted",
+      "chapter_title": "Kizaru Arrives",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_507",
+      "error": null
+    },
+    {
+      "chapter_number": 508,
+      "status": "inserted",
+      "chapter_title": "Island of Carnage",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_508",
+      "error": null
+    },
+    {
+      "chapter_number": 509,
+      "status": "inserted",
+      "chapter_title": "Kizaru vs. Four Captains",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_509",
+      "error": null
+    },
+    {
+      "chapter_number": 510,
+      "status": "inserted",
+      "chapter_title": "Straw Hat Pirates vs. War Machine",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_510",
+      "error": null
+    },
+    {
+      "chapter_number": 511,
+      "status": "inserted",
+      "chapter_title": "Axe-Carrying Sentomaru",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_511",
+      "error": null
+    },
+    {
+      "chapter_number": 512,
+      "status": "inserted",
+      "chapter_title": "Zolo, Gone",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_512",
+      "error": null
+    },
+    {
+      "chapter_number": 513,
+      "status": "inserted",
+      "chapter_title": "Beyond Rescue!!!",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_513",
+      "error": null
+    },
+    {
+      "chapter_number": 514,
+      "status": "inserted",
+      "chapter_title": "Body Parasite Mushrooms",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_514",
+      "error": null
+    },
+    {
+      "chapter_number": 515,
+      "status": "inserted",
+      "chapter_title": "Adventure on the Island of Women",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_515",
+      "error": null
+    },
+    {
+      "chapter_number": 516,
+      "status": "inserted",
+      "chapter_title": "Pirate Empress Boa Hancock",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_516",
+      "error": null
+    },
+    {
+      "chapter_number": 517,
+      "status": "inserted",
+      "chapter_title": "Bath Time",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_517",
+      "error": null
+    },
+    {
+      "chapter_number": 518,
+      "status": "inserted",
+      "chapter_title": "Coliseum",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_518",
+      "error": null
+    },
+    {
+      "chapter_number": 519,
+      "status": "inserted",
+      "chapter_title": "Natural Born King",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_519",
+      "error": null
+    },
+    {
+      "chapter_number": 520,
+      "status": "inserted",
+      "chapter_title": "Eye of the Gorgon",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_520",
+      "error": null
+    },
+    {
+      "chapter_number": 521,
+      "status": "inserted",
+      "chapter_title": "Hoof of the Celestial Dragon",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_521",
+      "error": null
+    },
+    {
+      "chapter_number": 522,
+      "status": "inserted",
+      "chapter_title": "Fatal Illness",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_522",
+      "error": null
+    },
+    {
+      "chapter_number": 523,
+      "status": "inserted",
+      "chapter_title": "Hell",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_523",
+      "error": null
+    },
+    {
+      "chapter_number": 524,
+      "status": "inserted",
+      "chapter_title": "Unstoppable",
+      "manga_arc": "Amazon Lily Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_524",
+      "error": null
+    },
+    {
+      "chapter_number": 525,
+      "status": "inserted",
+      "chapter_title": "The Underwater Prison Impel Down",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_525",
+      "error": null
+    },
+    {
+      "chapter_number": 526,
+      "status": "inserted",
+      "chapter_title": "Adventure in the Great Prison",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_526",
+      "error": null
+    },
+    {
+      "chapter_number": 527,
+      "status": "inserted",
+      "chapter_title": "Level 1: Crimson Hell",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_527",
+      "error": null
+    },
+    {
+      "chapter_number": 528,
+      "status": "inserted",
+      "chapter_title": "Jimbei, First Son of the Sea",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_528",
+      "error": null
+    },
+    {
+      "chapter_number": 529,
+      "status": "inserted",
+      "chapter_title": "Level 2: Beast Hell",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_529",
+      "error": null
+    },
+    {
+      "chapter_number": 530,
+      "status": "inserted",
+      "chapter_title": "From One Hell to Another",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_530",
+      "error": null
+    },
+    {
+      "chapter_number": 531,
+      "status": "inserted",
+      "chapter_title": "Level 3: Starvation Hell",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_531",
+      "error": null
+    },
+    {
+      "chapter_number": 532,
+      "status": "inserted",
+      "chapter_title": "Jailer Beast Minotaur",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_532",
+      "error": null
+    },
+    {
+      "chapter_number": 533,
+      "status": "inserted",
+      "chapter_title": "Level 4: Inferno Hell",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_533",
+      "error": null
+    },
+    {
+      "chapter_number": 534,
+      "status": "inserted",
+      "chapter_title": "Warden Magellan vs. Pirate Luffy",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_534",
+      "error": null
+    },
+    {
+      "chapter_number": 535,
+      "status": "inserted",
+      "chapter_title": "Friend",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_535",
+      "error": null
+    },
+    {
+      "chapter_number": 536,
+      "status": "inserted",
+      "chapter_title": "Level 5: Frozen Hell",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_536",
+      "error": null
+    },
+    {
+      "chapter_number": 537,
+      "status": "inserted",
+      "chapter_title": "A Ray of Hope",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_537",
+      "error": null
+    },
+    {
+      "chapter_number": 538,
+      "status": "inserted",
+      "chapter_title": "Level 5.5: New Kama Land",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_538",
+      "error": null
+    },
+    {
+      "chapter_number": 539,
+      "status": "inserted",
+      "chapter_title": "Emporio Energy Hormone",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_539",
+      "error": null
+    },
+    {
+      "chapter_number": 540,
+      "status": "inserted",
+      "chapter_title": "Level 6: Infinite Hell",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_540",
+      "error": null
+    },
+    {
+      "chapter_number": 541,
+      "status": "inserted",
+      "chapter_title": "The Greatest Ever",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_541",
+      "error": null
+    },
+    {
+      "chapter_number": 542,
+      "status": "inserted",
+      "chapter_title": "Yet Another Epic Incident",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_542",
+      "error": null
+    },
+    {
+      "chapter_number": 543,
+      "status": "inserted",
+      "chapter_title": "Straw Hat and Blackbeard",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_543",
+      "error": null
+    },
+    {
+      "chapter_number": 544,
+      "status": "inserted",
+      "chapter_title": "The Lid to the Cauldron of Hell Opens",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_544",
+      "error": null
+    },
+    {
+      "chapter_number": 545,
+      "status": "inserted",
+      "chapter_title": "To Sunshine and Freedom",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_545",
+      "error": null
+    },
+    {
+      "chapter_number": 546,
+      "status": "inserted",
+      "chapter_title": "Fish-man Pirate Captain Jimbei, Warlord of the Sea",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_546",
+      "error": null
+    },
+    {
+      "chapter_number": 547,
+      "status": "inserted",
+      "chapter_title": "Island Ripper",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_547",
+      "error": null
+    },
+    {
+      "chapter_number": 548,
+      "status": "inserted",
+      "chapter_title": "Thank You",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_548",
+      "error": null
+    },
+    {
+      "chapter_number": 549,
+      "status": "inserted",
+      "chapter_title": "Battleship",
+      "manga_arc": "Impel Down Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_549",
+      "error": null
+    },
+    {
+      "chapter_number": 550,
+      "status": "inserted",
+      "chapter_title": "Navy Headquarters",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_550",
+      "error": null
+    },
+    {
+      "chapter_number": 551,
+      "status": "inserted",
+      "chapter_title": "Whitebeard of the Four Emperors",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_551",
+      "error": null
+    },
+    {
+      "chapter_number": 552,
+      "status": "inserted",
+      "chapter_title": "Ace and Whitebeard",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_552",
+      "error": null
+    },
+    {
+      "chapter_number": 553,
+      "status": "inserted",
+      "chapter_title": "Paramount War",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_553",
+      "error": null
+    },
+    {
+      "chapter_number": 554,
+      "status": "inserted",
+      "chapter_title": "Admiral Akainu",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_554",
+      "error": null
+    },
+    {
+      "chapter_number": 555,
+      "status": "inserted",
+      "chapter_title": "Oars and the Hat",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_555",
+      "error": null
+    },
+    {
+      "chapter_number": 556,
+      "status": "inserted",
+      "chapter_title": "Justice Will Prevail!",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_556",
+      "error": null
+    },
+    {
+      "chapter_number": 557,
+      "status": "inserted",
+      "chapter_title": "Luffy and Whitebeard",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_557",
+      "error": null
+    },
+    {
+      "chapter_number": 558,
+      "status": "inserted",
+      "chapter_title": "Little Brother",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_558",
+      "error": null
+    },
+    {
+      "chapter_number": 559,
+      "status": "inserted",
+      "chapter_title": "Destiny",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_559",
+      "error": null
+    },
+    {
+      "chapter_number": 560,
+      "status": "inserted",
+      "chapter_title": "Prisoners of Impel Down",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_560",
+      "error": null
+    },
+    {
+      "chapter_number": 561,
+      "status": "inserted",
+      "chapter_title": "Luffy vs. Mihawk",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_561",
+      "error": null
+    },
+    {
+      "chapter_number": 562,
+      "status": "inserted",
+      "chapter_title": "Whirl Spider Squard",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_562",
+      "error": null
+    },
+    {
+      "chapter_number": 563,
+      "status": "inserted",
+      "chapter_title": "One Man, One Heart",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_563",
+      "error": null
+    },
+    {
+      "chapter_number": 564,
+      "status": "inserted",
+      "chapter_title": "The Man Who Shook the World",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_564",
+      "error": null
+    },
+    {
+      "chapter_number": 565,
+      "status": "inserted",
+      "chapter_title": "Oars's Path",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_565",
+      "error": null
+    },
+    {
+      "chapter_number": 566,
+      "status": "inserted",
+      "chapter_title": "Raid",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_566",
+      "error": null
+    },
+    {
+      "chapter_number": 567,
+      "status": "inserted",
+      "chapter_title": "Marineford Navy Headquarters—Oris Plaza",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_567",
+      "error": null
+    },
+    {
+      "chapter_number": 568,
+      "status": "inserted",
+      "chapter_title": "Have It Your Way!",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_568",
+      "error": null
+    },
+    {
+      "chapter_number": 569,
+      "status": "inserted",
+      "chapter_title": "White Monster",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_569",
+      "error": null
+    },
+    {
+      "chapter_number": 570,
+      "status": "inserted",
+      "chapter_title": "The Bridge of Life",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_570",
+      "error": null
+    },
+    {
+      "chapter_number": 571,
+      "status": "inserted",
+      "chapter_title": "The Execution Platform",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_571",
+      "error": null
+    },
+    {
+      "chapter_number": 572,
+      "status": "inserted",
+      "chapter_title": "The Times They Are A-Changin'",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_572",
+      "error": null
+    },
+    {
+      "chapter_number": 573,
+      "status": "inserted",
+      "chapter_title": "The Name of This Era Is \"Whitebeard\"",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_573",
+      "error": null
+    },
+    {
+      "chapter_number": 574,
+      "status": "inserted",
+      "chapter_title": "The Death of Portgaz D. Ace",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_574",
+      "error": null
+    },
+    {
+      "chapter_number": 575,
+      "status": "inserted",
+      "chapter_title": "Voiceless Rage",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_575",
+      "error": null
+    },
+    {
+      "chapter_number": 576,
+      "status": "inserted",
+      "chapter_title": "The Great Pirate Edward Newgate",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_576",
+      "error": null
+    },
+    {
+      "chapter_number": 577,
+      "status": "inserted",
+      "chapter_title": "Outrageous Events One After Another",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_577",
+      "error": null
+    },
+    {
+      "chapter_number": 578,
+      "status": "inserted",
+      "chapter_title": "A Gift for the New Era",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_578",
+      "error": null
+    },
+    {
+      "chapter_number": 579,
+      "status": "inserted",
+      "chapter_title": "A Few Seconds of Courage",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_579",
+      "error": null
+    },
+    {
+      "chapter_number": 580,
+      "status": "inserted",
+      "chapter_title": "The War's Conclusion",
+      "manga_arc": "Marineford Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_580",
+      "error": null
+    },
+    {
+      "chapter_number": 581,
+      "status": "inserted",
+      "chapter_title": "Creeping Future",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_581",
+      "error": null
+    },
+    {
+      "chapter_number": 582,
+      "status": "inserted",
+      "chapter_title": "Luffy and Ace",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_582",
+      "error": null
+    },
+    {
+      "chapter_number": 583,
+      "status": "inserted",
+      "chapter_title": "Gray Terminal",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_583",
+      "error": null
+    },
+    {
+      "chapter_number": 584,
+      "status": "inserted",
+      "chapter_title": "Incident With Porchemy",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_584",
+      "error": null
+    },
+    {
+      "chapter_number": 585,
+      "status": "inserted",
+      "chapter_title": "Brotherly Pact",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_585",
+      "error": null
+    },
+    {
+      "chapter_number": 586,
+      "status": "inserted",
+      "chapter_title": "City of Stench",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_586",
+      "error": null
+    },
+    {
+      "chapter_number": 587,
+      "status": "inserted",
+      "chapter_title": "I Will Never Run Away",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_587",
+      "error": null
+    },
+    {
+      "chapter_number": 588,
+      "status": "inserted",
+      "chapter_title": "Sabo's Ocean",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_588",
+      "error": null
+    },
+    {
+      "chapter_number": 589,
+      "status": "inserted",
+      "chapter_title": "Will of the Winds",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_589",
+      "error": null
+    },
+    {
+      "chapter_number": 590,
+      "status": "inserted",
+      "chapter_title": "My Little Brother",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_590",
+      "error": null
+    },
+    {
+      "chapter_number": 591,
+      "status": "inserted",
+      "chapter_title": "Are You Sure About That?",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_591",
+      "error": null
+    },
+    {
+      "chapter_number": 592,
+      "status": "inserted",
+      "chapter_title": "Cheer",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_592",
+      "error": null
+    },
+    {
+      "chapter_number": 593,
+      "status": "inserted",
+      "chapter_title": "NEWS",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_593",
+      "error": null
+    },
+    {
+      "chapter_number": 594,
+      "status": "inserted",
+      "chapter_title": "Message",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_594",
+      "error": null
+    },
+    {
+      "chapter_number": 595,
+      "status": "inserted",
+      "chapter_title": "The Pledge",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_595",
+      "error": null
+    },
+    {
+      "chapter_number": 596,
+      "status": "inserted",
+      "chapter_title": "SPECTRUM",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_596",
+      "error": null
+    },
+    {
+      "chapter_number": 597,
+      "status": "inserted",
+      "chapter_title": "3D 2Y",
+      "manga_arc": "Post-War Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_597",
+      "error": null
+    },
+    {
+      "chapter_number": 598,
+      "status": "inserted",
+      "chapter_title": "Two Years Later",
+      "manga_arc": "Return to Sabaody Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_598",
+      "error": null
+    },
+    {
+      "chapter_number": 599,
+      "status": "inserted",
+      "chapter_title": "Nine Pirates",
+      "manga_arc": "Return to Sabaody Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_599",
+      "error": null
+    },
+    {
+      "chapter_number": 600,
+      "status": "inserted",
+      "chapter_title": "Island of New Beginnings",
+      "manga_arc": "Return to Sabaody Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_600",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T14:22:17.700370",
+  "elapsed_seconds": 548.27,
+  "status": "completed_successfully"
+}

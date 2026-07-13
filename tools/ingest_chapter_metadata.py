@@ -1,5 +1,10 @@
 import argparse
 
+import json
+from datetime import datetime
+from pathlib import Path
+from time import perf_counter
+
 from scraper.core.browser_client import BrowserClient
 from scraper.database.session import SessionLocal
 from scraper.providers.chapter_metadata_factory import (
@@ -21,6 +26,29 @@ SERIES_CONFIGS = {
     "One Piece": "configs/fandom/one_piece.json",
     "Naruto": "configs/fandom/naruto.json",
 }
+
+
+def chapter_record_is_complete(
+    chapter,
+) -> bool:
+    if chapter is None:
+        return False
+
+    return (
+        bool(
+            chapter.chapter_title
+            and chapter.chapter_title.strip()
+        )
+        and bool(
+            chapter.manga_arc
+            and chapter.manga_arc.strip()
+        )
+        and bool(
+            chapter.source_url
+            and chapter.source_url.strip()
+        )
+        and chapter.last_updated is not None
+    )
 
 
 def main():
@@ -66,7 +94,28 @@ def main():
         ),
     )
 
+    parser.add_argument(
+        "--skip-complete-existing",
+        action="store_true",
+        help=(
+            "Skip existing records that already contain "
+            "title, manga arc, source URL, and timestamp."
+        ),
+    )
+
+    parser.add_argument(
+        "--json-report",
+        type=str,
+        default=None,
+        help=(
+            "Write an ingestion summary and per-chapter "
+            "results to a JSON file."
+        ),
+    )
+
     args = parser.parse_args()
+
+    started_at = perf_counter()
 
     if (
         args.chapter is not None
@@ -139,6 +188,27 @@ def main():
                 f'"{args.anime}"'
             )
             return
+        
+        report = {
+            "schema_version": 1,
+            "anime": anime.title,
+            "start_chapter": chapter_numbers[0],
+            "end_chapter": chapter_numbers[-1],
+            "chapters_selected": len(chapter_numbers),
+            "inserted": 0,
+            "updated": 0,
+            "skipped": 0,
+            "failed": 0,
+            "failed_chapters": [],
+            "results": [],
+            "dry_run": args.dry_run,
+            "skip_complete_existing": (
+                args.skip_complete_existing
+            ),
+            "generated_at": None,
+            "elapsed_seconds": 0,
+            "status": None,
+        }
 
         config = load_provider_config(
             config_path
@@ -230,6 +300,44 @@ def main():
                         f"  Chapter {chapter_number}"
                     )
 
+            report.update(
+                {
+                    "would_insert": insert_count,
+                    "would_update": update_count,
+                    "unresolved_urls": unresolved_urls,
+                    "generated_at": (
+                        datetime.now().isoformat()
+                    ),
+                    "elapsed_seconds": round(
+                        perf_counter() - started_at,
+                        2,
+                    ),
+                    "status": (
+                        "preflight_pass"
+                        if not unresolved_urls
+                        else "preflight_with_gaps"
+                    ),
+                }
+            )
+
+            if args.json_report:
+                Path(args.json_report).write_text(
+                    json.dumps(
+                        report,
+                        indent=2,
+                        ensure_ascii=False,
+                    ),
+                    encoding="utf-8",
+                )
+
+                print()
+                print(
+                    "JSON report written to: "
+                    f"{args.json_report}"
+                )
+
+            return
+
             return
 
         provider = create_chapter_metadata_provider(
@@ -273,6 +381,35 @@ def main():
                     chapter_number=chapter_number,
                 )
 
+                if (
+                    args.skip_complete_existing
+                    and chapter_record_is_complete(
+                        existing
+                    )
+                ):
+                    print("  Status: Skipped (already complete)")
+                    print()
+
+                    report["skipped"] += 1
+                    report["results"].append(
+                        {
+                            "chapter_number": chapter_number,
+                            "status": "skipped_complete",
+                            "chapter_title": (
+                                existing.chapter_title
+                            ),
+                            "manga_arc": (
+                                existing.manga_arc
+                            ),
+                            "source_url": (
+                                existing.source_url
+                            ),
+                            "error": None,
+                        }
+                    )
+
+                    continue
+
                 chapter = ingestion_service.ingest(
                     anime=anime,
                     chapter_number=chapter_number,
@@ -301,6 +438,27 @@ def main():
                     f"  Source: "
                     f"{chapter.source_url or 'Not available'}"
                 )
+                if existing is None:
+                    report["inserted"] += 1
+                else:
+                    report["updated"] += 1
+
+                report["results"].append(
+                    {
+                        "chapter_number": (
+                            chapter.chapter_number
+                        ),
+                        "status": status.lower(),
+                        "chapter_title": (
+                            chapter.chapter_title
+                        ),
+                        "manga_arc": chapter.manga_arc,
+                        "source_url": (
+                            chapter.source_url
+                        ),
+                        "error": None,
+                    }
+                )
                 print(f"  Status: {status}")
                 print()
 
@@ -315,6 +473,21 @@ def main():
                 print(f"  FAILED: {error}")
                 print()
 
+                report["failed"] += 1
+                report["failed_chapters"].append(
+                    chapter_number
+                )
+                report["results"].append(
+                    {
+                        "chapter_number": chapter_number,
+                        "status": "failed",
+                        "chapter_title": None,
+                        "manga_arc": None,
+                        "source_url": None,
+                        "error": str(error),
+                    }
+                )
+
         print("Chapter Metadata Ingestion Summary")
         print("----------------------------------")
         print(f"Series            : {anime.title}")
@@ -322,6 +495,7 @@ def main():
         print(f"Inserted          : {inserted_count}")
         print(f"Updated           : {updated_count}")
         print(f"Failed            : {len(failed_chapters)}")
+        print(f"Skipped           : {report['skipped']}")
 
         if failed_chapters:
             print("Failed Chapters:")
@@ -332,6 +506,43 @@ def main():
                     f"{failure['chapter_number']}: "
                     f"{failure['error']}"
                 )
+
+        elapsed_seconds = (
+            perf_counter() - started_at
+        )
+
+        report.update(
+            {
+                "generated_at": (
+                    datetime.now().isoformat()
+                ),
+                "elapsed_seconds": round(
+                    elapsed_seconds,
+                    2,
+                ),
+                "status": (
+                    "completed_with_failures"
+                    if report["failed"] > 0
+                    else "completed_successfully"
+                ),
+            }
+        )
+
+        if args.json_report:
+            Path(args.json_report).write_text(
+                json.dumps(
+                    report,
+                    indent=2,
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            print()
+            print(
+                "JSON report written to: "
+                f"{args.json_report}"
+            )
 
     except Exception as error:
         print("Chapter metadata ingestion failed.")

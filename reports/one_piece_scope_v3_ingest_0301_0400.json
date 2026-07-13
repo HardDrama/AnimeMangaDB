@@ -1,0 +1,819 @@
+{
+  "schema_version": 1,
+  "anime": "One Piece",
+  "start_chapter": 301,
+  "end_chapter": 400,
+  "chapters_selected": 100,
+  "inserted": 100,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 301,
+      "status": "inserted",
+      "chapter_title": "I Hereby Guide...",
+      "manga_arc": "Skypiea Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_301",
+      "error": null
+    },
+    {
+      "chapter_number": 302,
+      "status": "inserted",
+      "chapter_title": "Finale",
+      "manga_arc": "Skypiea Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_302",
+      "error": null
+    },
+    {
+      "chapter_number": 303,
+      "status": "inserted",
+      "chapter_title": "The Wealthy Pirate Gang",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_303",
+      "error": null
+    },
+    {
+      "chapter_number": 304,
+      "status": "inserted",
+      "chapter_title": "Long Island Adventure",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_304",
+      "error": null
+    },
+    {
+      "chapter_number": 305,
+      "status": "inserted",
+      "chapter_title": "Foxy the Silver Fox",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_305",
+      "error": null
+    },
+    {
+      "chapter_number": 306,
+      "status": "inserted",
+      "chapter_title": "Donut Race!",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_306",
+      "error": null
+    },
+    {
+      "chapter_number": 307,
+      "status": "inserted",
+      "chapter_title": "Ready, Set, Donut!",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_307",
+      "error": null
+    },
+    {
+      "chapter_number": 308,
+      "status": "inserted",
+      "chapter_title": "Obstructive Tactics",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_308",
+      "error": null
+    },
+    {
+      "chapter_number": 309,
+      "status": "inserted",
+      "chapter_title": "Groggy Monsters",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_309",
+      "error": null
+    },
+    {
+      "chapter_number": 310,
+      "status": "inserted",
+      "chapter_title": "Groggy Ring!!",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_310",
+      "error": null
+    },
+    {
+      "chapter_number": 311,
+      "status": "inserted",
+      "chapter_title": "Rough Game",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_311",
+      "error": null
+    },
+    {
+      "chapter_number": 312,
+      "status": "inserted",
+      "chapter_title": "Goal!!",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_312",
+      "error": null
+    },
+    {
+      "chapter_number": 313,
+      "status": "inserted",
+      "chapter_title": "Main Event",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_313",
+      "error": null
+    },
+    {
+      "chapter_number": 314,
+      "status": "inserted",
+      "chapter_title": "Combat!!",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_314",
+      "error": null
+    },
+    {
+      "chapter_number": 315,
+      "status": "inserted",
+      "chapter_title": "Secret Room",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_315",
+      "error": null
+    },
+    {
+      "chapter_number": 316,
+      "status": "inserted",
+      "chapter_title": "Brother Soul",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_316",
+      "error": null
+    },
+    {
+      "chapter_number": 317,
+      "status": "inserted",
+      "chapter_title": "K.O.",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_317",
+      "error": null
+    },
+    {
+      "chapter_number": 318,
+      "status": "inserted",
+      "chapter_title": "Closure",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_318",
+      "error": null
+    },
+    {
+      "chapter_number": 319,
+      "status": "inserted",
+      "chapter_title": "Admiral Aokiji of the Navy Headquarters",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_319",
+      "error": null
+    },
+    {
+      "chapter_number": 320,
+      "status": "inserted",
+      "chapter_title": "Ultimate Military Force",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_320",
+      "error": null
+    },
+    {
+      "chapter_number": 321,
+      "status": "inserted",
+      "chapter_title": "One-on-One",
+      "manga_arc": "Long Ring Long Land Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_321",
+      "error": null
+    },
+    {
+      "chapter_number": 322,
+      "status": "inserted",
+      "chapter_title": "Puffing Tom",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_322",
+      "error": null
+    },
+    {
+      "chapter_number": 323,
+      "status": "inserted",
+      "chapter_title": "The City of Water, Water Seven",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_323",
+      "error": null
+    },
+    {
+      "chapter_number": 324,
+      "status": "inserted",
+      "chapter_title": "Adventures in the City on the Water",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_324",
+      "error": null
+    },
+    {
+      "chapter_number": 325,
+      "status": "inserted",
+      "chapter_title": "The Franky Family",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_325",
+      "error": null
+    },
+    {
+      "chapter_number": 326,
+      "status": "inserted",
+      "chapter_title": "Mr. Iceberg",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_326",
+      "error": null
+    },
+    {
+      "chapter_number": 327,
+      "status": "inserted",
+      "chapter_title": "Shipbuilding Island, Repair Dock No. 1",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_327",
+      "error": null
+    },
+    {
+      "chapter_number": 328,
+      "status": "inserted",
+      "chapter_title": "The Pirate Abduction Incident",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_328",
+      "error": null
+    },
+    {
+      "chapter_number": 329,
+      "status": "inserted",
+      "chapter_title": "My Name Is Franky",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_329",
+      "error": null
+    },
+    {
+      "chapter_number": 330,
+      "status": "inserted",
+      "chapter_title": "It's Decided",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_330",
+      "error": null
+    },
+    {
+      "chapter_number": 331,
+      "status": "inserted",
+      "chapter_title": "The Big Argument",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_331",
+      "error": null
+    },
+    {
+      "chapter_number": 332,
+      "status": "inserted",
+      "chapter_title": "Luffy vs. Usopp",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_332",
+      "error": null
+    },
+    {
+      "chapter_number": 333,
+      "status": "inserted",
+      "chapter_title": "Captain",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_333",
+      "error": null
+    },
+    {
+      "chapter_number": 334,
+      "status": "inserted",
+      "chapter_title": "Big Trouble in the Secret Room",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_334",
+      "error": null
+    },
+    {
+      "chapter_number": 335,
+      "status": "inserted",
+      "chapter_title": "Warning",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_335",
+      "error": null
+    },
+    {
+      "chapter_number": 336,
+      "status": "inserted",
+      "chapter_title": "Luffy vs. Franky",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_336",
+      "error": null
+    },
+    {
+      "chapter_number": 337,
+      "status": "inserted",
+      "chapter_title": "Protectors of the City of Water",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_337",
+      "error": null
+    },
+    {
+      "chapter_number": 338,
+      "status": "inserted",
+      "chapter_title": "Coup de Vent",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_338",
+      "error": null
+    },
+    {
+      "chapter_number": 339,
+      "status": "inserted",
+      "chapter_title": "Rumors",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_339",
+      "error": null
+    },
+    {
+      "chapter_number": 340,
+      "status": "inserted",
+      "chapter_title": "The Woman Who Brings Darkness",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_340",
+      "error": null
+    },
+    {
+      "chapter_number": 341,
+      "status": "inserted",
+      "chapter_title": "Demon",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_341",
+      "error": null
+    },
+    {
+      "chapter_number": 342,
+      "status": "inserted",
+      "chapter_title": "The Messenger of Darkness",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_342",
+      "error": null
+    },
+    {
+      "chapter_number": 343,
+      "status": "inserted",
+      "chapter_title": "Cipher Pol No. 9",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_343",
+      "error": null
+    },
+    {
+      "chapter_number": 344,
+      "status": "inserted",
+      "chapter_title": "Opposing Force",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_344",
+      "error": null
+    },
+    {
+      "chapter_number": 345,
+      "status": "inserted",
+      "chapter_title": "Sleepers",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_345",
+      "error": null
+    },
+    {
+      "chapter_number": 346,
+      "status": "inserted",
+      "chapter_title": "The Ninth Justice",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_346",
+      "error": null
+    },
+    {
+      "chapter_number": 347,
+      "status": "inserted",
+      "chapter_title": "Six Powers",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_347",
+      "error": null
+    },
+    {
+      "chapter_number": 348,
+      "status": "inserted",
+      "chapter_title": "Fighting Power",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_348",
+      "error": null
+    },
+    {
+      "chapter_number": 349,
+      "status": "inserted",
+      "chapter_title": "Ordinary Citizens",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_349",
+      "error": null
+    },
+    {
+      "chapter_number": 350,
+      "status": "inserted",
+      "chapter_title": "The Warehouse Under the Bridge",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_350",
+      "error": null
+    },
+    {
+      "chapter_number": 351,
+      "status": "inserted",
+      "chapter_title": "Klabautermann",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_351",
+      "error": null
+    },
+    {
+      "chapter_number": 352,
+      "status": "inserted",
+      "chapter_title": "Tom's Workers",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_352",
+      "error": null
+    },
+    {
+      "chapter_number": 353,
+      "status": "inserted",
+      "chapter_title": "The Legendary Shipwright",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_353",
+      "error": null
+    },
+    {
+      "chapter_number": 354,
+      "status": "inserted",
+      "chapter_title": "Sea Train",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_354",
+      "error": null
+    },
+    {
+      "chapter_number": 355,
+      "status": "inserted",
+      "chapter_title": "Spandam",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_355",
+      "error": null
+    },
+    {
+      "chapter_number": 356,
+      "status": "inserted",
+      "chapter_title": "Mr. Tom",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_356",
+      "error": null
+    },
+    {
+      "chapter_number": 357,
+      "status": "inserted",
+      "chapter_title": "Cutty Flam",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_357",
+      "error": null
+    },
+    {
+      "chapter_number": 358,
+      "status": "inserted",
+      "chapter_title": "Reactivation",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_358",
+      "error": null
+    },
+    {
+      "chapter_number": 359,
+      "status": "inserted",
+      "chapter_title": "Bingo",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_359",
+      "error": null
+    },
+    {
+      "chapter_number": 360,
+      "status": "inserted",
+      "chapter_title": "Departing Soon",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_360",
+      "error": null
+    },
+    {
+      "chapter_number": 361,
+      "status": "inserted",
+      "chapter_title": "P.S.",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_361",
+      "error": null
+    },
+    {
+      "chapter_number": 362,
+      "status": "inserted",
+      "chapter_title": "Ebb Tide",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_362",
+      "error": null
+    },
+    {
+      "chapter_number": 363,
+      "status": "inserted",
+      "chapter_title": "Aqua Laguna",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_363",
+      "error": null
+    },
+    {
+      "chapter_number": 364,
+      "status": "inserted",
+      "chapter_title": "Kokoro",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_364",
+      "error": null
+    },
+    {
+      "chapter_number": 365,
+      "status": "inserted",
+      "chapter_title": "Rocketman!!",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_365",
+      "error": null
+    },
+    {
+      "chapter_number": 366,
+      "status": "inserted",
+      "chapter_title": "Sortie!",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_366",
+      "error": null
+    },
+    {
+      "chapter_number": 367,
+      "status": "inserted",
+      "chapter_title": "Sniper King",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_367",
+      "error": null
+    },
+    {
+      "chapter_number": 368,
+      "status": "inserted",
+      "chapter_title": "Sea Train Battle Game",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_368",
+      "error": null
+    },
+    {
+      "chapter_number": 369,
+      "status": "inserted",
+      "chapter_title": "Ramen Kung Fu",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_369",
+      "error": null
+    },
+    {
+      "chapter_number": 370,
+      "status": "inserted",
+      "chapter_title": "You're Not Alone",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_370",
+      "error": null
+    },
+    {
+      "chapter_number": 371,
+      "status": "inserted",
+      "chapter_title": "The Honorable Captain T-Bone",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_371",
+      "error": null
+    },
+    {
+      "chapter_number": 372,
+      "status": "inserted",
+      "chapter_title": "Plastic Surgery",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_372",
+      "error": null
+    },
+    {
+      "chapter_number": 373,
+      "status": "inserted",
+      "chapter_title": "Necessary Evil",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_373",
+      "error": null
+    },
+    {
+      "chapter_number": 374,
+      "status": "inserted",
+      "chapter_title": "Scramble",
+      "manga_arc": "Water 7 Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_374",
+      "error": null
+    },
+    {
+      "chapter_number": 375,
+      "status": "inserted",
+      "chapter_title": "The Supermen of Enies Lobby",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_375",
+      "error": null
+    },
+    {
+      "chapter_number": 376,
+      "status": "inserted",
+      "chapter_title": "I Got It!!",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_376",
+      "error": null
+    },
+    {
+      "chapter_number": 377,
+      "status": "inserted",
+      "chapter_title": "The Big Showdown on the Judicial Island",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_377",
+      "error": null
+    },
+    {
+      "chapter_number": 378,
+      "status": "inserted",
+      "chapter_title": "Casualties",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_378",
+      "error": null
+    },
+    {
+      "chapter_number": 379,
+      "status": "inserted",
+      "chapter_title": "Power Level",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_379",
+      "error": null
+    },
+    {
+      "chapter_number": 380,
+      "status": "inserted",
+      "chapter_title": "Enies Lobby Main Island Express",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_380",
+      "error": null
+    },
+    {
+      "chapter_number": 381,
+      "status": "inserted",
+      "chapter_title": "Fired",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_381",
+      "error": null
+    },
+    {
+      "chapter_number": 382,
+      "status": "inserted",
+      "chapter_title": "Demon Lair",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_382",
+      "error": null
+    },
+    {
+      "chapter_number": 383,
+      "status": "inserted",
+      "chapter_title": "Luffy vs. Blueno",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_383",
+      "error": null
+    },
+    {
+      "chapter_number": 384,
+      "status": "inserted",
+      "chapter_title": "Signal the Counterattack",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_384",
+      "error": null
+    },
+    {
+      "chapter_number": 385,
+      "status": "inserted",
+      "chapter_title": "There Is a Way",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_385",
+      "error": null
+    },
+    {
+      "chapter_number": 386,
+      "status": "inserted",
+      "chapter_title": "Unprecedented",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_386",
+      "error": null
+    },
+    {
+      "chapter_number": 387,
+      "status": "inserted",
+      "chapter_title": "Gear",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_387",
+      "error": null
+    },
+    {
+      "chapter_number": 388,
+      "status": "inserted",
+      "chapter_title": "Gear Two",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_388",
+      "error": null
+    },
+    {
+      "chapter_number": 389,
+      "status": "inserted",
+      "chapter_title": "Response",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_389",
+      "error": null
+    },
+    {
+      "chapter_number": 390,
+      "status": "inserted",
+      "chapter_title": "Accepting the Challenge",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_390",
+      "error": null
+    },
+    {
+      "chapter_number": 391,
+      "status": "inserted",
+      "chapter_title": "The Girl They Called a Demon",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_391",
+      "error": null
+    },
+    {
+      "chapter_number": 392,
+      "status": "inserted",
+      "chapter_title": "Dereshi",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_392",
+      "error": null
+    },
+    {
+      "chapter_number": 393,
+      "status": "inserted",
+      "chapter_title": "Olvia",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_393",
+      "error": null
+    },
+    {
+      "chapter_number": 394,
+      "status": "inserted",
+      "chapter_title": "The Demons of Ohara",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_394",
+      "error": null
+    },
+    {
+      "chapter_number": 395,
+      "status": "inserted",
+      "chapter_title": "Ohara vs. the World Government",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_395",
+      "error": null
+    },
+    {
+      "chapter_number": 396,
+      "status": "inserted",
+      "chapter_title": "Saul",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_396",
+      "error": null
+    },
+    {
+      "chapter_number": 397,
+      "status": "inserted",
+      "chapter_title": "In Hopes of Reaching the Future",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_397",
+      "error": null
+    },
+    {
+      "chapter_number": 398,
+      "status": "inserted",
+      "chapter_title": "Declaration of War",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_398",
+      "error": null
+    },
+    {
+      "chapter_number": 399,
+      "status": "inserted",
+      "chapter_title": "Jump Toward the Waterfall!!",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_399",
+      "error": null
+    },
+    {
+      "chapter_number": 400,
+      "status": "inserted",
+      "chapter_title": "The Key to Freedom",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_400",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T14:00:43.853303",
+  "elapsed_seconds": 539.88,
+  "status": "completed_successfully"
+}

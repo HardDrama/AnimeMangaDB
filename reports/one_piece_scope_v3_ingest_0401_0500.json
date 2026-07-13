@@ -1,0 +1,819 @@
+{
+  "schema_version": 1,
+  "anime": "One Piece",
+  "start_chapter": 401,
+  "end_chapter": 500,
+  "chapters_selected": 100,
+  "inserted": 100,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 401,
+      "status": "inserted",
+      "chapter_title": "Pirates vs. CP9",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_401",
+      "error": null
+    },
+    {
+      "chapter_number": 402,
+      "status": "inserted",
+      "chapter_title": "Handcuffs No. 2",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_402",
+      "error": null
+    },
+    {
+      "chapter_number": 403,
+      "status": "inserted",
+      "chapter_title": "Mr. Chivalry",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_403",
+      "error": null
+    },
+    {
+      "chapter_number": 404,
+      "status": "inserted",
+      "chapter_title": "Franky vs. Fukurô",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_404",
+      "error": null
+    },
+    {
+      "chapter_number": 405,
+      "status": "inserted",
+      "chapter_title": "Power",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_405",
+      "error": null
+    },
+    {
+      "chapter_number": 406,
+      "status": "inserted",
+      "chapter_title": "Life Return",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_406",
+      "error": null
+    },
+    {
+      "chapter_number": 407,
+      "status": "inserted",
+      "chapter_title": "Monster",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_407",
+      "error": null
+    },
+    {
+      "chapter_number": 408,
+      "status": "inserted",
+      "chapter_title": "Monster vs. Kumadori",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_408",
+      "error": null
+    },
+    {
+      "chapter_number": 409,
+      "status": "inserted",
+      "chapter_title": "The Terrifying Broadcast",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_409",
+      "error": null
+    },
+    {
+      "chapter_number": 410,
+      "status": "inserted",
+      "chapter_title": "Super-Size Nami",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_410",
+      "error": null
+    },
+    {
+      "chapter_number": 411,
+      "status": "inserted",
+      "chapter_title": "Nami vs. Kalifa",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_411",
+      "error": null
+    },
+    {
+      "chapter_number": 412,
+      "status": "inserted",
+      "chapter_title": "You Missed Your Chance",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_412",
+      "error": null
+    },
+    {
+      "chapter_number": 413,
+      "status": "inserted",
+      "chapter_title": "Hunter",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_413",
+      "error": null
+    },
+    {
+      "chapter_number": 414,
+      "status": "inserted",
+      "chapter_title": "Sanji vs. Jabra",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_414",
+      "error": null
+    },
+    {
+      "chapter_number": 415,
+      "status": "inserted",
+      "chapter_title": "Heat Up",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_415",
+      "error": null
+    },
+    {
+      "chapter_number": 416,
+      "status": "inserted",
+      "chapter_title": "Zolo vs. Kaku",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_416",
+      "error": null
+    },
+    {
+      "chapter_number": 417,
+      "status": "inserted",
+      "chapter_title": "Asura",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_417",
+      "error": null
+    },
+    {
+      "chapter_number": 418,
+      "status": "inserted",
+      "chapter_title": "Luffy vs. Rob Lucci",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_418",
+      "error": null
+    },
+    {
+      "chapter_number": 419,
+      "status": "inserted",
+      "chapter_title": "Legend of a Hero",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_419",
+      "error": null
+    },
+    {
+      "chapter_number": 420,
+      "status": "inserted",
+      "chapter_title": "Buster Call",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_420",
+      "error": null
+    },
+    {
+      "chapter_number": 421,
+      "status": "inserted",
+      "chapter_title": "Gear Three",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_421",
+      "error": null
+    },
+    {
+      "chapter_number": 422,
+      "status": "inserted",
+      "chapter_title": "Rob Lucci",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_422",
+      "error": null
+    },
+    {
+      "chapter_number": 423,
+      "status": "inserted",
+      "chapter_title": "Mermaid Legend",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_423",
+      "error": null
+    },
+    {
+      "chapter_number": 424,
+      "status": "inserted",
+      "chapter_title": "Escape Ship",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_424",
+      "error": null
+    },
+    {
+      "chapter_number": 425,
+      "status": "inserted",
+      "chapter_title": "Bridge of Mortal Combat",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_425",
+      "error": null
+    },
+    {
+      "chapter_number": 426,
+      "status": "inserted",
+      "chapter_title": "A Ship Waiting for Wind",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_426",
+      "error": null
+    },
+    {
+      "chapter_number": 427,
+      "status": "inserted",
+      "chapter_title": "This Isn't the Afterlife",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_427",
+      "error": null
+    },
+    {
+      "chapter_number": 428,
+      "status": "inserted",
+      "chapter_title": "Let's Go Back",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_428",
+      "error": null
+    },
+    {
+      "chapter_number": 429,
+      "status": "inserted",
+      "chapter_title": "Utter Defeat",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_429",
+      "error": null
+    },
+    {
+      "chapter_number": 430,
+      "status": "inserted",
+      "chapter_title": "A Light Snow of Reminiscence Falls",
+      "manga_arc": "Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_430",
+      "error": null
+    },
+    {
+      "chapter_number": 431,
+      "status": "inserted",
+      "chapter_title": "Fist of Love",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_431",
+      "error": null
+    },
+    {
+      "chapter_number": 432,
+      "status": "inserted",
+      "chapter_title": "Jack-in-the-Box",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_432",
+      "error": null
+    },
+    {
+      "chapter_number": 433,
+      "status": "inserted",
+      "chapter_title": "The Name of That Sea",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_433",
+      "error": null
+    },
+    {
+      "chapter_number": 434,
+      "status": "inserted",
+      "chapter_title": "Whitebeard and Red-Hair",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_434",
+      "error": null
+    },
+    {
+      "chapter_number": 435,
+      "status": "inserted",
+      "chapter_title": "You Have My Sympathies",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_435",
+      "error": null
+    },
+    {
+      "chapter_number": 436,
+      "status": "inserted",
+      "chapter_title": "Trunks from Franky House",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_436",
+      "error": null
+    },
+    {
+      "chapter_number": 437,
+      "status": "inserted",
+      "chapter_title": "Naked Mania",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_437",
+      "error": null
+    },
+    {
+      "chapter_number": 438,
+      "status": "inserted",
+      "chapter_title": "Pride",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_438",
+      "error": null
+    },
+    {
+      "chapter_number": 439,
+      "status": "inserted",
+      "chapter_title": "Third and Seventh",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_439",
+      "error": null
+    },
+    {
+      "chapter_number": 440,
+      "status": "inserted",
+      "chapter_title": "Fire Fist vs. Blackbeard",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_440",
+      "error": null
+    },
+    {
+      "chapter_number": 441,
+      "status": "inserted",
+      "chapter_title": "Duel on Banaro Island",
+      "manga_arc": "Post-Enies Lobby Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_441",
+      "error": null
+    },
+    {
+      "chapter_number": 442,
+      "status": "inserted",
+      "chapter_title": "Adventure in the Demonic Sea",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_442",
+      "error": null
+    },
+    {
+      "chapter_number": 443,
+      "status": "inserted",
+      "chapter_title": "Thriller Bark",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_443",
+      "error": null
+    },
+    {
+      "chapter_number": 444,
+      "status": "inserted",
+      "chapter_title": "Adventure on Ghost Island",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_444",
+      "error": null
+    },
+    {
+      "chapter_number": 445,
+      "status": "inserted",
+      "chapter_title": "Zombies",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_445",
+      "error": null
+    },
+    {
+      "chapter_number": 446,
+      "status": "inserted",
+      "chapter_title": "Doctor Hogback",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_446",
+      "error": null
+    },
+    {
+      "chapter_number": 447,
+      "status": "inserted",
+      "chapter_title": "Zombie-in-the-Box",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_447",
+      "error": null
+    },
+    {
+      "chapter_number": 448,
+      "status": "inserted",
+      "chapter_title": "Moria",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_448",
+      "error": null
+    },
+    {
+      "chapter_number": 449,
+      "status": "inserted",
+      "chapter_title": "The Four Monsters of Thriller Bark",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_449",
+      "error": null
+    },
+    {
+      "chapter_number": 450,
+      "status": "inserted",
+      "chapter_title": "Night of the Zombie Generals",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_450",
+      "error": null
+    },
+    {
+      "chapter_number": 451,
+      "status": "inserted",
+      "chapter_title": "Perona's Wonder Garden",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_451",
+      "error": null
+    },
+    {
+      "chapter_number": 452,
+      "status": "inserted",
+      "chapter_title": "Jigoro of the Wind",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_452",
+      "error": null
+    },
+    {
+      "chapter_number": 453,
+      "status": "inserted",
+      "chapter_title": "Cloudy, Partly Bony",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_453",
+      "error": null
+    },
+    {
+      "chapter_number": 454,
+      "status": "inserted",
+      "chapter_title": "The Humming Swordsman",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_454",
+      "error": null
+    },
+    {
+      "chapter_number": 455,
+      "status": "inserted",
+      "chapter_title": "Gecko Moria of the Seven Warlords of the Sea",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_455",
+      "error": null
+    },
+    {
+      "chapter_number": 456,
+      "status": "inserted",
+      "chapter_title": "Demon from the Land of Ice",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_456",
+      "error": null
+    },
+    {
+      "chapter_number": 457,
+      "status": "inserted",
+      "chapter_title": "Meat!!!",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_457",
+      "error": null
+    },
+    {
+      "chapter_number": 458,
+      "status": "inserted",
+      "chapter_title": "Anything but My Afro",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_458",
+      "error": null
+    },
+    {
+      "chapter_number": 459,
+      "status": "inserted",
+      "chapter_title": "I Can't Just Die Hoping to be Forgiven",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_459",
+      "error": null
+    },
+    {
+      "chapter_number": 460,
+      "status": "inserted",
+      "chapter_title": "Conquest Before Dawn!",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_460",
+      "error": null
+    },
+    {
+      "chapter_number": 461,
+      "status": "inserted",
+      "chapter_title": "Ghost Buster",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_461",
+      "error": null
+    },
+    {
+      "chapter_number": 462,
+      "status": "inserted",
+      "chapter_title": "Adventures of Oars",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_462",
+      "error": null
+    },
+    {
+      "chapter_number": 463,
+      "status": "inserted",
+      "chapter_title": "Pirate Sanji vs. Mystery Man Absalom",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_463",
+      "error": null
+    },
+    {
+      "chapter_number": 464,
+      "status": "inserted",
+      "chapter_title": "Sanji's Dream",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_464",
+      "error": null
+    },
+    {
+      "chapter_number": 465,
+      "status": "inserted",
+      "chapter_title": "Pirate Usopp vs. Mystery Woman Perona",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_465",
+      "error": null
+    },
+    {
+      "chapter_number": 466,
+      "status": "inserted",
+      "chapter_title": "Conclusion",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_466",
+      "error": null
+    },
+    {
+      "chapter_number": 467,
+      "status": "inserted",
+      "chapter_title": "Pirate Zolo vs. Samurai Ryuma",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_467",
+      "error": null
+    },
+    {
+      "chapter_number": 468,
+      "status": "inserted",
+      "chapter_title": "Pirate Chopper vs. Mystery Man Hogback",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_468",
+      "error": null
+    },
+    {
+      "chapter_number": 469,
+      "status": "inserted",
+      "chapter_title": "Come Out Here, Straw Hat Pirates!",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_469",
+      "error": null
+    },
+    {
+      "chapter_number": 470,
+      "status": "inserted",
+      "chapter_title": "Oars vs. Straw Hat Pirates",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_470",
+      "error": null
+    },
+    {
+      "chapter_number": 471,
+      "status": "inserted",
+      "chapter_title": "My Friend",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_471",
+      "error": null
+    },
+    {
+      "chapter_number": 472,
+      "status": "inserted",
+      "chapter_title": "Down",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_472",
+      "error": null
+    },
+    {
+      "chapter_number": 473,
+      "status": "inserted",
+      "chapter_title": "Warlord Bartholomew Kuma Appears",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_473",
+      "error": null
+    },
+    {
+      "chapter_number": 474,
+      "status": "inserted",
+      "chapter_title": "We Have to Do It!",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_474",
+      "error": null
+    },
+    {
+      "chapter_number": 475,
+      "status": "inserted",
+      "chapter_title": "Pirates of the Forest",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_475",
+      "error": null
+    },
+    {
+      "chapter_number": 476,
+      "status": "inserted",
+      "chapter_title": "Nightmare Luffy",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_476",
+      "error": null
+    },
+    {
+      "chapter_number": 477,
+      "status": "inserted",
+      "chapter_title": "3/8",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_477",
+      "error": null
+    },
+    {
+      "chapter_number": 478,
+      "status": "inserted",
+      "chapter_title": "Luffy vs. Luffy",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_478",
+      "error": null
+    },
+    {
+      "chapter_number": 479,
+      "status": "inserted",
+      "chapter_title": "Warrior of Hope",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_479",
+      "error": null
+    },
+    {
+      "chapter_number": 480,
+      "status": "inserted",
+      "chapter_title": "Interception",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_480",
+      "error": null
+    },
+    {
+      "chapter_number": 481,
+      "status": "inserted",
+      "chapter_title": "Shadows Asgard",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_481",
+      "error": null
+    },
+    {
+      "chapter_number": 482,
+      "status": "inserted",
+      "chapter_title": "Morning Is Coming",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_482",
+      "error": null
+    },
+    {
+      "chapter_number": 483,
+      "status": "inserted",
+      "chapter_title": "The End of the Dream",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_483",
+      "error": null
+    },
+    {
+      "chapter_number": 484,
+      "status": "inserted",
+      "chapter_title": "Squish",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_484",
+      "error": null
+    },
+    {
+      "chapter_number": 485,
+      "status": "inserted",
+      "chapter_title": "Straw Hat Pirates—Pirate Hunter Zolo",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_485",
+      "error": null
+    },
+    {
+      "chapter_number": 486,
+      "status": "inserted",
+      "chapter_title": "Piano",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_486",
+      "error": null
+    },
+    {
+      "chapter_number": 487,
+      "status": "inserted",
+      "chapter_title": "That Song",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_487",
+      "error": null
+    },
+    {
+      "chapter_number": 488,
+      "status": "inserted",
+      "chapter_title": "Song of Life",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_488",
+      "error": null
+    },
+    {
+      "chapter_number": 489,
+      "status": "inserted",
+      "chapter_title": "Eighth Person",
+      "manga_arc": "Thriller Bark Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_489",
+      "error": null
+    },
+    {
+      "chapter_number": 490,
+      "status": "inserted",
+      "chapter_title": "Arriving Again",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_490",
+      "error": null
+    },
+    {
+      "chapter_number": 491,
+      "status": "inserted",
+      "chapter_title": "Flying Fish Riders",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_491",
+      "error": null
+    },
+    {
+      "chapter_number": 492,
+      "status": "inserted",
+      "chapter_title": "Iron Mask Duval",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_492",
+      "error": null
+    },
+    {
+      "chapter_number": 493,
+      "status": "inserted",
+      "chapter_title": "You Know Me",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_493",
+      "error": null
+    },
+    {
+      "chapter_number": 494,
+      "status": "inserted",
+      "chapter_title": "Duval's Tragedy",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_494",
+      "error": null
+    },
+    {
+      "chapter_number": 495,
+      "status": "inserted",
+      "chapter_title": "Gaon Cannon",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_495",
+      "error": null
+    },
+    {
+      "chapter_number": 496,
+      "status": "inserted",
+      "chapter_title": "Yarukiman Mangrove",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_496",
+      "error": null
+    },
+    {
+      "chapter_number": 497,
+      "status": "inserted",
+      "chapter_title": "Adventure on the Archipelago of Dancing Soap Bubbles",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_497",
+      "error": null
+    },
+    {
+      "chapter_number": 498,
+      "status": "inserted",
+      "chapter_title": "The Eleven Supernovas",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_498",
+      "error": null
+    },
+    {
+      "chapter_number": 499,
+      "status": "inserted",
+      "chapter_title": "Sabaody Park",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_499",
+      "error": null
+    },
+    {
+      "chapter_number": 500,
+      "status": "inserted",
+      "chapter_title": "The Embers of History",
+      "manga_arc": "Sabaody Archipelago Arc",
+      "source_url": "https://onepiece.fandom.com/wiki/Chapter_500",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T14:12:03.069985",
+  "elapsed_seconds": 553.12,
+  "status": "completed_successfully"
+}
