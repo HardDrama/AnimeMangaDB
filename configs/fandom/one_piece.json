@@ -13,9 +13,9 @@
         "chapter_path": "/wiki/Chapter_{chapter}"
     },
     "chapter_selectors": {
-        "title": null,
+        "title": "div[data-source='ename'] .pi-data-value",
         "manga_arc": "a[title^='Category:'][title$=' Arc Chapters']",
-        "title_strategy": "one_piece_title_sentence",
+        "title_strategy": "selector",
         "arc_strategy": "one_piece_arc_category"
     },
     "scraper": {

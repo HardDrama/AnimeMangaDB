@@ -43,7 +43,7 @@ def test_extracts_one_piece_chapter_1():
     assert metadata.chapter_number == 1
     assert (
         metadata.chapter_title
-        == "Romance Dawn —The Dawn of the Adventure—"
+        == "Romance Dawn"
     )
     assert metadata.manga_arc == "Romance Dawn Arc"
     assert metadata.last_updated is not None
@@ -71,7 +71,7 @@ def test_extracts_one_piece_chapter_50():
     )
 
     assert metadata.chapter_number == 50
-    assert metadata.chapter_title is not None
+    assert metadata.chapter_title == "A Parting of Ways"
     assert metadata.manga_arc == "Baratie Arc"
 
 
@@ -151,3 +151,31 @@ def test_missing_metadata_remains_none():
 
     assert metadata.chapter_title is None
     assert metadata.manga_arc is None
+
+def test_extracts_one_piece_chapter_3_viz_title():
+    config = load_provider_config(
+        "configs/fandom/one_piece.json"
+    )
+
+    assert config.chapter_selectors is not None
+
+    extractor = FandomChapterMetadataExtractor(
+        selectors=config.chapter_selectors
+    )
+
+    metadata = extractor.parse(
+        html=read_fixture(
+            "one_piece_chapter_3.html"
+        ),
+        chapter_number=3,
+        source_url=(
+            "https://onepiece.fandom.com/wiki/Chapter_3"
+        ),
+    )
+
+    assert metadata.chapter_number == 3
+    assert (
+        metadata.chapter_title
+        == "Enter Zolo–Pirate Hunter"
+    )
+    assert metadata.manga_arc == "Romance Dawn Arc"

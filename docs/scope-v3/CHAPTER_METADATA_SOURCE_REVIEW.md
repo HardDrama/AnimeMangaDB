@@ -87,7 +87,16 @@ Discovery returns a canonical chapter page URL but does not extract or persist m
 
 - Title: quoted title extracted from the chapter introduction sentence
 - Manga arc: chapter category ending in `Arc Chapters`
-- Normalization: remove the trailing `Chapters`
+
+### One Piece Chapter Titles
+
+The canonical English chapter title is extracted from the infobox field:
+
+`data-source="ename"`
+
+This field is labeled `Viz Title` on the source page.
+
+Descriptive introductory prose is not used because it may paraphrase rather than reproduce the official English title.
 
 ### Naruto
 
