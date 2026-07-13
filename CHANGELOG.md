@@ -1970,3 +1970,169 @@ Added a reusable metadata exception framework.
 **Multi-Series Foundation Certified**
 
 AnimeMangaDB can now support multiple certified datasets without redesigning its core architecture.
+
+# 🚀 AnimeMangaDB v0.56 - Scope v3 Foundation
+
+## ✅ Scope v3 Foundation Certified
+
+Version v0.56 establishes the complete platform foundation for manga chapter metadata while preserving all previously certified Scope v2 functionality.
+
+This release introduces a dedicated chapter metadata architecture independent of episode ingestion, enabling future support for official chapter titles, manga arcs, volumes, release metadata, and additional chapter-specific information.
+
+---
+
+## Database
+
+✔ Added Chapter Metadata database model
+
+✔ Added unique chapter identity
+- Anime ID
+- Chapter Number
+
+✔ Existing Scope v2 tables preserved
+
+---
+
+## Domain Models
+
+✔ Added ChapterMetadata domain model
+
+✔ Added typed chapter metadata configuration
+
+---
+
+## Repository
+
+✔ Added chapter metadata persistence
+
+✔ Added idempotent create/update support
+
+✔ Added repository lookup by anime title
+
+---
+
+## Provider Framework
+
+✔ Added Chapter Metadata Provider interface
+
+✔ Added Fandom Chapter Metadata Provider
+
+✔ Added multi-series Chapter Metadata Factory
+
+---
+
+## URL Discovery
+
+### One Piece
+
+✔ Numbered chapter URL generation
+
+### Naruto
+
+✔ Volume index discovery
+
+✔ Exact chapter number matching
+
+✔ Tankōbon section scoping
+
+✔ Part I / Part II support
+
+✔ Spin-off exclusion
+
+✔ Index-page caching
+
+---
+
+## Metadata Extraction
+
+### One Piece
+
+✔ Official Viz English chapter titles
+
+✔ Manga Arc extraction
+
+### Naruto
+
+✔ Chapter title extraction
+
+✔ Manga Arc extraction
+
+✔ Chapter suffix normalization
+
+---
+
+## Ingestion
+
+✔ Chapter Metadata Ingestion Service
+
+✔ Single chapter ingestion
+
+✔ Controlled batch ingestion
+
+✔ Failure isolation
+
+✔ Safe record updates
+
+---
+
+## Controlled Validation
+
+Validated:
+
+### One Piece
+
+✔ Chapters 1–5
+
+### Naruto
+
+✔ Chapters 1–5
+
+Validated:
+
+✔ Chapter titles
+
+✔ Manga arcs
+
+✔ Source URLs
+
+✔ Anime IDs
+
+✔ Update behavior
+
+✔ Zero duplicate records
+
+---
+
+## Engineering Improvements
+
+Resolved during validation:
+
+✔ Partial chapter-number matching
+
+✔ Cross-work Naruto discovery
+
+✔ Tankōbon section discovery
+
+✔ Canonical One Piece Viz title extraction
+
+✔ Discovery caching
+
+---
+
+## Validation
+
+✔ 140 backend tests passing
+
+✔ Frontend production build successful
+
+✔ Frontend lint clean
+
+---
+
+## Status
+
+✅ Scope v3 Foundation Certified
+
+Next:
+
+➡ v0.57 — One Piece Scope v3 Dataset
