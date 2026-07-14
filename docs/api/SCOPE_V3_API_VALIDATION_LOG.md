@@ -181,3 +181,64 @@ Naruto:
 Individual chapter endpoint:
 
 PASS
+
+---
+
+## v0.59.5 — Chapter Metadata Search
+
+### Endpoint
+
+`GET /search?query={value}`
+
+### Added Response Field
+
+`chapter_metadata`
+
+### Supported Search
+
+- Chapter title
+- Manga arc
+- Exact numeric chapter number
+- Case-insensitive partial text matching
+- Multi-series results
+
+### Compatibility
+
+The existing `chapters` field remains unchanged and continues to return Scope v2 chapter-to-episode mappings.
+
+Existing response fields:
+
+- `anime`
+- `episodes`
+- `chapters`
+
+New response field:
+
+- `chapter_metadata`
+
+### Certified Dataset Validation
+
+One Piece:
+
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+
+Naruto:
+
+- Numeric chapter search: PASS
+- Chapter 700 null manga arc: PASS
+
+### Regression
+
+- Search API tests: 12
+- API tests: 64
+- Backend tests: 200
+- Frontend build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Scope v3 chapter metadata search:
+
+PASS

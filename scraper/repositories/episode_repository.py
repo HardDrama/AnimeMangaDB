@@ -433,3 +433,46 @@ class EpisodeRepository:
             )
             .all()
         )
+    
+    def search_chapter_metadata(
+        self,
+        query: str,
+    ) -> list[ChapterMetadata]:
+        filters = [
+            ChapterMetadata.chapter_title.ilike(
+                f"%{query}%"
+            ),
+            ChapterMetadata.manga_arc.ilike(
+                f"%{query}%"
+            ),
+        ]
+
+        try:
+            chapter_number = int(
+                query
+            )
+
+            filters.append(
+                ChapterMetadata.chapter_number
+                == chapter_number
+            )
+
+        except ValueError:
+            pass
+
+        stmt = (
+            select(ChapterMetadata)
+            .where(
+                or_(*filters)
+            )
+            .order_by(
+                ChapterMetadata.anime_id,
+                ChapterMetadata.chapter_number,
+            )
+        )
+
+        return (
+            self.session.execute(stmt)
+            .scalars()
+            .all()
+        )

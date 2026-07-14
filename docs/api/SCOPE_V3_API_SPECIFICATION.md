@@ -225,3 +225,70 @@ Naruto Chapter 700 is the certified benchmark case.
 ### Contract Consistency
 
 The individual response uses the same `ChapterMetadataResponse` schema as the series chapter-list endpoint.
+
+---
+
+## Chapter Metadata Search
+
+### Endpoint
+
+```http
+GET /search?query={value}
+```
+
+The existing search endpoint includes a new response field:
+
+```json
+{
+  "anime": [],
+  "episodes": [],
+  "chapters": [],
+  "chapter_metadata": []
+}
+```
+
+### Compatibility Fields
+
+`chapters` retains the Scope v2 chapter-to-episode mapping contract.
+
+`chapter_metadata` contains Scope v3 chapter metadata records.
+
+### Supported Matches
+
+Chapter metadata search matches:
+
+- Chapter title
+- Manga arc
+- Exact numeric chapter number
+
+Text matching is case-insensitive and partial.
+
+Numeric chapter matching is exact.
+
+### Response Item
+
+Each `chapter_metadata` entry uses the shared chapter metadata response schema:
+
+```json
+{
+  "chapter_number": 50,
+  "chapter_title": "A Parting of Ways",
+  "manga_arc": "Baratie Arc",
+  "source_url": "https://...",
+  "last_updated": "2026-07-14T12:30:00"
+}
+```
+
+### Nullable Manga Arc
+
+Verified non-applicable manga arcs remain `null`.
+
+### Empty Result
+
+When no Scope v3 chapter metadata matches:
+
+```json
+"chapter_metadata": []
+```
+
+Other search categories may still contain results.

@@ -1,6 +1,10 @@
 from datetime import datetime
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import (
+    BaseModel,
+    ConfigDict,
+    Field,
+)
 
 
 class EpisodeResponse(BaseModel):
@@ -54,3 +58,8 @@ class SearchResponse(BaseModel):
     anime: list[SeriesResponse]
     episodes: list[EpisodeResponse]
     chapters: list[ChapterSearchResult]
+    chapter_metadata: list[
+        ChapterMetadataResponse
+    ] = Field(
+        default_factory=list,
+    )

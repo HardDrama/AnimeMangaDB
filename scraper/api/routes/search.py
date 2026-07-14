@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Query
 
 from scraper.api.schemas import (
+    ChapterMetadataResponse,
     ChapterSearchResult,
     EpisodeResponse,
     SearchResponse,
@@ -33,6 +34,12 @@ def search_database(
 
         episode_results = repository.search_episodes(
             query
+        )
+
+        chapter_metadata_results = (
+            repository.search_chapter_metadata(
+                query
+            )
         )
 
         chapter_results = []
@@ -98,6 +105,15 @@ def search_database(
                 for episode in episode_results
             ],
             chapters=chapter_results,
+            chapter_metadata=[
+                ChapterMetadataResponse
+                .model_validate(
+                    chapter
+                )
+                for chapter in (
+                    chapter_metadata_results
+                )
+            ],
         )
 
     finally:

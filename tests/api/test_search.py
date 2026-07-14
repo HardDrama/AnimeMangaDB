@@ -19,6 +19,11 @@ def test_search_returns_expected_structure():
     assert "anime" in data
     assert "episodes" in data
     assert "chapters" in data
+    assert "chapter_metadata" in data
+    assert isinstance(
+        data["chapter_metadata"],
+        list,
+    )
 
     assert isinstance(data["anime"], list)
     assert isinstance(data["episodes"], list)
@@ -94,4 +99,153 @@ def test_numeric_search_matches_chapter_number():
     assert any(
         chapter["chapter_number"] == 50
         for chapter in chapters
+    )
+
+def test_search_chapter_metadata_by_title():
+    response = client.get(
+        "/search",
+        params={
+            "query": "Romance Dawn",
+        },
+    )
+
+    assert response.status_code == 200
+
+    results = response.json()[
+        "chapter_metadata"
+    ]
+
+    assert results
+
+    assert any(
+        chapter["chapter_number"] == 1
+        and chapter["chapter_title"]
+        for chapter in results
+    )
+
+
+def test_search_chapter_metadata_by_arc():
+    response = client.get(
+        "/search",
+        params={
+            "query": "Romance Dawn Arc",
+        },
+    )
+
+    assert response.status_code == 200
+
+    results = response.json()[
+        "chapter_metadata"
+    ]
+
+    assert results
+
+    assert any(
+        chapter["manga_arc"]
+        == "Romance Dawn Arc"
+        for chapter in results
+    )
+
+
+def test_numeric_search_returns_scope_v3_chapters():
+    response = client.get(
+        "/search",
+        params={
+            "query": "50",
+        },
+    )
+
+    assert response.status_code == 200
+
+    results = response.json()[
+        "chapter_metadata"
+    ]
+
+    assert results
+
+    assert all(
+        chapter["chapter_number"] == 50
+        for chapter in results
+        if chapter["chapter_number"] == 50
+    )
+
+    assert any(
+        chapter["chapter_number"] == 50
+        for chapter in results
+    )
+
+
+def test_numeric_search_preserves_scope_v2_mapping_results():
+    response = client.get(
+        "/search",
+        params={
+            "query": "50",
+        },
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    assert "chapters" in data
+    assert "chapter_metadata" in data
+
+    assert any(
+        result["chapter_number"] == 50
+        for result in data["chapters"]
+    )
+
+    assert any(
+        result["chapter_number"] == 50
+        for result in data[
+            "chapter_metadata"
+        ]
+    )
+
+
+def test_search_naruto_chapter_700_preserves_null_arc():
+    response = client.get(
+        "/search",
+        params={
+            "query": "700",
+        },
+    )
+
+    assert response.status_code == 200
+
+    results = response.json()[
+        "chapter_metadata"
+    ]
+
+    chapter_700_results = [
+        chapter
+        for chapter in results
+        if chapter["chapter_number"] == 700
+    ]
+
+    assert chapter_700_results
+
+    assert any(
+        chapter["manga_arc"] is None
+        for chapter in chapter_700_results
+    )
+
+
+def test_chapter_metadata_search_without_match_is_empty():
+    response = client.get(
+        "/search",
+        params={
+            "query": (
+                "NoScopeV3ChapterShouldMatch"
+            ),
+        },
+    )
+
+    assert response.status_code == 200
+
+    assert (
+        response.json()[
+            "chapter_metadata"
+        ]
+        == []
     )
