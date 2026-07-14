@@ -90,7 +90,7 @@ Future  Platform Checkpoint v3
 
 Status:
 
-Certification Eligible
+Final Validation Passed
 
 Dataset:
 
@@ -106,15 +106,13 @@ Verified exception:
 
 - Chapter 700
 - Manga arc not applicable
-- Database value remains null
+- Stored value remains null
 - Exception-aware audit: PASS
 
 Current phase:
 
-Dataset documentation
+Formal dataset certification
 
 Next:
 
-- Complete Naruto Scope v3 dataset documentation
-- Perform final dataset validation
-- Certify Naruto Scope v3
+Certify the Naruto Scope v3 dataset

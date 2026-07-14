@@ -352,3 +352,59 @@ Status:
 ELIGIBLE
 
 The Naruto Scope v3 dataset has sufficient automated and manual evidence to proceed toward formal certification.
+
+---
+
+## v0.58.9 — Final Dataset Validation
+
+### Database
+
+- Chapter records: 700
+- Expected chapter range: 1–700
+- Distinct chapters: 700
+- Duplicate records: 0
+- Missing titles: 0
+- Raw missing manga arcs: 1
+- Approved non-applicable manga arcs: 1
+- Unresolved missing manga arcs: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+
+### Dataset Audit
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Coverage completion: 100.00%
+- Adjusted manga-arc completion: 100.00%
+- Missing chapters: 0
+
+### Manual Evidence
+
+- Samples reviewed: 30
+- Records found: 30
+- Title matches: 30
+- Manga-arc matches: 30
+- Valid source URLs: 30
+- Spin-off contamination: 0
+- Discrepancies: 0
+- Manual validation: PASS
+
+### Certification Eligibility
+
+- Certification failures: 0
+- Certification status: ELIGIBLE
+
+### Regression Validation
+
+- Backend tests: 184 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Final Naruto Scope v3 dataset validation:
+
+PASS
+
+The dataset is ready for formal certification.

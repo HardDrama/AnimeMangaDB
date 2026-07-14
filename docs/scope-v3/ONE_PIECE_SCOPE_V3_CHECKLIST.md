@@ -63,7 +63,8 @@
 - [x] Manual validation documented
 - [x] Certification eligibility documented
 - [x] Reports indexed
-- [ ] Final dataset validation completed
+- [x] Dataset documentation completed
+- [x] Final dataset validation completed
 - [ ] Dataset certified
 
 ---

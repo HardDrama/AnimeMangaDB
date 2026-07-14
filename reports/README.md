@@ -139,3 +139,15 @@ naruto_scope_v3_manual_validation.json
 ```text
 naruto_scope_v3_certification.json
 ```
+
+---
+
+## Standard Per-Series Evidence Policy
+
+As AnimeMangaDB expands series support, the default durable Scope v3 report set is:
+
+```text
+<series>_scope_v3_audit.json
+<series>_scope_v3_manual_validation.json
+<series>_scope_v3_certification.json
+```

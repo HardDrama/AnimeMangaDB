@@ -4,11 +4,11 @@
 
 Implementation:
 
-🚧 Certification eligible; documentation and final validation pending
+✅ Complete
 
 Certification:
 
-⬜ Not Certified
+⬜ Final certification pending
 
 ---
 
@@ -177,3 +177,51 @@ Evidence report:
 Eligibility means the dataset has sufficient evidence for formal certification.
 
 It does not itself mark the dataset as certified.
+
+---
+
+## Durable Evidence
+
+The standard durable evidence set for the Naruto Scope v3 dataset is:
+
+```text
+reports/naruto_scope_v3_audit.json
+reports/naruto_scope_v3_manual_validation.json
+reports/naruto_scope_v3_certification.json
+```
+
+## Naruto Scope v3 Dataset Implementation
+
+Validated range:
+
+- Chapters 1–700
+- Records: 700
+
+Validated metadata:
+
+- Chapter number
+- Chapter title
+- Manga arc or verified non-applicable classification
+- Canonical source URL
+- Last-updated timestamp
+
+Verified exception:
+
+- Chapter 700
+- Standalone epilogue
+- Manga arc not applicable
+- Stored value remains null
+
+Evidence:
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual source validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+- Final validation: PASS
+
+Current status:
+
+Formal certification pending.
