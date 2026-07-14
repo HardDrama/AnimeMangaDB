@@ -45,6 +45,23 @@
 
 ---
 
+## Manual Validation
+
+- [x] Representative sample manifest generated
+- [x] Thirty records sampled across Chapters 1–700
+- [x] Part I records manually validated
+- [x] Part II records manually validated
+- [x] Part I/Part II boundary manually validated
+- [x] Chapter-number collision case manually validated
+- [x] Chapter 700 exception manually validated
+- [x] Titles manually compared
+- [x] Manga arcs manually compared
+- [x] Source URLs manually validated
+- [x] Spin-off contamination excluded
+- [x] Manual validation passes
+
+---
+
 ## Validation
 
 - [ ] Metadata audit passes

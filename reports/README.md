@@ -127,3 +127,9 @@ naruto_scope_v3_preflight.json
 naruto_scope_v3_ingest_0001_0100.json
 naruto_scope_v3_ingest_0101_0700.json
 ```
+
+### Manual Validation
+
+```text
+naruto_scope_v3_manual_validation.json
+```

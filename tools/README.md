@@ -620,3 +620,14 @@ During an index-based dry run:
 - Individual chapter pages are not fetched.
 - Providers and extractors are not executed.
 - Database records are not created or updated.
+
+### Naruto Scope v3 Manual Validation
+
+Export the representative Naruto review sample:
+
+```bash
+python -m tools.export_scope_v3_samples \
+    --anime "Naruto" \
+    --chapters "1,2,5,10,25,50,75,100,125,150,175,200,225,244,245,275,300,325,350,375,400,425,450,500,550,600,650,675,699,700" \
+    --json-report reports/naruto_scope_v3_manual_validation.json
+```

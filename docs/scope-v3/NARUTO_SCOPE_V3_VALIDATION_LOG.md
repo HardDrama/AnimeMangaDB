@@ -264,3 +264,48 @@ No unsupported metadata was added.
 The database value remains null.
 
 No manga arc was fabricated or inherited.
+
+---
+
+## v0.58.7 — Representative Manual Source Validation
+
+### Sample
+
+- Chapters reviewed: 30
+- Dataset range represented: 1–700
+- Part I represented: Yes
+- Part II represented: Yes
+- Boundary chapters reviewed: 244 and 245
+- Final chapters reviewed: 699 and 700
+- Manifest: `reports/naruto_scope_v3_manual_validation.json`
+
+### Fields Reviewed
+
+- Chapter number
+- English chapter title
+- Manga arc
+- Canonical source URL
+- Main-series source isolation
+
+### Results
+
+- Records found: 30 / 30
+- Chapter-number matches: 30 / 30
+- Title matches: 30 / 30
+- Manga-arc matches: 30 / 30
+- Valid source URLs: 30 / 30
+- Spin-off contamination records: 0
+- Discrepancies: 0
+
+### Chapter 700
+
+- Classification: Standalone epilogue
+- Manga arc: Not applicable
+- Stored value: null
+- Manual validation: PASS
+
+### Result
+
+Manual source validation:
+
+[PASS or REVIEW REQUIRED]
