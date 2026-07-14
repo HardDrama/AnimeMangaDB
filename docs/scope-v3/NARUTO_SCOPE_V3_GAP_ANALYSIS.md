@@ -85,3 +85,21 @@ COMPLETE
 Resolution:
 
 Verified metadata exception required
+
+## Resolution
+
+Exception configuration:
+
+✅ Added
+
+Exception-aware audit:
+
+✅ PASS
+
+Database record:
+
+`manga_arc = null`
+
+Status:
+
+RESOLVED

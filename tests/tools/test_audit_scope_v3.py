@@ -441,3 +441,227 @@ def test_expected_range_rejects_reversed_bounds(
             expected_start=5,
             expected_end=1,
         )
+
+def test_approved_missing_arc_passes(
+    session: Session,
+):
+    anime = create_anime(session)
+
+    create_chapter(
+        session=session,
+        anime=anime,
+        chapter_number=1,
+        manga_arc="Test Arc",
+    )
+
+    create_chapter(
+        session=session,
+        anime=anime,
+        chapter_number=2,
+        manga_arc=None,
+    )
+
+    report = (
+        audit_scope_v3
+        .build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=1,
+            expected_end=2,
+            exceptions={
+                "chapter_metadata": {
+                    "manga_arc_not_applicable": [
+                        2,
+                    ]
+                }
+            },
+        )
+    )
+
+    assert report["missing_arcs"] == 1
+    assert (
+        report["missing_arc_chapters"]
+        == [2]
+    )
+    assert (
+        report["approved_missing_arcs"]
+        == 1
+    )
+    assert (
+        report[
+            "approved_missing_arc_chapters"
+        ]
+        == [2]
+    )
+    assert (
+        report["unresolved_missing_arcs"]
+        == 0
+    )
+    assert (
+        report[
+            "unresolved_missing_arc_chapters"
+        ]
+        == []
+    )
+    assert (
+        report["arc_completion"]
+        == 50.0
+    )
+    assert (
+        report["adjusted_arc_completion"]
+        == 100.0
+    )
+    assert (
+        report["metadata_audit_status"]
+        == "PASS"
+    )
+    assert (
+        report["coverage_audit_status"]
+        == "PASS"
+    )
+    assert report["dataset_status"] == "PASS"
+
+def test_unapproved_missing_arc_remains_in_progress(
+    session: Session,
+):
+    anime = create_anime(session)
+
+    create_chapter(
+        session=session,
+        anime=anime,
+        chapter_number=1,
+        manga_arc="Test Arc",
+    )
+
+    create_chapter(
+        session=session,
+        anime=anime,
+        chapter_number=2,
+        manga_arc=None,
+    )
+
+    report = (
+        audit_scope_v3
+        .build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=1,
+            expected_end=2,
+            exceptions={},
+        )
+    )
+
+    assert report["missing_arcs"] == 1
+    assert (
+        report["approved_missing_arcs"]
+        == 0
+    )
+    assert (
+        report["unresolved_missing_arcs"]
+        == 1
+    )
+    assert (
+        report["adjusted_arc_completion"]
+        == 50.0
+    )
+    assert (
+        report["metadata_audit_status"]
+        == "IN PROGRESS"
+    )
+    assert (
+        report["dataset_status"]
+        == "IN PROGRESS"
+    )
+
+def test_arc_exception_does_not_hide_missing_chapter(
+    session: Session,
+):
+    anime = create_anime(session)
+
+    create_chapter(
+        session=session,
+        anime=anime,
+        chapter_number=1,
+    )
+
+    report = (
+        audit_scope_v3
+        .build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=1,
+            expected_end=2,
+            exceptions={
+                "chapter_metadata": {
+                    "manga_arc_not_applicable": [
+                        2,
+                    ]
+                }
+            },
+        )
+    )
+
+    assert (
+        report["missing_chapter_numbers"]
+        == [2]
+    )
+    assert (
+        report["coverage_audit_status"]
+        == "IN PROGRESS"
+    )
+    assert (
+        report[
+            "configured_missing_arc_records"
+        ]
+        == [2]
+    )
+    assert (
+        report["metadata_audit_status"]
+        == "IN PROGRESS"
+    )
+    assert (
+        report["dataset_status"]
+        == "IN PROGRESS"
+    )
+
+def test_unused_arc_exception_is_reported(
+    session: Session,
+):
+    anime = create_anime(session)
+
+    create_chapter(
+        session=session,
+        anime=anime,
+        chapter_number=1,
+        manga_arc="Test Arc",
+    )
+
+    report = (
+        audit_scope_v3
+        .build_scope_v3_report(
+            session=session,
+            anime_title="Test Anime",
+            expected_start=1,
+            expected_end=1,
+            exceptions={
+                "chapter_metadata": {
+                    "manga_arc_not_applicable": [
+                        1,
+                    ]
+                }
+            },
+        )
+    )
+
+    assert (
+        report["unused_arc_exceptions"]
+        == [1]
+    )
+    assert (
+        report["metadata_audit_status"]
+        == "IN PROGRESS"
+    )
+    assert (
+        report["dataset_status"]
+        == "IN PROGRESS"
+    )

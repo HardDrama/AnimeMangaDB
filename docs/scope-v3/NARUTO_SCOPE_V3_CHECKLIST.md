@@ -28,9 +28,10 @@
 - [x] Gap classified
 - [x] Chapter 700 verified as a standalone epilogue
 - [x] Null manga arc confirmed as accurate
-- [ ] Scope v3 chapter exception added
-- [ ] Exception-aware audit passes
-- [ ] Metadata audit passes
+- [x] Scope v3 chapter exception added
+- [x] Exception-aware audit passes
+- [x] Metadata audit passes
+- [x] Gap resolved
 
 ---
 

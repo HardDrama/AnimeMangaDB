@@ -13,6 +13,11 @@ from scraper.database.models import (
 )
 from scraper.database.session import SessionLocal
 
+from scraper.utils.metadata_exception_loader import (
+    get_manga_arc_not_applicable_chapters,
+    load_metadata_exceptions,
+)
+
 
 def calculate_completion(
     complete_count: int,
@@ -60,11 +65,42 @@ def find_missing_chapter_numbers(
     ]
 
 
+def get_exception_path(
+    anime_title: str,
+) -> Path:
+    filename = (
+        anime_title
+        .strip()
+        .lower()
+        .replace(" ", "_")
+    )
+
+    return Path(
+        "configs/exceptions"
+    ) / f"{filename}.json"
+
+
+def load_scope_v3_exceptions(
+    anime_title: str,
+) -> dict:
+    exception_path = get_exception_path(
+        anime_title
+    )
+
+    if not exception_path.exists():
+        return {}
+
+    return load_metadata_exceptions(
+        str(exception_path)
+    )
+
+
 def build_scope_v3_report(
     session: Session,
     anime_title: str,
     expected_start: int | None = None,
     expected_end: int | None = None,
+    exceptions: dict | None = None,
 ) -> dict:
     anime = session.execute(
         select(Anime)
@@ -103,6 +139,17 @@ def build_scope_v3_report(
             "Expected start chapter must be less than "
             "or equal to expected end chapter."
         )
+    
+    if exceptions is None:
+        exceptions = load_scope_v3_exceptions(
+            anime_title
+        )
+
+    configured_arc_exceptions = sorted(
+        get_manga_arc_not_applicable_chapters(
+            exceptions
+        )
+    )
 
     chapters = session.execute(
         select(ChapterMetadata)
@@ -134,6 +181,24 @@ def build_scope_v3_report(
         )
     ]
 
+    missing_arc_chapter_set = set(
+        missing_arc_chapters
+    )
+
+    configured_arc_exception_set = set(
+        configured_arc_exceptions
+    )
+
+    approved_missing_arc_chapters = sorted(
+        missing_arc_chapter_set
+        & configured_arc_exception_set
+    )
+
+    unresolved_missing_arc_chapters = sorted(
+        missing_arc_chapter_set
+        - configured_arc_exception_set
+    )
+
     missing_source_url_chapters = [
         chapter.chapter_number
         for chapter in chapters
@@ -153,6 +218,20 @@ def build_scope_v3_report(
         chapter.chapter_number
         for chapter in chapters
     ]
+
+    existing_chapter_number_set = set(
+        chapter_numbers
+    )
+
+    unused_arc_exceptions = sorted(
+        configured_arc_exception_set
+        - missing_arc_chapter_set
+    )
+
+    configured_missing_records = sorted(
+        configured_arc_exception_set
+        - existing_chapter_number_set
+    )
 
     duplicate_chapter_numbers = (
         find_duplicate_chapter_numbers(
@@ -214,6 +293,13 @@ def build_scope_v3_report(
         - len(missing_arc_chapters)
     )
 
+    adjusted_arc_complete = (
+        chapter_records
+        - len(
+            unresolved_missing_arc_chapters
+        )
+    )
+
     source_url_complete = (
         chapter_records
         - len(missing_source_url_chapters)
@@ -234,6 +320,13 @@ def build_scope_v3_report(
         chapter_records,
     )
 
+    adjusted_arc_completion = (
+        calculate_completion(
+            adjusted_arc_complete,
+            chapter_records,
+        )
+    )
+
     source_url_completion = calculate_completion(
         source_url_complete,
         chapter_records,
@@ -249,10 +342,12 @@ def build_scope_v3_report(
 
     elif (
         title_completion == 100.0
-        and arc_completion == 100.0
+        and adjusted_arc_completion == 100.0
         and source_url_completion == 100.0
         and last_updated_completion == 100.0
         and not duplicate_chapter_numbers
+        and not unused_arc_exceptions
+        and not configured_missing_records
     ):
         metadata_audit_status = "PASS"
 
@@ -285,6 +380,33 @@ def build_scope_v3_report(
         "arc_completion": arc_completion,
         "chapters_with_source_urls": (
             source_url_complete
+        ),
+        "configured_arc_exceptions": (
+            configured_arc_exceptions
+        ),
+        "approved_missing_arcs": len(
+            approved_missing_arc_chapters
+        ),
+        "approved_missing_arc_chapters": (
+            approved_missing_arc_chapters
+        ),
+        "unresolved_missing_arcs": len(
+            unresolved_missing_arc_chapters
+        ),
+        "unresolved_missing_arc_chapters": (
+            unresolved_missing_arc_chapters
+        ),
+        "adjusted_chapters_with_arcs": (
+            adjusted_arc_complete
+        ),
+        "adjusted_arc_completion": (
+            adjusted_arc_completion
+        ),
+        "unused_arc_exceptions": (
+            unused_arc_exceptions
+        ),
+        "configured_missing_arc_records": (
+            configured_missing_records
         ),
         "missing_source_urls": len(
             missing_source_url_chapters
@@ -375,16 +497,28 @@ def print_scope_v3_report(
     print("Manga Arcs")
     print("----------")
     print(
-        f"Complete              : "
+        f"Stored Values Complete : "
         f"{report['chapters_with_arcs']}"
     )
     print(
-        f"Missing               : "
+        f"Raw Missing            : "
         f"{report['missing_arcs']}"
     )
     print(
-        f"Completion            : "
+        f"Raw Completion         : "
         f"{report['arc_completion']:.2f}%"
+    )
+    print(
+        f"Approved Not Applicable: "
+        f"{report['approved_missing_arcs']}"
+    )
+    print(
+        f"Unresolved Missing     : "
+        f"{report['unresolved_missing_arcs']}"
+    )
+    print(
+        f"Adjusted Completion    : "
+        f"{report['adjusted_arc_completion']:.2f}%"
     )
     print()
     print("Source URLs")
@@ -478,8 +612,28 @@ def print_scope_v3_report(
             report["missing_title_chapters"],
         ),
         (
+            "Approved Non-Applicable Manga Arcs",
+            report[
+                "approved_missing_arc_chapters"
+            ],
+        ),
+        (
             "Chapters Missing Manga Arcs",
-            report["missing_arc_chapters"],
+            report[
+                "unresolved_missing_arc_chapters"
+            ],
+        ),
+        (
+            "Unused Manga Arc Exceptions",
+            report[
+                "unused_arc_exceptions"
+            ],
+        ),
+        (
+            "Exceptions Without Chapter Records",
+            report[
+                "configured_missing_arc_records"
+            ],
         ),
         (
             "Chapters Missing Source URLs",

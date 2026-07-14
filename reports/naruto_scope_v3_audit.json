@@ -10,6 +10,19 @@
   "missing_arcs": 1,
   "arc_completion": 99.86,
   "chapters_with_source_urls": 700,
+  "configured_arc_exceptions": [
+    700
+  ],
+  "approved_missing_arcs": 1,
+  "approved_missing_arc_chapters": [
+    700
+  ],
+  "unresolved_missing_arcs": 0,
+  "unresolved_missing_arc_chapters": [],
+  "adjusted_chapters_with_arcs": 700,
+  "adjusted_arc_completion": 100.0,
+  "unused_arc_exceptions": [],
+  "configured_missing_arc_records": [],
   "missing_source_urls": 0,
   "source_url_completion": 100.0,
   "chapters_with_last_updated": 700,
@@ -23,8 +36,8 @@
   ],
   "missing_source_url_chapters": [],
   "missing_last_updated_chapters": [],
-  "metadata_audit_status": "IN PROGRESS",
-  "audit_status": "IN PROGRESS",
+  "metadata_audit_status": "PASS",
+  "audit_status": "PASS",
   "expected_start_chapter": 1,
   "expected_end_chapter": 700,
   "expected_chapter_count": 700,
@@ -32,6 +45,6 @@
   "missing_chapter_numbers": [],
   "coverage_completion": 100.0,
   "coverage_audit_status": "PASS",
-  "dataset_status": "IN PROGRESS",
-  "generated_at": "2026-07-13T23:00:40.868426"
+  "dataset_status": "PASS",
+  "generated_at": "2026-07-14T00:10:37.885577"
 }

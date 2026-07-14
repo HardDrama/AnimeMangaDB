@@ -237,3 +237,30 @@ Gap analysis:
 COMPLETE
 
 No unsupported metadata was added.
+
+## v0.58.6 — Chapter Metadata Exception Support
+
+### Verified Exception
+
+- Anime: Naruto
+- Chapter: 700
+- Field: Manga Arc
+- Classification: Not Applicable
+- Stored value: null
+
+### Audit Result
+
+- Raw missing manga arcs: 1
+- Approved non-applicable arcs: 1
+- Unresolved missing arcs: 0
+- Raw arc completion: 99.86%
+- Adjusted arc completion: 100.00%
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset status: PASS
+
+### Integrity
+
+The database value remains null.
+
+No manga arc was fabricated or inherited.
