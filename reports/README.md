@@ -133,3 +133,9 @@ naruto_scope_v3_ingest_0101_0700.json
 ```text
 naruto_scope_v3_manual_validation.json
 ```
+
+### Certification Eligibility
+
+```text
+naruto_scope_v3_certification.json
+```

@@ -213,3 +213,73 @@ def test_cli_writes_certification_report(
         report["certification_status"]
         == "ELIGIBLE"
     )
+
+def naruto_audit_report() -> dict:
+    return {
+        "anime": "Naruto",
+        "expected_start_chapter": 1,
+        "expected_end_chapter": 700,
+        "metadata_audit_status": "PASS",
+        "coverage_audit_status": "PASS",
+        "dataset_status": "PASS",
+        "missing_chapters": 0,
+        "duplicate_chapters": 0,
+        "missing_titles": 0,
+        "missing_arcs": 1,
+        "approved_missing_arcs": 1,
+        "unresolved_missing_arcs": 0,
+        "missing_source_urls": 0,
+        "missing_last_updated": 0,
+    }
+
+def naruto_manual_report() -> dict:
+    return {
+        "anime": "Naruto",
+        "validation_status": "PASS",
+        "results": [
+            {
+                "chapter_number": 1,
+                "record_found": True,
+                "manual_title_match": True,
+                "manual_arc_match": True,
+                "manual_url_valid": True,
+            },
+            {
+                "chapter_number": 700,
+                "record_found": True,
+                "manual_title_match": True,
+                "manual_arc_match": True,
+                "manual_url_valid": True,
+                "manual_notes": (
+                    "Verified standalone epilogue; "
+                    "manga arc is not applicable."
+                ),
+            },
+        ],
+    }
+
+def test_naruto_exception_aware_evidence_is_eligible():
+    report = (
+        certify_scope_v3_dataset
+        .build_certification_report(
+            anime_title="Naruto",
+            expected_start=1,
+            expected_end=700,
+            audit_report=naruto_audit_report(),
+            manual_report=naruto_manual_report(),
+        )
+    )
+
+    assert report["failure_count"] == 0
+    assert (
+        report["certification_eligible"]
+        is True
+    )
+    assert (
+        report["certification_status"]
+        == "ELIGIBLE"
+    )
+    assert (
+        report["manual_samples_reviewed"]
+        == 2
+    )

@@ -631,3 +631,17 @@ python -m tools.export_scope_v3_samples \
     --chapters "1,2,5,10,25,50,75,100,125,150,175,200,225,244,245,275,300,325,350,375,400,425,450,500,550,600,650,675,699,700" \
     --json-report reports/naruto_scope_v3_manual_validation.json
 ```
+
+---
+
+### Naruto Scope v3 Certification Eligibility
+
+```bash
+python -m tools.certify_scope_v3_dataset \
+    --anime "Naruto" \
+    --expected-start 1 \
+    --expected-end 700 \
+    --audit-report reports/naruto_scope_v3_audit.json \
+    --manual-report reports/naruto_scope_v3_manual_validation.json \
+    --json-report reports/naruto_scope_v3_certification.json
+```

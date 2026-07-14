@@ -4,7 +4,7 @@
 
 Implementation:
 
-🚧 Automated integrity and representative source validation passed
+🚧 Certification eligible; documentation and final validation pending
 
 Certification:
 
@@ -149,3 +149,31 @@ Results:
 - Manual validation status: [PASS or REVIEW REQUIRED]
 
 Chapter 700’s null manga arc was manually confirmed as accurate because the chapter is a standalone epilogue.
+
+---
+
+## Certification Eligibility
+
+Evidence evaluated:
+
+- Metadata integrity
+- Full-range coverage
+- Verified Chapter 700 exception
+- Representative manual source validation
+
+Results:
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual validation: PASS
+- Certification failures: 0
+- Certification status: ELIGIBLE
+
+Evidence report:
+
+`reports/naruto_scope_v3_certification.json`
+
+Eligibility means the dataset has sufficient evidence for formal certification.
+
+It does not itself mark the dataset as certified.

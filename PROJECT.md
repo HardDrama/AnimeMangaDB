@@ -90,33 +90,31 @@ Future  Platform Checkpoint v3
 
 Status:
 
-Representative Source Validation Passed
+Certification Eligible
 
 Dataset:
 
 - Chapters 1–700
-- 700 records
+- 700 chapter metadata records
 - Metadata audit: PASS
 - Coverage audit: PASS
-- Dataset status: PASS
-- Manual samples: 30
-- Manual discrepancies: 0
-- Spin-off contamination: 0
-- Unresolved metadata gaps: 0
+- Dataset audit: PASS
+- Manual validation: PASS
+- Certification failures: 0
 
 Verified exception:
 
 - Chapter 700
 - Manga arc not applicable
 - Database value remains null
+- Exception-aware audit: PASS
 
 Current phase:
 
-Certification eligibility
+Dataset documentation
 
 Next:
 
-- Generate Naruto certification eligibility evidence
-- Complete dataset documentation
-- Perform final validation
+- Complete Naruto Scope v3 dataset documentation
+- Perform final dataset validation
 - Certify Naruto Scope v3

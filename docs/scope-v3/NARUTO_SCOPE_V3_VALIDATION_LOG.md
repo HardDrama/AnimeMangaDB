@@ -309,3 +309,46 @@ No manga arc was fabricated or inherited.
 Manual source validation:
 
 [PASS or REVIEW REQUIRED]
+
+---
+
+## v0.58.8 — Certification Eligibility Audit
+
+### Evidence Evaluated
+
+- Full metadata audit
+- Full-range coverage audit
+- Exception-aware manga-arc validation
+- Representative manual source validation
+
+### Dataset
+
+- Anime: Naruto
+- Expected range: Chapters 1–700
+- Expected chapter records: 700
+- Manual samples reviewed: 30
+
+### Verified Exception
+
+- Chapter: 700
+- Field: Manga Arc
+- Classification: Not Applicable
+- Stored value: null
+- Audit treatment: Approved exception
+- Manual validation: PASS
+
+### Results
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual validation: PASS
+- Certification failures: 0
+
+### Certification Eligibility
+
+Status:
+
+ELIGIBLE
+
+The Naruto Scope v3 dataset has sufficient automated and manual evidence to proceed toward formal certification.

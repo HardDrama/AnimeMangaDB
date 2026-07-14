@@ -92,9 +92,17 @@ def validate_audit_report(
             "Audit report contains missing titles."
         )
 
-    if report.get("missing_arcs") != 0:
+    if report.get("unresolved_missing_arcs", 0) != 0:
         failures.append(
-            "Audit report contains missing manga arcs."
+            "Audit report contains unresolved manga arcs."
+        )
+
+    if report.get(
+        "configured_missing_arc_records",
+        [],
+    ):
+        failures.append(
+            "Audit report contains invalid manga arc exceptions."
         )
 
     if report.get("missing_source_urls") != 0:

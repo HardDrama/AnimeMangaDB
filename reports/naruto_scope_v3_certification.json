@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "anime": "Naruto",
+  "expected_start_chapter": 1,
+  "expected_end_chapter": 700,
+  "expected_chapter_count": 700,
+  "metadata_audit_status": "PASS",
+  "coverage_audit_status": "PASS",
+  "dataset_audit_status": "PASS",
+  "manual_validation_status": "PASS",
+  "manual_samples_reviewed": 30,
+  "failure_count": 0,
+  "failures": [],
+  "certification_eligible": true,
+  "certification_status": "ELIGIBLE",
+  "generated_at": "2026-07-14T15:39:16.371600"
+}
