@@ -1,0 +1,3522 @@
+{
+  "schema_version": 1,
+  "anime": "Naruto",
+  "index_url": "https://naruto.fandom.com/wiki/List_of_Volumes",
+  "section_id": "Tankōbon",
+  "entry_count": 700,
+  "unique_chapter_count": 700,
+  "minimum_chapter": 1,
+  "maximum_chapter": 700,
+  "missing_chapter_count": 0,
+  "missing_chapter_numbers": [],
+  "duplicate_chapter_count": 0,
+  "duplicate_chapter_numbers": [],
+  "entries": [
+    {
+      "chapter_number": 1,
+      "title": "Naruto Uzumaki!!",
+      "href": "/wiki/Naruto_Uzumaki!!_(chapter_1)"
+    },
+    {
+      "chapter_number": 2,
+      "title": "Konohamaru!!",
+      "href": "/wiki/Konohamaru!!"
+    },
+    {
+      "chapter_number": 3,
+      "title": "Sasuke Uchiha!!",
+      "href": "/wiki/Sasuke_Uchiha!!"
+    },
+    {
+      "chapter_number": 4,
+      "title": "Kakashi Hatake!!",
+      "href": "/wiki/Kakashi_Hatake!!"
+    },
+    {
+      "chapter_number": 5,
+      "title": "Unpreparedness is One's Greatest Enemy!!",
+      "href": "/wiki/Unpreparedness_is_One%27s_Greatest_Enemy!!"
+    },
+    {
+      "chapter_number": 6,
+      "title": "Only for Sasuke…!!",
+      "href": "/wiki/Only_for_Sasuke%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 7,
+      "title": "Kakashi's Conclusion",
+      "href": "/wiki/Kakashi%27s_Conclusion"
+    },
+    {
+      "chapter_number": 8,
+      "title": "And That's Why You're Disqualified!!",
+      "href": "/wiki/And_That%27s_Why_You%27re_Disqualified!!"
+    },
+    {
+      "chapter_number": 9,
+      "title": "The Worst Client",
+      "href": "/wiki/The_Worst_Client"
+    },
+    {
+      "chapter_number": 10,
+      "title": "The Second Critter",
+      "href": "/wiki/The_Second_Critter"
+    },
+    {
+      "chapter_number": 11,
+      "title": "Disembarking…!!",
+      "href": "/wiki/Disembarking%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 12,
+      "title": "This is the End!!",
+      "href": "/wiki/This_is_the_End!!"
+    },
+    {
+      "chapter_number": 13,
+      "title": "I'm a Ninja!!",
+      "href": "/wiki/I%27m_a_Ninja!!"
+    },
+    {
+      "chapter_number": 14,
+      "title": "A Secret Plan…!!",
+      "href": "/wiki/A_Secret_Plan%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 15,
+      "title": "The Sharingan Revived!!",
+      "href": "/wiki/The_Sharingan_Revived!!"
+    },
+    {
+      "chapter_number": 16,
+      "title": "Who are You?!",
+      "href": "/wiki/Who_are_You%3F!"
+    },
+    {
+      "chapter_number": 17,
+      "title": "Preparing for Battle!!",
+      "href": "/wiki/Preparing_for_Battle!!"
+    },
+    {
+      "chapter_number": 18,
+      "title": "The Training Commences",
+      "href": "/wiki/The_Training_Commences"
+    },
+    {
+      "chapter_number": 19,
+      "title": "A Symbol of Courage",
+      "href": "/wiki/A_Symbol_of_Courage"
+    },
+    {
+      "chapter_number": 20,
+      "title": "The Country that Had a Hero…!!",
+      "href": "/wiki/The_Country_that_Had_a_Hero%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 21,
+      "title": "Encounter in the Forest…!!",
+      "href": "/wiki/Encounter_in_the_Forest%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 22,
+      "title": "A Rival Appears!!",
+      "href": "/wiki/A_Rival_Appears!!"
+    },
+    {
+      "chapter_number": 23,
+      "title": "Two Assaults…!!",
+      "href": "/wiki/Two_Assaults%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 24,
+      "title": "Speed!!",
+      "href": "/wiki/Speed!!"
+    },
+    {
+      "chapter_number": 25,
+      "title": "For the Sake of Dreams…!!",
+      "href": "/wiki/For_the_Sake_of_Dreams%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 26,
+      "title": "The Sharingan Crumbles…!!",
+      "href": "/wiki/The_Sharingan_Crumbles%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 27,
+      "title": "Awakening…!!",
+      "href": "/wiki/Awakening%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 28,
+      "title": "Nine-Tails…!!",
+      "href": "/wiki/Nine-Tails%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 29,
+      "title": "Important People…!!",
+      "href": "/wiki/Important_People%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 30,
+      "title": "Your Future is…!!",
+      "href": "/wiki/Your_Future_is%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 31,
+      "title": "Everyone's Respective Battles…!!",
+      "href": "/wiki/Everyone%27s_Respective_Battles%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 32,
+      "title": "The Tool Named Shinobi",
+      "href": "/wiki/The_Tool_Named_Shinobi"
+    },
+    {
+      "chapter_number": 33,
+      "title": "The Hero's Bridge!!",
+      "href": "/wiki/The_Hero%27s_Bridge!!"
+    },
+    {
+      "chapter_number": 34,
+      "title": "Intruders?!",
+      "href": "/wiki/Intruders%3F!"
+    },
+    {
+      "chapter_number": 35,
+      "title": "Iruka vs. Kakashi?!",
+      "href": "/wiki/Iruka_vs._Kakashi%3F!"
+    },
+    {
+      "chapter_number": 36,
+      "title": "Sakura's Depression!!",
+      "href": "/wiki/Sakura%27s_Depression!!"
+    },
+    {
+      "chapter_number": 37,
+      "title": "The Worst Compatibility…!!",
+      "href": "/wiki/The_Worst_Compatibility%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 38,
+      "title": "Start…!!",
+      "href": "/wiki/Start%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 39,
+      "title": "The Challengers!!",
+      "href": "/wiki/The_Challengers!!"
+    },
+    {
+      "chapter_number": 40,
+      "title": "The First Exam!!",
+      "href": "/wiki/The_First_Exam!!"
+    },
+    {
+      "chapter_number": 41,
+      "title": "The Whispers of Demons…?!",
+      "href": "/wiki/The_Whispers_of_Demons%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 42,
+      "title": "Everyone's Respective Battles…!!",
+      "href": "/wiki/Everyone%27s_Respective_Battles%E2%80%A6!!_(chapter_42)"
+    },
+    {
+      "chapter_number": 43,
+      "title": "The Tenth Question…!!",
+      "href": "/wiki/The_Tenth_Question%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 44,
+      "title": "The Natures Tested for…!!",
+      "href": "/wiki/The_Natures_Tested_for%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 45,
+      "title": "The Second Exam!!",
+      "href": "/wiki/The_Second_Exam!!"
+    },
+    {
+      "chapter_number": 46,
+      "title": "The Password is…?!",
+      "href": "/wiki/The_Password_is%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 47,
+      "title": "Predator!!",
+      "href": "/wiki/Predator!!"
+    },
+    {
+      "chapter_number": 48,
+      "title": "That Goal is…!!",
+      "href": "/wiki/That_Goal_is%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 49,
+      "title": "Coward…!!",
+      "href": "/wiki/Coward%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 50,
+      "title": "I Will…!!",
+      "href": "/wiki/I_Will%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 51,
+      "title": "The Beautiful Wild Beast…!!",
+      "href": "/wiki/The_Beautiful_Wild_Beast%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 52,
+      "title": "The Conditions for Using!!",
+      "href": "/wiki/The_Conditions_for_Using!!"
+    },
+    {
+      "chapter_number": 53,
+      "title": "Sakura's Decision!!",
+      "href": "/wiki/Sakura%27s_Decision!!_(chapter_53)"
+    },
+    {
+      "chapter_number": 54,
+      "title": "Sakura and Ino",
+      "href": "/wiki/Sakura_and_Ino"
+    },
+    {
+      "chapter_number": 55,
+      "title": "All-Out War…!!",
+      "href": "/wiki/All-Out_War%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 56,
+      "title": "The Power Granted…!!",
+      "href": "/wiki/The_Power_Granted%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 57,
+      "title": "Ten Hours Earlier",
+      "href": "/wiki/Ten_Hours_Earlier"
+    },
+    {
+      "chapter_number": 58,
+      "title": "Eyewitnesses…!!",
+      "href": "/wiki/Eyewitnesses%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 59,
+      "title": "The Tragedy of Suna!!",
+      "href": "/wiki/The_Tragedy_of_Suna!!"
+    },
+    {
+      "chapter_number": 60,
+      "title": "Last Chance…!!",
+      "href": "/wiki/Last_Chance%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 61,
+      "title": "The Path That Should Be Followed…!!",
+      "href": "/wiki/The_Path_That_Should_Be_Followed%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 62,
+      "title": "Trapped Rats…!!",
+      "href": "/wiki/Trapped_Rats%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 63,
+      "title": "One More Face",
+      "href": "/wiki/One_More_Face"
+    },
+    {
+      "chapter_number": 64,
+      "title": "The Hokage's Message…!!",
+      "href": "/wiki/The_Hokage%27s_Message%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 65,
+      "title": "Life and Death Battles!!",
+      "href": "/wiki/Life_and_Death_Battles!!"
+    },
+    {
+      "chapter_number": 66,
+      "title": "Sakura's Advice",
+      "href": "/wiki/Sakura%27s_Advice"
+    },
+    {
+      "chapter_number": 67,
+      "title": "A Heretical Ability!!",
+      "href": "/wiki/A_Heretical_Ability!!"
+    },
+    {
+      "chapter_number": 68,
+      "title": "Blood of the Uchiha!!",
+      "href": "/wiki/Blood_of_the_Uchiha!!"
+    },
+    {
+      "chapter_number": 69,
+      "title": "A Dreadful Visitor!!",
+      "href": "/wiki/A_Dreadful_Visitor!!"
+    },
+    {
+      "chapter_number": 70,
+      "title": "The One Who Dies is…?!",
+      "href": "/wiki/The_One_Who_Dies_is%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 71,
+      "title": "A Wall Too High…!!",
+      "href": "/wiki/A_Wall_Too_High%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 72,
+      "title": "Rivalry…!!",
+      "href": "/wiki/Rivalry%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 73,
+      "title": "A Declaration of Defeat…?!",
+      "href": "/wiki/A_Declaration_of_Defeat%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 74,
+      "title": "The Sixth Match and…!!",
+      "href": "/wiki/The_Sixth_Match_and%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 75,
+      "title": "Naruto's Growth…!!",
+      "href": "/wiki/Naruto%27s_Growth%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 76,
+      "title": "Kiba Turns the Tables!! Naruto Turns the Tables?!!",
+      "href": "/wiki/Kiba_Turns_the_Tables!!_Naruto_Turns_the_Tables%3F!!"
+    },
+    {
+      "chapter_number": 77,
+      "title": "Naruto's Clever Scheme!!",
+      "href": "/wiki/Naruto%27s_Clever_Scheme!!"
+    },
+    {
+      "chapter_number": 78,
+      "title": "Neji and Hinata",
+      "href": "/wiki/Neji_and_Hinata"
+    },
+    {
+      "chapter_number": 79,
+      "title": "The Hyūga Clan",
+      "href": "/wiki/The_Hy%C5%ABga_Clan_(chapter)"
+    },
+    {
+      "chapter_number": 80,
+      "title": "Crossing the Limit…",
+      "href": "/wiki/Crossing_the_Limit%E2%80%A6"
+    },
+    {
+      "chapter_number": 81,
+      "title": "Gaara vs.…",
+      "href": "/wiki/Gaara_vs.%E2%80%A6"
+    },
+    {
+      "chapter_number": 82,
+      "title": "Lee's Secret!!",
+      "href": "/wiki/Lee%27s_Secret!!"
+    },
+    {
+      "chapter_number": 83,
+      "title": "The Absolute Defence: Crumbled?!",
+      "href": "/wiki/The_Absolute_Defence:_Crumbled%3F!"
+    },
+    {
+      "chapter_number": 84,
+      "title": "The Genius of Hard Work…!!",
+      "href": "/wiki/The_Genius_of_Hard_Work%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 85,
+      "title": "Now, for Sure…!!",
+      "href": "/wiki/Now,_for_Sure%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 86,
+      "title": "A Splendid Ninja…!!",
+      "href": "/wiki/A_Splendid_Ninja%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 87,
+      "title": "The Preliminaries Completed…!!",
+      "href": "/wiki/The_Preliminaries_Completed%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 88,
+      "title": "Sasuke…?!",
+      "href": "/wiki/Sasuke%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 89,
+      "title": "Naruto's Wish…!!",
+      "href": "/wiki/Naruto%27s_Wish%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 90,
+      "title": "Whaddabout My Training?!",
+      "href": "/wiki/Whaddabout_My_Training%3F!"
+    },
+    {
+      "chapter_number": 91,
+      "title": "Desiring Apprenticeship?!",
+      "href": "/wiki/Desiring_Apprenticeship%3F!"
+    },
+    {
+      "chapter_number": 92,
+      "title": "Konoha and Oto and Suna and…!!",
+      "href": "/wiki/Konoha_and_Oto_and_Suna_and%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 93,
+      "title": "Passionate Feelings… Everyone!!",
+      "href": "/wiki/Passionate_Feelings%E2%80%A6_Everyone!!"
+    },
+    {
+      "chapter_number": 94,
+      "title": "The Key…!!",
+      "href": "/wiki/The_Key%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 95,
+      "title": "A Chance Encounter…!!",
+      "href": "/wiki/A_Chance_Encounter%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 96,
+      "title": "The Unexpected Visitor!!",
+      "href": "/wiki/The_Unexpected_Visitor!!"
+    },
+    {
+      "chapter_number": 97,
+      "title": "A Reason for Continuing to Exist…!!",
+      "href": "/wiki/A_Reason_for_Continuing_to_Exist%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 98,
+      "title": "A Proud Failure!!",
+      "href": "/wiki/A_Proud_Failure!!"
+    },
+    {
+      "chapter_number": 99,
+      "title": "The Final Selection Begins…!!",
+      "href": "/wiki/The_Final_Selection_Begins%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 100,
+      "title": "Prepared for an Honourable Defeat…!!",
+      "href": "/wiki/Prepared_for_an_Honourable_Defeat%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 101,
+      "title": "One More…!!",
+      "href": "/wiki/One_More%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 102,
+      "title": "A Bird in a Cage…!!",
+      "href": "/wiki/A_Bird_in_a_Cage%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 103,
+      "title": "Failure!!",
+      "href": "/wiki/Failure!!"
+    },
+    {
+      "chapter_number": 104,
+      "title": "The Power to Change…!!",
+      "href": "/wiki/The_Power_to_Change%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 105,
+      "title": "The Great Flight!!",
+      "href": "/wiki/The_Great_Flight!!"
+    },
+    {
+      "chapter_number": 106,
+      "title": "Sasuke Disqualified…?!",
+      "href": "/wiki/Sasuke_Disqualified%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 107,
+      "title": "The Guy with Zero Motivation!!",
+      "href": "/wiki/The_Guy_with_Zero_Motivation!!"
+    },
+    {
+      "chapter_number": 108,
+      "title": "A Plot Leading to Victory…?!",
+      "href": "/wiki/A_Plot_Leading_to_Victory%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 109,
+      "title": "Tree Leaves, Dancing…!!",
+      "href": "/wiki/Tree_Leaves,_Dancing%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 110,
+      "title": "At Last…!!",
+      "href": "/wiki/At_Last%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 111,
+      "title": "Sasuke vs. Gaara!!",
+      "href": "/wiki/Sasuke_vs._Gaara!!"
+    },
+    {
+      "chapter_number": 112,
+      "title": "Sasuke's Taijutsu…!!",
+      "href": "/wiki/Sasuke%27s_Taijutsu%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 113,
+      "title": "The Reason He was Late…!!",
+      "href": "/wiki/The_Reason_He_was_Late%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 114,
+      "title": "Assault…!!",
+      "href": "/wiki/Assault%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 115,
+      "title": "The Chūnin Exams, Concluded…!!",
+      "href": "/wiki/The_Ch%C5%ABnin_Exams,_Concluded%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 116,
+      "title": "Konoha Crush…!!",
+      "href": "/wiki/Konoha_Crush%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 117,
+      "title": "The Mission Given…!!",
+      "href": "/wiki/The_Mission_Given%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 118,
+      "title": "Confinement…!!",
+      "href": "/wiki/Confinement%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 119,
+      "title": "My Life…!!",
+      "href": "/wiki/My_Life%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 120,
+      "title": "Hokage vs. Hokage!!",
+      "href": "/wiki/Hokage_vs._Hokage!!"
+    },
+    {
+      "chapter_number": 121,
+      "title": "The Horrible Experiment…!!",
+      "href": "/wiki/The_Horrible_Experiment%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 122,
+      "title": "The Inherited Will!!",
+      "href": "/wiki/The_Inherited_Will!!"
+    },
+    {
+      "chapter_number": 123,
+      "title": "The Final Seal",
+      "href": "/wiki/The_Final_Seal"
+    },
+    {
+      "chapter_number": 124,
+      "title": "An Eternal Battle…!!",
+      "href": "/wiki/An_Eternal_Battle%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 125,
+      "title": "The Time of Awakening…!!",
+      "href": "/wiki/The_Time_of_Awakening%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 126,
+      "title": "Negligence…!!",
+      "href": "/wiki/Negligence%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 127,
+      "title": "The True Feeling of Life…!!",
+      "href": "/wiki/The_True_Feeling_of_Life%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 128,
+      "title": "Crossing the Limits…!!",
+      "href": "/wiki/Crossing_the_Limits%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 129,
+      "title": "Pain…!!",
+      "href": "/wiki/Pain%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 130,
+      "title": "Love…!!",
+      "href": "/wiki/Love%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 131,
+      "title": "The Name Gaara…!!",
+      "href": "/wiki/The_Name_Gaara%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 132,
+      "title": "The Two… Darkness and Light",
+      "href": "/wiki/The_Two%E2%80%A6_Darkness_and_Light"
+    },
+    {
+      "chapter_number": 133,
+      "title": "The Strong…!!",
+      "href": "/wiki/The_Strong%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 134,
+      "title": "The Naruto Shinobi Handbook!!",
+      "href": "/wiki/The_Naruto_Shinobi_Handbook!!"
+    },
+    {
+      "chapter_number": 135,
+      "title": "A Storm-Like Battle!!",
+      "href": "/wiki/A_Storm-Like_Battle!!"
+    },
+    {
+      "chapter_number": 136,
+      "title": "The Final Blow…!!",
+      "href": "/wiki/The_Final_Blow%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 137,
+      "title": "Konoha Shinobi…!!",
+      "href": "/wiki/Konoha_Shinobi%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 138,
+      "title": "Konoha Crush, Ended!!",
+      "href": "/wiki/Konoha_Crush,_Ended!!"
+    },
+    {
+      "chapter_number": 139,
+      "title": "That Person's Name is…!!",
+      "href": "/wiki/That_Person%27s_Name_is%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 140,
+      "title": "Approaching…!!",
+      "href": "/wiki/Approaching%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 141,
+      "title": "Itachi Uchiha!!",
+      "href": "/wiki/Itachi_Uchiha!!"
+    },
+    {
+      "chapter_number": 142,
+      "title": "Kakashi vs. Itachi",
+      "href": "/wiki/Kakashi_vs._Itachi"
+    },
+    {
+      "chapter_number": 143,
+      "title": "The Fourth's Legacy!!",
+      "href": "/wiki/The_Fourth%27s_Legacy!!"
+    },
+    {
+      "chapter_number": 144,
+      "title": "Pursuers",
+      "href": "/wiki/Pursuers"
+    },
+    {
+      "chapter_number": 145,
+      "title": "Memories of Despair",
+      "href": "/wiki/Memories_of_Despair"
+    },
+    {
+      "chapter_number": 146,
+      "title": "Together with Hatred…!!",
+      "href": "/wiki/Together_with_Hatred%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 147,
+      "title": "My Fight!!",
+      "href": "/wiki/My_Fight!!"
+    },
+    {
+      "chapter_number": 148,
+      "title": "Itachi's Power!!",
+      "href": "/wiki/Itachi%27s_Power!!"
+    },
+    {
+      "chapter_number": 149,
+      "title": "The Legendary…!!",
+      "href": "/wiki/The_Legendary%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 150,
+      "title": "The Training Begins…?!",
+      "href": "/wiki/The_Training_Begins%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 151,
+      "title": "Impetus…!!",
+      "href": "/wiki/Impetus%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 152,
+      "title": "The Second Step",
+      "href": "/wiki/The_Second_Step"
+    },
+    {
+      "chapter_number": 153,
+      "title": "The Searchers!!",
+      "href": "/wiki/The_Searchers!!"
+    },
+    {
+      "chapter_number": 154,
+      "title": "Arrival…!!",
+      "href": "/wiki/Arrival%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 155,
+      "title": "The Third Step",
+      "href": "/wiki/The_Third_Step"
+    },
+    {
+      "chapter_number": 156,
+      "title": "The Deal",
+      "href": "/wiki/The_Deal"
+    },
+    {
+      "chapter_number": 157,
+      "title": "The Answer is…?!",
+      "href": "/wiki/The_Answer_is%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 158,
+      "title": "I Won't Forgive You…!!",
+      "href": "/wiki/I_Won%27t_Forgive_You%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 159,
+      "title": "The Wager…!!",
+      "href": "/wiki/The_Wager%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 160,
+      "title": "The Necklace of Death…!!",
+      "href": "/wiki/The_Necklace_of_Death%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 161,
+      "title": "Tsunade's Decision!!",
+      "href": "/wiki/Tsunade%27s_Decision!!"
+    },
+    {
+      "chapter_number": 162,
+      "title": "The Unresisting Heart…!!",
+      "href": "/wiki/The_Unresisting_Heart%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 163,
+      "title": "The Undecayed…!!",
+      "href": "/wiki/The_Undecayed%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 164,
+      "title": "Medical Specialist!!",
+      "href": "/wiki/Medical_Specialist!!"
+    },
+    {
+      "chapter_number": 165,
+      "title": "Naruto, Attack!!",
+      "href": "/wiki/Naruto,_Attack!!"
+    },
+    {
+      "chapter_number": 166,
+      "title": "The Abilities of the Shinobi…!!",
+      "href": "/wiki/The_Abilities_of_the_Shinobi%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 167,
+      "title": "As Promised…!!",
+      "href": "/wiki/As_Promised%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 168,
+      "title": "Just Once More",
+      "href": "/wiki/Just_Once_More"
+    },
+    {
+      "chapter_number": 169,
+      "title": "Risking One's Life…!!",
+      "href": "/wiki/Risking_One%27s_Life%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 170,
+      "title": "A Three-Way Deadlock of Offence and Defence!!",
+      "href": "/wiki/A_Three-Way_Deadlock_of_Offence_and_Defence!!"
+    },
+    {
+      "chapter_number": 171,
+      "title": "The Successor",
+      "href": "/wiki/The_Successor"
+    },
+    {
+      "chapter_number": 172,
+      "title": "Homecoming",
+      "href": "/wiki/Homecoming"
+    },
+    {
+      "chapter_number": 173,
+      "title": "Those Suffering",
+      "href": "/wiki/Those_Suffering"
+    },
+    {
+      "chapter_number": 174,
+      "title": "Feelings, Each One…!",
+      "href": "/wiki/Feelings,_Each_One%E2%80%A6!"
+    },
+    {
+      "chapter_number": 175,
+      "title": "Naruto vs. Sasuke!!",
+      "href": "/wiki/Naruto_vs._Sasuke!!"
+    },
+    {
+      "chapter_number": 176,
+      "title": "They Who are Called Rivals",
+      "href": "/wiki/They_Who_are_Called_Rivals"
+    },
+    {
+      "chapter_number": 177,
+      "title": "The Oto Four",
+      "href": "/wiki/The_Oto_Four"
+    },
+    {
+      "chapter_number": 178,
+      "title": "Oto's Invitation…!!",
+      "href": "/wiki/Oto%27s_Invitation%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 179,
+      "title": "Don't Forget…!!",
+      "href": "/wiki/Don%27t_Forget%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 180,
+      "title": "It's a Promise!!",
+      "href": "/wiki/It%27s_a_Promise!!"
+    },
+    {
+      "chapter_number": 181,
+      "title": "The Beginning of the Battle…!!",
+      "href": "/wiki/The_Beginning_of_the_Battle%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 182,
+      "title": "Assemble!!",
+      "href": "/wiki/Assemble!!"
+    },
+    {
+      "chapter_number": 183,
+      "title": "The Promise of a Lifetime",
+      "href": "/wiki/The_Promise_of_a_Lifetime"
+    },
+    {
+      "chapter_number": 184,
+      "title": "Oto vs. Konoha!!",
+      "href": "/wiki/Oto_vs._Konoha!!"
+    },
+    {
+      "chapter_number": 185,
+      "title": "Pursue Oto…!!",
+      "href": "/wiki/Pursue_Oto%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 186,
+      "title": "The Strategy… Failed?!",
+      "href": "/wiki/The_Strategy%E2%80%A6_Failed%3F!"
+    },
+    {
+      "chapter_number": 187,
+      "title": "Begging for One's Life…!!",
+      "href": "/wiki/Begging_for_One%27s_Life%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 188,
+      "title": "The Shinobi of Konohagakure…!!",
+      "href": "/wiki/The_Shinobi_of_Konohagakure%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 189,
+      "title": "The Power of Faith…!!",
+      "href": "/wiki/The_Power_of_Faith%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 190,
+      "title": "Unforgivable!!",
+      "href": "/wiki/Unforgivable!!"
+    },
+    {
+      "chapter_number": 191,
+      "title": "Comrades…!!",
+      "href": "/wiki/Comrades%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 192,
+      "title": "The Plan…!!",
+      "href": "/wiki/The_Plan%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 193,
+      "title": "Game Over",
+      "href": "/wiki/Game_Over"
+    },
+    {
+      "chapter_number": 194,
+      "title": "Sounding Out",
+      "href": "/wiki/Sounding_Out"
+    },
+    {
+      "chapter_number": 195,
+      "title": "The Way to Capture…!!",
+      "href": "/wiki/The_Way_to_Capture%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 196,
+      "title": "The Number One Strongest Enemy!!",
+      "href": "/wiki/The_Number_One_Strongest_Enemy!!"
+    },
+    {
+      "chapter_number": 197,
+      "title": "Prepared to Die!!",
+      "href": "/wiki/Prepared_to_Die!!"
+    },
+    {
+      "chapter_number": 198,
+      "title": "Reincarnation…!!",
+      "href": "/wiki/Reincarnation%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 199,
+      "title": "Desire…!!",
+      "href": "/wiki/Desire%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 200,
+      "title": "Just as Planned…!!",
+      "href": "/wiki/Just_as_Planned%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 201,
+      "title": "Not as Planned…!!",
+      "href": "/wiki/Not_as_Planned%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 202,
+      "title": "Three Wishes!!",
+      "href": "/wiki/Three_Wishes!!"
+    },
+    {
+      "chapter_number": 203,
+      "title": "Sakon's Secret",
+      "href": "/wiki/Sakon%27s_Secret"
+    },
+    {
+      "chapter_number": 204,
+      "title": "Ukon's Ability",
+      "href": "/wiki/Ukon%27s_Ability"
+    },
+    {
+      "chapter_number": 205,
+      "title": "Kiba's Determination!!",
+      "href": "/wiki/Kiba%27s_Determination!!"
+    },
+    {
+      "chapter_number": 206,
+      "title": "Trouble…!!",
+      "href": "/wiki/Trouble%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 207,
+      "title": "Playing Without Rook and Bishop",
+      "href": "/wiki/Playing_Without_Rook_and_Bishop"
+    },
+    {
+      "chapter_number": 208,
+      "title": "The First Move was a Fake-Out!!",
+      "href": "/wiki/The_First_Move_was_a_Fake-Out!!"
+    },
+    {
+      "chapter_number": 209,
+      "title": "Supporter, Calling On!!",
+      "href": "/wiki/Supporter,_Calling_On!!"
+    },
+    {
+      "chapter_number": 210,
+      "title": "Lee's Secret!!",
+      "href": "/wiki/Lee%27s_Secret!!_(chapter_210)"
+    },
+    {
+      "chapter_number": 211,
+      "title": "Unorthodox…!!",
+      "href": "/wiki/Unorthodox%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 212,
+      "title": "Crisis, Crisis, Crisis!!",
+      "href": "/wiki/Crisis,_Crisis,_Crisis!!"
+    },
+    {
+      "chapter_number": 213,
+      "title": "A Great Debt…!!",
+      "href": "/wiki/A_Great_Debt%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 214,
+      "title": "Step Aside for a Moment…!!",
+      "href": "/wiki/Step_Aside_for_a_Moment%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 215,
+      "title": "Gaara of the Sand Waterfall",
+      "href": "/wiki/Gaara_of_the_Sand_Waterfall_(chapter)"
+    },
+    {
+      "chapter_number": 216,
+      "title": "Spear and Shield…!!",
+      "href": "/wiki/Spear_and_Shield%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 217,
+      "title": "For the Sake of Those Precious",
+      "href": "/wiki/For_the_Sake_of_Those_Precious"
+    },
+    {
+      "chapter_number": 218,
+      "title": "Konoha Comrades!!",
+      "href": "/wiki/Konoha_Comrades!!"
+    },
+    {
+      "chapter_number": 219,
+      "title": "Future and Past",
+      "href": "/wiki/Future_and_Past"
+    },
+    {
+      "chapter_number": 220,
+      "title": "Itachi and Sasuke, Brothers",
+      "href": "/wiki/Itachi_and_Sasuke,_Brothers_(chapter)"
+    },
+    {
+      "chapter_number": 221,
+      "title": "The Too Distant Elder Brother",
+      "href": "/wiki/The_Too_Distant_Elder_Brother"
+    },
+    {
+      "chapter_number": 222,
+      "title": "Itachi's Doubt",
+      "href": "/wiki/Itachi%27s_Doubt"
+    },
+    {
+      "chapter_number": 223,
+      "title": "Sasuke and his Father",
+      "href": "/wiki/Sasuke_and_his_Father"
+    },
+    {
+      "chapter_number": 224,
+      "title": "That Day…!!",
+      "href": "/wiki/That_Day%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 225,
+      "title": "Within Darkness…!!",
+      "href": "/wiki/Within_Darkness%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 226,
+      "title": "Close Friend…!!",
+      "href": "/wiki/Close_Friend%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 227,
+      "title": "Chidori vs. Rasengan!!",
+      "href": "/wiki/Chidori_vs._Rasengan!!"
+    },
+    {
+      "chapter_number": 228,
+      "title": "Kakashi's Premonition",
+      "href": "/wiki/Kakashi%27s_Premonition"
+    },
+    {
+      "chapter_number": 229,
+      "title": "The Bond…!!",
+      "href": "/wiki/The_Bond%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 230,
+      "title": "The Time of Awakening!!",
+      "href": "/wiki/The_Time_of_Awakening!!"
+    },
+    {
+      "chapter_number": 231,
+      "title": "Special Powers!!",
+      "href": "/wiki/Special_Powers!!"
+    },
+    {
+      "chapter_number": 232,
+      "title": "The Valley of the End",
+      "href": "/wiki/The_Valley_of_the_End_(chapter)"
+    },
+    {
+      "chapter_number": 233,
+      "title": "The Worst Ending…!!",
+      "href": "/wiki/The_Worst_Ending%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 234,
+      "title": "The Day of Parting…!!",
+      "href": "/wiki/The_Day_of_Parting%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 235,
+      "title": "Mission Failed…!!",
+      "href": "/wiki/Mission_Failed%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 236,
+      "title": "The Promise that Couldn't be Kept",
+      "href": "/wiki/The_Promise_that_Couldn%27t_be_Kept"
+    },
+    {
+      "chapter_number": 237,
+      "title": "Idiot…!!",
+      "href": "/wiki/Idiot%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 238,
+      "title": "The Day of Departure!!",
+      "href": "/wiki/The_Day_of_Departure!!"
+    },
+    {
+      "chapter_number": 239,
+      "title": "Side Story 1: Mission Start…!!",
+      "href": "/wiki/Side_Story_1:_Mission_Start%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 240,
+      "title": "Side Story 2: Teamwork!!",
+      "href": "/wiki/Side_Story_2:_Teamwork!!"
+    },
+    {
+      "chapter_number": 241,
+      "title": "Side Story 3: A True Hero",
+      "href": "/wiki/Side_Story_3:_A_True_Hero"
+    },
+    {
+      "chapter_number": 242,
+      "title": "Side Story 4: The Crybaby Ninja",
+      "href": "/wiki/Side_Story_4:_The_Crybaby_Ninja"
+    },
+    {
+      "chapter_number": 243,
+      "title": "Side Story 5: Gift",
+      "href": "/wiki/Side_Story_5:_Gift"
+    },
+    {
+      "chapter_number": 244,
+      "title": "Side Story Final Story: The Hero of the Sharingan",
+      "href": "/wiki/Side_Story_Final_Story:_The_Hero_of_the_Sharingan"
+    },
+    {
+      "chapter_number": 245,
+      "title": "Naruto's Homecoming!!",
+      "href": "/wiki/Naruto%27s_Homecoming!!"
+    },
+    {
+      "chapter_number": 246,
+      "title": "The Pair's Growth!!",
+      "href": "/wiki/The_Pair%27s_Growth!!"
+    },
+    {
+      "chapter_number": 247,
+      "title": "Intruders in Suna",
+      "href": "/wiki/Intruders_in_Suna"
+    },
+    {
+      "chapter_number": 248,
+      "title": "Suna's Welcome Attack…!!",
+      "href": "/wiki/Suna%27s_Welcome_Attack%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 249,
+      "title": "As Kazekage…!!",
+      "href": "/wiki/As_Kazekage%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 250,
+      "title": "New Team, First Mission!!",
+      "href": "/wiki/New_Team,_First_Mission!!"
+    },
+    {
+      "chapter_number": 251,
+      "title": "To Suna…!!",
+      "href": "/wiki/To_Suna%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 252,
+      "title": "Feelings, Running Wild…!!",
+      "href": "/wiki/Feelings,_Running_Wild%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 253,
+      "title": "Reliable Reinforcements…!!",
+      "href": "/wiki/Reliable_Reinforcements%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 254,
+      "title": "Brothers…!!",
+      "href": "/wiki/Brothers%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 255,
+      "title": "Approaching…!!",
+      "href": "/wiki/Approaching%E2%80%A6!!_(chapter_255)"
+    },
+    {
+      "chapter_number": 256,
+      "title": "The People Blocking the Way!!",
+      "href": "/wiki/The_People_Blocking_the_Way!!"
+    },
+    {
+      "chapter_number": 257,
+      "title": "Kakashi's EXP",
+      "href": "/wiki/Kakashi%27s_EXP"
+    },
+    {
+      "chapter_number": 258,
+      "title": "Guy vs. Kisame!!",
+      "href": "/wiki/Guy_vs._Kisame!!"
+    },
+    {
+      "chapter_number": 259,
+      "title": "Itachi's Power…!!",
+      "href": "/wiki/Itachi%27s_Power%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 260,
+      "title": "Kakashi vs. Itachi!!",
+      "href": "/wiki/Kakashi_vs._Itachi!!"
+    },
+    {
+      "chapter_number": 261,
+      "title": "Jinchūriki…!!",
+      "href": "/wiki/Jinch%C5%ABriki%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 262,
+      "title": "Raging Feelings…!!",
+      "href": "/wiki/Raging_Feelings%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 263,
+      "title": "Getting Angry with a Loud Voice…!!",
+      "href": "/wiki/Getting_Angry_with_a_Loud_Voice%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 264,
+      "title": "Sasori's Art…!!",
+      "href": "/wiki/Sasori%27s_Art%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 265,
+      "title": "Granny Chiyo and Sakura",
+      "href": "/wiki/Granny_Chiyo_and_Sakura"
+    },
+    {
+      "chapter_number": 266,
+      "title": "Sasori, Revealed…!!",
+      "href": "/wiki/Sasori,_Revealed%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 267,
+      "title": "Intense Determination…!!",
+      "href": "/wiki/Intense_Determination%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 268,
+      "title": "Puppet Master vs. Puppet Master!!",
+      "href": "/wiki/Puppet_Master_vs._Puppet_Master!!"
+    },
+    {
+      "chapter_number": 269,
+      "title": "What I Can Do…!!",
+      "href": "/wiki/What_I_Can_Do%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 270,
+      "title": "Miscalculation…!!",
+      "href": "/wiki/Miscalculation%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 271,
+      "title": "Unknown Power…!!",
+      "href": "/wiki/Unknown_Power%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 272,
+      "title": "Granny Chiyo vs. Sasori…!!",
+      "href": "/wiki/Granny_Chiyo_vs._Sasori%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 273,
+      "title": "The Last Battle!!",
+      "href": "/wiki/The_Last_Battle!!"
+    },
+    {
+      "chapter_number": 274,
+      "title": "An Unfulfilled Dream",
+      "href": "/wiki/An_Unfulfilled_Dream"
+    },
+    {
+      "chapter_number": 275,
+      "title": "Reward…!!",
+      "href": "/wiki/Reward%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 276,
+      "title": "The New Sharingan!!",
+      "href": "/wiki/The_New_Sharingan!!"
+    },
+    {
+      "chapter_number": 277,
+      "title": "The Ultimate Art!!",
+      "href": "/wiki/The_Ultimate_Art!!_(chapter_277)"
+    },
+    {
+      "chapter_number": 278,
+      "title": "Gaara's Death",
+      "href": "/wiki/Gaara%27s_Death"
+    },
+    {
+      "chapter_number": 279,
+      "title": "A Miraculous Power…!!",
+      "href": "/wiki/A_Miraculous_Power%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 280,
+      "title": "Entrusted Feelings!!",
+      "href": "/wiki/Entrusted_Feelings!!"
+    },
+    {
+      "chapter_number": 281,
+      "title": "The Road to Sasuke!!",
+      "href": "/wiki/The_Road_to_Sasuke!!"
+    },
+    {
+      "chapter_number": 282,
+      "title": "Team Kakashi Returns",
+      "href": "/wiki/Team_Kakashi_Returns"
+    },
+    {
+      "chapter_number": 283,
+      "title": "The Search for Members!!",
+      "href": "/wiki/The_Search_for_Members!!"
+    },
+    {
+      "chapter_number": 284,
+      "title": "The New Comrades…!!",
+      "href": "/wiki/The_New_Comrades%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 285,
+      "title": "The Person from Root!!",
+      "href": "/wiki/The_Person_from_Root!!"
+    },
+    {
+      "chapter_number": 286,
+      "title": "Naruto and Sasuke and Sakura",
+      "href": "/wiki/Naruto_and_Sasuke_and_Sakura"
+    },
+    {
+      "chapter_number": 287,
+      "title": "Untitled",
+      "href": "/wiki/Untitled"
+    },
+    {
+      "chapter_number": 288,
+      "title": "Uncomprehending Feelings",
+      "href": "/wiki/Uncomprehending_Feelings"
+    },
+    {
+      "chapter_number": 289,
+      "title": "The Spy from Akatsuki!!",
+      "href": "/wiki/The_Spy_from_Akatsuki!!"
+    },
+    {
+      "chapter_number": 290,
+      "title": "The Betrayal's Conclusion!!",
+      "href": "/wiki/The_Betrayal%27s_Conclusion!!"
+    },
+    {
+      "chapter_number": 291,
+      "title": "The Trigger of Rage!!",
+      "href": "/wiki/The_Trigger_of_Rage!!"
+    },
+    {
+      "chapter_number": 292,
+      "title": "The Third Tail…!!",
+      "href": "/wiki/The_Third_Tail%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 293,
+      "title": "Rampage…!!",
+      "href": "/wiki/Rampage%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 294,
+      "title": "The Fourth Tail…!!",
+      "href": "/wiki/The_Fourth_Tail%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 295,
+      "title": "Towards the Nine-Tails…!!",
+      "href": "/wiki/Towards_the_Nine-Tails%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 296,
+      "title": "The Sad Conclusion",
+      "href": "/wiki/The_Sad_Conclusion"
+    },
+    {
+      "chapter_number": 297,
+      "title": "Sai's Mission!!",
+      "href": "/wiki/Sai%27s_Mission!!"
+    },
+    {
+      "chapter_number": 298,
+      "title": "The Top-Secret Mission…!!",
+      "href": "/wiki/The_Top-Secret_Mission%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 299,
+      "title": "The Source of Strength…!!",
+      "href": "/wiki/The_Source_of_Strength%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 300,
+      "title": "Sai's Picture Book!!",
+      "href": "/wiki/Sai%27s_Picture_Book!!"
+    },
+    {
+      "chapter_number": 301,
+      "title": "Sai and Sasuke!!",
+      "href": "/wiki/Sai_and_Sasuke!!"
+    },
+    {
+      "chapter_number": 302,
+      "title": "Infiltration…!!",
+      "href": "/wiki/Infiltration%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 303,
+      "title": "Sai's Betrayal!!",
+      "href": "/wiki/Sai%27s_Betrayal!!"
+    },
+    {
+      "chapter_number": 304,
+      "title": "The Other Side of the Betrayal!!",
+      "href": "/wiki/The_Other_Side_of_the_Betrayal!!"
+    },
+    {
+      "chapter_number": 305,
+      "title": "The Bond with You",
+      "href": "/wiki/The_Bond_with_You"
+    },
+    {
+      "chapter_number": 306,
+      "title": "The Time of Reunion…!!",
+      "href": "/wiki/The_Time_of_Reunion%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 307,
+      "title": "Whim…!!",
+      "href": "/wiki/Whim%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 308,
+      "title": "Sasuke's Power!!",
+      "href": "/wiki/Sasuke%27s_Power!!"
+    },
+    {
+      "chapter_number": 309,
+      "title": "A Conversation with the Nine-Tails!!",
+      "href": "/wiki/A_Conversation_with_the_Nine-Tails!!"
+    },
+    {
+      "chapter_number": 310,
+      "title": "Title",
+      "href": "/wiki/Title"
+    },
+    {
+      "chapter_number": 311,
+      "title": "Nicknames",
+      "href": "/wiki/Nicknames"
+    },
+    {
+      "chapter_number": 312,
+      "title": "The Creeping Threat!!",
+      "href": "/wiki/The_Creeping_Threat!!"
+    },
+    {
+      "chapter_number": 313,
+      "title": "The New Twosome!!",
+      "href": "/wiki/The_New_Twosome!!"
+    },
+    {
+      "chapter_number": 314,
+      "title": "Akatsuki Invades…!!",
+      "href": "/wiki/Akatsuki_Invades%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 315,
+      "title": "Special Training!!",
+      "href": "/wiki/Special_Training!!"
+    },
+    {
+      "chapter_number": 316,
+      "title": "Training, Begin!!",
+      "href": "/wiki/Training,_Begin!!"
+    },
+    {
+      "chapter_number": 317,
+      "title": "The Beginning of the Nightmare!!",
+      "href": "/wiki/The_Beginning_of_the_Nightmare!!"
+    },
+    {
+      "chapter_number": 318,
+      "title": "Smooth Training",
+      "href": "/wiki/Smooth_Training"
+    },
+    {
+      "chapter_number": 319,
+      "title": "Driving Forces",
+      "href": "/wiki/Driving_Forces"
+    },
+    {
+      "chapter_number": 320,
+      "title": "Bounties…!!",
+      "href": "/wiki/Bounties%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 321,
+      "title": "Smooth Talking…!!",
+      "href": "/wiki/Smooth_Talking%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 322,
+      "title": "That Guy Can't be Killed",
+      "href": "/wiki/That_Guy_Can%27t_be_Killed"
+    },
+    {
+      "chapter_number": 323,
+      "title": "God's Judgment!!",
+      "href": "/wiki/God%27s_Judgment!!"
+    },
+    {
+      "chapter_number": 324,
+      "title": "Shikamaru's Analysis!!",
+      "href": "/wiki/Shikamaru%27s_Analysis!!"
+    },
+    {
+      "chapter_number": 325,
+      "title": "There Won't be a Later…!!",
+      "href": "/wiki/There_Won%27t_be_a_Later%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 326,
+      "title": "Desired Pain…!!",
+      "href": "/wiki/Desired_Pain%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 327,
+      "title": "Amidst Despair…",
+      "href": "/wiki/Amidst_Despair%E2%80%A6"
+    },
+    {
+      "chapter_number": 328,
+      "title": "Team 10",
+      "href": "/wiki/Team_10_(chapter)"
+    },
+    {
+      "chapter_number": 329,
+      "title": "That Goal…!!",
+      "href": "/wiki/That_Goal%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 330,
+      "title": "The Sad News…!!",
+      "href": "/wiki/The_Sad_News%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 331,
+      "title": "Team 10 Sets Out…!!",
+      "href": "/wiki/Team_10_Sets_Out%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 332,
+      "title": "Shikamaru's Battle!!",
+      "href": "/wiki/Shikamaru%27s_Battle!!"
+    },
+    {
+      "chapter_number": 333,
+      "title": "Affinities…!!",
+      "href": "/wiki/Affinities%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 334,
+      "title": "The Black Transformation…!!",
+      "href": "/wiki/The_Black_Transformation%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 335,
+      "title": "The Horrible Secret!!",
+      "href": "/wiki/The_Horrible_Secret!!"
+    },
+    {
+      "chapter_number": 336,
+      "title": "Turnabout, Predicament…!!",
+      "href": "/wiki/Turnabout,_Predicament%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 337,
+      "title": "Shikamaru's Genius!!",
+      "href": "/wiki/Shikamaru%27s_Genius!!"
+    },
+    {
+      "chapter_number": 338,
+      "title": "When you Curse Someone…",
+      "href": "/wiki/When_you_Curse_Someone%E2%80%A6"
+    },
+    {
+      "chapter_number": 339,
+      "title": "The New Technique…!!",
+      "href": "/wiki/The_New_Technique%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 340,
+      "title": "A Dangerous Bridge",
+      "href": "/wiki/A_Dangerous_Bridge"
+    },
+    {
+      "chapter_number": 341,
+      "title": "The Fruits of the Training…!!",
+      "href": "/wiki/The_Fruits_of_the_Training%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 342,
+      "title": "The King…!!",
+      "href": "/wiki/The_King%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 343,
+      "title": "Unfeeling…",
+      "href": "/wiki/Unfeeling%E2%80%A6"
+    },
+    {
+      "chapter_number": 344,
+      "title": "The Snake and…",
+      "href": "/wiki/The_Snake_and%E2%80%A6"
+    },
+    {
+      "chapter_number": 345,
+      "title": "The Ritual…!!",
+      "href": "/wiki/The_Ritual%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 346,
+      "title": "The Secret of the New Technique!!",
+      "href": "/wiki/The_Secret_of_the_New_Technique!!"
+    },
+    {
+      "chapter_number": 347,
+      "title": "Detour!!",
+      "href": "/wiki/Detour!!"
+    },
+    {
+      "chapter_number": 348,
+      "title": "The Next Person!!",
+      "href": "/wiki/The_Next_Person!!"
+    },
+    {
+      "chapter_number": 349,
+      "title": "At the Northern Hideout",
+      "href": "/wiki/At_the_Northern_Hideout"
+    },
+    {
+      "chapter_number": 350,
+      "title": "Shocking News…!!",
+      "href": "/wiki/Shocking_News%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 351,
+      "title": "A Conversation Between Men!!",
+      "href": "/wiki/A_Conversation_Between_Men!!"
+    },
+    {
+      "chapter_number": 352,
+      "title": "The Goal is…!!",
+      "href": "/wiki/The_Goal_is%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 353,
+      "title": "Akatsuki Gathers…!!",
+      "href": "/wiki/Akatsuki_Gathers%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 354,
+      "title": "The People Starting to Move",
+      "href": "/wiki/The_People_Starting_to_Move"
+    },
+    {
+      "chapter_number": 355,
+      "title": "Where to…?!",
+      "href": "/wiki/Where_to%E2%80%A6%3F!"
+    },
+    {
+      "chapter_number": 356,
+      "title": "Collision…!!",
+      "href": "/wiki/Collision%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 357,
+      "title": "Deidara vs. Sasuke!!",
+      "href": "/wiki/Deidara_vs._Sasuke!!"
+    },
+    {
+      "chapter_number": 358,
+      "title": "C2 Driving against the Wall!!",
+      "href": "/wiki/C2_Driving_against_the_Wall!!"
+    },
+    {
+      "chapter_number": 359,
+      "title": "Those Eyes…!!",
+      "href": "/wiki/Those_Eyes%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 360,
+      "title": "C4 Garuda",
+      "href": "/wiki/C4_Garuda_(chapter)"
+    },
+    {
+      "chapter_number": 361,
+      "title": "Weakness…!!",
+      "href": "/wiki/Weakness%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 362,
+      "title": "The Ultimate Art!!",
+      "href": "/wiki/The_Ultimate_Art!!_(chapter_362)"
+    },
+    {
+      "chapter_number": 363,
+      "title": "Sasuke's Death…!!",
+      "href": "/wiki/Sasuke%27s_Death%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 364,
+      "title": "The Target is…!!",
+      "href": "/wiki/The_Target_is%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 365,
+      "title": "Pursue Itachi",
+      "href": "/wiki/Pursue_Itachi"
+    },
+    {
+      "chapter_number": 366,
+      "title": "Brothers",
+      "href": "/wiki/Brothers_(chapter)"
+    },
+    {
+      "chapter_number": 367,
+      "title": "Itachi and Sasuke",
+      "href": "/wiki/Itachi_and_Sasuke"
+    },
+    {
+      "chapter_number": 368,
+      "title": "Intelligence Gathering",
+      "href": "/wiki/Intelligence_Gathering"
+    },
+    {
+      "chapter_number": 369,
+      "title": "Regarding Pain",
+      "href": "/wiki/Regarding_Pain"
+    },
+    {
+      "chapter_number": 370,
+      "title": "Unease",
+      "href": "/wiki/Unease"
+    },
+    {
+      "chapter_number": 371,
+      "title": "Old Friends…!!",
+      "href": "/wiki/Old_Friends%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 372,
+      "title": "The Crying Country!!",
+      "href": "/wiki/The_Crying_Country!!"
+    },
+    {
+      "chapter_number": 373,
+      "title": "The Era of Teacher and Students…!!",
+      "href": "/wiki/The_Era_of_Teacher_and_Students%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 374,
+      "title": "Growth into Godhood!!",
+      "href": "/wiki/Growth_into_Godhood!!"
+    },
+    {
+      "chapter_number": 375,
+      "title": "The Two Great Sages…!!",
+      "href": "/wiki/The_Two_Great_Sages%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 376,
+      "title": "The Child of the Prophecy!!",
+      "href": "/wiki/The_Child_of_the_Prophecy!!"
+    },
+    {
+      "chapter_number": 377,
+      "title": "Sage Mode!!",
+      "href": "/wiki/Sage_Mode!!"
+    },
+    {
+      "chapter_number": 378,
+      "title": "One-on-One…!!",
+      "href": "/wiki/One-on-One%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 379,
+      "title": "Jiraiya's Choice!!",
+      "href": "/wiki/Jiraiya%27s_Choice!!"
+    },
+    {
+      "chapter_number": 380,
+      "title": "Those Faces…!!",
+      "href": "/wiki/Those_Faces%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 381,
+      "title": "The True Identity…!!",
+      "href": "/wiki/The_True_Identity%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 382,
+      "title": "The Real Choice!!",
+      "href": "/wiki/The_Real_Choice!!"
+    },
+    {
+      "chapter_number": 383,
+      "title": "The Final Chapter, and…!!",
+      "href": "/wiki/The_Final_Chapter,_and%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 384,
+      "title": "Two Paths…",
+      "href": "/wiki/Two_Paths%E2%80%A6"
+    },
+    {
+      "chapter_number": 385,
+      "title": "The Secret of the Mangekyō…!!",
+      "href": "/wiki/The_Secret_of_the_Mangeky%C5%8D%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 386,
+      "title": "New Light…!!",
+      "href": "/wiki/New_Light%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 387,
+      "title": "Reality…!!",
+      "href": "/wiki/Reality%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 388,
+      "title": "The Difference in Strength…!!",
+      "href": "/wiki/The_Difference_in_Strength%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 389,
+      "title": "Sasuke's Flow!",
+      "href": "/wiki/Sasuke%27s_Flow!"
+    },
+    {
+      "chapter_number": 390,
+      "title": "The Final Technique…!!",
+      "href": "/wiki/The_Final_Technique%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 391,
+      "title": "Together with the Thunder…!!",
+      "href": "/wiki/Together_with_the_Thunder%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 392,
+      "title": "Susanoo…!!",
+      "href": "/wiki/Susanoo%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 393,
+      "title": "My Eyes…!!",
+      "href": "/wiki/My_Eyes%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 394,
+      "title": "Sasuke's Victory",
+      "href": "/wiki/Sasuke%27s_Victory"
+    },
+    {
+      "chapter_number": 395,
+      "title": "The Enigma that is Tobi",
+      "href": "/wiki/The_Enigma_that_is_Tobi"
+    },
+    {
+      "chapter_number": 396,
+      "title": "Self-Introduction",
+      "href": "/wiki/Self-Introduction"
+    },
+    {
+      "chapter_number": 397,
+      "title": "The One Who Knows the Truth",
+      "href": "/wiki/The_One_Who_Knows_the_Truth"
+    },
+    {
+      "chapter_number": 398,
+      "title": "The Origin of Konoha",
+      "href": "/wiki/The_Origin_of_Konoha"
+    },
+    {
+      "chapter_number": 399,
+      "title": "The Beginning of Everything!!",
+      "href": "/wiki/The_Beginning_of_Everything!!"
+    },
+    {
+      "chapter_number": 400,
+      "title": "Within Hell",
+      "href": "/wiki/Within_Hell"
+    },
+    {
+      "chapter_number": 401,
+      "title": "Illusions",
+      "href": "/wiki/Illusions"
+    },
+    {
+      "chapter_number": 402,
+      "title": "Final Words",
+      "href": "/wiki/Final_Words"
+    },
+    {
+      "chapter_number": 403,
+      "title": "Tears",
+      "href": "/wiki/Tears"
+    },
+    {
+      "chapter_number": 404,
+      "title": "Taka and Akatsuki",
+      "href": "/wiki/Taka_and_Akatsuki"
+    },
+    {
+      "chapter_number": 405,
+      "title": "What is Left Behind",
+      "href": "/wiki/What_is_Left_Behind"
+    },
+    {
+      "chapter_number": 406,
+      "title": "The Key to the Future",
+      "href": "/wiki/The_Key_to_the_Future"
+    },
+    {
+      "chapter_number": 407,
+      "title": "Addressed to Naruto",
+      "href": "/wiki/Addressed_to_Naruto"
+    },
+    {
+      "chapter_number": 408,
+      "title": "Fukasaku's Proposal",
+      "href": "/wiki/Fukasaku%27s_Proposal"
+    },
+    {
+      "chapter_number": 409,
+      "title": "Handing Down Senjutsu…!!",
+      "href": "/wiki/Handing_Down_Senjutsu%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 410,
+      "title": "The Battle at the Valley of Clouds and Lightning!!",
+      "href": "/wiki/The_Battle_at_the_Valley_of_Clouds_and_Lightning!!"
+    },
+    {
+      "chapter_number": 411,
+      "title": "The Eight-Tails vs. Sasuke!!",
+      "href": "/wiki/The_Eight-Tails_vs._Sasuke!!"
+    },
+    {
+      "chapter_number": 412,
+      "title": "Unprecedented Shivers",
+      "href": "/wiki/Unprecedented_Shivers"
+    },
+    {
+      "chapter_number": 413,
+      "title": "Crumbling",
+      "href": "/wiki/Crumbling"
+    },
+    {
+      "chapter_number": 414,
+      "title": "Raging Ox",
+      "href": "/wiki/Raging_Ox"
+    },
+    {
+      "chapter_number": 415,
+      "title": "New Powers!!",
+      "href": "/wiki/New_Powers!!"
+    },
+    {
+      "chapter_number": 416,
+      "title": "The Tale of the Utterly Gutsy Shinobi",
+      "href": "/wiki/The_Tale_of_the_Utterly_Gutsy_Shinobi_(chapter)"
+    },
+    {
+      "chapter_number": 417,
+      "title": "The Raikage, Moving!!",
+      "href": "/wiki/The_Raikage,_Moving!!"
+    },
+    {
+      "chapter_number": 418,
+      "title": "Sage Naruto!!",
+      "href": "/wiki/Sage_Naruto!!"
+    },
+    {
+      "chapter_number": 419,
+      "title": "Invasion!!",
+      "href": "/wiki/Invasion!!"
+    },
+    {
+      "chapter_number": 420,
+      "title": "The Battlefield, Konoha!!",
+      "href": "/wiki/The_Battlefield,_Konoha!!"
+    },
+    {
+      "chapter_number": 421,
+      "title": "Call Naruto Home!!",
+      "href": "/wiki/Call_Naruto_Home!!"
+    },
+    {
+      "chapter_number": 422,
+      "title": "Kakashi vs. Pain!!",
+      "href": "/wiki/Kakashi_vs._Pain!!"
+    },
+    {
+      "chapter_number": 423,
+      "title": "Deva Path's Abilities!!",
+      "href": "/wiki/Deva_Path%27s_Abilities!!"
+    },
+    {
+      "chapter_number": 424,
+      "title": "Decision!!",
+      "href": "/wiki/Decision!!"
+    },
+    {
+      "chapter_number": 425,
+      "title": "Kakashi Hatake",
+      "href": "/wiki/Kakashi_Hatake_(chapter)"
+    },
+    {
+      "chapter_number": 426,
+      "title": "Naruto and Konoha!!",
+      "href": "/wiki/Naruto_and_Konoha!!"
+    },
+    {
+      "chapter_number": 427,
+      "title": "Reunion",
+      "href": "/wiki/Reunion"
+    },
+    {
+      "chapter_number": 428,
+      "title": "Discourse!!",
+      "href": "/wiki/Discourse!!"
+    },
+    {
+      "chapter_number": 429,
+      "title": "\"Know Pain\"",
+      "href": "/wiki/%22Know_Pain%22"
+    },
+    {
+      "chapter_number": 430,
+      "title": "Naruto Returns!!",
+      "href": "/wiki/Naruto_Returns!!"
+    },
+    {
+      "chapter_number": 431,
+      "title": "Naruto's Great Eruption!!",
+      "href": "/wiki/Naruto%27s_Great_Eruption!!"
+    },
+    {
+      "chapter_number": 432,
+      "title": "The Rasenshuriken Once Again!!",
+      "href": "/wiki/The_Rasenshuriken_Once_Again!!"
+    },
+    {
+      "chapter_number": 433,
+      "title": "Senjutsu Failed…!?",
+      "href": "/wiki/Senjutsu_Failed%E2%80%A6!%3F"
+    },
+    {
+      "chapter_number": 434,
+      "title": "Naruto vs. Deva Path!!",
+      "href": "/wiki/Naruto_vs._Deva_Path!!"
+    },
+    {
+      "chapter_number": 435,
+      "title": "Banshō Ten'in",
+      "href": "/wiki/Bansh%C5%8D_Ten%27in_(chapter)"
+    },
+    {
+      "chapter_number": 436,
+      "title": "Peace",
+      "href": "/wiki/Peace"
+    },
+    {
+      "chapter_number": 437,
+      "title": "Confession",
+      "href": "/wiki/Confession"
+    },
+    {
+      "chapter_number": 438,
+      "title": "The Seal Destroyed!!",
+      "href": "/wiki/The_Seal_Destroyed!!"
+    },
+    {
+      "chapter_number": 439,
+      "title": "Chibaku Tensei",
+      "href": "/wiki/Chibaku_Tensei_(chapter)"
+    },
+    {
+      "chapter_number": 440,
+      "title": "A Conversation with the Fourth!!",
+      "href": "/wiki/A_Conversation_with_the_Fourth!!"
+    },
+    {
+      "chapter_number": 441,
+      "title": "Rasenshuriken vs. Shinra Tensei!!",
+      "href": "/wiki/Rasenshuriken_vs._Shinra_Tensei!!"
+    },
+    {
+      "chapter_number": 442,
+      "title": "The Final Gamble!!",
+      "href": "/wiki/The_Final_Gamble!!"
+    },
+    {
+      "chapter_number": 443,
+      "title": "Meeting!!",
+      "href": "/wiki/Meeting!!"
+    },
+    {
+      "chapter_number": 444,
+      "title": "The Answer",
+      "href": "/wiki/The_Answer"
+    },
+    {
+      "chapter_number": 445,
+      "title": "Top of the World",
+      "href": "/wiki/Top_of_the_World"
+    },
+    {
+      "chapter_number": 446,
+      "title": "I Just Want to Protect Those Two",
+      "href": "/wiki/I_Just_Want_to_Protect_Those_Two"
+    },
+    {
+      "chapter_number": 447,
+      "title": "Believing",
+      "href": "/wiki/Believing"
+    },
+    {
+      "chapter_number": 448,
+      "title": "Memento…!!",
+      "href": "/wiki/Memento%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 449,
+      "title": "Flowers of Hope",
+      "href": "/wiki/Flowers_of_Hope"
+    },
+    {
+      "chapter_number": 450,
+      "title": "The Joyous Village!!",
+      "href": "/wiki/The_Joyous_Village!!"
+    },
+    {
+      "chapter_number": 451,
+      "title": "Dealing with Sasuke!!",
+      "href": "/wiki/Dealing_with_Sasuke!!"
+    },
+    {
+      "chapter_number": 452,
+      "title": "Under Pressure from Danzō!!",
+      "href": "/wiki/Under_Pressure_from_Danz%C5%8D!!"
+    },
+    {
+      "chapter_number": 453,
+      "title": "The Eve of the Five Kage Summit…!!",
+      "href": "/wiki/The_Eve_of_the_Five_Kage_Summit%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 454,
+      "title": "Enter the Five Kage…!!",
+      "href": "/wiki/Enter_the_Five_Kage%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 455,
+      "title": "Links…!!",
+      "href": "/wiki/Links%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 456,
+      "title": "Naruto Departs…!!",
+      "href": "/wiki/Naruto_Departs%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 457,
+      "title": "The Five Kage Summit, Commences…!!",
+      "href": "/wiki/The_Five_Kage_Summit,_Commences%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 458,
+      "title": "The Five Kage's Great Verbal Dispute…!!",
+      "href": "/wiki/The_Five_Kage%27s_Great_Verbal_Dispute%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 459,
+      "title": "Sakura's Decision!!",
+      "href": "/wiki/Sakura%27s_Decision!!_(chapter_459)"
+    },
+    {
+      "chapter_number": 460,
+      "title": "The Net Encircling Sasuke…!",
+      "href": "/wiki/The_Net_Encircling_Sasuke%E2%80%A6!"
+    },
+    {
+      "chapter_number": 461,
+      "title": "Kumogakure vs. Taka!!",
+      "href": "/wiki/Kumogakure_vs._Taka!!"
+    },
+    {
+      "chapter_number": 462,
+      "title": "Sasuke's Ninja Way…!!",
+      "href": "/wiki/Sasuke%27s_Ninja_Way%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 463,
+      "title": "Sasuke vs. the Raikage!!",
+      "href": "/wiki/Sasuke_vs._the_Raikage!!"
+    },
+    {
+      "chapter_number": 464,
+      "title": "The Power of Darkness…!!",
+      "href": "/wiki/The_Power_of_Darkness%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 465,
+      "title": "Attack of the Conference Room!",
+      "href": "/wiki/Attack_of_the_Conference_Room!"
+    },
+    {
+      "chapter_number": 466,
+      "title": "The Great Battle of the Sealed Room!!",
+      "href": "/wiki/The_Great_Battle_of_the_Sealed_Room!!"
+    },
+    {
+      "chapter_number": 467,
+      "title": "Declaration of War",
+      "href": "/wiki/Declaration_of_War"
+    },
+    {
+      "chapter_number": 468,
+      "title": "The Eight-Tails and the Nine-Tails",
+      "href": "/wiki/The_Eight-Tails_and_the_Nine-Tails"
+    },
+    {
+      "chapter_number": 469,
+      "title": "Sakura's Confession!!",
+      "href": "/wiki/Sakura%27s_Confession!!"
+    },
+    {
+      "chapter_number": 470,
+      "title": "Killer B vs. Kisame!!",
+      "href": "/wiki/Killer_B_vs._Kisame!!"
+    },
+    {
+      "chapter_number": 471,
+      "title": "Eight-Tails, Version 2!!",
+      "href": "/wiki/Eight-Tails,_Version_2!!"
+    },
+    {
+      "chapter_number": 472,
+      "title": "Battle of the Death inside the Water Prison!!",
+      "href": "/wiki/Battle_of_the_Death_inside_the_Water_Prison!!"
+    },
+    {
+      "chapter_number": 473,
+      "title": "Brother",
+      "href": "/wiki/Brother"
+    },
+    {
+      "chapter_number": 474,
+      "title": "His Resolve as the Hokage…!!",
+      "href": "/wiki/His_Resolve_as_the_Hokage%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 475,
+      "title": "Madara Shows His True Worth!!",
+      "href": "/wiki/Madara_Shows_His_True_Worth!!"
+    },
+    {
+      "chapter_number": 476,
+      "title": "Sasuke vs. Danzō…!!",
+      "href": "/wiki/Sasuke_vs._Danz%C5%8D%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 477,
+      "title": "Don't Talk about Itachi",
+      "href": "/wiki/Don%27t_Talk_about_Itachi"
+    },
+    {
+      "chapter_number": 478,
+      "title": "Sasuke's Susanoo…!!",
+      "href": "/wiki/Sasuke%27s_Susanoo%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 479,
+      "title": "Izanagi",
+      "href": "/wiki/Izanagi_(chapter)"
+    },
+    {
+      "chapter_number": 480,
+      "title": "Sacrifice",
+      "href": "/wiki/Sacrifice_(Naruto_chapter)"
+    },
+    {
+      "chapter_number": 481,
+      "title": "Danzō Dies!!",
+      "href": "/wiki/Danz%C5%8D_Dies!!"
+    },
+    {
+      "chapter_number": 482,
+      "title": "One More Time…",
+      "href": "/wiki/One_More_Time%E2%80%A6"
+    },
+    {
+      "chapter_number": 483,
+      "title": "Teacher and Student Once More!!",
+      "href": "/wiki/Teacher_and_Student_Once_More!!"
+    },
+    {
+      "chapter_number": 484,
+      "title": "Everyone of Team 7!!",
+      "href": "/wiki/Everyone_of_Team_7!!"
+    },
+    {
+      "chapter_number": 485,
+      "title": "Near… Far…",
+      "href": "/wiki/Near%E2%80%A6_Far%E2%80%A6"
+    },
+    {
+      "chapter_number": 486,
+      "title": "Fists",
+      "href": "/wiki/Fists"
+    },
+    {
+      "chapter_number": 487,
+      "title": "The Beginning of the Battle…!!",
+      "href": "/wiki/The_Beginning_of_the_Battle%E2%80%A6!!_(chapter_487)"
+    },
+    {
+      "chapter_number": 488,
+      "title": "Each to Their Respective Villages",
+      "href": "/wiki/Each_to_Their_Respective_Villages"
+    },
+    {
+      "chapter_number": 489,
+      "title": "Facing the Shinobi World War…!!",
+      "href": "/wiki/Facing_the_Shinobi_World_War%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 490,
+      "title": "The Truth about the Nine-Tails!!",
+      "href": "/wiki/The_Truth_about_the_Nine-Tails!!"
+    },
+    {
+      "chapter_number": 491,
+      "title": "Jinchūriki Confinement!!",
+      "href": "/wiki/Jinch%C5%ABriki_Confinement!!"
+    },
+    {
+      "chapter_number": 492,
+      "title": "Greetings",
+      "href": "/wiki/Greetings"
+    },
+    {
+      "chapter_number": 493,
+      "title": "Dark Naruto!!",
+      "href": "/wiki/Dark_Naruto!!"
+    },
+    {
+      "chapter_number": 494,
+      "title": "Killer B and Motoi",
+      "href": "/wiki/Killer_B_and_Motoi"
+    },
+    {
+      "chapter_number": 495,
+      "title": "Crushing Dark Naruto!!",
+      "href": "/wiki/Crushing_Dark_Naruto!!"
+    },
+    {
+      "chapter_number": 496,
+      "title": "Meeting the Nine-Tails Again!!",
+      "href": "/wiki/Meeting_the_Nine-Tails_Again!!"
+    },
+    {
+      "chapter_number": 497,
+      "title": "Nine-Tails vs. Naruto!!",
+      "href": "/wiki/Nine-Tails_vs._Naruto!!"
+    },
+    {
+      "chapter_number": 498,
+      "title": "Mum's Red Hair",
+      "href": "/wiki/Mum%27s_Red_Hair"
+    },
+    {
+      "chapter_number": 499,
+      "title": "A New Seal!!",
+      "href": "/wiki/A_New_Seal!!"
+    },
+    {
+      "chapter_number": 500,
+      "title": "Naruto's Birth",
+      "href": "/wiki/Naruto%27s_Birth"
+    },
+    {
+      "chapter_number": 501,
+      "title": "The Nine-Tails Attack!!",
+      "href": "/wiki/The_Nine-Tails_Attack!!"
+    },
+    {
+      "chapter_number": 502,
+      "title": "The Fourth's Battle to the Death!!",
+      "href": "/wiki/The_Fourth%27s_Battle_to_the_Death!!"
+    },
+    {
+      "chapter_number": 503,
+      "title": "Minato's Dead Demon Consuming Seal!!",
+      "href": "/wiki/Minato%27s_Dead_Demon_Consuming_Seal!!"
+    },
+    {
+      "chapter_number": 504,
+      "title": "Thank You",
+      "href": "/wiki/Thank_You"
+    },
+    {
+      "chapter_number": 505,
+      "title": "The Nine-Tails' Chakra, Freed!!",
+      "href": "/wiki/The_Nine-Tails%27_Chakra,_Freed!!"
+    },
+    {
+      "chapter_number": 506,
+      "title": "Guy vs. Kisame!!",
+      "href": "/wiki/Guy_vs._Kisame!!_(chapter_506)"
+    },
+    {
+      "chapter_number": 507,
+      "title": "An Existence of Falsehoods…!!",
+      "href": "/wiki/An_Existence_of_Falsehoods%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 508,
+      "title": "The Way a Shinobi Dies",
+      "href": "/wiki/The_Way_a_Shinobi_Dies"
+    },
+    {
+      "chapter_number": 509,
+      "title": "A Suspension Bridge to Peace",
+      "href": "/wiki/A_Suspension_Bridge_to_Peace"
+    },
+    {
+      "chapter_number": 510,
+      "title": "An Unexpected Kinjutsu!!",
+      "href": "/wiki/An_Unexpected_Kinjutsu!!"
+    },
+    {
+      "chapter_number": 511,
+      "title": "We'll All Go Home",
+      "href": "/wiki/We%27ll_All_Go_Home"
+    },
+    {
+      "chapter_number": 512,
+      "title": "The Truth about Zetsu!!",
+      "href": "/wiki/The_Truth_about_Zetsu!!"
+    },
+    {
+      "chapter_number": 513,
+      "title": "Kabuto vs. the Tsuchikage!!",
+      "href": "/wiki/Kabuto_vs._the_Tsuchikage!!"
+    },
+    {
+      "chapter_number": 514,
+      "title": "Kabuto's Scheme!!",
+      "href": "/wiki/Kabuto%27s_Scheme!!"
+    },
+    {
+      "chapter_number": 515,
+      "title": "The Great War Breaks Out!",
+      "href": "/wiki/The_Great_War_Breaks_Out!"
+    },
+    {
+      "chapter_number": 516,
+      "title": "Gaara's Speech",
+      "href": "/wiki/Gaara%27s_Speech"
+    },
+    {
+      "chapter_number": 517,
+      "title": "Omoi's 'War'!!",
+      "href": "/wiki/Omoi%27s_%27War%27!!"
+    },
+    {
+      "chapter_number": 518,
+      "title": "The Offence/Defence of the Surprise Attack Division!!",
+      "href": "/wiki/The_Offence/Defence_of_the_Surprise_Attack_Division!!"
+    },
+    {
+      "chapter_number": 519,
+      "title": "The Tailed Beast Ball",
+      "href": "/wiki/The_Tailed_Beast_Ball"
+    },
+    {
+      "chapter_number": 520,
+      "title": "The Secret of the Impure World Reincarnation",
+      "href": "/wiki/The_Secret_of_the_Impure_World_Reincarnation"
+    },
+    {
+      "chapter_number": 521,
+      "title": "Great Regiment, the Battle Begins!",
+      "href": "/wiki/Great_Regiment,_the_Battle_Begins!"
+    },
+    {
+      "chapter_number": 522,
+      "title": "Because I'm Already Dead",
+      "href": "/wiki/Because_I%27m_Already_Dead"
+    },
+    {
+      "chapter_number": 523,
+      "title": "The Legendary Seven Shinobi Swordsmen!!",
+      "href": "/wiki/The_Legendary_Seven_Shinobi_Swordsmen!!"
+    },
+    {
+      "chapter_number": 524,
+      "title": "Thing You Should Protect",
+      "href": "/wiki/Thing_You_Should_Protect"
+    },
+    {
+      "chapter_number": 525,
+      "title": "Kage, Revived!!",
+      "href": "/wiki/Kage,_Revived!!"
+    },
+    {
+      "chapter_number": 526,
+      "title": "Fierce Battle! The Darui Division!!",
+      "href": "/wiki/Fierce_Battle!_The_Darui_Division!!"
+    },
+    {
+      "chapter_number": 527,
+      "title": "No-Good Words",
+      "href": "/wiki/No-Good_Words"
+    },
+    {
+      "chapter_number": 528,
+      "title": "Overcoming \"Dull\"",
+      "href": "/wiki/Overcoming_%22Dull%22"
+    },
+    {
+      "chapter_number": 529,
+      "title": "Golden Bonds",
+      "href": "/wiki/Golden_Bonds"
+    },
+    {
+      "chapter_number": 530,
+      "title": "Chōji's Determination",
+      "href": "/wiki/Ch%C5%8Dji%27s_Determination"
+    },
+    {
+      "chapter_number": 531,
+      "title": "Reunited, Team Asuma!",
+      "href": "/wiki/Reunited,_Team_Asuma!"
+    },
+    {
+      "chapter_number": 532,
+      "title": "Mifune vs. Hanzō, the Conclusion!!",
+      "href": "/wiki/Mifune_vs._Hanz%C5%8D,_the_Conclusion!!"
+    },
+    {
+      "chapter_number": 533,
+      "title": "The Time of Vows",
+      "href": "/wiki/The_Time_of_Vows"
+    },
+    {
+      "chapter_number": 534,
+      "title": "Farewell Ino–Shika–Chō!!",
+      "href": "/wiki/Farewell_Ino%E2%80%93Shika%E2%80%93Ch%C5%8D!!"
+    },
+    {
+      "chapter_number": 535,
+      "title": "Iruka's Persuasion",
+      "href": "/wiki/Iruka%27s_Persuasion"
+    },
+    {
+      "chapter_number": 536,
+      "title": "Naruto towards the Battlefield…!!",
+      "href": "/wiki/Naruto_towards_the_Battlefield%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 537,
+      "title": "Towards the Night…!!",
+      "href": "/wiki/Towards_the_Night%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 538,
+      "title": "Cross-Examination",
+      "href": "/wiki/Cross-Examination"
+    },
+    {
+      "chapter_number": 539,
+      "title": "Night of Blood…!!",
+      "href": "/wiki/Night_of_Blood%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 540,
+      "title": "Madara's Strategy!!",
+      "href": "/wiki/Madara%27s_Strategy!!"
+    },
+    {
+      "chapter_number": 541,
+      "title": "The Raikage vs. Naruto?!",
+      "href": "/wiki/The_Raikage_vs._Naruto%3F!"
+    },
+    {
+      "chapter_number": 542,
+      "title": "The Secret Story of the Strongest Tag Team!!",
+      "href": "/wiki/The_Secret_Story_of_the_Strongest_Tag_Team!!"
+    },
+    {
+      "chapter_number": 543,
+      "title": "Words not Cast Aside",
+      "href": "/wiki/Words_not_Cast_Aside"
+    },
+    {
+      "chapter_number": 544,
+      "title": "Two Suns!!",
+      "href": "/wiki/Two_Suns!!"
+    },
+    {
+      "chapter_number": 545,
+      "title": "An Immortal Army!!",
+      "href": "/wiki/An_Immortal_Army!!"
+    },
+    {
+      "chapter_number": 546,
+      "title": "Confrontation of the Old and New Kage!!",
+      "href": "/wiki/Confrontation_of_the_Old_and_New_Kage!!"
+    },
+    {
+      "chapter_number": 547,
+      "title": "Things that Have Value!!",
+      "href": "/wiki/Things_that_Have_Value!!"
+    },
+    {
+      "chapter_number": 548,
+      "title": "Naruto vs. Itachi!!",
+      "href": "/wiki/Naruto_vs._Itachi!!"
+    },
+    {
+      "chapter_number": 549,
+      "title": "Itachi's Question!!",
+      "href": "/wiki/Itachi%27s_Question!!"
+    },
+    {
+      "chapter_number": 550,
+      "title": "Kotoamatsukami",
+      "href": "/wiki/Kotoamatsukami_(chapter)"
+    },
+    {
+      "chapter_number": 551,
+      "title": "Stop Nagato!!",
+      "href": "/wiki/Stop_Nagato!!"
+    },
+    {
+      "chapter_number": 552,
+      "title": "The Requirements for Hokage…!!",
+      "href": "/wiki/The_Requirements_for_Hokage%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 553,
+      "title": "Arrival at the Main Battlefield!!",
+      "href": "/wiki/Arrival_at_the_Main_Battlefield!!"
+    },
+    {
+      "chapter_number": 554,
+      "title": "The Limit of the Rasenshuriken…!!",
+      "href": "/wiki/The_Limit_of_the_Rasenshuriken%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 555,
+      "title": "Contradiction",
+      "href": "/wiki/Contradiction"
+    },
+    {
+      "chapter_number": 556,
+      "title": "Gaara vs. the Mizukage!!",
+      "href": "/wiki/Gaara_vs._the_Mizukage!!"
+    },
+    {
+      "chapter_number": 557,
+      "title": "Steaming Danger Tyranny!!",
+      "href": "/wiki/Steaming_Danger_Tyranny!!"
+    },
+    {
+      "chapter_number": 558,
+      "title": "Kabuto's Trump Card…!!",
+      "href": "/wiki/Kabuto%27s_Trump_Card%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 559,
+      "title": "Reinforcements Arrive…!!",
+      "href": "/wiki/Reinforcements_Arrive%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 560,
+      "title": "Madara Uchiha",
+      "href": "/wiki/Madara_Uchiha_(chapter)"
+    },
+    {
+      "chapter_number": 561,
+      "title": "The Power of That Name",
+      "href": "/wiki/The_Power_of_That_Name"
+    },
+    {
+      "chapter_number": 562,
+      "title": "The Place Where We Pick Ourselves Up",
+      "href": "/wiki/The_Place_Where_We_Pick_Ourselves_Up"
+    },
+    {
+      "chapter_number": 563,
+      "title": "The Five Kage Gathered…!!",
+      "href": "/wiki/The_Five_Kage_Gathered%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 564,
+      "title": "The Man Who isn't Anyone",
+      "href": "/wiki/The_Man_Who_isn%27t_Anyone"
+    },
+    {
+      "chapter_number": 565,
+      "title": "Jinchūriki vs. Jinchūriki!!",
+      "href": "/wiki/Jinch%C5%ABriki_vs._Jinch%C5%ABriki!!"
+    },
+    {
+      "chapter_number": 566,
+      "title": "Eyes and Beasts",
+      "href": "/wiki/Eyes_and_Beasts"
+    },
+    {
+      "chapter_number": 567,
+      "title": "The Jinchūriki of the Village of Konoha",
+      "href": "/wiki/The_Jinch%C5%ABriki_of_the_Village_of_Konoha"
+    },
+    {
+      "chapter_number": 568,
+      "title": "The Four-Tails: King of the Sage Monkeys",
+      "href": "/wiki/The_Four-Tails:_King_of_the_Sage_Monkeys"
+    },
+    {
+      "chapter_number": 569,
+      "title": "Proof of Intentions!!",
+      "href": "/wiki/Proof_of_Intentions!!"
+    },
+    {
+      "chapter_number": 570,
+      "title": "Kurama!!",
+      "href": "/wiki/Kurama!!_(chapter)"
+    },
+    {
+      "chapter_number": 571,
+      "title": "Tailed Beast Mode!!",
+      "href": "/wiki/Tailed_Beast_Mode!!"
+    },
+    {
+      "chapter_number": 572,
+      "title": "Nine Names",
+      "href": "/wiki/Nine_Names"
+    },
+    {
+      "chapter_number": 573,
+      "title": "The Continuing Path towards Radiance",
+      "href": "/wiki/The_Continuing_Path_towards_Radiance"
+    },
+    {
+      "chapter_number": 574,
+      "title": "Eyes that See the Darkness",
+      "href": "/wiki/Eyes_that_See_the_Darkness"
+    },
+    {
+      "chapter_number": 575,
+      "title": "Will of Stone",
+      "href": "/wiki/Will_of_Stone_(chapter)"
+    },
+    {
+      "chapter_number": 576,
+      "title": "The Guidepost of Reunion",
+      "href": "/wiki/The_Guidepost_of_Reunion"
+    },
+    {
+      "chapter_number": 577,
+      "title": "Blade of Hatred",
+      "href": "/wiki/Blade_of_Hatred"
+    },
+    {
+      "chapter_number": 578,
+      "title": "The Weakness of Despair!!",
+      "href": "/wiki/The_Weakness_of_Despair!!"
+    },
+    {
+      "chapter_number": 579,
+      "title": "Brothers, Fight Together!!",
+      "href": "/wiki/Brothers,_Fight_Together!!"
+    },
+    {
+      "chapter_number": 580,
+      "title": "The Brothers' Time",
+      "href": "/wiki/The_Brothers%27_Time"
+    },
+    {
+      "chapter_number": 581,
+      "title": "Everyone's Konoha",
+      "href": "/wiki/Everyone%27s_Konoha"
+    },
+    {
+      "chapter_number": 582,
+      "title": "Nothing",
+      "href": "/wiki/Nothing"
+    },
+    {
+      "chapter_number": 583,
+      "title": "Who is This?",
+      "href": "/wiki/Who_is_This%3F"
+    },
+    {
+      "chapter_number": 584,
+      "title": "Kabuto Yakushi",
+      "href": "/wiki/Kabuto_Yakushi_(chapter)"
+    },
+    {
+      "chapter_number": 585,
+      "title": "To Be Myself",
+      "href": "/wiki/To_Be_Myself"
+    },
+    {
+      "chapter_number": 586,
+      "title": "Izanami's Activation",
+      "href": "/wiki/Izanami%27s_Activation"
+    },
+    {
+      "chapter_number": 587,
+      "title": "When It Turns 9 o'clock",
+      "href": "/wiki/When_It_Turns_9_o%27clock"
+    },
+    {
+      "chapter_number": 588,
+      "title": "The Burden of Being a Kage",
+      "href": "/wiki/The_Burden_of_Being_a_Kage"
+    },
+    {
+      "chapter_number": 589,
+      "title": "Impure World Reincarnation Technique: Release",
+      "href": "/wiki/Impure_World_Reincarnation_Technique:_Release"
+    },
+    {
+      "chapter_number": 590,
+      "title": "I Will Love You Forever",
+      "href": "/wiki/I_Will_Love_You_Forever"
+    },
+    {
+      "chapter_number": 591,
+      "title": "Risk",
+      "href": "/wiki/Risk"
+    },
+    {
+      "chapter_number": 592,
+      "title": "The Third Power",
+      "href": "/wiki/The_Third_Power"
+    },
+    {
+      "chapter_number": 593,
+      "title": "Orochimaru's Revival",
+      "href": "/wiki/Orochimaru%27s_Revival"
+    },
+    {
+      "chapter_number": 594,
+      "title": "The Progenitor",
+      "href": "/wiki/The_Progenitor"
+    },
+    {
+      "chapter_number": 595,
+      "title": "Crack",
+      "href": "/wiki/Crack"
+    },
+    {
+      "chapter_number": 596,
+      "title": "One Technique",
+      "href": "/wiki/One_Technique"
+    },
+    {
+      "chapter_number": 597,
+      "title": "The Secret of the Space–Time Ninjutsu",
+      "href": "/wiki/The_Secret_of_the_Space%E2%80%93Time_Ninjutsu"
+    },
+    {
+      "chapter_number": 598,
+      "title": "Shattered!!!!",
+      "href": "/wiki/Shattered!!!!"
+    },
+    {
+      "chapter_number": 599,
+      "title": "Obito Uchiha",
+      "href": "/wiki/Obito_Uchiha_(chapter)"
+    },
+    {
+      "chapter_number": 600,
+      "title": "How Come Until Now?",
+      "href": "/wiki/How_Come_Until_Now%3F"
+    },
+    {
+      "chapter_number": 601,
+      "title": "Obito and Madara",
+      "href": "/wiki/Obito_and_Madara"
+    },
+    {
+      "chapter_number": 602,
+      "title": "Alive",
+      "href": "/wiki/Alive"
+    },
+    {
+      "chapter_number": 603,
+      "title": "Rehabilitation",
+      "href": "/wiki/Rehabilitation"
+    },
+    {
+      "chapter_number": 604,
+      "title": "Reunion, and Then",
+      "href": "/wiki/Reunion,_and_Then"
+    },
+    {
+      "chapter_number": 605,
+      "title": "Hell",
+      "href": "/wiki/Hell"
+    },
+    {
+      "chapter_number": 606,
+      "title": "Dream World",
+      "href": "/wiki/Dream_World"
+    },
+    {
+      "chapter_number": 607,
+      "title": "I Don't Care Any More",
+      "href": "/wiki/I_Don%27t_Care_Any_More"
+    },
+    {
+      "chapter_number": 608,
+      "title": "Kakashi's Decision!!",
+      "href": "/wiki/Kakashi%27s_Decision!!"
+    },
+    {
+      "chapter_number": 609,
+      "title": "End",
+      "href": "/wiki/End"
+    },
+    {
+      "chapter_number": 610,
+      "title": "Ten-Tails",
+      "href": "/wiki/Ten-Tails_(chapter)"
+    },
+    {
+      "chapter_number": 611,
+      "title": "Arrival",
+      "href": "/wiki/Arrival"
+    },
+    {
+      "chapter_number": 612,
+      "title": "Allied Shinobi Forces Technique!!",
+      "href": "/wiki/Allied_Shinobi_Forces_Technique!!"
+    },
+    {
+      "chapter_number": 613,
+      "title": "Head",
+      "href": "/wiki/Head"
+    },
+    {
+      "chapter_number": 614,
+      "title": "By You",
+      "href": "/wiki/By_You"
+    },
+    {
+      "chapter_number": 615,
+      "title": "The Connected Ones",
+      "href": "/wiki/The_Connected_Ones"
+    },
+    {
+      "chapter_number": 616,
+      "title": "The Invisible Dancers",
+      "href": "/wiki/The_Invisible_Dancers"
+    },
+    {
+      "chapter_number": 617,
+      "title": "The Invisible Dancers — 2",
+      "href": "/wiki/The_Invisible_Dancers_%E2%80%94_2"
+    },
+    {
+      "chapter_number": 618,
+      "title": "The Ones Who Know Everything",
+      "href": "/wiki/The_Ones_Who_Know_Everything"
+    },
+    {
+      "chapter_number": 619,
+      "title": "A Clan Possessed by Evil",
+      "href": "/wiki/A_Clan_Possessed_by_Evil"
+    },
+    {
+      "chapter_number": 620,
+      "title": "Hashirama Senju",
+      "href": "/wiki/Hashirama_Senju_(chapter)"
+    },
+    {
+      "chapter_number": 621,
+      "title": "Hashirama and Madara",
+      "href": "/wiki/Hashirama_and_Madara"
+    },
+    {
+      "chapter_number": 622,
+      "title": "Reached",
+      "href": "/wiki/Reached"
+    },
+    {
+      "chapter_number": 623,
+      "title": "One View",
+      "href": "/wiki/One_View"
+    },
+    {
+      "chapter_number": 624,
+      "title": "Draw",
+      "href": "/wiki/Draw"
+    },
+    {
+      "chapter_number": 625,
+      "title": "The Real Dream",
+      "href": "/wiki/The_Real_Dream"
+    },
+    {
+      "chapter_number": 626,
+      "title": "Hashirama and Madara — 2",
+      "href": "/wiki/Hashirama_and_Madara_%E2%80%94_2"
+    },
+    {
+      "chapter_number": 627,
+      "title": "Sasuke's Answer",
+      "href": "/wiki/Sasuke%27s_Answer"
+    },
+    {
+      "chapter_number": 628,
+      "title": "Now and Hereafter",
+      "href": "/wiki/Now_and_Hereafter"
+    },
+    {
+      "chapter_number": 629,
+      "title": "Windhole",
+      "href": "/wiki/Windhole"
+    },
+    {
+      "chapter_number": 630,
+      "title": "What Can Fill a Hole",
+      "href": "/wiki/What_Can_Fill_a_Hole"
+    },
+    {
+      "chapter_number": 631,
+      "title": "Team 7",
+      "href": "/wiki/Team_7_(chapter)"
+    },
+    {
+      "chapter_number": 632,
+      "title": "Fighting Together",
+      "href": "/wiki/Fighting_Together"
+    },
+    {
+      "chapter_number": 633,
+      "title": "Forward",
+      "href": "/wiki/Forward"
+    },
+    {
+      "chapter_number": 634,
+      "title": "A New Three-Way Deadlock",
+      "href": "/wiki/A_New_Three-Way_Deadlock"
+    },
+    {
+      "chapter_number": 635,
+      "title": "A New Wind",
+      "href": "/wiki/A_New_Wind"
+    },
+    {
+      "chapter_number": 636,
+      "title": "The Current Obito",
+      "href": "/wiki/The_Current_Obito"
+    },
+    {
+      "chapter_number": 637,
+      "title": "The Ten-Tails' Jinchūriki",
+      "href": "/wiki/The_Ten-Tails%27_Jinch%C5%ABriki"
+    },
+    {
+      "chapter_number": 638,
+      "title": "The Ten-Tails' Jinchūriki: Obito",
+      "href": "/wiki/The_Ten-Tails%27_Jinch%C5%ABriki:_Obito"
+    },
+    {
+      "chapter_number": 639,
+      "title": "Attack",
+      "href": "/wiki/Attack"
+    },
+    {
+      "chapter_number": 640,
+      "title": "Finally",
+      "href": "/wiki/Finally"
+    },
+    {
+      "chapter_number": 641,
+      "title": "You Guys are the Main!!",
+      "href": "/wiki/You_Guys_are_the_Main!!"
+    },
+    {
+      "chapter_number": 642,
+      "title": "Breakthrough",
+      "href": "/wiki/Breakthrough"
+    },
+    {
+      "chapter_number": 643,
+      "title": "Joining Fists…!!",
+      "href": "/wiki/Joining_Fists%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 644,
+      "title": "I Know",
+      "href": "/wiki/I_Know"
+    },
+    {
+      "chapter_number": 645,
+      "title": "Two Powers…!!",
+      "href": "/wiki/Two_Powers%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 646,
+      "title": "God Tree",
+      "href": "/wiki/God_Tree_(chapter)"
+    },
+    {
+      "chapter_number": 647,
+      "title": "Regrets",
+      "href": "/wiki/Regrets"
+    },
+    {
+      "chapter_number": 648,
+      "title": "A Shinobi's Dream…!!",
+      "href": "/wiki/A_Shinobi%27s_Dream%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 649,
+      "title": "A Shinobi's Will",
+      "href": "/wiki/A_Shinobi%27s_Will"
+    },
+    {
+      "chapter_number": 650,
+      "title": "I Will Sleep",
+      "href": "/wiki/I_Will_Sleep"
+    },
+    {
+      "chapter_number": 651,
+      "title": "What Is Filled",
+      "href": "/wiki/What_Is_Filled"
+    },
+    {
+      "chapter_number": 652,
+      "title": "Naruto's Furrow",
+      "href": "/wiki/Naruto%27s_Furrow"
+    },
+    {
+      "chapter_number": 653,
+      "title": "I'm Watching You",
+      "href": "/wiki/I%27m_Watching_You"
+    },
+    {
+      "chapter_number": 654,
+      "title": "It was Obito Uchiha",
+      "href": "/wiki/It_was_Obito_Uchiha"
+    },
+    {
+      "chapter_number": 655,
+      "title": "Furrow",
+      "href": "/wiki/Furrow"
+    },
+    {
+      "chapter_number": 656,
+      "title": "Shift",
+      "href": "/wiki/Shift"
+    },
+    {
+      "chapter_number": 657,
+      "title": "Madara Uchiha is Back",
+      "href": "/wiki/Madara_Uchiha_is_Back"
+    },
+    {
+      "chapter_number": 658,
+      "title": "Tailed Beasts vs. Madara…!!",
+      "href": "/wiki/Tailed_Beasts_vs._Madara%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 659,
+      "title": "Limbo: Border Jail…!!",
+      "href": "/wiki/Limbo:_Border_Jail%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 660,
+      "title": "The Hidden Heart",
+      "href": "/wiki/The_Hidden_Heart"
+    },
+    {
+      "chapter_number": 661,
+      "title": "The Failed World",
+      "href": "/wiki/The_Failed_World"
+    },
+    {
+      "chapter_number": 662,
+      "title": "The True End",
+      "href": "/wiki/The_True_End"
+    },
+    {
+      "chapter_number": 663,
+      "title": "Absolutely",
+      "href": "/wiki/Absolutely"
+    },
+    {
+      "chapter_number": 664,
+      "title": "Because I'm a Father",
+      "href": "/wiki/Because_I%27m_a_Father"
+    },
+    {
+      "chapter_number": 665,
+      "title": "The Current Me",
+      "href": "/wiki/The_Current_Me"
+    },
+    {
+      "chapter_number": 666,
+      "title": "Two Mangekyō",
+      "href": "/wiki/Two_Mangeky%C5%8D"
+    },
+    {
+      "chapter_number": 667,
+      "title": "The End of Youthful Days",
+      "href": "/wiki/The_End_of_Youthful_Days"
+    },
+    {
+      "chapter_number": 668,
+      "title": "The Beginning of the Crimson Spring",
+      "href": "/wiki/The_Beginning_of_the_Crimson_Spring"
+    },
+    {
+      "chapter_number": 669,
+      "title": "Eight Gates Released Formation…!!",
+      "href": "/wiki/Eight_Gates_Released_Formation%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 670,
+      "title": "The Incipient…!!",
+      "href": "/wiki/The_Incipient%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 671,
+      "title": "Naruto and the Sage of Six Paths…!!",
+      "href": "/wiki/Naruto_and_the_Sage_of_Six_Paths%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 672,
+      "title": "Night Guy…!!",
+      "href": "/wiki/Night_Guy%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 673,
+      "title": "We Will…!!",
+      "href": "/wiki/We_Will%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 674,
+      "title": "Sasuke's Rinnegan…!!",
+      "href": "/wiki/Sasuke%27s_Rinnegan%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 675,
+      "title": "The Current Dream",
+      "href": "/wiki/The_Current_Dream"
+    },
+    {
+      "chapter_number": 676,
+      "title": "The Infinite Dream",
+      "href": "/wiki/The_Infinite_Dream"
+    },
+    {
+      "chapter_number": 677,
+      "title": "Infinite Tsukuyomi",
+      "href": "/wiki/Infinite_Tsukuyomi_(chapter)"
+    },
+    {
+      "chapter_number": 678,
+      "title": "My Will Is",
+      "href": "/wiki/My_Will_Is"
+    },
+    {
+      "chapter_number": 679,
+      "title": "The Incipient",
+      "href": "/wiki/The_Incipient"
+    },
+    {
+      "chapter_number": 680,
+      "title": "Once Again",
+      "href": "/wiki/Once_Again"
+    },
+    {
+      "chapter_number": 681,
+      "title": "Kaguya's Tears",
+      "href": "/wiki/Kaguya%27s_Tears"
+    },
+    {
+      "chapter_number": 682,
+      "title": "I'm Sure You Have Never Seen This",
+      "href": "/wiki/I%27m_Sure_You_Have_Never_Seen_This"
+    },
+    {
+      "chapter_number": 683,
+      "title": "I Had The Same Dream As You",
+      "href": "/wiki/I_Had_The_Same_Dream_As_You"
+    },
+    {
+      "chapter_number": 684,
+      "title": "We Should Kill Him First",
+      "href": "/wiki/We_Should_Kill_Him_First"
+    },
+    {
+      "chapter_number": 685,
+      "title": "Everything I Have Got…!!",
+      "href": "/wiki/Everything_I_Have_Got%E2%80%A6!!"
+    },
+    {
+      "chapter_number": 686,
+      "title": "Those Who Remain and Those Who Pass On",
+      "href": "/wiki/Those_Who_Remain_and_Those_Who_Pass_On"
+    },
+    {
+      "chapter_number": 687,
+      "title": "You Definitely Will",
+      "href": "/wiki/You_Definitely_Will"
+    },
+    {
+      "chapter_number": 688,
+      "title": "…of the Sharingan!!",
+      "href": "/wiki/%E2%80%A6of_the_Sharingan!!"
+    },
+    {
+      "chapter_number": 689,
+      "title": "I Love You",
+      "href": "/wiki/I_Love_You"
+    },
+    {
+      "chapter_number": 690,
+      "title": "…of Ninja!!",
+      "href": "/wiki/%E2%80%A6of_Ninja!!"
+    },
+    {
+      "chapter_number": 691,
+      "title": "Congratulations",
+      "href": "/wiki/Congratulations"
+    },
+    {
+      "chapter_number": 692,
+      "title": "Revolution",
+      "href": "/wiki/Revolution"
+    },
+    {
+      "chapter_number": 693,
+      "title": "Here Again",
+      "href": "/wiki/Here_Again"
+    },
+    {
+      "chapter_number": 694,
+      "title": "Naruto and Sasuke 1",
+      "href": "/wiki/Naruto_and_Sasuke_1"
+    },
+    {
+      "chapter_number": 695,
+      "title": "Naruto and Sasuke 2",
+      "href": "/wiki/Naruto_and_Sasuke_2"
+    },
+    {
+      "chapter_number": 696,
+      "title": "Naruto and Sasuke 3",
+      "href": "/wiki/Naruto_and_Sasuke_3"
+    },
+    {
+      "chapter_number": 697,
+      "title": "Naruto and Sasuke 4",
+      "href": "/wiki/Naruto_and_Sasuke_4"
+    },
+    {
+      "chapter_number": 698,
+      "title": "Naruto and Sasuke 5",
+      "href": "/wiki/Naruto_and_Sasuke_5"
+    },
+    {
+      "chapter_number": 699,
+      "title": "The Seal of Reconciliation",
+      "href": "/wiki/The_Seal_of_Reconciliation"
+    },
+    {
+      "chapter_number": 700,
+      "title": "Naruto Uzumaki!!",
+      "href": "/wiki/Naruto_Uzumaki!!_(chapter_700)"
+    }
+  ],
+  "subsection_ids": [
+    "Part_I",
+    "Part_II"
+  ],
+  "inspection_status": "PASS",
+  "generated_at": "2026-07-13T19:48:10.551239"
+}

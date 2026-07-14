@@ -88,22 +88,32 @@ Future  Platform Checkpoint v3
 
 ### v0.58 — Naruto Scope v3 Dataset
 
-Status
+Status:
 
-Benchmark Definition
+Canonical Source Verified
 
-Completed
+Verified target:
 
-- Project planning
+- Chapters 1–700
+- Expected records: 700
 
-Current
+Included:
 
-- Benchmark definition
+- Part I
+- Part II
 
-Next
+Excluded:
 
-- Canonical source verification
-- Expected chapter range
-- Dataset ingestion
-- Validation
-- Certification
+- Naruto Gaiden
+- Boruto
+- Spin-off manga
+
+Current phase:
+
+Full-range ingestion preflight
+
+Next:
+
+- Validate existing controlled records
+- Run Chapters 1–700 dry-run
+- Import full Naruto chapter metadata

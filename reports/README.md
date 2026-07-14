@@ -104,3 +104,11 @@ validation_status
 ```
 
 Certification reports should be generated from their source evidence rather than edited by hand.
+
+## Naruto Scope v3
+
+### Source Inspection
+
+```text
+naruto_scope_v3_source_inspection.json
+naruto_scope_v3_live_source_inspection.json

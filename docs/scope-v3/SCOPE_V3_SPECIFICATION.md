@@ -74,16 +74,23 @@ Status:
 
 ## Naruto Scope v3 Dataset
 
-Status:
+Verified target:
 
-Benchmark Definition
+- Chapters 1–700
+- Expected records: 700
+- Part I and Part II
+- Main Naruto manga only
 
-Implementation:
+Excluded:
 
-Pending
+- Naruto Gaiden
+- Boruto
+- Spin-off manga
 
-Target:
+Canonical source:
 
-Complete certified Naruto chapter metadata dataset.
+Narutopedia `Tankōbon` volume-index section
 
-Current benchmark values remain under validation.
+Current status:
+
+Source verified; ingestion preflight pending.

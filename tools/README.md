@@ -566,3 +566,34 @@ Current certification target:
 ```text
 One Piece Chapters 1–1188
 ```
+
+---
+
+## Chapter Index Inspection
+
+Inspect the configured main-series section of a volume index:
+
+```bash
+python -m tools.inspect_chapter_index \
+    --config configs/fandom/naruto.json \
+    --html-file tests/fixtures/naruto_list_of_volumes.html \
+    --json-report reports/naruto_scope_v3_source_inspection.json
+```
+
+Inspect the live source:
+
+```bash
+python -m tools.inspect_chapter_index \
+    --config configs/fandom/naruto.json \
+    --json-report reports/naruto_scope_v3_live_source_inspection.json
+```
+
+The inspection reports:
+
+- Entry count
+- Unique chapter count
+- Minimum and maximum chapter
+- Missing chapter numbers
+- Duplicate chapter numbers
+
+The tool inspects source structure only. It does not fetch individual chapter pages or modify the database.

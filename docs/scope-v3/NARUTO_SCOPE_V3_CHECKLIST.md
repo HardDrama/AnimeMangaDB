@@ -3,7 +3,11 @@
 ## Benchmark Definition
 
 - [x] Benchmark scope defined
+- [x] Canonical source verified
 - [x] Expected chapter range documented
+- [x] Expected record count documented
+- [x] Main-series inclusion rules documented
+- [x] Spin-off exclusions documented
 - [x] Certification target documented
 
 ---

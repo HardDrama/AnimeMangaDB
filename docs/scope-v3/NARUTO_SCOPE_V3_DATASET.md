@@ -4,7 +4,7 @@
 
 Implementation:
 
-🚧 Planned
+🚧 Source Verified
 
 Certification:
 
@@ -20,14 +20,26 @@ Naruto
 
 Expected chapter range:
 
-- Start chapter: TBD
-- End chapter: TBD
+- Start chapter: 1
+- End chapter: 700
 
 Expected records:
 
-TBD
+700
 
-The exact benchmark values will be finalized after validating the canonical chapter source.
+Included:
+
+- Naruto Part I
+- Naruto Part II
+
+Excluded:
+
+- Naruto Gaiden
+- Boruto
+- Sasuke Retsuden
+- Other spin-off manga
+
+The benchmark was verified from the canonical `Tankōbon` section of the Narutopedia volume index.
 
 ---
 

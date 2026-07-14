@@ -305,24 +305,18 @@ def test_extracts_exact_chapter_numbers():
         == {210}
     )
 
-def test_numbered_list_discovery_is_scoped_to_tankobon():
+def test_numbered_list_discovery_is_scoped_to_configured_subsections():
     html = """
     <html>
         <body>
             <h2>
-                <span
-                    class="mw-headline"
-                    id="Tankōbon"
-                >
+                <span id="Tankōbon">
                     Tankōbon
                 </span>
             </h2>
 
             <h3>
-                <span
-                    class="mw-headline"
-                    id="Part_I"
-                >
+                <span id="Part_I">
                     Part I
                 </span>
             </h3>
@@ -338,9 +332,9 @@ def test_numbered_list_discovery_is_scoped_to_tankobon():
                                 </a>
                             </li>
                             <li>
-                                002.
-                                <a href="/wiki/Konohamaru!!">
-                                    Konohamaru!!
+                                010.
+                                <a href="/wiki/The_Second_Critter">
+                                    The Second Critter
                                 </a>
                             </li>
                         </ul>
@@ -349,10 +343,7 @@ def test_numbered_list_discovery_is_scoped_to_tankobon():
             </table>
 
             <h3>
-                <span
-                    class="mw-headline"
-                    id="Part_II"
-                >
+                <span id="Part_II">
                     Part II
                 </span>
             </h3>
@@ -367,25 +358,46 @@ def test_numbered_list_discovery_is_scoped_to_tankobon():
                                     Homecoming!!
                                 </a>
                             </li>
+                            <li>
+                                700.
+                                <a href="/wiki/Naruto_Uzumaki!!_(chapter_700)">
+                                    Naruto Uzumaki!!
+                                </a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
             </table>
 
-            <h2>
-                <span
-                    class="mw-headline"
-                    id="Spin-offs"
-                >
-                    Spin-offs
+            <h3>
+                <span id="Naruto_Gaiden">
+                    Naruto Gaiden
                 </span>
-            </h2>
+            </h3>
+
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                000.
+                                <a href="/wiki/Naruto_Gaiden_Moon">
+                                    Gaiden Chapter Zero
+                                </a>
+                            </li>
+                            <li>
+                                010.
+                                <a href="/wiki/Words_of_Inspiration">
+                                    Words of Inspiration
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
 
             <h3>
-                <span
-                    class="mw-headline"
-                    id="Sasuke_Retsuden"
-                >
+                <span id="Sasuke_Retsuden">
                     Sasuke Retsuden
                 </span>
             </h3>
@@ -395,15 +407,9 @@ def test_numbered_list_discovery_is_scoped_to_tankobon():
                     <td>
                         <ul>
                             <li>
-                                001.
-                                <a href="/wiki/Chapter_1_(Sasuke_Retsuden)">
-                                    Chapter 1
-                                </a>
-                            </li>
-                            <li>
-                                002.
-                                <a href="/wiki/Chapter_2_(Sasuke_Retsuden)">
-                                    Chapter 2
+                                010.
+                                <a href="/wiki/Chapter_10_(Sasuke_Retsuden)">
+                                    Chapter 10
                                 </a>
                             </li>
                         </ul>
@@ -432,11 +438,27 @@ def test_numbered_list_discovery_is_scoped_to_tankobon():
     )
 
     assert (
-        service.discover_url(2)
-        == "https://naruto.fandom.com/wiki/Konohamaru!!"
+        service.discover_url(10)
+        == (
+            "https://naruto.fandom.com/wiki/"
+            "The_Second_Critter"
+        )
     )
 
     assert (
         service.discover_url(245)
-        == "https://naruto.fandom.com/wiki/Homecoming!!"
+        == (
+            "https://naruto.fandom.com/wiki/"
+            "Homecoming!!"
+        )
     )
+
+    assert (
+        service.discover_url(700)
+        == (
+            "https://naruto.fandom.com/wiki/"
+            "Naruto_Uzumaki!!_(chapter_700)"
+        )
+    )
+
+    assert service.discover_url(0) is None

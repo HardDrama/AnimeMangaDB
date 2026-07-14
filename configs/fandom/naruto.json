@@ -11,7 +11,11 @@
         "index_path": "/wiki/List_of_Volumes",
         "url_strategy": "numbered_list_items",
         "chapter_path": null,
-        "index_section_id": "Tankōbon"
+        "index_section_id": "Tankōbon",
+        "index_subsection_ids": [
+            "Part_I",
+            "Part_II"
+        ]
     },
     "chapter_selectors": {
         "title": "span.mw-page-title-main",

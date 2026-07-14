@@ -165,8 +165,74 @@ class ChapterUrlDiscoveryService:
             "html.parser",
         )
 
+        subsection_ids = (
+            chapter_config.index_subsection_ids
+            or []
+        )
+
+        if subsection_ids:
+            return self._discover_from_subsections(
+                soup=soup,
+                subsection_ids=subsection_ids,
+                chapter_number=chapter_number,
+            )
+
+        return self._discover_from_h2_section(
+            soup=soup,
+            section_id=chapter_config.index_section_id,
+            chapter_number=chapter_number,
+        )
+    
+    def _discover_from_subsections(
+        self,
+        soup: BeautifulSoup,
+        subsection_ids: list[str],
+        chapter_number: int,
+    ) -> str | None:
+        for subsection_id in subsection_ids:
+            heading_marker = soup.find(
+                id=subsection_id
+            )
+
+            if heading_marker is None:
+                continue
+
+            heading = heading_marker.find_parent(
+                ["h3", "h4"]
+            )
+
+            if heading is None:
+                continue
+
+            for sibling in heading.find_next_siblings():
+                # A new h2 leaves the parent section.
+                # A new h3 starts the next sibling work.
+                if sibling.name in {
+                    "h2",
+                    "h3",
+                }:
+                    break
+
+                source_url = (
+                    self._find_numbered_list_item_url(
+                        container=sibling,
+                        chapter_number=chapter_number,
+                    )
+                )
+
+                if source_url is not None:
+                    return source_url
+
+        return None
+
+    def _discover_from_h2_section(
+        self,
+        soup: BeautifulSoup,
+        section_id: str,
+        chapter_number: int,
+    ) -> str | None:
         heading_marker = soup.find(
-            id=chapter_config.index_section_id
+            id=section_id
         )
 
         if heading_marker is None:
@@ -180,39 +246,53 @@ class ChapterUrlDiscoveryService:
             return None
 
         for sibling in heading.find_next_siblings():
-            # The configured section is an h2.
-            # Nested h3 headings such as Part I and Part II
-            # remain inside the section. The next h2 ends it.
             if sibling.name == "h2":
                 break
 
-            for list_item in sibling.select(
-                "li"
-            ):
-                candidate_number = (
-                    self._extract_numbered_list_item(
-                        list_item.get_text(
-                            " ",
-                            strip=True,
-                        )
+            source_url = (
+                self._find_numbered_list_item_url(
+                    container=sibling,
+                    chapter_number=chapter_number,
+                )
+            )
+
+            if source_url is not None:
+                return source_url
+
+        return None
+    
+    def _find_numbered_list_item_url(
+        self,
+        container,
+        chapter_number: int,
+    ) -> str | None:
+        for list_item in container.select(
+            "li"
+        ):
+            candidate_number = (
+                self._extract_numbered_list_item(
+                    list_item.get_text(
+                        " ",
+                        strip=True,
                     )
                 )
+            )
 
-                if candidate_number != chapter_number:
-                    continue
+            if candidate_number != chapter_number:
+                continue
 
-                link = list_item.find(
-                    "a",
-                    href=True,
-                )
+            link = list_item.find(
+                "a",
+                href=True,
+            )
 
-                if link is None:
-                    continue
+            if link is None:
+                continue
 
-                return urljoin(
-                    self.config.base_url,
-                    link["href"],
-                )
+            return urljoin(
+                self.config.base_url,
+                link["href"],
+            )
 
         return None
 

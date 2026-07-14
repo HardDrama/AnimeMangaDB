@@ -103,6 +103,14 @@ def test_factory_loads_naruto_configuration():
         config_path="configs/fandom/naruto.json",
     )
 
+    assert (
+        provider.config.chapter_metadata.index_subsection_ids
+        == [
+            "Part_I",
+            "Part_II",
+        ]
+    )
+
     assert provider.config.series == "Naruto"
     assert provider.config.chapter_metadata is not None
     assert (
