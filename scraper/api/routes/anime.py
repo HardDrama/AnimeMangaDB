@@ -162,3 +162,49 @@ def list_chapters_for_anime(
 
     finally:
         session.close()
+
+@router.get(
+    "/{anime_id}/chapters/{chapter_number}",
+    response_model=ChapterMetadataResponse,
+)
+def get_chapter_for_anime(
+    anime_id: int,
+    chapter_number: int,
+):
+    session = SessionLocal()
+
+    try:
+        repository = EpisodeRepository(
+            session
+        )
+
+        anime = repository.get_anime_by_id(
+            anime_id
+        )
+
+        if anime is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Anime not found.",
+            )
+
+        chapter = repository.get_chapter_metadata(
+            anime_id=anime_id,
+            chapter_number=chapter_number,
+        )
+
+        if chapter is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Chapter not found.",
+            )
+
+        return (
+            ChapterMetadataResponse
+            .model_validate(
+                chapter
+            )
+        )
+
+    finally:
+        session.close()

@@ -131,3 +131,53 @@ Naruto:
 Series chapter-list endpoint:
 
 PASS
+
+---
+
+## v0.59.4 — Individual Chapter Endpoint
+
+### Endpoint
+
+`GET /anime/{anime_id}/chapters/{chapter_number}`
+
+### Behavior
+
+- Returns one anime-scoped chapter metadata record
+- Uses the shared `ChapterMetadataResponse`
+- Preserves nullable manga arcs
+- Returns 404 for an unknown anime
+- Returns 404 for a missing chapter
+- Returns 422 for an invalid chapter-number path
+
+### Certified Dataset Validation
+
+One Piece:
+
+- Chapter 1 retrieval: PASS
+- List/detail consistency: PASS
+
+Naruto:
+
+- Chapter 1 retrieval: PASS
+- Chapter 700 retrieval: PASS
+- Chapter 700 null manga arc: PASS
+
+### Compatibility
+
+- Series chapter-list endpoint: PASS
+- Anime compatibility endpoints: PASS
+- Chapter-to-episode mapping endpoint: PASS
+- Multi-series API behavior: PASS
+
+### Regression
+
+- API tests: 58 passed
+- Backend tests: 200 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Individual chapter endpoint:
+
+PASS

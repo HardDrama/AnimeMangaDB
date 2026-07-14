@@ -167,3 +167,61 @@ GET /anime/{anime_id}/episodes
 ```
 
 No existing Scope v2 route behavior changed.
+
+---
+
+## Individual Chapter Metadata
+
+### Endpoint
+
+```http
+GET /anime/{anime_id}/chapters/{chapter_number}
+```
+
+Returns one Scope v3 chapter metadata record for the requested anime and chapter number.
+
+### Successful Response
+
+```json
+{
+  "chapter_number": 1,
+  "chapter_title": "Romance Dawn",
+  "manga_arc": "Romance Dawn Arc",
+  "source_url": "https://onepiece.fandom.com/wiki/Chapter_1",
+  "last_updated": "2026-07-14T12:30:00"
+}
+```
+
+### Missing Anime
+
+An unknown anime ID returns HTTP `404`:
+
+```json
+{
+  "detail": "Anime not found."
+}
+```
+
+### Missing Chapter
+
+A chapter number that does not exist for a valid anime returns HTTP `404`:
+
+```json
+{
+  "detail": "Chapter not found."
+}
+```
+
+### Invalid Chapter Number
+
+A non-integer chapter-number path value returns HTTP `422`.
+
+### Nullable Manga Arc
+
+Verified non-applicable manga arcs remain `null`.
+
+Naruto Chapter 700 is the certified benchmark case.
+
+### Contract Consistency
+
+The individual response uses the same `ChapterMetadataResponse` schema as the series chapter-list endpoint.

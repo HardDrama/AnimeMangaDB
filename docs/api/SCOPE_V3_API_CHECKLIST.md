@@ -25,8 +25,8 @@
 - [x] SQLAlchemy object serialization
 - [x] ISO 8601 datetime serialization
 - [x] Existing API schemas preserved
-- [ ] Chapter-list endpoint
-- [ ] Individual chapter endpoint
+- [x] Chapter-list endpoint
+- [x] Individual chapter endpoint
 
 ## Chapter List Endpoint
 
@@ -39,7 +39,20 @@
 - [x] Empty valid dataset returns an empty list
 - [x] Unknown anime returns 404
 - [x] Scope v2 anime endpoints remain compatible
-- [ ] Individual chapter endpoint
+- [x] Individual chapter endpoint
+
+## Individual Chapter Endpoint
+
+- [x] Individual chapter route added
+- [x] Anime-scoped chapter lookup
+- [x] Shared chapter response model
+- [x] One Piece chapter detail validated
+- [x] Naruto chapter detail validated
+- [x] Nullable manga arc preserved
+- [x] Unknown anime returns 404
+- [x] Missing chapter returns 404
+- [x] Invalid chapter number returns 422
+- [x] List and detail contracts are consistent
 
 ---
 
