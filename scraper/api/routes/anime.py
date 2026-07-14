@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 
 from scraper.api.schemas import (
+    ChapterMetadataResponse,
     EpisodeResponse,
     SeriesResponse,
 )
@@ -115,6 +116,48 @@ def list_episodes_for_anime(
                 source_url=episode.source_url,
             )
             for episode in episodes
+        ]
+
+    finally:
+        session.close()
+
+@router.get(
+    "/{anime_id}/chapters",
+    response_model=list[
+        ChapterMetadataResponse
+    ],
+)
+def list_chapters_for_anime(
+    anime_id: int,
+):
+    session = SessionLocal()
+
+    try:
+        repository = EpisodeRepository(
+            session
+        )
+
+        anime = repository.get_anime_by_id(
+            anime_id
+        )
+
+        if anime is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Anime not found.",
+            )
+
+        chapters = (
+            repository.list_chapter_metadata(
+                anime_id
+            )
+        )
+
+        return [
+            ChapterMetadataResponse.model_validate(
+                chapter
+            )
+            for chapter in chapters
         ]
 
     finally:

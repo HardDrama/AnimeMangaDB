@@ -97,3 +97,73 @@ Schema:
   "last_updated": "2026-07-14T12:30:00"
 }
 ```
+
+---
+
+## Series Chapter List
+
+### Endpoint
+
+```http
+GET /anime/{anime_id}/chapters
+```
+
+Returns every Scope v3 chapter metadata record for the requested anime.
+
+### Response
+
+```json
+[
+  {
+    "chapter_number": 1,
+    "chapter_title": "Romance Dawn",
+    "manga_arc": "Romance Dawn Arc",
+    "source_url": "https://onepiece.fandom.com/wiki/Chapter_1",
+    "last_updated": "2026-07-14T12:30:00"
+  }
+]
+```
+
+### Ordering
+
+Chapters are ordered numerically in ascending order.
+
+### Empty Dataset
+
+A valid anime with no chapter metadata returns:
+
+```json
+[]
+```
+
+### Missing Anime
+
+An unknown anime ID returns:
+
+```json
+{
+  "detail": "Anime not found."
+}
+```
+
+with HTTP status `404`.
+
+### Verified Null Metadata
+
+Naruto Chapter 700 returns:
+
+```json
+"manga_arc": null
+```
+
+The API does not fabricate or replace verified non-applicable metadata.
+
+### Compatibility
+
+The endpoint follows the existing bare-list contract used by:
+
+```http
+GET /anime/{anime_id}/episodes
+```
+
+No existing Scope v2 route behavior changed.

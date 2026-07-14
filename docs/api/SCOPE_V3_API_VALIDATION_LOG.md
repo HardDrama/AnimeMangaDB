@@ -77,3 +77,57 @@ No existing Scope v2 schema or endpoint behavior changed.
 Scope v3 chapter response models:
 
 PASS
+
+---
+
+## v0.59.3 — Series Chapter List Endpoint
+
+### Endpoint
+
+`GET /anime/{anime_id}/chapters`
+
+### Behavior
+
+- Returns a bare list of chapter metadata responses
+- Filters records by anime ID
+- Orders chapters numerically
+- Preserves nullable manga arcs
+- Returns an empty list for a valid anime with no chapter data
+- Returns 404 for an unknown anime
+
+### Certified Dataset Validation
+
+One Piece:
+
+- Records returned: 1188
+- First chapter: 1
+- Last chapter: 1188
+- Ordering: PASS
+
+Naruto:
+
+- Records returned: 700
+- First chapter: 1
+- Last chapter: 700
+- Ordering: PASS
+- Chapter 700 null manga arc: PASS
+
+### Compatibility
+
+- Existing `/anime` behavior: PASS
+- Existing `/anime/{id}` behavior: PASS
+- Existing `/anime/{id}/episodes` behavior: PASS
+- Existing chapter-to-episode mapping behavior: PASS
+
+### Regression
+
+- API tests: 52 passed
+- Backend tests: 194 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Series chapter-list endpoint:
+
+PASS

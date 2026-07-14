@@ -28,6 +28,19 @@
 - [ ] Chapter-list endpoint
 - [ ] Individual chapter endpoint
 
+## Chapter List Endpoint
+
+- [x] Series chapter-list route added
+- [x] Repository-backed chapter retrieval
+- [x] Ascending chapter ordering
+- [x] One Piece Chapters 1–1188 returned
+- [x] Naruto Chapters 1–700 returned
+- [x] Nullable manga arc preserved
+- [x] Empty valid dataset returns an empty list
+- [x] Unknown anime returns 404
+- [x] Scope v2 anime endpoints remain compatible
+- [ ] Individual chapter endpoint
+
 ---
 
 ## Validation
