@@ -1,80 +1,55 @@
-# Roadmap
+# AnimeMangaDB Roadmap
 
-## Certified
+## ✅ Certified
 
 ### Platform Checkpoint v2
-✅ Certified
-
-Components
-
 - Backend
 - Database
-- Comparison
-- Repair
+- API
 - Reports
 - Metadata Override Framework
-- API
+- Frontend Integration
 
-Benchmark Dataset
+### Scope v3 Foundation
+- Chapter metadata framework
+- URL discovery
+- Metadata extraction
+- Batch ingestion
+- Audit system
+- Manual validation
+- Certification pipeline
+- Metadata exception support
 
-- One Piece Scope v2 (100%)
-
----
-
-### One Piece Scope v3 Dataset
-✅ Certified
-
-Certified Range
-
-- Chapters 1–1188
-
-Certified Records
-
-- 1188 chapter metadata records
-
-Certified Metadata
-
-- Chapter Number
-- Official Viz English Title
-- Manga Arc
-- Canonical Source URL
-- Last Updated Timestamp
-
-Evidence
-
-- Metadata Audit: PASS
-- Coverage Audit: PASS
-- Dataset Audit: PASS
-- Manual Source Validation: PASS
-- Final Dataset Validation: PASS
-- Certification Eligibility: ELIGIBLE
-- Certification Failures: 0
-
-Regression
-
-- Backend: 167 tests passed
-- Frontend build: PASS
-- Frontend lint: PASS
+### Certified Scope v3 Datasets
+- ✅ One Piece (Ch. 1–1188)
+- ✅ Naruto (Ch. 1–700)
 
 ---
 
-## Current
+## 🚧 Current
 
-### v0.58 — Naruto Scope v3 Dataset
+### Platform Checkpoint v3 Planning
 
-Status
+Goals:
+- Scope v3 API
+- Frontend chapter metadata support
+- Multi-series validation
+- Scope v2 compatibility
+- Platform certification
 
-🚧 Planned
+---
 
-Objectives
+## Next
 
-- Define Naruto Scope v3 benchmark
-- Analyze chapter metadata sources
-- Validate numbered-list discovery strategy
-- Import complete Naruto chapter metadata dataset
-- Perform automated audits
-- Perform representative manual validation
-- Certify Naruto Scope v3 dataset
+### v0.59 — Scope v3 API Integration
+
+Planned:
+- API response models
+- Chapter metadata endpoints
+- Chapter lookup
+- API documentation
+- API validation
+- API certification
 
 ---
 
@@ -82,10 +57,11 @@ Objectives
 
 ### Platform Checkpoint v3
 
-Requirements
+Requirements:
+- Scope v3 API certified
+- Frontend integration certified
+- Multi-series validation complete
+- Platform regression testing
+- Documentation complete
 
-- One Piece Scope v3 Certified
-- Naruto Scope v3 Certified
-- Multi-series validation framework
-- Cross-series benchmark certification
-- Platform-wide Scope v3 certification
+🏆 Goal: Certified Scope v3 Platform

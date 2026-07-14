@@ -2238,3 +2238,49 @@ Certification Status
 🏆 CERTIFIED
 
 This is AnimeMangaDB's first certified Scope v3 dataset.
+
+# AnimeMangaDB v0.58
+## Naruto Scope v3 Dataset — CERTIFIED
+
+✅ Status: Complete
+
+v0.58 expands the Scope v3 benchmark with a fully certified Naruto dataset, validating that the chapter metadata framework works across multiple series with different source structures.
+
+### Completed
+- ✅ Defined Naruto Scope v3 benchmark (Chapters 1–700)
+- ✅ Verified canonical source boundaries
+- ✅ Implemented subsection-aware chapter discovery
+- ✅ Imported all 700 chapter metadata records
+- ✅ Added metadata exception framework support
+- ✅ Validated Chapter 700 as a verified "not applicable" manga arc
+- ✅ Completed automated metadata and coverage audits
+- ✅ Completed representative manual source validation (30 chapters)
+- ✅ Updated certification framework for approved metadata exceptions
+- ✅ Performed final dataset validation
+- ✅ Certified Naruto Scope v3 dataset
+
+### Dataset Summary
+- Chapters: **1–700**
+- Records: **700**
+- Metadata Audit: **PASS**
+- Coverage Audit: **PASS**
+- Manual Validation: **PASS**
+- Certification: **CERTIFIED**
+
+### Scope v3 Status
+🏆 Certified datasets:
+- One Piece
+- Naruto
+
+Backend:
+- ✅ 184 tests passing
+
+Frontend:
+- ✅ Build successful
+- ✅ Lint clean
+
+### Next
+➡ Platform Checkpoint v3 Planning
+- Scope v3 API integration
+- Frontend chapter metadata integration
+- Multi-series platform validation
