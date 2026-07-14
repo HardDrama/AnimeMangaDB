@@ -81,3 +81,19 @@ No HTML rendering.
 ## Compatibility
 
 All existing Scope v2 endpoints remain unchanged.
+
+---
+
+## Chapter Metadata Response
+
+Schema:
+
+```json
+{
+  "chapter_number": 1,
+  "chapter_title": "Romance Dawn",
+  "manga_arc": "Romance Dawn Arc",
+  "source_url": "https://onepiece.fandom.com/wiki/Chapter_1",
+  "last_updated": "2026-07-14T12:30:00"
+}
+```

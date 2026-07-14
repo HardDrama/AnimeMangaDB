@@ -1,4 +1,6 @@
-from pydantic import BaseModel
+from datetime import datetime
+
+from pydantic import BaseModel, ConfigDict
 
 
 class EpisodeResponse(BaseModel):
@@ -20,6 +22,16 @@ class EpisodeResponse(BaseModel):
 class EpisodeListResponse(BaseModel):
     episodes: list[EpisodeResponse]
 
+class ChapterMetadataResponse(BaseModel):
+    chapter_number: int
+    chapter_title: str
+    manga_arc: str | None = None
+    source_url: str
+    last_updated: datetime
+
+    model_config = ConfigDict(
+        from_attributes=True,
+    )
 
 class ChapterMappingResponse(BaseModel):
     chapter_number: int
