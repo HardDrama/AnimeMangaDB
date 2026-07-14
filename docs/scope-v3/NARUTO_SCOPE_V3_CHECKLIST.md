@@ -20,6 +20,18 @@
 - [x] Source URLs complete
 - [x] Last-updated timestamps complete
 
+## Gap Analysis
+
+- [x] Full import audit reviewed
+- [x] Missing manga arc chapter identified
+- [x] Source page manually reviewed
+- [x] Gap classified
+- [x] Chapter 700 verified as a standalone epilogue
+- [x] Null manga arc confirmed as accurate
+- [ ] Scope v3 chapter exception added
+- [ ] Exception-aware audit passes
+- [ ] Metadata audit passes
+
 ---
 
 ## Ingestion

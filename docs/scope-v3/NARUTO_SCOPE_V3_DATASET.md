@@ -4,7 +4,7 @@
 
 Implementation:
 
-🚧 Full dataset imported; audit analysis pending
+🚧 Full dataset imported; verified exception pending audit support
 
 Certification:
 
@@ -102,3 +102,17 @@ Source discovery remained scoped to:
 - Part II
 
 Excluded works remained outside the dataset.
+
+---
+
+## Verified Metadata Exception
+
+### Chapter 700
+
+Chapter 700 is a standalone epilogue and does not belong to a named manga arc.
+
+Stored value:
+
+```text
+manga_arc = null
+```

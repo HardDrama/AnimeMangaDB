@@ -188,3 +188,52 @@ IN PROGRESS
 Full Naruto chapter metadata import completed.
 
 Gap analysis remains pending.
+
+---
+
+## v0.58.5 — Manga Arc Gap Analysis
+
+### Dataset State
+
+- Chapter records: 700
+- Coverage audit: PASS
+- Missing chapters: 0
+- Missing manga arcs: 1
+- Metadata audit: IN PROGRESS
+
+### Investigated Record
+
+- Chapter: 700
+- Title: Naruto Uzumaki!!
+- Stored manga arc: null
+- Source classification: standalone epilogue
+
+### Classification
+
+Verified non-applicable manga arc
+
+### Findings
+
+Chapter 700 does not belong to a named manga arc.
+
+The null value is accurate source representation rather than an extraction or ingestion failure.
+
+### Recommended Resolution
+
+Add a narrowly scoped Scope v3 chapter-metadata exception for Naruto Chapter 700.
+
+The database record will remain null.
+
+The audit will distinguish:
+
+- Raw missing manga arcs
+- Approved non-applicable manga arcs
+- Unresolved missing manga arcs
+
+### Result
+
+Gap analysis:
+
+COMPLETE
+
+No unsupported metadata was added.

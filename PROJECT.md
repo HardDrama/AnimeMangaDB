@@ -90,26 +90,33 @@ Future  Platform Checkpoint v3
 
 Status:
 
-Full Dataset Imported
+Verified Exception Identified
 
 Dataset:
 
 - Chapters 1–700
-- 700 expected records
 - 700 records present
-- 0 failed imports
-- 0 missing titles
-- 1 missing manga arcs
-- 0 missing source URLs
-- 0 duplicate chapter records
+- Coverage audit: PASS
+- Missing titles: 0
+- Raw missing manga arcs: 1
+- Verified non-applicable manga arcs: 1
+- Unresolved manga-arc gaps: 0
+- Missing source URLs: 0
+- Duplicate records: 0
+
+Verified exception:
+
+- Naruto Chapter 700
+- Standalone epilogue
+- Manga arc not applicable
+- Database value remains null
 
 Current phase:
 
-Ingestion gap analysis
+Add Scope v3 chapter-metadata exception support
 
 Next:
 
-- Analyze missing metadata
-- Verify source exceptions
-- Repair confirmed gaps if needed
-- Validate full dataset integrity
+- Add exception configuration
+- Make the audit exception-aware
+- Re-run full metadata and coverage audits
