@@ -1,0 +1,4819 @@
+{
+  "schema_version": 1,
+  "anime": "Naruto",
+  "start_chapter": 101,
+  "end_chapter": 700,
+  "chapters_selected": 600,
+  "inserted": 600,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 101,
+      "status": "inserted",
+      "chapter_title": "One More…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/One_More%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 102,
+      "status": "inserted",
+      "chapter_title": "A Bird in a Cage…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Bird_in_a_Cage%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 103,
+      "status": "inserted",
+      "chapter_title": "Failure!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Failure!!",
+      "error": null
+    },
+    {
+      "chapter_number": 104,
+      "status": "inserted",
+      "chapter_title": "The Power to Change…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Power_to_Change%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 105,
+      "status": "inserted",
+      "chapter_title": "The Great Flight!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Great_Flight!!",
+      "error": null
+    },
+    {
+      "chapter_number": 106,
+      "status": "inserted",
+      "chapter_title": "Sasuke Disqualified…?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke_Disqualified%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 107,
+      "status": "inserted",
+      "chapter_title": "The Guy with Zero Motivation!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Guy_with_Zero_Motivation!!",
+      "error": null
+    },
+    {
+      "chapter_number": 108,
+      "status": "inserted",
+      "chapter_title": "A Plot Leading to Victory…?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Plot_Leading_to_Victory%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 109,
+      "status": "inserted",
+      "chapter_title": "Tree Leaves, Dancing…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Tree_Leaves,_Dancing%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 110,
+      "status": "inserted",
+      "chapter_title": "At Last…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/At_Last%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 111,
+      "status": "inserted",
+      "chapter_title": "Sasuke vs. Gaara!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke_vs._Gaara!!",
+      "error": null
+    },
+    {
+      "chapter_number": 112,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Taijutsu…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Taijutsu%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 113,
+      "status": "inserted",
+      "chapter_title": "The Reason He was Late…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Reason_He_was_Late%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 114,
+      "status": "inserted",
+      "chapter_title": "Assault…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Assault%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 115,
+      "status": "inserted",
+      "chapter_title": "The Chūnin Exams, Concluded…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Ch%C5%ABnin_Exams,_Concluded%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 116,
+      "status": "inserted",
+      "chapter_title": "Konoha Crush…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Konoha_Crush%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 117,
+      "status": "inserted",
+      "chapter_title": "The Mission Given…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Mission_Given%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 118,
+      "status": "inserted",
+      "chapter_title": "Confinement…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Confinement%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 119,
+      "status": "inserted",
+      "chapter_title": "My Life…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/My_Life%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 120,
+      "status": "inserted",
+      "chapter_title": "Hokage vs. Hokage!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Hokage_vs._Hokage!!",
+      "error": null
+    },
+    {
+      "chapter_number": 121,
+      "status": "inserted",
+      "chapter_title": "The Horrible Experiment…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Horrible_Experiment%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 122,
+      "status": "inserted",
+      "chapter_title": "The Inherited Will!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Inherited_Will!!",
+      "error": null
+    },
+    {
+      "chapter_number": 123,
+      "status": "inserted",
+      "chapter_title": "The Final Seal",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Final_Seal",
+      "error": null
+    },
+    {
+      "chapter_number": 124,
+      "status": "inserted",
+      "chapter_title": "An Eternal Battle…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/An_Eternal_Battle%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 125,
+      "status": "inserted",
+      "chapter_title": "The Time of Awakening…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Time_of_Awakening%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 126,
+      "status": "inserted",
+      "chapter_title": "Negligence…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Negligence%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 127,
+      "status": "inserted",
+      "chapter_title": "The True Feeling of Life…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_True_Feeling_of_Life%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 128,
+      "status": "inserted",
+      "chapter_title": "Crossing the Limits…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Crossing_the_Limits%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 129,
+      "status": "inserted",
+      "chapter_title": "Pain…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Pain%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 130,
+      "status": "inserted",
+      "chapter_title": "Love…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Love%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 131,
+      "status": "inserted",
+      "chapter_title": "The Name Gaara…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Name_Gaara%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 132,
+      "status": "inserted",
+      "chapter_title": "The Two… Darkness and Light",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Two%E2%80%A6_Darkness_and_Light",
+      "error": null
+    },
+    {
+      "chapter_number": 133,
+      "status": "inserted",
+      "chapter_title": "The Strong…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Strong%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 134,
+      "status": "inserted",
+      "chapter_title": "The Naruto Shinobi Handbook!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Naruto_Shinobi_Handbook!!",
+      "error": null
+    },
+    {
+      "chapter_number": 135,
+      "status": "inserted",
+      "chapter_title": "A Storm-Like Battle!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Storm-Like_Battle!!",
+      "error": null
+    },
+    {
+      "chapter_number": 136,
+      "status": "inserted",
+      "chapter_title": "The Final Blow…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Final_Blow%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 137,
+      "status": "inserted",
+      "chapter_title": "Konoha Shinobi…!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Konoha_Shinobi%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 138,
+      "status": "inserted",
+      "chapter_title": "Konoha Crush, Ended!!",
+      "manga_arc": "Konoha Crush (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Konoha_Crush,_Ended!!",
+      "error": null
+    },
+    {
+      "chapter_number": 139,
+      "status": "inserted",
+      "chapter_title": "That Person's Name is…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/That_Person%27s_Name_is%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 140,
+      "status": "inserted",
+      "chapter_title": "Approaching…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Approaching%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 141,
+      "status": "inserted",
+      "chapter_title": "Itachi Uchiha!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Itachi_Uchiha!!",
+      "error": null
+    },
+    {
+      "chapter_number": 142,
+      "status": "inserted",
+      "chapter_title": "Kakashi vs. Itachi",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi_vs._Itachi",
+      "error": null
+    },
+    {
+      "chapter_number": 143,
+      "status": "inserted",
+      "chapter_title": "The Fourth's Legacy!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Fourth%27s_Legacy!!",
+      "error": null
+    },
+    {
+      "chapter_number": 144,
+      "status": "inserted",
+      "chapter_title": "Pursuers",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Pursuers",
+      "error": null
+    },
+    {
+      "chapter_number": 145,
+      "status": "inserted",
+      "chapter_title": "Memories of Despair",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Memories_of_Despair",
+      "error": null
+    },
+    {
+      "chapter_number": 146,
+      "status": "inserted",
+      "chapter_title": "Together with Hatred…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Together_with_Hatred%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 147,
+      "status": "inserted",
+      "chapter_title": "My Fight!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/My_Fight!!",
+      "error": null
+    },
+    {
+      "chapter_number": 148,
+      "status": "inserted",
+      "chapter_title": "Itachi's Power!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Itachi%27s_Power!!",
+      "error": null
+    },
+    {
+      "chapter_number": 149,
+      "status": "inserted",
+      "chapter_title": "The Legendary…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Legendary%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 150,
+      "status": "inserted",
+      "chapter_title": "The Training Begins…?!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Training_Begins%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 151,
+      "status": "inserted",
+      "chapter_title": "Impetus…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Impetus%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 152,
+      "status": "inserted",
+      "chapter_title": "The Second Step",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Second_Step",
+      "error": null
+    },
+    {
+      "chapter_number": 153,
+      "status": "inserted",
+      "chapter_title": "The Searchers!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Searchers!!",
+      "error": null
+    },
+    {
+      "chapter_number": 154,
+      "status": "inserted",
+      "chapter_title": "Arrival…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Arrival%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 155,
+      "status": "inserted",
+      "chapter_title": "The Third Step",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Third_Step",
+      "error": null
+    },
+    {
+      "chapter_number": 156,
+      "status": "inserted",
+      "chapter_title": "The Deal",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Deal",
+      "error": null
+    },
+    {
+      "chapter_number": 157,
+      "status": "inserted",
+      "chapter_title": "The Answer is…?!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Answer_is%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 158,
+      "status": "inserted",
+      "chapter_title": "I Won't Forgive You…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/I_Won%27t_Forgive_You%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 159,
+      "status": "inserted",
+      "chapter_title": "The Wager…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Wager%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 160,
+      "status": "inserted",
+      "chapter_title": "The Necklace of Death…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Necklace_of_Death%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 161,
+      "status": "inserted",
+      "chapter_title": "Tsunade's Decision!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Tsunade%27s_Decision!!",
+      "error": null
+    },
+    {
+      "chapter_number": 162,
+      "status": "inserted",
+      "chapter_title": "The Unresisting Heart…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Unresisting_Heart%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 163,
+      "status": "inserted",
+      "chapter_title": "The Undecayed…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Undecayed%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 164,
+      "status": "inserted",
+      "chapter_title": "Medical Specialist!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Medical_Specialist!!",
+      "error": null
+    },
+    {
+      "chapter_number": 165,
+      "status": "inserted",
+      "chapter_title": "Naruto, Attack!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto,_Attack!!",
+      "error": null
+    },
+    {
+      "chapter_number": 166,
+      "status": "inserted",
+      "chapter_title": "The Abilities of the Shinobi…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Abilities_of_the_Shinobi%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 167,
+      "status": "inserted",
+      "chapter_title": "As Promised…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/As_Promised%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 168,
+      "status": "inserted",
+      "chapter_title": "Just Once More",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Just_Once_More",
+      "error": null
+    },
+    {
+      "chapter_number": 169,
+      "status": "inserted",
+      "chapter_title": "Risking One's Life…!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/Risking_One%27s_Life%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 170,
+      "status": "inserted",
+      "chapter_title": "A Three-Way Deadlock of Offence and Defence!!",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/A_Three-Way_Deadlock_of_Offence_and_Defence!!",
+      "error": null
+    },
+    {
+      "chapter_number": 171,
+      "status": "inserted",
+      "chapter_title": "The Successor",
+      "manga_arc": "Search for Tsunade",
+      "source_url": "https://naruto.fandom.com/wiki/The_Successor",
+      "error": null
+    },
+    {
+      "chapter_number": 172,
+      "status": "inserted",
+      "chapter_title": "Homecoming",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Homecoming",
+      "error": null
+    },
+    {
+      "chapter_number": 173,
+      "status": "inserted",
+      "chapter_title": "Those Suffering",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Those_Suffering",
+      "error": null
+    },
+    {
+      "chapter_number": 174,
+      "status": "inserted",
+      "chapter_title": "Feelings, Each One…!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Feelings,_Each_One%E2%80%A6!",
+      "error": null
+    },
+    {
+      "chapter_number": 175,
+      "status": "inserted",
+      "chapter_title": "Naruto vs. Sasuke!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_vs._Sasuke!!",
+      "error": null
+    },
+    {
+      "chapter_number": 176,
+      "status": "inserted",
+      "chapter_title": "They Who are Called Rivals",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/They_Who_are_Called_Rivals",
+      "error": null
+    },
+    {
+      "chapter_number": 177,
+      "status": "inserted",
+      "chapter_title": "The Oto Four",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Oto_Four",
+      "error": null
+    },
+    {
+      "chapter_number": 178,
+      "status": "inserted",
+      "chapter_title": "Oto's Invitation…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Oto%27s_Invitation%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 179,
+      "status": "inserted",
+      "chapter_title": "Don't Forget…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Don%27t_Forget%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 180,
+      "status": "inserted",
+      "chapter_title": "It's a Promise!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/It%27s_a_Promise!!",
+      "error": null
+    },
+    {
+      "chapter_number": 181,
+      "status": "inserted",
+      "chapter_title": "The Beginning of the Battle…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Beginning_of_the_Battle%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 182,
+      "status": "inserted",
+      "chapter_title": "Assemble!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Assemble!!",
+      "error": null
+    },
+    {
+      "chapter_number": 183,
+      "status": "inserted",
+      "chapter_title": "The Promise of a Lifetime",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Promise_of_a_Lifetime",
+      "error": null
+    },
+    {
+      "chapter_number": 184,
+      "status": "inserted",
+      "chapter_title": "Oto vs. Konoha!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Oto_vs._Konoha!!",
+      "error": null
+    },
+    {
+      "chapter_number": 185,
+      "status": "inserted",
+      "chapter_title": "Pursue Oto…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Pursue_Oto%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 186,
+      "status": "inserted",
+      "chapter_title": "The Strategy… Failed?!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Strategy%E2%80%A6_Failed%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 187,
+      "status": "inserted",
+      "chapter_title": "Begging for One's Life…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Begging_for_One%27s_Life%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 188,
+      "status": "inserted",
+      "chapter_title": "The Shinobi of Konohagakure…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Shinobi_of_Konohagakure%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 189,
+      "status": "inserted",
+      "chapter_title": "The Power of Faith…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Power_of_Faith%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 190,
+      "status": "inserted",
+      "chapter_title": "Unforgivable!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Unforgivable!!",
+      "error": null
+    },
+    {
+      "chapter_number": 191,
+      "status": "inserted",
+      "chapter_title": "Comrades…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Comrades%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 192,
+      "status": "inserted",
+      "chapter_title": "The Plan…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Plan%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 193,
+      "status": "inserted",
+      "chapter_title": "Game Over",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Game_Over",
+      "error": null
+    },
+    {
+      "chapter_number": 194,
+      "status": "inserted",
+      "chapter_title": "Sounding Out",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sounding_Out",
+      "error": null
+    },
+    {
+      "chapter_number": 195,
+      "status": "inserted",
+      "chapter_title": "The Way to Capture…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Way_to_Capture%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 196,
+      "status": "inserted",
+      "chapter_title": "The Number One Strongest Enemy!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Number_One_Strongest_Enemy!!",
+      "error": null
+    },
+    {
+      "chapter_number": 197,
+      "status": "inserted",
+      "chapter_title": "Prepared to Die!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Prepared_to_Die!!",
+      "error": null
+    },
+    {
+      "chapter_number": 198,
+      "status": "inserted",
+      "chapter_title": "Reincarnation…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Reincarnation%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 199,
+      "status": "inserted",
+      "chapter_title": "Desire…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Desire%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 200,
+      "status": "inserted",
+      "chapter_title": "Just as Planned…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Just_as_Planned%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 201,
+      "status": "inserted",
+      "chapter_title": "Not as Planned…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Not_as_Planned%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 202,
+      "status": "inserted",
+      "chapter_title": "Three Wishes!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Three_Wishes!!",
+      "error": null
+    },
+    {
+      "chapter_number": 203,
+      "status": "inserted",
+      "chapter_title": "Sakon's Secret",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sakon%27s_Secret",
+      "error": null
+    },
+    {
+      "chapter_number": 204,
+      "status": "inserted",
+      "chapter_title": "Ukon's Ability",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Ukon%27s_Ability",
+      "error": null
+    },
+    {
+      "chapter_number": 205,
+      "status": "inserted",
+      "chapter_title": "Kiba's Determination!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Kiba%27s_Determination!!",
+      "error": null
+    },
+    {
+      "chapter_number": 206,
+      "status": "inserted",
+      "chapter_title": "Trouble…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Trouble%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 207,
+      "status": "inserted",
+      "chapter_title": "Playing Without Rook and Bishop",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Playing_Without_Rook_and_Bishop",
+      "error": null
+    },
+    {
+      "chapter_number": 208,
+      "status": "inserted",
+      "chapter_title": "The First Move was a Fake-Out!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_First_Move_was_a_Fake-Out!!",
+      "error": null
+    },
+    {
+      "chapter_number": 209,
+      "status": "inserted",
+      "chapter_title": "Supporter, Calling On!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Supporter,_Calling_On!!",
+      "error": null
+    },
+    {
+      "chapter_number": 210,
+      "status": "inserted",
+      "chapter_title": "Lee's Secret!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Lee%27s_Secret!!_(chapter_210)",
+      "error": null
+    },
+    {
+      "chapter_number": 211,
+      "status": "inserted",
+      "chapter_title": "Unorthodox…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Unorthodox%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 212,
+      "status": "inserted",
+      "chapter_title": "Crisis, Crisis, Crisis!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Crisis,_Crisis,_Crisis!!",
+      "error": null
+    },
+    {
+      "chapter_number": 213,
+      "status": "inserted",
+      "chapter_title": "A Great Debt…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/A_Great_Debt%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 214,
+      "status": "inserted",
+      "chapter_title": "Step Aside for a Moment…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Step_Aside_for_a_Moment%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 215,
+      "status": "inserted",
+      "chapter_title": "Gaara of the Sand Waterfall (chapter)",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Gaara_of_the_Sand_Waterfall_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 216,
+      "status": "inserted",
+      "chapter_title": "Spear and Shield…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Spear_and_Shield%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 217,
+      "status": "inserted",
+      "chapter_title": "For the Sake of Those Precious",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/For_the_Sake_of_Those_Precious",
+      "error": null
+    },
+    {
+      "chapter_number": 218,
+      "status": "inserted",
+      "chapter_title": "Konoha Comrades!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Konoha_Comrades!!",
+      "error": null
+    },
+    {
+      "chapter_number": 219,
+      "status": "inserted",
+      "chapter_title": "Future and Past",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Future_and_Past",
+      "error": null
+    },
+    {
+      "chapter_number": 220,
+      "status": "inserted",
+      "chapter_title": "Itachi and Sasuke, Brothers (chapter)",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Itachi_and_Sasuke,_Brothers_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 221,
+      "status": "inserted",
+      "chapter_title": "The Too Distant Elder Brother",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Too_Distant_Elder_Brother",
+      "error": null
+    },
+    {
+      "chapter_number": 222,
+      "status": "inserted",
+      "chapter_title": "Itachi's Doubt",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Itachi%27s_Doubt",
+      "error": null
+    },
+    {
+      "chapter_number": 223,
+      "status": "inserted",
+      "chapter_title": "Sasuke and his Father",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke_and_his_Father",
+      "error": null
+    },
+    {
+      "chapter_number": 224,
+      "status": "inserted",
+      "chapter_title": "That Day…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/That_Day%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 225,
+      "status": "inserted",
+      "chapter_title": "Within Darkness…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Within_Darkness%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 226,
+      "status": "inserted",
+      "chapter_title": "Close Friend…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Close_Friend%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 227,
+      "status": "inserted",
+      "chapter_title": "Chidori vs. Rasengan!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Chidori_vs._Rasengan!!",
+      "error": null
+    },
+    {
+      "chapter_number": 228,
+      "status": "inserted",
+      "chapter_title": "Kakashi's Premonition",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi%27s_Premonition",
+      "error": null
+    },
+    {
+      "chapter_number": 229,
+      "status": "inserted",
+      "chapter_title": "The Bond…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Bond%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 230,
+      "status": "inserted",
+      "chapter_title": "The Time of Awakening!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Time_of_Awakening!!",
+      "error": null
+    },
+    {
+      "chapter_number": 231,
+      "status": "inserted",
+      "chapter_title": "Special Powers!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Special_Powers!!",
+      "error": null
+    },
+    {
+      "chapter_number": 232,
+      "status": "inserted",
+      "chapter_title": "The Valley of the End (chapter)",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Valley_of_the_End_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 233,
+      "status": "inserted",
+      "chapter_title": "The Worst Ending…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Worst_Ending%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 234,
+      "status": "inserted",
+      "chapter_title": "The Day of Parting…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Day_of_Parting%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 235,
+      "status": "inserted",
+      "chapter_title": "Mission Failed…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Mission_Failed%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 236,
+      "status": "inserted",
+      "chapter_title": "The Promise that Couldn't be Kept",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Promise_that_Couldn%27t_be_Kept",
+      "error": null
+    },
+    {
+      "chapter_number": 237,
+      "status": "inserted",
+      "chapter_title": "Idiot…!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Idiot%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 238,
+      "status": "inserted",
+      "chapter_title": "The Day of Departure!!",
+      "manga_arc": "Sasuke Recovery Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Day_of_Departure!!",
+      "error": null
+    },
+    {
+      "chapter_number": 239,
+      "status": "inserted",
+      "chapter_title": "Side Story 1: Mission Start…!!",
+      "manga_arc": "Kakashi Gaiden",
+      "source_url": "https://naruto.fandom.com/wiki/Side_Story_1:_Mission_Start%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 240,
+      "status": "inserted",
+      "chapter_title": "Side Story 2: Teamwork!!",
+      "manga_arc": "Kakashi Gaiden",
+      "source_url": "https://naruto.fandom.com/wiki/Side_Story_2:_Teamwork!!",
+      "error": null
+    },
+    {
+      "chapter_number": 241,
+      "status": "inserted",
+      "chapter_title": "Side Story 3: A True Hero",
+      "manga_arc": "Kakashi Gaiden",
+      "source_url": "https://naruto.fandom.com/wiki/Side_Story_3:_A_True_Hero",
+      "error": null
+    },
+    {
+      "chapter_number": 242,
+      "status": "inserted",
+      "chapter_title": "Side Story 4: The Crybaby Ninja",
+      "manga_arc": "Kakashi Gaiden",
+      "source_url": "https://naruto.fandom.com/wiki/Side_Story_4:_The_Crybaby_Ninja",
+      "error": null
+    },
+    {
+      "chapter_number": 243,
+      "status": "inserted",
+      "chapter_title": "Side Story 5: Gift",
+      "manga_arc": "Kakashi Gaiden",
+      "source_url": "https://naruto.fandom.com/wiki/Side_Story_5:_Gift",
+      "error": null
+    },
+    {
+      "chapter_number": 244,
+      "status": "inserted",
+      "chapter_title": "Side Story Final Story: The Hero of the Sharingan",
+      "manga_arc": "Kakashi Gaiden",
+      "source_url": "https://naruto.fandom.com/wiki/Side_Story_Final_Story:_The_Hero_of_the_Sharingan",
+      "error": null
+    },
+    {
+      "chapter_number": 245,
+      "status": "inserted",
+      "chapter_title": "Naruto's Homecoming!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto%27s_Homecoming!!",
+      "error": null
+    },
+    {
+      "chapter_number": 246,
+      "status": "inserted",
+      "chapter_title": "The Pair's Growth!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Pair%27s_Growth!!",
+      "error": null
+    },
+    {
+      "chapter_number": 247,
+      "status": "inserted",
+      "chapter_title": "Intruders in Suna",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Intruders_in_Suna",
+      "error": null
+    },
+    {
+      "chapter_number": 248,
+      "status": "inserted",
+      "chapter_title": "Suna's Welcome Attack…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Suna%27s_Welcome_Attack%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 249,
+      "status": "inserted",
+      "chapter_title": "As Kazekage…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/As_Kazekage%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 250,
+      "status": "inserted",
+      "chapter_title": "New Team, First Mission!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/New_Team,_First_Mission!!",
+      "error": null
+    },
+    {
+      "chapter_number": 251,
+      "status": "inserted",
+      "chapter_title": "To Suna…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/To_Suna%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 252,
+      "status": "inserted",
+      "chapter_title": "Feelings, Running Wild…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Feelings,_Running_Wild%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 253,
+      "status": "inserted",
+      "chapter_title": "Reliable Reinforcements…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Reliable_Reinforcements%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 254,
+      "status": "inserted",
+      "chapter_title": "Brothers…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Brothers%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 255,
+      "status": "inserted",
+      "chapter_title": "Approaching…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Approaching%E2%80%A6!!_(chapter_255)",
+      "error": null
+    },
+    {
+      "chapter_number": 256,
+      "status": "inserted",
+      "chapter_title": "The People Blocking the Way!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_People_Blocking_the_Way!!",
+      "error": null
+    },
+    {
+      "chapter_number": 257,
+      "status": "inserted",
+      "chapter_title": "Kakashi's EXP",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi%27s_EXP",
+      "error": null
+    },
+    {
+      "chapter_number": 258,
+      "status": "inserted",
+      "chapter_title": "Guy vs. Kisame!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Guy_vs._Kisame!!",
+      "error": null
+    },
+    {
+      "chapter_number": 259,
+      "status": "inserted",
+      "chapter_title": "Itachi's Power…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Itachi%27s_Power%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 260,
+      "status": "inserted",
+      "chapter_title": "Kakashi vs. Itachi!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi_vs._Itachi!!",
+      "error": null
+    },
+    {
+      "chapter_number": 261,
+      "status": "inserted",
+      "chapter_title": "Jinchūriki…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Jinch%C5%ABriki%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 262,
+      "status": "inserted",
+      "chapter_title": "Raging Feelings…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Raging_Feelings%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 263,
+      "status": "inserted",
+      "chapter_title": "Getting Angry with a Loud Voice…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Getting_Angry_with_a_Loud_Voice%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 264,
+      "status": "inserted",
+      "chapter_title": "Sasori's Art…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sasori%27s_Art%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 265,
+      "status": "inserted",
+      "chapter_title": "Granny Chiyo and Sakura",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Granny_Chiyo_and_Sakura",
+      "error": null
+    },
+    {
+      "chapter_number": 266,
+      "status": "inserted",
+      "chapter_title": "Sasori, Revealed…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sasori,_Revealed%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 267,
+      "status": "inserted",
+      "chapter_title": "Intense Determination…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Intense_Determination%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 268,
+      "status": "inserted",
+      "chapter_title": "Puppet Master vs. Puppet Master!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Puppet_Master_vs._Puppet_Master!!",
+      "error": null
+    },
+    {
+      "chapter_number": 269,
+      "status": "inserted",
+      "chapter_title": "What I Can Do…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/What_I_Can_Do%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 270,
+      "status": "inserted",
+      "chapter_title": "Miscalculation…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Miscalculation%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 271,
+      "status": "inserted",
+      "chapter_title": "Unknown Power…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Unknown_Power%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 272,
+      "status": "inserted",
+      "chapter_title": "Granny Chiyo vs. Sasori…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Granny_Chiyo_vs._Sasori%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 273,
+      "status": "inserted",
+      "chapter_title": "The Last Battle!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Last_Battle!!",
+      "error": null
+    },
+    {
+      "chapter_number": 274,
+      "status": "inserted",
+      "chapter_title": "An Unfulfilled Dream",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/An_Unfulfilled_Dream",
+      "error": null
+    },
+    {
+      "chapter_number": 275,
+      "status": "inserted",
+      "chapter_title": "Reward…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Reward%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 276,
+      "status": "inserted",
+      "chapter_title": "The New Sharingan!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_New_Sharingan!!",
+      "error": null
+    },
+    {
+      "chapter_number": 277,
+      "status": "inserted",
+      "chapter_title": "The Ultimate Art!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Ultimate_Art!!_(chapter_277)",
+      "error": null
+    },
+    {
+      "chapter_number": 278,
+      "status": "inserted",
+      "chapter_title": "Gaara's Death",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Gaara%27s_Death",
+      "error": null
+    },
+    {
+      "chapter_number": 279,
+      "status": "inserted",
+      "chapter_title": "A Miraculous Power…!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/A_Miraculous_Power%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 280,
+      "status": "inserted",
+      "chapter_title": "Entrusted Feelings!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Entrusted_Feelings!!",
+      "error": null
+    },
+    {
+      "chapter_number": 281,
+      "status": "inserted",
+      "chapter_title": "The Road to Sasuke!!",
+      "manga_arc": "Kazekage Rescue Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Road_to_Sasuke!!",
+      "error": null
+    },
+    {
+      "chapter_number": 282,
+      "status": "inserted",
+      "chapter_title": "Team Kakashi Returns",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Team_Kakashi_Returns",
+      "error": null
+    },
+    {
+      "chapter_number": 283,
+      "status": "inserted",
+      "chapter_title": "The Search for Members!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Search_for_Members!!",
+      "error": null
+    },
+    {
+      "chapter_number": 284,
+      "status": "inserted",
+      "chapter_title": "The New Comrades…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_New_Comrades%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 285,
+      "status": "inserted",
+      "chapter_title": "The Person from Root!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Person_from_Root!!",
+      "error": null
+    },
+    {
+      "chapter_number": 286,
+      "status": "inserted",
+      "chapter_title": "Naruto and Sasuke and Sakura",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_Sasuke_and_Sakura",
+      "error": null
+    },
+    {
+      "chapter_number": 287,
+      "status": "inserted",
+      "chapter_title": "Untitled",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Untitled",
+      "error": null
+    },
+    {
+      "chapter_number": 288,
+      "status": "inserted",
+      "chapter_title": "Uncomprehending Feelings",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Uncomprehending_Feelings",
+      "error": null
+    },
+    {
+      "chapter_number": 289,
+      "status": "inserted",
+      "chapter_title": "The Spy from Akatsuki!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Spy_from_Akatsuki!!",
+      "error": null
+    },
+    {
+      "chapter_number": 290,
+      "status": "inserted",
+      "chapter_title": "The Betrayal's Conclusion!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Betrayal%27s_Conclusion!!",
+      "error": null
+    },
+    {
+      "chapter_number": 291,
+      "status": "inserted",
+      "chapter_title": "The Trigger of Rage!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Trigger_of_Rage!!",
+      "error": null
+    },
+    {
+      "chapter_number": 292,
+      "status": "inserted",
+      "chapter_title": "The Third Tail…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Third_Tail%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 293,
+      "status": "inserted",
+      "chapter_title": "Rampage…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Rampage%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 294,
+      "status": "inserted",
+      "chapter_title": "The Fourth Tail…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Fourth_Tail%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 295,
+      "status": "inserted",
+      "chapter_title": "Towards the Nine-Tails…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Towards_the_Nine-Tails%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 296,
+      "status": "inserted",
+      "chapter_title": "The Sad Conclusion",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Sad_Conclusion",
+      "error": null
+    },
+    {
+      "chapter_number": 297,
+      "status": "inserted",
+      "chapter_title": "Sai's Mission!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sai%27s_Mission!!",
+      "error": null
+    },
+    {
+      "chapter_number": 298,
+      "status": "inserted",
+      "chapter_title": "The Top-Secret Mission…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Top-Secret_Mission%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 299,
+      "status": "inserted",
+      "chapter_title": "The Source of Strength…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Source_of_Strength%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 300,
+      "status": "inserted",
+      "chapter_title": "Sai's Picture Book!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sai%27s_Picture_Book!!",
+      "error": null
+    },
+    {
+      "chapter_number": 301,
+      "status": "inserted",
+      "chapter_title": "Sai and Sasuke!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sai_and_Sasuke!!",
+      "error": null
+    },
+    {
+      "chapter_number": 302,
+      "status": "inserted",
+      "chapter_title": "Infiltration…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Infiltration%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 303,
+      "status": "inserted",
+      "chapter_title": "Sai's Betrayal!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sai%27s_Betrayal!!",
+      "error": null
+    },
+    {
+      "chapter_number": 304,
+      "status": "inserted",
+      "chapter_title": "The Other Side of the Betrayal!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Other_Side_of_the_Betrayal!!",
+      "error": null
+    },
+    {
+      "chapter_number": 305,
+      "status": "inserted",
+      "chapter_title": "The Bond with You",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Bond_with_You",
+      "error": null
+    },
+    {
+      "chapter_number": 306,
+      "status": "inserted",
+      "chapter_title": "The Time of Reunion…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Time_of_Reunion%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 307,
+      "status": "inserted",
+      "chapter_title": "Whim…!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Whim%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 308,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Power!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Power!!",
+      "error": null
+    },
+    {
+      "chapter_number": 309,
+      "status": "inserted",
+      "chapter_title": "A Conversation with the Nine-Tails!!",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/A_Conversation_with_the_Nine-Tails!!",
+      "error": null
+    },
+    {
+      "chapter_number": 310,
+      "status": "inserted",
+      "chapter_title": "Title",
+      "manga_arc": "Tenchi Bridge Reconnaissance Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Title",
+      "error": null
+    },
+    {
+      "chapter_number": 311,
+      "status": "inserted",
+      "chapter_title": "Nicknames",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Nicknames",
+      "error": null
+    },
+    {
+      "chapter_number": 312,
+      "status": "inserted",
+      "chapter_title": "The Creeping Threat!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Creeping_Threat!!",
+      "error": null
+    },
+    {
+      "chapter_number": 313,
+      "status": "inserted",
+      "chapter_title": "The New Twosome!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_New_Twosome!!",
+      "error": null
+    },
+    {
+      "chapter_number": 314,
+      "status": "inserted",
+      "chapter_title": "Akatsuki Invades…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Akatsuki_Invades%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 315,
+      "status": "inserted",
+      "chapter_title": "Special Training!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Special_Training!!",
+      "error": null
+    },
+    {
+      "chapter_number": 316,
+      "status": "inserted",
+      "chapter_title": "Training, Begin!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Training,_Begin!!",
+      "error": null
+    },
+    {
+      "chapter_number": 317,
+      "status": "inserted",
+      "chapter_title": "The Beginning of the Nightmare!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Beginning_of_the_Nightmare!!",
+      "error": null
+    },
+    {
+      "chapter_number": 318,
+      "status": "inserted",
+      "chapter_title": "Smooth Training",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Smooth_Training",
+      "error": null
+    },
+    {
+      "chapter_number": 319,
+      "status": "inserted",
+      "chapter_title": "Driving Forces",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Driving_Forces",
+      "error": null
+    },
+    {
+      "chapter_number": 320,
+      "status": "inserted",
+      "chapter_title": "Bounties…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Bounties%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 321,
+      "status": "inserted",
+      "chapter_title": "Smooth Talking…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Smooth_Talking%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 322,
+      "status": "inserted",
+      "chapter_title": "That Guy Can't be Killed",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/That_Guy_Can%27t_be_Killed",
+      "error": null
+    },
+    {
+      "chapter_number": 323,
+      "status": "inserted",
+      "chapter_title": "God's Judgment!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/God%27s_Judgment!!",
+      "error": null
+    },
+    {
+      "chapter_number": 324,
+      "status": "inserted",
+      "chapter_title": "Shikamaru's Analysis!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Shikamaru%27s_Analysis!!",
+      "error": null
+    },
+    {
+      "chapter_number": 325,
+      "status": "inserted",
+      "chapter_title": "There Won't be a Later…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/There_Won%27t_be_a_Later%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 326,
+      "status": "inserted",
+      "chapter_title": "Desired Pain…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Desired_Pain%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 327,
+      "status": "inserted",
+      "chapter_title": "Amidst Despair…",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Amidst_Despair%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 328,
+      "status": "inserted",
+      "chapter_title": "Team 10 (chapter)",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Team_10_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 329,
+      "status": "inserted",
+      "chapter_title": "That Goal…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/That_Goal%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 330,
+      "status": "inserted",
+      "chapter_title": "The Sad News…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Sad_News%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 331,
+      "status": "inserted",
+      "chapter_title": "Team 10 Sets Out…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Team_10_Sets_Out%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 332,
+      "status": "inserted",
+      "chapter_title": "Shikamaru's Battle!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Shikamaru%27s_Battle!!",
+      "error": null
+    },
+    {
+      "chapter_number": 333,
+      "status": "inserted",
+      "chapter_title": "Affinities…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Affinities%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 334,
+      "status": "inserted",
+      "chapter_title": "The Black Transformation…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Black_Transformation%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 335,
+      "status": "inserted",
+      "chapter_title": "The Horrible Secret!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Horrible_Secret!!",
+      "error": null
+    },
+    {
+      "chapter_number": 336,
+      "status": "inserted",
+      "chapter_title": "Turnabout, Predicament…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Turnabout,_Predicament%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 337,
+      "status": "inserted",
+      "chapter_title": "Shikamaru's Genius!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Shikamaru%27s_Genius!!",
+      "error": null
+    },
+    {
+      "chapter_number": 338,
+      "status": "inserted",
+      "chapter_title": "When you Curse Someone…",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/When_you_Curse_Someone%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 339,
+      "status": "inserted",
+      "chapter_title": "The New Technique…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_New_Technique%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 340,
+      "status": "inserted",
+      "chapter_title": "A Dangerous Bridge",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/A_Dangerous_Bridge",
+      "error": null
+    },
+    {
+      "chapter_number": 341,
+      "status": "inserted",
+      "chapter_title": "The Fruits of the Training…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Fruits_of_the_Training%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 342,
+      "status": "inserted",
+      "chapter_title": "The King…!!",
+      "manga_arc": "Akatsuki Suppression Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_King%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 343,
+      "status": "inserted",
+      "chapter_title": "Unfeeling…",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Unfeeling%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 344,
+      "status": "inserted",
+      "chapter_title": "The Snake and…",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Snake_and%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 345,
+      "status": "inserted",
+      "chapter_title": "The Ritual…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Ritual%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 346,
+      "status": "inserted",
+      "chapter_title": "The Secret of the New Technique!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Secret_of_the_New_Technique!!",
+      "error": null
+    },
+    {
+      "chapter_number": 347,
+      "status": "inserted",
+      "chapter_title": "Detour!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Detour!!",
+      "error": null
+    },
+    {
+      "chapter_number": 348,
+      "status": "inserted",
+      "chapter_title": "The Next Person!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Next_Person!!",
+      "error": null
+    },
+    {
+      "chapter_number": 349,
+      "status": "inserted",
+      "chapter_title": "At the Northern Hideout",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/At_the_Northern_Hideout",
+      "error": null
+    },
+    {
+      "chapter_number": 350,
+      "status": "inserted",
+      "chapter_title": "Shocking News…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Shocking_News%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 351,
+      "status": "inserted",
+      "chapter_title": "A Conversation Between Men!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/A_Conversation_Between_Men!!",
+      "error": null
+    },
+    {
+      "chapter_number": 352,
+      "status": "inserted",
+      "chapter_title": "The Goal is…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Goal_is%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 353,
+      "status": "inserted",
+      "chapter_title": "Akatsuki Gathers…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Akatsuki_Gathers%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 354,
+      "status": "inserted",
+      "chapter_title": "The People Starting to Move",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_People_Starting_to_Move",
+      "error": null
+    },
+    {
+      "chapter_number": 355,
+      "status": "inserted",
+      "chapter_title": "Where to…?!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Where_to%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 356,
+      "status": "inserted",
+      "chapter_title": "Collision…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Collision%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 357,
+      "status": "inserted",
+      "chapter_title": "Deidara vs. Sasuke!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Deidara_vs._Sasuke!!",
+      "error": null
+    },
+    {
+      "chapter_number": 358,
+      "status": "inserted",
+      "chapter_title": "C2 Driving against the Wall!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/C2_Driving_against_the_Wall!!",
+      "error": null
+    },
+    {
+      "chapter_number": 359,
+      "status": "inserted",
+      "chapter_title": "Those Eyes…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Those_Eyes%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 360,
+      "status": "inserted",
+      "chapter_title": "C4 Garuda (chapter)",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/C4_Garuda_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 361,
+      "status": "inserted",
+      "chapter_title": "Weakness…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Weakness%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 362,
+      "status": "inserted",
+      "chapter_title": "The Ultimate Art!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Ultimate_Art!!_(chapter_362)",
+      "error": null
+    },
+    {
+      "chapter_number": 363,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Death…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Death%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 364,
+      "status": "inserted",
+      "chapter_title": "The Target is…!!",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/The_Target_is%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 365,
+      "status": "inserted",
+      "chapter_title": "Pursue Itachi",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Pursue_Itachi",
+      "error": null
+    },
+    {
+      "chapter_number": 366,
+      "status": "inserted",
+      "chapter_title": "Brothers (chapter)",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Brothers_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 367,
+      "status": "inserted",
+      "chapter_title": "Itachi and Sasuke",
+      "manga_arc": "Itachi Pursuit Mission",
+      "source_url": "https://naruto.fandom.com/wiki/Itachi_and_Sasuke",
+      "error": null
+    },
+    {
+      "chapter_number": 368,
+      "status": "inserted",
+      "chapter_title": "Intelligence Gathering",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Intelligence_Gathering",
+      "error": null
+    },
+    {
+      "chapter_number": 369,
+      "status": "inserted",
+      "chapter_title": "Regarding Pain",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Regarding_Pain",
+      "error": null
+    },
+    {
+      "chapter_number": 370,
+      "status": "inserted",
+      "chapter_title": "Unease",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Unease",
+      "error": null
+    },
+    {
+      "chapter_number": 371,
+      "status": "inserted",
+      "chapter_title": "Old Friends…!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Old_Friends%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 372,
+      "status": "inserted",
+      "chapter_title": "The Crying Country!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/The_Crying_Country!!",
+      "error": null
+    },
+    {
+      "chapter_number": 373,
+      "status": "inserted",
+      "chapter_title": "The Era of Teacher and Students…!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/The_Era_of_Teacher_and_Students%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 374,
+      "status": "inserted",
+      "chapter_title": "Growth into Godhood!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Growth_into_Godhood!!",
+      "error": null
+    },
+    {
+      "chapter_number": 375,
+      "status": "inserted",
+      "chapter_title": "The Two Great Sages…!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/The_Two_Great_Sages%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 376,
+      "status": "inserted",
+      "chapter_title": "The Child of the Prophecy!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/The_Child_of_the_Prophecy!!",
+      "error": null
+    },
+    {
+      "chapter_number": 377,
+      "status": "inserted",
+      "chapter_title": "Sage Mode!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Sage_Mode!!",
+      "error": null
+    },
+    {
+      "chapter_number": 378,
+      "status": "inserted",
+      "chapter_title": "One-on-One…!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/One-on-One%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 379,
+      "status": "inserted",
+      "chapter_title": "Jiraiya's Choice!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Jiraiya%27s_Choice!!",
+      "error": null
+    },
+    {
+      "chapter_number": 380,
+      "status": "inserted",
+      "chapter_title": "Those Faces…!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/Those_Faces%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 381,
+      "status": "inserted",
+      "chapter_title": "The True Identity…!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/The_True_Identity%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 382,
+      "status": "inserted",
+      "chapter_title": "The Real Choice!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/The_Real_Choice!!",
+      "error": null
+    },
+    {
+      "chapter_number": 383,
+      "status": "inserted",
+      "chapter_title": "The Final Chapter, and…!!",
+      "manga_arc": "Tale of Jiraiya the Gallant",
+      "source_url": "https://naruto.fandom.com/wiki/The_Final_Chapter,_and%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 384,
+      "status": "inserted",
+      "chapter_title": "Two Paths…",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Two_Paths%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 385,
+      "status": "inserted",
+      "chapter_title": "The Secret of the Mangekyō…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Secret_of_the_Mangeky%C5%8D%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 386,
+      "status": "inserted",
+      "chapter_title": "New Light…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/New_Light%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 387,
+      "status": "inserted",
+      "chapter_title": "Reality…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Reality%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 388,
+      "status": "inserted",
+      "chapter_title": "The Difference in Strength…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Difference_in_Strength%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 389,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Flow!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Flow!",
+      "error": null
+    },
+    {
+      "chapter_number": 390,
+      "status": "inserted",
+      "chapter_title": "The Final Technique…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Final_Technique%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 391,
+      "status": "inserted",
+      "chapter_title": "Together with the Thunder…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Together_with_the_Thunder%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 392,
+      "status": "inserted",
+      "chapter_title": "Susanoo…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Susanoo%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 393,
+      "status": "inserted",
+      "chapter_title": "My Eyes…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/My_Eyes%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 394,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Victory",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Victory",
+      "error": null
+    },
+    {
+      "chapter_number": 395,
+      "status": "inserted",
+      "chapter_title": "The Enigma that is Tobi",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Enigma_that_is_Tobi",
+      "error": null
+    },
+    {
+      "chapter_number": 396,
+      "status": "inserted",
+      "chapter_title": "Self-Introduction",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Self-Introduction",
+      "error": null
+    },
+    {
+      "chapter_number": 397,
+      "status": "inserted",
+      "chapter_title": "The One Who Knows the Truth",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_One_Who_Knows_the_Truth",
+      "error": null
+    },
+    {
+      "chapter_number": 398,
+      "status": "inserted",
+      "chapter_title": "The Origin of Konoha",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Origin_of_Konoha",
+      "error": null
+    },
+    {
+      "chapter_number": 399,
+      "status": "inserted",
+      "chapter_title": "The Beginning of Everything!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Beginning_of_Everything!!",
+      "error": null
+    },
+    {
+      "chapter_number": 400,
+      "status": "inserted",
+      "chapter_title": "Within Hell",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Within_Hell",
+      "error": null
+    },
+    {
+      "chapter_number": 401,
+      "status": "inserted",
+      "chapter_title": "Illusions",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Illusions",
+      "error": null
+    },
+    {
+      "chapter_number": 402,
+      "status": "inserted",
+      "chapter_title": "Final Words",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Final_Words",
+      "error": null
+    },
+    {
+      "chapter_number": 403,
+      "status": "inserted",
+      "chapter_title": "Tears",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Tears",
+      "error": null
+    },
+    {
+      "chapter_number": 404,
+      "status": "inserted",
+      "chapter_title": "Taka and Akatsuki",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Taka_and_Akatsuki",
+      "error": null
+    },
+    {
+      "chapter_number": 405,
+      "status": "inserted",
+      "chapter_title": "What is Left Behind",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/What_is_Left_Behind",
+      "error": null
+    },
+    {
+      "chapter_number": 406,
+      "status": "inserted",
+      "chapter_title": "The Key to the Future",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Key_to_the_Future",
+      "error": null
+    },
+    {
+      "chapter_number": 407,
+      "status": "inserted",
+      "chapter_title": "Addressed to Naruto",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Addressed_to_Naruto",
+      "error": null
+    },
+    {
+      "chapter_number": 408,
+      "status": "inserted",
+      "chapter_title": "Fukasaku's Proposal",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Fukasaku%27s_Proposal",
+      "error": null
+    },
+    {
+      "chapter_number": 409,
+      "status": "inserted",
+      "chapter_title": "Handing Down Senjutsu…!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Handing_Down_Senjutsu%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 410,
+      "status": "inserted",
+      "chapter_title": "The Battle at the Valley of Clouds and Lightning!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Battle_at_the_Valley_of_Clouds_and_Lightning!!",
+      "error": null
+    },
+    {
+      "chapter_number": 411,
+      "status": "inserted",
+      "chapter_title": "The Eight-Tails vs. Sasuke!!",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/The_Eight-Tails_vs._Sasuke!!",
+      "error": null
+    },
+    {
+      "chapter_number": 412,
+      "status": "inserted",
+      "chapter_title": "Unprecedented Shivers",
+      "manga_arc": "Fated Battle Between Brothers",
+      "source_url": "https://naruto.fandom.com/wiki/Unprecedented_Shivers",
+      "error": null
+    },
+    {
+      "chapter_number": 413,
+      "status": "inserted",
+      "chapter_title": "Crumbling",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Crumbling",
+      "error": null
+    },
+    {
+      "chapter_number": 414,
+      "status": "inserted",
+      "chapter_title": "Raging Ox",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Raging_Ox",
+      "error": null
+    },
+    {
+      "chapter_number": 415,
+      "status": "inserted",
+      "chapter_title": "New Powers!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/New_Powers!!",
+      "error": null
+    },
+    {
+      "chapter_number": 416,
+      "status": "inserted",
+      "chapter_title": "The Tale of the Utterly Gutsy Shinobi (chapter)",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Tale_of_the_Utterly_Gutsy_Shinobi_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 417,
+      "status": "inserted",
+      "chapter_title": "The Raikage, Moving!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Raikage,_Moving!!",
+      "error": null
+    },
+    {
+      "chapter_number": 418,
+      "status": "inserted",
+      "chapter_title": "Sage Naruto!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sage_Naruto!!",
+      "error": null
+    },
+    {
+      "chapter_number": 419,
+      "status": "inserted",
+      "chapter_title": "Invasion!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Invasion!!",
+      "error": null
+    },
+    {
+      "chapter_number": 420,
+      "status": "inserted",
+      "chapter_title": "The Battlefield, Konoha!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Battlefield,_Konoha!!",
+      "error": null
+    },
+    {
+      "chapter_number": 421,
+      "status": "inserted",
+      "chapter_title": "Call Naruto Home!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Call_Naruto_Home!!",
+      "error": null
+    },
+    {
+      "chapter_number": 422,
+      "status": "inserted",
+      "chapter_title": "Kakashi vs. Pain!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi_vs._Pain!!",
+      "error": null
+    },
+    {
+      "chapter_number": 423,
+      "status": "inserted",
+      "chapter_title": "Deva Path's Abilities!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Deva_Path%27s_Abilities!!",
+      "error": null
+    },
+    {
+      "chapter_number": 424,
+      "status": "inserted",
+      "chapter_title": "Decision!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Decision!!",
+      "error": null
+    },
+    {
+      "chapter_number": 425,
+      "status": "inserted",
+      "chapter_title": "Kakashi Hatake (chapter)",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi_Hatake_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 426,
+      "status": "inserted",
+      "chapter_title": "Naruto and Konoha!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_Konoha!!",
+      "error": null
+    },
+    {
+      "chapter_number": 427,
+      "status": "inserted",
+      "chapter_title": "Reunion",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Reunion",
+      "error": null
+    },
+    {
+      "chapter_number": 428,
+      "status": "inserted",
+      "chapter_title": "Discourse!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Discourse!!",
+      "error": null
+    },
+    {
+      "chapter_number": 429,
+      "status": "inserted",
+      "chapter_title": "\"Know Pain\"",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/%22Know_Pain%22",
+      "error": null
+    },
+    {
+      "chapter_number": 430,
+      "status": "inserted",
+      "chapter_title": "Naruto Returns!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_Returns!!",
+      "error": null
+    },
+    {
+      "chapter_number": 431,
+      "status": "inserted",
+      "chapter_title": "Naruto's Great Eruption!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto%27s_Great_Eruption!!",
+      "error": null
+    },
+    {
+      "chapter_number": 432,
+      "status": "inserted",
+      "chapter_title": "The Rasenshuriken Once Again!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Rasenshuriken_Once_Again!!",
+      "error": null
+    },
+    {
+      "chapter_number": 433,
+      "status": "inserted",
+      "chapter_title": "Senjutsu Failed…!?",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Senjutsu_Failed%E2%80%A6!%3F",
+      "error": null
+    },
+    {
+      "chapter_number": 434,
+      "status": "inserted",
+      "chapter_title": "Naruto vs. Deva Path!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_vs._Deva_Path!!",
+      "error": null
+    },
+    {
+      "chapter_number": 435,
+      "status": "inserted",
+      "chapter_title": "Banshō Ten'in (chapter)",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Bansh%C5%8D_Ten%27in_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 436,
+      "status": "inserted",
+      "chapter_title": "Peace",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Peace",
+      "error": null
+    },
+    {
+      "chapter_number": 437,
+      "status": "inserted",
+      "chapter_title": "Confession",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Confession",
+      "error": null
+    },
+    {
+      "chapter_number": 438,
+      "status": "inserted",
+      "chapter_title": "The Seal Destroyed!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Seal_Destroyed!!",
+      "error": null
+    },
+    {
+      "chapter_number": 439,
+      "status": "inserted",
+      "chapter_title": "Chibaku Tensei (chapter)",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Chibaku_Tensei_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 440,
+      "status": "inserted",
+      "chapter_title": "A Conversation with the Fourth!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Conversation_with_the_Fourth!!",
+      "error": null
+    },
+    {
+      "chapter_number": 441,
+      "status": "inserted",
+      "chapter_title": "Rasenshuriken vs. Shinra Tensei!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Rasenshuriken_vs._Shinra_Tensei!!",
+      "error": null
+    },
+    {
+      "chapter_number": 442,
+      "status": "inserted",
+      "chapter_title": "The Final Gamble!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Final_Gamble!!",
+      "error": null
+    },
+    {
+      "chapter_number": 443,
+      "status": "inserted",
+      "chapter_title": "Meeting!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Meeting!!",
+      "error": null
+    },
+    {
+      "chapter_number": 444,
+      "status": "inserted",
+      "chapter_title": "The Answer",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Answer",
+      "error": null
+    },
+    {
+      "chapter_number": 445,
+      "status": "inserted",
+      "chapter_title": "Top of the World",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Top_of_the_World",
+      "error": null
+    },
+    {
+      "chapter_number": 446,
+      "status": "inserted",
+      "chapter_title": "I Just Want to Protect Those Two",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/I_Just_Want_to_Protect_Those_Two",
+      "error": null
+    },
+    {
+      "chapter_number": 447,
+      "status": "inserted",
+      "chapter_title": "Believing",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Believing",
+      "error": null
+    },
+    {
+      "chapter_number": 448,
+      "status": "inserted",
+      "chapter_title": "Memento…!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Memento%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 449,
+      "status": "inserted",
+      "chapter_title": "Flowers of Hope",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Flowers_of_Hope",
+      "error": null
+    },
+    {
+      "chapter_number": 450,
+      "status": "inserted",
+      "chapter_title": "The Joyous Village!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Joyous_Village!!",
+      "error": null
+    },
+    {
+      "chapter_number": 451,
+      "status": "inserted",
+      "chapter_title": "Dealing with Sasuke!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Dealing_with_Sasuke!!",
+      "error": null
+    },
+    {
+      "chapter_number": 452,
+      "status": "inserted",
+      "chapter_title": "Under Pressure from Danzō!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Under_Pressure_from_Danz%C5%8D!!",
+      "error": null
+    },
+    {
+      "chapter_number": 453,
+      "status": "inserted",
+      "chapter_title": "The Eve of the Five Kage Summit…!!",
+      "manga_arc": "Pain's Assault (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Eve_of_the_Five_Kage_Summit%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 454,
+      "status": "inserted",
+      "chapter_title": "Enter the Five Kage…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Enter_the_Five_Kage%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 455,
+      "status": "inserted",
+      "chapter_title": "Links…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Links%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 456,
+      "status": "inserted",
+      "chapter_title": "Naruto Departs…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_Departs%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 457,
+      "status": "inserted",
+      "chapter_title": "The Five Kage Summit, Commences…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Five_Kage_Summit,_Commences%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 458,
+      "status": "inserted",
+      "chapter_title": "The Five Kage's Great Verbal Dispute…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Five_Kage%27s_Great_Verbal_Dispute%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 459,
+      "status": "inserted",
+      "chapter_title": "Sakura's Decision!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sakura%27s_Decision!!_(chapter_459)",
+      "error": null
+    },
+    {
+      "chapter_number": 460,
+      "status": "inserted",
+      "chapter_title": "The Net Encircling Sasuke…!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Net_Encircling_Sasuke%E2%80%A6!",
+      "error": null
+    },
+    {
+      "chapter_number": 461,
+      "status": "inserted",
+      "chapter_title": "Kumogakure vs. Taka!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Kumogakure_vs._Taka!!",
+      "error": null
+    },
+    {
+      "chapter_number": 462,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Ninja Way…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Ninja_Way%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 463,
+      "status": "inserted",
+      "chapter_title": "Sasuke vs. the Raikage!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke_vs._the_Raikage!!",
+      "error": null
+    },
+    {
+      "chapter_number": 464,
+      "status": "inserted",
+      "chapter_title": "The Power of Darkness…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Power_of_Darkness%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 465,
+      "status": "inserted",
+      "chapter_title": "Attack of the Conference Room!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Attack_of_the_Conference_Room!",
+      "error": null
+    },
+    {
+      "chapter_number": 466,
+      "status": "inserted",
+      "chapter_title": "The Great Battle of the Sealed Room!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Great_Battle_of_the_Sealed_Room!!",
+      "error": null
+    },
+    {
+      "chapter_number": 467,
+      "status": "inserted",
+      "chapter_title": "Declaration of War",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Declaration_of_War",
+      "error": null
+    },
+    {
+      "chapter_number": 468,
+      "status": "inserted",
+      "chapter_title": "The Eight-Tails and the Nine-Tails",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Eight-Tails_and_the_Nine-Tails",
+      "error": null
+    },
+    {
+      "chapter_number": 469,
+      "status": "inserted",
+      "chapter_title": "Sakura's Confession!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sakura%27s_Confession!!",
+      "error": null
+    },
+    {
+      "chapter_number": 470,
+      "status": "inserted",
+      "chapter_title": "Killer B vs. Kisame!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Killer_B_vs._Kisame!!",
+      "error": null
+    },
+    {
+      "chapter_number": 471,
+      "status": "inserted",
+      "chapter_title": "Eight-Tails, Version 2!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Eight-Tails,_Version_2!!",
+      "error": null
+    },
+    {
+      "chapter_number": 472,
+      "status": "inserted",
+      "chapter_title": "Battle of the Death inside the Water Prison!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Battle_of_the_Death_inside_the_Water_Prison!!",
+      "error": null
+    },
+    {
+      "chapter_number": 473,
+      "status": "inserted",
+      "chapter_title": "Brother",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Brother",
+      "error": null
+    },
+    {
+      "chapter_number": 474,
+      "status": "inserted",
+      "chapter_title": "His Resolve as the Hokage…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/His_Resolve_as_the_Hokage%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 475,
+      "status": "inserted",
+      "chapter_title": "Madara Shows His True Worth!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Madara_Shows_His_True_Worth!!",
+      "error": null
+    },
+    {
+      "chapter_number": 476,
+      "status": "inserted",
+      "chapter_title": "Sasuke vs. Danzō…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke_vs._Danz%C5%8D%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 477,
+      "status": "inserted",
+      "chapter_title": "Don't Talk about Itachi",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Don%27t_Talk_about_Itachi",
+      "error": null
+    },
+    {
+      "chapter_number": 478,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Susanoo…!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Susanoo%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 479,
+      "status": "inserted",
+      "chapter_title": "Izanagi (chapter)",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Izanagi_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 480,
+      "status": "inserted",
+      "chapter_title": "Sacrifice (Naruto chapter)",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sacrifice_(Naruto_chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 481,
+      "status": "inserted",
+      "chapter_title": "Danzō Dies!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Danz%C5%8D_Dies!!",
+      "error": null
+    },
+    {
+      "chapter_number": 482,
+      "status": "inserted",
+      "chapter_title": "One More Time…",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/One_More_Time%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 483,
+      "status": "inserted",
+      "chapter_title": "Teacher and Student Once More!!",
+      "manga_arc": "Five Kage Summit (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Teacher_and_Student_Once_More!!",
+      "error": null
+    },
+    {
+      "chapter_number": 484,
+      "status": "inserted",
+      "chapter_title": "Everyone of Team 7!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Everyone_of_Team_7!!",
+      "error": null
+    },
+    {
+      "chapter_number": 485,
+      "status": "inserted",
+      "chapter_title": "Near… Far…",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Near%E2%80%A6_Far%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 486,
+      "status": "inserted",
+      "chapter_title": "Fists",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Fists",
+      "error": null
+    },
+    {
+      "chapter_number": 487,
+      "status": "inserted",
+      "chapter_title": "The Beginning of the Battle…!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Beginning_of_the_Battle%E2%80%A6!!_(chapter_487)",
+      "error": null
+    },
+    {
+      "chapter_number": 488,
+      "status": "inserted",
+      "chapter_title": "Each to Their Respective Villages",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Each_to_Their_Respective_Villages",
+      "error": null
+    },
+    {
+      "chapter_number": 489,
+      "status": "inserted",
+      "chapter_title": "Facing the Shinobi World War…!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Facing_the_Shinobi_World_War%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 490,
+      "status": "inserted",
+      "chapter_title": "The Truth about the Nine-Tails!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Truth_about_the_Nine-Tails!!",
+      "error": null
+    },
+    {
+      "chapter_number": 491,
+      "status": "inserted",
+      "chapter_title": "Jinchūriki Confinement!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Jinch%C5%ABriki_Confinement!!",
+      "error": null
+    },
+    {
+      "chapter_number": 492,
+      "status": "inserted",
+      "chapter_title": "Greetings",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Greetings",
+      "error": null
+    },
+    {
+      "chapter_number": 493,
+      "status": "inserted",
+      "chapter_title": "Dark Naruto!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Dark_Naruto!!",
+      "error": null
+    },
+    {
+      "chapter_number": 494,
+      "status": "inserted",
+      "chapter_title": "Killer B and Motoi",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Killer_B_and_Motoi",
+      "error": null
+    },
+    {
+      "chapter_number": 495,
+      "status": "inserted",
+      "chapter_title": "Crushing Dark Naruto!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Crushing_Dark_Naruto!!",
+      "error": null
+    },
+    {
+      "chapter_number": 496,
+      "status": "inserted",
+      "chapter_title": "Meeting the Nine-Tails Again!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Meeting_the_Nine-Tails_Again!!",
+      "error": null
+    },
+    {
+      "chapter_number": 497,
+      "status": "inserted",
+      "chapter_title": "Nine-Tails vs. Naruto!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Nine-Tails_vs._Naruto!!",
+      "error": null
+    },
+    {
+      "chapter_number": 498,
+      "status": "inserted",
+      "chapter_title": "Mum's Red Hair",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Mum%27s_Red_Hair",
+      "error": null
+    },
+    {
+      "chapter_number": 499,
+      "status": "inserted",
+      "chapter_title": "A New Seal!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/A_New_Seal!!",
+      "error": null
+    },
+    {
+      "chapter_number": 500,
+      "status": "inserted",
+      "chapter_title": "Naruto's Birth",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto%27s_Birth",
+      "error": null
+    },
+    {
+      "chapter_number": 501,
+      "status": "inserted",
+      "chapter_title": "The Nine-Tails Attack!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Nine-Tails_Attack!!",
+      "error": null
+    },
+    {
+      "chapter_number": 502,
+      "status": "inserted",
+      "chapter_title": "The Fourth's Battle to the Death!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Fourth%27s_Battle_to_the_Death!!",
+      "error": null
+    },
+    {
+      "chapter_number": 503,
+      "status": "inserted",
+      "chapter_title": "Minato's Dead Demon Consuming Seal!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Minato%27s_Dead_Demon_Consuming_Seal!!",
+      "error": null
+    },
+    {
+      "chapter_number": 504,
+      "status": "inserted",
+      "chapter_title": "Thank You",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Thank_You",
+      "error": null
+    },
+    {
+      "chapter_number": 505,
+      "status": "inserted",
+      "chapter_title": "The Nine-Tails' Chakra, Freed!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Nine-Tails%27_Chakra,_Freed!!",
+      "error": null
+    },
+    {
+      "chapter_number": 506,
+      "status": "inserted",
+      "chapter_title": "Guy vs. Kisame!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Guy_vs._Kisame!!_(chapter_506)",
+      "error": null
+    },
+    {
+      "chapter_number": 507,
+      "status": "inserted",
+      "chapter_title": "An Existence of Falsehoods…!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/An_Existence_of_Falsehoods%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 508,
+      "status": "inserted",
+      "chapter_title": "The Way a Shinobi Dies",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Way_a_Shinobi_Dies",
+      "error": null
+    },
+    {
+      "chapter_number": 509,
+      "status": "inserted",
+      "chapter_title": "A Suspension Bridge to Peace",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/A_Suspension_Bridge_to_Peace",
+      "error": null
+    },
+    {
+      "chapter_number": 510,
+      "status": "inserted",
+      "chapter_title": "An Unexpected Kinjutsu!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/An_Unexpected_Kinjutsu!!",
+      "error": null
+    },
+    {
+      "chapter_number": 511,
+      "status": "inserted",
+      "chapter_title": "We'll All Go Home",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/We%27ll_All_Go_Home",
+      "error": null
+    },
+    {
+      "chapter_number": 512,
+      "status": "inserted",
+      "chapter_title": "The Truth about Zetsu!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Truth_about_Zetsu!!",
+      "error": null
+    },
+    {
+      "chapter_number": 513,
+      "status": "inserted",
+      "chapter_title": "Kabuto vs. the Tsuchikage!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Kabuto_vs._the_Tsuchikage!!",
+      "error": null
+    },
+    {
+      "chapter_number": 514,
+      "status": "inserted",
+      "chapter_title": "Kabuto's Scheme!!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/Kabuto%27s_Scheme!!",
+      "error": null
+    },
+    {
+      "chapter_number": 515,
+      "status": "inserted",
+      "chapter_title": "The Great War Breaks Out!",
+      "manga_arc": "Fourth Shinobi World War: Countdown",
+      "source_url": "https://naruto.fandom.com/wiki/The_Great_War_Breaks_Out!",
+      "error": null
+    },
+    {
+      "chapter_number": 516,
+      "status": "inserted",
+      "chapter_title": "Gaara's Speech",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Gaara%27s_Speech",
+      "error": null
+    },
+    {
+      "chapter_number": 517,
+      "status": "inserted",
+      "chapter_title": "Omoi's 'War'!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Omoi%27s_%27War%27!!",
+      "error": null
+    },
+    {
+      "chapter_number": 518,
+      "status": "inserted",
+      "chapter_title": "The Offence/Defence of the Surprise Attack Division!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Offence/Defence_of_the_Surprise_Attack_Division!!",
+      "error": null
+    },
+    {
+      "chapter_number": 519,
+      "status": "inserted",
+      "chapter_title": "The Tailed Beast Ball",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Tailed_Beast_Ball",
+      "error": null
+    },
+    {
+      "chapter_number": 520,
+      "status": "inserted",
+      "chapter_title": "The Secret of the Impure World Reincarnation",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Secret_of_the_Impure_World_Reincarnation",
+      "error": null
+    },
+    {
+      "chapter_number": 521,
+      "status": "inserted",
+      "chapter_title": "Great Regiment, the Battle Begins!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Great_Regiment,_the_Battle_Begins!",
+      "error": null
+    },
+    {
+      "chapter_number": 522,
+      "status": "inserted",
+      "chapter_title": "Because I'm Already Dead",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Because_I%27m_Already_Dead",
+      "error": null
+    },
+    {
+      "chapter_number": 523,
+      "status": "inserted",
+      "chapter_title": "The Legendary Seven Shinobi Swordsmen!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Legendary_Seven_Shinobi_Swordsmen!!",
+      "error": null
+    },
+    {
+      "chapter_number": 524,
+      "status": "inserted",
+      "chapter_title": "Thing You Should Protect",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Thing_You_Should_Protect",
+      "error": null
+    },
+    {
+      "chapter_number": 525,
+      "status": "inserted",
+      "chapter_title": "Kage, Revived!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Kage,_Revived!!",
+      "error": null
+    },
+    {
+      "chapter_number": 526,
+      "status": "inserted",
+      "chapter_title": "Fierce Battle! The Darui Division!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Fierce_Battle!_The_Darui_Division!!",
+      "error": null
+    },
+    {
+      "chapter_number": 527,
+      "status": "inserted",
+      "chapter_title": "No-Good Words",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/No-Good_Words",
+      "error": null
+    },
+    {
+      "chapter_number": 528,
+      "status": "inserted",
+      "chapter_title": "Overcoming \"Dull\"",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Overcoming_%22Dull%22",
+      "error": null
+    },
+    {
+      "chapter_number": 529,
+      "status": "inserted",
+      "chapter_title": "Golden Bonds",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Golden_Bonds",
+      "error": null
+    },
+    {
+      "chapter_number": 530,
+      "status": "inserted",
+      "chapter_title": "Chōji's Determination",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Ch%C5%8Dji%27s_Determination",
+      "error": null
+    },
+    {
+      "chapter_number": 531,
+      "status": "inserted",
+      "chapter_title": "Reunited, Team Asuma!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Reunited,_Team_Asuma!",
+      "error": null
+    },
+    {
+      "chapter_number": 532,
+      "status": "inserted",
+      "chapter_title": "Mifune vs. Hanzō, the Conclusion!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Mifune_vs._Hanz%C5%8D,_the_Conclusion!!",
+      "error": null
+    },
+    {
+      "chapter_number": 533,
+      "status": "inserted",
+      "chapter_title": "The Time of Vows",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Time_of_Vows",
+      "error": null
+    },
+    {
+      "chapter_number": 534,
+      "status": "inserted",
+      "chapter_title": "Farewell Ino–Shika–Chō!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Farewell_Ino%E2%80%93Shika%E2%80%93Ch%C5%8D!!",
+      "error": null
+    },
+    {
+      "chapter_number": 535,
+      "status": "inserted",
+      "chapter_title": "Iruka's Persuasion",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Iruka%27s_Persuasion",
+      "error": null
+    },
+    {
+      "chapter_number": 536,
+      "status": "inserted",
+      "chapter_title": "Naruto towards the Battlefield…!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_towards_the_Battlefield%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 537,
+      "status": "inserted",
+      "chapter_title": "Towards the Night…!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Towards_the_Night%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 538,
+      "status": "inserted",
+      "chapter_title": "Cross-Examination",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Cross-Examination",
+      "error": null
+    },
+    {
+      "chapter_number": 539,
+      "status": "inserted",
+      "chapter_title": "Night of Blood…!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Night_of_Blood%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 540,
+      "status": "inserted",
+      "chapter_title": "Madara's Strategy!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Madara%27s_Strategy!!",
+      "error": null
+    },
+    {
+      "chapter_number": 541,
+      "status": "inserted",
+      "chapter_title": "The Raikage vs. Naruto?!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Raikage_vs._Naruto%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 542,
+      "status": "inserted",
+      "chapter_title": "The Secret Story of the Strongest Tag Team!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Secret_Story_of_the_Strongest_Tag_Team!!",
+      "error": null
+    },
+    {
+      "chapter_number": 543,
+      "status": "inserted",
+      "chapter_title": "Words not Cast Aside",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Words_not_Cast_Aside",
+      "error": null
+    },
+    {
+      "chapter_number": 544,
+      "status": "inserted",
+      "chapter_title": "Two Suns!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Two_Suns!!",
+      "error": null
+    },
+    {
+      "chapter_number": 545,
+      "status": "inserted",
+      "chapter_title": "An Immortal Army!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/An_Immortal_Army!!",
+      "error": null
+    },
+    {
+      "chapter_number": 546,
+      "status": "inserted",
+      "chapter_title": "Confrontation of the Old and New Kage!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Confrontation_of_the_Old_and_New_Kage!!",
+      "error": null
+    },
+    {
+      "chapter_number": 547,
+      "status": "inserted",
+      "chapter_title": "Things that Have Value!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Things_that_Have_Value!!",
+      "error": null
+    },
+    {
+      "chapter_number": 548,
+      "status": "inserted",
+      "chapter_title": "Naruto vs. Itachi!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_vs._Itachi!!",
+      "error": null
+    },
+    {
+      "chapter_number": 549,
+      "status": "inserted",
+      "chapter_title": "Itachi's Question!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Itachi%27s_Question!!",
+      "error": null
+    },
+    {
+      "chapter_number": 550,
+      "status": "inserted",
+      "chapter_title": "Kotoamatsukami (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Kotoamatsukami_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 551,
+      "status": "inserted",
+      "chapter_title": "Stop Nagato!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Stop_Nagato!!",
+      "error": null
+    },
+    {
+      "chapter_number": 552,
+      "status": "inserted",
+      "chapter_title": "The Requirements for Hokage…!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Requirements_for_Hokage%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 553,
+      "status": "inserted",
+      "chapter_title": "Arrival at the Main Battlefield!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Arrival_at_the_Main_Battlefield!!",
+      "error": null
+    },
+    {
+      "chapter_number": 554,
+      "status": "inserted",
+      "chapter_title": "The Limit of the Rasenshuriken…!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/The_Limit_of_the_Rasenshuriken%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 555,
+      "status": "inserted",
+      "chapter_title": "Contradiction",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Contradiction",
+      "error": null
+    },
+    {
+      "chapter_number": 556,
+      "status": "inserted",
+      "chapter_title": "Gaara vs. the Mizukage!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Gaara_vs._the_Mizukage!!",
+      "error": null
+    },
+    {
+      "chapter_number": 557,
+      "status": "inserted",
+      "chapter_title": "Steaming Danger Tyranny!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Steaming_Danger_Tyranny!!",
+      "error": null
+    },
+    {
+      "chapter_number": 558,
+      "status": "inserted",
+      "chapter_title": "Kabuto's Trump Card…!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Kabuto%27s_Trump_Card%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 559,
+      "status": "inserted",
+      "chapter_title": "Reinforcements Arrive…!!",
+      "manga_arc": "Fourth Shinobi World War: Confrontation",
+      "source_url": "https://naruto.fandom.com/wiki/Reinforcements_Arrive%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 560,
+      "status": "inserted",
+      "chapter_title": "Madara Uchiha (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Madara_Uchiha_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 561,
+      "status": "inserted",
+      "chapter_title": "The Power of That Name",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Power_of_That_Name",
+      "error": null
+    },
+    {
+      "chapter_number": 562,
+      "status": "inserted",
+      "chapter_title": "The Place Where We Pick Ourselves Up",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Place_Where_We_Pick_Ourselves_Up",
+      "error": null
+    },
+    {
+      "chapter_number": 563,
+      "status": "inserted",
+      "chapter_title": "The Five Kage Gathered…!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Five_Kage_Gathered%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 564,
+      "status": "inserted",
+      "chapter_title": "The Man Who isn't Anyone",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Man_Who_isn%27t_Anyone",
+      "error": null
+    },
+    {
+      "chapter_number": 565,
+      "status": "inserted",
+      "chapter_title": "Jinchūriki vs. Jinchūriki!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Jinch%C5%ABriki_vs._Jinch%C5%ABriki!!",
+      "error": null
+    },
+    {
+      "chapter_number": 566,
+      "status": "inserted",
+      "chapter_title": "Eyes and Beasts",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Eyes_and_Beasts",
+      "error": null
+    },
+    {
+      "chapter_number": 567,
+      "status": "inserted",
+      "chapter_title": "The Jinchūriki of the Village of Konoha",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Jinch%C5%ABriki_of_the_Village_of_Konoha",
+      "error": null
+    },
+    {
+      "chapter_number": 568,
+      "status": "inserted",
+      "chapter_title": "The Four-Tails: King of the Sage Monkeys",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Four-Tails:_King_of_the_Sage_Monkeys",
+      "error": null
+    },
+    {
+      "chapter_number": 569,
+      "status": "inserted",
+      "chapter_title": "Proof of Intentions!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Proof_of_Intentions!!",
+      "error": null
+    },
+    {
+      "chapter_number": 570,
+      "status": "inserted",
+      "chapter_title": "Kurama!! (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Kurama!!_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 571,
+      "status": "inserted",
+      "chapter_title": "Tailed Beast Mode!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Tailed_Beast_Mode!!",
+      "error": null
+    },
+    {
+      "chapter_number": 572,
+      "status": "inserted",
+      "chapter_title": "Nine Names",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Nine_Names",
+      "error": null
+    },
+    {
+      "chapter_number": 573,
+      "status": "inserted",
+      "chapter_title": "The Continuing Path towards Radiance",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Continuing_Path_towards_Radiance",
+      "error": null
+    },
+    {
+      "chapter_number": 574,
+      "status": "inserted",
+      "chapter_title": "Eyes that See the Darkness",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Eyes_that_See_the_Darkness",
+      "error": null
+    },
+    {
+      "chapter_number": 575,
+      "status": "inserted",
+      "chapter_title": "Will of Stone (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Will_of_Stone_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 576,
+      "status": "inserted",
+      "chapter_title": "The Guidepost of Reunion",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Guidepost_of_Reunion",
+      "error": null
+    },
+    {
+      "chapter_number": 577,
+      "status": "inserted",
+      "chapter_title": "Blade of Hatred",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Blade_of_Hatred",
+      "error": null
+    },
+    {
+      "chapter_number": 578,
+      "status": "inserted",
+      "chapter_title": "The Weakness of Despair!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Weakness_of_Despair!!",
+      "error": null
+    },
+    {
+      "chapter_number": 579,
+      "status": "inserted",
+      "chapter_title": "Brothers, Fight Together!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Brothers,_Fight_Together!!",
+      "error": null
+    },
+    {
+      "chapter_number": 580,
+      "status": "inserted",
+      "chapter_title": "The Brothers' Time",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Brothers%27_Time",
+      "error": null
+    },
+    {
+      "chapter_number": 581,
+      "status": "inserted",
+      "chapter_title": "Everyone's Konoha",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Everyone%27s_Konoha",
+      "error": null
+    },
+    {
+      "chapter_number": 582,
+      "status": "inserted",
+      "chapter_title": "Nothing",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Nothing",
+      "error": null
+    },
+    {
+      "chapter_number": 583,
+      "status": "inserted",
+      "chapter_title": "Who is This?",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Who_is_This%3F",
+      "error": null
+    },
+    {
+      "chapter_number": 584,
+      "status": "inserted",
+      "chapter_title": "Kabuto Yakushi (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Kabuto_Yakushi_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 585,
+      "status": "inserted",
+      "chapter_title": "To Be Myself",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/To_Be_Myself",
+      "error": null
+    },
+    {
+      "chapter_number": 586,
+      "status": "inserted",
+      "chapter_title": "Izanami's Activation",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Izanami%27s_Activation",
+      "error": null
+    },
+    {
+      "chapter_number": 587,
+      "status": "inserted",
+      "chapter_title": "When It Turns 9 o'clock",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/When_It_Turns_9_o%27clock",
+      "error": null
+    },
+    {
+      "chapter_number": 588,
+      "status": "inserted",
+      "chapter_title": "The Burden of Being a Kage",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Burden_of_Being_a_Kage",
+      "error": null
+    },
+    {
+      "chapter_number": 589,
+      "status": "inserted",
+      "chapter_title": "Impure World Reincarnation Technique: Release",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Impure_World_Reincarnation_Technique:_Release",
+      "error": null
+    },
+    {
+      "chapter_number": 590,
+      "status": "inserted",
+      "chapter_title": "I Will Love You Forever",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/I_Will_Love_You_Forever",
+      "error": null
+    },
+    {
+      "chapter_number": 591,
+      "status": "inserted",
+      "chapter_title": "Risk",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Risk",
+      "error": null
+    },
+    {
+      "chapter_number": 592,
+      "status": "inserted",
+      "chapter_title": "The Third Power",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Third_Power",
+      "error": null
+    },
+    {
+      "chapter_number": 593,
+      "status": "inserted",
+      "chapter_title": "Orochimaru's Revival",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Orochimaru%27s_Revival",
+      "error": null
+    },
+    {
+      "chapter_number": 594,
+      "status": "inserted",
+      "chapter_title": "The Progenitor",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Progenitor",
+      "error": null
+    },
+    {
+      "chapter_number": 595,
+      "status": "inserted",
+      "chapter_title": "Crack",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Crack",
+      "error": null
+    },
+    {
+      "chapter_number": 596,
+      "status": "inserted",
+      "chapter_title": "One Technique",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/One_Technique",
+      "error": null
+    },
+    {
+      "chapter_number": 597,
+      "status": "inserted",
+      "chapter_title": "The Secret of the Space–Time Ninjutsu",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Secret_of_the_Space%E2%80%93Time_Ninjutsu",
+      "error": null
+    },
+    {
+      "chapter_number": 598,
+      "status": "inserted",
+      "chapter_title": "Shattered!!!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Shattered!!!!",
+      "error": null
+    },
+    {
+      "chapter_number": 599,
+      "status": "inserted",
+      "chapter_title": "Obito Uchiha (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Obito_Uchiha_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 600,
+      "status": "inserted",
+      "chapter_title": "How Come Until Now?",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/How_Come_Until_Now%3F",
+      "error": null
+    },
+    {
+      "chapter_number": 601,
+      "status": "inserted",
+      "chapter_title": "Obito and Madara",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Obito_and_Madara",
+      "error": null
+    },
+    {
+      "chapter_number": 602,
+      "status": "inserted",
+      "chapter_title": "Alive",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Alive",
+      "error": null
+    },
+    {
+      "chapter_number": 603,
+      "status": "inserted",
+      "chapter_title": "Rehabilitation",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Rehabilitation",
+      "error": null
+    },
+    {
+      "chapter_number": 604,
+      "status": "inserted",
+      "chapter_title": "Reunion, and Then",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Reunion,_and_Then",
+      "error": null
+    },
+    {
+      "chapter_number": 605,
+      "status": "inserted",
+      "chapter_title": "Hell",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Hell",
+      "error": null
+    },
+    {
+      "chapter_number": 606,
+      "status": "inserted",
+      "chapter_title": "Dream World",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Dream_World",
+      "error": null
+    },
+    {
+      "chapter_number": 607,
+      "status": "inserted",
+      "chapter_title": "I Don't Care Any More",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/I_Don%27t_Care_Any_More",
+      "error": null
+    },
+    {
+      "chapter_number": 608,
+      "status": "inserted",
+      "chapter_title": "Kakashi's Decision!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi%27s_Decision!!",
+      "error": null
+    },
+    {
+      "chapter_number": 609,
+      "status": "inserted",
+      "chapter_title": "End",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/End",
+      "error": null
+    },
+    {
+      "chapter_number": 610,
+      "status": "inserted",
+      "chapter_title": "Ten-Tails (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Ten-Tails_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 611,
+      "status": "inserted",
+      "chapter_title": "Arrival",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Arrival",
+      "error": null
+    },
+    {
+      "chapter_number": 612,
+      "status": "inserted",
+      "chapter_title": "Allied Shinobi Forces Technique!!",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Allied_Shinobi_Forces_Technique!!",
+      "error": null
+    },
+    {
+      "chapter_number": 613,
+      "status": "inserted",
+      "chapter_title": "Head",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Head",
+      "error": null
+    },
+    {
+      "chapter_number": 614,
+      "status": "inserted",
+      "chapter_title": "By You",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/By_You",
+      "error": null
+    },
+    {
+      "chapter_number": 615,
+      "status": "inserted",
+      "chapter_title": "The Connected Ones",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Connected_Ones",
+      "error": null
+    },
+    {
+      "chapter_number": 616,
+      "status": "inserted",
+      "chapter_title": "The Invisible Dancers",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Invisible_Dancers",
+      "error": null
+    },
+    {
+      "chapter_number": 617,
+      "status": "inserted",
+      "chapter_title": "The Invisible Dancers — 2",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Invisible_Dancers_%E2%80%94_2",
+      "error": null
+    },
+    {
+      "chapter_number": 618,
+      "status": "inserted",
+      "chapter_title": "The Ones Who Know Everything",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Ones_Who_Know_Everything",
+      "error": null
+    },
+    {
+      "chapter_number": 619,
+      "status": "inserted",
+      "chapter_title": "A Clan Possessed by Evil",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/A_Clan_Possessed_by_Evil",
+      "error": null
+    },
+    {
+      "chapter_number": 620,
+      "status": "inserted",
+      "chapter_title": "Hashirama Senju (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Hashirama_Senju_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 621,
+      "status": "inserted",
+      "chapter_title": "Hashirama and Madara",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Hashirama_and_Madara",
+      "error": null
+    },
+    {
+      "chapter_number": 622,
+      "status": "inserted",
+      "chapter_title": "Reached",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Reached",
+      "error": null
+    },
+    {
+      "chapter_number": 623,
+      "status": "inserted",
+      "chapter_title": "One View",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/One_View",
+      "error": null
+    },
+    {
+      "chapter_number": 624,
+      "status": "inserted",
+      "chapter_title": "Draw",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Draw",
+      "error": null
+    },
+    {
+      "chapter_number": 625,
+      "status": "inserted",
+      "chapter_title": "The Real Dream",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Real_Dream",
+      "error": null
+    },
+    {
+      "chapter_number": 626,
+      "status": "inserted",
+      "chapter_title": "Hashirama and Madara — 2",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Hashirama_and_Madara_%E2%80%94_2",
+      "error": null
+    },
+    {
+      "chapter_number": 627,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Answer",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Answer",
+      "error": null
+    },
+    {
+      "chapter_number": 628,
+      "status": "inserted",
+      "chapter_title": "Now and Hereafter",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Now_and_Hereafter",
+      "error": null
+    },
+    {
+      "chapter_number": 629,
+      "status": "inserted",
+      "chapter_title": "Windhole",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Windhole",
+      "error": null
+    },
+    {
+      "chapter_number": 630,
+      "status": "inserted",
+      "chapter_title": "What Can Fill a Hole",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/What_Can_Fill_a_Hole",
+      "error": null
+    },
+    {
+      "chapter_number": 631,
+      "status": "inserted",
+      "chapter_title": "Team 7 (chapter)",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Team_7_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 632,
+      "status": "inserted",
+      "chapter_title": "Fighting Together",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Fighting_Together",
+      "error": null
+    },
+    {
+      "chapter_number": 633,
+      "status": "inserted",
+      "chapter_title": "Forward",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Forward",
+      "error": null
+    },
+    {
+      "chapter_number": 634,
+      "status": "inserted",
+      "chapter_title": "A New Three-Way Deadlock",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/A_New_Three-Way_Deadlock",
+      "error": null
+    },
+    {
+      "chapter_number": 635,
+      "status": "inserted",
+      "chapter_title": "A New Wind",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/A_New_Wind",
+      "error": null
+    },
+    {
+      "chapter_number": 636,
+      "status": "inserted",
+      "chapter_title": "The Current Obito",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Current_Obito",
+      "error": null
+    },
+    {
+      "chapter_number": 637,
+      "status": "inserted",
+      "chapter_title": "The Ten-Tails' Jinchūriki",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Ten-Tails%27_Jinch%C5%ABriki",
+      "error": null
+    },
+    {
+      "chapter_number": 638,
+      "status": "inserted",
+      "chapter_title": "The Ten-Tails' Jinchūriki: Obito",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/The_Ten-Tails%27_Jinch%C5%ABriki:_Obito",
+      "error": null
+    },
+    {
+      "chapter_number": 639,
+      "status": "inserted",
+      "chapter_title": "Attack",
+      "manga_arc": "Fourth Shinobi World War: Climax",
+      "source_url": "https://naruto.fandom.com/wiki/Attack",
+      "error": null
+    },
+    {
+      "chapter_number": 640,
+      "status": "inserted",
+      "chapter_title": "Finally",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Finally",
+      "error": null
+    },
+    {
+      "chapter_number": 641,
+      "status": "inserted",
+      "chapter_title": "You Guys are the Main!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/You_Guys_are_the_Main!!",
+      "error": null
+    },
+    {
+      "chapter_number": 642,
+      "status": "inserted",
+      "chapter_title": "Breakthrough",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Breakthrough",
+      "error": null
+    },
+    {
+      "chapter_number": 643,
+      "status": "inserted",
+      "chapter_title": "Joining Fists…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Joining_Fists%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 644,
+      "status": "inserted",
+      "chapter_title": "I Know",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/I_Know",
+      "error": null
+    },
+    {
+      "chapter_number": 645,
+      "status": "inserted",
+      "chapter_title": "Two Powers…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Two_Powers%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 646,
+      "status": "inserted",
+      "chapter_title": "God Tree (chapter)",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/God_Tree_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 647,
+      "status": "inserted",
+      "chapter_title": "Regrets",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Regrets",
+      "error": null
+    },
+    {
+      "chapter_number": 648,
+      "status": "inserted",
+      "chapter_title": "A Shinobi's Dream…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/A_Shinobi%27s_Dream%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 649,
+      "status": "inserted",
+      "chapter_title": "A Shinobi's Will",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/A_Shinobi%27s_Will",
+      "error": null
+    },
+    {
+      "chapter_number": 650,
+      "status": "inserted",
+      "chapter_title": "I Will Sleep",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/I_Will_Sleep",
+      "error": null
+    },
+    {
+      "chapter_number": 651,
+      "status": "inserted",
+      "chapter_title": "What Is Filled",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/What_Is_Filled",
+      "error": null
+    },
+    {
+      "chapter_number": 652,
+      "status": "inserted",
+      "chapter_title": "Naruto's Furrow",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto%27s_Furrow",
+      "error": null
+    },
+    {
+      "chapter_number": 653,
+      "status": "inserted",
+      "chapter_title": "I'm Watching You",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/I%27m_Watching_You",
+      "error": null
+    },
+    {
+      "chapter_number": 654,
+      "status": "inserted",
+      "chapter_title": "It was Obito Uchiha",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/It_was_Obito_Uchiha",
+      "error": null
+    },
+    {
+      "chapter_number": 655,
+      "status": "inserted",
+      "chapter_title": "Furrow",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Furrow",
+      "error": null
+    },
+    {
+      "chapter_number": 656,
+      "status": "inserted",
+      "chapter_title": "Shift",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Shift",
+      "error": null
+    },
+    {
+      "chapter_number": 657,
+      "status": "inserted",
+      "chapter_title": "Madara Uchiha is Back",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Madara_Uchiha_is_Back",
+      "error": null
+    },
+    {
+      "chapter_number": 658,
+      "status": "inserted",
+      "chapter_title": "Tailed Beasts vs. Madara…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Tailed_Beasts_vs._Madara%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 659,
+      "status": "inserted",
+      "chapter_title": "Limbo: Border Jail…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Limbo:_Border_Jail%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 660,
+      "status": "inserted",
+      "chapter_title": "The Hidden Heart",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_Hidden_Heart",
+      "error": null
+    },
+    {
+      "chapter_number": 661,
+      "status": "inserted",
+      "chapter_title": "The Failed World",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_Failed_World",
+      "error": null
+    },
+    {
+      "chapter_number": 662,
+      "status": "inserted",
+      "chapter_title": "The True End",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_True_End",
+      "error": null
+    },
+    {
+      "chapter_number": 663,
+      "status": "inserted",
+      "chapter_title": "Absolutely",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Absolutely",
+      "error": null
+    },
+    {
+      "chapter_number": 664,
+      "status": "inserted",
+      "chapter_title": "Because I'm a Father",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Because_I%27m_a_Father",
+      "error": null
+    },
+    {
+      "chapter_number": 665,
+      "status": "inserted",
+      "chapter_title": "The Current Me",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_Current_Me",
+      "error": null
+    },
+    {
+      "chapter_number": 666,
+      "status": "inserted",
+      "chapter_title": "Two Mangekyō",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Two_Mangeky%C5%8D",
+      "error": null
+    },
+    {
+      "chapter_number": 667,
+      "status": "inserted",
+      "chapter_title": "The End of Youthful Days",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_End_of_Youthful_Days",
+      "error": null
+    },
+    {
+      "chapter_number": 668,
+      "status": "inserted",
+      "chapter_title": "The Beginning of the Crimson Spring",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_Beginning_of_the_Crimson_Spring",
+      "error": null
+    },
+    {
+      "chapter_number": 669,
+      "status": "inserted",
+      "chapter_title": "Eight Gates Released Formation…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Eight_Gates_Released_Formation%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 670,
+      "status": "inserted",
+      "chapter_title": "The Incipient…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_Incipient%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 671,
+      "status": "inserted",
+      "chapter_title": "Naruto and the Sage of Six Paths…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_the_Sage_of_Six_Paths%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 672,
+      "status": "inserted",
+      "chapter_title": "Night Guy…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Night_Guy%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 673,
+      "status": "inserted",
+      "chapter_title": "We Will…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/We_Will%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 674,
+      "status": "inserted",
+      "chapter_title": "Sasuke's Rinnegan…!!",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%27s_Rinnegan%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 675,
+      "status": "inserted",
+      "chapter_title": "The Current Dream",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_Current_Dream",
+      "error": null
+    },
+    {
+      "chapter_number": 676,
+      "status": "inserted",
+      "chapter_title": "The Infinite Dream",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/The_Infinite_Dream",
+      "error": null
+    },
+    {
+      "chapter_number": 677,
+      "status": "inserted",
+      "chapter_title": "Infinite Tsukuyomi (chapter)",
+      "manga_arc": "Birth of the Ten-Tails' Jinchūriki",
+      "source_url": "https://naruto.fandom.com/wiki/Infinite_Tsukuyomi_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 678,
+      "status": "inserted",
+      "chapter_title": "My Will Is",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/My_Will_Is",
+      "error": null
+    },
+    {
+      "chapter_number": 679,
+      "status": "inserted",
+      "chapter_title": "The Incipient",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/The_Incipient",
+      "error": null
+    },
+    {
+      "chapter_number": 680,
+      "status": "inserted",
+      "chapter_title": "Once Again",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Once_Again",
+      "error": null
+    },
+    {
+      "chapter_number": 681,
+      "status": "inserted",
+      "chapter_title": "Kaguya's Tears",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Kaguya%27s_Tears",
+      "error": null
+    },
+    {
+      "chapter_number": 682,
+      "status": "inserted",
+      "chapter_title": "I'm Sure You Have Never Seen This",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/I%27m_Sure_You_Have_Never_Seen_This",
+      "error": null
+    },
+    {
+      "chapter_number": 683,
+      "status": "inserted",
+      "chapter_title": "I Had The Same Dream As You",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/I_Had_The_Same_Dream_As_You",
+      "error": null
+    },
+    {
+      "chapter_number": 684,
+      "status": "inserted",
+      "chapter_title": "We Should Kill Him First",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/We_Should_Kill_Him_First",
+      "error": null
+    },
+    {
+      "chapter_number": 685,
+      "status": "inserted",
+      "chapter_title": "Everything I Have Got…!!",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Everything_I_Have_Got%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 686,
+      "status": "inserted",
+      "chapter_title": "Those Who Remain and Those Who Pass On",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Those_Who_Remain_and_Those_Who_Pass_On",
+      "error": null
+    },
+    {
+      "chapter_number": 687,
+      "status": "inserted",
+      "chapter_title": "You Definitely Will",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/You_Definitely_Will",
+      "error": null
+    },
+    {
+      "chapter_number": 688,
+      "status": "inserted",
+      "chapter_title": "…of the Sharingan!!",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/%E2%80%A6of_the_Sharingan!!",
+      "error": null
+    },
+    {
+      "chapter_number": 689,
+      "status": "inserted",
+      "chapter_title": "I Love You",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/I_Love_You",
+      "error": null
+    },
+    {
+      "chapter_number": 690,
+      "status": "inserted",
+      "chapter_title": "…of Ninja!!",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/%E2%80%A6of_Ninja!!",
+      "error": null
+    },
+    {
+      "chapter_number": 691,
+      "status": "inserted",
+      "chapter_title": "Congratulations",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Congratulations",
+      "error": null
+    },
+    {
+      "chapter_number": 692,
+      "status": "inserted",
+      "chapter_title": "Revolution",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Revolution",
+      "error": null
+    },
+    {
+      "chapter_number": 693,
+      "status": "inserted",
+      "chapter_title": "Here Again",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Here_Again",
+      "error": null
+    },
+    {
+      "chapter_number": 694,
+      "status": "inserted",
+      "chapter_title": "Naruto and Sasuke 1",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_Sasuke_1",
+      "error": null
+    },
+    {
+      "chapter_number": 695,
+      "status": "inserted",
+      "chapter_title": "Naruto and Sasuke 2",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_Sasuke_2",
+      "error": null
+    },
+    {
+      "chapter_number": 696,
+      "status": "inserted",
+      "chapter_title": "Naruto and Sasuke 3",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_Sasuke_3",
+      "error": null
+    },
+    {
+      "chapter_number": 697,
+      "status": "inserted",
+      "chapter_title": "Naruto and Sasuke 4",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_Sasuke_4",
+      "error": null
+    },
+    {
+      "chapter_number": 698,
+      "status": "inserted",
+      "chapter_title": "Naruto and Sasuke 5",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_and_Sasuke_5",
+      "error": null
+    },
+    {
+      "chapter_number": 699,
+      "status": "inserted",
+      "chapter_title": "The Seal of Reconciliation",
+      "manga_arc": "Kaguya Ōtsutsuki Strikes",
+      "source_url": "https://naruto.fandom.com/wiki/The_Seal_of_Reconciliation",
+      "error": null
+    },
+    {
+      "chapter_number": 700,
+      "status": "inserted",
+      "chapter_title": "Naruto Uzumaki!!",
+      "manga_arc": null,
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_Uzumaki!!_(chapter_700)",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T22:12:26.122950",
+  "elapsed_seconds": 3477.81,
+  "status": "completed_successfully"
+}

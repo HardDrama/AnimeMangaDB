@@ -112,3 +112,79 @@ Full-range preflight:
 The verified Naruto main-manga range is ready for controlled live ingestion.
 
 No database records were created or updated during preflight.
+
+---
+
+## v0.58.4 — Full Chapter Metadata Import
+
+### Target
+
+- Start chapter: 1
+- End chapter: 700
+- Expected records: 700
+
+### Import Strategy
+
+The dataset was processed in seven controlled batches:
+
+- Chapters 1–100
+- Chapters 101–200
+- Chapters 201–300
+- Chapters 301–400
+- Chapters 401–500
+- Chapters 501–600
+- Chapters 601–700
+
+Operational safeguards:
+
+- Complete records skipped
+- Partial records remained eligible for update
+- Per-chapter failures isolated
+- JSON reports generated for every batch
+- Shared index HTML cached during each execution
+- Database validated throughout the import
+
+### Import Result
+
+- Chapters selected: 700
+- Inserted: 695
+- Updated: 0
+- Skipped: 5
+- Failed: 0
+- Chapter records present: 5
+- Missing titles: 0
+- Missing manga arcs: 1
+- Missing source URLs: 0
+- Missing timestamps: 0
+- Duplicate records: 0
+
+### Coverage Result
+
+- Expected chapters: 700
+- Missing chapters: 0
+- Coverage completion: 100%
+- Coverage audit: PASS
+
+### Metadata Result
+
+Metadata audit:
+
+IN PROGRESS
+
+### Source Isolation
+
+- Part I records validated
+- Part II records validated
+- Spin-off contamination records: [ACTUAL]
+
+### Evidence
+
+- Seven batch ingestion reports
+- Full audit report:
+  `reports/naruto_scope_v3_audit.json`
+
+### Status
+
+Full Naruto chapter metadata import completed.
+
+Gap analysis remains pending.

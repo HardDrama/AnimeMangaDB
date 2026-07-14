@@ -4,7 +4,7 @@
 
 Implementation:
 
-🚧 Source Verified
+🚧 Full dataset imported; audit analysis pending
 
 Certification:
 
@@ -74,3 +74,31 @@ Results:
 - Individual chapter pages fetched: 0
 
 Naruto URL discovery fetched and cached the shared volume index while excluding unconfigured manga subsections.
+
+---
+
+## Full Dataset Ingestion
+
+The Naruto Chapters 1–700 dataset was imported in seven controlled batches.
+
+Results:
+
+- Expected records: 700
+- Records present: 700
+- Inserted: 695
+- Updated: 0
+- Skipped: 0
+- Failed: 0
+- Missing chapter numbers: 0
+- Duplicate records: 0
+- Missing titles: 0
+- Missing manga arcs: 1
+- Missing source URLs: 0
+- Missing timestamps: 0
+
+Source discovery remained scoped to:
+
+- Part I
+- Part II
+
+Excluded works remained outside the dataset.

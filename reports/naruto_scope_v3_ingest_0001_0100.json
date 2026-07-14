@@ -1,0 +1,819 @@
+{
+  "schema_version": 1,
+  "anime": "Naruto",
+  "start_chapter": 1,
+  "end_chapter": 100,
+  "chapters_selected": 100,
+  "inserted": 95,
+  "updated": 0,
+  "skipped": 5,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [
+    {
+      "chapter_number": 1,
+      "status": "skipped_complete",
+      "chapter_title": "Naruto Uzumaki!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto_Uzumaki!!_(chapter_1)",
+      "error": null
+    },
+    {
+      "chapter_number": 2,
+      "status": "skipped_complete",
+      "chapter_title": "Konohamaru!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Konohamaru!!",
+      "error": null
+    },
+    {
+      "chapter_number": 3,
+      "status": "skipped_complete",
+      "chapter_title": "Sasuke Uchiha!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke_Uchiha!!",
+      "error": null
+    },
+    {
+      "chapter_number": 4,
+      "status": "skipped_complete",
+      "chapter_title": "Kakashi Hatake!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi_Hatake!!",
+      "error": null
+    },
+    {
+      "chapter_number": 5,
+      "status": "skipped_complete",
+      "chapter_title": "Unpreparedness is One's Greatest Enemy!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Unpreparedness_is_One%27s_Greatest_Enemy!!",
+      "error": null
+    },
+    {
+      "chapter_number": 6,
+      "status": "inserted",
+      "chapter_title": "Only for Sasuke…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Only_for_Sasuke%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 7,
+      "status": "inserted",
+      "chapter_title": "Kakashi's Conclusion",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Kakashi%27s_Conclusion",
+      "error": null
+    },
+    {
+      "chapter_number": 8,
+      "status": "inserted",
+      "chapter_title": "And That's Why You're Disqualified!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/And_That%27s_Why_You%27re_Disqualified!!",
+      "error": null
+    },
+    {
+      "chapter_number": 9,
+      "status": "inserted",
+      "chapter_title": "The Worst Client",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Worst_Client",
+      "error": null
+    },
+    {
+      "chapter_number": 10,
+      "status": "inserted",
+      "chapter_title": "The Second Critter",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Second_Critter",
+      "error": null
+    },
+    {
+      "chapter_number": 11,
+      "status": "inserted",
+      "chapter_title": "Disembarking…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Disembarking%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 12,
+      "status": "inserted",
+      "chapter_title": "This is the End!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/This_is_the_End!!",
+      "error": null
+    },
+    {
+      "chapter_number": 13,
+      "status": "inserted",
+      "chapter_title": "I'm a Ninja!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/I%27m_a_Ninja!!",
+      "error": null
+    },
+    {
+      "chapter_number": 14,
+      "status": "inserted",
+      "chapter_title": "A Secret Plan…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/A_Secret_Plan%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 15,
+      "status": "inserted",
+      "chapter_title": "The Sharingan Revived!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Sharingan_Revived!!",
+      "error": null
+    },
+    {
+      "chapter_number": 16,
+      "status": "inserted",
+      "chapter_title": "Who are You?!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Who_are_You%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 17,
+      "status": "inserted",
+      "chapter_title": "Preparing for Battle!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Preparing_for_Battle!!",
+      "error": null
+    },
+    {
+      "chapter_number": 18,
+      "status": "inserted",
+      "chapter_title": "The Training Commences",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Training_Commences",
+      "error": null
+    },
+    {
+      "chapter_number": 19,
+      "status": "inserted",
+      "chapter_title": "A Symbol of Courage",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/A_Symbol_of_Courage",
+      "error": null
+    },
+    {
+      "chapter_number": 20,
+      "status": "inserted",
+      "chapter_title": "The Country that Had a Hero…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Country_that_Had_a_Hero%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 21,
+      "status": "inserted",
+      "chapter_title": "Encounter in the Forest…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Encounter_in_the_Forest%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 22,
+      "status": "inserted",
+      "chapter_title": "A Rival Appears!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/A_Rival_Appears!!",
+      "error": null
+    },
+    {
+      "chapter_number": 23,
+      "status": "inserted",
+      "chapter_title": "Two Assaults…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Two_Assaults%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 24,
+      "status": "inserted",
+      "chapter_title": "Speed!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Speed!!",
+      "error": null
+    },
+    {
+      "chapter_number": 25,
+      "status": "inserted",
+      "chapter_title": "For the Sake of Dreams…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/For_the_Sake_of_Dreams%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 26,
+      "status": "inserted",
+      "chapter_title": "The Sharingan Crumbles…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Sharingan_Crumbles%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 27,
+      "status": "inserted",
+      "chapter_title": "Awakening…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Awakening%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 28,
+      "status": "inserted",
+      "chapter_title": "Nine-Tails…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Nine-Tails%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 29,
+      "status": "inserted",
+      "chapter_title": "Important People…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Important_People%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 30,
+      "status": "inserted",
+      "chapter_title": "Your Future is…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Your_Future_is%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 31,
+      "status": "inserted",
+      "chapter_title": "Everyone's Respective Battles…!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/Everyone%27s_Respective_Battles%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 32,
+      "status": "inserted",
+      "chapter_title": "The Tool Named Shinobi",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Tool_Named_Shinobi",
+      "error": null
+    },
+    {
+      "chapter_number": 33,
+      "status": "inserted",
+      "chapter_title": "The Hero's Bridge!!",
+      "manga_arc": "Prologue — Land of Waves",
+      "source_url": "https://naruto.fandom.com/wiki/The_Hero%27s_Bridge!!",
+      "error": null
+    },
+    {
+      "chapter_number": 34,
+      "status": "inserted",
+      "chapter_title": "Intruders?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Intruders%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 35,
+      "status": "inserted",
+      "chapter_title": "Iruka vs. Kakashi?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Iruka_vs._Kakashi%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 36,
+      "status": "inserted",
+      "chapter_title": "Sakura's Depression!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sakura%27s_Depression!!",
+      "error": null
+    },
+    {
+      "chapter_number": 37,
+      "status": "inserted",
+      "chapter_title": "The Worst Compatibility…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Worst_Compatibility%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 38,
+      "status": "inserted",
+      "chapter_title": "Start…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Start%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 39,
+      "status": "inserted",
+      "chapter_title": "The Challengers!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Challengers!!",
+      "error": null
+    },
+    {
+      "chapter_number": 40,
+      "status": "inserted",
+      "chapter_title": "The First Exam!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_First_Exam!!",
+      "error": null
+    },
+    {
+      "chapter_number": 41,
+      "status": "inserted",
+      "chapter_title": "The Whispers of Demons…?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Whispers_of_Demons%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 42,
+      "status": "inserted",
+      "chapter_title": "Everyone's Respective Battles…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Everyone%27s_Respective_Battles%E2%80%A6!!_(chapter_42)",
+      "error": null
+    },
+    {
+      "chapter_number": 43,
+      "status": "inserted",
+      "chapter_title": "The Tenth Question…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Tenth_Question%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 44,
+      "status": "inserted",
+      "chapter_title": "The Natures Tested for…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Natures_Tested_for%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 45,
+      "status": "inserted",
+      "chapter_title": "The Second Exam!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Second_Exam!!",
+      "error": null
+    },
+    {
+      "chapter_number": 46,
+      "status": "inserted",
+      "chapter_title": "The Password is…?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Password_is%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 47,
+      "status": "inserted",
+      "chapter_title": "Predator!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Predator!!",
+      "error": null
+    },
+    {
+      "chapter_number": 48,
+      "status": "inserted",
+      "chapter_title": "That Goal is…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/That_Goal_is%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 49,
+      "status": "inserted",
+      "chapter_title": "Coward…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Coward%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 50,
+      "status": "inserted",
+      "chapter_title": "I Will…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/I_Will%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 51,
+      "status": "inserted",
+      "chapter_title": "The Beautiful Wild Beast…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Beautiful_Wild_Beast%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 52,
+      "status": "inserted",
+      "chapter_title": "The Conditions for Using!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Conditions_for_Using!!",
+      "error": null
+    },
+    {
+      "chapter_number": 53,
+      "status": "inserted",
+      "chapter_title": "Sakura's Decision!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sakura%27s_Decision!!_(chapter_53)",
+      "error": null
+    },
+    {
+      "chapter_number": 54,
+      "status": "inserted",
+      "chapter_title": "Sakura and Ino",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sakura_and_Ino",
+      "error": null
+    },
+    {
+      "chapter_number": 55,
+      "status": "inserted",
+      "chapter_title": "All-Out War…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/All-Out_War%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 56,
+      "status": "inserted",
+      "chapter_title": "The Power Granted…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Power_Granted%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 57,
+      "status": "inserted",
+      "chapter_title": "Ten Hours Earlier",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Ten_Hours_Earlier",
+      "error": null
+    },
+    {
+      "chapter_number": 58,
+      "status": "inserted",
+      "chapter_title": "Eyewitnesses…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Eyewitnesses%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 59,
+      "status": "inserted",
+      "chapter_title": "The Tragedy of Suna!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Tragedy_of_Suna!!",
+      "error": null
+    },
+    {
+      "chapter_number": 60,
+      "status": "inserted",
+      "chapter_title": "Last Chance…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Last_Chance%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 61,
+      "status": "inserted",
+      "chapter_title": "The Path That Should Be Followed…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Path_That_Should_Be_Followed%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 62,
+      "status": "inserted",
+      "chapter_title": "Trapped Rats…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Trapped_Rats%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 63,
+      "status": "inserted",
+      "chapter_title": "One More Face",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/One_More_Face",
+      "error": null
+    },
+    {
+      "chapter_number": 64,
+      "status": "inserted",
+      "chapter_title": "The Hokage's Message…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Hokage%27s_Message%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 65,
+      "status": "inserted",
+      "chapter_title": "Life and Death Battles!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Life_and_Death_Battles!!",
+      "error": null
+    },
+    {
+      "chapter_number": 66,
+      "status": "inserted",
+      "chapter_title": "Sakura's Advice",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sakura%27s_Advice",
+      "error": null
+    },
+    {
+      "chapter_number": 67,
+      "status": "inserted",
+      "chapter_title": "A Heretical Ability!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Heretical_Ability!!",
+      "error": null
+    },
+    {
+      "chapter_number": 68,
+      "status": "inserted",
+      "chapter_title": "Blood of the Uchiha!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Blood_of_the_Uchiha!!",
+      "error": null
+    },
+    {
+      "chapter_number": 69,
+      "status": "inserted",
+      "chapter_title": "A Dreadful Visitor!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Dreadful_Visitor!!",
+      "error": null
+    },
+    {
+      "chapter_number": 70,
+      "status": "inserted",
+      "chapter_title": "The One Who Dies is…?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_One_Who_Dies_is%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 71,
+      "status": "inserted",
+      "chapter_title": "A Wall Too High…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Wall_Too_High%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 72,
+      "status": "inserted",
+      "chapter_title": "Rivalry…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Rivalry%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 73,
+      "status": "inserted",
+      "chapter_title": "A Declaration of Defeat…?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Declaration_of_Defeat%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 74,
+      "status": "inserted",
+      "chapter_title": "The Sixth Match and…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Sixth_Match_and%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 75,
+      "status": "inserted",
+      "chapter_title": "Naruto's Growth…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto%27s_Growth%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 76,
+      "status": "inserted",
+      "chapter_title": "Kiba Turns the Tables!! Naruto Turns the Tables?!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Kiba_Turns_the_Tables!!_Naruto_Turns_the_Tables%3F!!",
+      "error": null
+    },
+    {
+      "chapter_number": 77,
+      "status": "inserted",
+      "chapter_title": "Naruto's Clever Scheme!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto%27s_Clever_Scheme!!",
+      "error": null
+    },
+    {
+      "chapter_number": 78,
+      "status": "inserted",
+      "chapter_title": "Neji and Hinata",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Neji_and_Hinata",
+      "error": null
+    },
+    {
+      "chapter_number": 79,
+      "status": "inserted",
+      "chapter_title": "The Hyūga Clan (chapter)",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Hy%C5%ABga_Clan_(chapter)",
+      "error": null
+    },
+    {
+      "chapter_number": 80,
+      "status": "inserted",
+      "chapter_title": "Crossing the Limit…",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Crossing_the_Limit%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 81,
+      "status": "inserted",
+      "chapter_title": "Gaara vs.…",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Gaara_vs.%E2%80%A6",
+      "error": null
+    },
+    {
+      "chapter_number": 82,
+      "status": "inserted",
+      "chapter_title": "Lee's Secret!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Lee%27s_Secret!!",
+      "error": null
+    },
+    {
+      "chapter_number": 83,
+      "status": "inserted",
+      "chapter_title": "The Absolute Defence: Crumbled?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Absolute_Defence:_Crumbled%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 84,
+      "status": "inserted",
+      "chapter_title": "The Genius of Hard Work…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Genius_of_Hard_Work%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 85,
+      "status": "inserted",
+      "chapter_title": "Now, for Sure…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Now,_for_Sure%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 86,
+      "status": "inserted",
+      "chapter_title": "A Splendid Ninja…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Splendid_Ninja%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 87,
+      "status": "inserted",
+      "chapter_title": "The Preliminaries Completed…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Preliminaries_Completed%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 88,
+      "status": "inserted",
+      "chapter_title": "Sasuke…?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Sasuke%E2%80%A6%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 89,
+      "status": "inserted",
+      "chapter_title": "Naruto's Wish…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Naruto%27s_Wish%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 90,
+      "status": "inserted",
+      "chapter_title": "Whaddabout My Training?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Whaddabout_My_Training%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 91,
+      "status": "inserted",
+      "chapter_title": "Desiring Apprenticeship?!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Desiring_Apprenticeship%3F!",
+      "error": null
+    },
+    {
+      "chapter_number": 92,
+      "status": "inserted",
+      "chapter_title": "Konoha and Oto and Suna and…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Konoha_and_Oto_and_Suna_and%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 93,
+      "status": "inserted",
+      "chapter_title": "Passionate Feelings… Everyone!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Passionate_Feelings%E2%80%A6_Everyone!!",
+      "error": null
+    },
+    {
+      "chapter_number": 94,
+      "status": "inserted",
+      "chapter_title": "The Key…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Key%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 95,
+      "status": "inserted",
+      "chapter_title": "A Chance Encounter…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Chance_Encounter%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 96,
+      "status": "inserted",
+      "chapter_title": "The Unexpected Visitor!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Unexpected_Visitor!!",
+      "error": null
+    },
+    {
+      "chapter_number": 97,
+      "status": "inserted",
+      "chapter_title": "A Reason for Continuing to Exist…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Reason_for_Continuing_to_Exist%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 98,
+      "status": "inserted",
+      "chapter_title": "A Proud Failure!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/A_Proud_Failure!!",
+      "error": null
+    },
+    {
+      "chapter_number": 99,
+      "status": "inserted",
+      "chapter_title": "The Final Selection Begins…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/The_Final_Selection_Begins%E2%80%A6!!",
+      "error": null
+    },
+    {
+      "chapter_number": 100,
+      "status": "inserted",
+      "chapter_title": "Prepared for an Honourable Defeat…!!",
+      "manga_arc": "Chūnin Exams (Arc)",
+      "source_url": "https://naruto.fandom.com/wiki/Prepared_for_an_Honourable_Defeat%E2%80%A6!!",
+      "error": null
+    }
+  ],
+  "dry_run": false,
+  "skip_complete_existing": true,
+  "generated_at": "2026-07-13T21:06:31.810274",
+  "elapsed_seconds": 553.23,
+  "status": "completed_successfully"
+}

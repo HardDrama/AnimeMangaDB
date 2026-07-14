@@ -120,3 +120,10 @@ naruto_scope_v3_live_source_inspection.json
 naruto_scope_v3_preflight_0001_0010.json
 naruto_scope_v3_preflight.json
 ```
+
+### Naruto Ingestion Reports
+
+```text
+naruto_scope_v3_ingest_0001_0100.json
+naruto_scope_v3_ingest_0101_0700.json
+```

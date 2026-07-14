@@ -90,27 +90,26 @@ Future  Platform Checkpoint v3
 
 Status:
 
-Full-Range Preflight Passed
+Full Dataset Imported
 
-Verified target:
+Dataset:
 
 - Chapters 1–700
-- Expected records: 700
-
-Preflight:
-
-- Existing records: 5
-- Would insert: 695
-- Would update: 5
-- Unresolved URLs: 0
-- Database writes: 0
+- 700 expected records
+- 700 records present
+- 0 failed imports
+- 0 missing titles
+- 1 missing manga arcs
+- 0 missing source URLs
+- 0 duplicate chapter records
 
 Current phase:
 
-Controlled live ingestion
+Ingestion gap analysis
 
 Next:
 
-- Import Naruto Chapters 1–700
-- Audit metadata completeness
-- Analyze ingestion gaps
+- Analyze missing metadata
+- Verify source exceptions
+- Repair confirmed gaps if needed
+- Validate full dataset integrity

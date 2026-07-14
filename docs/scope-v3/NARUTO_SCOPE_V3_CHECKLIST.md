@@ -14,25 +14,21 @@
 
 ## Metadata
 
-- [ ] Chapter numbers complete
-- [ ] Official English titles complete
-- [ ] Manga arcs complete
-- [ ] Source URLs complete
-- [ ] Last-updated timestamps complete
+- [x] Chapter numbers complete
+- [x] Official English titles complete
+- [x] Manga arcs complete
+- [x] Source URLs complete
+- [x] Last-updated timestamps complete
 
 ---
 
 ## Ingestion
 
-- [x] Canonical URL discovery validated
-- [x] Existing controlled records detected
-- [x] Small-range dry-run completed
-- [x] Full Chapters 1–700 dry-run completed
-- [x] Zero unresolved planned URLs
-- [x] Dry-run database safety validated
-- [x] Preflight JSON reports generated
-- [ ] Controlled live ingestion completed
-- [ ] Full dataset ingestion completed
+- [x] Controlled live ingestion completed
+- [x] Full dataset ingestion completed
+- [x] Seven batch reports generated
+- [x] Import failures isolated
+- [x] Chapters 1–700 present
 
 ---
 
