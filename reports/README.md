@@ -151,3 +151,18 @@ As AnimeMangaDB expands series support, the default durable Scope v3 report set 
 <series>_scope_v3_manual_validation.json
 <series>_scope_v3_certification.json
 ```
+
+### Certification Status
+
+Certified dataset:
+
+- Naruto Chapters 1–700
+- 700 chapter metadata records
+
+Durable evidence:
+
+```text
+naruto_scope_v3_audit.json
+naruto_scope_v3_manual_validation.json
+naruto_scope_v3_certification.json
+```

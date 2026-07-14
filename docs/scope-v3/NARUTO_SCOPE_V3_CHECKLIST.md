@@ -64,12 +64,12 @@
 
 ## Validation
 
-- [ ] Metadata audit passes
-- [ ] Coverage audit passes
-- [ ] Dataset audit passes
-- [ ] Manual validation completed
-- [ ] Certification eligibility passes
-- [ ] Final dataset validation passes
+- [x] Metadata audit passes
+- [x] Coverage audit passes
+- [x] Dataset audit passes
+- [x] Manual validation completed
+- [x] Certification eligibility passes
+- [x] Final dataset validation passes
 
 ---
 
@@ -81,12 +81,54 @@
 - [x] Exception-aware arc validation passes
 - [x] Manual source validation passes
 - [x] Certification eligibility audit passes
-- [ ] Dataset documentation completed
-- [ ] Final dataset validation completed
-- [ ] Dataset certified
+- [x] Dataset documentation completed
+- [x] Final dataset validation completed
+- [x] Dataset certified
+
+---
 
 ---
 
 ## Certification
 
-- [ ] Dataset certified
+Dataset:
+
+Naruto Scope v3
+
+Certified chapter range:
+
+- Chapter 1
+- Through Chapter 700
+
+Certified records:
+
+700
+
+Certified metadata:
+
+- Chapter number
+- English chapter title
+- Manga arc or verified non-applicable classification
+- Canonical source URL
+- Last-updated timestamp
+
+Verified exception:
+
+- Chapter 700
+- Standalone epilogue
+- Manga arc not applicable
+- Stored database value remains null
+
+Certification evidence:
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual source validation: PASS
+- Final dataset validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+Status:
+
+✅ Naruto Scope v3 Dataset Certified

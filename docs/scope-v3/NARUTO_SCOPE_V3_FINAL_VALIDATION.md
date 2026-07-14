@@ -202,3 +202,35 @@ PASS — 0 errors
 Final validation status:
 
 **PASS**
+
+---
+
+## Certification Result
+
+The final validation passed without unresolved metadata, coverage, source-boundary, exception, manual-review, regression, or evidence failures.
+
+Certified dataset:
+
+Naruto Scope v3
+
+Certified range:
+
+Chapters 1–700
+
+Certified records:
+
+700
+
+Verified exception:
+
+- Chapter 700
+- Manga arc not applicable
+- Stored value remains null
+
+Certification status:
+
+**CERTIFIED**
+
+Certification date:
+
+2026-07-14

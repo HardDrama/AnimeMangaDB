@@ -78,41 +78,75 @@ One Piece is the benchmark dataset.
 
 Before a Platform Checkpoint is declared complete, One Piece must be fully updated, validated, and repairable for that Scope.
 
-## Roadmap
-
 v0.57  ✅ One Piece Scope v3 Dataset
-v0.58  🚧 Naruto Scope v3 Dataset
-Future  Platform Checkpoint v3
+v0.58  ✅ Naruto Scope v3 Dataset
+Next   Platform Checkpoint v3 planning
 
 ## Current
 
-### v0.58 — Naruto Scope v3 Dataset
+### Platform Checkpoint v3 Planning
 
 Status:
 
-Final Validation Passed
+Planned
 
-Dataset:
+Certified Scope v3 datasets:
+
+- One Piece
+- Naruto
+
+Next phase:
+
+- Define Platform Checkpoint v3
+- Add chapter metadata API exposure
+- Integrate chapter metadata into the frontend
+- Validate multi-series Scope v3 behavior
+- Certify the Scope v3 platform
+
+### Naruto Scope v3 Dataset
+
+Status:
+
+Certified
+
+Certified range:
 
 - Chapters 1–700
 - 700 chapter metadata records
-- Metadata audit: PASS
-- Coverage audit: PASS
-- Dataset audit: PASS
-- Manual validation: PASS
-- Certification failures: 0
+
+Included:
+
+- Part I
+- Part II
+- Original Naruto manga
+
+Excluded:
+
+- Naruto Gaiden
+- Boruto
+- Sasuke Retsuden
+- Other spin-off manga
+
+Certified metadata:
+
+- Chapter number
+- English chapter title
+- Manga arc or verified non-applicable classification
+- Canonical source URL
+- Last-updated timestamp
 
 Verified exception:
 
 - Chapter 700
+- Standalone epilogue
 - Manga arc not applicable
 - Stored value remains null
-- Exception-aware audit: PASS
 
-Current phase:
+Evidence:
 
-Formal dataset certification
-
-Next:
-
-Certify the Naruto Scope v3 dataset
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual source validation: PASS
+- Final validation: PASS
+- Certification failures: 0

@@ -6,9 +6,13 @@ Implementation:
 
 ✅ Complete
 
-Certification:
+Certification eligibility:
 
-⬜ Final certification pending
+✅ ELIGIBLE
+
+Formal dataset certification:
+
+✅ CERTIFIED
 
 ---
 
@@ -140,13 +144,13 @@ Fields validated:
 
 Results:
 
-- Samples reviewed: [ACTUAL]
-- Title matches: [ACTUAL]
-- Manga-arc matches: [ACTUAL]
-- Valid source URLs: [ACTUAL]
-- Spin-off contamination: [ACTUAL]
-- Discrepancies: [ACTUAL]
-- Manual validation status: [PASS or REVIEW REQUIRED]
+- Samples reviewed: 30
+- Title matches: 30
+- Manga-arc matches: 30
+- Valid source URLs: 30
+- Spin-off contamination: 0
+- Discrepancies: 0
+- Manual validation status: PASS
 
 Chapter 700’s null manga arc was manually confirmed as accurate because the chapter is a standalone epilogue.
 
@@ -225,3 +229,46 @@ Evidence:
 Current status:
 
 Formal certification pending.
+
+## Current Result
+
+The complete Naruto Scope v3 dataset satisfies all automated, exception-aware, source-boundary, and representative manual validation requirements.
+
+Status:
+
+✅ Naruto Scope v3 Dataset Certifieds
+
+---
+
+## Certification Scope
+
+This certification applies to:
+
+- Original Naruto manga
+- Part I
+- Part II
+- Chapters 1–700
+- Scope v3 chapter metadata
+
+Certified metadata:
+
+- Chapter number
+- English chapter title
+- Manga arc or verified non-applicable classification
+- Canonical source URL
+- Last-updated timestamp
+
+Excluded:
+
+- Naruto Gaiden
+- Boruto
+- Sasuke Retsuden
+- Other spin-off manga
+- Volume metadata
+- Release dates
+- Cover art
+- API exposure
+- Frontend chapter metadata integration
+- Platform Checkpoint v3
+
+The certification does not automatically extend to other Naruto-related manga works.

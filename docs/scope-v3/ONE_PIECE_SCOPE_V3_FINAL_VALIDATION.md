@@ -155,9 +155,9 @@ Final validation status:
 
 - Reports: 12
 - Chapters selected: 1188
-- Inserted: [ACTUAL]
-- Updated: [ACTUAL]
-- Skipped: [ACTUAL]
+- Inserted: 1183
+- Updated: 0
+- Skipped: 5
 - Failed: 0
 - Successful report statuses: 12 / 12
 
@@ -185,4 +185,4 @@ Certification status:
 
 Certification date:
 
-[CURRENT DATE]
+2026-07-13

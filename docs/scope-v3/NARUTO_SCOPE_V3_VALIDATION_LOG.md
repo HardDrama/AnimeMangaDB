@@ -175,7 +175,7 @@ IN PROGRESS
 
 - Part I records validated
 - Part II records validated
-- Spin-off contamination records: [ACTUAL]
+- Spin-off contamination records: 0
 
 ### Evidence
 
@@ -408,3 +408,75 @@ Final Naruto Scope v3 dataset validation:
 PASS
 
 The dataset is ready for formal certification.
+
+---
+
+## v0.58.10 — Naruto Scope v3 Dataset Certification
+
+### Certified Dataset
+
+- Anime: Naruto
+- Chapter range: 1–700
+- Certified chapter records: 700
+- Part I included
+- Part II included
+
+### Excluded Works
+
+- Naruto Gaiden
+- Boruto
+- Sasuke Retsuden
+- Other spin-off manga
+
+### Certified Metadata
+
+- Chapter number
+- English chapter title
+- Manga arc or verified non-applicable classification
+- Canonical source URL
+- Last-updated timestamp
+
+### Verified Exception
+
+- Chapter: 700
+- Classification: Standalone epilogue
+- Field: Manga arc
+- Stored value: null
+- Audit treatment: Approved non-applicable metadata
+
+### Certification Evidence
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Adjusted manga-arc completion: 100.00%
+- Manual source validation: PASS
+- Final dataset validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+### Integrity
+
+- Missing chapter numbers: 0
+- Duplicate chapter records: 0
+- Missing titles: 0
+- Raw missing manga arcs: 1
+- Approved non-applicable manga arcs: 1
+- Unresolved missing manga arcs: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+- Spin-off contamination: 0
+
+### Regression Validation
+
+- Backend tests: 184 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Certification Result
+
+✅ Naruto Scope v3 Dataset Certified
+
+This certification applies to Chapters 1–700 of the original Naruto manga.
+
+Excluded works and future metadata expansions require separate validation and certification.

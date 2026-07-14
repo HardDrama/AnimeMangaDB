@@ -72,25 +72,54 @@ Status:
 
 ---
 
-## Naruto Scope v3 Dataset
+---
 
-Verified target:
+## Naruto Scope v3 Dataset Implementation
+
+Certified range:
 
 - Chapters 1–700
-- Expected records: 700
-- Part I and Part II
-- Main Naruto manga only
+- Certified records: 700
+
+Included:
+
+- Naruto Part I
+- Naruto Part II
+- Original Naruto manga only
 
 Excluded:
 
 - Naruto Gaiden
 - Boruto
-- Spin-off manga
+- Sasuke Retsuden
+- Other spin-off manga
 
-Canonical source:
+Certified metadata:
 
-Narutopedia `Tankōbon` volume-index section
+- Chapter number
+- English chapter title
+- Manga arc or verified non-applicable classification
+- Canonical source URL
+- Last-updated timestamp
 
-Current status:
+Verified exception:
 
-Source verified; ingestion preflight pending.
+- Chapter 700
+- Standalone epilogue
+- Manga arc not applicable
+- Stored value remains null
+
+Certification evidence:
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Adjusted manga-arc completion: 100.00%
+- Manual source validation: PASS
+- Final validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+Status:
+
+✅ Certified
