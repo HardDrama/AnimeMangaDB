@@ -77,6 +77,54 @@ class FakePreflightRepository:
         return None
     
 
+class NarutoPreflightRepository:
+    anime = SimpleNamespace(
+        id=2,
+        title="Naruto",
+        provider="fandom",
+    )
+
+    def __init__(
+        self,
+        session,
+    ):
+        self.session = session
+
+    def get_anime_by_title(
+        self,
+        title,
+    ):
+        if title == "Naruto":
+            return self.anime
+
+        return None
+
+    def get_chapter_metadata(
+        self,
+        anime_id,
+        chapter_number,
+    ):
+        if chapter_number in {
+            1,
+            2,
+            3,
+            4,
+            5,
+        }:
+            return SimpleNamespace(
+                chapter_number=chapter_number
+            )
+
+        return None
+    
+
+class FakeIndexBrowser:
+    instances_created = 0
+
+    def __init__(self):
+        self.__class__.instances_created += 1
+    
+
 class FakePreflightDiscoveryService:
     def __init__(
         self,
@@ -93,6 +141,28 @@ class FakePreflightDiscoveryService:
         return (
             "https://example.com/wiki/"
             f"Chapter_{chapter_number}"
+        )
+    
+
+class FakeNarutoPreflightDiscoveryService:
+    browser_client_received = None
+
+    def __init__(
+        self,
+        config,
+        browser_client=None,
+    ):
+        self.__class__.browser_client_received = (
+            browser_client
+        )
+
+    def discover_url(
+        self,
+        chapter_number,
+    ):
+        return (
+            "https://naruto.fandom.com/wiki/"
+            f"Test_Chapter_{chapter_number}"
         )
     
 
@@ -751,3 +821,140 @@ def test_complete_chapter_record_detection():
             incomplete
         )
     )
+
+def test_dry_run_browser_requirement():
+    numbered_config = SimpleNamespace(
+        chapter_metadata=SimpleNamespace(
+            url_strategy="numbered"
+        )
+    )
+
+    discovered_config = SimpleNamespace(
+        chapter_metadata=SimpleNamespace(
+            url_strategy="discovered_links"
+        )
+    )
+
+    numbered_list_config = SimpleNamespace(
+        chapter_metadata=SimpleNamespace(
+            url_strategy="numbered_list_items"
+        )
+    )
+
+    assert not (
+        ingest_chapter_metadata
+        .dry_run_requires_browser(
+            numbered_config
+        )
+    )
+
+    assert (
+        ingest_chapter_metadata
+        .dry_run_requires_browser(
+            discovered_config
+        )
+    )
+
+    assert (
+        ingest_chapter_metadata
+        .dry_run_requires_browser(
+            numbered_list_config
+        )
+    )
+
+def test_naruto_dry_run_uses_index_browser(
+    monkeypatch,
+    capsys,
+):
+    FakeIndexBrowser.instances_created = 0
+
+    (
+        FakeNarutoPreflightDiscoveryService
+        .browser_client_received
+    ) = None
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "SessionLocal",
+        lambda: FakeSession(),
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "EpisodeRepository",
+        NarutoPreflightRepository,
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "load_provider_config",
+        lambda path: SimpleNamespace(
+            chapter_metadata=SimpleNamespace(
+                url_strategy=(
+                    "numbered_list_items"
+                )
+            )
+        ),
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "BrowserClient",
+        FakeIndexBrowser,
+    )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "ChapterUrlDiscoveryService",
+        FakeNarutoPreflightDiscoveryService,
+    )
+
+    def fail_if_provider_created(
+        **kwargs,
+    ):
+        raise AssertionError(
+            "Provider should not be created "
+            "during dry-run mode."
+        )
+
+    monkeypatch.setattr(
+        ingest_chapter_metadata,
+        "create_chapter_metadata_provider",
+        fail_if_provider_created,
+    )
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "ingest_chapter_metadata",
+            "--anime",
+            "Naruto",
+            "--start-chapter",
+            "1",
+            "--end-chapter",
+            "7",
+            "--dry-run",
+        ],
+    )
+
+    ingest_chapter_metadata.main()
+
+    output = capsys.readouterr().out
+
+    assert FakeIndexBrowser.instances_created == 1
+
+    assert (
+        FakeNarutoPreflightDiscoveryService
+        .browser_client_received
+        is not None
+    )
+
+    assert "Series            : Naruto" in output
+    assert "Chapters Selected : 7" in output
+    assert "Existing Records  : 5" in output
+    assert "Would Insert      : 2" in output
+    assert "Would Update      : 5" in output
+    assert "Unresolved URLs   : 0" in output
+    assert "Chapter Fetching   : DISABLED" in output
+    assert "Index Fetching       : ENABLED" in output

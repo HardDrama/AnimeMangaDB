@@ -90,30 +90,27 @@ Future  Platform Checkpoint v3
 
 Status:
 
-Canonical Source Verified
+Full-Range Preflight Passed
 
 Verified target:
 
 - Chapters 1–700
 - Expected records: 700
 
-Included:
+Preflight:
 
-- Part I
-- Part II
-
-Excluded:
-
-- Naruto Gaiden
-- Boruto
-- Spin-off manga
+- Existing records: 5
+- Would insert: 695
+- Would update: 5
+- Unresolved URLs: 0
+- Database writes: 0
 
 Current phase:
 
-Full-range ingestion preflight
+Controlled live ingestion
 
 Next:
 
-- Validate existing controlled records
-- Run Chapters 1–700 dry-run
-- Import full Naruto chapter metadata
+- Import Naruto Chapters 1–700
+- Audit metadata completeness
+- Analyze ingestion gaps

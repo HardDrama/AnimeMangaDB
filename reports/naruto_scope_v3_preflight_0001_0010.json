@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "anime": "Naruto",
+  "start_chapter": 1,
+  "end_chapter": 10,
+  "chapters_selected": 10,
+  "inserted": 0,
+  "updated": 0,
+  "skipped": 0,
+  "failed": 0,
+  "failed_chapters": [],
+  "results": [],
+  "dry_run": true,
+  "skip_complete_existing": false,
+  "generated_at": "2026-07-13T20:09:06.798422",
+  "elapsed_seconds": 8.83,
+  "status": "preflight_pass",
+  "would_insert": 5,
+  "would_update": 5,
+  "unresolved_urls": []
+}

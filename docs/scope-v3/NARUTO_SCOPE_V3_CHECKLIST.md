@@ -24,9 +24,15 @@
 
 ## Ingestion
 
-- [ ] Controlled ingestion completed
-- [ ] Dry-run completed
-- [ ] JSON reports generated
+- [x] Canonical URL discovery validated
+- [x] Existing controlled records detected
+- [x] Small-range dry-run completed
+- [x] Full Chapters 1–700 dry-run completed
+- [x] Zero unresolved planned URLs
+- [x] Dry-run database safety validated
+- [x] Preflight JSON reports generated
+- [ ] Controlled live ingestion completed
+- [ ] Full dataset ingestion completed
 
 ---
 

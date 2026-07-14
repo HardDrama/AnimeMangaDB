@@ -112,3 +112,11 @@ Certification reports should be generated from their source evidence rather than
 ```text
 naruto_scope_v3_source_inspection.json
 naruto_scope_v3_live_source_inspection.json
+```
+
+### Ingestion Preflight
+
+```text
+naruto_scope_v3_preflight_0001_0010.json
+naruto_scope_v3_preflight.json
+```

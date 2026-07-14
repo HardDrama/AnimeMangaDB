@@ -597,3 +597,26 @@ The inspection reports:
 - Duplicate chapter numbers
 
 The tool inspects source structure only. It does not fetch individual chapter pages or modify the database.
+
+### Index-Based Dry Runs
+
+Some series require an index page to discover canonical chapter URLs.
+
+For Naruto:
+
+```bash
+python -m tools.ingest_chapter_metadata \
+    --anime "Naruto" \
+    --start-chapter 1 \
+    --end-chapter 700 \
+    --dry-run \
+    --json-report reports/naruto_scope_v3_preflight.json
+```
+
+During an index-based dry run:
+
+- The shared chapter index may be fetched.
+- Index HTML is cached for the execution.
+- Individual chapter pages are not fetched.
+- Providers and extractors are not executed.
+- Database records are not created or updated.

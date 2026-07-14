@@ -51,6 +51,27 @@ def chapter_record_is_complete(
     )
 
 
+def dry_run_requires_browser(
+    config,
+) -> bool:
+    chapter_config = getattr(
+        config,
+        "chapter_metadata",
+        None,
+    )
+
+    url_strategy = getattr(
+        chapter_config,
+        "url_strategy",
+        None,
+    )
+
+    return url_strategy in {
+        "discovered_links",
+        "numbered_list_items",
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(
         description=(
@@ -214,10 +235,20 @@ def main():
             config_path
         )
 
+        index_browser_required = (
+            args.dry_run
+            and dry_run_requires_browser(
+                config
+            )
+        )
+
         browser_client = (
-            None
-            if args.dry_run
-            else BrowserClient()
+            BrowserClient()
+            if (
+                not args.dry_run
+                or index_browser_required
+            )
+            else None
         )
 
         discovery_service = (
@@ -241,6 +272,14 @@ def main():
             print(f"Chapters Selected : {total}")
             print("Database Writes    : DISABLED")
             print("Chapter Fetching   : DISABLED")
+            print(
+                "Index Fetching       : "
+                + (
+                    "ENABLED"
+                    if index_browser_required
+                    else "DISABLED"
+                )
+            )
             print()
 
             for index, chapter_number in enumerate(
