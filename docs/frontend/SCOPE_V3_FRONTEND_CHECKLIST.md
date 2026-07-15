@@ -28,12 +28,20 @@
 
 ## Series Chapter List
 
-- [ ] Chapter-list component added
-- [ ] Numerical ordering displayed
-- [ ] Loading state added
-- [ ] Error state added
-- [ ] Empty state added
-- [ ] Responsive behavior validated
+- [x] Reusable chapter metadata card added
+- [x] Reusable chapter metadata list added
+- [x] Anime detail page loads chapter metadata
+- [x] Existing episode list preserved
+- [x] Numerical API ordering preserved
+- [x] Chapter-number filtering added
+- [x] Chapter-title filtering added
+- [x] Manga-arc filtering added
+- [x] Loading state added
+- [x] Error state added
+- [x] Empty state added
+- [x] No-match state added
+- [x] Null manga arc displayed as not applicable
+- [x] Responsive chapter grid added
 
 ---
 

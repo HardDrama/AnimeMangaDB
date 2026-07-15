@@ -318,3 +318,60 @@ Chapter metadata requests follow the existing frontend client convention:
 - non-successful HTTP responses throw an `Error`
 - pages and components are responsible for displaying the error
 - API response data is not transformed or repaired in the frontend
+
+---
+
+## Series Chapter List Experience
+
+The anime detail page loads certified chapter metadata from:
+
+`GET /anime/{anime_id}/chapters`
+
+The existing episode list remains visible.
+
+### Displayed Chapter Fields
+
+- Chapter number
+- Chapter title
+- Manga arc
+- Canonical source link
+
+### Local Filtering
+
+Loaded chapter records may be filtered by:
+
+- Chapter number
+- Chapter title
+- Manga arc
+
+Filtering is local to the selected anime and does not replace global API search.
+
+### Nullable Manga Arc
+
+A null manga arc is displayed as:
+
+`Not applicable`
+
+The API value is not modified.
+
+### States
+
+Loading:
+
+`Loading chapter metadata...`
+
+Empty dataset:
+
+`No chapter metadata is currently available for this series.`
+
+No filter matches:
+
+`No chapter metadata matches your search.`
+
+Error:
+
+The chapter section displays the existing client error message.
+
+### Responsive Layout
+
+Chapter metadata cards use a responsive grid and collapse to one column on narrow screens.

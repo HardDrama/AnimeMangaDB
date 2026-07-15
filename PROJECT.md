@@ -86,26 +86,32 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 Status:
 
-Frontend Chapter API Client Complete
+Series Chapter List Complete
 
 Completed:
 
 - Scope v3 frontend contract
-- Chapter metadata client contract
-- Series chapter-list request
-- Individual chapter-detail request
-- Scope v3 search response access
+- Frontend chapter API client
+- Series chapter metadata list
+- Local chapter filtering
+- Chapter loading, error, and empty states
+- Nullable manga-arc presentation
+
+Validated datasets:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
 
 Current phase:
 
-Series chapter-list experience
+Chapter detail experience
 
 Next:
 
-- Add reusable chapter display components
-- Load chapter metadata on anime detail pages
-- Add loading, error, and empty states
-- Validate One Piece and Naruto chapter lists
+- Add chapter detail route
+- Add chapter detail page
+- Add breadcrumbs and back navigation
+- Display source URL and last-updated timestamp
 
 ---
 

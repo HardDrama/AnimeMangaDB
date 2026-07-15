@@ -1,22 +1,39 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getAnimeById, getEpisodesForAnime } from "../api/client";
-import EpisodeCard from "../components/EpisodeCard";
+import {
+    getAnimeById,
+    getChaptersForAnime,
+    getEpisodesForAnime,
+} from "../api/client";
 import Breadcrumbs from "../components/Breadcrumbs";
+import ChapterMetadataList from "../components/ChapterMetadataList";
+import EpisodeCard from "../components/EpisodeCard";
 
 function AnimeDetailPage() {
     const { animeId } = useParams();
 
     const [anime, setAnime] = useState(null);
     const [episodes, setEpisodes] = useState([]);
+    const [chapters, setChapters] = useState([]);
+    const [chaptersLoading, setChaptersLoading] =
+        useState(true);
+    const [chaptersError, setChaptersError] =
+        useState("");
+    const [chapterSearch, setChapterSearch] =
+        useState("");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
     useEffect(() => {
         async function loadAnimeDetail() {
             try {
-                const animeData = await getAnimeById(animeId);
-                const episodeData = await getEpisodesForAnime(animeId);
+                const [
+                    animeData,
+                    episodeData,
+                ] = await Promise.all([
+                    getAnimeById(animeId),
+                    getEpisodesForAnime(animeId),
+                ]);
 
                 setAnime(animeData);
                 setEpisodes(episodeData);
@@ -25,10 +42,56 @@ function AnimeDetailPage() {
             } finally {
                 setLoading(false);
             }
+
+            try {
+                const chapterData =
+                    await getChaptersForAnime(
+                        animeId
+                    );
+
+                setChapters(chapterData);
+            } catch (err) {
+                setChaptersError(err.message);
+            } finally {
+                setChaptersLoading(false);
+            }
         }
 
         loadAnimeDetail();
     }, [animeId]);
+
+        const normalizedChapterSearch =
+        chapterSearch.trim().toLowerCase();
+
+    const filteredChapters = chapters.filter(
+        (chapter) => {
+            if (!normalizedChapterSearch) {
+                return true;
+            }
+
+            const chapterNumber =
+                chapter.chapter_number.toString();
+
+            const chapterTitle =
+                chapter.chapter_title.toLowerCase();
+
+            const mangaArc =
+                chapter.manga_arc?.toLowerCase()
+                ?? "not applicable";
+
+            return (
+                chapterNumber.includes(
+                    normalizedChapterSearch
+                )
+                || chapterTitle.includes(
+                    normalizedChapterSearch
+                )
+                || mangaArc.includes(
+                    normalizedChapterSearch
+                )
+            );
+        }
+    );
 
     if (loading) {
         return <p className="status">Loading anime...</p>;
@@ -71,6 +134,19 @@ function AnimeDetailPage() {
                     />
                 ))}
             </ul>
+            
+            <ChapterMetadataList
+                chapters={chapters}
+                filteredChapters={
+                    filteredChapters
+                }
+                search={chapterSearch}
+                onSearchChange={
+                    setChapterSearch
+                }
+                loading={chaptersLoading}
+                error={chaptersError}
+            />
         </section>
     );
 }

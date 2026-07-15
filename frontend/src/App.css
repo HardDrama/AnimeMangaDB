@@ -178,3 +178,50 @@ li a:hover {
 .card-link:hover {
     color: inherit;
 }
+
+.chapter-metadata-section {
+    margin-top: 2rem;
+}
+
+.chapter-metadata-section input {
+    width: 100%;
+    max-width: 36rem;
+    margin-bottom: 1rem;
+}
+
+.chapter-metadata-list {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(16rem, 1fr)
+    );
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.chapter-metadata-card {
+    padding: 1rem;
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+}
+
+.chapter-metadata-card p {
+    margin-bottom: 0.5rem;
+}
+
+.chapter-metadata-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.result-count {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 40rem) {
+    .chapter-metadata-list {
+        grid-template-columns: 1fr;
+    }
+}
