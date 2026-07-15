@@ -10,7 +10,7 @@
 ## Certified Components
 
 - [x] Backend
-- [ ] Database
+- [x] Database
 - [ ] Scope v3 Foundation
 - [ ] One Piece Dataset
 - [ ] Naruto Dataset
@@ -20,7 +20,7 @@
 ## End-to-End Validation
 
 - [x] Backend validated
-- [ ] Database validated
+- [x] Database validated
 - [ ] Dataset validation
 - [ ] API validation
 - [ ] Frontend validation

@@ -49,7 +49,52 @@ Pending final Platform Checkpoint v3 certification.
 
 Status:
 
-Pending
+✅ Validated
+
+Validated areas:
+
+- Database connectivity
+- Physical table inventory
+- SQLAlchemy metadata alignment
+- Required columns
+- Primary keys
+- Foreign keys
+- Runtime foreign-key enforcement
+- Relationship integrity
+- Unique logical identities
+- Certified dataset persistence
+- Metadata completeness
+- Approved null-value handling
+- Source isolation
+- Read-only validation stability
+
+Certified persisted datasets:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Verified exception:
+
+- Naruto Chapter 700
+- Manga arc not applicable
+- Stored value remains null
+- Approved exception present
+
+Results:
+
+- Orphan episodes: 0
+- Orphan chapters: 0
+- Duplicate anime titles: 0
+- Duplicate episode identities: 0
+- Duplicate chapter identities: 0
+- One Piece coverage: PASS
+- Naruto coverage: PASS
+- Naruto source isolation: PASS
+- Full regression: 230 passed
+
+Certification status:
+
+Pending final Platform Checkpoint v3 certification.
 
 ---
 

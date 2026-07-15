@@ -93,3 +93,98 @@ Backend platform validation:
 PASS
 
 The backend is eligible for Platform Checkpoint v3 certification.
+
+---
+
+## v0.61.3 — Database Platform Validation
+
+### Objective
+
+Validate the AnimeMangaDB database schema, relationships, constraints, persistence, and certified Scope v3 records.
+
+### Database Baseline
+
+- Database file: `animemanga.db`
+- File size: 589824 bytes
+- Connectivity: PASS
+
+### Schema Validation
+
+- Required tables present: PASS
+- SQLAlchemy metadata alignment: PASS
+- Primary keys: PASS
+- Foreign keys: PASS
+- Runtime foreign-key enforcement: PASS
+- Required columns: PASS
+
+### Relationship Integrity
+
+- Orphan episodes: 0
+- Orphan chapter records: 0
+- Relationship integrity: PASS
+
+### Identity Integrity
+
+- Duplicate anime titles: 0
+- Duplicate episode identities: 0
+- Duplicate chapter identities: 0
+
+### Certified Dataset Persistence
+
+One Piece:
+
+- Chapter records: 1188
+- Range: 1–1188
+- Distinct chapters: 1188
+- Coverage: PASS
+- Missing required metadata: 0
+
+Naruto:
+
+- Chapter records: 700
+- Range: 1–700
+- Distinct chapters: 700
+- Coverage: PASS
+- Raw missing manga arcs: 1
+- Approved non-applicable arcs: 1
+- Unresolved metadata gaps: 0
+
+### Verified Exception
+
+- Anime: Naruto
+- Chapter: 700
+- Field: Manga arc
+- Stored value: null
+- Approved exception: PASS
+
+### Source Isolation
+
+- Naruto spin-off contamination: 0
+- Source isolation: PASS
+
+### Read-Only Stability
+
+- Unexpected inserts: 0
+- Unexpected updates: 0
+- Unexpected deletes: 0
+- Database size after validation: 589824
+
+### Targeted Tests
+
+- Database tests: passed
+- Repository tests: passed
+- Model tests: passed or not present
+
+### Regression
+
+- Backend tests: 231 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Database platform validation:
+
+PASS
+
+The database is eligible for Platform Checkpoint v3 certification.
