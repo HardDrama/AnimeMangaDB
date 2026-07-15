@@ -95,10 +95,10 @@
 - [x] One Piece chapter-list validation
 - [x] One Piece chapter-detail validation
 - [x] One Piece search validation
-- [ ] Naruto chapter-list validation
-- [ ] Naruto chapter-detail validation
-- [ ] Naruto Chapter 700 validation
-- [ ] Naruto search validation
+- [x] Naruto chapter-list validation
+- [x] Naruto chapter-detail validation
+- [x] Naruto Chapter 700 validation
+- [x] Naruto search validation
 
 ## One Piece Frontend Validation
 
