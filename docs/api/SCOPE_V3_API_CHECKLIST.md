@@ -122,7 +122,22 @@ Documentation
 
 ---
 
+## Final Validation
+
+- [x] Response model validated
+- [x] Chapter-list endpoint validated
+- [x] Chapter-detail endpoint validated
+- [x] Search integration validated
+- [x] One Piece certified dataset validated
+- [x] Naruto certified dataset validated
+- [x] Nullable manga-arc behavior validated
+- [x] Scope v2 compatibility validated
+- [x] OpenAPI schema validated
+- [x] Documentation inventory validated
+- [x] Final regression suite passed
+- [x] Final API validation completed
+
 ## Certification
 
-- [ ] Final validation
+- [x] Final validation
 - [ ] API certified

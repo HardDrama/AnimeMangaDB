@@ -410,3 +410,66 @@ Frontend PASS
 Result
 
 Documentation complete.
+
+---
+
+## v0.59.9 — Final Scope v3 API Validation
+
+### Implemented Contract
+
+- Chapter metadata response model
+- Series chapter-list endpoint
+- Individual chapter endpoint
+- Chapter metadata search
+
+### Certified Dataset Validation
+
+One Piece:
+
+- Records returned: 1188
+- Range: 1–1188
+- Required metadata: PASS
+- List/detail consistency: PASS
+- Search behavior: PASS
+
+Naruto:
+
+- Records returned: 700
+- Range: 1–700
+- Required metadata: PASS
+- Chapter 10 source isolation: PASS
+- Part I/Part II boundary: PASS
+- Chapter 700 null manga arc: PASS
+- Spin-off contamination: 0
+- List/detail consistency: PASS
+- Search behavior: PASS
+
+### Compatibility
+
+- Existing anime routes: PASS
+- Existing episode routes: PASS
+- Existing chapter-mapping routes: PASS
+- Existing search fields: PASS
+- Multi-series behavior: PASS
+
+### API Metadata
+
+- OpenAPI route exposure: PASS
+- Chapter response schema: PASS
+- Nullable manga arc: PASS
+- Documentation completeness: PASS
+
+### Regression
+
+- API tests: 81 passed
+- Backend tests: 228 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Final Scope v3 API validation:
+
+PASS
+
+The Scope v3 API is ready for formal certification.
