@@ -52,3 +52,53 @@ Implementation has not yet begun.
 v0.60.1:
 
 PASS
+
+---
+
+## v0.60.2 — Frontend Chapter API Client
+
+### Objective
+
+Add the frontend data-access functions required for Scope v3 chapter metadata without changing UI behavior.
+
+### Added
+
+- Chapter metadata JSDoc contract
+- Series chapter-list request
+- Individual chapter-detail request
+- Search-response JSDoc contract
+
+### API Functions
+
+- `getChaptersForAnime(animeId)`
+- `getAnimeChapter(animeId, chapterNumber)`
+- `searchDatabase(query)`
+
+### Contract Validation
+
+- One Piece chapter-list endpoint: PASS
+- Naruto Chapter 700 detail endpoint: PASS
+- Nullable manga arc preserved: PASS
+- Scope v2 `chapters` search field preserved: PASS
+- Scope v3 `chapter_metadata` field available: PASS
+- API field names preserved: PASS
+
+### Compatibility
+
+- Existing anime requests unchanged
+- Existing episode requests unchanged
+- Existing chapter-mapping requests unchanged
+- Existing React components unchanged
+- Existing routes unchanged
+
+### Regression
+
+- Backend tests: 230 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Frontend chapter API client:
+
+PASS

@@ -245,3 +245,76 @@ This release does not include:
 - Volume metadata
 - Release-date metadata
 - Cover art
+
+---
+
+## Frontend API Client
+
+The frontend API client remains implemented in JavaScript using native `fetch`.
+
+API base URL:
+
+`VITE_API_BASE_URL`
+
+Fallback:
+
+`http://127.0.0.1:8000`
+
+### Chapter Metadata Contract
+
+The client documents chapter metadata using a JSDoc contract:
+
+- `chapter_number`: number
+- `chapter_title`: string
+- `manga_arc`: string or null
+- `source_url`: string
+- `last_updated`: ISO 8601 string
+
+### Chapter List Request
+
+Function:
+
+`getChaptersForAnime(animeId)`
+
+Endpoint:
+
+`GET /anime/{anime_id}/chapters`
+
+Return value:
+
+Array of chapter metadata records.
+
+### Chapter Detail Request
+
+Function:
+
+`getAnimeChapter(animeId, chapterNumber)`
+
+Endpoint:
+
+`GET /anime/{anime_id}/chapters/{chapter_number}`
+
+Return value:
+
+One chapter metadata record.
+
+### Search Contract
+
+`searchDatabase(query)` returns:
+
+- `anime`
+- `episodes`
+- `chapters`
+- `chapter_metadata`
+
+The `chapters` field remains the Scope v2 episode-adaptation mapping result.
+
+The `chapter_metadata` field contains Scope v3 chapter metadata.
+
+### Error Handling
+
+Chapter metadata requests follow the existing frontend client convention:
+
+- non-successful HTTP responses throw an `Error`
+- pages and components are responsible for displaying the error
+- API response data is not transformed or repaired in the frontend

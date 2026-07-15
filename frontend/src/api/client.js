@@ -2,6 +2,40 @@ const API_BASE_URL =
     import.meta.env.VITE_API_BASE_URL ??
     "http://127.0.0.1:8000";
 
+/**
+ * Certified Scope v3 chapter metadata.
+ *
+ * @typedef {Object} ChapterMetadata
+ * @property {number} chapter_number
+ * @property {string} chapter_title
+ * @property {string|null} manga_arc
+ * @property {string} source_url
+ * @property {string} last_updated
+ */
+
+/**
+ * Scope v2 chapter-to-episode mapping result.
+ *
+ * @typedef {Object} ChapterMappingSearchResult
+ * @property {number} chapter_number
+ * @property {Array<Object>} episodes
+ */
+
+/**
+ * Combined global search response.
+ *
+ * `chapters` preserves the Scope v2 adaptation-mapping
+ * contract.
+ *
+ * `chapter_metadata` contains Scope v3 chapter records.
+ *
+ * @typedef {Object} SearchResponse
+ * @property {Array<Object>} anime
+ * @property {Array<Object>} episodes
+ * @property {Array<ChapterMappingSearchResult>} chapters
+ * @property {Array<ChapterMetadata>} chapter_metadata
+ */
+
 export async function getAnime() {
     const response = await fetch(`${API_BASE_URL}/anime`);
 
@@ -29,6 +63,53 @@ export async function getEpisodesForAnime(animeId) {
 
     if (!response.ok) {
         throw new Error("Failed to fetch episodes.");
+    }
+
+    return response.json();
+}
+
+/**
+ * Return all certified chapter metadata for an anime.
+ *
+ * @param {number|string} animeId
+ * @returns {Promise<Array<ChapterMetadata>>}
+ */
+export async function getChaptersForAnime(animeId) {
+    const response = await fetch(
+        `${API_BASE_URL}/anime/${animeId}/chapters`
+    );
+
+    if (!response.ok) {
+        throw new Error(
+            "Failed to fetch chapter metadata."
+        );
+    }
+
+    return response.json();
+}
+
+/**
+ * Return one anime-scoped chapter metadata record.
+ *
+ * @param {number|string} animeId
+ * @param {number|string} chapterNumber
+ * @returns {Promise<ChapterMetadata>}
+ */
+export async function getAnimeChapter(
+    animeId,
+    chapterNumber,
+) {
+    const response = await fetch(
+        (
+            `${API_BASE_URL}/anime/${animeId}` +
+            `/chapters/${chapterNumber}`
+        )
+    );
+
+    if (!response.ok) {
+        throw new Error(
+            "Failed to fetch chapter metadata."
+        );
     }
 
     return response.json();
@@ -81,6 +162,14 @@ export async function getEpisodeById(episodeId) {
 
     return response.json();
 }
+
+/**
+ * Search anime, episodes, Scope v2 chapter mappings,
+ * and Scope v3 chapter metadata.
+ *
+ * @param {string} query
+ * @returns {Promise<SearchResponse>}
+ */
 
 export async function searchDatabase(query) {
     const params = new URLSearchParams({

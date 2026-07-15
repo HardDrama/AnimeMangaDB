@@ -15,11 +15,14 @@
 
 ## API Client
 
-- [ ] Chapter metadata type added
-- [ ] Series chapter-list request added
-- [ ] Chapter-detail request added
-- [ ] Search response extended
-- [ ] API error handling added
+- [x] Chapter metadata JSDoc contract added
+- [x] Series chapter-list request added
+- [x] Chapter-detail request added
+- [x] Search response contract extended
+- [x] Nullable manga-arc typing documented
+- [x] Existing API field names preserved
+- [x] Existing client error-handling convention preserved
+- [x] No UI behavior changed
 
 ---
 
