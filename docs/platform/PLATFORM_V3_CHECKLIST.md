@@ -2,14 +2,14 @@
 
 ## Platform Baseline
 
-- [ ] Main branch validated
-- [ ] Backend regression passes
-- [ ] Frontend build passes
-- [ ] Frontend lint passes
+- [x] Main branch validated
+- [x] Backend regression passes
+- [x] Frontend build passes
+- [x] Frontend lint passes
 
 ## Certified Components
 
-- [ ] Backend
+- [x] Backend
 - [ ] Database
 - [ ] Scope v3 Foundation
 - [ ] One Piece Dataset
@@ -19,7 +19,7 @@
 
 ## End-to-End Validation
 
-- [ ] Backend validated
+- [x] Backend validated
 - [ ] Database validated
 - [ ] Dataset validation
 - [ ] API validation
