@@ -308,3 +308,71 @@ Results:
 Certified One Piece Scope v3 API contract:
 
 PASS
+
+---
+
+## v0.59.7 — Naruto Scope v3 API Validation
+
+### Dataset
+
+- Anime: Naruto
+- Certified range: Chapters 1–700
+- Certified records: 700
+
+### Chapter List
+
+- Records returned: 700
+- First chapter: 1
+- Last chapter: 700
+- Numerical ordering: PASS
+- Missing titles: 0
+- Raw missing manga arcs: 1
+- Approved non-applicable manga arcs: 1
+- Unresolved manga-arc gaps: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+
+### Boundary and Source Validation
+
+- Chapter 10 collision isolation: PASS
+- Chapter 244 validation: PASS
+- Chapter 245 validation: PASS
+- Chapter 699 validation: PASS
+- Chapter 700 validation: PASS
+- Spin-off contamination: 0
+
+### Verified Exception
+
+- Chapter: 700
+- Manga arc: Not applicable
+- API value: null
+- Validation: PASS
+
+### Search
+
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+- Scope v2 search mappings preserved: PASS
+
+### Compatibility
+
+- One Piece Scope v3 API: PASS
+- Anime compatibility routes: PASS
+- Episode routes: PASS
+- Chapter-to-episode routes: PASS
+- Multi-series behavior: PASS
+
+### Regression
+
+- Naruto API tests: 10 passed
+- API tests: 81 passed
+- Backend tests: 228 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Certified Naruto Scope v3 API contract:
+
+PASS

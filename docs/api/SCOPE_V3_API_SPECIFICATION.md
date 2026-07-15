@@ -321,3 +321,44 @@ Validation result:
 - Scope v2 compatibility: PASS
 
 One Piece contains no approved null manga-arc exceptions in the certified range.
+
+---
+
+## Certified Naruto API Contract
+
+Certified dataset:
+
+- Anime: Naruto
+- Chapter range: 1–700
+- Chapter records: 700
+
+Validated endpoints:
+
+- `GET /anime/{anime_id}/chapters`
+- `GET /anime/{anime_id}/chapters/{chapter_number}`
+- `GET /search?query={value}`
+
+Validation result:
+
+- Complete range returned: PASS
+- Numerical ordering: PASS
+- Required metadata completeness: PASS
+- List/detail consistency: PASS
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+- Spin-off exclusion: PASS
+- Scope v2 compatibility: PASS
+
+### Verified Exception
+
+Naruto Chapter 700 is a standalone epilogue.
+
+API response:
+
+```json
+{
+  "chapter_number": 700,
+  "manga_arc": null
+}
+```

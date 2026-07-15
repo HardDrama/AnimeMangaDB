@@ -71,7 +71,7 @@
 ## Validation
 
 - [x] One Piece validation
-- [ ] Naruto validation
+- [x] Naruto validation
 - [ ] Regression testing
 
 ## One Piece Validation
@@ -86,6 +86,22 @@
 - [x] Chapter-title search validated
 - [x] Manga-arc search validated
 - [x] Numeric chapter search validated
+- [x] Scope v2 compatibility preserved
+
+## Naruto Validation
+
+- [x] All 700 chapter records returned
+- [x] Chapter range 1–700 complete
+- [x] Chapter ordering validated
+- [x] Required metadata fields complete
+- [x] Part I/Part II boundary validated
+- [x] Chapter 10 collision isolation validated
+- [x] Chapter 700 null manga arc validated
+- [x] List/detail consistency validated
+- [x] Chapter-title search validated
+- [x] Manga-arc search validated
+- [x] Numeric chapter search validated
+- [x] Spin-off contamination excluded
 - [x] Scope v2 compatibility preserved
 
 ---
