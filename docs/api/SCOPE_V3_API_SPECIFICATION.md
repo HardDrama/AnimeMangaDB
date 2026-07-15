@@ -362,3 +362,79 @@ API response:
   "manga_arc": null
 }
 ```
+
+# Scope v3 Endpoints
+
+## GET /anime/{anime_id}/chapters
+
+Purpose
+
+Returns every certified Scope v3 chapter metadata record for the requested anime.
+
+Response
+
+- ordered ascending
+- ChapterMetadataResponse
+- JSON array
+
+Errors
+
+404 Anime not found
+
+Validation
+
+✓ One Piece
+✓ Naruto
+
+# Compatibility
+
+Scope v2 endpoints remain unchanged.
+
+Existing endpoints:
+
+- /anime
+- /anime/{id}
+- /anime/{id}/episodes
+- /chapters/{chapter}/episodes
+
+remain fully compatible.
+
+Scope v3 functionality extends the API without replacing existing behavior.
+
+## Nullable Metadata
+
+Currently supported:
+
+Naruto Chapter 700
+
+Reason:
+
+Verified standalone epilogue.
+
+Returned as
+
+manga_arc = null
+
+The API never fabricates replacement metadata.
+
+## API Examples
+
+```JSON
+{
+  "chapter_number": 1,
+  "chapter_title": "Romance Dawn",
+  "manga_arc": "Romance Dawn Arc",
+  "source_url": "https://onepiece.fandom.com/wiki/Chapter_1",
+  "last_updated": "2026-07-12T23:49:42.208157"
+}
+```
+
+```JSON
+{
+  "chapter_number": 700,
+  "chapter_title": "Naruto Uzumaki!!",
+  "manga_arc": null,
+  "source_url": "https://naruto.fandom.com/wiki/Naruto_Uzumaki!!_(chapter_700)",
+  "last_updated": "2026-07-13T22:12:26.073408"
+}
+```

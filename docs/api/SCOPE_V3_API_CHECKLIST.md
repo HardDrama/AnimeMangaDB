@@ -106,6 +106,22 @@
 
 ---
 
+Documentation
+
+[x] Endpoint documentation
+
+[x] Compatibility documentation
+
+[x] Search documentation
+
+[x] Nullable metadata documentation
+
+[x] Example responses
+
+[x] Public API contract documented
+
+---
+
 ## Certification
 
 - [ ] Final validation
