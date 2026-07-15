@@ -2,6 +2,12 @@
 
 AnimeMangaDB (working title) is an open-source project that maps anime episodes to their corresponding manga chapters.
 
+## Current Development
+
+v0.60 — Scope v3 Frontend Integration
+
+The frontend is being extended to display certified chapter metadata from the Scope v3 REST API.
+
 ## Goals
 
 - Scrape supported anime sources
