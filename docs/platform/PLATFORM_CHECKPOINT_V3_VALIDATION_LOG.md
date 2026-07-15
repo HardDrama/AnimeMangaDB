@@ -290,3 +290,102 @@ Scope v3 dataset validation:
 PASS
 
 Both certified datasets are eligible for Platform Checkpoint v3 certification.
+
+---
+
+## v0.61.5 — Scope v3 API Platform Validation
+
+### Objective
+
+Revalidate the certified Scope v3 API as an integrated Platform Checkpoint v3 component.
+
+### API Metadata
+
+- API version: 0.59.0
+- Supported scope: v3
+- Scope v2 compatibility: true
+- Scope v3 API status: certified
+- `/scope`: PASS
+- `/version`: PASS
+
+### Response Model
+
+- Required fields: PASS
+- Nullable manga arc: PASS
+- ORM serialization: PASS
+- Datetime serialization: PASS
+
+### Chapter Endpoints
+
+- Series chapter-list endpoint: PASS
+- Individual chapter endpoint: PASS
+- Ordered results: PASS
+- Empty valid list: PASS
+- Missing anime: PASS
+- Missing chapter: PASS
+- Invalid chapter path: PASS
+
+### Certified Dataset Exposure
+
+One Piece:
+
+- Records: 1188
+- Range: 1–1188
+- Required metadata: PASS
+- Detail endpoints: PASS
+
+Naruto:
+
+- Records: 700
+- Range: 1–700
+- Chapter 10 source isolation: PASS
+- Chapter 700 null manga arc: PASS
+- Detail endpoints: PASS
+
+### Search
+
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+- Scope v2 `chapters` field preserved: PASS
+- Scope v3 `chapter_metadata` field preserved: PASS
+
+### Compatibility
+
+- Existing anime routes: PASS
+- Existing episode routes: PASS
+- Chapter-to-episode mappings: PASS
+- Existing search fields: PASS
+- Multi-series behavior: PASS
+
+### OpenAPI
+
+- Chapter-list route exposed: PASS
+- Chapter-detail route exposed: PASS
+- Search route exposed: PASS
+- Chapter response schema exposed: PASS
+- Nullable manga arc exposed: PASS
+
+### Targeted Tests
+
+- API metadata tests: 4 passed
+- Response-model tests: 5 passed
+- Chapter endpoint tests: 11 passed
+- Search tests: 17 passed
+- Certified dataset API tests: 17 passed
+- Scope v2 compatibility tests: [ACTUAL] passed
+- Full API suite: 83 passed
+
+### Regression
+
+- Backend tests: 231 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Scope v3 API platform validation:
+
+PASS
+
+The Scope v3 API is eligible for Platform Checkpoint v3 certification.

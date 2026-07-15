@@ -187,7 +187,50 @@ Spin-off contamination:
 
 Status:
 
-Pending
+✅ Validated
+
+API version:
+
+0.59.0
+
+Validated contract:
+
+- Scope v3 API metadata
+- Chapter metadata response model
+- Series chapter-list endpoint
+- Individual chapter endpoint
+- Chapter metadata search
+- Nullable manga-arc behavior
+- Multi-series dataset exposure
+- Scope v2 compatibility
+- OpenAPI exposure
+- Error behavior
+
+Certified datasets exposed:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Verified exception:
+
+- Naruto Chapter 700
+- Manga arc returned as null
+
+Results:
+
+- API metadata tests: 4 passed
+- Response-model tests: 5 passed
+- Chapter endpoint tests: 11 passed
+- Search tests: 17 passed
+- Certified dataset API tests: 17 passed
+- Full API suite: 83 passed
+- Full backend regression: 231 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+Certification status:
+
+Pending final Platform Checkpoint v3 certification.
 
 ---
 
