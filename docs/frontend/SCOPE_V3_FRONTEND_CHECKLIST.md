@@ -92,13 +92,34 @@
 
 ## Certified Dataset Validation
 
-- [ ] One Piece chapter-list validation
-- [ ] One Piece chapter-detail validation
-- [ ] One Piece search validation
+- [x] One Piece chapter-list validation
+- [x] One Piece chapter-detail validation
+- [x] One Piece search validation
 - [ ] Naruto chapter-list validation
 - [ ] Naruto chapter-detail validation
 - [ ] Naruto Chapter 700 validation
 - [ ] Naruto search validation
+
+## One Piece Frontend Validation
+
+- [x] Anime detail page validated
+- [x] All 1188 chapter records represented
+- [x] Chapter range 1–1188 validated
+- [x] Chapter-list rendering validated
+- [x] Chapter-number filtering validated
+- [x] Chapter-title filtering validated
+- [x] Manga-arc filtering validated
+- [x] Empty filter state validated
+- [x] Chapter detail navigation validated
+- [x] Representative chapter details validated
+- [x] Canonical source links validated
+- [x] Chapter metadata search validated
+- [x] Existing episode behavior preserved
+- [x] Scope v2 mappings preserved
+- [x] Desktop behavior validated
+- [x] Tablet behavior validated
+- [x] Mobile behavior validated
+- [x] Accessibility review completed
 
 ---
 

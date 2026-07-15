@@ -312,3 +312,95 @@ Chapter detail pages also do not display episode mappings because the current ma
 Chapter metadata search integration:
 
 PASS
+
+---
+
+## v0.60.6 — One Piece Scope v3 Frontend Validation
+
+### Dataset
+
+- Anime: One Piece
+- Certified range: Chapters 1–1188
+- Certified records: 1188
+
+### Anime Detail Page
+
+- Anime metadata: PASS
+- Existing episode list: PASS
+- Chapter Metadata section: PASS
+- Chapter count: 1188
+- First chapter: 1
+- Last chapter: 1188
+
+### Chapter List
+
+- Chapter numbers: PASS
+- Chapter titles: PASS
+- Manga arcs: PASS
+- Canonical source links: PASS
+- Detail links: PASS
+- API ordering preserved: PASS
+
+### Local Filtering
+
+- Number search: PASS
+- Title search: PASS
+- Manga-arc search: PASS
+- Case-insensitive search: PASS
+- Partial search: PASS
+- No-match state: PASS
+- Reset behavior: PASS
+
+### Chapter Detail
+
+Validated chapters:
+
+- 1
+- 50
+- 500
+- 1000
+- 1188
+
+Results:
+
+- Metadata display: PASS
+- Breadcrumbs: PASS
+- Back navigation: PASS
+- Canonical sources: PASS
+- Last-updated display: PASS
+- Direct URL behavior: PASS
+
+### Global Search
+
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+- Scope v2 adaptation matches preserved: PASS
+- Empty metadata result state: PASS
+
+### Compatibility
+
+- Anime browsing: PASS
+- Episode browsing: PASS
+- Episode detail: PASS
+- Episode chapter mappings: PASS
+- Chapter Lookup: PASS
+
+### Responsive and Accessibility
+
+- Desktop: PASS
+- Tablet: PASS
+- Mobile: PASS
+- Accessibility review: PASS
+
+### Regression
+
+- Backend tests: 230 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+One Piece Scope v3 frontend contract:
+
+PASS

@@ -489,3 +489,28 @@ A future API enhancement should provide:
 `GET /anime/{anime_id}/chapters/{chapter_number}/episodes`
 
 The frontend should not perform cross-series filtering as presentation logic.
+
+---
+
+## Certified One Piece Frontend Contract
+
+Certified dataset:
+
+- One Piece Chapters 1–1188
+- 1188 chapter metadata records
+
+Validated experiences:
+
+- Anime chapter list
+- Local chapter filtering
+- Chapter detail
+- Chapter metadata search
+- Canonical source navigation
+- Responsive presentation
+- Scope v2 compatibility
+
+Validation result:
+
+PASS
+
+One Piece has no certified null manga-arc exceptions in the supported range.
