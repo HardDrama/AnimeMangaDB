@@ -2340,3 +2340,58 @@ Naruto:
 
 Next:
 ➡ Scope v3 Frontend Integration
+
+---
+
+# AnimeMangaDB v0.60
+## Scope v3 Frontend Integration — CERTIFIED
+
+✅ Status: Complete
+
+v0.60 brings certified Scope v3 chapter metadata into the frontend while preserving existing Scope v2 behavior.
+
+### Added
+- Frontend chapter API client
+- Series chapter metadata lists
+- Local filtering by chapter number, title, and arc
+- Dedicated chapter detail pages
+- Canonical source links
+- Last-updated timestamps
+- Chapter metadata global search
+- Responsive chapter layouts
+- Nullable manga-arc presentation
+
+### Certified Dataset Validation
+
+One Piece:
+- Chapters 1–1188
+- Chapter list: PASS
+- Chapter detail: PASS
+- Search: PASS
+
+Naruto:
+- Chapters 1–700
+- Chapter 10 source isolation: PASS
+- Chapter 700 displays `Not applicable`
+- Spin-off contamination: 0
+- Chapter list, detail, and search: PASS
+
+### Compatibility
+- Anime browsing preserved
+- Episode browsing preserved
+- Episode detail preserved
+- Episode-to-chapter mappings preserved
+- Chapter Lookup preserved
+- Existing search sections preserved
+
+### Validation
+- Backend tests: 230 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+- Desktop, tablet, and mobile: PASS
+- Accessibility review: PASS
+
+🏆 Scope v3 Frontend Integration Certified
+
+Next:
+➡ Platform Checkpoint v3

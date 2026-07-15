@@ -7,15 +7,12 @@
 - Database
 - API
 - Reports
-- Frontend integration
+- Frontend
 
 ### Scope v3 Foundation
 - Chapter metadata framework
-- URL discovery
-- Extraction
-- Batch ingestion
+- Ingestion
 - Auditing
-- Manual validation
 - Certification
 - Metadata exceptions
 
@@ -27,9 +24,15 @@
 - Chapter-list endpoint
 - Chapter-detail endpoint
 - Chapter metadata search
-- Multi-series validation
 - Scope v2 compatibility
-- API version 0.59.0
+
+### Scope v3 Frontend Integration
+- Series chapter lists
+- Chapter detail pages
+- Chapter metadata search
+- Nullable metadata presentation
+- Multi-series validation
+- Responsive and accessibility validation
 
 ---
 
@@ -39,34 +42,16 @@
 
 Certified components:
 - Scope v3 Foundation
-- One Piece Scope v3
-- Naruto Scope v3
+- One Piece Scope v3 Dataset
+- Naruto Scope v3 Dataset
 - Scope v3 API
+- Scope v3 Frontend
 
-Current phase:
-Scope v3 Frontend Integration
-
----
-
-## Next
-
-### Scope v3 Frontend Integration
-- Chapter metadata display
-- Chapter lookup
-- Manga-arc display
-- Multi-series frontend validation
-- Responsive behavior
-- Frontend certification
-
----
-
-## Future
-
-### Platform Checkpoint v3 Certification
-- Scope v3 frontend certified
-- Multi-series behavior validated
-- Scope v2 compatibility preserved
-- Final regression validation
-- Platform documentation complete
+Next:
+- Unified platform validation
+- Scope v2 compatibility review
+- Final documentation review
+- Platform regression testing
+- Platform Checkpoint v3 certification
 
 🏆 Goal: Certified Scope v3 Platform
