@@ -242,3 +242,69 @@ Naruto:
 Scope v3 chapter metadata search:
 
 PASS
+
+---
+
+## v0.59.6 — One Piece Scope v3 API Validation
+
+### Dataset
+
+- Anime: One Piece
+- Certified range: Chapters 1–1188
+- Certified records: 1188
+
+### Chapter List
+
+- Records returned: 1188
+- First chapter: 1
+- Last chapter: 1188
+- Numerical ordering: PASS
+- Missing titles: 0
+- Missing manga arcs: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+
+### Chapter Detail
+
+Representative chapters validated:
+
+- Chapter 1
+- Chapter 50
+- Chapter 100
+- Chapter 500
+- Chapter 1000
+- Chapter 1188
+
+Results:
+
+- Detail retrieval: PASS
+- List/detail consistency: PASS
+- Required metadata: PASS
+
+### Search
+
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+- Scope v2 search mappings preserved: PASS
+
+### Compatibility
+
+- Anime compatibility routes: PASS
+- Episode routes: PASS
+- Chapter-to-episode routes: PASS
+- Multi-series behavior: PASS
+
+### Regression
+
+- One Piece API tests: 7 passed
+- API tests: 71 passed
+- Backend tests: 218 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Certified One Piece Scope v3 API contract:
+
+PASS

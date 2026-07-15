@@ -80,17 +80,34 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ---
 
-# Current
+## Current
 
-Platform Checkpoint v3
+### v0.59 — Scope v3 API Integration
 
-## Current release:
+Status:
 
-v0.59 — Scope v3 API Integration
+One Piece API Validation Passed
 
-### Current step:
+Completed:
 
-API contract definition
+- Scope v3 API contract
+- Chapter response model
+- Series chapter-list endpoint
+- Individual chapter endpoint
+- Chapter metadata search
+- One Piece certified dataset validation
+
+Current phase:
+
+Naruto Scope v3 API validation
+
+Next:
+
+- Validate Naruto Chapters 1–700
+- Validate Chapter 700 null manga arc
+- Complete API documentation
+- Perform final API validation
+- Certify Scope v3 API integration
 
 ---
 

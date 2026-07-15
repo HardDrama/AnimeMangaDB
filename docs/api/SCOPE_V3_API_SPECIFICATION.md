@@ -292,3 +292,32 @@ When no Scope v3 chapter metadata matches:
 ```
 
 Other search categories may still contain results.
+
+---
+
+## Certified One Piece API Contract
+
+Certified dataset:
+
+- Anime: One Piece
+- Chapter range: 1–1188
+- Chapter records: 1188
+
+Validated endpoints:
+
+- `GET /anime/{anime_id}/chapters`
+- `GET /anime/{anime_id}/chapters/{chapter_number}`
+- `GET /search?query={value}`
+
+Validation result:
+
+- Complete range returned: PASS
+- Numerical ordering: PASS
+- Required metadata completeness: PASS
+- List/detail consistency: PASS
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+- Scope v2 compatibility: PASS
+
+One Piece contains no approved null manga-arc exceptions in the certified range.

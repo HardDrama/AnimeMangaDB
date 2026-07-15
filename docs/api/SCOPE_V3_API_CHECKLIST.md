@@ -70,9 +70,23 @@
 
 ## Validation
 
-- [ ] One Piece validation
+- [x] One Piece validation
 - [ ] Naruto validation
 - [ ] Regression testing
+
+## One Piece Validation
+
+- [x] All 1188 chapter records returned
+- [x] Chapter range 1–1188 complete
+- [x] Chapter ordering validated
+- [x] Required metadata fields complete
+- [x] Boundary chapter details validated
+- [x] Representative chapter details validated
+- [x] List/detail consistency validated
+- [x] Chapter-title search validated
+- [x] Manga-arc search validated
+- [x] Numeric chapter search validated
+- [x] Scope v2 compatibility preserved
 
 ---
 
