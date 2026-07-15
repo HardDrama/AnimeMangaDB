@@ -82,40 +82,22 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.59 — Scope v3 API Integration
+### Platform Checkpoint v3
 
 Status:
 
-Final Validation Passed
+In Progress
 
-Completed:
+Certified components:
 
-- Scope v3 API contract
-- Chapter response model
-- Series chapter-list endpoint
-- Individual chapter endpoint
-- Chapter metadata search
-- One Piece Scope v3 API validation
-- Naruto Scope v3 API validation
-- API documentation
-- Final API validation
+- Scope v3 Foundation
+- One Piece Scope v3 Dataset
+- Naruto Scope v3 Dataset
+- Scope v3 API Integration
 
-Validated datasets:
+Next phase:
 
-- One Piece Chapters 1–1188
-- Naruto Chapters 1–700
-
-Compatibility:
-
-- Scope v2 API behavior preserved
-
-Current phase:
-
-Formal Scope v3 API certification
-
-Next:
-
-Certify Scope v3 API integration
+Scope v3 Frontend Integration
 
 ---
 
@@ -123,18 +105,9 @@ Certify Scope v3 API integration
 
 v0.57  ✅ One Piece Scope v3 Dataset
 v0.58  ✅ Naruto Scope v3 Dataset
-v0.59  Scope v3 API Integration
-
-v0.59.1  Define API contract
-v0.59.2  Response models
-v0.59.3  Chapter endpoints
-v0.59.4  Repository integration
-v0.59.5  Search support
-v0.59.6  One Piece validation
-v0.59.7  Naruto validation
-v0.59.8  Documentation
-v0.59.9  Final validation
-v0.59.10  API certification
+v0.59  ✅ Scope v3 API Integration
+Next   Scope v3 Frontend Integration
+Future Platform Checkpoint v3 Certification
 
 ---
 
@@ -185,3 +158,37 @@ Evidence:
 - Manual source validation: PASS
 - Final validation: PASS
 - Certification failures: 0
+
+### Scope v3 API Integration
+
+Status:
+
+Certified
+
+API version:
+
+0.59.0
+
+Certified endpoints:
+
+- `GET /anime/{anime_id}/chapters`
+- `GET /anime/{anime_id}/chapters/{chapter_number}`
+- Scope v3 chapter metadata search
+
+Certified datasets:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Compatibility:
+
+- Scope v2 API behavior preserved
+
+Evidence:
+
+- Response-model validation: PASS
+- One Piece API validation: PASS
+- Naruto API validation: PASS
+- Final API validation: PASS
+- OpenAPI validation: PASS
+- API metadata alignment: PASS

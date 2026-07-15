@@ -461,4 +461,25 @@ Final API validation:
 
 Formal API certification:
 
-⬜ Pending v0.59.10
+✅ CERTIFIED
+
+---
+
+## Certification Scope
+
+This certification applies to:
+
+- API version 0.59.0
+- Scope v3 chapter metadata responses
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+- Series chapter-list endpoint
+- Individual chapter endpoint
+- Chapter metadata search
+- Scope v2 compatibility
+
+This certification does not yet include:
+
+- Scope v3 frontend integration
+- New frontend chapter views
+- Full Platform Checkpoint v3 certification

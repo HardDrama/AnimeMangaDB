@@ -137,7 +137,21 @@ Documentation
 - [x] Final regression suite passed
 - [x] Final API validation completed
 
+## API Metadata
+
+- [x] `/scope` reports Scope v3
+- [x] `/scope` documents Scope v2 compatibility
+- [x] `/scope` exposes chapter metadata fields
+- [x] `/version` reports API v0.59.0
+- [x] `/version` reports Scope v3 support
+- [x] `/version` reports certified Scope v3 API status
+- [x] Platform Checkpoint v3 remains correctly marked in progress
+
+---
+
 ## Certification
 
 - [x] Final validation
-- [ ] API certified
+- [x] API metadata aligned
+- [x] Scope v2 compatibility preserved
+- [x] Scope v3 API certified

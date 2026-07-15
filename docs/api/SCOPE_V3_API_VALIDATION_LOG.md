@@ -473,3 +473,72 @@ Final Scope v3 API validation:
 PASS
 
 The Scope v3 API is ready for formal certification.
+
+---
+
+## v0.59.10 — Scope v3 API Certification
+
+### Certified Component
+
+Scope v3 API Integration
+
+### Certified API Version
+
+0.59.0
+
+### Certified Contract
+
+- Chapter metadata response model
+- Series chapter-list endpoint
+- Individual chapter endpoint
+- Chapter metadata search
+- Nullable manga-arc support
+- Multi-series Scope v3 behavior
+
+### Certified Dataset Exposure
+
+One Piece:
+
+- Chapters 1–1188
+- 1188 records
+- API contract: PASS
+
+Naruto:
+
+- Chapters 1–700
+- 700 records
+- Chapter 700 null manga arc: PASS
+- Spin-off exclusion: PASS
+- API contract: PASS
+
+### API Metadata
+
+- `/scope` reports Scope v3
+- `/scope` reports Scope v2 compatibility
+- `/scope` documents chapter metadata fields
+- `/version` reports API v0.59.0
+- `/version` reports certified Scope v3 API status
+- Platform Checkpoint v3 remains in progress
+
+### Compatibility
+
+- Existing anime endpoints: PASS
+- Existing episode endpoints: PASS
+- Existing chapter-mapping endpoints: PASS
+- Existing search fields: PASS
+- Scope v2 compatibility: PASS
+
+### Regression Validation
+
+- API tests: 83 passed
+- Backend tests: 230 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+### Certification Result
+
+✅ Scope v3 API Integration Certified
+
+The API component is certified for Platform Checkpoint v3.
+
+Frontend integration and final platform certification remain pending.

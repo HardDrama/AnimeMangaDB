@@ -203,3 +203,41 @@ PASS — 0 errors
 Final validation status:
 
 **PASS**
+
+---
+
+## Certification Result
+
+The final validation passed without unresolved response-model, endpoint, dataset, search, compatibility, documentation, OpenAPI, or regression failures.
+
+Certified component:
+
+Scope v3 API Integration
+
+Certified API version:
+
+0.59.0
+
+Certified datasets exposed:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Certified endpoints:
+
+- `GET /anime/{anime_id}/chapters`
+- `GET /anime/{anime_id}/chapters/{chapter_number}`
+- Scope v3 `chapter_metadata` results through `GET /search`
+
+Compatibility:
+
+- Scope v2 API behavior preserved
+- Scope v2 support explicitly reported
+
+Certification status:
+
+**CERTIFIED**
+
+Certification date:
+
+2026-07-14
