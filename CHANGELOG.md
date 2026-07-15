@@ -2284,3 +2284,59 @@ Frontend:
 - Scope v3 API integration
 - Frontend chapter metadata integration
 - Multi-series platform validation
+
+# AnimeMangaDB v0.59
+## Scope v3 API Integration — CERTIFIED
+
+✅ Status: Complete
+
+v0.59 exposes certified Scope v3 chapter metadata through the REST API while preserving existing Scope v2 behavior.
+
+### Added
+- Chapter metadata response model
+- `GET /anime/{anime_id}/chapters`
+- `GET /anime/{anime_id}/chapters/{chapter_number}`
+- Scope v3 chapter metadata search
+- Nullable manga-arc support
+- Scope v3 API metadata through `/scope` and `/version`
+
+### Search
+`GET /search` now returns:
+
+- `anime`
+- `episodes`
+- `chapters`
+- `chapter_metadata`
+
+The existing `chapters` mapping contract remains unchanged.
+
+### Certified Dataset Validation
+
+One Piece:
+- Chapters 1–1188
+- 1188 records
+- API contract: PASS
+
+Naruto:
+- Chapters 1–700
+- 700 records
+- Chapter 700 null manga arc: PASS
+- Spin-off contamination: 0
+- API contract: PASS
+
+### Compatibility
+- Scope v2 anime routes preserved
+- Scope v2 episode routes preserved
+- Chapter-to-episode mappings preserved
+- Existing search fields preserved
+
+### Validation
+- API tests: 83 passed
+- Backend tests: 230 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+
+🏆 Scope v3 API Integration Certified
+
+Next:
+➡ Scope v3 Frontend Integration
