@@ -458,3 +458,73 @@ None.
 Scope v3 frontend documentation:
 
 COMPLETE
+
+---
+
+## v0.60.9 — Final Scope v3 Frontend Validation
+
+### Implemented Experience
+
+- Frontend chapter API client
+- Series chapter metadata lists
+- Local chapter filtering
+- Chapter detail pages
+- Chapter metadata global search
+- Nullable manga-arc presentation
+
+### One Piece
+
+- Range: Chapters 1–1188
+- Chapter-list experience: PASS
+- Chapter-detail experience: PASS
+- Search experience: PASS
+- Canonical source navigation: PASS
+
+### Naruto
+
+- Range: Chapters 1–700
+- Chapter-list experience: PASS
+- Chapter-detail experience: PASS
+- Chapter 10 source isolation: PASS
+- Chapter 700 `Not applicable` presentation: PASS
+- Spin-off contamination: 0
+- Search experience: PASS
+
+### Compatibility
+
+- Anime browsing: PASS
+- Episode browsing: PASS
+- Episode detail: PASS
+- Episode chapter mappings: PASS
+- Chapter Lookup: PASS
+- Existing search sections: PASS
+
+### Responsive and Accessibility
+
+- Desktop: PASS
+- Tablet: PASS
+- Mobile: PASS
+- Accessibility review: PASS
+- Browser console: PASS
+- Network behavior: PASS
+
+### Known API-Dependent Limitations
+
+- Search results do not include anime identity
+- Chapter detail does not show anime-scoped episode mappings
+
+These remain outside the certified frontend scope.
+
+### Regression
+
+- Backend tests: 230 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Final Scope v3 frontend validation:
+
+PASS
+
+The Scope v3 frontend integration is ready for formal certification.
