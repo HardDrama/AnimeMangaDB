@@ -28,6 +28,12 @@ The frontend is being extended to display certified chapter metadata from the Sc
 
 - In Development
 
+## Current Status
+
+Platform Checkpoint v3
+
+Planning
+
 ## API Status
 
 Current API version:

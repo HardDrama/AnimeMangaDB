@@ -82,53 +82,38 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.60 — Scope v3 Frontend Integration
+### v0.61 — Platform Checkpoint v3
 
 Status:
 
-CERTIFIED
+Planning
 
-Completed:
+Goal:
 
-- Scope v3 frontend contract
-- Frontend chapter API client
-- Series chapter-list experience
-- Chapter-detail experience
-- Chapter metadata global search
-- One Piece frontend validation
-- Naruto frontend validation
-- Scope v3 frontend documentation
-- Final frontend validation
-- Scope v3 frontend certification
+Certify the complete Scope v3 platform.
 
-Certified datasets:
+Certified components entering the checkpoint:
 
-- One Piece Chapters 1–1188
-- Naruto Chapters 1–700
+- Backend
+- Database
+- Scope v3 Foundation
+- One Piece Scope v3 Dataset
+- Naruto Scope v3 Dataset
+- Scope v3 API
+- Scope v3 Frontend
 
-Platform status:
+Current phase:
 
-Backend — Certified
-
-Database — Certified
-
-Comparison — Certified
-
-Repair — Certified
-
-Reports — Certified
-
-Metadata Override Framework — Certified
-
-Scope v3 Dataset — Certified
-
-Scope v3 API — Certified
-
-Scope v3 Frontend — Certified
+Platform certification planning
 
 Next:
 
-Platform Checkpoint v3
+- Validate backend
+- Validate database
+- Validate datasets
+- Validate API
+- Validate frontend
+- Perform integrated platform validation
 
 ---
 
