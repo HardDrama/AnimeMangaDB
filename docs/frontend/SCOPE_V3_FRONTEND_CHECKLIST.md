@@ -125,24 +125,42 @@
 
 ## Compatibility
 
-- [ ] Existing anime views preserved
-- [ ] Existing episode views preserved
-- [ ] Existing episode mappings preserved
-- [ ] Existing search behavior preserved
+- [x] Existing anime views preserved
+- [x] Existing episode views preserved
+- [x] Existing episode mappings preserved
+- [x] Existing search behavior preserved
 
 ---
 
 ## Validation
 
-- [ ] Frontend tests pass
-- [ ] Production build passes
-- [ ] Frontend lint passes
-- [ ] Backend regression suite passes
-- [ ] Desktop validation completed
-- [ ] Tablet validation completed
-- [ ] Mobile validation completed
-- [ ] Accessibility review completed
+- [x] Frontend tests pass
+- [x] Production build passes
+- [x] Frontend lint passes
+- [x] Backend regression suite passes
+- [x] Desktop validation completed
+- [x] Tablet validation completed
+- [x] Mobile validation completed
+- [x] Accessibility review completed
 - [ ] Final frontend validation completed
+
+---
+
+## Documentation
+
+- [x] Frontend architecture documented
+- [x] API-client contract documented
+- [x] Chapter-list experience documented
+- [x] Chapter-detail experience documented
+- [x] Search integration documented
+- [x] Nullable metadata behavior documented
+- [x] Scope v2 compatibility documented
+- [x] Responsive behavior documented
+- [x] Accessibility requirements documented
+- [x] Known API-dependent limitations documented
+- [x] One Piece validation evidence documented
+- [x] Naruto validation evidence documented
+- [x] Validation commands documented
 
 ---
 

@@ -404,3 +404,57 @@ Results:
 One Piece Scope v3 frontend contract:
 
 PASS
+
+---
+
+## v0.60.8 — Scope v3 Frontend Documentation
+
+### Objective
+
+Complete the durable documentation for the implemented Scope v3 frontend integration.
+
+### Documented
+
+- Frontend architecture
+- Certified API inputs
+- Frontend API-client functions
+- Series chapter-list experience
+- Chapter-detail experience
+- Chapter metadata global search
+- Nullable manga-arc presentation
+- Scope v2 compatibility
+- Responsive behavior
+- Accessibility requirements
+- Certified dataset validation
+- Known API-dependent limitations
+- Validation commands
+
+### Certified Dataset Evidence
+
+One Piece:
+
+- Chapters 1–1188
+- Frontend validation: PASS
+
+Naruto:
+
+- Chapters 1–700
+- Chapter 700 presentation: PASS
+- Spin-off exclusion: PASS
+- Frontend validation: PASS
+
+### Functional Changes
+
+None.
+
+### Regression
+
+- Backend tests: 230 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Scope v3 frontend documentation:
+
+COMPLETE

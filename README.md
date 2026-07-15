@@ -42,3 +42,21 @@ Certified Scope v3 datasets:
 
 - One Piece Chapters 1–1188
 - Naruto Chapters 1–700
+
+## Frontend Status
+
+Scope v3 frontend integration is implemented for:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Implemented experiences:
+
+- Series chapter metadata lists
+- Chapter detail pages
+- Chapter metadata global search
+- Nullable manga-arc presentation
+
+Current status:
+
+Final frontend validation pending.

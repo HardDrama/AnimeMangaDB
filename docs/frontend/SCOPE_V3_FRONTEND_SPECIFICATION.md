@@ -33,6 +33,27 @@ Backend responsibilities:
 
 ---
 
+## Status
+
+Implementation:
+
+✅ Complete
+
+Certified dataset validation:
+
+- ✅ One Piece Chapters 1–1188
+- ✅ Naruto Chapters 1–700
+
+Final frontend validation:
+
+⬜ Pending v0.60.9
+
+Formal frontend certification:
+
+⬜ Pending v0.60.10
+
+---
+
 ## Certified API Inputs
 
 ### Series Chapter List
@@ -514,3 +535,222 @@ Validation result:
 PASS
 
 One Piece has no certified null manga-arc exceptions in the supported range.
+
+---
+
+## Implemented Experience
+
+### Anime Detail
+
+The anime detail page displays:
+
+- Anime metadata
+- Existing episode list
+- Certified chapter metadata
+- Local chapter filtering
+
+Chapter filtering supports:
+
+- Chapter number
+- Chapter title
+- Manga arc
+- Case-insensitive partial matching
+
+### Chapter Detail
+
+Route:
+
+`/anime/:animeId/chapters/:chapterNumber`
+
+The detail page displays:
+
+- Anime title
+- Chapter number
+- Chapter title
+- Manga arc or `Not applicable`
+- Canonical source link
+- Last-updated timestamp
+- Breadcrumb navigation
+- Back-to-anime navigation
+
+### Global Search
+
+Global search contains separate sections for:
+
+- Anime
+- Episodes
+- Episode Adaptation Matches
+- Chapter Metadata
+
+The Scope v2 `chapters` response remains distinct from the Scope v3 `chapter_metadata` response.
+
+---
+
+## Frontend API Functions
+
+The frontend uses native `fetch` through:
+
+`frontend/src/api/client.js`
+
+### Anime and Episodes
+
+- `getAnime()`
+- `getAnimeById(animeId)`
+- `getEpisodesForAnime(animeId)`
+- `getEpisodeById(episodeId)`
+- `getEpisodeChapters(episodeId)`
+- `getEpisodesByChapter(chapterNumber)`
+
+### Scope v3 Chapters
+
+- `getChaptersForAnime(animeId)`
+- `getAnimeChapter(animeId, chapterNumber)`
+
+### Search
+
+- `searchDatabase(query)`
+
+The frontend consumes API field names without transforming them.
+
+Chapter metadata fields:
+
+- `chapter_number`
+- `chapter_title`
+- `manga_arc`
+- `source_url`
+- `last_updated`
+
+---
+
+## Nullable Manga Arc
+
+The API may return:
+
+```json
+{
+  "manga_arc": null
+}
+```
+
+---
+
+## Known API-Dependent Limitations
+
+### Search Result Series Identity
+
+Scope v3 `chapter_metadata` search results currently do not include:
+
+- `anime_id`
+- `anime_title`
+
+Therefore global chapter metadata results cannot safely link to the anime-scoped chapter detail route.
+
+The frontend does not infer series identity from:
+
+- Chapter number
+- Chapter title
+- Manga arc
+- Source URL
+
+Recommended future API enhancement:
+
+Include anime identity in chapter metadata search responses.
+
+### Chapter-to-Episode Mapping
+
+Chapter detail pages do not currently show adapted episodes.
+
+The available endpoint:
+
+`GET /chapters/{chapter_number}/episodes`
+
+is global and can return results across series.
+
+Recommended future API endpoint:
+
+`GET /anime/{anime_id}/chapters/{chapter_number}/episodes`
+
+The frontend must not implement cross-series filtering as presentation logic.
+
+---
+
+## Scope v2 Compatibility Matrix
+
+| Existing Experience | Status |
+|---|:---:|
+| Anime browser | Preserved |
+| Anime detail | Preserved |
+| Episode browser | Preserved |
+| Episode detail | Preserved |
+| Episode-to-chapter mapping | Preserved |
+| Chapter Lookup | Preserved |
+| Anime search | Preserved |
+| Episode search | Preserved |
+| Episode Adaptation Matches | Preserved |
+
+Scope v3 adds chapter metadata experiences without replacing existing Scope v2 functionality.
+
+---
+
+## Certified Dataset Validation
+
+### One Piece
+
+- Certified range: Chapters 1–1188
+- Chapter-list display: PASS
+- Local filtering: PASS
+- Chapter-detail navigation: PASS
+- Chapter metadata search: PASS
+- Canonical source navigation: PASS
+- Responsive behavior: PASS
+- Accessibility review: PASS
+
+### Naruto
+
+- Certified range: Chapters 1–700
+- Chapter-list display: PASS
+- Local filtering: PASS
+- Chapter-detail navigation: PASS
+- Chapter metadata search: PASS
+- Chapter 10 source isolation: PASS
+- Chapter 700 `Not applicable` presentation: PASS
+- Spin-off exclusion: PASS
+- Responsive behavior: PASS
+- Accessibility review: PASS
+
+---
+
+## Validation Commands
+
+Backend regression:
+
+```powershell
+pytest
+```
+
+Frontend production build:
+
+```powershell
+Set-Location frontend
+npm run build
+Set-Location ..
+```
+
+Frontend lint:
+
+```powershell
+Set-Location frontend
+npm run lint
+Set-Location ..
+```
+
+Combined validation:
+
+```powershell
+pytest
+
+Set-Location frontend
+npm run build
+npm run lint
+Set-Location ..
+```

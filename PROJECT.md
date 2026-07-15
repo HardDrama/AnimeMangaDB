@@ -86,7 +86,7 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 Status:
 
-One Piece Frontend Validation Passed
+Documentation Complete
 
 Completed:
 
@@ -95,23 +95,25 @@ Completed:
 - Series chapter-list experience
 - Chapter-detail experience
 - Chapter metadata global search
-- One Piece Scope v3 frontend validation
+- One Piece frontend validation
+- Naruto frontend validation
+- Scope v3 frontend documentation
 
-Validated dataset:
+Validated datasets:
 
 - One Piece Chapters 1–1188
+- Naruto Chapters 1–700
 
 Current phase:
 
-Naruto Scope v3 frontend validation
+Final frontend validation
 
 Next:
 
-- Validate Naruto Chapters 1–700
-- Validate Chapter 10 source isolation
-- Validate Chapter 700 `Not applicable` presentation
-- Validate spin-off exclusion
-- Complete final frontend documentation
+- Perform clean end-to-end frontend validation
+- Confirm Scope v2 compatibility
+- Confirm responsive and accessibility behavior
+- Certify Scope v3 frontend integration
 
 ---
 
