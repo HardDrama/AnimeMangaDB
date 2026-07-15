@@ -10,6 +10,15 @@
   "missing_arcs": 0,
   "arc_completion": 100.0,
   "chapters_with_source_urls": 1188,
+  "configured_arc_exceptions": [],
+  "approved_missing_arcs": 0,
+  "approved_missing_arc_chapters": [],
+  "unresolved_missing_arcs": 0,
+  "unresolved_missing_arc_chapters": [],
+  "adjusted_chapters_with_arcs": 1188,
+  "adjusted_arc_completion": 100.0,
+  "unused_arc_exceptions": [],
+  "configured_missing_arc_records": [],
   "missing_source_urls": 0,
   "source_url_completion": 100.0,
   "chapters_with_last_updated": 1188,
@@ -31,5 +40,5 @@
   "coverage_completion": 100.0,
   "coverage_audit_status": "PASS",
   "dataset_status": "PASS",
-  "generated_at": "2026-07-13T18:23:07.175661"
+  "generated_at": "2026-07-15T12:32:54.519747"
 }

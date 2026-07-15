@@ -188,3 +188,105 @@ Database platform validation:
 PASS
 
 The database is eligible for Platform Checkpoint v3 certification.
+
+---
+
+## v0.61.4 — Scope v3 Dataset Validation
+
+### Objective
+
+Revalidate the certified Scope v3 datasets and confirm consistency across database records, audit reports, manual evidence, and certification eligibility.
+
+### Durable Evidence
+
+One Piece:
+
+- Audit report: present
+- Manual validation report: present
+- Certification report: present
+
+Naruto:
+
+- Audit report: present
+- Manual validation report: present
+- Certification report: present
+
+No new report files were created.
+
+### One Piece
+
+- Chapter records: 1188
+- Range: 1–1188
+- Missing chapters: 0
+- Duplicate chapters: 0
+- Missing titles: 0
+- Missing manga arcs: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual validation: PASS
+- Manual samples: [ACTUAL]
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+### Naruto
+
+- Chapter records: 700
+- Range: 1–700
+- Missing chapters: 0
+- Duplicate chapters: 0
+- Missing titles: 0
+- Raw missing manga arcs: 1
+- Approved non-applicable manga arcs: 1
+- Unresolved missing manga arcs: 0
+- Missing source URLs: 0
+- Missing timestamps: 0
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual validation: PASS
+- Manual samples: 30
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+### Verified Exception
+
+- Anime: Naruto
+- Chapter: 700
+- Field: Manga arc
+- Stored value: null
+- Approved exception: PASS
+
+### Source Isolation
+
+- Naruto spin-off contamination: 0
+- Source isolation: PASS
+
+### Evidence Consistency
+
+- Database counts match audit counts: PASS
+- Audit ranges match certification ranges: PASS
+- Manual validation statuses match certification inputs: PASS
+- Certification failure counts: 0
+- Cross-report consistency: PASS
+
+### Targeted Tests
+
+- Dataset tools: [ACTUAL] passed
+- Metadata exception tests: [ACTUAL] passed
+
+### Regression
+
+- Backend tests: 231 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Scope v3 dataset validation:
+
+PASS
+
+Both certified datasets are eligible for Platform Checkpoint v3 certification.

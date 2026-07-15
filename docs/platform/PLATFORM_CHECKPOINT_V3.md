@@ -102,7 +102,25 @@ Pending final Platform Checkpoint v3 certification.
 
 Status:
 
-Pending
+✅ Validated
+
+Validated capabilities:
+
+- Chapter metadata model
+- Chapter metadata persistence
+- Multi-series URL discovery
+- Chapter metadata extraction
+- Controlled ingestion
+- Audit framework
+- Manual sample validation
+- Certification eligibility
+- Metadata exceptions
+
+Results:
+
+- Tool and framework tests: PASS
+- Exception-aware validation: PASS
+- Multi-series behavior: PASS
 
 ---
 
@@ -110,7 +128,25 @@ Pending
 
 Status:
 
-Pending
+✅ Validated
+
+Certified range:
+
+- Chapters 1–1188
+- Records: 1188
+
+Evidence:
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+Unresolved metadata gaps:
+
+0
 
 ---
 
@@ -118,7 +154,32 @@ Pending
 
 Status:
 
-Pending
+✅ Validated
+
+Certified range:
+
+- Chapters 1–700
+- Records: 700
+
+Evidence:
+
+- Metadata audit: PASS
+- Coverage audit: PASS
+- Dataset audit: PASS
+- Manual validation: PASS
+- Certification eligibility: ELIGIBLE
+- Certification failures: 0
+
+Verified exception:
+
+- Chapter 700
+- Manga arc not applicable
+- Stored value remains null
+- Approved exception: PASS
+
+Spin-off contamination:
+
+0
 
 ---
 

@@ -11,9 +11,9 @@
 
 - [x] Backend
 - [x] Database
-- [ ] Scope v3 Foundation
-- [ ] One Piece Dataset
-- [ ] Naruto Dataset
+- [x] Scope v3 Foundation
+- [x] One Piece Dataset
+- [x] Naruto Dataset
 - [ ] Scope v3 API
 - [ ] Scope v3 Frontend
 
@@ -21,7 +21,7 @@
 
 - [x] Backend validated
 - [x] Database validated
-- [ ] Dataset validation
+- [x] Dataset validation
 - [ ] API validation
 - [ ] Frontend validation
 - [ ] Integrated workflow validation
