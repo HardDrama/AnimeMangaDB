@@ -757,7 +757,7 @@ Set-Location ..
 
 ---
 
-## Validation Status
+## Status
 
 Implementation:
 
@@ -779,6 +779,6 @@ Final frontend validation:
 
 ✅ PASS
 
-Formal frontend certification:
+Scope v3 frontend certification:
 
-⬜ Pending v0.60.10
+✅ CERTIFIED

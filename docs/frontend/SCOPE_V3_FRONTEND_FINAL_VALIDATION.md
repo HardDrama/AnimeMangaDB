@@ -253,3 +253,24 @@ PASS
 Final validation status:
 
 **PASS**
+
+## Certification
+
+Scope v3 Frontend Integration
+
+Status:
+
+**CERTIFIED**
+
+Certification evidence:
+
+- One Piece frontend validation: PASS
+- Naruto frontend validation: PASS
+- Scope v2 compatibility: PASS
+- Backend regression: 230 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+Result:
+
+The Scope v3 frontend is certified for production use with the certified Scope v3 API and datasets.

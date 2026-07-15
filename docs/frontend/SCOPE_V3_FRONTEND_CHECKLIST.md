@@ -187,4 +187,4 @@
 
 ## Certification
 
-- [ ] Scope v3 frontend integration certified
+- [x] Scope v3 frontend integration certified
