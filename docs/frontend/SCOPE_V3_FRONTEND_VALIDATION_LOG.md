@@ -156,3 +156,159 @@ Display certified Scope v3 chapter metadata on anime detail pages while preservi
 Series chapter-list experience:
 
 PASS
+
+---
+
+## v0.60.4 — Chapter Detail Experience
+
+### Objective
+
+Add a dedicated anime-scoped chapter metadata detail experience.
+
+### Route
+
+`/anime/:animeId/chapters/:chapterNumber`
+
+### Added
+
+- Chapter detail page
+- Chapter-list-to-detail navigation
+- Breadcrumb navigation
+- Back-to-anime navigation
+- Canonical source link
+- Last-updated timestamp presentation
+- Loading and error states
+- Responsive metadata layout
+
+### One Piece Validation
+
+Representative chapters:
+
+- Chapter 1
+- Chapter 50
+- Chapter 500
+- Chapter 1188
+
+Results:
+
+- Detail navigation: PASS
+- Metadata display: PASS
+- Source links: PASS
+- Last-updated display: PASS
+- Breadcrumbs: PASS
+
+### Naruto Validation
+
+Representative chapters:
+
+- Chapter 10
+- Chapter 700
+
+Results:
+
+- Chapter 10 main-series metadata: PASS
+- Chapter 700 detail navigation: PASS
+- Chapter 700 null arc presentation: PASS
+- Displayed manga arc: `Not applicable`
+- Source link: PASS
+
+### Error Validation
+
+- Missing chapter handling: PASS
+- Missing anime handling: PASS
+- Back navigation available: PASS
+
+### Responsive Validation
+
+- Desktop: PASS
+- Tablet: PASS
+- Mobile: PASS
+
+### Compatibility
+
+- Anime detail page preserved
+- Episode list preserved
+- Episode detail route preserved
+- Scope v2 chapter mappings preserved
+
+### Regression
+
+- Backend tests: 230 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Chapter detail experience:
+
+PASS
+
+---
+
+## v0.60.5 — Chapter Metadata Search Integration
+
+### Objective
+
+Display Scope v3 chapter metadata in global search while preserving all existing Scope v2 result types.
+
+### Added
+
+- Chapter Metadata result section
+- Chapter number display
+- Chapter title display
+- Manga-arc display
+- Nullable manga-arc presentation
+- Canonical source links
+- Empty metadata-result state
+
+### Existing Behavior Preserved
+
+- Anime search results
+- Episode search results
+- Scope v2 chapter-to-episode mappings
+- Search loading state
+- Search error state
+- Clear-search behavior
+
+### One Piece Validation
+
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric chapter search: PASS
+- Canonical source links: PASS
+
+### Naruto Validation
+
+- Chapter-title search: PASS
+- Manga-arc search: PASS
+- Numeric Chapter 700 search: PASS
+- Null manga arc display: `Not applicable`
+
+### Known API Limitations
+
+Chapter metadata search results do not include anime identity.
+
+Therefore:
+
+- internal chapter-detail links are not generated,
+- series identity is not inferred in the frontend.
+
+Chapter detail pages also do not display episode mappings because the current mapping endpoint is not anime-scoped.
+
+### Compatibility
+
+- Scope v2 `chapters` response preserved
+- Episode Adaptation Matches remain visible
+- Existing anime and episode results preserved
+
+### Regression
+
+- Backend tests: 230 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Chapter metadata search integration:
+
+PASS

@@ -24,6 +24,13 @@
 - [x] Existing client error-handling convention preserved
 - [x] No UI behavior changed
 
+## Future API-Dependent Enhancements
+
+- [ ] Add anime identity to chapter metadata search results
+- [ ] Link global chapter search results to chapter detail pages
+- [ ] Add anime-scoped chapter-to-episode endpoint
+- [ ] Display episode mappings on chapter detail pages
+
 ---
 
 ## Series Chapter List
@@ -47,20 +54,39 @@
 
 ## Chapter Detail
 
-- [ ] Chapter-detail view added
-- [ ] Source link added
-- [ ] Last-updated display added
-- [ ] Null manga arc displayed as not applicable
-- [ ] Missing chapter behavior handled
+- [x] Chapter-detail route added
+- [x] Chapter-detail page added
+- [x] Chapter cards link to details
+- [x] Anime title displayed
+- [x] Chapter number displayed
+- [x] Chapter title displayed
+- [x] Manga arc displayed
+- [x] Null manga arc displayed as not applicable
+- [x] Canonical source link added
+- [x] Last-updated timestamp displayed
+- [x] Breadcrumb navigation added
+- [x] Back-to-anime navigation added
+- [x] Loading state added
+- [x] Error state added
+- [x] Direct URL navigation validated
+- [x] Responsive detail layout validated
 
 ---
 
 ## Search
 
-- [ ] Chapter metadata search section added
-- [ ] Scope v2 chapter mappings preserved
-- [ ] Search result types clearly distinguished
-- [ ] Empty chapter metadata results handled
+- [x] Chapter Metadata section added
+- [x] Scope v2 chapter mappings preserved
+- [x] Search result types clearly distinguished
+- [x] Chapter numbers displayed
+- [x] Chapter titles displayed
+- [x] Manga arcs displayed
+- [x] Null manga arc displayed as not applicable
+- [x] Canonical source links added
+- [x] Empty chapter metadata results handled
+- [x] Multi-series numeric search validated
+- [x] Search identity limitation documented
+- [ ] Internal chapter-detail links from search
 
 ---
 

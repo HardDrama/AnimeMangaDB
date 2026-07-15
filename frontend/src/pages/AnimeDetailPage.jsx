@@ -136,6 +136,7 @@ function AnimeDetailPage() {
             </ul>
             
             <ChapterMetadataList
+                animeId={anime.id}
                 chapters={chapters}
                 filteredChapters={
                     filteredChapters

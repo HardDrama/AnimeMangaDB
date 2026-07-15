@@ -1,4 +1,8 @@
+import { Link } from "react-router-dom";
+
+
 function ChapterMetadataCard({
+    animeId,
     chapter,
 }) {
     const mangaArc =
@@ -8,7 +12,14 @@ function ChapterMetadataCard({
         <li className="chapter-metadata-card">
             <div className="chapter-metadata-heading">
                 <strong>
-                    Chapter {chapter.chapter_number}
+                    <Link
+                        to={
+                            `/anime/${animeId}` +
+                            `/chapters/${chapter.chapter_number}`
+                        }
+                    >
+                        Chapter {chapter.chapter_number}
+                    </Link>
                 </strong>
 
                 <span>

@@ -19,6 +19,7 @@ import SelectedEpisode from "./components/SelectedEpisode";
 import ChapterMapping from "./components/ChapterMapping";
 import AnimeDetailPage from "./pages/AnimeDetailPage";
 import EpisodeDetailPage from "./pages/EpisodeDetailPage";
+import ChapterDetailPage from "./pages/ChapterDetailPage";
 import "./App.css";
 
 function App() {
@@ -265,10 +266,17 @@ function App() {
                             />
                         }
                     />
+                    
                     <Route
                         path="/anime/:animeId"
                         element={<AnimeDetailPage />}
                     />
+
+                    <Route
+                        path="/anime/:animeId/chapters/:chapterNumber"
+                        element={<ChapterDetailPage />}
+                    />
+
                     <Route
                         path="/episodes/:episodeId"
                         element={<EpisodeDetailPage />}

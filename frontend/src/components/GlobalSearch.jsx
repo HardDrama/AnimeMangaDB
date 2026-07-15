@@ -8,6 +8,9 @@ function GlobalSearch({
     loading,
     error,
 }) {
+    const chapterMetadata =
+        results?.chapter_metadata ?? [];
+
     return (
         <section>
             <h2>Global Search</h2>
@@ -71,10 +74,10 @@ function GlobalSearch({
                         </ul>
                     )}
 
-                    <h3>Chapters</h3>
+                    <h3>Episode Adaptation Matches</h3>
 
                     {results.chapters.length === 0 ? (
-                        <p>No chapter results.</p>
+                        <p>No episode adaptation matches.</p>
                     ) : (
                         <ul>
                             {results.chapters.map((chapter) => (
@@ -96,6 +99,61 @@ function GlobalSearch({
                                     </ul>
                                 </li>
                             ))}
+                        </ul>
+                    )}
+
+                    <h3>Chapter Metadata</h3>
+
+                    {chapterMetadata.length === 0 ? (
+                        <p>
+                            No chapter metadata results.
+                        </p>
+                    ) : (
+                        <ul className="search-result-list">
+                            {chapterMetadata.map(
+                                (chapter) => (
+                                    <li
+                                        key={
+                                            `${chapter.source_url}-` +
+                                            `${chapter.chapter_number}`
+                                        }
+                                        className={
+                                            "chapter-search-result"
+                                        }
+                                    >
+                                        <strong>
+                                            Chapter{" "}
+                                            {
+                                                chapter.chapter_number
+                                            }
+                                            {" — "}
+                                            {
+                                                chapter.chapter_title
+                                            }
+                                        </strong>
+
+                                        <p>
+                                            <strong>
+                                                Manga Arc:
+                                            </strong>{" "}
+                                            {chapter.manga_arc
+                                                ?? "Not applicable"}
+                                        </p>
+
+                                        <p>
+                                            <a
+                                                href={
+                                                    chapter.source_url
+                                                }
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                View canonical source
+                                            </a>
+                                        </p>
+                                    </li>
+                                )
+                            )}
                         </ul>
                     )}
                 </div>

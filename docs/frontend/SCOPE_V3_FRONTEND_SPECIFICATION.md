@@ -375,3 +375,117 @@ The chapter section displays the existing client error message.
 ### Responsive Layout
 
 Chapter metadata cards use a responsive grid and collapse to one column on narrow screens.
+
+---
+
+## Chapter Detail Experience
+
+### Route
+
+`/anime/:animeId/chapters/:chapterNumber`
+
+### API Inputs
+
+The page loads:
+
+- `GET /anime/{anime_id}`
+- `GET /anime/{anime_id}/chapters/{chapter_number}`
+
+These requests run in parallel.
+
+### Displayed Fields
+
+- Anime title
+- Chapter number
+- Chapter title
+- Manga arc
+- Canonical source link
+- Last-updated timestamp
+
+### Nullable Manga Arc
+
+A null manga arc is displayed as:
+
+`Not applicable`
+
+The underlying API value remains unchanged.
+
+### Navigation
+
+Chapter-list cards link to the chapter detail route.
+
+The detail page includes:
+
+- Breadcrumb navigation
+- Back-to-anime navigation
+- Canonical external source navigation
+
+### Last-Updated Formatting
+
+The ISO 8601 API timestamp is displayed using the browser’s local date and time format.
+
+If the timestamp cannot be parsed, the original string is displayed.
+
+### Error Behavior
+
+Failed anime or chapter requests show the existing frontend client error message.
+
+The page provides navigation back to the requested anime route.
+
+### Responsive Behavior
+
+Chapter metadata displays as:
+
+- Two columns on larger screens
+- One column on narrow screens
+
+---
+
+## Chapter Metadata Search Presentation
+
+Global search displays separate result sections for:
+
+- Anime
+- Episodes
+- Episode Adaptation Matches
+- Chapter Metadata
+
+`Episode Adaptation Matches` uses the existing Scope v2 `chapters` response field.
+
+`Chapter Metadata` uses the Scope v3 `chapter_metadata` response field.
+
+Chapter metadata search results display:
+
+- Chapter number
+- Chapter title
+- Manga arc or `Not applicable`
+- Canonical source link
+
+### Current Search Identity Limitation
+
+The certified Scope v3 chapter metadata response does not currently include:
+
+- Anime ID
+- Anime title
+
+As a result, global chapter metadata search results cannot safely link to the anime-scoped chapter detail route.
+
+The frontend must not infer series identity from source URLs, titles, or chapter numbers.
+
+A future API enhancement should add series identity to chapter metadata search responses.
+
+### Bidirectional Mapping Limitation
+
+Chapter detail pages currently do not show adapted anime episodes.
+
+The existing endpoint:
+
+`GET /chapters/{chapter_number}/episodes`
+
+is global and does not safely identify one anime series.
+
+A future API enhancement should provide:
+
+`GET /anime/{anime_id}/chapters/{chapter_number}/episodes`
+
+The frontend should not perform cross-series filtering as presentation logic.

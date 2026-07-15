@@ -225,3 +225,63 @@ li a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+.chapter-detail-page {
+    max-width: 52rem;
+}
+
+.chapter-detail-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.chapter-detail-metadata {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.chapter-detail-metadata div {
+    padding: 1rem;
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+}
+
+.chapter-detail-metadata dt {
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.chapter-detail-metadata dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (min-width: 48rem) {
+    .chapter-detail-metadata {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+    }
+}
+
+.search-result-list {
+    padding: 0;
+    list-style: none;
+}
+
+.chapter-search-result {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+}
+
+.chapter-search-result p {
+    margin-bottom: 0.5rem;
+}
+
+.chapter-search-result p:last-child {
+    margin-bottom: 0;
+}

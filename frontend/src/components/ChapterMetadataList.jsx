@@ -1,6 +1,7 @@
 import ChapterMetadataCard from "./ChapterMetadataCard";
 
 function ChapterMetadataList({
+    animeId,
     chapters,
     filteredChapters,
     search,
@@ -72,6 +73,7 @@ function ChapterMetadataList({
                                         key={
                                             chapter.chapter_number
                                         }
+                                        animeId={animeId}
                                         chapter={chapter}
                                     />
                                 )
