@@ -479,3 +479,91 @@ Scope v3 frontend platform validation:
 PASS
 
 The Scope v3 frontend is eligible for Platform Checkpoint v3 certification.
+
+---
+
+## v0.61.7 — Integrated Platform Workflow Validation
+
+### Objective
+
+Validate complete end-to-end platform workflows across all certified components.
+
+### One Piece Workflow
+
+Fandom
+
+↓
+
+Database
+
+↓
+
+Repository
+
+↓
+
+API
+
+↓
+
+Frontend
+
+PASS
+
+### Naruto Workflow
+
+PASS
+
+Verified exception:
+
+Chapter 700
+
+Database: null
+
+API: null
+
+Frontend: Not applicable
+
+PASS
+
+### Scope v2 Compatibility
+
+Episode browsing: PASS
+
+Episode mappings: PASS
+
+Chapter Lookup: PASS
+
+Existing search: PASS
+
+### Scope v3 Compatibility
+
+Chapter lists: PASS
+
+Chapter detail: PASS
+
+Global metadata search: PASS
+
+### Known Architectural Limitations
+
+- Search results lack anime identity
+- Chapter detail has no anime-scoped episode mappings
+- Broad global arc searches are API-driven
+
+All documented.
+
+### Regression
+
+Backend tests: 231 passed
+
+Frontend build: PASS
+
+Frontend lint: PASS
+
+### Result
+
+Integrated platform validation:
+
+PASS
+
+Platform is ready for final certification.

@@ -24,7 +24,7 @@
 - [x] Dataset validation
 - [x] API validation
 - [x] Frontend validation
-- [ ] Integrated workflow validation
+- [x] Integrated platform workflows
 
 ## Documentation
 

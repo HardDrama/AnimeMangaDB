@@ -293,9 +293,36 @@ Pending final Platform Checkpoint v3 certification.
 
 ---
 
-## Integrated Platform Validation
+### Integrated Platform Workflows
 
-Pending
+Status:
+
+✅ Validated
+
+Validated workflows:
+
+- Metadata extraction → database
+- Database → repository
+- Repository → API
+- API → frontend
+- Scope v2 episode workflow
+- Scope v3 chapter workflow
+- Global search workflow
+- Chapter Lookup workflow
+- Certified dataset exposure
+
+Results:
+
+- End-to-end One Piece workflow: PASS
+- End-to-end Naruto workflow: PASS
+- Scope v2 compatibility: PASS
+- Frontend/API integration: PASS
+- Repository consistency: PASS
+- Browser validation: PASS
+
+Certification status:
+
+Pending final Platform Checkpoint v3 certification.
 
 ---
 
