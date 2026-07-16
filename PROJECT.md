@@ -82,15 +82,34 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### Platform Checkpoint v3
+### v0.62 — Platform UX & Navigation
 
 Status:
 
-CERTIFIED
+UX and Navigation Contract Definition
 
-Current phase:
+Planned capabilities:
 
-Checkpoint closure and next-roadmap planning
+- Available Series homepage terminology
+- Reusable Series Cards
+- Episode and chapter counts on Series Cards
+- Unified card visual system
+- Bidirectional episode/chapter navigation
+- Series identity in chapter search
+- Anime-scoped chapter-to-episode mappings
+- Series arc lists
+- Arc-aware global search
+- Scope v2 compatibility
+
+Current step:
+
+v0.62.1 — Define unified series UX and navigation contract
+
+Next:
+
+- Extend series summary API data
+- Add series identity to chapter search
+- Add anime-scoped chapter episode mappings
 
 ---
 
