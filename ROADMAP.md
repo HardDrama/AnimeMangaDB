@@ -1,57 +1,82 @@
 # AnimeMangaDB Roadmap
 
-## ✅ Certified
-
-### Platform Checkpoint v2
-- Backend
-- Database
-- API
-- Reports
-- Frontend
-
-### Scope v3 Foundation
-- Chapter metadata framework
-- Ingestion
-- Auditing
-- Certification
-- Metadata exceptions
-
-### Certified Scope v3 Datasets
-- One Piece — Chapters 1–1188
-- Naruto — Chapters 1–700
-
-### Scope v3 API Integration
-- Chapter-list endpoint
-- Chapter-detail endpoint
-- Chapter metadata search
-- Scope v2 compatibility
-
-### Scope v3 Frontend Integration
-- Series chapter lists
-- Chapter detail pages
-- Chapter metadata search
-- Nullable metadata presentation
-- Multi-series validation
-- Responsive and accessibility validation
-
----
-
-## 🚧 Current
+## :white_check_mark: Certified
 
 ### Platform Checkpoint v3
+:trophy: Certified
 
-Certified components:
+- Backend
+- Database
 - Scope v3 Foundation
 - One Piece Scope v3 Dataset
 - Naruto Scope v3 Dataset
 - Scope v3 API
 - Scope v3 Frontend
+- Integrated Platform Workflows
 
-Next:
-- Unified platform validation
-- Scope v2 compatibility review
-- Final documentation review
-- Platform regression testing
-- Platform Checkpoint v3 certification
+Validation:
+- 231 backend tests passing
+- 83 API tests passing
+- Frontend build & lint passing
 
-🏆 Goal: Certified Scope v3 Platform
+---
+
+## :construction: v0.62 — Platform UX & Navigation
+
+Focus:
+Complete the end-to-end user experience.
+
+Planned:
+- Bidirectional Episode ↔ Chapter navigation
+- Improved global search
+- Arc-aware search results
+- Unified series page layout
+- Shared card design
+- Arc lists on series pages
+- "Available Anime" → "Available Series"
+- Homepage Series Cards with episode and chapter counts
+- Consistent navigation across Anime, Episodes, Chapters, and Search
+
+---
+
+## :construction: v0.63 — Multi-Series Foundation
+
+Focus:
+Make new series onboarding repeatable.
+
+Planned:
+- Series onboarding framework
+- Provider validation
+- Source preflight validation
+- Config validation
+- Discovery validation
+- Reduced documentation footprint
+- Streamlined certification workflow
+
+---
+
+## :construction: v0.64 — Series Expansion
+
+Focus:
+Prove the onboarding framework.
+
+Planned:
+- Naruto Shippuden (Anime)
+- Boruto (Anime)
+- Boruto (Manga)
+- Solo Leveling (Anime + Manga)
+- Validate onboarding against multiple provider patterns
+
+---
+
+## :crystal_ball: Future
+
+### v1.0
+
+Goals:
+- Production-ready platform
+- Multiple certified series
+- Complete anime ↔ manga navigation
+- Stable API
+- Unified frontend experience
+- Scalable multi-provider architecture

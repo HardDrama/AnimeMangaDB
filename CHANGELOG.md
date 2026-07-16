@@ -2395,3 +2395,65 @@ Naruto:
 
 Next:
 ➡ Platform Checkpoint v3
+
+---
+
+# AnimeMangaDB v0.61
+## Platform Checkpoint v3 — CERTIFIED
+
+:white_check_mark: Status: Complete
+
+v0.61 validates and certifies the complete Scope v3 platform as one integrated system.
+
+### Certified Components
+- Backend
+- Database
+- Scope v3 Foundation
+- One Piece Scope v3 Dataset
+- Naruto Scope v3 Dataset
+- Scope v3 API
+- Scope v3 Frontend
+- Integrated platform workflows
+
+### Database Validation
+- SQLite foreign-key enforcement enabled
+- Orphan episodes: 0
+- Orphan chapter records: 0
+- Duplicate anime identities: 0
+- Duplicate episode identities: 0
+- Duplicate chapter identities: 0
+
+### Certified Datasets
+One Piece:
+- Chapters 1–1188
+- 1188 records
+- Audit and manual validation: PASS
+
+Naruto:
+- Chapters 1–700
+- 700 records
+- Chapter 700 exception: PASS
+- Spin-off contamination: 0
+- Audit and manual validation: PASS
+
+### Integrated Workflows
+- Source discovery → extraction → database: PASS
+- Database → repository → API: PASS
+- API → frontend: PASS
+- Scope v2 compatibility: PASS
+- Scope v3 chapter workflows: PASS
+
+### Validation
+- Backend tests: 231 passed
+- API tests: 83 passed
+- Frontend build: PASS
+- Frontend lint: PASS
+- Responsive validation: PASS
+- Accessibility review: PASS
+
+### Platform Metadata
+- Platform Checkpoint: v3 certified
+- Supported scope: v3
+- Scope v2 compatibility: preserved
+
+:trophy: Platform Checkpoint v3 Certified
