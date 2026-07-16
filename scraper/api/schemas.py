@@ -37,6 +37,12 @@ class ChapterMetadataResponse(BaseModel):
         from_attributes=True,
     )
 
+class ChapterMetadataSearchResponse(
+    ChapterMetadataResponse
+):
+    anime_id: int
+    anime_title: str
+
 class ChapterMappingResponse(BaseModel):
     chapter_number: int
 
@@ -46,6 +52,7 @@ class SeriesResponse(BaseModel):
     provider: str
     base_url: str | None = None
     episode_count: int | None = None
+    chapter_count: int | None = None
 
 class SeriesListResponse(BaseModel):
     series: list[SeriesResponse]
@@ -59,7 +66,7 @@ class SearchResponse(BaseModel):
     episodes: list[EpisodeResponse]
     chapters: list[ChapterSearchResult]
     chapter_metadata: list[
-        ChapterMetadataResponse
+        ChapterMetadataSearchResponse
     ] = Field(
         default_factory=list,
     )

@@ -35,6 +35,11 @@ def list_anime():
                 episode_count=repository.count_episodes_for_anime(
                     anime.id
                 ),
+                chapter_count=(
+                    repository.count_chapters_for_anime(
+                        anime.id
+                    )
+                ),
             )
             for anime in anime_list
         ]
@@ -72,6 +77,11 @@ def get_anime(
             base_url=anime.base_url,
             episode_count=repository.count_episodes_for_anime(
                 anime.id
+            ),
+            chapter_count=(
+                repository.count_chapters_for_anime(
+                    anime.id
+                )
             ),
         )
 

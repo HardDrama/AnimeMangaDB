@@ -370,6 +370,21 @@ class EpisodeRepository:
             .count()
         )
     
+    def count_chapters_for_anime(
+        self,
+        anime_id: int,
+    ) -> int:
+        return (
+            self.session.query(
+                ChapterMetadata
+            )
+            .where(
+                ChapterMetadata.anime_id
+                == anime_id
+            )
+            .count()
+        )
+    
     def list_episodes_for_anime(
         self,
         anime_id: int,

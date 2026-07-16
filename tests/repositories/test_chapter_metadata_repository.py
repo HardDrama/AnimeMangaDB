@@ -136,6 +136,41 @@ def test_list_chapter_metadata(
         for chapter in chapters
     ] == [1, 2]
 
+def test_count_chapters_for_anime(
+    session: Session,
+):
+    anime = create_anime(session)
+    repository = EpisodeRepository(session)
+
+    repository.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=1,
+        chapter_title="Chapter One",
+        manga_arc="Test Arc",
+        source_url=(
+            "https://example.com/chapter/1"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    repository.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=2,
+        chapter_title="Chapter Two",
+        manga_arc="Test Arc",
+        source_url=(
+            "https://example.com/chapter/2"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    assert (
+        repository.count_chapters_for_anime(
+            anime.id
+        )
+        == 2
+    )
+
 def test_save_chapter_metadata_domain_model(
     session: Session,
 ):

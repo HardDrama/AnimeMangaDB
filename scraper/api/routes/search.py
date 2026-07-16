@@ -88,6 +88,11 @@ def search_database(
                             anime.id
                         )
                     ),
+                    chapter_count=(
+                        repository.count_chapters_for_anime(
+                            anime.id
+                        )
+                    ),
                 )
                 for anime in anime_results
             ],
@@ -106,13 +111,22 @@ def search_database(
             ],
             chapters=chapter_results,
             chapter_metadata=[
-                ChapterMetadataResponse
-                .model_validate(
-                    chapter
+                ChapterMetadataSearchResponse(
+                    anime_id=chapter.anime_id,
+                    anime_title=chapter.anime.title,
+                    chapter_number=(
+                        chapter.chapter_number
+                    ),
+                    chapter_title=(
+                        chapter.chapter_title
+                    ),
+                    manga_arc=chapter.manga_arc,
+                    source_url=chapter.source_url,
+                    last_updated=(
+                        chapter.last_updated
+                    ),
                 )
-                for chapter in (
-                    chapter_metadata_results
-                )
+                for chapter in chapter_metadata_results
             ],
         )
 
