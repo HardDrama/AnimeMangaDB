@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query
 
 from scraper.api.schemas import (
-    ChapterMetadataResponse,
+    ChapterMetadataSearchResponse,
     ChapterSearchResult,
     EpisodeResponse,
     SearchResponse,
