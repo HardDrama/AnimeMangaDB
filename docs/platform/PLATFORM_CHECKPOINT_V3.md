@@ -238,7 +238,58 @@ Pending final Platform Checkpoint v3 certification.
 
 Status:
 
-Pending
+✅ Validated
+
+Validated experiences:
+
+- Frontend chapter API client
+- Series chapter metadata lists
+- Local chapter filtering
+- Chapter-detail pages
+- Global chapter metadata search
+- Nullable manga-arc presentation
+- Canonical source navigation
+- Last-updated presentation
+- Loading, error, empty, and no-match states
+- Responsive layouts
+- Accessibility
+- Scope v2 compatibility
+
+Certified datasets presented:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Verified exception:
+
+- Naruto Chapter 700
+- API value: null
+- Frontend display: Not applicable
+
+Known API-dependent limitations:
+
+- Global chapter search results lack anime identity
+- Chapter detail lacks anime-scoped episode mappings
+- Broad global arc queries may not provide exhaustive conceptual arc membership
+
+These limitations are documented and do not cause unsafe frontend inference.
+
+Results:
+
+- One Piece frontend validation: PASS
+- Naruto frontend validation: PASS
+- Scope v2 compatibility: PASS
+- Responsive validation: PASS
+- Accessibility review: PASS
+- Browser console review: PASS
+- Network behavior: PASS
+- Frontend build: PASS
+- Frontend lint: PASS
+- Backend regression: 231 passed
+
+Certification status:
+
+Pending final Platform Checkpoint v3 certification.
 
 ---
 

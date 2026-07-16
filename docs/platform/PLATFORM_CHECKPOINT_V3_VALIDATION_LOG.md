@@ -389,3 +389,93 @@ Scope v3 API platform validation:
 PASS
 
 The Scope v3 API is eligible for Platform Checkpoint v3 certification.
+
+---
+
+## v0.61.6 — Scope v3 Frontend Platform Validation
+
+### Objective
+
+Revalidate the certified Scope v3 frontend as an integrated Platform Checkpoint v3 component.
+
+### Frontend Implementation
+
+- Chapter API client: PASS
+- Series chapter lists: PASS
+- Local chapter filtering: PASS
+- Chapter-detail pages: PASS
+- Global chapter metadata search: PASS
+- Nullable metadata presentation: PASS
+
+### One Piece
+
+- Chapter records represented: 1188
+- Range: 1–1188
+- Chapter-list experience: PASS
+- Chapter-detail experience: PASS
+- Local filtering: PASS
+- Global search presentation: PASS
+- Canonical source navigation: PASS
+
+### Naruto
+
+- Chapter records represented: 700
+- Range: 1–700
+- Chapter 10 source isolation: PASS
+- Chapter 700 `Not applicable` presentation: PASS
+- Spin-off contamination: 0
+- Chapter-list experience: PASS
+- Chapter-detail experience: PASS
+- Global search presentation: PASS
+
+### Search Behavior
+
+- Scope v2 Episode Adaptation Matches preserved: PASS
+- Scope v3 Chapter Metadata section preserved: PASS
+- Numeric search: PASS
+- Title search: PASS
+- Arc search presentation: PASS
+- Empty metadata state: PASS
+
+Known limitation:
+
+Global arc search may not provide exhaustive conceptual arc membership for broad phrases. The frontend displays the complete API response without discarding or fabricating records.
+
+### Scope v2 Compatibility
+
+- Anime browsing: PASS
+- Episode browsing: PASS
+- Episode detail: PASS
+- Episode-to-chapter mappings: PASS
+- Chapter Lookup: PASS
+- Existing search sections: PASS
+
+### Responsive and Accessibility
+
+- Desktop: PASS
+- Tablet: PASS
+- Mobile: PASS
+- Accessibility review: PASS
+- Browser console: PASS
+- Network behavior: PASS
+
+### API-Dependent Limitations
+
+- Search results lack anime identity: documented
+- No unsafe identity inference: PASS
+- Chapter detail lacks anime-scoped episode mapping: documented
+- No unsafe cross-series filtering: PASS
+
+### Regression
+
+- Backend tests: 231 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Result
+
+Scope v3 frontend platform validation:
+
+PASS
+
+The Scope v3 frontend is eligible for Platform Checkpoint v3 certification.

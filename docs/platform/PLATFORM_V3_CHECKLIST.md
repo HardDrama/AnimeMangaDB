@@ -15,7 +15,7 @@
 - [x] One Piece Dataset
 - [x] Naruto Dataset
 - [x] Scope v3 API
-- [ ] Scope v3 Frontend
+- [x] Scope v3 Frontend
 
 ## End-to-End Validation
 
@@ -23,7 +23,7 @@
 - [x] Database validated
 - [x] Dataset validation
 - [x] API validation
-- [ ] Frontend validation
+- [x] Frontend validation
 - [ ] Integrated workflow validation
 
 ## Documentation

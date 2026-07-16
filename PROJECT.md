@@ -86,7 +86,7 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 Status:
 
-Scope v3 API Validation Passed
+Scope v3 Frontend Validation Passed
 
 Validated components:
 
@@ -96,22 +96,25 @@ Validated components:
 - One Piece Scope v3 Dataset
 - Naruto Scope v3 Dataset
 - Scope v3 API
-
-Pending component validation:
-
 - Scope v3 Frontend
+
+Pending validation:
+
 - Integrated platform workflows
+- Platform documentation
+- Final platform validation
+- Platform certification
 
 Current phase:
 
-Scope v3 frontend platform validation
+Integrated platform workflow validation
 
 Next:
 
-- Revalidate chapter-list presentation
-- Revalidate chapter-detail presentation
-- Revalidate global chapter metadata search
-- Confirm Scope v2 frontend compatibility
+- Validate ingestion-to-database workflow
+- Validate database-to-API workflow
+- Validate API-to-frontend workflow
+- Validate Scope v2 compatibility end to end
 
 ---
 
