@@ -82,30 +82,15 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.61 — Platform Checkpoint v3
+### Platform Checkpoint v3
 
 Status:
 
-Integrated Workflow Validation Passed
-
-Validated:
-
-- Backend
-- Database
-- Scope v3 Foundation
-- One Piece Dataset
-- Naruto Dataset
-- Scope v3 API
-- Scope v3 Frontend
-- Integrated Workflows
+CERTIFIED
 
 Current phase:
 
-Final Platform Certification
-
-Next:
-
-Finalize Platform Checkpoint v3
+Checkpoint closure and next-roadmap planning
 
 ---
 
@@ -200,3 +185,37 @@ Evidence:
 - Final API validation: PASS
 - OpenAPI validation: PASS
 - API metadata alignment: PASS
+
+## Certified
+
+### Platform Checkpoint v3
+
+Status:
+
+🏆 CERTIFIED
+
+Certified components:
+
+- Backend
+- Database
+- Scope v3 Foundation
+- One Piece Scope v3 Dataset
+- Naruto Scope v3 Dataset
+- Scope v3 API
+- Scope v3 Frontend
+- Integrated platform workflows
+
+Certified datasets:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Validation:
+
+- Backend tests: 231 passed
+- API tests: 83 passed
+- Database integrity: PASS
+- Foreign-key enforcement: ENABLED
+- Frontend build: PASS
+- Frontend lint: PASS
+- Scope v2 compatibility: PASS

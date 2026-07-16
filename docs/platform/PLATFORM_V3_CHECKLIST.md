@@ -28,9 +28,9 @@
 
 ## Documentation
 
-- [ ] Platform documentation updated
-- [ ] Validation log completed
+- [x] Platform documentation updated
+- [x] Validation log completed
 
 ## Certification
 
-- [ ] Platform Checkpoint v3 certified
+- [x] Platform Checkpoint v3 certified

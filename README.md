@@ -24,9 +24,23 @@ The frontend is being extended to display certified chapter metadata from the Sc
 - React
 - TypeScript
 
-## Project Status
+## Platform Status
 
-- In Development
+Platform Checkpoint v3:
+
+**CERTIFIED**
+
+Certified Scope v3 datasets:
+
+- One Piece Chapters 1–1188
+- Naruto Chapters 1–700
+
+Validation:
+
+- 231 backend tests passing
+- 83 API tests passing
+- Frontend production build passing
+- Frontend lint passing
 
 ## Current Status
 

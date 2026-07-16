@@ -567,3 +567,101 @@ Integrated platform validation:
 PASS
 
 Platform is ready for final certification.
+
+---
+
+## v0.61.8 — Platform Checkpoint v3 Certification
+
+### Objective
+
+Formally certify the complete Scope v3 platform following successful component and integrated-workflow validation.
+
+### Certified Components
+
+- Backend
+- Database
+- Scope v3 Foundation
+- One Piece Scope v3 Dataset
+- Naruto Scope v3 Dataset
+- Scope v3 API
+- Scope v3 Frontend
+- Integrated platform workflows
+
+### Database Certification
+
+- Database connectivity: PASS
+- SQLAlchemy metadata alignment: PASS
+- Runtime foreign-key enforcement: ENABLED
+- Orphan episodes: 0
+- Orphan chapter records: 0
+- Duplicate anime identities: 0
+- Duplicate episode identities: 0
+- Duplicate chapter identities: 0
+
+### Dataset Certification
+
+One Piece:
+
+- Records: 1188
+- Range: 1–1188
+- Audit: PASS
+- Manual validation: PASS
+- Certification failures: 0
+
+Naruto:
+
+- Records: 700
+- Range: 1–700
+- Audit: PASS
+- Manual validation: PASS
+- Chapter 700 exception: PASS
+- Spin-off contamination: 0
+- Certification failures: 0
+
+### API Certification
+
+- API version: 0.59.0
+- Platform metadata: v3 certified
+- API tests: 83 passed
+- Chapter list: PASS
+- Chapter detail: PASS
+- Chapter metadata search: PASS
+- Scope v2 compatibility: PASS
+
+### Frontend Certification
+
+- One Piece frontend: PASS
+- Naruto frontend: PASS
+- Chapter 700 presentation: `Not applicable`
+- Responsive validation: PASS
+- Accessibility review: PASS
+- Production build: PASS
+- Lint: PASS
+
+### Integrated Workflow Certification
+
+- Source data to database: PASS
+- Database to repository: PASS
+- Repository to API: PASS
+- API to frontend: PASS
+- Scope v2 workflows: PASS
+- Scope v3 workflows: PASS
+
+### Known Non-Blocking Limitations
+
+- Global chapter search results do not include anime identity
+- Chapter detail does not include anime-scoped episode mappings
+- Broad arc search results may not represent exhaustive conceptual arc membership
+
+These are documented and do not cause unsafe frontend inference or invalid certified data.
+
+### Final Regression
+
+- Backend tests: 231 passed
+- API tests: 83 passed
+- Frontend production build: PASS
+- Frontend lint: PASS
+
+### Certification Result
+
+🏆 Platform Checkpoint v3 Certified

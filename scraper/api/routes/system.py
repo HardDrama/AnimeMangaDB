@@ -45,7 +45,7 @@ def get_scope():
 def get_version():
     return {
         "api_version": "0.59.0",
-        "platform_checkpoint": "v3 (in progress)",
+        "platform_checkpoint": "v3 (certified)",
         "supported_scope": "v3",
         "scope_v2_compatible": True,
         "scope_v3_api_status": "certified",
