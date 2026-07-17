@@ -82,20 +82,21 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.5 — Frontend Navigation Integration
-
-Status: Certified
-
-- Added an anime-scoped chapter-to-episode API client.
-- Converted Episode Detail chapter mappings into direct Chapter Detail links.
-- Added adapting episode navigation to Chapter Detail.
-- Preserved existing global chapter lookup behavior.
-- Reused existing routes and styling.
-- Validated bidirectional navigation, browser history, frontend build, and backend compatibility.
-
 ### v0.62.6 — Frontend UX Polish
 
-Status: Next
+Status: Planning Complete
+
+Scope:
+
+- Reviewed page hierarchy and navigation consistency.
+- Inventoried frontend status and empty states.
+- Audited global and component-specific styling.
+- Reviewed responsive and accessibility basics.
+- Identified evidence-backed UX corrections.
+- Preserved backend and API contracts.
+
+Implementation:
+Ready
 
 ---
 
