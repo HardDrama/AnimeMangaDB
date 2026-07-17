@@ -84,19 +84,20 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ### v0.62.6 — Frontend UX Polish
 
-Status: Planning Complete
+Status: Certified
 
-Scope:
+- Clarified home-page series-navigation terminology.
+- Improved cross-route header navigation.
+- Added accessible names to frontend search controls.
+- Converted episode cards into consistent full-card links.
+- Narrowed misleading global list interaction styling.
+- Added visible keyboard focus treatment.
+- Preserved legacy state-based workflows pending a dedicated cleanup checkpoint.
+- Validated frontend lint, production build, runtime behavior, accessibility basics, and backend compatibility.
 
-- Reviewed page hierarchy and navigation consistency.
-- Inventoried frontend status and empty states.
-- Audited global and component-specific styling.
-- Reviewed responsive and accessibility basics.
-- Identified evidence-backed UX corrections.
-- Preserved backend and API contracts.
+### v0.62.7 — Legacy Home Workflow Review
 
-Implementation:
-Ready
+Status: Next
 
 ---
 

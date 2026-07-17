@@ -10,7 +10,7 @@ function AnimeBrowser({
 }) {
     return (
         <section id="anime-browser">
-            <h2>Available Anime</h2>
+            <h2>Browse Series</h2>
 
             {searchText && (
                 <p>

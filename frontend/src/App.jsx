@@ -173,9 +173,14 @@ function App() {
                     </Link>
                 </div>
 
-                <nav>
-                    <Link to="/lookup">Chapter Lookup</Link>
-                    <a href="#anime-browser">Anime Browser</a>
+                <nav aria-label="Primary navigation">
+                    <Link to="/lookup">
+                        Chapter Lookup
+                    </Link>
+
+                    <a href="/#anime-browser">
+                        Browse Series
+                    </a>
                 </nav>
             </header>
 

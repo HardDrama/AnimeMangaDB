@@ -17,6 +17,7 @@ function GlobalSearch({
 
             <input
                 type="text"
+                aria-label="Search anime, episodes, and chapters"
                 placeholder="Search anime, episodes, or chapters..."
                 value={value}
                 onChange={(event) =>

@@ -5,18 +5,31 @@ function EpisodeCard({
     selected,
     onSelect,
 }) {
+    function handleSelect() {
+        if (onSelect) {
+            onSelect(episode);
+        }
+    }
+
     return (
         <li
-            onClick={() => onSelect(episode)}
-            className={selected ? "selected" : ""}
+            className={
+                selected
+                    ? "episode-card selected"
+                    : "episode-card"
+            }
         >
-            <strong>
-                <Link to={`/episodes/${episode.id}`}>
+            <Link
+                to={`/episodes/${episode.id}`}
+                className="episode-card-link"
+                onClick={handleSelect}
+            >
+                <strong>
                     Episode {episode.episode_number}
-                </Link>
-            </strong>
-            <br />
-            <span>{episode.title}</span>
+                </strong>
+
+                <span>{episode.title}</span>
+            </Link>
         </li>
     );
 }

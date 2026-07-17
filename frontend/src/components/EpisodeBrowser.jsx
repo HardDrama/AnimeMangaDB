@@ -21,6 +21,7 @@ function EpisodeBrowser({
 
             <input
                 type="text"
+                aria-label="Search episodes"
                 placeholder="Search episodes..."
                 value={episodeSearch}
                 onChange={(event) =>

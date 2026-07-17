@@ -58,14 +58,6 @@ li {
     color: #fecaca;
 }
 
-li {
-    cursor: pointer;
-}
-
-li:hover {
-    border-color: #60a5fa;
-}
-
 li.selected {
     border-color: #3b82f6;
     background: #1e3a8a;
@@ -89,9 +81,24 @@ input {
     font-size: 1rem;
 }
 
-input:focus {
-    outline: none;
+input:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
     border-color: #60a5fa;
+}
+
+.site-header a:focus-visible,
+.breadcrumbs a:focus-visible,
+.card-link:focus-visible,
+button:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+.anime-card-link:focus-visible,
+.episode-card-link:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: -3px;
 }
 
 button {
@@ -177,6 +184,30 @@ li a:hover {
 
 .card-link:hover {
     color: inherit;
+}
+
+.episode-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.episode-card-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.episode-card-link:hover {
+    color: inherit;
+}
+
+.episode-card:hover,
+.anime-card:hover,
+.chapter-metadata-card:hover {
+    border-color: #60a5fa;
 }
 
 .anime-card-grid {
