@@ -127,6 +127,29 @@ export async function getEpisodeChapters(episodeId) {
     return response.json();
 }
 
+/**
+ * Return episodes adapting one anime-scoped chapter.
+ */
+export async function getEpisodesForAnimeChapter(
+    animeId,
+    chapterNumber,
+) {
+    const response = await fetch(
+        (
+            `${API_BASE_URL}/anime/${animeId}`
+            + `/chapters/${chapterNumber}/episodes`
+        )
+    );
+
+    if (!response.ok) {
+        throw new Error(
+            "Failed to fetch episodes for anime chapter."
+        );
+    }
+
+    return response.json();
+}
+
 export async function getEpisodesByChapter(chapterNumber) {
     const response = await fetch(
         `${API_BASE_URL}/chapters/${chapterNumber}/episodes`

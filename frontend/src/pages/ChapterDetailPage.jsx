@@ -6,6 +6,7 @@ import {
 import {
     getAnimeById,
     getAnimeChapter,
+    getEpisodesForAnimeChapter,
 } from "../api/client";
 import Breadcrumbs from "../components/Breadcrumbs";
 
@@ -31,6 +32,7 @@ function ChapterDetailPage() {
 
     const [anime, setAnime] = useState(null);
     const [chapter, setChapter] = useState(null);
+    const [episodes, setEpisodes] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
@@ -40,9 +42,14 @@ function ChapterDetailPage() {
                 const [
                     animeData,
                     chapterData,
+                    episodeData,
                 ] = await Promise.all([
                     getAnimeById(animeId),
                     getAnimeChapter(
+                        animeId,
+                        chapterNumber,
+                    ),
+                    getEpisodesForAnimeChapter(
                         animeId,
                         chapterNumber,
                     ),
@@ -50,6 +57,7 @@ function ChapterDetailPage() {
 
                 setAnime(animeData);
                 setChapter(chapterData);
+                setEpisodes(episodeData);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -163,6 +171,42 @@ function ChapterDetailPage() {
                     </dd>
                 </div>
             </dl>
+
+            <section className="adapting-episodes">
+                <h3>Adapting Episodes</h3>
+
+                {episodes.length === 0 ? (
+                    <p>
+                        No adapting episodes are currently
+                        available.
+                    </p>
+                ) : (
+                    <ul className="episode-list">
+                        {episodes.map((episode) => (
+                            <li key={episode.id}>
+                                <Link
+                                    to={`/episodes/${episode.id}`}
+                                    className="card-link"
+                                >
+                                    <strong>
+                                        Episode{" "}
+                                        {episode.episode_number}
+                                    </strong>
+
+                                    <br />
+
+                                    <span>
+                                        {
+                                            episode.episode_title
+                                            ?? episode.title
+                                        }
+                                    </span>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </section>
 
             <p>
                 <Link to={`/anime/${anime.id}`}>

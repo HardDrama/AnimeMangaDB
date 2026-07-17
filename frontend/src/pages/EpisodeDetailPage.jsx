@@ -107,8 +107,16 @@ function EpisodeDetailPage() {
                                 chapter.chapter_number
                             }
                         >
-                            Chapter{" "}
-                            {chapter.chapter_number}
+                            <Link
+                                to={
+                                    `/anime/${episode.anime_id}`
+                                    + `/chapters/${chapter.chapter_number}`
+                                }
+                                className="card-link"
+                            >
+                                Chapter{" "}
+                                {chapter.chapter_number}
+                            </Link>
                         </li>
                     ))}
                 </ul>
