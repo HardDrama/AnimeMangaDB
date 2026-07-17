@@ -317,3 +317,88 @@ def test_replace_episode_chapters_replaces_old_mappings():
     chapters = repo.get_chapter_numbers_for_episode(episode)
 
     assert chapters == [1097]
+
+def test_get_episodes_by_anime_and_chapter_limits_results_to_anime():
+    session = create_test_session()
+    repository = EpisodeRepository(
+        session
+    )
+
+    one_piece = (
+        repository.get_or_create_anime(
+            title="One Piece",
+            provider="fandom",
+            base_url=(
+                "https://onepiece.fandom.com"
+            ),
+        )
+    )
+
+    naruto = (
+        repository.get_or_create_anime(
+            title="Naruto",
+            provider="fandom",
+            base_url=(
+                "https://naruto.fandom.com"
+            ),
+        )
+    )
+
+    one_piece_data = make_episode_data()
+
+    one_piece_episode = (
+        repository.create_episode(
+            anime=one_piece,
+            data=one_piece_data,
+        )
+    )
+
+    naruto_data = EpisodeData(
+        anime_title="Naruto",
+        episode_number=500,
+        episode_title="Naruto Episode 500",
+        manga_start=1096,
+        manga_end=1096,
+        arc=None,
+        source_url=(
+            "https://naruto.fandom.com/"
+            "wiki/Episode_500"
+        ),
+    )
+
+    naruto_episode = (
+        repository.create_episode(
+            anime=naruto,
+            data=naruto_data,
+        )
+    )
+
+    repository.add_episode_chapters(
+        episode=one_piece_episode,
+        chapter_numbers=[1096],
+    )
+
+    repository.add_episode_chapters(
+        episode=naruto_episode,
+        chapter_numbers=[1096],
+    )
+
+    results = (
+        repository
+        .get_episodes_by_anime_and_chapter(
+            anime_id=one_piece.id,
+            chapter_number=1096,
+        )
+    )
+
+    assert [
+        episode.id
+        for episode in results
+    ] == [
+        one_piece_episode.id
+    ]
+
+    assert all(
+        episode.anime_id == one_piece.id
+        for episode in results
+    )

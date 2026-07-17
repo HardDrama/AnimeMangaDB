@@ -409,6 +409,33 @@ class EpisodeRepository:
 
         return self.session.execute(stmt).scalars().all()
     
+    def get_episodes_by_anime_and_chapter(
+        self,
+        anime_id: int,
+        chapter_number: int,
+    ) -> list[Episode]:
+        stmt = (
+            select(Episode)
+            .join(EpisodeChapter)
+            .where(
+                Episode.anime_id
+                == anime_id
+            )
+            .where(
+                EpisodeChapter.chapter_number
+                == chapter_number
+            )
+            .order_by(
+                Episode.episode_number
+            )
+        )
+
+        return (
+            self.session.execute(stmt)
+            .scalars()
+            .all()
+        )
+    
     def search_anime(
         self,
         query: str,
