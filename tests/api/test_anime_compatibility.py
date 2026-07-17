@@ -15,12 +15,6 @@ def test_list_anime():
 
     assert isinstance(data, list)
 
-    assert "chapter_count" in anime
-    assert isinstance(
-        anime["chapter_count"],
-        int,
-    )
-
     if data:
         anime = data[0]
 
@@ -29,26 +23,23 @@ def test_list_anime():
         assert "provider" in anime
         assert "base_url" in anime
         assert "episode_count" in anime
-        assert isinstance(anime["episode_count"], int)
+        assert "chapter_count" in anime
+
+        assert isinstance(
+            anime["episode_count"],
+            int,
+        )
+
+        assert isinstance(
+            anime["chapter_count"],
+            int,
+        )
 
 
 def test_get_anime_by_id():
     list_response = client.get("/anime")
 
     assert list_response.status_code == 200
-
-    assert "episode_count" in data
-    assert "chapter_count" in data
-
-    assert isinstance(
-        data["episode_count"],
-        int,
-    )
-
-    assert isinstance(
-        data["chapter_count"],
-        int,
-    )
 
     anime_list = list_response.json()
 
@@ -67,6 +58,19 @@ def test_get_anime_by_id():
 
     assert data["id"] == anime_id
     assert "title" in data
+
+    assert "episode_count" in data
+    assert "chapter_count" in data
+
+    assert isinstance(
+        data["episode_count"],
+        int,
+    )
+
+    assert isinstance(
+        data["chapter_count"],
+        int,
+    )
 
 
 def test_get_missing_anime():

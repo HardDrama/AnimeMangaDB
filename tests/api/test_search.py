@@ -30,6 +30,33 @@ def test_search_returns_expected_structure():
     assert isinstance(data["chapters"], list)
 
 
+def test_search_anime_includes_counts():
+    response = client.get(
+        "/search",
+        params={"query": "One Piece"},
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    anime_result = next(
+        anime
+        for anime in data["anime"]
+        if anime["title"] == "One Piece"
+    )
+
+    assert isinstance(
+        anime_result["episode_count"],
+        int,
+    )
+
+    assert (
+        anime_result["chapter_count"]
+        == 1188
+    )
+
+
 def test_search_episode_title():
     response = client.get(
         "/search",
@@ -40,13 +67,14 @@ def test_search_episode_title():
 
     data = response.json()
 
+    assert data["episodes"]
+
     for episode in data["episodes"]:
         assert "anime_id" in episode
         assert "anime_title" in episode
         assert "episode_number" in episode
         assert "episode_title" in episode
         assert "title" in episode
-
 
 def test_search_by_chapter_number():
     response = client.get(
@@ -65,10 +93,45 @@ def test_search_by_chapter_number():
         assert "episodes" in chapter
 
 
+def test_chapter_metadata_search_includes_series_identity():
+    response = client.get(
+        "/search",
+        params={
+            "query": "The Second Critter",
+        },
+    )
+
+    assert response.status_code == 200
+
+    results = response.json()[
+        "chapter_metadata"
+    ]
+
+    chapter = next(
+        result
+        for result in results
+        if (
+            result["chapter_number"]
+            == 10
+            and result[
+                "chapter_title"
+            ]
+            == "The Second Critter"
+        )
+    )
+
+    assert chapter["anime_id"]
+    assert (
+        chapter["anime_title"]
+        == "Naruto"
+    )
+
+
 def test_search_requires_query():
     response = client.get("/search")
 
     assert response.status_code == 422
+
 
 def test_numeric_search_matches_episode_number():
     response = client.get(
@@ -100,6 +163,7 @@ def test_numeric_search_matches_chapter_number():
         chapter["chapter_number"] == 50
         for chapter in chapters
     )
+
 
 def test_search_chapter_metadata_by_title():
     response = client.get(
@@ -143,6 +207,41 @@ def test_search_chapter_metadata_by_arc():
     assert any(
         chapter["manga_arc"]
         == "Romance Dawn Arc"
+        for chapter in results
+    )
+
+
+def test_numeric_chapter_search_keeps_series_identity():
+    response = client.get(
+        "/search",
+        params={
+            "query": "50",
+        },
+    )
+
+    assert response.status_code == 200
+
+    results = [
+        chapter
+        for chapter in response.json()[
+            "chapter_metadata"
+        ]
+        if (
+            chapter["chapter_number"]
+            == 50
+        )
+    ]
+
+    titles = {
+        chapter["anime_title"]
+        for chapter in results
+    }
+
+    assert "One Piece" in titles
+    assert "Naruto" in titles
+
+    assert all(
+        chapter["anime_id"]
         for chapter in results
     )
 

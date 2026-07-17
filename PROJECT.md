@@ -86,30 +86,25 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 Status:
 
-UX and Navigation Contract Definition
+Series and Chapter Search API Contracts Complete
 
-Planned capabilities:
+Completed:
 
-- Available Series homepage terminology
-- Reusable Series Cards
-- Episode and chapter counts on Series Cards
-- Unified card visual system
-- Bidirectional episode/chapter navigation
-- Series identity in chapter search
-- Anime-scoped chapter-to-episode mappings
-- Series arc lists
-- Arc-aware global search
-- Scope v2 compatibility
+- Unified series UX and navigation contract
+- Series `chapter_count` API support
+- Chapter search series identity
+- Multi-series chapter identity validation
 
-Current step:
+Current phase:
 
-v0.62.1 — Define unified series UX and navigation contract
+Anime-scoped chapter-to-episode API
 
 Next:
 
-- Extend series summary API data
-- Add series identity to chapter search
-- Add anime-scoped chapter episode mappings
+- Add anime-scoped chapter-to-episode repository query
+- Add anime-scoped chapter-to-episode endpoint
+- Validate mapping isolation
+- Preserve global Chapter Lookup compatibility
 
 ---
 

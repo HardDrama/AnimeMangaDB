@@ -96,3 +96,68 @@ None.
 v0.62 UX and navigation contract:
 
 DEFINED
+
+---
+
+## v0.62.2 — Series and Chapter Search API Contracts
+
+### Objective
+
+Expose the summary and identity data required for homepage Series Cards and safe global chapter navigation.
+
+### Series Summary Contract
+
+Added:
+
+- `chapter_count`
+
+Updated responses:
+
+- `GET /anime`
+- `GET /anime/{anime_id}`
+- `GET /series`
+- Anime results from `GET /search`
+
+Validated certified counts:
+
+- One Piece chapters: 1188
+- Naruto chapters: 700
+
+Episode counts remain dynamically derived from persisted episode records.
+
+### Chapter Search Identity
+
+Added to Scope v3 chapter metadata search results:
+
+- `anime_id`
+- `anime_title`
+
+Validated:
+
+- Title search identity: PASS
+- Numeric multi-series identity: PASS
+- One Piece Chapter 50 identity: PASS
+- Naruto Chapter 50 identity: PASS
+- Naruto Chapter 700 null manga arc preserved: PASS
+
+### Compatibility
+
+- Anime-scoped chapter-list response unchanged
+- Anime-scoped chapter-detail response unchanged
+- Scope v2 `chapters` search field unchanged
+- Episode response contract unchanged
+- Existing frontend build: PASS
+- Existing frontend lint: PASS
+
+### Tests
+
+- Repository tests: [ACTUAL] passed
+- Targeted API tests: 23 passed
+- API tests: 88 passed
+- Full backend tests: 237 passed
+
+### Result
+
+Series and chapter search API contracts:
+
+PASS
