@@ -179,6 +179,103 @@ li a:hover {
     color: inherit;
 }
 
+.anime-card-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(16rem, 1fr)
+    );
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.anime-card {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.anime-card-link {
+    display: flex;
+    flex-direction: column;
+    min-height: 13rem;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.anime-card-link:hover {
+    color: inherit;
+}
+
+.anime-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.anime-card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.anime-card-provider {
+    flex-shrink: 0;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #4b5563;
+    border-radius: 999px;
+    color: #d1d5db;
+    font-size: 0.75rem;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.anime-card-counts {
+    display: grid;
+    grid-template-columns: repeat(
+        2,
+        minmax(0, 1fr)
+    );
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.anime-card-counts div {
+    padding: 0.75rem;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    background: #111827;
+}
+
+.anime-card-counts dt {
+    margin-bottom: 0.25rem;
+    color: #9ca3af;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.anime-card-counts dd {
+    margin: 0;
+    font-weight: 700;
+}
+
+.anime-card-action {
+    margin-top: auto;
+    color: #60a5fa;
+    font-weight: 700;
+}
+
+.anime-card:hover .anime-card-action {
+    text-decoration: underline;
+}
+
 .chapter-metadata-section {
     margin-top: 2rem;
 }
@@ -222,6 +319,9 @@ li a:hover {
 
 @media (max-width: 40rem) {
     .chapter-metadata-list {
+        grid-template-columns: 1fr;
+    }
+    .anime-card-grid {
         grid-template-columns: 1fr;
     }
 }

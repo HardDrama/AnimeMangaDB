@@ -33,7 +33,7 @@ function AnimeBrowser({
             )}
 
             {!loading && !error && animeList.length > 0 && (
-                <ul>
+                <ul className="anime-card-grid">
                     {animeList.map((item) => (
                         <AnimeCard
                             key={item.id}

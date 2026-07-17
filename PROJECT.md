@@ -82,13 +82,15 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.4
+### v0.62.4 — Frontend Series Cards
 
-Frontend Series Cards
+Status: Certified
 
-Status:
-Planning Complete
-Implementation Ready
+- Extended the existing reusable series-card component.
+- Added provider, episode-count, and chapter-count presentation.
+- Added responsive grid and mobile layouts.
+- Preserved direct REST-backed series navigation.
+- Validated frontend lint, build, runtime behavior, and backend compatibility.
 
 ---
 
