@@ -82,29 +82,12 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62 — Platform UX & Navigation
+### Version 0.62.3
+Platform Chapter Navigation API
 
 Status:
-
-Series and Chapter Search API Contracts Complete
-
-Completed:
-
-- Unified series UX and navigation contract
-- Series `chapter_count` API support
-- Chapter search series identity
-- Multi-series chapter identity validation
-
-Current phase:
-
-Anime-scoped chapter-to-episode API
-
-Next:
-
-- Add anime-scoped chapter-to-episode repository query
-- Add anime-scoped chapter-to-episode endpoint
-- Validate mapping isolation
-- Preserve global Chapter Lookup compatibility
+Planning Complete
+Implementation Ready
 
 ---
 
