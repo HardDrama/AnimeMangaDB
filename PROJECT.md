@@ -82,14 +82,13 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.3 — Chapter Navigation API
+### v0.62.4
 
-Status: Certified
+Frontend Series Cards
 
-- Added anime-scoped chapter-to-episode navigation.
-- Preserved global chapter mapping search compatibility.
-- Added explicit missing-anime and missing-chapter behavior.
-- Reused the certified episode response contract.
+Status:
+Planning Complete
+Implementation Ready
 
 ---
 
