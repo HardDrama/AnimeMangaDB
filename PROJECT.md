@@ -82,38 +82,14 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.8 — Frontend Checkpoint Certification
+### v0.62.9
+
+Series Arc Navigation
 
 Status:
-Certified
+Planning Complete
 
-Summary:
-
-- Reviewed every frontend route.
-- Reviewed every frontend workflow.
-- Reviewed API coverage.
-- Validated responsive behavior.
-- Validated accessibility basics.
-- Validated browser behavior.
-- Validated architecture.
-- Validated frontend lint.
-- Validated production build.
-- Validated backend compatibility.
-
-Platform Checkpoint v2:
-Frontend Certified.
-
-Current
-
-Platform Checkpoint v2
-✅ Complete
-
-Next
-
-v0.70
-Multi-Series Foundation
-
-Naruto Scope v2
+Implementation Ready
 
 ---
 
