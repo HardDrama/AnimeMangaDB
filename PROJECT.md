@@ -82,22 +82,38 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.7 — Legacy Home Workflow Review
-
-Status: Certified
-
-- Traced all legacy home-page state and handlers.
-- Verified the Chapter Lookup-driven inline workflow.
-- Compared inline behavior with certified direct-route pages.
-- Confirmed Global Search remains independent and route-based.
-- Reviewed API overlap and runtime request behavior.
-- Determined that the two workflows provide distinct user value.
-- Preserved the legacy inline workflow without source changes.
-- Validated frontend lint, production build, runtime behavior, and backend compatibility.
-
 ### v0.62.8 — Frontend Checkpoint Certification
 
-Status: Next
+Status:
+Certified
+
+Summary:
+
+- Reviewed every frontend route.
+- Reviewed every frontend workflow.
+- Reviewed API coverage.
+- Validated responsive behavior.
+- Validated accessibility basics.
+- Validated browser behavior.
+- Validated architecture.
+- Validated frontend lint.
+- Validated production build.
+- Validated backend compatibility.
+
+Platform Checkpoint v2:
+Frontend Certified.
+
+Current
+
+Platform Checkpoint v2
+✅ Complete
+
+Next
+
+v0.70
+Multi-Series Foundation
+
+Naruto Scope v2
 
 ---
 
