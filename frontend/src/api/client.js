@@ -14,6 +14,17 @@ const API_BASE_URL =
  */
 
 /**
+ * Anime-scoped arc summary.
+ *
+ * @typedef {Object} ArcSummary
+ * @property {string} name
+ * @property {string|null} episode_arc
+ * @property {string|null} manga_arc
+ * @property {number} episode_count
+ * @property {number} chapter_count
+ */
+
+/**
  * Scope v2 chapter-to-episode mapping result.
  *
  * @typedef {Object} ChapterMappingSearchResult
@@ -63,6 +74,26 @@ export async function getEpisodesForAnime(animeId) {
 
     if (!response.ok) {
         throw new Error("Failed to fetch episodes.");
+    }
+
+    return response.json();
+}
+
+/**
+ * Return all arc summaries for an anime.
+ *
+ * @param {number|string} animeId
+ * @returns {Promise<Array<ArcSummary>>}
+ */
+export async function getArcsForAnime(animeId) {
+    const response = await fetch(
+        `${API_BASE_URL}/anime/${animeId}/arcs`
+    );
+
+    if (!response.ok) {
+        throw new Error(
+            "Failed to fetch arc summaries."
+        );
     }
 
     return response.json();

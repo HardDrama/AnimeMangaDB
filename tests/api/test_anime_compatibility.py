@@ -276,3 +276,64 @@ def test_list_episodes_for_missing_chapter():
     assert response.json() == {
         "detail": "Chapter not found.",
     }
+
+def test_list_arcs_for_anime():
+    anime_id = get_anime_id_by_title(
+        "One Piece"
+    )
+
+    response = client.get(
+        f"/anime/{anime_id}/arcs"
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    assert isinstance(data, list)
+
+    assert data
+
+    first_arc = data[0]
+
+    assert "name" in first_arc
+    assert "episode_arc" in first_arc
+    assert "manga_arc" in first_arc
+    assert "episode_count" in first_arc
+    assert "chapter_count" in first_arc
+
+    assert isinstance(
+        first_arc["name"],
+        str,
+    )
+
+    assert isinstance(
+        first_arc["episode_count"],
+        int,
+    )
+
+    assert isinstance(
+        first_arc["chapter_count"],
+        int,
+    )
+
+    assert (
+        first_arc["episode_count"]
+        >= 0
+    )
+
+    assert (
+        first_arc["chapter_count"]
+        >= 0
+    )
+
+def test_list_arcs_for_missing_anime():
+    response = client.get(
+        "/anime/999999/arcs"
+    )
+
+    assert response.status_code == 404
+
+    assert response.json() == {
+        "detail": "Anime not found.",
+    }

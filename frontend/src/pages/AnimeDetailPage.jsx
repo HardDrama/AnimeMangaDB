@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
     getAnimeById,
+    getArcsForAnime,
     getChaptersForAnime,
     getEpisodesForAnime,
 } from "../api/client";
+import ArcNavigation from "../components/ArcNavigation";
 import Breadcrumbs from "../components/Breadcrumbs";
 import ChapterMetadataList from "../components/ChapterMetadataList";
 import EpisodeCard from "../components/EpisodeCard";
@@ -15,12 +17,15 @@ function AnimeDetailPage() {
     const [anime, setAnime] = useState(null);
     const [episodes, setEpisodes] = useState([]);
     const [chapters, setChapters] = useState([]);
+    const [arcs, setArcs] = useState([]);
     const [chaptersLoading, setChaptersLoading] =
         useState(true);
     const [chaptersError, setChaptersError] =
         useState("");
     const [chapterSearch, setChapterSearch] =
         useState("");
+    const [selectedArc, setSelectedArc] =
+        useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
@@ -44,12 +49,20 @@ function AnimeDetailPage() {
             }
 
             try {
-                const chapterData =
-                    await getChaptersForAnime(
+                const [
+                    chapterData,
+                    arcData,
+                ] = await Promise.all([
+                    getChaptersForAnime(
                         animeId
-                    );
+                    ),
+                    getArcsForAnime(
+                        animeId
+                    ),
+                ]);
 
                 setChapters(chapterData);
+                setArcs(arcData);
             } catch (err) {
                 setChaptersError(err.message);
             } finally {
@@ -61,37 +74,60 @@ function AnimeDetailPage() {
     }, [animeId]);
 
         const normalizedChapterSearch =
-        chapterSearch.trim().toLowerCase();
+            chapterSearch.trim().toLowerCase();
 
-    const filteredChapters = chapters.filter(
-        (chapter) => {
-            if (!normalizedChapterSearch) {
-                return true;
+    const arcFilteredChapters =
+        selectedArc?.manga_arc
+            ? chapters.filter(
+                (chapter) =>
+                    chapter.manga_arc ===
+                    selectedArc.manga_arc
+            )
+            : chapters;
+
+    const filteredChapters =
+        arcFilteredChapters.filter(
+            (chapter) => {
+                if (!normalizedChapterSearch) {
+                    return true;
+                }
+
+                const chapterNumber =
+                    chapter.chapter_number.toString();
+
+                const chapterTitle =
+                    chapter.chapter_title.toLowerCase();
+
+                const mangaArc =
+                    chapter.manga_arc?.toLowerCase()
+                    ?? "not applicable";
+
+                return (
+                    chapterNumber.includes(
+                        normalizedChapterSearch
+                    )
+                    || chapterTitle.includes(
+                        normalizedChapterSearch
+                    )
+                    || mangaArc.includes(
+                        normalizedChapterSearch
+                    )
+                );
             }
+        );
 
-            const chapterNumber =
-                chapter.chapter_number.toString();
+    function handleSelectArc(arc) {
+        setSelectedArc(arc);
+    }
 
-            const chapterTitle =
-                chapter.chapter_title.toLowerCase();
-
-            const mangaArc =
-                chapter.manga_arc?.toLowerCase()
-                ?? "not applicable";
-
-            return (
-                chapterNumber.includes(
-                    normalizedChapterSearch
-                )
-                || chapterTitle.includes(
-                    normalizedChapterSearch
-                )
-                || mangaArc.includes(
-                    normalizedChapterSearch
-                )
+    const filteredEpisodes =
+        selectedArc === null
+            ? episodes
+            : episodes.filter(
+                (episode) =>
+                    episode.arc ===
+                    selectedArc.episode_arc
             );
-        }
-    );
 
     if (loading) {
         return <p className="status">Loading anime...</p>;
@@ -122,22 +158,41 @@ function AnimeDetailPage() {
             <p>{anime.provider}</p>
             <p>{anime.episode_count ?? 0} episodes</p>
 
-            <h3>Episodes</h3>
+            <ArcNavigation
+                arcs={arcs}
+                selectedArc={selectedArc}
+                onSelectArc={handleSelectArc}
+            />
 
-            <ul className="episode-list">
-                {episodes.map((episode) => (
-                    <EpisodeCard
-                        key={episode.id}
-                        episode={episode}
-                        selected={false}
-                        onSelect={() => {}}
-                    />
-                ))}
-            </ul>
+            <h3>
+                {selectedArc === null
+                    ? "Episodes"
+                    : `${selectedArc.name} Episodes`}
+            </h3>
+
+            {filteredEpisodes.length === 0 && (
+                <p>
+                    No episodes were found for this
+                    arc.
+                </p>
+            )}
+
+            {filteredEpisodes.length > 0 && (
+                <ul className="episode-list">
+                    {filteredEpisodes.map((episode) => (
+                        <EpisodeCard
+                            key={episode.id}
+                            episode={episode}
+                            selected={false}
+                            onSelect={() => {}}
+                        />
+                    ))}
+                </ul>
+            )}
             
             <ChapterMetadataList
                 animeId={anime.id}
-                chapters={chapters}
+                chapters={arcFilteredChapters}
                 filteredChapters={
                     filteredChapters
                 }

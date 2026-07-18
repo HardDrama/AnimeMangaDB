@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 
 from scraper.api.schemas import (
+    ArcSummaryResponse,
     ChapterMetadataResponse,
     EpisodeResponse,
     SeriesResponse,
@@ -84,6 +85,46 @@ def get_anime(
                 )
             ),
         )
+
+    finally:
+        session.close()
+
+@router.get(
+    "/{anime_id}/arcs",
+    response_model=list[
+        ArcSummaryResponse
+    ],
+)
+def list_arcs_for_anime(
+    anime_id: int,
+):
+    session = SessionLocal()
+
+    try:
+        repository = EpisodeRepository(
+            session
+        )
+
+        anime = repository.get_anime_by_id(
+            anime_id
+        )
+
+        if anime is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Anime not found.",
+            )
+
+        arcs = repository.list_arc_summaries(
+            anime_id
+        )
+
+        return [
+            ArcSummaryResponse(
+                **arc
+            )
+            for arc in arcs
+        ]
 
     finally:
         session.close()

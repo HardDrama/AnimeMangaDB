@@ -46,6 +46,13 @@ class ChapterMetadataSearchResponse(
 class ChapterMappingResponse(BaseModel):
     chapter_number: int
 
+class ArcSummaryResponse(BaseModel):
+    name: str
+    episode_arc: str | None = None
+    manga_arc: str | None = None
+    episode_count: int = 0
+    chapter_count: int = 0
+
 class SeriesResponse(BaseModel):
     id: int
     title: str

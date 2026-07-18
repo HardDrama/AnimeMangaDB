@@ -1,4 +1,9 @@
-from sqlalchemy import select, delete, or_
+from sqlalchemy import (
+    delete,
+    func,
+    or_,
+    select,
+)
 from sqlalchemy.orm import Session
 
 from scraper.database.models import (
@@ -17,6 +22,19 @@ class EpisodeRepository:
 
     def __init__(self, session: Session):
         self.session = session
+
+    @staticmethod
+    def normalize_arc_name(
+        value: str,
+    ) -> str:
+        normalized = value.strip()
+
+        if normalized.casefold().endswith(
+            " arc"
+        ):
+            normalized = normalized[:-4].strip()
+
+        return normalized.casefold()
 
     def get_or_create_anime(
         self,
@@ -229,6 +247,146 @@ class EpisodeRepository:
             .scalars()
             .all()
         )
+    
+    def list_arc_summaries(
+        self,
+        anime_id: int,
+    ) -> list[dict]:
+        episode_rows = self.session.execute(
+            select(
+                Episode.arc,
+                func.count(Episode.id),
+                func.min(
+                    Episode.episode_number
+                ),
+            )
+            .where(
+                Episode.anime_id == anime_id
+            )
+            .where(
+                Episode.arc.is_not(None)
+            )
+            .where(
+                func.trim(Episode.arc) != ""
+            )
+            .group_by(Episode.arc)
+            .order_by(
+                func.min(
+                    Episode.episode_number
+                )
+            )
+        ).all()
+
+        chapter_rows = self.session.execute(
+            select(
+                ChapterMetadata.manga_arc,
+                func.count(
+                    ChapterMetadata.chapter_number
+                ),
+                func.min(
+                    ChapterMetadata.chapter_number
+                ),
+            )
+            .where(
+                ChapterMetadata.anime_id
+                == anime_id
+            )
+            .where(
+                ChapterMetadata.manga_arc
+                .is_not(None)
+            )
+            .where(
+                func.trim(
+                    ChapterMetadata.manga_arc
+                ) != ""
+            )
+            .group_by(
+                ChapterMetadata.manga_arc
+            )
+            .order_by(
+                func.min(
+                    ChapterMetadata.chapter_number
+                )
+            )
+        ).all()
+
+        summaries: dict[str, dict] = {}
+        ordering: dict[str, tuple[int, int]] = {}
+
+        for (
+            episode_arc,
+            episode_count,
+            first_episode,
+        ) in episode_rows:
+            key = self.normalize_arc_name(
+                episode_arc
+            )
+
+            summaries[key] = {
+                "name": episode_arc.strip(),
+                "episode_arc": (
+                    episode_arc.strip()
+                ),
+                "manga_arc": None,
+                "episode_count": episode_count,
+                "chapter_count": 0,
+            }
+
+            ordering[key] = (
+                0,
+                first_episode,
+            )
+
+        for (
+            manga_arc,
+            chapter_count,
+            first_chapter,
+        ) in chapter_rows:
+            key = self.normalize_arc_name(
+                manga_arc
+            )
+
+            if key not in summaries:
+                display_name = manga_arc.strip()
+
+                if display_name.casefold().endswith(
+                    " arc"
+                ):
+                    display_name = (
+                        display_name[:-4].strip()
+                    )
+
+                summaries[key] = {
+                    "name": display_name,
+                    "episode_arc": None,
+                    "manga_arc": (
+                        manga_arc.strip()
+                    ),
+                    "episode_count": 0,
+                    "chapter_count": chapter_count,
+                }
+
+                ordering[key] = (
+                    1,
+                    first_chapter,
+                )
+
+                continue
+
+            summaries[key]["manga_arc"] = (
+                manga_arc.strip()
+            )
+            summaries[key]["chapter_count"] = (
+                chapter_count
+            )
+
+        return [
+            summaries[key]
+            for key in sorted(
+                summaries,
+                key=lambda item: ordering[item],
+            )
+        ]
 
     def get_episode_by_number(
         self,

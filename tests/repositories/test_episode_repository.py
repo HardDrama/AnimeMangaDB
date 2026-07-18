@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from scraper.database.base import Base
 from scraper.database.models import Anime
 from scraper.database.models import EpisodeChapter
@@ -60,6 +62,25 @@ def make_episode_data() -> EpisodeData:
         manga_end=1096,
         arc=None,
         source_url="https://onepiece.fandom.com/wiki/Episode_1130",
+    )
+
+def make_arc_episode_data(
+    episode_number: int,
+    arc: str | None,
+) -> EpisodeData:
+    return EpisodeData(
+        anime_title="Test Anime",
+        episode_number=episode_number,
+        episode_title=(
+            f"Episode {episode_number}"
+        ),
+        manga_start=None,
+        manga_end=None,
+        arc=arc,
+        source_url=(
+            "https://example.com/wiki/"
+            f"Episode_{episode_number}"
+        ),
     )
 
 
@@ -402,3 +423,184 @@ def test_get_episodes_by_anime_and_chapter_limits_results_to_anime():
         episode.anime_id == one_piece.id
         for episode in results
     )
+
+def test_list_arc_summaries_groups_episode_and_manga_arcs():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="Test Anime",
+        provider="test",
+        base_url="https://example.com",
+    )
+
+    repo.create_episode(
+        anime=anime,
+        data=make_arc_episode_data(
+            episode_number=1,
+            arc="Romance Dawn",
+        ),
+    )
+
+    repo.create_episode(
+        anime=anime,
+        data=make_arc_episode_data(
+            episode_number=2,
+            arc="Romance Dawn",
+        ),
+    )
+
+    repo.create_episode(
+        anime=anime,
+        data=make_arc_episode_data(
+            episode_number=3,
+            arc="Orange Town",
+        ),
+    )
+
+    repo.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=1,
+        chapter_title="Romance Dawn",
+        manga_arc="Romance Dawn Arc",
+        source_url=(
+            "https://example.com/wiki/"
+            "Chapter_1"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    repo.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=2,
+        chapter_title=(
+            "They Call Him Straw Hat Luffy"
+        ),
+        manga_arc="Romance Dawn Arc",
+        source_url=(
+            "https://example.com/wiki/"
+            "Chapter_2"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    repo.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=3,
+        chapter_title="Enter Zolo",
+        manga_arc="Orange Town Arc",
+        source_url=(
+            "https://example.com/wiki/"
+            "Chapter_3"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    results = repo.list_arc_summaries(
+        anime.id
+    )
+
+    assert results == [
+        {
+            "name": "Romance Dawn",
+            "episode_arc": "Romance Dawn",
+            "manga_arc": "Romance Dawn Arc",
+            "episode_count": 2,
+            "chapter_count": 2,
+        },
+        {
+            "name": "Orange Town",
+            "episode_arc": "Orange Town",
+            "manga_arc": "Orange Town Arc",
+            "episode_count": 1,
+            "chapter_count": 1,
+        },
+    ]
+
+    session.close()
+
+def test_list_arc_summaries_ignores_missing_arc_values():
+    session = create_test_session()
+    repo = EpisodeRepository(session)
+
+    anime = repo.get_or_create_anime(
+        title="Test Anime",
+        provider="test",
+        base_url="https://example.com",
+    )
+
+    repo.create_episode(
+        anime=anime,
+        data=make_arc_episode_data(
+            episode_number=1,
+            arc=None,
+        ),
+    )
+
+    repo.create_episode(
+        anime=anime,
+        data=make_arc_episode_data(
+            episode_number=2,
+            arc="",
+        ),
+    )
+
+    repo.create_episode(
+        anime=anime,
+        data=make_arc_episode_data(
+            episode_number=3,
+            arc="Valid Arc",
+        ),
+    )
+
+    repo.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=1,
+        chapter_title="Missing Arc Chapter",
+        manga_arc=None,
+        source_url=(
+            "https://example.com/wiki/"
+            "Chapter_1"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    repo.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=2,
+        chapter_title="Blank Arc Chapter",
+        manga_arc="",
+        source_url=(
+            "https://example.com/wiki/"
+            "Chapter_2"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    repo.create_or_update_chapter_metadata(
+        anime=anime,
+        chapter_number=3,
+        chapter_title="Valid Arc Chapter",
+        manga_arc="Valid Arc",
+        source_url=(
+            "https://example.com/wiki/"
+            "Chapter_3"
+        ),
+        last_updated=datetime.now(),
+    )
+
+    results = repo.list_arc_summaries(
+        anime.id
+    )
+
+    assert results == [
+        {
+            "name": "Valid Arc",
+            "episode_arc": "Valid Arc",
+            "manga_arc": "Valid Arc",
+            "episode_count": 1,
+            "chapter_count": 1,
+        },
+    ]
+
+    session.close()
