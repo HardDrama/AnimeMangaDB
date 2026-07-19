@@ -157,7 +157,7 @@ function AnimeDetailPage() {
     }
 
     return (
-        <section>
+        <section className="anime-detail-page">
             <Breadcrumbs
                 items={[
                     {
@@ -173,53 +173,55 @@ function AnimeDetailPage() {
             <p>{anime.provider}</p>
             <p>{anime.episode_count ?? 0} episodes</p>
 
-            <ArcNavigation
-                arcs={arcs}
-                selectedArc={selectedArc}
-                onSelectArc={handleSelectArc}
-            />
+            <div className="series-detail-layout">
+                <ArcNavigation
+                    arcs={arcs}
+                    selectedArc={selectedArc}
+                    onSelectArc={handleSelectArc}
+                />
 
-            <section id="anime-episodes">
-                <h3>
-                    {selectedArc === null
-                        ? "Episodes"
-                        : `${selectedArc.name} Episodes`}
-                </h3>
+                <section id="anime-episodes">
+                    <h3>
+                        {selectedArc === null
+                            ? "Episodes"
+                            : `${selectedArc.name} Episodes`}
+                    </h3>
 
-                {filteredEpisodes.length === 0 && (
-                    <p>
-                        No episodes were found for this
-                        arc.
-                    </p>
-                )}
+                    {filteredEpisodes.length === 0 && (
+                        <p>
+                            No episodes were found for this
+                            arc.
+                        </p>
+                    )}
 
-                {filteredEpisodes.length > 0 && (
-                    <ul className="episode-list">
-                        {filteredEpisodes.map((episode) => (
-                            <EpisodeCard
-                                key={episode.id}
-                                episode={episode}
-                                selected={false}
-                                onSelect={() => {}}
-                            />
-                        ))}
-                    </ul>
-                )}
-            </section>
-            
-            <ChapterMetadataList
-                animeId={anime.id}
-                chapters={arcFilteredChapters}
-                filteredChapters={
-                    filteredChapters
-                }
-                search={chapterSearch}
-                onSearchChange={
-                    setChapterSearch
-                }
-                loading={chaptersLoading}
-                error={chaptersError}
-            />
+                    {filteredEpisodes.length > 0 && (
+                        <ul className="episode-list">
+                            {filteredEpisodes.map((episode) => (
+                                <EpisodeCard
+                                    key={episode.id}
+                                    episode={episode}
+                                    selected={false}
+                                    onSelect={() => {}}
+                                />
+                            ))}
+                        </ul>
+                    )}
+                </section>
+                
+                <ChapterMetadataList
+                    animeId={anime.id}
+                    chapters={arcFilteredChapters}
+                    filteredChapters={
+                        filteredChapters
+                    }
+                    search={chapterSearch}
+                    onSearchChange={
+                        setChapterSearch
+                    }
+                    loading={chaptersLoading}
+                    error={chaptersError}
+                />
+            </div>
         </section>
     );
 }

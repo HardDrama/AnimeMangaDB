@@ -82,24 +82,42 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### ## Certification
+### v0.62.11 — Series Detail Layout Improvements
 
-v0.62.10 — Global Search Arc Episode Support
+Status: Certified
 
-Certified evidence
+Completed:
 
-- Search API: 20 passed
-- Backend suite: 250 passed, 0 failed
-- Frontend lint: 0 errors
-- Frontend production build: Successful
-- Shared arc search validated
-- Anime-only arc search validated
-- Manga-only arc regression validated
-- Existing title search preserved
-- Existing numeric search preserved
+- Responsive hybrid Series Detail layout
+- Three-column desktop presentation
+- Two-stage tablet presentation
+- Stacked mobile presentation
+- Adaptive desktop viewport-height behavior
+- Independently scrolling desktop data lists
+- Content-sized arc cards
+- Balanced column proportions
+- Preserved arc filtering
+- Preserved chapter search
+- Preserved keyboard accessibility
+- Preserved zero-request client-side filtering
 
-v0.62.11 — Series Detail Layout Improvements
+v0.62.12 — Frontend Integration Certification
 Status: Next
+
+### v0.62.12 — Frontend Integration Certification
+
+Status: Next
+
+Planned:
+
+- Review all certified frontend routes
+- Validate navigation continuity
+- Validate responsive behavior across the application
+- Validate accessibility across major workflows
+- Validate API request behavior
+- Consolidate frontend validation evidence
+- Certify Frontend Integration
+- Complete Platform Checkpoint v2
 
 ---
 

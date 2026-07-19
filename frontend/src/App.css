@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    max-width: 800px;
+    max-width: 72rem;
     margin: 0 auto;
     padding: 48px 24px;
 }
@@ -64,7 +64,7 @@ li.selected {
 }
 
 .episode-list {
-    max-height: 500px;
+    max-height: 515px;
     overflow-y: auto;
     padding-right: 8px;
 }
@@ -194,10 +194,18 @@ li a:hover {
 .episode-card-link {
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 0.4rem;
     padding: 1rem;
     color: inherit;
     text-decoration: none;
+}
+
+.episode-card-link strong {
+    line-height: 1.2;
+}
+
+.episode-card-link span {
+    line-height: 1.4;
 }
 
 .episode-card-link:hover {
@@ -363,6 +371,46 @@ li a:hover {
     overflow-wrap: anywhere;
 }
 
+.series-detail-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: start;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.series-detail-layout .arc-navigation-list {
+    max-height: 515px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.series-detail-layout > section {
+    min-width: 0;
+    margin-top: 0;
+    min-height: 0;
+}
+
+.series-detail-layout h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.anime-detail-page {
+    min-height: calc(100vh - 10rem);
+    min-height: calc(100dvh - 10rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.anime-detail-page {
+    min-height: calc(100dvh - 10rem);
+    display: flex;
+    flex-direction: column;
+}
+
 .chapter-metadata-section {
     margin-top: 2rem;
 }
@@ -380,7 +428,9 @@ li a:hover {
         minmax(16rem, 1fr)
     );
     gap: 1rem;
-    padding: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 0 8px 0 0;
     list-style: none;
 }
 
@@ -390,20 +440,37 @@ li a:hover {
     border-radius: 0.5rem;
 }
 
+.chapter-metadata-card h4 {
+    margin: 0;
+}
+
 .chapter-metadata-card p {
-    margin-bottom: 0.5rem;
+    margin: 0.35rem 0;
+    line-height: 1.45;
+}
+
+.chapter-metadata-card a {
+    margin-top: auto;
+    padding-top: 0.75rem;
 }
 
 .chapter-metadata-heading {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.55rem;
+    line-height: 1.35;
+}
+
+.chapter-metadata-card p:last-child {
+    margin-bottom: 0;
 }
 
 .result-count {
     margin-bottom: 1rem;
 }
 
+
+/* Mobile */
 @media (max-width: 40rem) {
     .chapter-metadata-list {
         grid-template-columns: 1fr;
@@ -413,6 +480,28 @@ li a:hover {
     }
     .arc-navigation-list {
         grid-template-columns: 1fr;
+    }
+    .series-detail-layout {
+    display: block;
+    }
+
+    .anime-detail-page {
+        min-height: 0;
+    }
+
+    .series-detail-layout > section {
+        margin-bottom: 2rem;
+    }
+
+    .series-detail-layout
+        .arc-navigation-list,
+    .series-detail-layout
+        .episode-list,
+    .series-detail-layout
+        .chapter-metadata-list {
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
     }
 }
 
@@ -447,12 +536,40 @@ li a:hover {
     overflow-wrap: anywhere;
 }
 
-@media (max-width: 52rem) {
-    .arc-navigation-list {
+/* Tablet */
+@media (
+    min-width: 40.001rem
+) and (
+    max-width: 63.999rem
+) {
+    .series-detail-layout {
         grid-template-columns: repeat(
             2,
             minmax(0, 1fr)
         );
+    }
+
+    .series-detail-layout
+        .arc-navigation {
+        grid-column: 1 / -1;
+    }
+
+    .series-detail-layout
+        .arc-navigation-list {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+    }
+
+    .series-detail-layout
+        .chapter-metadata-list {
+        grid-template-columns: 1fr;
+    }
+
+    .series-detail-layout
+        .chapter-metadata-list {
+        max-height: 400px;
     }
 }
 
@@ -483,4 +600,56 @@ li a:hover {
 
 .chapter-search-result p:last-child {
     margin-bottom: 0;
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+    .series-detail-layout {
+        grid-template-columns:
+            minmax(14rem, 0.9fr)
+            minmax(18rem, 1fr)
+            minmax(20rem, 1.2fr);
+        align-items: stretch;
+        height: calc(100vh - 20rem);
+        height: calc(100dvh - 20rem);
+        min-height: 32rem;
+    }
+
+    .series-detail-layout
+        .arc-navigation-list {
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        align-content: start;
+    }
+
+    .series-detail-layout
+        .chapter-metadata-list {
+        grid-template-columns: 1fr;
+    }
+
+    .series-detail-layout > section {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .series-detail-layout
+        .arc-navigation-list,
+    .series-detail-layout
+        .episode-list,
+    .series-detail-layout
+        .chapter-metadata-list {
+        flex: 1 1 auto;
+        min-height: 0;
+        max-height: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .series-detail-layout
+        .chapter-metadata-list {
+        margin-bottom: 0;
+    }
 }
