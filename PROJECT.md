@@ -108,10 +108,6 @@ Completed:
 
 Status: Next
 
-### v0.63 — Multi-Series Foundation
-
-Status: Next
-
 Objective:
 
 Expand AnimeMangaDB from benchmark-driven series support into a reusable multi-series platform foundation.
