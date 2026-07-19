@@ -82,24 +82,11 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.9
+### v0.62.9 — Series Arc Navigation
+Status: Certified
 
-Series Arc Navigation
-
-Status:
-Planning Complete
-
-Implementation Ready
-
----
-
-## ROADMAP
-
-v0.57  ✅ One Piece Scope v3 Dataset
-v0.58  ✅ Naruto Scope v3 Dataset
-v0.59  ✅ Scope v3 API Integration
-v0.60  🚧 Scope v3 Frontend Integration
-Future Platform Checkpoint v3 Certification
+v0.62.10 — Global Search Arc Episode Support
+Status: Next
 
 ---
 

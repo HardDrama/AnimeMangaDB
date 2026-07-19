@@ -77,13 +77,15 @@ function AnimeDetailPage() {
             chapterSearch.trim().toLowerCase();
 
     const arcFilteredChapters =
-        selectedArc?.manga_arc
+        selectedArc === null
+            ? chapters
+            : selectedArc.manga_arc
             ? chapters.filter(
-                (chapter) =>
-                    chapter.manga_arc ===
-                    selectedArc.manga_arc
-            )
-            : chapters;
+                    (chapter) =>
+                        chapter.manga_arc ===
+                        selectedArc.manga_arc
+                )
+            : [];
 
     const filteredChapters =
         arcFilteredChapters.filter(
@@ -118,16 +120,29 @@ function AnimeDetailPage() {
 
     function handleSelectArc(arc) {
         setSelectedArc(arc);
+
+        window.requestAnimationFrame(() => {
+            document
+                .getElementById(
+                    "anime-episodes"
+                )
+                ?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+        });
     }
 
     const filteredEpisodes =
         selectedArc === null
             ? episodes
-            : episodes.filter(
-                (episode) =>
-                    episode.arc ===
-                    selectedArc.episode_arc
-            );
+            : selectedArc.episode_arc
+            ? episodes.filter(
+                    (episode) =>
+                        episode.arc ===
+                        selectedArc.episode_arc
+                )
+            : [];
 
     if (loading) {
         return <p className="status">Loading anime...</p>;
@@ -164,31 +179,33 @@ function AnimeDetailPage() {
                 onSelectArc={handleSelectArc}
             />
 
-            <h3>
-                {selectedArc === null
-                    ? "Episodes"
-                    : `${selectedArc.name} Episodes`}
-            </h3>
+            <section id="anime-episodes">
+                <h3>
+                    {selectedArc === null
+                        ? "Episodes"
+                        : `${selectedArc.name} Episodes`}
+                </h3>
 
-            {filteredEpisodes.length === 0 && (
-                <p>
-                    No episodes were found for this
-                    arc.
-                </p>
-            )}
+                {filteredEpisodes.length === 0 && (
+                    <p>
+                        No episodes were found for this
+                        arc.
+                    </p>
+                )}
 
-            {filteredEpisodes.length > 0 && (
-                <ul className="episode-list">
-                    {filteredEpisodes.map((episode) => (
-                        <EpisodeCard
-                            key={episode.id}
-                            episode={episode}
-                            selected={false}
-                            onSelect={() => {}}
-                        />
-                    ))}
-                </ul>
-            )}
+                {filteredEpisodes.length > 0 && (
+                    <ul className="episode-list">
+                        {filteredEpisodes.map((episode) => (
+                            <EpisodeCard
+                                key={episode.id}
+                                episode={episode}
+                                selected={false}
+                                onSelect={() => {}}
+                            />
+                        ))}
+                    </ul>
+                )}
+            </section>
             
             <ChapterMetadataList
                 animeId={anime.id}

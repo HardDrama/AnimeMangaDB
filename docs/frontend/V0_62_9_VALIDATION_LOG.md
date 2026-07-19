@@ -78,3 +78,73 @@ Missing-anime response:
 Full backend suite:
 
 - [record exact result]
+
+## Deferred UI Work
+
+A future series-detail layout should evaluate a three-column desktop presentation:
+
+1. Arc navigation
+2. Filtered episodes
+3. Filtered chapter metadata
+
+This is deferred to the planned frontend card and layout unification work rather than expanding the scope of v0.62.9.
+
+Responsive layouts should collapse the three-column view appropriately for tablet and mobile widths.
+
+## Frontend Runtime Validation
+
+Arc navigation:
+
+- One Piece: Passed
+- Naruto: Passed
+- All Arcs reset: Passed
+- Episode-backed arcs: Passed
+- Manga-only arcs: Passed
+- Episode-only arcs: Passed
+
+Filtering:
+
+- Episode filtering: Passed
+- Chapter filtering: Passed
+- Chapter search within selected arc: Passed
+- Zero-episode state: Passed
+- Zero-chapter state: Passed
+- Null episode arc handling: Passed
+- Null manga arc handling: Passed
+
+Responsive layout:
+
+- Desktop three-column arc grid: Passed
+- Medium two-column arc grid: Passed
+- Mobile one-column arc grid: Passed
+- Long arc title wrapping: Passed
+- Stable column count after selection: Passed
+
+Interaction:
+
+- Smooth scroll to Episodes: Passed
+- Keyboard Enter activation: Passed
+- Keyboard Space activation: Passed
+- All Arcs keyboard reset: Passed
+- No extra API requests after selection: Passed
+
+Frontend validation:
+
+- Lint: 0 errors
+- Production build: Successful
+
+## Certification
+
+v0.62.9 Series Arc Navigation is certified.
+
+Certified evidence:
+
+- Backend focused tests: 26 passed
+- Full backend suite: 245 passed, 0 failed
+- Frontend lint: 0 errors
+- Frontend production build: Successful
+- One Piece runtime validation: Passed
+- Naruto runtime validation: Passed
+- Responsive validation: Passed
+- Keyboard validation: Passed
+- Network validation: Passed
