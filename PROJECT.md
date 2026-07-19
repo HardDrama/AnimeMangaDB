@@ -82,42 +82,49 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.11 — Series Detail Layout Improvements
+### v0.62.12 — Frontend Integration Certification
 
 Status: Certified
 
 Completed:
 
-- Responsive hybrid Series Detail layout
-- Three-column desktop presentation
-- Two-stage tablet presentation
-- Stacked mobile presentation
-- Adaptive desktop viewport-height behavior
-- Independently scrolling desktop data lists
-- Content-sized arc cards
-- Balanced column proportions
-- Preserved arc filtering
-- Preserved chapter search
-- Preserved keyboard accessibility
-- Preserved zero-request client-side filtering
+- Frontend route inventory
+- Navigation validation
+- Series browsing validation
+- Series detail validation
+- Arc navigation validation
+- Global search validation
+- Chapter lookup validation
+- Responsive validation
+- Accessibility validation
+- API request validation
+- Console validation
+- Frontend lint and production build validation
+- Full backend regression validation
 
-v0.62.12 — Frontend Integration Certification
+## Next
+
+### v0.63 — Multi-Series Foundation
+
 Status: Next
 
-### v0.62.12 — Frontend Integration Certification
+### v0.63 — Multi-Series Foundation
 
 Status: Next
 
-Planned:
+Objective:
 
-- Review all certified frontend routes
-- Validate navigation continuity
-- Validate responsive behavior across the application
-- Validate accessibility across major workflows
-- Validate API request behavior
-- Consolidate frontend validation evidence
-- Certify Frontend Integration
-- Complete Platform Checkpoint v2
+Expand AnimeMangaDB from benchmark-driven series support into a reusable multi-series platform foundation.
+
+Initial direction:
+
+- Review current One Piece and Naruto assumptions
+- Identify series-specific logic still embedded in shared code
+- Separate reusable platform behavior from provider-specific behavior
+- Validate configuration-driven series onboarding
+- Preserve certified Scope v3 behavior
+- Add the next series through evidence-driven onboarding
+- Avoid speculative abstractions
 
 ---
 
