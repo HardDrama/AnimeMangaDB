@@ -348,3 +348,181 @@ def test_chapter_metadata_search_without_match_is_empty():
         ]
         == []
     )
+
+def test_search_episode_arc_returns_all_baratie_episodes():
+    response = client.get(
+        "/search",
+        params={
+            "query": "Baratie",
+        },
+    )
+
+    assert response.status_code == 200
+
+    episodes = response.json()[
+        "episodes"
+    ]
+
+    baratie_episodes = [
+        episode
+        for episode in episodes
+        if (
+            episode["anime_title"]
+            == "One Piece"
+            and episode["arc"]
+            == "Baratie Arc"
+        )
+    ]
+
+    assert len(baratie_episodes) == 12
+
+    assert len(
+        {
+            episode["id"]
+            for episode in baratie_episodes
+        }
+    ) == 12
+
+def test_search_episode_arc_supports_partial_matching():
+    response = client.get(
+        "/search",
+        params={
+            "query": "Egghead",
+        },
+    )
+
+    assert response.status_code == 200
+
+    episodes = response.json()[
+        "episodes"
+    ]
+
+    egghead_episodes = [
+        episode
+        for episode in episodes
+        if (
+            episode["anime_title"]
+            == "One Piece"
+            and episode["arc"]
+            == "Egghead Arc"
+        )
+    ]
+
+    assert len(egghead_episodes) == 70
+
+def test_search_naruto_episode_arc():
+    response = client.get(
+        "/search",
+        params={
+            "query": "Search for Tsunade",
+        },
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    matching_episodes = [
+        episode
+        for episode in data["episodes"]
+        if (
+            episode["anime_title"]
+            == "Naruto"
+            and episode["arc"]
+            == "Search for Tsunade"
+        )
+    ]
+
+    matching_chapters = [
+        chapter
+        for chapter in data[
+            "chapter_metadata"
+        ]
+        if (
+            chapter["anime_title"]
+            == "Naruto"
+            and chapter["manga_arc"]
+            == "Search for Tsunade"
+        )
+    ]
+
+    assert len(matching_episodes) == 20
+    assert len(matching_chapters) == 33
+
+def test_search_anime_only_arc_returns_episodes():
+    response = client.get(
+        "/search",
+        params={
+            "query": "Buggy Side Story",
+        },
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    matching_episodes = [
+        episode
+        for episode in data["episodes"]
+        if (
+            episode["anime_title"]
+            == "One Piece"
+            and episode["arc"]
+            == "Buggy Side Story Arc"
+        )
+    ]
+
+    matching_chapters = [
+        chapter
+        for chapter in data[
+            "chapter_metadata"
+        ]
+        if (
+            chapter["anime_title"]
+            == "One Piece"
+            and chapter["manga_arc"]
+            == "Buggy Side Story Arc"
+        )
+    ]
+
+    assert len(matching_episodes) == 2
+    assert matching_chapters == []
+
+def test_search_manga_only_arc_does_not_match_null_episodes():
+    response = client.get(
+        "/search",
+        params={
+            "query": (
+                "Kaguya Ōtsutsuki Strikes"
+            ),
+        },
+    )
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    matching_episodes = [
+        episode
+        for episode in data["episodes"]
+        if (
+            episode["anime_title"]
+            == "Naruto"
+        )
+    ]
+
+    matching_chapters = [
+        chapter
+        for chapter in data[
+            "chapter_metadata"
+        ]
+        if (
+            chapter["anime_title"]
+            == "Naruto"
+            and chapter["manga_arc"]
+            == "Kaguya Ōtsutsuki Strikes"
+        )
+    ]
+
+    assert matching_episodes == []
+    assert len(matching_chapters) == 22

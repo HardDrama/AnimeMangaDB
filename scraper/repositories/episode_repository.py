@@ -613,6 +613,9 @@ class EpisodeRepository:
             Episode.episode_title.ilike(
                 f"%{query}%"
             ),
+            Episode.arc.ilike(
+                f"%{query}%"
+            ),
         ]
 
         try:

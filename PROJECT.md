@@ -82,10 +82,23 @@ Before a Platform Checkpoint is declared complete, One Piece must be fully updat
 
 ## Current
 
-### v0.62.9 — Series Arc Navigation
-Status: Certified
+### ## Certification
 
 v0.62.10 — Global Search Arc Episode Support
+
+Certified evidence
+
+- Search API: 20 passed
+- Backend suite: 250 passed, 0 failed
+- Frontend lint: 0 errors
+- Frontend production build: Successful
+- Shared arc search validated
+- Anime-only arc search validated
+- Manga-only arc regression validated
+- Existing title search preserved
+- Existing numeric search preserved
+
+v0.62.11 — Series Detail Layout Improvements
 Status: Next
 
 ---
