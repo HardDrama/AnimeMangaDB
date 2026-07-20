@@ -1,27 +1,33 @@
 {
     "series": "Naruto Shippuden",
-    "provider": "fandom",
     "base_url": "https://naruto.fandom.com",
     "episode_path": "/wiki/Episode_{episode}",
     "selectors": {
         "title": "h2.pi-title",
-        "chapter": "div[data-source=\"chapters\"] .pi-data-value",
-        "arc": "div[data-source=\"arc\"] .pi-data-value"
+        "chapter": "div[data-source='chapters'] .pi-data-value",
+        "arc": "div[data-source='arc'] .pi-data-value"
     },
-    "benchmark": {
-        "version": "v0.64.7",
-        "episodes": [
-            1,
-            20,
-            68,
-            81,
-            101,
-            102,
-            107,
-            136,
-            142,
-            148,
-            158
+    "chapter_metadata": {
+        "index_path": "/wiki/List_of_Volumes",
+        "url_strategy": "numbered_list_items",
+        "chapter_path": null,
+        "index_section_id": "Tankōbon",
+        "index_subsection_ids": [
+            "Part_I",
+            "Part_II"
         ]
+    },
+    "chapter_selectors": {
+        "title": "span.mw-page-title-main",
+        "manga_arc": null,
+        "title_strategy": "naruto_page_title",
+        "arc_strategy": "naruto_factbox_property"
+    },
+    "scraper": {
+        "max_episodes": 5,
+        "start_episode": null,
+        "end_episode": null,
+        "full_crawl": false,
+        "config_path": "configs/fandom/naruto_shippuden.json"
     }
 }
