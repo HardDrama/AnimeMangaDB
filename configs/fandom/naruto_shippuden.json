@@ -1,0 +1,27 @@
+{
+    "series": "Naruto Shippuden",
+    "provider": "fandom",
+    "base_url": "https://naruto.fandom.com",
+    "episode_path": "/wiki/Episode_{episode}",
+    "selectors": {
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"] .pi-data-value",
+        "arc": "div[data-source=\"arc\"] .pi-data-value"
+    },
+    "benchmark": {
+        "version": "v0.64.7",
+        "episodes": [
+            1,
+            20,
+            68,
+            81,
+            101,
+            102,
+            107,
+            136,
+            142,
+            148,
+            158
+        ]
+    }
+}
