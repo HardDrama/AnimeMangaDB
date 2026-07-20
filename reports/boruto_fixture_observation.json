@@ -1,0 +1,782 @@
+{
+  "benchmark_name": "Boruto",
+  "source_provider": "Fandom",
+  "source_type": "Episode",
+  "episodes": [
+    {
+      "episode_number": 1,
+      "fixture": "episode_001.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Boruto Uzumaki!!",
+        "chapter": "Boruto Chapter #1",
+        "arc": "Academy Entrance Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "うずまきボルト!! ­ (Uzumaki Boruto!!)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #1 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Academy Entrance Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #1"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" Baton Road \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Dreamy Journey \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "April 05, 2017"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "September 29, 2018"
+        }
+      ]
+    },
+    {
+      "episode_number": 19,
+      "fixture": "episode_019.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Sarada Uchiha",
+        "chapter": "Naruto Chapter #700+1, Naruto Chapter #700+2",
+        "arc": "Sarada Uchiha Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "うちはサラダ ­ (Uchiha Sarada)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #19 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Sarada Uchiha Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Naruto Chapter #700+1, Naruto Chapter #700+2"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" Baton Road \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Sayonara Moon Town \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "August 09, 2017"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "February 23, 2019"
+        }
+      ]
+    },
+    {
+      "episode_number": 39,
+      "fixture": "episode_039.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": null
+      },
+      "values": {
+        "title": "The Path Lit by the Full Moon",
+        "chapter": "Boruto Chapter #0",
+        "arc": null
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "満ちた月が照らす道 ­ (Michita Tsuki ga Terasu Michi)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #39 ( Watch Online )"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #0"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" OVER \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" I Keep Running \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "December 27, 2017"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "July 14, 2019"
+        }
+      ]
+    },
+    {
+      "episode_number": 53,
+      "fixture": "episode_053.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Himawari's Birthday",
+        "chapter": "Boruto Chapter #1",
+        "arc": "Versus Momoshiki Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "ヒマワリの誕生日 ­ (Himawari no Tanjōbi)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #53 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Versus Momoshiki Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #1"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" It's All in the Game \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Beauties of Nature \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "April 11, 2018"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "April 21, 2020"
+        }
+      ]
+    },
+    {
+      "episode_number": 65,
+      "fixture": "episode_065.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Father and Child",
+        "chapter": "Boruto Chapter #8, Boruto Chapter #9, Boruto Chapter #10",
+        "arc": "Versus Momoshiki Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "父と子 ­ (Chichi to Ko)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #65 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Versus Momoshiki Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #8, Boruto Chapter #9, Boruto Chapter #10"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" It's All in the Game \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Laika \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "July 19, 2018"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "April 21, 2020"
+        }
+      ]
+    },
+    {
+      "episode_number": 148,
+      "fixture": "episode_148.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "A New Mission!!",
+        "chapter": "Boruto Chapter #11",
+        "arc": "Mujina Bandits Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "新たな任務!! ­ (Aratana Ninmu!!)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #148 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Mujina Bandits Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #11"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" Teenage Dream \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Fireworks \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "March 15, 2020"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "November 23, 2021"
+        }
+      ]
+    },
+    {
+      "episode_number": 181,
+      "fixture": "episode_181.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "The Vessel",
+        "chapter": "Boruto Chapter #16",
+        "arc": "Ao Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "器 ­ (Utsuwa)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #181 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Ao Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #16"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" BAKU \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Answers \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "January 10, 2021"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "September 06, 2022"
+        }
+      ]
+    },
+    {
+      "episode_number": 189,
+      "fixture": "episode_189.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Resonance",
+        "chapter": "Boruto Chapter #25",
+        "arc": "Kawaki Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "共鳴 ­ (Kyōmei)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #189 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Kawaki Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #25"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" BAKU \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Answers \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "March 07, 2021"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "September 06, 2022"
+        }
+      ]
+    },
+    {
+      "episode_number": 192,
+      "fixture": "episode_192.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "The Past",
+        "chapter": "Boruto Chapter #24, Boruto Chapter #26",
+        "arc": "Kawaki Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "過去 ­ (Kako)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #192 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Kawaki Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #24, Boruto Chapter #26"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" BAKU \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Answers \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "March 28, 2021"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "January 10, 2023"
+        }
+      ]
+    },
+    {
+      "episode_number": 220,
+      "fixture": "episode_220.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Remaining Time",
+        "chapter": "Boruto Chapter #56, Boruto Chapter #57, Boruto Chapter #58",
+        "arc": "Kawaki Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "残された時間 ­ (Nokosareta Jikan)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #220 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Kawaki Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #56, Boruto Chapter #57, Boruto Chapter #58"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" Reckless \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" Prologue \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "October 17, 2021"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "June 13, 2023"
+        }
+      ]
+    },
+    {
+      "episode_number": 287,
+      "fixture": "episode_287.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Claw Marks",
+        "chapter": "Boruto Chapter #55, Boruto Chapter #56, Boruto Chapter #57, Boruto Chapter #60",
+        "arc": "Code's Assault Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "爪痕 ­ (Tsumeato)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #287 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Code's Assault Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #55, Boruto Chapter #56, Boruto Chapter #57, Boruto Chapter #60"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" Karma \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" See You \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "February 12, 2023"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "August 13, 2024"
+        }
+      ]
+    },
+    {
+      "episode_number": 293,
+      "fixture": "episode_293.html",
+      "selectors": {
+        "infobox": "aside.portable-infobox",
+        "title": "h2.pi-title",
+        "chapter": "div[data-source=\"chapters\"]",
+        "arc": "div[data-source=\"arc\"]"
+      },
+      "values": {
+        "title": "Farewell",
+        "chapter": "Boruto Chapter #67, Boruto Chapter #68, Boruto Chapter #70",
+        "arc": "Code's Assault Arc"
+      },
+      "infobox_classes": [
+        "portable-infobox",
+        "pi-background",
+        "pi-border-color",
+        "pi-theme-wikia",
+        "pi-layout-default",
+        "type-episode"
+      ],
+      "data_sources": [
+        {
+          "data_source": "kanji",
+          "label": "",
+          "value": "別れ ­ (Wakare)"
+        },
+        {
+          "data_source": "episode",
+          "label": "Episode",
+          "value": "Boruto #293 ( Watch Online )"
+        },
+        {
+          "data_source": "arc",
+          "label": "Arc",
+          "value": "Code's Assault Arc"
+        },
+        {
+          "data_source": "chapters",
+          "label": "Manga",
+          "value": "Boruto Chapter #67, Boruto Chapter #68, Boruto Chapter #70"
+        },
+        {
+          "data_source": "opening song",
+          "label": "Opening",
+          "value": "\" Karma \""
+        },
+        {
+          "data_source": "ending song",
+          "label": "Ending",
+          "value": "\" See You \""
+        },
+        {
+          "data_source": "japanese airdate",
+          "label": "Japanese",
+          "value": "March 26, 2023"
+        },
+        {
+          "data_source": "english airdate",
+          "label": "English",
+          "value": "August 13, 2024"
+        }
+      ]
+    }
+  ]
+}
