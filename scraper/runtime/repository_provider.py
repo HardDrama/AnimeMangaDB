@@ -1,22 +1,25 @@
-from scraper.repositories import episode_repository
-from scraper.repositories import chapter_metadata_repository
-
-from scraper.repositories import (
-    episode_repository_shared_manga,
-    manga_repository_shared_manga,
+from scraper.repositories.episode_repository import (
+    EpisodeRepository as LegacyEpisodeRepository,
+)
+from scraper.repositories.episode_repository_shared_manga import (
+    EpisodeRepository as SharedMangaEpisodeRepository,
+)
+from scraper.repositories.manga_repository_shared_manga import (
+    MangaRepository as SharedMangaRepository,
 )
 
 
 class RuntimeRepositoryProvider:
     """
-    Repository compatibility layer.
+    Central registry for repository implementations.
 
-    Production repositories remain active until the shared
-    runtime is promoted.
+    The legacy runtime remains the production default until the ORM and
+    database migration are activated together. The staged runtime remains
+    available for explicit validation and future activation.
     """
 
-    production_episode = episode_repository
-    production_chapter = chapter_metadata_repository
+    production_episode_repository = LegacyEpisodeRepository
+    production_chapter_repository = LegacyEpisodeRepository
 
-    staged_episode = episode_repository_shared_manga
-    staged_manga = manga_repository_shared_manga
+    staged_episode_repository = SharedMangaEpisodeRepository
+    staged_chapter_repository = SharedMangaRepository
